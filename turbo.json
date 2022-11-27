@@ -31,5 +31,6 @@
     "dev": {
       "cache": false
     }
-  }
+  },
+  "globalEnv": ["VERCEL_URL", "PORT", "NODE_ENV"]
 }
