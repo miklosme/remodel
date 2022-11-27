@@ -10,7 +10,8 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md,cjs,mjs,js,jsx}\""
+    "format": "prettier --ignore-path .gitignore --check \"**/*.{ts,tsx,md,cjs,mjs,js,jsx}\"",
+    "format:write": "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,md,cjs,mjs,js,jsx}\""
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
