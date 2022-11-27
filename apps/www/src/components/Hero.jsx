@@ -1,18 +1,18 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import logoLaravel from '@/images/logos/laravel.svg'
-import logoMirage from '@/images/logos/mirage.svg'
-import logoStatamic from '@/images/logos/statamic.svg'
-import logoStaticKit from '@/images/logos/statickit.svg'
-import logoTransistor from '@/images/logos/transistor.svg'
-import logoTuple from '@/images/logos/tuple.svg'
+import { Button } from '@/components/Button';
+import { Container } from '@/components/Container';
+import logoLaravel from '@/images/logos/laravel.svg';
+import logoMirage from '@/images/logos/mirage.svg';
+import logoStatamic from '@/images/logos/statamic.svg';
+import logoStaticKit from '@/images/logos/statickit.svg';
+import logoTransistor from '@/images/logos/transistor.svg';
+import logoTuple from '@/images/logos/tuple.svg';
 
 export function Hero() {
   return (
     <Container className="pt-20 pb-16 text-center lg:pt-32">
-      <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
+      <h1 className="font-display mx-auto max-w-4xl text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
         Accounting{' '}
         <span className="relative whitespace-nowrap text-blue-600">
           <svg
@@ -82,5 +82,5 @@ export function Hero() {
         </ul>
       </div>
     </Container>
-  )
+  );
 }

@@ -1,14 +1,14 @@
-import { useEffect, useState } from 'react'
-import Image from 'next/image'
-import { Tab } from '@headlessui/react'
-import clsx from 'clsx'
+import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import { Tab } from '@headlessui/react';
+import clsx from 'clsx';
 
-import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background-features.jpg'
-import screenshotExpenses from '@/images/screenshots/expenses.png'
-import screenshotPayroll from '@/images/screenshots/payroll.png'
-import screenshotReporting from '@/images/screenshots/reporting.png'
-import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
+import { Container } from '@/components/Container';
+import backgroundImage from '@/images/background-features.jpg';
+import screenshotExpenses from '@/images/screenshots/expenses.png';
+import screenshotPayroll from '@/images/screenshots/payroll.png';
+import screenshotReporting from '@/images/screenshots/reporting.png';
+import screenshotVatReturns from '@/images/screenshots/vat-returns.png';
 
 const features = [
   {
@@ -35,25 +35,25 @@ const features = [
       'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
     image: screenshotReporting,
   },
-]
+];
 
 export function PrimaryFeatures() {
-  let [tabOrientation, setTabOrientation] = useState('horizontal')
+  let [tabOrientation, setTabOrientation] = useState('horizontal');
 
   useEffect(() => {
-    let lgMediaQuery = window.matchMedia('(min-width: 1024px)')
+    let lgMediaQuery = window.matchMedia('(min-width: 1024px)');
 
     function onMediaQueryChange({ matches }) {
-      setTabOrientation(matches ? 'vertical' : 'horizontal')
+      setTabOrientation(matches ? 'vertical' : 'horizontal');
     }
 
-    onMediaQueryChange(lgMediaQuery)
-    lgMediaQuery.addEventListener('change', onMediaQueryChange)
+    onMediaQueryChange(lgMediaQuery);
+    lgMediaQuery.addEventListener('change', onMediaQueryChange);
 
     return () => {
-      lgMediaQuery.removeEventListener('change', onMediaQueryChange)
-    }
-  }, [])
+      lgMediaQuery.removeEventListener('change', onMediaQueryChange);
+    };
+  }, []);
 
   return (
     <section
@@ -95,7 +95,7 @@ export function PrimaryFeatures() {
                         'group relative rounded-full py-1 px-4 lg:rounded-r-none lg:rounded-l-xl lg:p-6',
                         selectedIndex === featureIndex
                           ? 'bg-white lg:bg-white/10 lg:ring-1 lg:ring-inset lg:ring-white/10'
-                          : 'hover:bg-white/10 lg:hover:bg-white/5'
+                          : 'hover:bg-white/10 lg:hover:bg-white/5',
                       )}
                     >
                       <h3>
@@ -104,7 +104,7 @@ export function PrimaryFeatures() {
                             'font-display text-lg [&:not(:focus-visible)]:focus:outline-none',
                             selectedIndex === featureIndex
                               ? 'text-blue-600 lg:text-white'
-                              : 'text-blue-100 hover:text-white lg:text-white'
+                              : 'text-blue-100 hover:text-white lg:text-white',
                           )}
                         >
                           <span className="absolute inset-0 rounded-full lg:rounded-r-none lg:rounded-l-xl" />
@@ -116,7 +116,7 @@ export function PrimaryFeatures() {
                           'mt-2 hidden text-sm lg:block',
                           selectedIndex === featureIndex
                             ? 'text-white'
-                            : 'text-blue-100 group-hover:text-white'
+                            : 'text-blue-100 group-hover:text-white',
                         )}
                       >
                         {feature.description}
@@ -151,5 +151,5 @@ export function PrimaryFeatures() {
         </Tab.Group>
       </Container>
     </section>
-  )
+  );
 }

@@ -1,12 +1,12 @@
-import { useId } from 'react'
-import Image from 'next/image'
-import { Tab } from '@headlessui/react'
-import clsx from 'clsx'
+import { useId } from 'react';
+import Image from 'next/image';
+import { Tab } from '@headlessui/react';
+import clsx from 'clsx';
 
-import { Container } from '@/components/Container'
-import screenshotContacts from '@/images/screenshots/contacts.png'
-import screenshotInventory from '@/images/screenshots/inventory.png'
-import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
+import { Container } from '@/components/Container';
+import screenshotContacts from '@/images/screenshots/contacts.png';
+import screenshotInventory from '@/images/screenshots/inventory.png';
+import screenshotProfitLoss from '@/images/screenshots/profit-loss.png';
 
 const features = [
   {
@@ -16,7 +16,7 @@ const features = [
       'We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.',
     image: screenshotProfitLoss,
     icon: function ReportingIcon() {
-      let id = useId()
+      let id = useId();
       return (
         <>
           <defs>
@@ -40,7 +40,7 @@ const features = [
             strokeLinejoin="round"
           />
         </>
-      )
+      );
     },
   },
   {
@@ -68,7 +68,7 @@ const features = [
             fill="#fff"
           />
         </>
-      )
+      );
     },
   },
   {
@@ -91,10 +91,10 @@ const features = [
             fill="#fff"
           />
         </>
-      )
+      );
     },
   },
-]
+];
 
 function Feature({ feature, isActive, className, ...props }) {
   return (
@@ -105,7 +105,7 @@ function Feature({ feature, isActive, className, ...props }) {
       <div
         className={clsx(
           'w-9 rounded-lg',
-          isActive ? 'bg-blue-600' : 'bg-slate-500'
+          isActive ? 'bg-blue-600' : 'bg-slate-500',
         )}
       >
         <svg aria-hidden="true" className="h-9 w-9" fill="none">
@@ -115,17 +115,17 @@ function Feature({ feature, isActive, className, ...props }) {
       <h3
         className={clsx(
           'mt-6 text-sm font-medium',
-          isActive ? 'text-blue-600' : 'text-slate-600'
+          isActive ? 'text-blue-600' : 'text-slate-600',
         )}
       >
         {feature.name}
       </h3>
-      <p className="mt-2 font-display text-xl text-slate-900">
+      <p className="font-display mt-2 text-xl text-slate-900">
         {feature.summary}
       </p>
       <p className="mt-4 text-sm text-slate-600">{feature.description}</p>
     </div>
-  )
+  );
 }
 
 function FeaturesMobile() {
@@ -148,7 +148,7 @@ function FeaturesMobile() {
         </div>
       ))}
     </div>
-  )
+  );
 }
 
 function FeaturesDesktop() {
@@ -174,7 +174,7 @@ function FeaturesDesktop() {
               />
             ))}
           </Tab.List>
-          <Tab.Panels className="relative mt-20 overflow-hidden rounded-4xl bg-slate-200 px-14 py-16 xl:px-16">
+          <Tab.Panels className="rounded-4xl relative mt-20 overflow-hidden bg-slate-200 px-14 py-16 xl:px-16">
             <div className="-mx-5 flex">
               {features.map((feature, featureIndex) => (
                 <Tab.Panel
@@ -182,7 +182,7 @@ function FeaturesDesktop() {
                   key={feature.name}
                   className={clsx(
                     'px-5 transition duration-500 ease-in-out [&:not(:focus-visible)]:focus:outline-none',
-                    featureIndex !== selectedIndex && 'opacity-60'
+                    featureIndex !== selectedIndex && 'opacity-60',
                   )}
                   style={{ transform: `translateX(-${selectedIndex * 100}%)` }}
                   aria-hidden={featureIndex !== selectedIndex}
@@ -198,12 +198,12 @@ function FeaturesDesktop() {
                 </Tab.Panel>
               ))}
             </div>
-            <div className="pointer-events-none absolute inset-0 rounded-4xl ring-1 ring-inset ring-slate-900/10" />
+            <div className="rounded-4xl pointer-events-none absolute inset-0 ring-1 ring-inset ring-slate-900/10" />
           </Tab.Panels>
         </>
       )}
     </Tab.Group>
-  )
+  );
 }
 
 export function SecondaryFeatures() {
@@ -227,5 +227,5 @@ export function SecondaryFeatures() {
         <FeaturesDesktop />
       </Container>
     </section>
-  )
+  );
 }
