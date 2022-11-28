@@ -2,7 +2,7 @@
   "name": "css-to-tailwind",
   "version": "2.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.mjs",
   "scripts": {
     "test": "vitest",
     "coverage": "vitest run --coverage"

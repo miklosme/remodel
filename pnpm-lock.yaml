@@ -19,8 +19,10 @@ importers:
 
   apps/api:
     specifiers:
+      css-to-tailwind: workspace:*
       fastify: ^4.10.2
     dependencies:
+      css-to-tailwind: link:../../packages/css-to-tailwind
       fastify: 4.10.2
 
   apps/docs:
