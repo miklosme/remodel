@@ -1,0 +1,16 @@
+{
+  "name": "css-to-tailwind",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "vitest": "^0.25.3"
+  }
+}
