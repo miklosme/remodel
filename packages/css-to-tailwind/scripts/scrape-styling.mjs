@@ -1,6 +1,4 @@
 function getAllClassList() {
-  const rules = getRules();
-
   const list = Array.from(document.querySelectorAll('*'))
     .map((el) => {
       return el.classList.length
@@ -9,9 +7,7 @@ function getAllClassList() {
     })
     .filter(Boolean);
 
-  const unique = Array.from(new Set(list));
-
-  // TODO
+  return Array.from(new Set(list));
 }
 
 function getRules() {
