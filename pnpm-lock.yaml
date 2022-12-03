@@ -140,12 +140,14 @@ importers:
     specifiers:
       jest-diff: ^29.3.1
       postcss: ^8.4.14
+      postcss-safe-parser: ^6.0.0
       prettier: ^2.8.0
       tailwindcss: ^3.2.4
       vitest: ^0.25.3
     devDependencies:
       jest-diff: 29.3.1
       postcss: 8.4.19
+      postcss-safe-parser: 6.0.0_postcss@8.4.19
       prettier: 2.8.0
       tailwindcss: 3.2.4_postcss@8.4.19
       vitest: 0.25.3
@@ -4597,6 +4599,18 @@ packages:
     dependencies:
       postcss: 7.0.39
     dev: false
+
+  /postcss-safe-parser/6.0.0_postcss@8.4.19:
+    resolution:
+      {
+        integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==,
+      }
+    engines: { node: '>=12.0' }
+    peerDependencies:
+      postcss: ^8.3.3
+    dependencies:
+      postcss: 8.4.19
+    dev: true
 
   /postcss-selector-parser/6.0.10:
     resolution:
