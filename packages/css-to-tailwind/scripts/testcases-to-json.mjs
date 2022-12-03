@@ -85,21 +85,17 @@ async function mergeClasses(css) {
     .map(([_, data]) => {
       if (data.atrule) {
         return `
-        @${data.atrule.name} ${data.atrule.params} {
-          .single {
-            ${data.declarations
-              .map(([prop, val]) => `  ${prop}: ${val};`)
-              .join('\n')}
-          }
-        }
+@${data.atrule.name} ${data.atrule.params} {
+  .single {
+    ${data.declarations.map(([prop, val]) => `    ${prop}: ${val};`).join('\n')}
+  }
+}
       `;
       } else {
         return `
-        .single {
-          ${data.declarations
-            .map(([prop, val]) => `  ${prop}: ${val};`)
-            .join('\n')}
-        }
+.single {
+  ${data.declarations.map(([prop, val]) => `  ${prop}: ${val};`).join('\n')}
+}
       `;
       }
     })

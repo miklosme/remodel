@@ -1,6 +1,5 @@
 import { assert, expect, test } from 'vitest';
 import cssToTailwind from './';
-import testcases from '../scripts/testcases.json';
 
 expect.extend({
   toMatchTailwindClasses(received, argument) {
@@ -19,10 +18,32 @@ expect.extend({
   },
 });
 
-testcases.forEach((testcase) => {
-  test(`tailwind: "${testcase.classes}"`, async () => {
-    const tailwindResult = await cssToTailwind(testcase.mergedCss);
+test('tailwind: "lg:px-8 max-w-7xl mx-auto px-4 sm:px-6"', async () => {
+  const tailwindResult = await cssToTailwind(`
+.single {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
-    expect(tailwindResult.classes).toMatchTailwindClasses(testcase.classes);
-  });
+@media (min-width: 640px) {
+  .single {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .single {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+`);
+
+  expect(tailwindResult.classes).toMatchTailwindClasses(
+    'lg:px-8 max-w-7xl mx-auto px-4 sm:px-6',
+  );
 });
