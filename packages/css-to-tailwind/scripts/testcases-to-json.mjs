@@ -3,6 +3,8 @@ import postcss from 'postcss';
 import tailwindcss from 'tailwindcss';
 import postcssParse from 'postcss-safe-parser';
 
+let { SINGLE_CASE } = process.env;
+
 function run(input, config) {
   return postcss(tailwindcss(config)).process(input, {
     from: 'tailwind.css',
@@ -106,7 +108,7 @@ async function mergeClasses(css) {
   return mergedCss;
 }
 
-let fileName = process.env.SINGLE_CASE
+let fileName = SINGLE_CASE
   ? './scripts/onecase.txt'
   : './scripts/testcases.txt';
 const cases = (await fs.readFile(fileName, 'utf8')).split('\n');
