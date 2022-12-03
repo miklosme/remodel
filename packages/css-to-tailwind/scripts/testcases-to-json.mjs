@@ -53,12 +53,63 @@ async function mergeClasses(css) {
 
     result.push(data);
   });
-  debugger;
-  return result;
+
+  const mergedCss = Object.entries(
+    result.reduce((acc, curr) => {
+      const { selector, declarations, atrule } = curr;
+
+      // TODO test selector if it's only a single class, and throw if not
+
+      if (atrule) {
+        let key = `@${atrule.name} ${atrule.params}`;
+        acc[key] = acc[key] || {
+          atrule,
+          declarations: [],
+        };
+
+        acc[key].declarations.push(...declarations);
+      } else {
+        acc['null'] = acc['null'] || {
+          atrule: null,
+          declarations: [],
+        };
+
+        acc['null'].declarations.push(...declarations);
+      }
+
+      return acc;
+    }, {}),
+  )
+    .map(([_, data]) => {
+      if (data.atrule) {
+        return `
+        @${data.atrule.name} ${data.atrule.params} {
+          .single {
+            ${data.declarations
+              .map(([prop, val]) => `  ${prop}: ${val};`)
+              .join('\n')}
+          }
+        }
+      `;
+      } else {
+        return `
+        .single {
+          ${data.declarations
+            .map(([prop, val]) => `  ${prop}: ${val};`)
+            .join('\n')}
+        }
+      `;
+      }
+    })
+    .join('\n\n');
+
+  return mergedCss;
 }
 
-// const cases = (await fs.readFile('./scripts/testcases.txt', 'utf8')).split(
-const cases = (await fs.readFile('./scripts/onecase.txt', 'utf8')).split('\n');
+let fileName = process.env.SINGLE_CASE
+  ? './scripts/onecase.txt'
+  : './scripts/testcases.txt';
+const cases = (await fs.readFile(fileName, 'utf8')).split('\n');
 
 const compiler = cases.map(async (classes) => {
   let config = {
