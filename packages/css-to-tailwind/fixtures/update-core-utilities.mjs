@@ -17,7 +17,16 @@ const data = Object.keys(corePlugins)
 
     let utilities = getUtilities(plugin);
 
-    return Object.keys(utilities);
+    return Object.keys(utilities)
+      .map((key) => {
+        if (key[0] !== '.') {
+          throw new Error(`Key "${key}" is not a class`);
+        }
+
+        return key.slice(1);
+      })
+      .map((key) => key.split(' ')[0]) // nested selectors seems like leaking in here
+      .map((key) => key.split('::')[0]); // same with pseudo-classes
   })
   .sort();
 
