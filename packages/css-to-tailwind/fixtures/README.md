@@ -6,8 +6,18 @@ Run `update-core-utilities.mjs` with `bun`. It will overwrite the `core.utilitie
 
 ## Scrape from source files
 
+This script won't run with `Bun v0.2.2`.
+
 ```shell
-bun fixtures/update-scraped-utilities.mjs ../../../tailwindui/tailwindui-salient/src/{pages,components}/**/* > fixtures/salient.utilities.txt
+node fixtures/update-scraped-utilities.mjs ../../../tailwindui/tailwindui-salient/src/{pages,components}/**/* > fixtures/salient.utilities.txt
+```
+
+Running it on multiple projects at once:
+
+```shell
+for NAME in {salient,spotlight,keynote,pocket,primer,syntax,transmit}; do
+  node fixtures/update-scraped-utilities.mjs ../../../tailwindui/tailwindui-$NAME/src/{pages,components}/**/*.jsx > fixtures/$NAME.utilities.txt;
+done
 ```
 
 ## Scrape classes from a website
