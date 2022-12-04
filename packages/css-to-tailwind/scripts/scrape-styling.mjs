@@ -7,7 +7,7 @@ function getAllClassList() {
     })
     .filter(Boolean);
 
-  return Array.from(new Set(list));
+  return Array.from(new Set(list)).sort();
 }
 
 function getRules() {
