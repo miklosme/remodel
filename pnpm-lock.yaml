@@ -138,6 +138,7 @@ importers:
 
   packages/css-to-tailwind:
     specifiers:
+      dlv: ^1.1.3
       jest-diff: ^29.3.1
       postcss: ^8.4.14
       postcss-safe-parser: ^6.0.0
@@ -145,6 +146,7 @@ importers:
       tailwindcss: ^3.2.4
       vitest: ^0.25.3
     devDependencies:
+      dlv: 1.1.3
       jest-diff: 29.3.1
       postcss: 8.4.19
       postcss-safe-parser: 6.0.0_postcss@8.4.19
