@@ -1,0 +1,56 @@
+flex
+ml-3
+w-full
+ml-2.5
+lg:px-8
+relative
+h-2.5 w-2.5
+lg:max-w-4xl
+fill-pink-300
+fill-blue-300
+text-slate-400
+mt-10 lg:mt-12
+py-10 sm:py-12
+fill-violet-300
+fill-indigo-300
+mt-12 hidden lg:block
+group flex items-center
+hidden sm:ml-3 sm:block
+font-mono text-slate-500
+h-2.5 w-2.5 fill-current
+flex flex-col items-start
+h-3 w-auto fill-slate-300
+pt-16 pb-12 sm:pb-4 lg:pt-12
+mt-4 flex items-center gap-4
+text-xl font-bold text-slate-900
+text-sm font-bold text-slate-400
+absolute left-0 top-0 h-20 w-full
+bg-white antialiased js-focus-visible
+mt-2 text-lg font-bold text-slate-900
+mt-10 text-center lg:mt-12 lg:text-left
+mt-1 text-base leading-7 text-slate-700
+mt-6 flex gap-6 font-bold text-slate-900
+mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4
+text-2xl font-bold leading-7 text-slate-900
+mt-3 text-lg font-medium leading-8 text-slate-700
+h-8 w-8 fill-slate-400 group-hover:fill-slate-600
+mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0
+fixed inset-x-0 bottom-0 z-10 lg:left-112 xl:left-120
+order-first font-mono text-sm leading-7 text-slate-500
+mt-2 text-base leading-7 text-slate-700 lg:line-clamp-4
+mt-2 flex gap-6 text-sm font-bold leading-7 text-slate-900
+flex items-center font-mono text-sm font-medium leading-7 text-slate-900
+divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-100
+h-px bg-gradient-to-r from-slate-200/0 via-slate-200 to-slate-200/0 lg:hidden
+border-t border-slate-200 bg-slate-50 py-10 pb-40 sm:py-16 sm:pb-32 lg:hidden
+mt-8 flex items-center font-mono text-sm font-medium leading-7 text-slate-900
+border-t border-slate-200 lg:relative lg:mb-28 lg:ml-112 lg:border-t-0 xl:ml-120
+absolute inset-0 rounded-lg ring-1 ring-inset ring-black/10 sm:rounded-xl lg:rounded-2xl
+sr-only flex items-center font-mono text-sm font-medium leading-7 text-slate-900 lg:not-sr-only
+flex items-center text-sm font-bold leading-6 text-pink-500 hover:text-pink-700 active:text-pink-900
+bg-slate-50 lg:fixed lg:inset-y-0 lg:left-0 lg:flex lg:w-112 lg:items-start lg:overflow-y-auto xl:w-120
+mt-4 flex justify-center gap-10 text-base font-medium leading-7 text-slate-700 sm:gap-8 lg:flex-col lg:gap-4
+mt-2 hidden text-sm font-bold leading-6 text-pink-500 hover:text-pink-700 active:text-pink-900 lg:inline-block
+relative mx-auto block w-48 overflow-hidden rounded-lg bg-slate-200 shadow-xl shadow-slate-200 sm:w-64 sm:rounded-xl lg:w-auto lg:rounded-2xl
+relative z-10 mx-auto px-4 pb-4 pt-10 sm:px-6 md:max-w-2xl md:px-4 lg:min-h-full lg:flex-auto lg:border-x lg:border-slate-200 lg:py-12 lg:px-8 xl:px-12
+hidden lg:sticky lg:top-0 lg:flex lg:w-16 lg:flex-none lg:items-center lg:whitespace-nowrap lg:py-12 lg:text-sm lg:leading-7 lg:[writing-mode:vertical-rl]

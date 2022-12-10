@@ -1,0 +1,85 @@
+py-16
+sr-only
+h-6 w-6
+relative
+sm:hidden
+lg:col-span-3
+py-20 sm:py-32
+relative lg:pl-8
+absolute inset-0
+sr-only sm:not-sr-only
+relative mt-14 sm:mt-24
+mx-auto max-w-2xl lg:mx-0
+h-12 w-auto text-slate-900
+relative z-50 pb-11 lg:pt-11
+relative pt-10 pb-20 sm:py-24
+absolute inset-0 bg-indigo-50
+font-mono text-sm text-blue-600
+mt-10 lg:mt-0 lg:grow lg:basis-0
+font-mono text-sm text-slate-500
+flex items-center justify-center
+mt-1 tracking-tight text-blue-900
+mx-auto flex items-center gap-4 px-4
+bg-white antialiased js-focus-visible
+mt-1 font-mono text-sm text-slate-500
+mt-6 text-base text-slate-500 md:mt-0
+mx-auto max-w-7xl px-4 sm:px-6 lg:px-8
+mx-auto max-w-2xl lg:max-w-4xl lg:px-12
+mx-auto mb-8 h-px w-48 bg-indigo-500/10
+hidden lg:grid lg:grid-cols-3 lg:gap-x-8
+mt-4 text-lg tracking-tight text-blue-900
+[&:not(:focus-visible)]:focus:outline-none
+mt-1 text-base tracking-tight text-slate-500
+mt-1.5 text-base tracking-tight text-blue-900
+mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative
+mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24
+relative w-3/4 flex-none pr-4 sm:w-auto sm:pr-0
+text-lg font-semibold tracking-tight text-blue-900
+text-2xl font-semibold tracking-tight text-blue-900
+mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10
+mt-4 font-display text-2xl tracking-tight text-blue-900
+h-1.5 w-1.5 overflow-visible fill-current stroke-current
+absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white
+mt-0.5 text-2xl font-semibold tracking-tight text-blue-900
+relative w-3/4 flex-none pr-4 sm:w-auto sm:pr-0 opacity-70
+absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white
+mt-1.5 block text-2xl font-semibold tracking-tight text-blue-900
+group relative h-[17.5rem] transform overflow-hidden rounded-4xl
+hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end
+mt-6 space-y-6 font-display text-2xl tracking-tight text-blue-900
+mt-8 font-display text-xl font-bold tracking-tight text-slate-900
+absolute inset-x-0 -top-48 -bottom-14 overflow-hidden bg-indigo-50
+absolute bottom-0 top-2 left-0.5 hidden w-px bg-slate-200 lg:block
+absolute inset-x-0 -top-40 -bottom-32 overflow-hidden bg-indigo-50
+mx-auto grid max-w-2xl grid-cols-1 gap-y-6 sm:grid-cols-2 lg:hidden
+font-display text-5xl font-bold tracking-tighter text-blue-600 sm:text-7xl
+font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl
+font-display text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl
+absolute left-1/2 top-0 translate-x-[-10%] translate-y-[-45%] lg:translate-x-[-32%]
+relative -mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:block sm:overflow-visible sm:pb-0
+space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-blue-900/5 backdrop-blur
+absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110
+relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2
+mt-10 space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-blue-900/5 backdrop-blur
+mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-between md:flex-row
+mt-14 grid grid-cols-1 items-start gap-y-8 gap-x-8 sm:mt-16 sm:gap-y-16 lg:mt-24 lg:grid-cols-4
+-mx-4 flex gap-x-4 gap-y-10 overflow-x-auto pl-4 pb-4 sm:mx-0 sm:flex-col sm:pb-0 sm:pl-0 sm:pr-8
+mx-auto max-w-2xl text-center font-display text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl
+absolute top-[0.5625rem] left-[-0.5px] hidden h-1.5 w-1.5 overflow-visible lg:block fill-blue-600 stroke-blue-600
+mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-center sm:justify-between lg:flex-nowrap
+-my-2.5 flex-auto bg-transparent pl-6 pr-2.5 text-base text-slate-900 placeholder:text-slate-400 focus:outline-none
+absolute top-[0.5625rem] left-[-0.5px] hidden h-1.5 w-1.5 overflow-visible lg:block fill-transparent stroke-slate-400
+grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3 [&:not(:focus-visible)]:focus:outline-none
+mx-auto mt-20 grid max-w-max grid-cols-1 place-content-center gap-y-12 gap-x-32 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32
+mt-5 flex rounded-3xl bg-white py-2.5 pr-2.5 shadow-xl shadow-blue-900/5 focus-within:ring-2 focus-within:ring-blue-900
+relative -mx-4 overflow-hidden bg-indigo-50 py-20 px-4 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36
+absolute top-0 left-0 right-4 bottom-6 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6 border-sky-300
+absolute top-0 left-0 right-4 bottom-6 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6 border-blue-300
+absolute top-0 left-0 right-4 bottom-6 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6 border-indigo-300
+mt-10 grid grid-cols-2 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left
+absolute top-0 left-0 translate-y-[-10%] translate-x-[-55%] -scale-x-100 sm:left-1/2 sm:translate-y-[-6%] sm:translate-x-[-98%] lg:translate-x-[-106%] xl:translate-x-[-122%]
+grid auto-cols-auto grid-flow-col justify-start gap-x-8 gap-y-10 whitespace-nowrap px-4 sm:mx-auto sm:max-w-2xl sm:grid-cols-3 sm:px-0 sm:text-center lg:grid-flow-row lg:grid-cols-1 lg:text-left
+absolute left-full top-0 -translate-x-1/2 sm:left-1/2 sm:translate-y-[-15%] sm:translate-x-[-20%] md:translate-x-0 lg:translate-x-[5%] lg:translate-y-[4%] xl:translate-y-[-8%] xl:translate-x-[27%]
+order-first -mx-4 flex flex-auto basis-full overflow-x-auto whitespace-nowrap border-b border-blue-600/10 py-4 font-mono text-sm text-blue-600 sm:-mx-6 lg:order-none lg:mx-0 lg:basis-auto lg:border-0 lg:py-0
+inline-flex justify-center rounded-2xl bg-blue-600 p-4 text-base font-semibold text-white hover:bg-blue-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 active:text-white/70
+inline-flex justify-center rounded-2xl bg-blue-600 p-4 text-base font-semibold text-white hover:bg-blue-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 active:text-white/70 mt-10 w-full sm:hidden
