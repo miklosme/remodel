@@ -1,0 +1,1138 @@
+[
+  {
+    "utility": "-bottom-px",
+    "css": ".-bottom-px {\n  bottom: -1px;\n}\n"
+  },
+  {
+    "utility": "-inset-x-4",
+    "css": ".-inset-x-4 {\n  left: -1rem;\n  right: -1rem;\n}\n"
+  },
+  {
+    "utility": "-inset-y-6",
+    "css": ".-inset-y-6 {\n  top: -1.5rem;\n  bottom: -1.5rem;\n}\n"
+  },
+  {
+    "utility": "-m-1",
+    "css": ".-m-1 {\n  margin: -0.25rem;\n}\n"
+  },
+  {
+    "utility": "-mb-3",
+    "css": ".-mb-3 {\n  margin-bottom: -0.75rem;\n}\n"
+  },
+  {
+    "utility": "-my-2",
+    "css": ".-my-2 {\n  margin-top: -0.5rem;\n  margin-bottom: -0.5rem;\n}\n"
+  },
+  {
+    "utility": "-my-4",
+    "css": ".-my-4 {\n  margin-top: -1rem;\n  margin-bottom: -1rem;\n}\n"
+  },
+  {
+    "utility": "[@media(prefers-color-scheme:dark)]:fill-teal-50",
+    "css": "@media (prefers-color-scheme: dark) {\n  .\\[\\@media\\(prefers-color-scheme\\:dark\\)\\]\\:fill-teal-50 {\n    fill: #f0fdfa;\n  }\n}\n"
+  },
+  {
+    "utility": "[@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50",
+    "css": "@media (prefers-color-scheme: dark) {\n  .group:hover .\\[\\@media\\(prefers-color-scheme\\:dark\\)\\]\\:group-hover\\:fill-teal-50 {\n    fill: #f0fdfa;\n  }\n}\n"
+  },
+  {
+    "utility": "[@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600",
+    "css": "@media (prefers-color-scheme: dark) {\n  .group:hover .\\[\\@media\\(prefers-color-scheme\\:dark\\)\\]\\:group-hover\\:stroke-teal-600 {\n    stroke: #0d9488;\n  }\n}\n"
+  },
+  {
+    "utility": "[@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400",
+    "css": "@media (prefers-color-scheme: dark) {\n  .group:hover .\\[\\@media\\(prefers-color-scheme\\:dark\\)\\]\\:group-hover\\:stroke-zinc-400 {\n    stroke: #a1a1aa;\n  }\n}\n"
+  },
+  {
+    "utility": "[@media(prefers-color-scheme:dark)]:stroke-teal-500",
+    "css": "@media (prefers-color-scheme: dark) {\n  .\\[\\@media\\(prefers-color-scheme\\:dark\\)\\]\\:stroke-teal-500 {\n    stroke: #14b8a6;\n  }\n}\n"
+  },
+  {
+    "utility": "[@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10",
+    "css": "@media not (prefers-color-scheme: dark) {\n  .\\[\\@media_not_\\(prefers-color-scheme\\:dark\\)\\]\\:fill-teal-400\\/10 {\n    fill: rgb(45 212 191 / 0.1);\n  }\n}\n"
+  },
+  {
+    "utility": "[@media_not_(prefers-color-scheme:dark)]:stroke-teal-500",
+    "css": "@media not (prefers-color-scheme: dark) {\n  .\\[\\@media_not_\\(prefers-color-scheme\\:dark\\)\\]\\:stroke-teal-500 {\n    stroke: #14b8a6;\n  }\n}\n"
+  },
+  {
+    "utility": "absolute",
+    "css": ".absolute {\n  position: absolute;\n}\n"
+  },
+  {
+    "utility": "antialiased",
+    "css": ".antialiased {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n"
+  },
+  {
+    "utility": "appearance-none",
+    "css": ".appearance-none {\n  appearance: none;\n}\n"
+  },
+  {
+    "utility": "aspect-square",
+    "css": ".aspect-square {\n  aspect-ratio: 1 / 1;\n}\n"
+  },
+  {
+    "utility": "backdrop-blur",
+    "css": ".backdrop-blur {\n  --tw-backdrop-blur: blur(8px);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n"
+  },
+  {
+    "utility": "backdrop-blur-sm",
+    "css": ".backdrop-blur-sm {\n  --tw-backdrop-blur: blur(4px);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n"
+  },
+  {
+    "utility": "bg-gradient-to-r",
+    "css": ".bg-gradient-to-r {\n  background-image: linear-gradient(to right, var(--tw-gradient-stops));\n}\n"
+  },
+  {
+    "utility": "bg-white",
+    "css": ".bg-white {\n  --tw-bg-opacity: 1;\n  background-color: rgb(255 255 255 / var(--tw-bg-opacity));\n}\n"
+  },
+  {
+    "utility": "bg-white/90",
+    "css": ".bg-white\\/90 {\n  background-color: rgb(255 255 255 / 0.9);\n}\n"
+  },
+  {
+    "utility": "bg-zinc-100",
+    "css": ".bg-zinc-100 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(244 244 245 / var(--tw-bg-opacity));\n}\n"
+  },
+  {
+    "utility": "bg-zinc-200",
+    "css": ".bg-zinc-200 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(228 228 231 / var(--tw-bg-opacity));\n}\n"
+  },
+  {
+    "utility": "bg-zinc-50",
+    "css": ".bg-zinc-50 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(250 250 250 / var(--tw-bg-opacity));\n}\n"
+  },
+  {
+    "utility": "bg-zinc-800/40",
+    "css": ".bg-zinc-800\\/40 {\n  background-color: rgb(39 39 42 / 0.4);\n}\n"
+  },
+  {
+    "utility": "block",
+    "css": ".block {\n  display: block;\n}\n"
+  },
+  {
+    "utility": "border",
+    "css": ".border {\n  border-width: 1px;\n}\n"
+  },
+  {
+    "utility": "border-t",
+    "css": ".border-t {\n  border-top-width: 1px;\n}\n"
+  },
+  {
+    "utility": "border-zinc-100",
+    "css": ".border-zinc-100 {\n  --tw-border-opacity: 1;\n  border-color: rgb(244 244 245 / var(--tw-border-opacity));\n}\n"
+  },
+  {
+    "utility": "border-zinc-900/10",
+    "css": ".border-zinc-900\\/10 {\n  border-color: rgb(24 24 27 / 0.1);\n}\n"
+  },
+  {
+    "utility": "dark:bg-black",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:bg-black {\n    --tw-bg-opacity: 1;\n    background-color: rgb(0 0 0 / var(--tw-bg-opacity));\n  }\n}\n"
+  },
+  {
+    "utility": "dark:bg-black/80",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:bg-black\\/80 {\n    background-color: rgb(0 0 0 / 0.8);\n  }\n}\n"
+  },
+  {
+    "utility": "dark:bg-zinc-500",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:bg-zinc-500 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(113 113 122 / var(--tw-bg-opacity));\n  }\n}\n"
+  },
+  {
+    "utility": "dark:bg-zinc-700/[0.15]",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:bg-zinc-700\\/\\[0\\.15\\] {\n    background-color: rgb(63 63 70 / 0.15);\n  }\n}\n"
+  },
+  {
+    "utility": "dark:bg-zinc-800",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:bg-zinc-800 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(39 39 42 / var(--tw-bg-opacity));\n  }\n}\n"
+  },
+  {
+    "utility": "dark:bg-zinc-800/50",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:bg-zinc-800\\/50 {\n    background-color: rgb(39 39 42 / 0.5);\n  }\n}\n"
+  },
+  {
+    "utility": "dark:bg-zinc-800/90",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:bg-zinc-800\\/90 {\n    background-color: rgb(39 39 42 / 0.9);\n  }\n}\n"
+  },
+  {
+    "utility": "dark:bg-zinc-900",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:bg-zinc-900 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(24 24 27 / var(--tw-bg-opacity));\n  }\n}\n"
+  },
+  {
+    "utility": "dark:block",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:block {\n    display: block;\n  }\n}\n"
+  },
+  {
+    "utility": "dark:border",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:border {\n    border-width: 1px;\n  }\n}\n"
+  },
+  {
+    "utility": "dark:border-zinc-700",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:border-zinc-700 {\n    --tw-border-opacity: 1;\n    border-color: rgb(63 63 70 / var(--tw-border-opacity));\n  }\n}\n"
+  },
+  {
+    "utility": "dark:border-zinc-700/40",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:border-zinc-700\\/40 {\n    border-color: rgb(63 63 70 / 0.4);\n  }\n}\n"
+  },
+  {
+    "utility": "dark:border-zinc-700/50",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:border-zinc-700\\/50 {\n    border-color: rgb(63 63 70 / 0.5);\n  }\n}\n"
+  },
+  {
+    "utility": "dark:divide-zinc-100/5",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:divide-zinc-100\\/5 > :not([hidden]) ~ :not([hidden]) {\n    border-color: rgb(244 244 245 / 0.05);\n  }\n}\n"
+  },
+  {
+    "utility": "dark:fill-zinc-100/10",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:fill-zinc-100\\/10 {\n    fill: rgb(244 244 245 / 0.1);\n  }\n}\n"
+  },
+  {
+    "utility": "dark:fill-zinc-400",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:fill-zinc-400 {\n    fill: #a1a1aa;\n  }\n}\n"
+  },
+  {
+    "utility": "dark:focus:border-teal-400",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:focus\\:border-teal-400:focus {\n    --tw-border-opacity: 1;\n    border-color: rgb(45 212 191 / var(--tw-border-opacity));\n  }\n}\n"
+  },
+  {
+    "utility": "dark:focus:ring-teal-400/10",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:focus\\:ring-teal-400\\/10:focus {\n    --tw-ring-color: rgb(45 212 191 / 0.1);\n  }\n}\n"
+  },
+  {
+    "utility": "dark:from-teal-400/0",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:from-teal-400\\/0 {\n    --tw-gradient-from: rgb(45 212 191 / 0);\n    --tw-gradient-to: rgb(45 212 191 / 0);\n    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);\n  }\n}\n"
+  },
+  {
+    "utility": "dark:group-active:stroke-zinc-50",
+    "css": "@media (prefers-color-scheme: dark) {\n  .group:active .dark\\:group-active\\:stroke-zinc-50 {\n    stroke: #fafafa;\n  }\n}\n"
+  },
+  {
+    "utility": "dark:group-hover:fill-zinc-300",
+    "css": "@media (prefers-color-scheme: dark) {\n  .group:hover .dark\\:group-hover\\:fill-zinc-300 {\n    fill: #d4d4d8;\n  }\n}\n"
+  },
+  {
+    "utility": "dark:group-hover:stroke-zinc-400",
+    "css": "@media (prefers-color-scheme: dark) {\n  .group:hover .dark\\:group-hover\\:stroke-zinc-400 {\n    stroke: #a1a1aa;\n  }\n}\n"
+  },
+  {
+    "utility": "dark:group-hover:stroke-zinc-50",
+    "css": "@media (prefers-color-scheme: dark) {\n  .group:hover .dark\\:group-hover\\:stroke-zinc-50 {\n    stroke: #fafafa;\n  }\n}\n"
+  },
+  {
+    "utility": "dark:hidden",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:hidden {\n    display: none;\n  }\n}\n"
+  },
+  {
+    "utility": "dark:hover:border-zinc-700",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:hover\\:border-zinc-700:hover {\n    --tw-border-opacity: 1;\n    border-color: rgb(63 63 70 / var(--tw-border-opacity));\n  }\n}\n"
+  },
+  {
+    "utility": "dark:hover:ring-white/20",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:hover\\:ring-white\\/20:hover {\n    --tw-ring-color: rgb(255 255 255 / 0.2);\n  }\n}\n"
+  },
+  {
+    "utility": "dark:hover:text-teal-400",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:hover\\:text-teal-400:hover {\n    --tw-text-opacity: 1;\n    color: rgb(45 212 191 / var(--tw-text-opacity));\n  }\n}\n"
+  },
+  {
+    "utility": "dark:hover:text-teal-500",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:hover\\:text-teal-500:hover {\n    --tw-text-opacity: 1;\n    color: rgb(20 184 166 / var(--tw-text-opacity));\n  }\n}\n"
+  },
+  {
+    "utility": "dark:placeholder:text-zinc-500",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:placeholder\\:text-zinc-500::placeholder {\n    --tw-text-opacity: 1;\n    color: rgb(113 113 122 / var(--tw-text-opacity));\n  }\n}\n"
+  },
+  {
+    "utility": "dark:ring-0",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:ring-0 {\n    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width)\n      var(--tw-ring-offset-color);\n    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width))\n      var(--tw-ring-color);\n    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n  }\n}\n"
+  },
+  {
+    "utility": "dark:ring-white/10",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:ring-white\\/10 {\n    --tw-ring-color: rgb(255 255 255 / 0.1);\n  }\n}\n"
+  },
+  {
+    "utility": "dark:ring-zinc-300/20",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:ring-zinc-300\\/20 {\n    --tw-ring-color: rgb(212 212 216 / 0.2);\n  }\n}\n"
+  },
+  {
+    "utility": "dark:ring-zinc-800",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:ring-zinc-800 {\n    --tw-ring-opacity: 1;\n    --tw-ring-color: rgb(39 39 42 / var(--tw-ring-opacity));\n  }\n}\n"
+  },
+  {
+    "utility": "dark:stroke-zinc-500",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:stroke-zinc-500 {\n    stroke: #71717a;\n  }\n}\n"
+  },
+  {
+    "utility": "dark:text-zinc-100",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:text-zinc-100 {\n    --tw-text-opacity: 1;\n    color: rgb(244 244 245 / var(--tw-text-opacity));\n  }\n}\n"
+  },
+  {
+    "utility": "dark:text-zinc-200",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:text-zinc-200 {\n    --tw-text-opacity: 1;\n    color: rgb(228 228 231 / var(--tw-text-opacity));\n  }\n}\n"
+  },
+  {
+    "utility": "dark:text-zinc-300",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:text-zinc-300 {\n    --tw-text-opacity: 1;\n    color: rgb(212 212 216 / var(--tw-text-opacity));\n  }\n}\n"
+  },
+  {
+    "utility": "dark:text-zinc-400",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:text-zinc-400 {\n    --tw-text-opacity: 1;\n    color: rgb(161 161 170 / var(--tw-text-opacity));\n  }\n}\n"
+  },
+  {
+    "utility": "dark:text-zinc-500",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:text-zinc-500 {\n    --tw-text-opacity: 1;\n    color: rgb(113 113 122 / var(--tw-text-opacity));\n  }\n}\n"
+  },
+  {
+    "utility": "dark:to-teal-400/0",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:to-teal-400\\/0 {\n    --tw-gradient-to: rgb(45 212 191 / 0);\n  }\n}\n"
+  },
+  {
+    "utility": "dark:via-teal-400/40",
+    "css": "@media (prefers-color-scheme: dark) {\n  .dark\\:via-teal-400\\/40 {\n    --tw-gradient-to: rgb(45 212 191 / 0);\n    --tw-gradient-stops: var(--tw-gradient-from), rgb(45 212 191 / 0.4), var(--tw-gradient-to);\n  }\n}\n"
+  },
+  {
+    "utility": "divide-y",
+    "css": ".divide-y > :not([hidden]) ~ :not([hidden]) {\n  --tw-divide-y-reverse: 0;\n  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));\n  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));\n}\n"
+  },
+  {
+    "utility": "divide-zinc-100",
+    "css": ".divide-zinc-100 > :not([hidden]) ~ :not([hidden]) {\n  --tw-divide-opacity: 1;\n  border-color: rgb(244 244 245 / var(--tw-divide-opacity));\n}\n"
+  },
+  {
+    "utility": "fill-zinc-100",
+    "css": ".fill-zinc-100 {\n  fill: #f4f4f5;\n}\n"
+  },
+  {
+    "utility": "fill-zinc-500",
+    "css": ".fill-zinc-500 {\n  fill: #71717a;\n}\n"
+  },
+  {
+    "utility": "fill-zinc-700",
+    "css": ".fill-zinc-700 {\n  fill: #3f3f46;\n}\n"
+  },
+  {
+    "utility": "fixed",
+    "css": ".fixed {\n  position: fixed;\n}\n"
+  },
+  {
+    "utility": "flex",
+    "css": ".flex {\n  display: flex;\n}\n"
+  },
+  {
+    "utility": "flex-1",
+    "css": ".flex-1 {\n  flex: 1 1 0%;\n}\n"
+  },
+  {
+    "utility": "flex-auto",
+    "css": ".flex-auto {\n  flex: 1 1 auto;\n}\n"
+  },
+  {
+    "utility": "flex-col",
+    "css": ".flex-col {\n  flex-direction: column;\n}\n"
+  },
+  {
+    "utility": "flex-none",
+    "css": ".flex-none {\n  flex: none;\n}\n"
+  },
+  {
+    "utility": "flex-row-reverse",
+    "css": ".flex-row-reverse {\n  flex-direction: row-reverse;\n}\n"
+  },
+  {
+    "utility": "flex-wrap",
+    "css": ".flex-wrap {\n  flex-wrap: wrap;\n}\n"
+  },
+  {
+    "utility": "focus:border-teal-500",
+    "css": ".focus\\:border-teal-500:focus {\n  --tw-border-opacity: 1;\n  border-color: rgb(20 184 166 / var(--tw-border-opacity));\n}\n"
+  },
+  {
+    "utility": "focus:outline-none",
+    "css": ".focus\\:outline-none:focus {\n  outline: 2px solid transparent;\n  outline-offset: 2px;\n}\n"
+  },
+  {
+    "utility": "focus:ring-4",
+    "css": ".focus\\:ring-4:focus {\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width)\n    var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width))\n    var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n"
+  },
+  {
+    "utility": "focus:ring-teal-500/10",
+    "css": ".focus\\:ring-teal-500\\/10:focus {\n  --tw-ring-color: rgb(20 184 166 / 0.1);\n}\n"
+  },
+  {
+    "utility": "font-bold",
+    "css": ".font-bold {\n  font-weight: 700;\n}\n"
+  },
+  {
+    "utility": "font-medium",
+    "css": ".font-medium {\n  font-weight: 500;\n}\n"
+  },
+  {
+    "utility": "font-semibold",
+    "css": ".font-semibold {\n  font-weight: 600;\n}\n"
+  },
+  {
+    "utility": "from-teal-500/0",
+    "css": ".from-teal-500\\/0 {\n  --tw-gradient-from: rgb(20 184 166 / 0);\n  --tw-gradient-to: rgb(20 184 166 / 0);\n  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);\n}\n"
+  },
+  {
+    "utility": "gap-16",
+    "css": ".gap-16 {\n  gap: 4rem;\n}\n"
+  },
+  {
+    "utility": "gap-4",
+    "css": ".gap-4 {\n  gap: 1rem;\n}\n"
+  },
+  {
+    "utility": "gap-5",
+    "css": ".gap-5 {\n  gap: 1.25rem;\n}\n"
+  },
+  {
+    "utility": "gap-6",
+    "css": ".gap-6 {\n  gap: 1.5rem;\n}\n"
+  },
+  {
+    "utility": "gap-x-12",
+    "css": ".gap-x-12 {\n  column-gap: 3rem;\n}\n"
+  },
+  {
+    "utility": "gap-x-2",
+    "css": ".gap-x-2 {\n  column-gap: 0.5rem;\n}\n"
+  },
+  {
+    "utility": "gap-y-16",
+    "css": ".gap-y-16 {\n  row-gap: 4rem;\n}\n"
+  },
+  {
+    "utility": "gap-y-20",
+    "css": ".gap-y-20 {\n  row-gap: 5rem;\n}\n"
+  },
+  {
+    "utility": "gap-y-8",
+    "css": ".gap-y-8 {\n  row-gap: 2rem;\n}\n"
+  },
+  {
+    "utility": "grid",
+    "css": ".grid {\n  display: grid;\n}\n"
+  },
+  {
+    "utility": "grid-cols-1",
+    "css": ".grid-cols-1 {\n  grid-template-columns: repeat(1, minmax(0, 1fr));\n}\n"
+  },
+  {
+    "utility": "group",
+    "css": ""
+  },
+  {
+    "utility": "group-active:stroke-zinc-600",
+    "css": ".group:active .group-active\\:stroke-zinc-600 {\n  stroke: #52525b;\n}\n"
+  },
+  {
+    "utility": "group-hover:fill-teal-500",
+    "css": ".group:hover .group-hover\\:fill-teal-500 {\n  fill: #14b8a6;\n}\n"
+  },
+  {
+    "utility": "group-hover:fill-zinc-200",
+    "css": ".group:hover .group-hover\\:fill-zinc-200 {\n  fill: #e4e4e7;\n}\n"
+  },
+  {
+    "utility": "group-hover:fill-zinc-600",
+    "css": ".group:hover .group-hover\\:fill-zinc-600 {\n  fill: #52525b;\n}\n"
+  },
+  {
+    "utility": "group-hover:opacity-100",
+    "css": ".group:hover .group-hover\\:opacity-100 {\n  opacity: 1;\n}\n"
+  },
+  {
+    "utility": "group-hover:scale-100",
+    "css": ".group:hover .group-hover\\:scale-100 {\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n"
+  },
+  {
+    "utility": "group-hover:stroke-zinc-700",
+    "css": ".group:hover .group-hover\\:stroke-zinc-700 {\n  stroke: #3f3f46;\n}\n"
+  },
+  {
+    "utility": "group-hover:text-teal-500",
+    "css": ".group:hover .group-hover\\:text-teal-500 {\n  --tw-text-opacity: 1;\n  color: rgb(20 184 166 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "utility": "h-10",
+    "css": ".h-10 {\n  height: 2.5rem;\n}\n"
+  },
+  {
+    "utility": "h-12",
+    "css": ".h-12 {\n  height: 3rem;\n}\n"
+  },
+  {
+    "utility": "h-16",
+    "css": ".h-16 {\n  height: 4rem;\n}\n"
+  },
+  {
+    "utility": "h-4",
+    "css": ".h-4 {\n  height: 1rem;\n}\n"
+  },
+  {
+    "utility": "h-6",
+    "css": ".h-6 {\n  height: 1.5rem;\n}\n"
+  },
+  {
+    "utility": "h-7",
+    "css": ".h-7 {\n  height: 1.75rem;\n}\n"
+  },
+  {
+    "utility": "h-8",
+    "css": ".h-8 {\n  height: 2rem;\n}\n"
+  },
+  {
+    "utility": "h-auto",
+    "css": ".h-auto {\n  height: auto;\n}\n"
+  },
+  {
+    "utility": "h-full",
+    "css": ".h-full {\n  height: 100%;\n}\n"
+  },
+  {
+    "utility": "h-px",
+    "css": ".h-px {\n  height: 1px;\n}\n"
+  },
+  {
+    "utility": "hidden",
+    "css": ".hidden {\n  display: none;\n}\n"
+  },
+  {
+    "utility": "hover:text-teal-500",
+    "css": ".hover\\:text-teal-500:hover {\n  --tw-text-opacity: 1;\n  color: rgb(20 184 166 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "utility": "inset-0",
+    "css": ".inset-0 {\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n"
+  },
+  {
+    "utility": "inset-x-1",
+    "css": ".inset-x-1 {\n  left: 0.25rem;\n  right: 0.25rem;\n}\n"
+  },
+  {
+    "utility": "inset-x-4",
+    "css": ".inset-x-4 {\n  left: 1rem;\n  right: 1rem;\n}\n"
+  },
+  {
+    "utility": "inset-y-0",
+    "css": ".inset-y-0 {\n  top: 0px;\n  bottom: 0px;\n}\n"
+  },
+  {
+    "utility": "items-baseline",
+    "css": ".items-baseline {\n  align-items: baseline;\n}\n"
+  },
+  {
+    "utility": "items-center",
+    "css": ".items-center {\n  align-items: center;\n}\n"
+  },
+  {
+    "utility": "justify-between",
+    "css": ".justify-between {\n  justify-content: space-between;\n}\n"
+  },
+  {
+    "utility": "justify-center",
+    "css": ".justify-center {\n  justify-content: center;\n}\n"
+  },
+  {
+    "utility": "justify-end",
+    "css": ".justify-end {\n  justify-content: flex-end;\n}\n"
+  },
+  {
+    "utility": "left-0",
+    "css": ".left-0 {\n  left: 0px;\n}\n"
+  },
+  {
+    "utility": "lg:-left-5",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:-left-5 {\n    left: -1.25rem;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:-mt-2",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:-mt-2 {\n    margin-top: -0.5rem;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:absolute",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:absolute {\n    position: absolute;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:gap-y-12",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:gap-y-12 {\n    row-gap: 3rem;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:grid-cols-2",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:grid-cols-2 {\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n}\n"
+  },
+  {
+    "utility": "lg:grid-cols-3",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:grid-cols-3 {\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n}\n"
+  },
+  {
+    "utility": "lg:grid-rows-[auto_1fr]",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:grid-rows-\\[auto_1fr\\] {\n    grid-template-rows: auto 1fr;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:max-w-5xl",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:max-w-5xl {\n    max-width: 64rem;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:max-w-none",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:max-w-none {\n    max-width: none;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:mb-0",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:mb-0 {\n    margin-bottom: 0px;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:mt-32",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:mt-32 {\n    margin-top: 8rem;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:order-first",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:order-first {\n    order: -9999;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:pl-16",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:pl-16 {\n    padding-left: 4rem;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:pl-20",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:pl-20 {\n    padding-left: 5rem;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:px-8",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:px-8 {\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:row-span-2",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:row-span-2 {\n    grid-row: span 2 / span 2;\n  }\n}\n"
+  },
+  {
+    "utility": "max-w-2xl",
+    "css": ".max-w-2xl {\n  max-width: 42rem;\n}\n"
+  },
+  {
+    "utility": "max-w-3xl",
+    "css": ".max-w-3xl {\n  max-width: 48rem;\n}\n"
+  },
+  {
+    "utility": "max-w-7xl",
+    "css": ".max-w-7xl {\n  max-width: 80rem;\n}\n"
+  },
+  {
+    "utility": "max-w-xl",
+    "css": ".max-w-xl {\n  max-width: 36rem;\n}\n"
+  },
+  {
+    "utility": "max-w-xs",
+    "css": ".max-w-xs {\n  max-width: 20rem;\n}\n"
+  },
+  {
+    "utility": "mb-8",
+    "css": ".mb-8 {\n  margin-bottom: 2rem;\n}\n"
+  },
+  {
+    "utility": "md:block",
+    "css": "@media (min-width: 768px) {\n  .md\\:block {\n    display: block;\n  }\n}\n"
+  },
+  {
+    "utility": "md:border-l",
+    "css": "@media (min-width: 768px) {\n  .md\\:border-l {\n    border-left-width: 1px;\n  }\n}\n"
+  },
+  {
+    "utility": "md:border-zinc-100",
+    "css": "@media (min-width: 768px) {\n  .md\\:border-zinc-100 {\n    --tw-border-opacity: 1;\n    border-color: rgb(244 244 245 / var(--tw-border-opacity));\n  }\n}\n"
+  },
+  {
+    "utility": "md:col-span-3",
+    "css": "@media (min-width: 768px) {\n  .md\\:col-span-3 {\n    grid-column: span 3 / span 3;\n  }\n}\n"
+  },
+  {
+    "utility": "md:dark:border-zinc-700/40",
+    "css": "@media (min-width: 768px) {\n  @media (prefers-color-scheme: dark) {\n    .md\\:dark\\:border-zinc-700\\/40 {\n      border-color: rgb(63 63 70 / 0.4);\n    }\n  }\n}\n"
+  },
+  {
+    "utility": "md:flex-1",
+    "css": "@media (min-width: 768px) {\n  .md\\:flex-1 {\n    flex: 1 1 0%;\n  }\n}\n"
+  },
+  {
+    "utility": "md:grid",
+    "css": "@media (min-width: 768px) {\n  .md\\:grid {\n    display: grid;\n  }\n}\n"
+  },
+  {
+    "utility": "md:grid-cols-4",
+    "css": "@media (min-width: 768px) {\n  .md\\:grid-cols-4 {\n    grid-template-columns: repeat(4, minmax(0, 1fr));\n  }\n}\n"
+  },
+  {
+    "utility": "md:hidden",
+    "css": "@media (min-width: 768px) {\n  .md\\:hidden {\n    display: none;\n  }\n}\n"
+  },
+  {
+    "utility": "md:items-baseline",
+    "css": "@media (min-width: 768px) {\n  .md\\:items-baseline {\n    align-items: baseline;\n  }\n}\n"
+  },
+  {
+    "utility": "md:justify-center",
+    "css": "@media (min-width: 768px) {\n  .md\\:justify-center {\n    justify-content: center;\n  }\n}\n"
+  },
+  {
+    "utility": "md:mt-28",
+    "css": "@media (min-width: 768px) {\n  .md\\:mt-28 {\n    margin-top: 7rem;\n  }\n}\n"
+  },
+  {
+    "utility": "md:pl-6",
+    "css": "@media (min-width: 768px) {\n  .md\\:pl-6 {\n    padding-left: 1.5rem;\n  }\n}\n"
+  },
+  {
+    "utility": "min-w-0",
+    "css": ".min-w-0 {\n  min-width: 0px;\n}\n"
+  },
+  {
+    "utility": "ml-1",
+    "css": ".ml-1 {\n  margin-left: 0.25rem;\n}\n"
+  },
+  {
+    "utility": "ml-2",
+    "css": ".ml-2 {\n  margin-left: 0.5rem;\n}\n"
+  },
+  {
+    "utility": "ml-3",
+    "css": ".ml-3 {\n  margin-left: 0.75rem;\n}\n"
+  },
+  {
+    "utility": "ml-4",
+    "css": ".ml-4 {\n  margin-left: 1rem;\n}\n"
+  },
+  {
+    "utility": "ml-auto",
+    "css": ".ml-auto {\n  margin-left: auto;\n}\n"
+  },
+  {
+    "utility": "mt-1",
+    "css": ".mt-1 {\n  margin-top: 0.25rem;\n}\n"
+  },
+  {
+    "utility": "mt-16",
+    "css": ".mt-16 {\n  margin-top: 4rem;\n}\n"
+  },
+  {
+    "utility": "mt-2",
+    "css": ".mt-2 {\n  margin-top: 0.5rem;\n}\n"
+  },
+  {
+    "utility": "mt-24",
+    "css": ".mt-24 {\n  margin-top: 6rem;\n}\n"
+  },
+  {
+    "utility": "mt-32",
+    "css": ".mt-32 {\n  margin-top: 8rem;\n}\n"
+  },
+  {
+    "utility": "mt-4",
+    "css": ".mt-4 {\n  margin-top: 1rem;\n}\n"
+  },
+  {
+    "utility": "mt-6",
+    "css": ".mt-6 {\n  margin-top: 1.5rem;\n}\n"
+  },
+  {
+    "utility": "mt-8",
+    "css": ".mt-8 {\n  margin-top: 2rem;\n}\n"
+  },
+  {
+    "utility": "mt-9",
+    "css": ".mt-9 {\n  margin-top: 2.25rem;\n}\n"
+  },
+  {
+    "utility": "mt-[calc(theme(spacing.16)-theme(spacing.3))]",
+    "css": ".mt-\\[calc\\(theme\\(spacing\\.16\\)-theme\\(spacing\\.3\\)\\)\\] {\n  margin-top: calc(4rem - 0.75rem);\n}\n"
+  },
+  {
+    "utility": "mx-auto",
+    "css": ".mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n"
+  },
+  {
+    "utility": "object-cover",
+    "css": ".object-cover {\n  object-fit: cover;\n}\n"
+  },
+  {
+    "utility": "opacity-0",
+    "css": ".opacity-0 {\n  opacity: 0;\n}\n"
+  },
+  {
+    "utility": "order-first",
+    "css": ".order-first {\n  order: -9999;\n}\n"
+  },
+  {
+    "utility": "order-last",
+    "css": ".order-last {\n  order: 9999;\n}\n"
+  },
+  {
+    "utility": "origin-left",
+    "css": ".origin-left {\n  transform-origin: left;\n}\n"
+  },
+  {
+    "utility": "origin-top",
+    "css": ".origin-top {\n  transform-origin: top;\n}\n"
+  },
+  {
+    "utility": "overflow-hidden",
+    "css": ".overflow-hidden {\n  overflow: hidden;\n}\n"
+  },
+  {
+    "utility": "p-1",
+    "css": ".p-1 {\n  padding: 0.25rem;\n}\n"
+  },
+  {
+    "utility": "p-6",
+    "css": ".p-6 {\n  padding: 1.5rem;\n}\n"
+  },
+  {
+    "utility": "p-8",
+    "css": ".p-8 {\n  padding: 2rem;\n}\n"
+  },
+  {
+    "utility": "pb-16",
+    "css": ".pb-16 {\n  padding-bottom: 4rem;\n}\n"
+  },
+  {
+    "utility": "placeholder:text-zinc-400",
+    "css": ".placeholder\\:text-zinc-400::placeholder {\n  --tw-text-opacity: 1;\n  color: rgb(161 161 170 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "utility": "pointer-events-auto",
+    "css": ".pointer-events-auto {\n  pointer-events: auto;\n}\n"
+  },
+  {
+    "utility": "pointer-events-none",
+    "css": ".pointer-events-none {\n  pointer-events: none;\n}\n"
+  },
+  {
+    "utility": "pt-10",
+    "css": ".pt-10 {\n  padding-top: 2.5rem;\n}\n"
+  },
+  {
+    "utility": "pt-3",
+    "css": ".pt-3 {\n  padding-top: 0.75rem;\n}\n"
+  },
+  {
+    "utility": "pt-6",
+    "css": ".pt-6 {\n  padding-top: 1.5rem;\n}\n"
+  },
+  {
+    "utility": "pt-8",
+    "css": ".pt-8 {\n  padding-top: 2rem;\n}\n"
+  },
+  {
+    "utility": "px-2.5",
+    "css": ".px-2\\.5 {\n  padding-left: 0.625rem;\n  padding-right: 0.625rem;\n}\n.px-2 {\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n}\n"
+  },
+  {
+    "utility": "px-3",
+    "css": ".px-3 {\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n}\n"
+  },
+  {
+    "utility": "px-4",
+    "css": ".px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n"
+  },
+  {
+    "utility": "py-2",
+    "css": ".py-2 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n"
+  },
+  {
+    "utility": "py-4",
+    "css": ".py-4 {\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n"
+  },
+  {
+    "utility": "py-[calc(theme(spacing.2)-1px)]",
+    "css": ".py-\\[calc\\(theme\\(spacing\\.2\\)-1px\\)\\] {\n  padding-top: calc(0.5rem - 1px);\n  padding-bottom: calc(0.5rem - 1px);\n}\n"
+  },
+  {
+    "utility": "relative",
+    "css": ".relative {\n  position: relative;\n}\n"
+  },
+  {
+    "utility": "ring-1",
+    "css": ".ring-1 {\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width)\n    var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width))\n    var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n"
+  },
+  {
+    "utility": "ring-zinc-100",
+    "css": ".ring-zinc-100 {\n  --tw-ring-opacity: 1;\n  --tw-ring-color: rgb(244 244 245 / var(--tw-ring-opacity));\n}\n"
+  },
+  {
+    "utility": "ring-zinc-900/5",
+    "css": ".ring-zinc-900\\/5 {\n  --tw-ring-color: rgb(24 24 27 / 0.05);\n}\n"
+  },
+  {
+    "utility": "rotate-3",
+    "css": ".rotate-3 {\n  --tw-rotate: 3deg;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n"
+  },
+  {
+    "utility": "rounded-2xl",
+    "css": ".rounded-2xl {\n  border-radius: 1rem;\n}\n"
+  },
+  {
+    "utility": "rounded-3xl",
+    "css": ".rounded-3xl {\n  border-radius: 1.5rem;\n}\n"
+  },
+  {
+    "utility": "rounded-full",
+    "css": ".rounded-full {\n  border-radius: 9999px;\n}\n"
+  },
+  {
+    "utility": "rounded-md",
+    "css": ".rounded-md {\n  border-radius: 0.375rem;\n}\n"
+  },
+  {
+    "utility": "scale-95",
+    "css": ".scale-95 {\n  --tw-scale-x: 0.95;\n  --tw-scale-y: 0.95;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n"
+  },
+  {
+    "utility": "shadow-lg",
+    "css": ".shadow-lg {\n  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),\n    0 4px 6px -4px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),\n    var(--tw-shadow);\n}\n"
+  },
+  {
+    "utility": "shadow-md",
+    "css": ".shadow-md {\n  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),\n    var(--tw-shadow);\n}\n"
+  },
+  {
+    "utility": "shadow-zinc-800/5",
+    "css": ".shadow-zinc-800\\/5 {\n  --tw-shadow-color: rgb(39 39 42 / 0.05);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n"
+  },
+  {
+    "utility": "sm:-inset-x-6",
+    "css": "@media (min-width: 640px) {\n  .sm\\:-inset-x-6 {\n    left: -1.5rem;\n    right: -1.5rem;\n  }\n}\n"
+  },
+  {
+    "utility": "sm:flex-row",
+    "css": "@media (min-width: 640px) {\n  .sm\\:flex-row {\n    flex-direction: row;\n  }\n}\n"
+  },
+  {
+    "utility": "sm:gap-8",
+    "css": "@media (min-width: 640px) {\n  .sm\\:gap-8 {\n    gap: 2rem;\n  }\n}\n"
+  },
+  {
+    "utility": "sm:grid-cols-2",
+    "css": "@media (min-width: 640px) {\n  .sm\\:grid-cols-2 {\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n}\n"
+  },
+  {
+    "utility": "sm:mt-20",
+    "css": "@media (min-width: 640px) {\n  .sm\\:mt-20 {\n    margin-top: 5rem;\n  }\n}\n"
+  },
+  {
+    "utility": "sm:mt-32",
+    "css": "@media (min-width: 640px) {\n  .sm\\:mt-32 {\n    margin-top: 8rem;\n  }\n}\n"
+  },
+  {
+    "utility": "sm:px-8",
+    "css": "@media (min-width: 640px) {\n  .sm\\:px-8 {\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n"
+  },
+  {
+    "utility": "sm:rounded-2xl",
+    "css": "@media (min-width: 640px) {\n  .sm\\:rounded-2xl {\n    border-radius: 1rem;\n  }\n}\n"
+  },
+  {
+    "utility": "sm:text-5xl",
+    "css": "@media (min-width: 640px) {\n  .sm\\:text-5xl {\n    font-size: 3rem;\n    line-height: 1;\n  }\n}\n"
+  },
+  {
+    "utility": "sm:text-sm",
+    "css": "@media (min-width: 640px) {\n  .sm\\:text-sm {\n    font-size: 0.875rem;\n    line-height: 1.25rem;\n  }\n}\n"
+  },
+  {
+    "utility": "space-y-10",
+    "css": ".space-y-10 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-y-reverse: 0;\n  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));\n}\n"
+  },
+  {
+    "utility": "space-y-16",
+    "css": ".space-y-16 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-y-reverse: 0;\n  margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(4rem * var(--tw-space-y-reverse));\n}\n"
+  },
+  {
+    "utility": "space-y-20",
+    "css": ".space-y-20 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-y-reverse: 0;\n  margin-top: calc(5rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(5rem * var(--tw-space-y-reverse));\n}\n"
+  },
+  {
+    "utility": "space-y-4",
+    "css": ".space-y-4 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-y-reverse: 0;\n  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(1rem * var(--tw-space-y-reverse));\n}\n"
+  },
+  {
+    "utility": "space-y-7",
+    "css": ".space-y-7 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-y-reverse: 0;\n  margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));\n}\n"
+  },
+  {
+    "utility": "sr-only",
+    "css": ".sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n}\n"
+  },
+  {
+    "utility": "stroke-current",
+    "css": ".stroke-current {\n  stroke: currentColor;\n}\n"
+  },
+  {
+    "utility": "stroke-zinc-400",
+    "css": ".stroke-zinc-400 {\n  stroke: #a1a1aa;\n}\n"
+  },
+  {
+    "utility": "stroke-zinc-500",
+    "css": ".stroke-zinc-500 {\n  stroke: #71717a;\n}\n"
+  },
+  {
+    "utility": "text-4xl",
+    "css": ".text-4xl {\n  font-size: 2.25rem;\n  line-height: 2.5rem;\n}\n"
+  },
+  {
+    "utility": "text-base",
+    "css": ".text-base {\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n"
+  },
+  {
+    "utility": "text-sm",
+    "css": ".text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n"
+  },
+  {
+    "utility": "text-teal-500",
+    "css": ".text-teal-500 {\n  --tw-text-opacity: 1;\n  color: rgb(20 184 166 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "utility": "text-xs",
+    "css": ".text-xs {\n  font-size: 0.75rem;\n  line-height: 1rem;\n}\n"
+  },
+  {
+    "utility": "text-zinc-400",
+    "css": ".text-zinc-400 {\n  --tw-text-opacity: 1;\n  color: rgb(161 161 170 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "utility": "text-zinc-500",
+    "css": ".text-zinc-500 {\n  --tw-text-opacity: 1;\n  color: rgb(113 113 122 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "utility": "text-zinc-600",
+    "css": ".text-zinc-600 {\n  --tw-text-opacity: 1;\n  color: rgb(82 82 91 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "utility": "text-zinc-800",
+    "css": ".text-zinc-800 {\n  --tw-text-opacity: 1;\n  color: rgb(39 39 42 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "utility": "text-zinc-900",
+    "css": ".text-zinc-900 {\n  --tw-text-opacity: 1;\n  color: rgb(24 24 27 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "utility": "to-teal-500/0",
+    "css": ".to-teal-500\\/0 {\n  --tw-gradient-to: rgb(20 184 166 / 0);\n}\n"
+  },
+  {
+    "utility": "top-0",
+    "css": ".top-0 {\n  top: 0px;\n}\n"
+  },
+  {
+    "utility": "top-3",
+    "css": ".top-3 {\n  top: 0.75rem;\n}\n"
+  },
+  {
+    "utility": "top-8",
+    "css": ".top-8 {\n  top: 2rem;\n}\n"
+  },
+  {
+    "utility": "top-[var(--avatar-top,theme(spacing.3))]",
+    "css": ".top-\\[var\\(--avatar-top\\2c theme\\(spacing\\.3\\)\\)\\] {\n  top: var(--avatar-top, 0.75rem);\n}\n"
+  },
+  {
+    "utility": "top-[var(--header-top,theme(spacing.6))]",
+    "css": ".top-\\[var\\(--header-top\\2c theme\\(spacing\\.6\\)\\)\\] {\n  top: var(--header-top, 1.5rem);\n}\n"
+  },
+  {
+    "utility": "tracking-tight",
+    "css": ".tracking-tight {\n  letter-spacing: -0.025em;\n}\n"
+  },
+  {
+    "utility": "transition",
+    "css": ".transition {\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,\n    opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n"
+  },
+  {
+    "utility": "transition-opacity",
+    "css": ".transition-opacity {\n  transition-property: opacity;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n"
+  },
+  {
+    "utility": "via-teal-500/40",
+    "css": ".via-teal-500\\/40 {\n  --tw-gradient-to: rgb(20 184 166 / 0);\n  --tw-gradient-stops: var(--tw-gradient-from), rgb(20 184 166 / 0.4), var(--tw-gradient-to);\n}\n"
+  },
+  {
+    "utility": "w-0.5",
+    "css": ".w-0\\.5 {\n  width: 0.125rem;\n}\n.w-0 {\n  width: 0px;\n}\n"
+  },
+  {
+    "utility": "w-10",
+    "css": ".w-10 {\n  width: 2.5rem;\n}\n"
+  },
+  {
+    "utility": "w-12",
+    "css": ".w-12 {\n  width: 3rem;\n}\n"
+  },
+  {
+    "utility": "w-16",
+    "css": ".w-16 {\n  width: 4rem;\n}\n"
+  },
+  {
+    "utility": "w-2",
+    "css": ".w-2 {\n  width: 0.5rem;\n}\n"
+  },
+  {
+    "utility": "w-4",
+    "css": ".w-4 {\n  width: 1rem;\n}\n"
+  },
+  {
+    "utility": "w-6",
+    "css": ".w-6 {\n  width: 1.5rem;\n}\n"
+  },
+  {
+    "utility": "w-7",
+    "css": ".w-7 {\n  width: 1.75rem;\n}\n"
+  },
+  {
+    "utility": "w-8",
+    "css": ".w-8 {\n  width: 2rem;\n}\n"
+  },
+  {
+    "utility": "w-full",
+    "css": ".w-full {\n  width: 100%;\n}\n"
+  },
+  {
+    "utility": "xl:-top-1.5",
+    "css": "@media (min-width: 1280px) {\n  .xl\\:-top-1\\.5 {\n    top: -0.375rem;\n  }\n  .xl\\:-top-1 {\n    top: -0.25rem;\n  }\n}\n"
+  },
+  {
+    "utility": "xl:left-0",
+    "css": "@media (min-width: 1280px) {\n  .xl\\:left-0 {\n    left: 0px;\n  }\n}\n"
+  },
+  {
+    "utility": "xl:mt-0",
+    "css": "@media (min-width: 1280px) {\n  .xl\\:mt-0 {\n    margin-top: 0px;\n  }\n}\n"
+  },
+  {
+    "utility": "xl:pl-24",
+    "css": "@media (min-width: 1280px) {\n  .xl\\:pl-24 {\n    padding-left: 6rem;\n  }\n}\n"
+  },
+  {
+    "utility": "xl:relative",
+    "css": "@media (min-width: 1280px) {\n  .xl\\:relative {\n    position: relative;\n  }\n}\n"
+  },
+  {
+    "utility": "z-0",
+    "css": ".z-0 {\n  z-index: 0;\n}\n"
+  },
+  {
+    "utility": "z-10",
+    "css": ".z-10 {\n  z-index: 10;\n}\n"
+  },
+  {
+    "utility": "z-20",
+    "css": ".z-20 {\n  z-index: 20;\n}\n"
+  },
+  {
+    "utility": "z-50",
+    "css": ".z-50 {\n  z-index: 50;\n}\n"
+  },
+  {
+    "utility": "",
+    "css": ""
+  }
+]
