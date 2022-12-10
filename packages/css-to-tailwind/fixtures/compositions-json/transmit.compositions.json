@@ -1,0 +1,226 @@
+[
+  {
+    "composition": "flex",
+    "css": ".flex {\n  display: flex;\n}\n"
+  },
+  {
+    "composition": "ml-3",
+    "css": ".ml-3 {\n  margin-left: 0.75rem;\n}\n"
+  },
+  {
+    "composition": "w-full",
+    "css": ".w-full {\n  width: 100%;\n}\n"
+  },
+  {
+    "composition": "ml-2.5",
+    "css": ".ml-2\\.5 {\n  margin-left: 0.625rem;\n}\n.ml-2 {\n  margin-left: 0.5rem;\n}\n"
+  },
+  {
+    "composition": "lg:px-8",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:px-8 {\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n"
+  },
+  {
+    "composition": "relative",
+    "css": ".relative {\n  position: relative;\n}\n"
+  },
+  {
+    "composition": "h-2.5 w-2.5",
+    "css": ".h-2\\.5 {\n  height: 0.625rem;\n}\n.h-2 {\n  height: 0.5rem;\n}\n.w-2\\.5 {\n  width: 0.625rem;\n}\n.w-2 {\n  width: 0.5rem;\n}\n"
+  },
+  {
+    "composition": "lg:max-w-4xl",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:max-w-4xl {\n    max-width: 56rem;\n  }\n}\n"
+  },
+  {
+    "composition": "fill-pink-300",
+    "css": ".fill-pink-300 {\n  fill: #f9a8d4;\n}\n"
+  },
+  {
+    "composition": "fill-blue-300",
+    "css": ".fill-blue-300 {\n  fill: #93c5fd;\n}\n"
+  },
+  {
+    "composition": "text-slate-400",
+    "css": ".text-slate-400 {\n  --tw-text-opacity: 1;\n  color: rgb(148 163 184 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "mt-10 lg:mt-12",
+    "css": ".mt-10 {\n  margin-top: 2.5rem;\n}\n@media (min-width: 1024px) {\n  .lg\\:mt-12 {\n    margin-top: 3rem;\n  }\n}\n"
+  },
+  {
+    "composition": "py-10 sm:py-12",
+    "css": ".py-10 {\n  padding-top: 2.5rem;\n  padding-bottom: 2.5rem;\n}\n@media (min-width: 640px) {\n  .sm\\:py-12 {\n    padding-top: 3rem;\n    padding-bottom: 3rem;\n  }\n}\n"
+  },
+  {
+    "composition": "fill-violet-300",
+    "css": ".fill-violet-300 {\n  fill: #c4b5fd;\n}\n"
+  },
+  {
+    "composition": "fill-indigo-300",
+    "css": ".fill-indigo-300 {\n  fill: #a5b4fc;\n}\n"
+  },
+  {
+    "composition": "mt-12 hidden lg:block",
+    "css": ".mt-12 {\n  margin-top: 3rem;\n}\n.hidden {\n  display: none;\n}\n@media (min-width: 1024px) {\n  .lg\\:block {\n    display: block;\n  }\n}\n"
+  },
+  {
+    "composition": "group flex items-center",
+    "css": ".flex {\n  display: flex;\n}\n.items-center {\n  align-items: center;\n}\n"
+  },
+  {
+    "composition": "hidden sm:ml-3 sm:block",
+    "css": ".hidden {\n  display: none;\n}\n@media (min-width: 640px) {\n  .sm\\:ml-3 {\n    margin-left: 0.75rem;\n  }\n  .sm\\:block {\n    display: block;\n  }\n}\n"
+  },
+  {
+    "composition": "font-mono text-slate-500",
+    "css": ".font-mono {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\",\n    \"Courier New\", monospace;\n}\n.text-slate-500 {\n  --tw-text-opacity: 1;\n  color: rgb(100 116 139 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "h-2.5 w-2.5 fill-current",
+    "css": ".h-2\\.5 {\n  height: 0.625rem;\n}\n.h-2 {\n  height: 0.5rem;\n}\n.w-2\\.5 {\n  width: 0.625rem;\n}\n.w-2 {\n  width: 0.5rem;\n}\n.fill-current {\n  fill: currentColor;\n}\n"
+  },
+  {
+    "composition": "flex flex-col items-start",
+    "css": ".flex {\n  display: flex;\n}\n.flex-col {\n  flex-direction: column;\n}\n.items-start {\n  align-items: flex-start;\n}\n"
+  },
+  {
+    "composition": "h-3 w-auto fill-slate-300",
+    "css": ".h-3 {\n  height: 0.75rem;\n}\n.w-auto {\n  width: auto;\n}\n.fill-slate-300 {\n  fill: #cbd5e1;\n}\n"
+  },
+  {
+    "composition": "pt-16 pb-12 sm:pb-4 lg:pt-12",
+    "css": ".pt-16 {\n  padding-top: 4rem;\n}\n.pb-12 {\n  padding-bottom: 3rem;\n}\n@media (min-width: 640px) {\n  .sm\\:pb-4 {\n    padding-bottom: 1rem;\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:pt-12 {\n    padding-top: 3rem;\n  }\n}\n"
+  },
+  {
+    "composition": "mt-4 flex items-center gap-4",
+    "css": ".mt-4 {\n  margin-top: 1rem;\n}\n.flex {\n  display: flex;\n}\n.items-center {\n  align-items: center;\n}\n.gap-4 {\n  gap: 1rem;\n}\n"
+  },
+  {
+    "composition": "text-xl font-bold text-slate-900",
+    "css": ".text-xl {\n  font-size: 1.25rem;\n  line-height: 1.75rem;\n}\n.font-bold {\n  font-weight: 700;\n}\n.text-slate-900 {\n  --tw-text-opacity: 1;\n  color: rgb(15 23 42 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "text-sm font-bold text-slate-400",
+    "css": ".text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.font-bold {\n  font-weight: 700;\n}\n.text-slate-400 {\n  --tw-text-opacity: 1;\n  color: rgb(148 163 184 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "absolute left-0 top-0 h-20 w-full",
+    "css": ".absolute {\n  position: absolute;\n}\n.left-0 {\n  left: 0px;\n}\n.top-0 {\n  top: 0px;\n}\n.h-20 {\n  height: 5rem;\n}\n.w-full {\n  width: 100%;\n}\n"
+  },
+  {
+    "composition": "bg-white antialiased js-focus-visible",
+    "css": ".bg-white {\n  --tw-bg-opacity: 1;\n  background-color: rgb(255 255 255 / var(--tw-bg-opacity));\n}\n.antialiased {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n"
+  },
+  {
+    "composition": "mt-2 text-lg font-bold text-slate-900",
+    "css": ".mt-2 {\n  margin-top: 0.5rem;\n}\n.text-lg {\n  font-size: 1.125rem;\n  line-height: 1.75rem;\n}\n.font-bold {\n  font-weight: 700;\n}\n.text-slate-900 {\n  --tw-text-opacity: 1;\n  color: rgb(15 23 42 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "mt-10 text-center lg:mt-12 lg:text-left",
+    "css": ".mt-10 {\n  margin-top: 2.5rem;\n}\n.text-center {\n  text-align: center;\n}\n@media (min-width: 1024px) {\n  .lg\\:mt-12 {\n    margin-top: 3rem;\n  }\n  .lg\\:text-left {\n    text-align: left;\n  }\n}\n"
+  },
+  {
+    "composition": "mt-1 text-base leading-7 text-slate-700",
+    "css": ".mt-1 {\n  margin-top: 0.25rem;\n}\n.text-base {\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n.leading-7 {\n  line-height: 1.75rem;\n}\n.text-slate-700 {\n  --tw-text-opacity: 1;\n  color: rgb(51 65 85 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "mt-6 flex gap-6 font-bold text-slate-900",
+    "css": ".mt-6 {\n  margin-top: 1.5rem;\n}\n.flex {\n  display: flex;\n}\n.gap-6 {\n  gap: 1.5rem;\n}\n.font-bold {\n  font-weight: 700;\n}\n.text-slate-900 {\n  --tw-text-opacity: 1;\n  color: rgb(15 23 42 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4",
+    "css": ".mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n@media (min-width: 640px) {\n  .sm\\:px-6 {\n    padding-left: 1.5rem;\n    padding-right: 1.5rem;\n  }\n}\n@media (min-width: 768px) {\n  .md\\:max-w-2xl {\n    max-width: 42rem;\n  }\n  .md\\:px-4 {\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n}\n"
+  },
+  {
+    "composition": "text-2xl font-bold leading-7 text-slate-900",
+    "css": ".text-2xl {\n  font-size: 1.5rem;\n  line-height: 2rem;\n}\n.font-bold {\n  font-weight: 700;\n}\n.leading-7 {\n  line-height: 1.75rem;\n}\n.text-slate-900 {\n  --tw-text-opacity: 1;\n  color: rgb(15 23 42 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "mt-3 text-lg font-medium leading-8 text-slate-700",
+    "css": ".mt-3 {\n  margin-top: 0.75rem;\n}\n.text-lg {\n  font-size: 1.125rem;\n  line-height: 1.75rem;\n}\n.font-medium {\n  font-weight: 500;\n}\n.leading-8 {\n  line-height: 2rem;\n}\n.text-slate-700 {\n  --tw-text-opacity: 1;\n  color: rgb(51 65 85 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "h-8 w-8 fill-slate-400 group-hover:fill-slate-600",
+    "css": ".h-8 {\n  height: 2rem;\n}\n.w-8 {\n  width: 2rem;\n}\n.fill-slate-400 {\n  fill: #94a3b8;\n}\n.group:hover .group-hover\\:fill-slate-600 {\n  fill: #475569;\n}\n"
+  },
+  {
+    "composition": "mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0",
+    "css": ".mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n@media (min-width: 640px) {\n  .sm\\:px-6 {\n    padding-left: 1.5rem;\n    padding-right: 1.5rem;\n  }\n}\n@media (min-width: 768px) {\n  .md\\:max-w-2xl {\n    max-width: 42rem;\n  }\n  .md\\:px-4 {\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:px-0 {\n    padding-left: 0px;\n    padding-right: 0px;\n  }\n}\n"
+  },
+  {
+    "composition": "fixed inset-x-0 bottom-0 z-10 lg:left-112 xl:left-120",
+    "css": ".fixed {\n  position: fixed;\n}\n.inset-x-0 {\n  left: 0px;\n  right: 0px;\n}\n.bottom-0 {\n  bottom: 0px;\n}\n.z-10 {\n  z-index: 10;\n}\n"
+  },
+  {
+    "composition": "order-first font-mono text-sm leading-7 text-slate-500",
+    "css": ".order-first {\n  order: -9999;\n}\n.font-mono {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\",\n    \"Courier New\", monospace;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.leading-7 {\n  line-height: 1.75rem;\n}\n.text-slate-500 {\n  --tw-text-opacity: 1;\n  color: rgb(100 116 139 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "mt-2 text-base leading-7 text-slate-700 lg:line-clamp-4",
+    "css": ".mt-2 {\n  margin-top: 0.5rem;\n}\n.text-base {\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n.leading-7 {\n  line-height: 1.75rem;\n}\n.text-slate-700 {\n  --tw-text-opacity: 1;\n  color: rgb(51 65 85 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "mt-2 flex gap-6 text-sm font-bold leading-7 text-slate-900",
+    "css": ".mt-2 {\n  margin-top: 0.5rem;\n}\n.flex {\n  display: flex;\n}\n.gap-6 {\n  gap: 1.5rem;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.font-bold {\n  font-weight: 700;\n}\n.leading-7 {\n  line-height: 1.75rem;\n}\n.text-slate-900 {\n  --tw-text-opacity: 1;\n  color: rgb(15 23 42 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "flex items-center font-mono text-sm font-medium leading-7 text-slate-900",
+    "css": ".flex {\n  display: flex;\n}\n.items-center {\n  align-items: center;\n}\n.font-mono {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\",\n    \"Courier New\", monospace;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.font-medium {\n  font-weight: 500;\n}\n.leading-7 {\n  line-height: 1.75rem;\n}\n.text-slate-900 {\n  --tw-text-opacity: 1;\n  color: rgb(15 23 42 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-100",
+    "css": ".divide-y > :not([hidden]) ~ :not([hidden]) {\n  --tw-divide-y-reverse: 0;\n  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));\n  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));\n}\n.divide-slate-100 > :not([hidden]) ~ :not([hidden]) {\n  --tw-divide-opacity: 1;\n  border-color: rgb(241 245 249 / var(--tw-divide-opacity));\n}\n@media (min-width: 640px) {\n  .sm\\:mt-4 {\n    margin-top: 1rem;\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:mt-8 {\n    margin-top: 2rem;\n  }\n  .lg\\:border-t {\n    border-top-width: 1px;\n  }\n  .lg\\:border-slate-100 {\n    --tw-border-opacity: 1;\n    border-color: rgb(241 245 249 / var(--tw-border-opacity));\n  }\n}\n"
+  },
+  {
+    "composition": "h-px bg-gradient-to-r from-slate-200/0 via-slate-200 to-slate-200/0 lg:hidden",
+    "css": ".h-px {\n  height: 1px;\n}\n.bg-gradient-to-r {\n  background-image: linear-gradient(to right, var(--tw-gradient-stops));\n}\n.from-slate-200\\/0 {\n  --tw-gradient-from: rgb(226 232 240 / 0);\n  --tw-gradient-to: rgb(226 232 240 / 0);\n  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);\n}\n.via-slate-200 {\n  --tw-gradient-to: rgb(226 232 240 / 0);\n  --tw-gradient-stops: var(--tw-gradient-from), #e2e8f0, var(--tw-gradient-to);\n}\n.to-slate-200\\/0 {\n  --tw-gradient-to: rgb(226 232 240 / 0);\n}\n@media (min-width: 1024px) {\n  .lg\\:hidden {\n    display: none;\n  }\n}\n"
+  },
+  {
+    "composition": "border-t border-slate-200 bg-slate-50 py-10 pb-40 sm:py-16 sm:pb-32 lg:hidden",
+    "css": ".border-t {\n  border-top-width: 1px;\n}\n.border-slate-200 {\n  --tw-border-opacity: 1;\n  border-color: rgb(226 232 240 / var(--tw-border-opacity));\n}\n.bg-slate-50 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(248 250 252 / var(--tw-bg-opacity));\n}\n.py-10 {\n  padding-top: 2.5rem;\n  padding-bottom: 2.5rem;\n}\n.pb-40 {\n  padding-bottom: 10rem;\n}\n@media (min-width: 640px) {\n  .sm\\:py-16 {\n    padding-top: 4rem;\n    padding-bottom: 4rem;\n  }\n  .sm\\:pb-32 {\n    padding-bottom: 8rem;\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:hidden {\n    display: none;\n  }\n}\n"
+  },
+  {
+    "composition": "mt-8 flex items-center font-mono text-sm font-medium leading-7 text-slate-900",
+    "css": ".mt-8 {\n  margin-top: 2rem;\n}\n.flex {\n  display: flex;\n}\n.items-center {\n  align-items: center;\n}\n.font-mono {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\",\n    \"Courier New\", monospace;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.font-medium {\n  font-weight: 500;\n}\n.leading-7 {\n  line-height: 1.75rem;\n}\n.text-slate-900 {\n  --tw-text-opacity: 1;\n  color: rgb(15 23 42 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "border-t border-slate-200 lg:relative lg:mb-28 lg:ml-112 lg:border-t-0 xl:ml-120",
+    "css": ".border-t {\n  border-top-width: 1px;\n}\n.border-slate-200 {\n  --tw-border-opacity: 1;\n  border-color: rgb(226 232 240 / var(--tw-border-opacity));\n}\n@media (min-width: 1024px) {\n  .lg\\:relative {\n    position: relative;\n  }\n  .lg\\:mb-28 {\n    margin-bottom: 7rem;\n  }\n  .lg\\:border-t-0 {\n    border-top-width: 0px;\n  }\n}\n"
+  },
+  {
+    "composition": "absolute inset-0 rounded-lg ring-1 ring-inset ring-black/10 sm:rounded-xl lg:rounded-2xl",
+    "css": ".absolute {\n  position: absolute;\n}\n.inset-0 {\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n.rounded-lg {\n  border-radius: 0.5rem;\n}\n.ring-1 {\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width)\n    var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width))\n    var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n.ring-inset {\n  --tw-ring-inset: inset;\n}\n.ring-black\\/10 {\n  --tw-ring-color: rgb(0 0 0 / 0.1);\n}\n@media (min-width: 640px) {\n  .sm\\:rounded-xl {\n    border-radius: 0.75rem;\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:rounded-2xl {\n    border-radius: 1rem;\n  }\n}\n"
+  },
+  {
+    "composition": "sr-only flex items-center font-mono text-sm font-medium leading-7 text-slate-900 lg:not-sr-only",
+    "css": ".sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n}\n.flex {\n  display: flex;\n}\n.items-center {\n  align-items: center;\n}\n.font-mono {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\",\n    \"Courier New\", monospace;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.font-medium {\n  font-weight: 500;\n}\n.leading-7 {\n  line-height: 1.75rem;\n}\n.text-slate-900 {\n  --tw-text-opacity: 1;\n  color: rgb(15 23 42 / var(--tw-text-opacity));\n}\n@media (min-width: 1024px) {\n  .lg\\:not-sr-only {\n    position: static;\n    width: auto;\n    height: auto;\n    padding: 0;\n    margin: 0;\n    overflow: visible;\n    clip: auto;\n    white-space: normal;\n  }\n}\n"
+  },
+  {
+    "composition": "flex items-center text-sm font-bold leading-6 text-pink-500 hover:text-pink-700 active:text-pink-900",
+    "css": ".flex {\n  display: flex;\n}\n.items-center {\n  align-items: center;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.font-bold {\n  font-weight: 700;\n}\n.leading-6 {\n  line-height: 1.5rem;\n}\n.text-pink-500 {\n  --tw-text-opacity: 1;\n  color: rgb(236 72 153 / var(--tw-text-opacity));\n}\n.hover\\:text-pink-700:hover {\n  --tw-text-opacity: 1;\n  color: rgb(190 24 93 / var(--tw-text-opacity));\n}\n.active\\:text-pink-900:active {\n  --tw-text-opacity: 1;\n  color: rgb(131 24 67 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "bg-slate-50 lg:fixed lg:inset-y-0 lg:left-0 lg:flex lg:w-112 lg:items-start lg:overflow-y-auto xl:w-120",
+    "css": ".bg-slate-50 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(248 250 252 / var(--tw-bg-opacity));\n}\n@media (min-width: 1024px) {\n  .lg\\:fixed {\n    position: fixed;\n  }\n  .lg\\:inset-y-0 {\n    top: 0px;\n    bottom: 0px;\n  }\n  .lg\\:left-0 {\n    left: 0px;\n  }\n  .lg\\:flex {\n    display: flex;\n  }\n  .lg\\:items-start {\n    align-items: flex-start;\n  }\n  .lg\\:overflow-y-auto {\n    overflow-y: auto;\n  }\n}\n"
+  },
+  {
+    "composition": "mt-4 flex justify-center gap-10 text-base font-medium leading-7 text-slate-700 sm:gap-8 lg:flex-col lg:gap-4",
+    "css": ".mt-4 {\n  margin-top: 1rem;\n}\n.flex {\n  display: flex;\n}\n.justify-center {\n  justify-content: center;\n}\n.gap-10 {\n  gap: 2.5rem;\n}\n.text-base {\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n.font-medium {\n  font-weight: 500;\n}\n.leading-7 {\n  line-height: 1.75rem;\n}\n.text-slate-700 {\n  --tw-text-opacity: 1;\n  color: rgb(51 65 85 / var(--tw-text-opacity));\n}\n@media (min-width: 640px) {\n  .sm\\:gap-8 {\n    gap: 2rem;\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:flex-col {\n    flex-direction: column;\n  }\n  .lg\\:gap-4 {\n    gap: 1rem;\n  }\n}\n"
+  },
+  {
+    "composition": "mt-2 hidden text-sm font-bold leading-6 text-pink-500 hover:text-pink-700 active:text-pink-900 lg:inline-block",
+    "css": ".mt-2 {\n  margin-top: 0.5rem;\n}\n.hidden {\n  display: none;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.font-bold {\n  font-weight: 700;\n}\n.leading-6 {\n  line-height: 1.5rem;\n}\n.text-pink-500 {\n  --tw-text-opacity: 1;\n  color: rgb(236 72 153 / var(--tw-text-opacity));\n}\n.hover\\:text-pink-700:hover {\n  --tw-text-opacity: 1;\n  color: rgb(190 24 93 / var(--tw-text-opacity));\n}\n.active\\:text-pink-900:active {\n  --tw-text-opacity: 1;\n  color: rgb(131 24 67 / var(--tw-text-opacity));\n}\n@media (min-width: 1024px) {\n  .lg\\:inline-block {\n    display: inline-block;\n  }\n}\n"
+  },
+  {
+    "composition": "relative mx-auto block w-48 overflow-hidden rounded-lg bg-slate-200 shadow-xl shadow-slate-200 sm:w-64 sm:rounded-xl lg:w-auto lg:rounded-2xl",
+    "css": ".relative {\n  position: relative;\n}\n.mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.block {\n  display: block;\n}\n.w-48 {\n  width: 12rem;\n}\n.overflow-hidden {\n  overflow: hidden;\n}\n.rounded-lg {\n  border-radius: 0.5rem;\n}\n.bg-slate-200 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(226 232 240 / var(--tw-bg-opacity));\n}\n.shadow-xl {\n  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),\n    0 8px 10px -6px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),\n    var(--tw-shadow);\n}\n.shadow-slate-200 {\n  --tw-shadow-color: #e2e8f0;\n  --tw-shadow: var(--tw-shadow-colored);\n}\n@media (min-width: 640px) {\n  .sm\\:w-64 {\n    width: 16rem;\n  }\n  .sm\\:rounded-xl {\n    border-radius: 0.75rem;\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:w-auto {\n    width: auto;\n  }\n  .lg\\:rounded-2xl {\n    border-radius: 1rem;\n  }\n}\n"
+  },
+  {
+    "composition": "relative z-10 mx-auto px-4 pb-4 pt-10 sm:px-6 md:max-w-2xl md:px-4 lg:min-h-full lg:flex-auto lg:border-x lg:border-slate-200 lg:py-12 lg:px-8 xl:px-12",
+    "css": ".relative {\n  position: relative;\n}\n.z-10 {\n  z-index: 10;\n}\n.mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n.pb-4 {\n  padding-bottom: 1rem;\n}\n.pt-10 {\n  padding-top: 2.5rem;\n}\n@media (min-width: 640px) {\n  .sm\\:px-6 {\n    padding-left: 1.5rem;\n    padding-right: 1.5rem;\n  }\n}\n@media (min-width: 768px) {\n  .md\\:max-w-2xl {\n    max-width: 42rem;\n  }\n  .md\\:px-4 {\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:min-h-full {\n    min-height: 100%;\n  }\n  .lg\\:flex-auto {\n    flex: 1 1 auto;\n  }\n  .lg\\:border-x {\n    border-left-width: 1px;\n    border-right-width: 1px;\n  }\n  .lg\\:border-slate-200 {\n    --tw-border-opacity: 1;\n    border-color: rgb(226 232 240 / var(--tw-border-opacity));\n  }\n  .lg\\:py-12 {\n    padding-top: 3rem;\n    padding-bottom: 3rem;\n  }\n  .lg\\:px-8 {\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n@media (min-width: 1280px) {\n  .xl\\:px-12 {\n    padding-left: 3rem;\n    padding-right: 3rem;\n  }\n}\n"
+  },
+  {
+    "composition": "hidden lg:sticky lg:top-0 lg:flex lg:w-16 lg:flex-none lg:items-center lg:whitespace-nowrap lg:py-12 lg:text-sm lg:leading-7 lg:[writing-mode:vertical-rl]",
+    "css": ".hidden {\n  display: none;\n}\n@media (min-width: 1024px) {\n  .lg\\:sticky {\n    position: sticky;\n  }\n  .lg\\:top-0 {\n    top: 0px;\n  }\n  .lg\\:flex {\n    display: flex;\n  }\n  .lg\\:w-16 {\n    width: 4rem;\n  }\n  .lg\\:flex-none {\n    flex: none;\n  }\n  .lg\\:items-center {\n    align-items: center;\n  }\n  .lg\\:whitespace-nowrap {\n    white-space: nowrap;\n  }\n  .lg\\:py-12 {\n    padding-top: 3rem;\n    padding-bottom: 3rem;\n  }\n  .lg\\:text-sm {\n    font-size: 0.875rem;\n    line-height: 1.25rem;\n  }\n  .lg\\:leading-7 {\n    line-height: 1.75rem;\n  }\n  .lg\\:\\[writing-mode\\:vertical-rl\\] {\n    writing-mode: vertical-rl;\n  }\n}\n"
+  }
+]
