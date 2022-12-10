@@ -18,11 +18,13 @@ const urls = [
 function getAllClassList() {
   const list = Array.from(document.querySelectorAll('*'))
     .map((el) => {
-      return el.classList.length ? Array.from(el.classList).join(' ') : null;
+      return el.classList.length ? Array.from(el.classList) : null;
     })
     .filter(Boolean);
 
-  return Array.from(new Set(list));
+  // making it unique
+  const ordered = list.map((item) => item.sort().join(' '));
+  return Array.from(new Set(ordered));
 }
 
 // Setup
