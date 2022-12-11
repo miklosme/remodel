@@ -1,0 +1,11 @@
+[
+  {
+    "composition": "flex h-full flex-col",
+    "style": {
+      "__CSS__": [".flex-col { flex-direction: column; }"],
+      "display": "flex",
+      "height": "100%",
+      "flex-direction": "column"
+    }
+  }
+]
