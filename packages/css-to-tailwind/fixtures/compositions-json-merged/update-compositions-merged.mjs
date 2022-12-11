@@ -17,7 +17,7 @@ const urls = [
 
 function getMergedValues() {
   function getStyle(className) {
-    let result = { __CSS__: '' };
+    let result = {};
     let classes = document.styleSheets[0].rules;
     for (var x = 0; x < classes.length; x++) {
       if (classes[x].selectorText === className) {
@@ -27,14 +27,25 @@ function getMergedValues() {
             acc[prop] = classes[x].style[prop];
             return acc;
           }, {}),
-          __CSS__: [...result.__CSS__, classes[x].cssText],
         };
       }
     }
     return result;
   }
+  function getCSS(className) {
+    let result = [];
+    let classes = document.styleSheets[0].rules;
+    for (let x = 0; x < classes.length; x++) {
+      if (classes[x].selectorText === className) {
+        result = [...result, classes[x].cssText];
+      }
+    }
+    return result;
+  }
 
-  const list = Array.from(document.querySelectorAll('body'));
+  const list = Array.from(
+    document.querySelectorAll('.flex.items-center.md\\:gap-x-12'),
+  );
 
   return list
     .map((item) => {
@@ -47,6 +58,9 @@ function getMergedValues() {
             ...getStyle(`.${curr}`),
           };
         }, {}),
+        css: Array.from(item.classList).reduce((acc, curr) => {
+          return [...acc, ...getCSS(`.${curr}`)];
+        }, []),
       };
     })
     .filter(Boolean);

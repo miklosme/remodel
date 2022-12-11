@@ -1,11 +1,13 @@
 [
   {
-    "composition": "flex h-full flex-col",
+    "composition": "flex items-center md:gap-x-12",
     "style": {
-      "__CSS__": [".flex-col { flex-direction: column; }"],
       "display": "flex",
-      "height": "100%",
-      "flex-direction": "column"
-    }
+      "align-items": "center"
+    },
+    "css": [
+      ".flex { display: flex; }",
+      ".items-center { align-items: center; }"
+    ]
   }
 ]
