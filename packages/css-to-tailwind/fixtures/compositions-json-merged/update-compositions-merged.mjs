@@ -29,12 +29,13 @@ function getMergedValues() {
         if (rule.media) {
           for (const mediaRule of rule.cssRules) {
             if (isMatching(el, mediaRule.selectorText)) {
-              css.push(
-                `@media ${rule.media.mediaText} { ${mediaRule.cssText} }`,
-              );
+              const mediaText = rule.media.mediaText;
+
+              css.push(`@media ${mediaText} { ${mediaRule.cssText} }`);
 
               for (const property of mediaRule.style) {
-                style[property] = mediaRule.style[property];
+                style[mediaText] = style[mediaText] || {};
+                style[mediaText][property] = mediaRule.style[property];
               }
             }
           }
@@ -42,7 +43,8 @@ function getMergedValues() {
           css.push(rule.cssText);
 
           for (const property of rule.style) {
-            style[property] = rule.style[property];
+            style[''] = style[''] || {};
+            style[''][property] = rule.style[property];
           }
         }
       }

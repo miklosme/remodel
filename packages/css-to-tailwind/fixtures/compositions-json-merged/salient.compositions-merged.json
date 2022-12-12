@@ -2,9 +2,13 @@
   {
     "composition": "flex items-center md:gap-x-12",
     "style": {
-      "display": "flex",
-      "align-items": "center",
-      "column-gap": "3rem"
+      "": {
+        "display": "flex",
+        "align-items": "center"
+      },
+      "(min-width: 768px)": {
+        "column-gap": "3rem"
+      }
     },
     "css": [
       ".flex { display: flex; }",
