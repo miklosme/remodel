@@ -16,18 +16,33 @@ const urls = [
 ];
 
 function getMergedValues() {
+  const isMatching = (el, selector) => {
+    const root = document.querySelector(':root');
+    if (root && root.matches(selector) && root !== el) return false;
+    return el.matches(selector);
+  };
   function getStyle(el) {
     const style = {};
     const css = [];
-    for (const className of el.classList) {
-      for (const sheet of document.styleSheets) {
-        for (const rule of sheet.rules) {
-          if (rule.selectorText === `.${className}`) {
-            css.push(rule.cssText);
+    for (const sheet of document.styleSheets) {
+      for (const rule of sheet.rules) {
+        if (rule.media) {
+          for (const mediaRule of rule.cssRules) {
+            if (isMatching(el, mediaRule.selectorText)) {
+              css.push(
+                `@media ${rule.media.mediaText} { ${mediaRule.cssText} }`,
+              );
 
-            for (const property of rule.style) {
-              style[property] = rule.style[property];
+              for (const property of mediaRule.style) {
+                style[property] = mediaRule.style[property];
+              }
             }
+          }
+        } else if (isMatching(el, rule.selectorText)) {
+          css.push(rule.cssText);
+
+          for (const property of rule.style) {
+            style[property] = rule.style[property];
           }
         }
       }

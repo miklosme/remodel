@@ -3,11 +3,13 @@
     "composition": "flex items-center md:gap-x-12",
     "style": {
       "display": "flex",
-      "align-items": "center"
+      "align-items": "center",
+      "column-gap": "3rem"
     },
     "css": [
       ".flex { display: flex; }",
-      ".items-center { align-items: center; }"
+      ".items-center { align-items: center; }",
+      "@media (min-width: 768px) { .md\\:gap-x-12 { column-gap: 3rem; } }"
     ]
   }
 ]
