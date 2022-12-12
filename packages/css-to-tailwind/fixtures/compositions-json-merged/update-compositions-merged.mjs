@@ -16,31 +16,23 @@ const urls = [
 ];
 
 function getMergedValues() {
-  function getStyle(className) {
-    let result = {};
-    let classes = document.styleSheets[0].rules;
-    for (var x = 0; x < classes.length; x++) {
-      if (classes[x].selectorText === className) {
-        result = {
-          ...result,
-          ...Array.from(classes[x].style).reduce((acc, prop) => {
-            acc[prop] = classes[x].style[prop];
-            return acc;
-          }, {}),
-        };
+  function getStyle(el) {
+    const style = {};
+    const css = [];
+    for (const className of el.classList) {
+      for (const sheet of document.styleSheets) {
+        for (const rule of sheet.rules) {
+          if (rule.selectorText === `.${className}`) {
+            css.push(rule.cssText);
+
+            for (const property of rule.style) {
+              style[property] = rule.style[property];
+            }
+          }
+        }
       }
     }
-    return result;
-  }
-  function getCSS(className) {
-    let result = [];
-    let classes = document.styleSheets[0].rules;
-    for (let x = 0; x < classes.length; x++) {
-      if (classes[x].selectorText === className) {
-        result = [...result, classes[x].cssText];
-      }
-    }
-    return result;
+    return { style, css };
   }
 
   const list = Array.from(
@@ -52,15 +44,7 @@ function getMergedValues() {
       if (!item.classList.length) return null;
       return {
         composition: Array.from(item.classList).join(' '),
-        style: Array.from(item.classList).reduce((acc, curr) => {
-          return {
-            ...acc,
-            ...getStyle(`.${curr}`),
-          };
-        }, {}),
-        css: Array.from(item.classList).reduce((acc, curr) => {
-          return [...acc, ...getCSS(`.${curr}`)];
-        }, []),
+        ...getStyle(item),
       };
     })
     .filter(Boolean);
