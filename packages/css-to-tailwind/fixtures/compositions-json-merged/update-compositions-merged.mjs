@@ -73,8 +73,8 @@ function getParsedValues() {
   }
 
   const list = Array.from(
-    document.querySelectorAll('.flex.items-center.md\\:gap-x-12'),
-    // document.querySelectorAll('*'),
+    // document.querySelectorAll('.flex.items-center.md\\:gap-x-12'),
+    document.querySelectorAll('*'),
   );
 
   return list
@@ -92,7 +92,7 @@ const browser = await chromium.launch();
 const context = await browser.newContext(devices['Desktop Chrome HiDPI']);
 const page = await context.newPage();
 
-const tasks = [urls[0]].map((url) => async () => {
+const tasks = urls.map((url) => async () => {
   console.log('Processing:', url);
   await page.goto(url);
   const result = await page.evaluate(getParsedValues);
@@ -103,7 +103,7 @@ const tasks = [urls[0]].map((url) => async () => {
   const file = `${url.replace(
     /https:\/\/|\.tailwindui\.com\//g,
     '',
-  )}.compositions-merged.SAFE.json`;
+  )}.compositions-merged.json`;
   await fs.writeFile(path.resolve(__dirname, file), data, 'utf8');
   console.log('Done:', url);
 });
