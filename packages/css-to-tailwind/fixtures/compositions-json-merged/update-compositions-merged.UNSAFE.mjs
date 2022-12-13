@@ -15,16 +15,15 @@ const urls = [
   'https://syntax.tailwindui.com/',
 ];
 
-function getParsedValues() {
+function getMergedValues() {
   const isMatching = (el, selector) => {
     const root = document.querySelector(':root');
     if (root && root.matches(selector) && root !== el) return false;
     return el.matches(selector);
   };
-  function findRule(className, callback) {
-    const el = document.createElement('div');
-    el.classList.add(className);
-
+  function getStyle(el) {
+    const style = {};
+    const css = [];
     for (const sheet of document.styleSheets) {
       try {
         sheet.cssRules;
@@ -35,30 +34,17 @@ function getParsedValues() {
         if (rule.media) {
           for (const mediaRule of rule.cssRules) {
             if (isMatching(el, mediaRule.selectorText)) {
-              callback(mediaRule, rule.media.mediaText);
+              const mediaText = rule.media.mediaText;
+
+              css.push(`@media ${mediaText} { ${mediaRule.cssText} }`);
+
+              for (const property of mediaRule.style) {
+                style[mediaText] = style[mediaText] || {};
+                style[mediaText][property] = mediaRule.style[property];
+              }
             }
           }
         } else if (isMatching(el, rule.selectorText)) {
-          callback(rule, null);
-        }
-      }
-    }
-  }
-
-  function getStyle(el) {
-    const style = {};
-    const css = [];
-
-    Array.from(el.classList).forEach((className) => {
-      findRule(className, (rule, mediaText) => {
-        if (mediaText) {
-          css.push(`@media ${mediaText} { ${rule.cssText} }`);
-
-          for (const property of rule.style) {
-            style[mediaText] = style[mediaText] || {};
-            style[mediaText][property] = rule.style[property];
-          }
-        } else {
           css.push(rule.cssText);
 
           for (const property of rule.style) {
@@ -66,15 +52,14 @@ function getParsedValues() {
             style[''][property] = rule.style[property];
           }
         }
-      });
-    });
-
+      }
+    }
     return { style, css };
   }
 
   const list = Array.from(
-    document.querySelectorAll('.flex.items-center.md\\:gap-x-12'),
-    // document.querySelectorAll('*'),
+    // document.querySelectorAll('.flex.items-center.md\\:gap-x-12'),
+    document.querySelectorAll('*'),
   );
 
   return list
@@ -92,10 +77,10 @@ const browser = await chromium.launch();
 const context = await browser.newContext(devices['Desktop Chrome HiDPI']);
 const page = await context.newPage();
 
-const tasks = [urls[0]].map((url) => async () => {
+const tasks = urls.map((url) => async () => {
   console.log('Processing:', url);
   await page.goto(url);
-  const result = await page.evaluate(getParsedValues);
+  const result = await page.evaluate(getMergedValues);
 
   console.log(result);
 
@@ -103,7 +88,7 @@ const tasks = [urls[0]].map((url) => async () => {
   const file = `${url.replace(
     /https:\/\/|\.tailwindui\.com\//g,
     '',
-  )}.compositions-merged.SAFE.json`;
+  )}.compositions-merged.json`;
   await fs.writeFile(path.resolve(__dirname, file), data, 'utf8');
   console.log('Done:', url);
 });
