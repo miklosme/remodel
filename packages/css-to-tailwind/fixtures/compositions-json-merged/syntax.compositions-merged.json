@@ -1,11 +1,17 @@
 [
   {
-    "composition": "antialiased [font-feature-settings:'ss01'] js-focus-visible",
+    "tag": "html",
+    "classList": [
+      "[font-feature-settings:'ss01']",
+      "antialiased",
+      "js-focus-visible"
+    ],
     "style": {},
     "css": []
   },
   {
-    "composition": "bg-white dark:bg-slate-900",
+    "tag": "body",
+    "classList": ["bg-white", "dark:bg-slate-900"],
     "style": {
       "": {
         "background-color": "rgb(255 255 255/var(--tw-bg-opacity))"
@@ -16,7 +22,27 @@
     ]
   },
   {
-    "composition": "sticky top-0 z-50 flex flex-wrap items-center justify-between bg-white px-4 py-5 shadow-md shadow-slate-900/5 transition duration-500 dark:shadow-none sm:px-6 lg:px-8 dark:bg-transparent",
+    "tag": "header",
+    "classList": [
+      "bg-white",
+      "dark:bg-transparent",
+      "dark:shadow-none",
+      "duration-500",
+      "flex",
+      "flex-wrap",
+      "items-center",
+      "justify-between",
+      "lg:px-8",
+      "px-4",
+      "py-5",
+      "shadow-md",
+      "shadow-slate-900/5",
+      "sm:px-6",
+      "sticky",
+      "top-0",
+      "transition",
+      "z-50"
+    ],
     "style": {
       "": {
         "position": "sticky",
@@ -66,7 +92,8 @@
     ]
   },
   {
-    "composition": "mr-6 flex lg:hidden",
+    "tag": "div",
+    "classList": ["flex", "lg:hidden", "mr-6"],
     "style": {
       "": {
         "margin-right": "1.5rem",
@@ -83,7 +110,8 @@
     ]
   },
   {
-    "composition": "relative",
+    "tag": "button",
+    "classList": ["relative"],
     "style": {
       "": {
         "position": "relative"
@@ -92,7 +120,8 @@
     "css": [".relative { position: relative; }"]
   },
   {
-    "composition": "h-6 w-6 stroke-slate-500",
+    "tag": "svg",
+    "classList": ["h-6", "stroke-slate-500", "w-6"],
     "style": {
       "": {
         "height": "1.5rem",
@@ -107,7 +136,8 @@
     ]
   },
   {
-    "composition": "relative flex flex-grow basis-0 items-center",
+    "tag": "div",
+    "classList": ["basis-0", "flex", "flex-grow", "items-center", "relative"],
     "style": {
       "": {
         "position": "relative",
@@ -126,7 +156,8 @@
     ]
   },
   {
-    "composition": "h-9 w-9 lg:hidden",
+    "tag": "svg",
+    "classList": ["h-9", "lg:hidden", "w-9"],
     "style": {
       "": {
         "height": "2.25rem",
@@ -143,7 +174,15 @@
     ]
   },
   {
-    "composition": "hidden h-9 w-auto fill-slate-700 dark:fill-sky-100 lg:block",
+    "tag": "svg",
+    "classList": [
+      "dark:fill-sky-100",
+      "fill-slate-700",
+      "h-9",
+      "hidden",
+      "lg:block",
+      "w-auto"
+    ],
     "style": {
       "": {
         "display": "none",
@@ -164,7 +203,8 @@
     ]
   },
   {
-    "composition": "-my-5 mr-6 sm:mr-8 md:mr-0",
+    "tag": "div",
+    "classList": ["-my-5", "md:mr-0", "mr-6", "sm:mr-8"],
     "style": {
       "": {
         "margin-top": "-1.25rem",
@@ -186,7 +226,33 @@
     ]
   },
   {
-    "composition": "group flex h-6 w-6 items-center justify-center sm:justify-start md:h-auto md:w-80 md:flex-none md:rounded-lg md:py-2.5 md:pl-4 md:pr-3.5 md:text-sm md:ring-1 md:ring-slate-200 md:hover:ring-slate-300 dark:md:bg-slate-800/75 dark:md:ring-inset dark:md:ring-white/5 dark:md:hover:bg-slate-700/40 dark:md:hover:ring-slate-500 lg:w-96",
+    "tag": "button",
+    "classList": [
+      "dark:md:bg-slate-800/75",
+      "dark:md:hover:bg-slate-700/40",
+      "dark:md:hover:ring-slate-500",
+      "dark:md:ring-inset",
+      "dark:md:ring-white/5",
+      "flex",
+      "group",
+      "h-6",
+      "items-center",
+      "justify-center",
+      "lg:w-96",
+      "md:flex-none",
+      "md:h-auto",
+      "md:hover:ring-slate-300",
+      "md:pl-4",
+      "md:pr-3.5",
+      "md:py-2.5",
+      "md:ring-1",
+      "md:ring-slate-200",
+      "md:rounded-lg",
+      "md:text-sm",
+      "md:w-80",
+      "sm:justify-start",
+      "w-6"
+    ],
     "style": {
       "": {
         "display": "flex",
@@ -241,7 +307,16 @@
     ]
   },
   {
-    "composition": "h-5 w-5 flex-none fill-slate-400 group-hover:fill-slate-500 dark:fill-slate-500 md:group-hover:fill-slate-400",
+    "tag": "svg",
+    "classList": [
+      "dark:fill-slate-500",
+      "fill-slate-400",
+      "flex-none",
+      "group-hover:fill-slate-500",
+      "h-5",
+      "md:group-hover:fill-slate-400",
+      "w-5"
+    ],
     "style": {
       "": {
         "height": "1.25rem",
@@ -260,7 +335,14 @@
     ]
   },
   {
-    "composition": "sr-only md:not-sr-only md:ml-2 md:text-slate-500 md:dark:text-slate-400",
+    "tag": "span",
+    "classList": [
+      "md:dark:text-slate-400",
+      "md:ml-2",
+      "md:not-sr-only",
+      "md:text-slate-500",
+      "sr-only"
+    ],
     "style": {
       "": {
         "position": "absolute",
@@ -310,7 +392,15 @@
     ]
   },
   {
-    "composition": "ml-auto hidden font-medium text-slate-400 dark:text-slate-500 md:block",
+    "tag": "kbd",
+    "classList": [
+      "dark:text-slate-500",
+      "font-medium",
+      "hidden",
+      "md:block",
+      "ml-auto",
+      "text-slate-400"
+    ],
     "style": {
       "": {
         "margin-left": "auto",
@@ -331,7 +421,8 @@
     ]
   },
   {
-    "composition": "font-sans",
+    "tag": "kbd",
+    "classList": ["font-sans"],
     "style": {
       "": {
         "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
@@ -342,7 +433,16 @@
     ]
   },
   {
-    "composition": "relative flex basis-0 justify-end gap-6 sm:gap-8 md:flex-grow",
+    "tag": "div",
+    "classList": [
+      "basis-0",
+      "flex",
+      "gap-6",
+      "justify-end",
+      "md:flex-grow",
+      "relative",
+      "sm:gap-8"
+    ],
     "style": {
       "": {
         "position": "relative",
@@ -371,7 +471,8 @@
     ]
   },
   {
-    "composition": "relative z-10",
+    "tag": "div",
+    "classList": ["relative", "z-10"],
     "style": {
       "": {
         "position": "relative",
@@ -381,7 +482,8 @@
     "css": [".relative { position: relative; }", ".z-10 { z-index: 10; }"]
   },
   {
-    "composition": "sr-only",
+    "tag": "label",
+    "classList": ["sr-only"],
     "style": {
       "": {
         "position": "absolute",
@@ -410,7 +512,22 @@
     ]
   },
   {
-    "composition": "flex h-6 w-6 items-center justify-center rounded-lg shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5",
+    "tag": "button",
+    "classList": [
+      "dark:bg-slate-700",
+      "dark:ring-inset",
+      "dark:ring-white/5",
+      "flex",
+      "h-6",
+      "items-center",
+      "justify-center",
+      "ring-1",
+      "ring-black/5",
+      "rounded-lg",
+      "shadow-black/5",
+      "shadow-md",
+      "w-6"
+    ],
     "style": {
       "": {
         "display": "flex",
@@ -440,7 +557,14 @@
     ]
   },
   {
-    "composition": "hidden h-4 w-4 fill-sky-400 [[data-theme=light]_&]:block",
+    "tag": "svg",
+    "classList": [
+      "[[data-theme=light]_&]:block",
+      "fill-sky-400",
+      "h-4",
+      "hidden",
+      "w-4"
+    ],
     "style": {
       "": {
         "display": "none",
@@ -457,7 +581,14 @@
     ]
   },
   {
-    "composition": "hidden h-4 w-4 fill-sky-400 [[data-theme=dark]_&]:block",
+    "tag": "svg",
+    "classList": [
+      "[[data-theme=dark]_&]:block",
+      "fill-sky-400",
+      "h-4",
+      "hidden",
+      "w-4"
+    ],
     "style": {
       "": {
         "display": "none",
@@ -474,7 +605,14 @@
     ]
   },
   {
-    "composition": "hidden h-4 w-4 fill-slate-400 [:not(.dark)[data-theme=system]_&]:block",
+    "tag": "svg",
+    "classList": [
+      "[:not(.dark)[data-theme=system]_&]:block",
+      "fill-slate-400",
+      "h-4",
+      "hidden",
+      "w-4"
+    ],
     "style": {
       "": {
         "display": "none",
@@ -491,7 +629,14 @@
     ]
   },
   {
-    "composition": "hidden h-4 w-4 fill-slate-400 [.dark[data-theme=system]_&]:block",
+    "tag": "svg",
+    "classList": [
+      "[.dark[data-theme=system]_&]:block",
+      "fill-slate-400",
+      "h-4",
+      "hidden",
+      "w-4"
+    ],
     "style": {
       "": {
         "display": "none",
@@ -508,12 +653,20 @@
     ]
   },
   {
-    "composition": "group",
+    "tag": "a",
+    "classList": ["group"],
     "style": {},
     "css": []
   },
   {
-    "composition": "h-6 w-6 fill-slate-400 group-hover:fill-slate-500 dark:group-hover:fill-slate-300",
+    "tag": "svg",
+    "classList": [
+      "dark:group-hover:fill-slate-300",
+      "fill-slate-400",
+      "group-hover:fill-slate-500",
+      "h-6",
+      "w-6"
+    ],
     "style": {
       "": {
         "height": "1.5rem",
@@ -528,7 +681,17 @@
     ]
   },
   {
-    "composition": "overflow-hidden bg-slate-900 dark:-mb-32 dark:mt-[-4.5rem] dark:pb-32 dark:pt-[4.5rem] dark:lg:mt-[-4.75rem] dark:lg:pt-[4.75rem]",
+    "tag": "div",
+    "classList": [
+      "bg-slate-900",
+      "dark:-mb-32",
+      "dark:lg:mt-[-4.75rem]",
+      "dark:lg:pt-[4.75rem]",
+      "dark:mt-[-4.5rem]",
+      "dark:pb-32",
+      "dark:pt-[4.5rem]",
+      "overflow-hidden"
+    ],
     "style": {
       "": {
         "overflow-x": "hidden",
@@ -542,7 +705,8 @@
     ]
   },
   {
-    "composition": "py-16 sm:px-2 lg:relative lg:py-20 lg:px-0",
+    "tag": "div",
+    "classList": ["lg:px-0", "lg:py-20", "lg:relative", "py-16", "sm:px-2"],
     "style": {
       "": {
         "padding-top": "4rem",
@@ -569,7 +733,22 @@
     ]
   },
   {
-    "composition": "mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 px-4 lg:max-w-8xl lg:grid-cols-2 lg:px-8 xl:gap-x-16 xl:px-12",
+    "tag": "div",
+    "classList": [
+      "gap-x-8",
+      "gap-y-16",
+      "grid",
+      "grid-cols-1",
+      "items-center",
+      "lg:grid-cols-2",
+      "lg:max-w-8xl",
+      "lg:px-8",
+      "max-w-2xl",
+      "mx-auto",
+      "px-4",
+      "xl:gap-x-16",
+      "xl:px-12"
+    ],
     "style": {
       "": {
         "margin-left": "auto",
@@ -612,7 +791,8 @@
     ]
   },
   {
-    "composition": "relative z-10 md:text-center lg:text-left",
+    "tag": "div",
+    "classList": ["lg:text-left", "md:text-center", "relative", "z-10"],
     "style": {
       "": {
         "position": "relative",
@@ -633,7 +813,15 @@
     ]
   },
   {
-    "composition": "absolute bottom-full right-full -mr-72 -mb-56 opacity-50",
+    "tag": "img",
+    "classList": [
+      "-mb-56",
+      "-mr-72",
+      "absolute",
+      "bottom-full",
+      "opacity-50",
+      "right-full"
+    ],
     "style": {
       "": {
         "position": "absolute",
@@ -654,7 +842,19 @@
     ]
   },
   {
-    "composition": "inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent",
+    "tag": "p",
+    "classList": [
+      "bg-clip-text",
+      "bg-gradient-to-r",
+      "font-display",
+      "from-indigo-200",
+      "inline",
+      "text-5xl",
+      "text-transparent",
+      "to-indigo-200",
+      "tracking-tight",
+      "via-sky-400"
+    ],
     "style": {
       "": {
         "display": "inline",
@@ -681,7 +881,8 @@
     ]
   },
   {
-    "composition": "mt-3 text-2xl tracking-tight text-slate-400",
+    "tag": "p",
+    "classList": ["mt-3", "text-2xl", "text-slate-400", "tracking-tight"],
     "style": {
       "": {
         "margin-top": "0.75rem",
@@ -699,7 +900,14 @@
     ]
   },
   {
-    "composition": "mt-8 flex gap-4 md:justify-center lg:justify-start",
+    "tag": "div",
+    "classList": [
+      "flex",
+      "gap-4",
+      "lg:justify-start",
+      "md:justify-center",
+      "mt-8"
+    ],
     "style": {
       "": {
         "margin-top": "2rem",
@@ -723,7 +931,22 @@
     ]
   },
   {
-    "composition": "rounded-full bg-sky-300 py-2 px-4 text-sm font-semibold text-slate-900 hover:bg-sky-200 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-300/50 active:bg-sky-500",
+    "tag": "a",
+    "classList": [
+      "active:bg-sky-500",
+      "bg-sky-300",
+      "focus-visible:outline-2",
+      "focus-visible:outline-offset-2",
+      "focus-visible:outline-sky-300/50",
+      "focus:outline-none",
+      "font-semibold",
+      "hover:bg-sky-200",
+      "px-4",
+      "py-2",
+      "rounded-full",
+      "text-slate-900",
+      "text-sm"
+    ],
     "style": {
       "": {
         "border-top-left-radius": "9999px",
@@ -752,7 +975,22 @@
     ]
   },
   {
-    "composition": "rounded-full bg-slate-800 py-2 px-4 text-sm font-medium text-white hover:bg-slate-700 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50 active:text-slate-400",
+    "tag": "a",
+    "classList": [
+      "active:text-slate-400",
+      "bg-slate-800",
+      "focus-visible:outline-2",
+      "focus-visible:outline-offset-2",
+      "focus-visible:outline-white/50",
+      "focus:outline-none",
+      "font-medium",
+      "hover:bg-slate-700",
+      "px-4",
+      "py-2",
+      "rounded-full",
+      "text-sm",
+      "text-white"
+    ],
     "style": {
       "": {
         "border-top-left-radius": "9999px",
@@ -781,7 +1019,8 @@
     ]
   },
   {
-    "composition": "relative lg:static xl:pl-10",
+    "tag": "div",
+    "classList": ["lg:static", "relative", "xl:pl-10"],
     "style": {
       "": {
         "position": "relative"
@@ -800,7 +1039,21 @@
     ]
   },
   {
-    "composition": "absolute inset-x-[-50vw] -top-32 -bottom-48 [mask-image:linear-gradient(transparent,white,white)] dark:[mask-image:linear-gradient(transparent,white,transparent)] lg:left-[calc(50%+14rem)] lg:right-0 lg:-top-32 lg:-bottom-32 lg:[mask-image:none] lg:dark:[mask-image:linear-gradient(white,white,transparent)]",
+    "tag": "div",
+    "classList": [
+      "-bottom-48",
+      "-top-32",
+      "[mask-image:linear-gradient(transparent,white,white)]",
+      "absolute",
+      "dark:[mask-image:linear-gradient(transparent,white,transparent)]",
+      "inset-x-[-50vw]",
+      "lg:-bottom-32",
+      "lg:-top-32",
+      "lg:[mask-image:none]",
+      "lg:dark:[mask-image:linear-gradient(white,white,transparent)]",
+      "lg:left-[calc(50%+14rem)]",
+      "lg:right-0"
+    ],
     "style": {
       "": {
         "position": "absolute",
@@ -832,7 +1085,17 @@
     ]
   },
   {
-    "composition": "absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 lg:left-0 lg:translate-x-0 lg:translate-y-[-60%]",
+    "tag": "svg",
+    "classList": [
+      "-translate-x-1/2",
+      "-translate-y-1/2",
+      "absolute",
+      "left-1/2",
+      "lg:left-0",
+      "lg:translate-x-0",
+      "lg:translate-y-[-60%]",
+      "top-1/2"
+    ],
     "style": {
       "": {
         "position": "absolute",
@@ -861,7 +1124,8 @@
     ]
   },
   {
-    "composition": "absolute -top-64 -right-64",
+    "tag": "img",
+    "classList": ["-right-64", "-top-64", "absolute"],
     "style": {
       "": {
         "position": "absolute",
@@ -876,7 +1140,8 @@
     ]
   },
   {
-    "composition": "absolute -bottom-40 -right-44",
+    "tag": "img",
+    "classList": ["-bottom-40", "-right-44", "absolute"],
     "style": {
       "": {
         "position": "absolute",
@@ -891,7 +1156,18 @@
     ]
   },
   {
-    "composition": "absolute inset-0 rounded-2xl bg-gradient-to-tr from-sky-300 via-sky-300/70 to-blue-300 opacity-10 blur-lg",
+    "tag": "div",
+    "classList": [
+      "absolute",
+      "bg-gradient-to-tr",
+      "blur-lg",
+      "from-sky-300",
+      "inset-0",
+      "opacity-10",
+      "rounded-2xl",
+      "to-blue-300",
+      "via-sky-300/70"
+    ],
     "style": {
       "": {
         "position": "absolute",
@@ -922,7 +1198,17 @@
     ]
   },
   {
-    "composition": "absolute inset-0 rounded-2xl bg-gradient-to-tr from-sky-300 via-sky-300/70 to-blue-300 opacity-10",
+    "tag": "div",
+    "classList": [
+      "absolute",
+      "bg-gradient-to-tr",
+      "from-sky-300",
+      "inset-0",
+      "opacity-10",
+      "rounded-2xl",
+      "to-blue-300",
+      "via-sky-300/70"
+    ],
     "style": {
       "": {
         "position": "absolute",
@@ -950,7 +1236,15 @@
     ]
   },
   {
-    "composition": "relative rounded-2xl bg-[#0A101F]/80 ring-1 ring-white/10 backdrop-blur",
+    "tag": "div",
+    "classList": [
+      "backdrop-blur",
+      "bg-[#0A101F]/80",
+      "relative",
+      "ring-1",
+      "ring-white/10",
+      "rounded-2xl"
+    ],
     "style": {
       "": {
         "position": "relative",
@@ -973,7 +1267,18 @@
     ]
   },
   {
-    "composition": "absolute -top-px left-20 right-11 h-px bg-gradient-to-r from-sky-300/0 via-sky-300/70 to-sky-300/0",
+    "tag": "div",
+    "classList": [
+      "-top-px",
+      "absolute",
+      "bg-gradient-to-r",
+      "from-sky-300/0",
+      "h-px",
+      "left-20",
+      "right-11",
+      "to-sky-300/0",
+      "via-sky-300/70"
+    ],
     "style": {
       "": {
         "position": "absolute",
@@ -997,7 +1302,18 @@
     ]
   },
   {
-    "composition": "absolute -bottom-px left-11 right-20 h-px bg-gradient-to-r from-blue-400/0 via-blue-400 to-blue-400/0",
+    "tag": "div",
+    "classList": [
+      "-bottom-px",
+      "absolute",
+      "bg-gradient-to-r",
+      "from-blue-400/0",
+      "h-px",
+      "left-11",
+      "right-20",
+      "to-blue-400/0",
+      "via-blue-400"
+    ],
     "style": {
       "": {
         "position": "absolute",
@@ -1021,7 +1337,8 @@
     ]
   },
   {
-    "composition": "pl-4 pt-4",
+    "tag": "div",
+    "classList": ["pl-4", "pt-4"],
     "style": {
       "": {
         "padding-left": "1rem",
@@ -1031,7 +1348,8 @@
     "css": [".pl-4 { padding-left: 1rem; }", ".pt-4 { padding-top: 1rem; }"]
   },
   {
-    "composition": "h-2.5 w-auto stroke-slate-500/30",
+    "tag": "svg",
+    "classList": ["h-2.5", "stroke-slate-500/30", "w-auto"],
     "style": {
       "": {
         "height": "0.625rem",
@@ -1046,7 +1364,8 @@
     ]
   },
   {
-    "composition": "mt-4 flex space-x-2 text-xs",
+    "tag": "div",
+    "classList": ["flex", "mt-4", "space-x-2", "text-xs"],
     "style": {
       "": {
         "margin-top": "1rem",
@@ -1062,7 +1381,19 @@
     ]
   },
   {
-    "composition": "flex h-6 rounded-full bg-gradient-to-r from-sky-400/30 via-sky-400 to-sky-400/30 p-px font-medium text-sky-300",
+    "tag": "div",
+    "classList": [
+      "bg-gradient-to-r",
+      "flex",
+      "font-medium",
+      "from-sky-400/30",
+      "h-6",
+      "p-px",
+      "rounded-full",
+      "text-sky-300",
+      "to-sky-400/30",
+      "via-sky-400"
+    ],
     "style": {
       "": {
         "display": "flex",
@@ -1094,7 +1425,14 @@
     ]
   },
   {
-    "composition": "flex items-center rounded-full px-2.5 bg-slate-800",
+    "tag": "div",
+    "classList": [
+      "bg-slate-800",
+      "flex",
+      "items-center",
+      "px-2.5",
+      "rounded-full"
+    ],
     "style": {
       "": {
         "display": "flex",
@@ -1117,7 +1455,8 @@
     ]
   },
   {
-    "composition": "flex h-6 rounded-full text-slate-500",
+    "tag": "div",
+    "classList": ["flex", "h-6", "rounded-full", "text-slate-500"],
     "style": {
       "": {
         "display": "flex",
@@ -1137,7 +1476,8 @@
     ]
   },
   {
-    "composition": "flex items-center rounded-full px-2.5",
+    "tag": "div",
+    "classList": ["flex", "items-center", "px-2.5", "rounded-full"],
     "style": {
       "": {
         "display": "flex",
@@ -1158,7 +1498,8 @@
     ]
   },
   {
-    "composition": "mt-6 flex items-start px-1 text-sm",
+    "tag": "div",
+    "classList": ["flex", "items-start", "mt-6", "px-1", "text-sm"],
     "style": {
       "": {
         "margin-top": "1.5rem",
@@ -1179,7 +1520,15 @@
     ]
   },
   {
-    "composition": "select-none border-r border-slate-300/5 pr-4 font-mono text-slate-600",
+    "tag": "div",
+    "classList": [
+      "border-r",
+      "border-slate-300/5",
+      "font-mono",
+      "pr-4",
+      "select-none",
+      "text-slate-600"
+    ],
     "style": {
       "": {
         "user-select": "none",
@@ -1203,7 +1552,14 @@
     ]
   },
   {
-    "composition": "prism-code language-javascript flex overflow-x-auto pb-6",
+    "tag": "pre",
+    "classList": [
+      "flex",
+      "language-javascript",
+      "overflow-x-auto",
+      "pb-6",
+      "prism-code"
+    ],
     "style": {
       "": {
         "display": "flex",
@@ -1218,7 +1574,8 @@
     ]
   },
   {
-    "composition": "px-4",
+    "tag": "code",
+    "classList": ["px-4"],
     "style": {
       "": {
         "padding-left": "1rem",
@@ -1228,47 +1585,65 @@
     "css": [".px-4 { padding-left: 1rem; padding-right: 1rem; }"]
   },
   {
-    "composition": "token-line",
+    "tag": "div",
+    "classList": ["token-line"],
     "style": {},
     "css": []
   },
   {
-    "composition": "token keyword module",
+    "tag": "span",
+    "classList": ["keyword", "module", "token"],
     "style": {},
     "css": []
   },
   {
-    "composition": "token plain",
+    "tag": "span",
+    "classList": ["plain", "token"],
     "style": {},
     "css": []
   },
   {
-    "composition": "token punctuation",
+    "tag": "span",
+    "classList": ["punctuation", "token"],
     "style": {},
     "css": []
   },
   {
-    "composition": "token literal-property property",
+    "tag": "span",
+    "classList": ["literal-property", "property", "token"],
     "style": {},
     "css": []
   },
   {
-    "composition": "token operator",
+    "tag": "span",
+    "classList": ["operator", "token"],
     "style": {},
     "css": []
   },
   {
-    "composition": "token string",
+    "tag": "span",
+    "classList": ["string", "token"],
     "style": {},
     "css": []
   },
   {
-    "composition": "token number",
+    "tag": "span",
+    "classList": ["number", "token"],
     "style": {},
     "css": []
   },
   {
-    "composition": "relative mx-auto flex max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12",
+    "tag": "div",
+    "classList": [
+      "flex",
+      "justify-center",
+      "lg:px-8",
+      "max-w-8xl",
+      "mx-auto",
+      "relative",
+      "sm:px-2",
+      "xl:px-12"
+    ],
     "style": {
       "": {
         "position": "relative",
@@ -1303,7 +1678,8 @@
     ]
   },
   {
-    "composition": "hidden lg:relative lg:block lg:flex-none",
+    "tag": "div",
+    "classList": ["hidden", "lg:block", "lg:flex-none", "lg:relative"],
     "style": {
       "": {
         "display": "none"
@@ -1324,7 +1700,15 @@
     ]
   },
   {
-    "composition": "absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden",
+    "tag": "div",
+    "classList": [
+      "absolute",
+      "bg-slate-50",
+      "dark:hidden",
+      "inset-y-0",
+      "right-0",
+      "w-[50vw]"
+    ],
     "style": {
       "": {
         "position": "absolute",
@@ -1344,7 +1728,19 @@
     ]
   },
   {
-    "composition": "absolute top-16 bottom-0 right-0 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block",
+    "tag": "div",
+    "classList": [
+      "absolute",
+      "bg-gradient-to-t",
+      "bottom-0",
+      "dark:block",
+      "from-slate-800",
+      "h-12",
+      "hidden",
+      "right-0",
+      "top-16",
+      "w-px"
+    ],
     "style": {
       "": {
         "position": "absolute",
@@ -1370,7 +1766,17 @@
     ]
   },
   {
-    "composition": "absolute top-28 bottom-0 right-0 hidden w-px bg-slate-800 dark:block",
+    "tag": "div",
+    "classList": [
+      "absolute",
+      "bg-slate-800",
+      "bottom-0",
+      "dark:block",
+      "hidden",
+      "right-0",
+      "top-28",
+      "w-px"
+    ],
     "style": {
       "": {
         "position": "absolute",
@@ -1393,7 +1799,17 @@
     ]
   },
   {
-    "composition": "sticky top-[4.5rem] -ml-0.5 h-[calc(100vh-4.5rem)] overflow-y-auto overflow-x-hidden py-16 pl-0.5",
+    "tag": "div",
+    "classList": [
+      "-ml-0.5",
+      "h-[calc(100vh-4.5rem)]",
+      "overflow-x-hidden",
+      "overflow-y-auto",
+      "pl-0.5",
+      "py-16",
+      "sticky",
+      "top-[4.5rem]"
+    ],
     "style": {
       "": {
         "position": "sticky",
@@ -1419,7 +1835,15 @@
     ]
   },
   {
-    "composition": "text-base lg:text-sm w-64 pr-8 xl:w-72 xl:pr-16",
+    "tag": "nav",
+    "classList": [
+      "lg:text-sm",
+      "pr-8",
+      "text-base",
+      "w-64",
+      "xl:pr-16",
+      "xl:w-72"
+    ],
     "style": {
       "": {
         "font-size": "1rem",
@@ -1446,12 +1870,19 @@
     ]
   },
   {
-    "composition": "space-y-9",
+    "tag": "ul",
+    "classList": ["space-y-9"],
     "style": {},
     "css": []
   },
   {
-    "composition": "font-display font-medium text-slate-900 dark:text-white",
+    "tag": "h2",
+    "classList": [
+      "dark:text-white",
+      "font-display",
+      "font-medium",
+      "text-slate-900"
+    ],
     "style": {
       "": {
         "font-family": "Lexend, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
@@ -1466,7 +1897,17 @@
     ]
   },
   {
-    "composition": "mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200",
+    "tag": "ul",
+    "classList": [
+      "border-l-2",
+      "border-slate-100",
+      "dark:border-slate-800",
+      "lg:border-slate-200",
+      "lg:mt-4",
+      "lg:space-y-4",
+      "mt-2",
+      "space-y-2"
+    ],
     "style": {
       "": {
         "margin-top": "0.5rem",
@@ -1493,7 +1934,23 @@
     ]
   },
   {
-    "composition": "block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-sky-500 before:bg-sky-500",
+    "tag": "a",
+    "classList": [
+      "before:-left-1",
+      "before:-translate-y-1/2",
+      "before:absolute",
+      "before:bg-sky-500",
+      "before:h-1.5",
+      "before:pointer-events-none",
+      "before:rounded-full",
+      "before:top-1/2",
+      "before:w-1.5",
+      "block",
+      "font-semibold",
+      "pl-3.5",
+      "text-sky-500",
+      "w-full"
+    ],
     "style": {
       "": {
         "display": "block",
@@ -1512,7 +1969,28 @@
     ]
   },
   {
-    "composition": "block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300",
+    "tag": "a",
+    "classList": [
+      "before:-left-1",
+      "before:-translate-y-1/2",
+      "before:absolute",
+      "before:bg-slate-300",
+      "before:h-1.5",
+      "before:hidden",
+      "before:pointer-events-none",
+      "before:rounded-full",
+      "before:top-1/2",
+      "before:w-1.5",
+      "block",
+      "dark:before:bg-slate-700",
+      "dark:hover:text-slate-300",
+      "dark:text-slate-400",
+      "hover:before:block",
+      "hover:text-slate-600",
+      "pl-3.5",
+      "text-slate-500",
+      "w-full"
+    ],
     "style": {
       "": {
         "display": "block",
@@ -1529,7 +2007,18 @@
     ]
   },
   {
-    "composition": "min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16",
+    "tag": "div",
+    "classList": [
+      "flex-auto",
+      "lg:max-w-none",
+      "lg:pl-8",
+      "lg:pr-0",
+      "max-w-2xl",
+      "min-w-0",
+      "px-4",
+      "py-16",
+      "xl:px-16"
+    ],
     "style": {
       "": {
         "min-width": "0px",
@@ -1565,7 +2054,8 @@
     ]
   },
   {
-    "composition": "mb-9 space-y-1",
+    "tag": "header",
+    "classList": ["mb-9", "space-y-1"],
     "style": {
       "": {
         "margin-bottom": "2.25rem"
@@ -1574,7 +2064,8 @@
     "css": [".mb-9 { margin-bottom: 2.25rem; }"]
   },
   {
-    "composition": "font-display text-sm font-medium text-sky-500",
+    "tag": "p",
+    "classList": ["font-display", "font-medium", "text-sky-500", "text-sm"],
     "style": {
       "": {
         "font-family": "Lexend, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
@@ -1592,7 +2083,14 @@
     ]
   },
   {
-    "composition": "font-display text-3xl tracking-tight text-slate-900 dark:text-white",
+    "tag": "h1",
+    "classList": [
+      "dark:text-white",
+      "font-display",
+      "text-3xl",
+      "text-slate-900",
+      "tracking-tight"
+    ],
     "style": {
       "": {
         "font-family": "Lexend, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
@@ -1610,7 +2108,36 @@
     ]
   },
   {
-    "composition": "prose prose-slate max-w-none dark:prose-invert dark:text-slate-400 prose-headings:scroll-mt-28 prose-headings:font-display prose-headings:font-normal lg:prose-headings:scroll-mt-[8.5rem] prose-lead:text-slate-500 dark:prose-lead:text-slate-400 prose-a:font-semibold dark:prose-a:text-sky-400 prose-a:no-underline prose-a:shadow-[inset_0_-2px_0_0_var(--tw-prose-background,#fff),inset_0_calc(-1*(var(--tw-prose-underline-size,4px)+2px))_0_0_var(--tw-prose-underline,theme(colors.sky.300))] hover:prose-a:[--tw-prose-underline-size:6px] dark:[--tw-prose-background:theme(colors.slate.900)] dark:prose-a:shadow-[inset_0_calc(-1*var(--tw-prose-underline-size,2px))_0_0_var(--tw-prose-underline,theme(colors.sky.800))] dark:hover:prose-a:[--tw-prose-underline-size:6px] prose-pre:rounded-xl prose-pre:bg-slate-900 prose-pre:shadow-lg dark:prose-pre:bg-slate-800/60 dark:prose-pre:shadow-none dark:prose-pre:ring-1 dark:prose-pre:ring-slate-300/10 dark:prose-hr:border-slate-800",
+    "tag": "div",
+    "classList": [
+      "dark:[--tw-prose-background:theme(colors.slate.900)]",
+      "dark:hover:prose-a:[--tw-prose-underline-size:6px]",
+      "dark:prose-a:shadow-[inset_0_calc(-1*var(--tw-prose-underline-size,2px))_0_0_var(--tw-prose-underline,theme(colors.sky.800))]",
+      "dark:prose-a:text-sky-400",
+      "dark:prose-hr:border-slate-800",
+      "dark:prose-invert",
+      "dark:prose-lead:text-slate-400",
+      "dark:prose-pre:bg-slate-800/60",
+      "dark:prose-pre:ring-1",
+      "dark:prose-pre:ring-slate-300/10",
+      "dark:prose-pre:shadow-none",
+      "dark:text-slate-400",
+      "hover:prose-a:[--tw-prose-underline-size:6px]",
+      "lg:prose-headings:scroll-mt-[8.5rem]",
+      "max-w-none",
+      "prose",
+      "prose-a:font-semibold",
+      "prose-a:no-underline",
+      "prose-a:shadow-[inset_0_-2px_0_0_var(--tw-prose-background,#fff),inset_0_calc(-1*(var(--tw-prose-underline-size,4px)+2px))_0_0_var(--tw-prose-underline,theme(colors.sky.300))]",
+      "prose-headings:font-display",
+      "prose-headings:font-normal",
+      "prose-headings:scroll-mt-28",
+      "prose-lead:text-slate-500",
+      "prose-pre:bg-slate-900",
+      "prose-pre:rounded-xl",
+      "prose-pre:shadow-lg",
+      "prose-slate"
+    ],
     "style": {
       "": {
         "color": "var(--tw-prose-body)",
@@ -1627,12 +2154,21 @@
     ]
   },
   {
-    "composition": "lead",
+    "tag": "p",
+    "classList": ["lead"],
     "style": {},
     "css": []
   },
   {
-    "composition": "not-prose my-12 grid grid-cols-1 gap-6 sm:grid-cols-2",
+    "tag": "div",
+    "classList": [
+      "gap-6",
+      "grid",
+      "grid-cols-1",
+      "my-12",
+      "not-prose",
+      "sm:grid-cols-2"
+    ],
     "style": {
       "": {
         "margin-top": "3rem",
@@ -1655,7 +2191,15 @@
     ]
   },
   {
-    "composition": "group relative rounded-xl border border-slate-200 dark:border-slate-800",
+    "tag": "div",
+    "classList": [
+      "border",
+      "border-slate-200",
+      "dark:border-slate-800",
+      "group",
+      "relative",
+      "rounded-xl"
+    ],
     "style": {
       "": {
         "position": "relative",
@@ -1681,7 +2225,18 @@
     ]
   },
   {
-    "composition": "absolute -inset-px rounded-xl border-2 border-transparent opacity-0 [background:linear-gradient(var(--quick-links-hover-bg,theme(colors.sky.50)),var(--quick-links-hover-bg,theme(colors.sky.50)))_padding-box,linear-gradient(to_top,theme(colors.indigo.400),theme(colors.cyan.400),theme(colors.sky.500))_border-box] group-hover:opacity-100 dark:[--quick-links-hover-bg:theme(colors.slate.800)]",
+    "tag": "div",
+    "classList": [
+      "-inset-px",
+      "[background:linear-gradient(var(--quick-links-hover-bg,theme(colors.sky.50)),var(--quick-links-hover-bg,theme(colors.sky.50)))_padding-box,linear-gradient(to_top,theme(colors.indigo.400),theme(colors.cyan.400),theme(colors.sky.500))_border-box]",
+      "absolute",
+      "border-2",
+      "border-transparent",
+      "dark:[--quick-links-hover-bg:theme(colors.slate.800)]",
+      "group-hover:opacity-100",
+      "opacity-0",
+      "rounded-xl"
+    ],
     "style": {
       "": {
         "position": "absolute",
@@ -1725,7 +2280,8 @@
     ]
   },
   {
-    "composition": "relative overflow-hidden rounded-xl p-6",
+    "tag": "div",
+    "classList": ["overflow-hidden", "p-6", "relative", "rounded-xl"],
     "style": {
       "": {
         "position": "relative",
@@ -1749,7 +2305,13 @@
     ]
   },
   {
-    "composition": "h-8 w-8 [--icon-foreground:theme(colors.slate.900)] [--icon-background:theme(colors.white)]",
+    "tag": "svg",
+    "classList": [
+      "[--icon-background:theme(colors.white)]",
+      "[--icon-foreground:theme(colors.slate.900)]",
+      "h-8",
+      "w-8"
+    ],
     "style": {
       "": {
         "height": "2rem",
@@ -1764,12 +2326,17 @@
     ]
   },
   {
-    "composition": "dark:hidden",
+    "tag": "g",
+    "classList": ["dark:hidden"],
     "style": {},
     "css": []
   },
   {
-    "composition": "fill-[var(--icon-background)] stroke-[color:var(--icon-foreground)]",
+    "tag": "path",
+    "classList": [
+      "fill-[var(--icon-background)]",
+      "stroke-[color:var(--icon-foreground)]"
+    ],
     "style": {
       "": {
         "fill": "var(--icon-background)",
@@ -1782,7 +2349,8 @@
     ]
   },
   {
-    "composition": "hidden dark:inline",
+    "tag": "g",
+    "classList": ["dark:inline", "hidden"],
     "style": {
       "": {
         "display": "none"
@@ -1791,7 +2359,14 @@
     "css": [".hidden { display: none; }"]
   },
   {
-    "composition": "mt-4 font-display text-base text-slate-900 dark:text-white",
+    "tag": "h2",
+    "classList": [
+      "dark:text-white",
+      "font-display",
+      "mt-4",
+      "text-base",
+      "text-slate-900"
+    ],
     "style": {
       "": {
         "margin-top": "1rem",
@@ -1809,7 +2384,8 @@
     ]
   },
   {
-    "composition": "absolute -inset-px rounded-xl",
+    "tag": "span",
+    "classList": ["-inset-px", "absolute", "rounded-xl"],
     "style": {
       "": {
         "position": "absolute",
@@ -1830,7 +2406,8 @@
     ]
   },
   {
-    "composition": "mt-1 text-sm text-slate-700 dark:text-slate-400",
+    "tag": "p",
+    "classList": ["dark:text-slate-400", "mt-1", "text-slate-700", "text-sm"],
     "style": {
       "": {
         "margin-top": "0.25rem",
@@ -1846,7 +2423,8 @@
     ]
   },
   {
-    "composition": "fill-[var(--icon-background)]",
+    "tag": "path",
+    "classList": ["fill-[var(--icon-background)]"],
     "style": {
       "": {
         "fill": "var(--icon-background)"
@@ -1857,7 +2435,8 @@
     ]
   },
   {
-    "composition": "stroke-[color:var(--icon-foreground)]",
+    "tag": "g",
+    "classList": ["stroke-[color:var(--icon-foreground)]"],
     "style": {
       "": {
         "stroke": "var(--icon-foreground)"
@@ -1868,17 +2447,29 @@
     ]
   },
   {
-    "composition": "prism-code language-shell",
+    "tag": "pre",
+    "classList": ["language-shell", "prism-code"],
     "style": {},
     "css": []
   },
   {
-    "composition": "token function",
+    "tag": "span",
+    "classList": ["function", "token"],
     "style": {},
     "css": []
   },
   {
-    "composition": "my-8 flex rounded-3xl p-6 bg-amber-50 dark:bg-slate-800/60 dark:ring-1 dark:ring-slate-300/10",
+    "tag": "div",
+    "classList": [
+      "bg-amber-50",
+      "dark:bg-slate-800/60",
+      "dark:ring-1",
+      "dark:ring-slate-300/10",
+      "flex",
+      "my-8",
+      "p-6",
+      "rounded-3xl"
+    ],
     "style": {
       "": {
         "margin-top": "2rem",
@@ -1904,7 +2495,14 @@
     ]
   },
   {
-    "composition": "h-8 w-8 flex-none [--icon-foreground:theme(colors.amber.900)] [--icon-background:theme(colors.amber.100)]",
+    "tag": "svg",
+    "classList": [
+      "[--icon-background:theme(colors.amber.100)]",
+      "[--icon-foreground:theme(colors.amber.900)]",
+      "flex-none",
+      "h-8",
+      "w-8"
+    ],
     "style": {
       "": {
         "height": "2rem",
@@ -1923,7 +2521,11 @@
     ]
   },
   {
-    "composition": "fill-[var(--icon-foreground)] stroke-[color:var(--icon-foreground)]",
+    "tag": "path",
+    "classList": [
+      "fill-[var(--icon-foreground)]",
+      "stroke-[color:var(--icon-foreground)]"
+    ],
     "style": {
       "": {
         "fill": "var(--icon-foreground)",
@@ -1936,7 +2538,8 @@
     ]
   },
   {
-    "composition": "ml-4 flex-auto",
+    "tag": "div",
+    "classList": ["flex-auto", "ml-4"],
     "style": {
       "": {
         "margin-left": "1rem",
@@ -1948,7 +2551,14 @@
     "css": [".ml-4 { margin-left: 1rem; }", ".flex-auto { flex: 1 1 auto; }"]
   },
   {
-    "composition": "m-0 font-display text-xl text-amber-900 dark:text-amber-500",
+    "tag": "p",
+    "classList": [
+      "dark:text-amber-500",
+      "font-display",
+      "m-0",
+      "text-amber-900",
+      "text-xl"
+    ],
     "style": {
       "": {
         "margin-top": "0px",
@@ -1969,7 +2579,19 @@
     ]
   },
   {
-    "composition": "prose mt-2.5 text-amber-800 [--tw-prose-underline:theme(colors.amber.400)] [--tw-prose-background:theme(colors.amber.50)] prose-a:text-amber-900 prose-code:text-amber-900 dark:text-slate-300 dark:[--tw-prose-underline:theme(colors.sky.700)] dark:prose-code:text-slate-300",
+    "tag": "div",
+    "classList": [
+      "[--tw-prose-background:theme(colors.amber.50)]",
+      "[--tw-prose-underline:theme(colors.amber.400)]",
+      "dark:[--tw-prose-underline:theme(colors.sky.700)]",
+      "dark:prose-code:text-slate-300",
+      "dark:text-slate-300",
+      "mt-2.5",
+      "prose",
+      "prose-a:text-amber-900",
+      "prose-code:text-amber-900",
+      "text-amber-800"
+    ],
     "style": {
       "": {
         "color": "rgb(146 64 14/var(--tw-text-opacity))",
@@ -1989,17 +2611,29 @@
     ]
   },
   {
-    "composition": "prism-code language-js",
+    "tag": "pre",
+    "classList": ["language-js", "prism-code"],
     "style": {},
     "css": []
   },
   {
-    "composition": "token comment",
+    "tag": "span",
+    "classList": ["comment", "token"],
     "style": {},
     "css": []
   },
   {
-    "composition": "my-8 flex rounded-3xl p-6 bg-sky-50 dark:bg-slate-800/60 dark:ring-1 dark:ring-slate-300/10",
+    "tag": "div",
+    "classList": [
+      "bg-sky-50",
+      "dark:bg-slate-800/60",
+      "dark:ring-1",
+      "dark:ring-slate-300/10",
+      "flex",
+      "my-8",
+      "p-6",
+      "rounded-3xl"
+    ],
     "style": {
       "": {
         "margin-top": "2rem",
@@ -2025,7 +2659,14 @@
     ]
   },
   {
-    "composition": "h-8 w-8 flex-none [--icon-foreground:theme(colors.slate.900)] [--icon-background:theme(colors.white)]",
+    "tag": "svg",
+    "classList": [
+      "[--icon-background:theme(colors.white)]",
+      "[--icon-foreground:theme(colors.slate.900)]",
+      "flex-none",
+      "h-8",
+      "w-8"
+    ],
     "style": {
       "": {
         "height": "2rem",
@@ -2044,7 +2685,8 @@
     ]
   },
   {
-    "composition": "fill-[var(--icon-foreground)]",
+    "tag": "path",
+    "classList": ["fill-[var(--icon-foreground)]"],
     "style": {
       "": {
         "fill": "var(--icon-foreground)"
@@ -2055,7 +2697,14 @@
     ]
   },
   {
-    "composition": "m-0 font-display text-xl text-sky-900 dark:text-sky-400",
+    "tag": "p",
+    "classList": [
+      "dark:text-sky-400",
+      "font-display",
+      "m-0",
+      "text-sky-900",
+      "text-xl"
+    ],
     "style": {
       "": {
         "margin-top": "0px",
@@ -2076,7 +2725,17 @@
     ]
   },
   {
-    "composition": "prose mt-2.5 text-sky-800 [--tw-prose-background:theme(colors.sky.50)] prose-a:text-sky-900 prose-code:text-sky-900 dark:text-slate-300 dark:prose-code:text-slate-300",
+    "tag": "div",
+    "classList": [
+      "[--tw-prose-background:theme(colors.sky.50)]",
+      "dark:prose-code:text-slate-300",
+      "dark:text-slate-300",
+      "mt-2.5",
+      "prose",
+      "prose-a:text-sky-900",
+      "prose-code:text-sky-900",
+      "text-sky-800"
+    ],
     "style": {
       "": {
         "color": "rgb(7 89 133/var(--tw-text-opacity))",
@@ -2095,7 +2754,15 @@
     ]
   },
   {
-    "composition": "mt-12 flex border-t border-slate-200 pt-6 dark:border-slate-800",
+    "tag": "dl",
+    "classList": [
+      "border-slate-200",
+      "border-t",
+      "dark:border-slate-800",
+      "flex",
+      "mt-12",
+      "pt-6"
+    ],
     "style": {
       "": {
         "margin-top": "3rem",
@@ -2117,7 +2784,8 @@
     ]
   },
   {
-    "composition": "ml-auto text-right",
+    "tag": "div",
+    "classList": ["ml-auto", "text-right"],
     "style": {
       "": {
         "margin-left": "auto",
@@ -2130,7 +2798,14 @@
     ]
   },
   {
-    "composition": "font-display text-sm font-medium text-slate-900 dark:text-white",
+    "tag": "dt",
+    "classList": [
+      "dark:text-white",
+      "font-display",
+      "font-medium",
+      "text-slate-900",
+      "text-sm"
+    ],
     "style": {
       "": {
         "font-family": "Lexend, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
@@ -2148,7 +2823,8 @@
     ]
   },
   {
-    "composition": "mt-1",
+    "tag": "dd",
+    "classList": ["mt-1"],
     "style": {
       "": {
         "margin-top": "0.25rem"
@@ -2157,7 +2833,15 @@
     "css": [".mt-1 { margin-top: 0.25rem; }"]
   },
   {
-    "composition": "text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300",
+    "tag": "a",
+    "classList": [
+      "dark:hover:text-slate-300",
+      "dark:text-slate-400",
+      "font-semibold",
+      "hover:text-slate-600",
+      "text-base",
+      "text-slate-500"
+    ],
     "style": {
       "": {
         "font-size": "1rem",
@@ -2173,7 +2857,19 @@
     ]
   },
   {
-    "composition": "hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6",
+    "tag": "div",
+    "classList": [
+      "hidden",
+      "xl:-mr-6",
+      "xl:block",
+      "xl:flex-none",
+      "xl:h-[calc(100vh-4.5rem)]",
+      "xl:overflow-y-auto",
+      "xl:pr-6",
+      "xl:py-16",
+      "xl:sticky",
+      "xl:top-[4.5rem]"
+    ],
     "style": {
       "": {
         "display": "none"
@@ -2207,7 +2903,8 @@
     ]
   },
   {
-    "composition": "w-56",
+    "tag": "nav",
+    "classList": ["w-56"],
     "style": {
       "": {
         "width": "14rem"
@@ -2216,7 +2913,8 @@
     "css": [".w-56 { width: 14rem; }"]
   },
   {
-    "composition": "mt-4 space-y-3 text-sm",
+    "tag": "ol",
+    "classList": ["mt-4", "space-y-3", "text-sm"],
     "style": {
       "": {
         "margin-top": "1rem",
@@ -2230,7 +2928,8 @@
     ]
   },
   {
-    "composition": "text-sky-500",
+    "tag": "a",
+    "classList": ["text-sky-500"],
     "style": {
       "": {
         "color": "rgb(14 165 233/var(--tw-text-opacity))"
@@ -2241,7 +2940,14 @@
     ]
   },
   {
-    "composition": "mt-2 space-y-3 pl-5 text-slate-500 dark:text-slate-400",
+    "tag": "ol",
+    "classList": [
+      "dark:text-slate-400",
+      "mt-2",
+      "pl-5",
+      "space-y-3",
+      "text-slate-500"
+    ],
     "style": {
       "": {
         "margin-top": "0.5rem",
@@ -2256,12 +2962,20 @@
     ]
   },
   {
-    "composition": "hover:text-slate-600 dark:hover:text-slate-300",
+    "tag": "a",
+    "classList": ["dark:hover:text-slate-300", "hover:text-slate-600"],
     "style": {},
     "css": []
   },
   {
-    "composition": "font-normal text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-300",
+    "tag": "a",
+    "classList": [
+      "dark:hover:text-slate-300",
+      "dark:text-slate-400",
+      "font-normal",
+      "hover:text-slate-700",
+      "text-slate-500"
+    ],
     "style": {
       "": {
         "font-weight": "400",

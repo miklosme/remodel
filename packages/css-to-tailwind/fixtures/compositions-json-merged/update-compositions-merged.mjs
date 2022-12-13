@@ -94,7 +94,8 @@ function getParsedValues() {
       markCompositionAsKnown(item.classList);
 
       return {
-        composition: Array.from(item.classList).join(' '),
+        tag: item.tagName.toLowerCase(),
+        classList: Array.from(item.classList).sort(),
         ...getStyle(item),
       };
     })
