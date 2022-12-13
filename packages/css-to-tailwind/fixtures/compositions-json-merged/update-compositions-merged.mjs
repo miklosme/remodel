@@ -16,6 +16,16 @@ const urls = [
 ];
 
 function getParsedValues() {
+  const knownComponents = new Set();
+  const isCompositionKnown = (classList) => {
+    const composition = Array.from(classList).sort().join(' ');
+    if (knownComponents.has(composition)) return true;
+    return false;
+  };
+  const markCompositionAsKnown = (classList) => {
+    const composition = Array.from(classList).sort().join(' ');
+    knownComponents.add(composition);
+  };
   const isMatching = (el, selector) => {
     const root = document.querySelector(':root');
     if (root && root.matches(selector) && root !== el) return false;
@@ -80,6 +90,9 @@ function getParsedValues() {
   return list
     .map((item) => {
       if (!item.classList.length) return null;
+      if (isCompositionKnown(item.classList)) return null;
+      markCompositionAsKnown(item.classList);
+
       return {
         composition: Array.from(item.classList).join(' '),
         ...getStyle(item),
