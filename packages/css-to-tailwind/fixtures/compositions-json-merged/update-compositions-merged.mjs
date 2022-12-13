@@ -25,6 +25,11 @@ function getMergedValues() {
     const style = {};
     const css = [];
     for (const sheet of document.styleSheets) {
+      try {
+        sheet.cssRules;
+      } catch (e) {
+        continue;
+      }
       for (const rule of sheet.rules) {
         if (rule.media) {
           for (const mediaRule of rule.cssRules) {
@@ -53,7 +58,8 @@ function getMergedValues() {
   }
 
   const list = Array.from(
-    document.querySelectorAll('.flex.items-center.md\\:gap-x-12'),
+    // document.querySelectorAll('.flex.items-center.md\\:gap-x-12'),
+    document.querySelectorAll('*'),
   );
 
   return list
@@ -71,7 +77,7 @@ const browser = await chromium.launch();
 const context = await browser.newContext(devices['Desktop Chrome HiDPI']);
 const page = await context.newPage();
 
-const tasks = [urls[0]].map((url) => async () => {
+const tasks = urls.map((url) => async () => {
   console.log('Processing:', url);
   await page.goto(url);
   const result = await page.evaluate(getMergedValues);
