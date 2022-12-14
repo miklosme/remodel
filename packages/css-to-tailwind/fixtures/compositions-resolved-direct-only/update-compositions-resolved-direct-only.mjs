@@ -122,7 +122,7 @@ const tasks = urls.map((url) => async () => {
   const file = `${url.replace(
     /https:\/\/|\.tailwindui\.com\//g,
     '',
-  )}.compositions-merged.json`;
+  )}.compositions-direct-only.json`;
   await fs.writeFile(path.resolve(__dirname, file), data, 'utf8');
   console.log('Done:', url);
 });
