@@ -3,7 +3,12 @@
     "tag": "html",
     "classList": ["antialiased", "bg-white", "js-focus-visible"],
     "style": {},
-    "css": []
+    "css": [],
+    "appliesRulesDirectly": {
+      "bg-white": false,
+      "antialiased": false,
+      "js-focus-visible": false
+    }
   },
   {
     "tag": "header",
@@ -46,7 +51,18 @@
       "@media (min-width: 1024px) { .lg\\:items-start { align-items: flex-start; } }",
       "@media (min-width: 1024px) { .lg\\:overflow-y-auto { overflow-y: auto; } }",
       "@media (min-width: 1280px) { .xl\\:w-120 { width: 30rem; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "bg-slate-50": true,
+      "lg:fixed": true,
+      "lg:inset-y-0": true,
+      "lg:left-0": true,
+      "lg:flex": true,
+      "lg:w-112": true,
+      "lg:items-start": true,
+      "lg:overflow-y-auto": true,
+      "xl:w-120": true
+    }
   },
   {
     "tag": "div",
@@ -98,7 +114,21 @@
       "@media (min-width: 1024px) { .lg\\:text-sm { font-size: 0.875rem; line-height: 1.25rem; } }",
       "@media (min-width: 1024px) { .lg\\:leading-7 { line-height: 1.75rem; } }",
       "@media (min-width: 1024px) { .lg\\:\\[writing-mode\\:vertical-rl\\] { writing-mode: vertical-rl; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "hidden": true,
+      "lg:sticky": true,
+      "lg:top-0": true,
+      "lg:flex": true,
+      "lg:w-16": true,
+      "lg:flex-none": true,
+      "lg:items-center": true,
+      "lg:whitespace-nowrap": true,
+      "lg:py-12": true,
+      "lg:text-sm": true,
+      "lg:leading-7": true,
+      "lg:[writing-mode:vertical-rl]": true
+    }
   },
   {
     "tag": "span",
@@ -112,7 +142,11 @@
     "css": [
       ".font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; }",
       ".text-slate-500 { --tw-text-opacity:1; color: rgb(100 116 139/var(--tw-text-opacity)); }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "font-mono": true,
+      "text-slate-500": true
+    }
   },
   {
     "tag": "span",
@@ -133,7 +167,14 @@
       ".gap-6 { gap: 1.5rem; }",
       ".font-bold { font-weight: 700; }",
       ".text-slate-900 { --tw-text-opacity:1; color: rgb(15 23 42/var(--tw-text-opacity)); }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "mt-6": true,
+      "flex": true,
+      "gap-6": true,
+      "font-bold": true,
+      "text-slate-900": true
+    }
   },
   {
     "tag": "span",
@@ -145,7 +186,10 @@
     },
     "css": [
       ".text-slate-400 { --tw-text-opacity:1; color: rgb(148 163 184/var(--tw-text-opacity)); }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "text-slate-400": true
+    }
   },
   {
     "tag": "div",
@@ -225,7 +269,25 @@
       "@media (min-width: 1024px) { .lg\\:py-12 { padding-top: 3rem; padding-bottom: 3rem; } }",
       "@media (min-width: 1024px) { .lg\\:px-8 { padding-left: 2rem; padding-right: 2rem; } }",
       "@media (min-width: 1280px) { .xl\\:px-12 { padding-left: 3rem; padding-right: 3rem; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "relative": true,
+      "z-10": true,
+      "mx-auto": true,
+      "px-4": true,
+      "pb-4": true,
+      "pt-10": true,
+      "sm:px-6": true,
+      "md:max-w-2xl": true,
+      "md:px-4": true,
+      "lg:min-h-full": true,
+      "lg:flex-auto": true,
+      "lg:border-x": true,
+      "lg:border-slate-200": true,
+      "lg:py-12": true,
+      "lg:px-8": true,
+      "xl:px-12": true
+    }
   },
   {
     "tag": "a",
@@ -290,7 +352,22 @@
       "@media (min-width: 640px) { .sm\\:rounded-xl { border-radius: 0.75rem; } }",
       "@media (min-width: 1024px) { .lg\\:w-auto { width: auto; } }",
       "@media (min-width: 1024px) { .lg\\:rounded-2xl { border-radius: 1rem; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "relative": true,
+      "mx-auto": true,
+      "block": true,
+      "w-48": true,
+      "overflow-hidden": true,
+      "rounded-lg": true,
+      "bg-slate-200": true,
+      "shadow-xl": true,
+      "shadow-slate-200": true,
+      "sm:w-64": true,
+      "sm:rounded-xl": true,
+      "lg:w-auto": true,
+      "lg:rounded-2xl": true
+    }
   },
   {
     "tag": "img",
@@ -300,7 +377,10 @@
         "width": "100%"
       }
     },
-    "css": [".w-full { width: 100%; }"]
+    "css": [".w-full { width: 100%; }"],
+    "appliesRulesDirectly": {
+      "w-full": true
+    }
   },
   {
     "tag": "div",
@@ -349,7 +429,17 @@
       ".ring-black\\/10 { --tw-ring-color:rgba(0,0,0,0.1); }",
       "@media (min-width: 640px) { .sm\\:rounded-xl { border-radius: 0.75rem; } }",
       "@media (min-width: 1024px) { .lg\\:rounded-2xl { border-radius: 1rem; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "absolute": true,
+      "inset-0": true,
+      "rounded-lg": true,
+      "ring-1": true,
+      "ring-inset": true,
+      "ring-black/10": true,
+      "sm:rounded-xl": true,
+      "lg:rounded-2xl": true
+    }
   },
   {
     "tag": "div",
@@ -369,7 +459,13 @@
       ".text-center { text-align: center; }",
       "@media (min-width: 1024px) { .lg\\:mt-12 { margin-top: 3rem; } }",
       "@media (min-width: 1024px) { .lg\\:text-left { text-align: left; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "mt-10": true,
+      "text-center": true,
+      "lg:mt-12": true,
+      "lg:text-left": true
+    }
   },
   {
     "tag": "p",
@@ -387,7 +483,12 @@
       ".text-lg, .text-xl { line-height: 1.75rem; }",
       ".font-bold { font-weight: 700; }",
       ".text-slate-900 { --tw-text-opacity:1; color: rgb(15 23 42/var(--tw-text-opacity)); }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "text-xl": true,
+      "font-bold": true,
+      "text-slate-900": true
+    }
   },
   {
     "tag": "p",
@@ -414,7 +515,14 @@
       ".font-medium { font-weight: 500; }",
       ".leading-8 { line-height: 2rem; }",
       ".text-slate-700 { --tw-text-opacity:1; color: rgb(51 65 85/var(--tw-text-opacity)); }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "mt-3": true,
+      "text-lg": true,
+      "font-medium": true,
+      "leading-8": true,
+      "text-slate-700": true
+    }
   },
   {
     "tag": "section",
@@ -432,7 +540,12 @@
       ".mt-12 { margin-top: 3rem; }",
       ".hidden { display: none; }",
       "@media (min-width: 1024px) { .lg\\:block { display: block; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "mt-12": true,
+      "hidden": true,
+      "lg:block": true
+    }
   },
   {
     "tag": "h2",
@@ -464,7 +577,16 @@
       ".font-medium { font-weight: 500; }",
       ".leading-7 { line-height: 1.75rem; }",
       ".text-slate-900 { --tw-text-opacity:1; color: rgb(15 23 42/var(--tw-text-opacity)); }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "flex": true,
+      "items-center": true,
+      "font-mono": true,
+      "text-sm": true,
+      "font-medium": true,
+      "leading-7": true,
+      "text-slate-900": true
+    }
   },
   {
     "tag": "svg",
@@ -475,7 +597,11 @@
         "width": "0.625rem"
       }
     },
-    "css": [".h-2\\.5 { height: 0.625rem; }", ".w-2\\.5 { width: 0.625rem; }"]
+    "css": [".h-2\\.5 { height: 0.625rem; }", ".w-2\\.5 { width: 0.625rem; }"],
+    "appliesRulesDirectly": {
+      "h-2.5": true,
+      "w-2.5": true
+    }
   },
   {
     "tag": "path",
@@ -485,7 +611,10 @@
         "fill": "rgb(196, 181, 253)"
       }
     },
-    "css": [".fill-violet-300 { fill: rgb(196, 181, 253); }"]
+    "css": [".fill-violet-300 { fill: rgb(196, 181, 253); }"],
+    "appliesRulesDirectly": {
+      "fill-violet-300": true
+    }
   },
   {
     "tag": "path",
@@ -495,7 +624,10 @@
         "fill": "rgb(249, 168, 212)"
       }
     },
-    "css": [".fill-pink-300 { fill: rgb(249, 168, 212); }"]
+    "css": [".fill-pink-300 { fill: rgb(249, 168, 212); }"],
+    "appliesRulesDirectly": {
+      "fill-pink-300": true
+    }
   },
   {
     "tag": "span",
@@ -505,7 +637,10 @@
         "margin-left": "0.625rem"
       }
     },
-    "css": [".ml-2\\.5 { margin-left: 0.625rem; }"]
+    "css": [".ml-2\\.5 { margin-left: 0.625rem; }"],
+    "appliesRulesDirectly": {
+      "ml-2.5": true
+    }
   },
   {
     "tag": "p",
@@ -537,7 +672,14 @@
       ".leading-7 { line-height: 1.75rem; }",
       ".text-slate-700 { --tw-text-opacity:1; color: rgb(51 65 85/var(--tw-text-opacity)); }",
       "@media (min-width: 1024px) { .lg\\:line-clamp-4 { overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "mt-2": true,
+      "text-base": true,
+      "leading-7": true,
+      "text-slate-700": true,
+      "lg:line-clamp-4": true
+    }
   },
   {
     "tag": "button",
@@ -573,7 +715,18 @@
       ".leading-6 { line-height: 1.5rem; }",
       ".text-pink-500 { --tw-text-opacity:1; color: rgb(236 72 153/var(--tw-text-opacity)); }",
       "@media (min-width: 1024px) { .lg\\:inline-block { display: inline-block; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "mt-2": true,
+      "hidden": true,
+      "text-sm": true,
+      "font-bold": true,
+      "leading-6": true,
+      "text-pink-500": true,
+      "hover:text-pink-700": false,
+      "active:text-pink-900": false,
+      "lg:inline-block": true
+    }
   },
   {
     "tag": "section",
@@ -589,7 +742,11 @@
     "css": [
       ".mt-10 { margin-top: 2.5rem; }",
       "@media (min-width: 1024px) { .lg\\:mt-12 { margin-top: 3rem; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "mt-10": true,
+      "lg:mt-12": true
+    }
   },
   {
     "tag": "h2",
@@ -661,7 +818,18 @@
       ".leading-7 { line-height: 1.75rem; }",
       ".text-slate-900 { --tw-text-opacity:1; color: rgb(15 23 42/var(--tw-text-opacity)); }",
       "@media (min-width: 1024px) { .lg\\:not-sr-only { position: static; width: auto; height: auto; padding: 0px; margin: 0px; overflow: visible; clip: auto; white-space: normal; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "sr-only": true,
+      "flex": true,
+      "items-center": true,
+      "font-mono": true,
+      "text-sm": true,
+      "font-medium": true,
+      "leading-7": true,
+      "text-slate-900": true,
+      "lg:not-sr-only": true
+    }
   },
   {
     "tag": "path",
@@ -671,7 +839,10 @@
         "fill": "rgb(165, 180, 252)"
       }
     },
-    "css": [".fill-indigo-300 { fill: rgb(165, 180, 252); }"]
+    "css": [".fill-indigo-300 { fill: rgb(165, 180, 252); }"],
+    "appliesRulesDirectly": {
+      "fill-indigo-300": true
+    }
   },
   {
     "tag": "path",
@@ -681,7 +852,10 @@
         "fill": "rgb(147, 197, 253)"
       }
     },
-    "css": [".fill-blue-300 { fill: rgb(147, 197, 253); }"]
+    "css": [".fill-blue-300 { fill: rgb(147, 197, 253); }"],
+    "appliesRulesDirectly": {
+      "fill-blue-300": true
+    }
   },
   {
     "tag": "div",
@@ -709,7 +883,15 @@
       ".via-slate-200 { --tw-gradient-to:rgba(226,232,240,0); --tw-gradient-stops:var(--tw-gradient-from),#e2e8f0,var(--tw-gradient-to); }",
       ".to-slate-200\\/0 { --tw-gradient-to:rgba(226,232,240,0); }",
       "@media (min-width: 1024px) { .lg\\:hidden { display: none; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "h-px": true,
+      "bg-gradient-to-r": true,
+      "from-slate-200/0": true,
+      "via-slate-200": true,
+      "to-slate-200/0": true,
+      "lg:hidden": true
+    }
   },
   {
     "tag": "ul",
@@ -760,7 +942,20 @@
       "@media (min-width: 640px) { .sm\\:gap-8 { gap: 2rem; } }",
       "@media (min-width: 1024px) { .lg\\:flex-col { flex-direction: column; } }",
       "@media (min-width: 1024px) { .lg\\:gap-4 { gap: 1rem; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "mt-4": true,
+      "flex": true,
+      "justify-center": true,
+      "gap-10": true,
+      "text-base": true,
+      "font-medium": true,
+      "leading-7": true,
+      "text-slate-700": true,
+      "sm:gap-8": true,
+      "lg:flex-col": true,
+      "lg:gap-4": true
+    }
   },
   {
     "tag": "li",
@@ -770,7 +965,10 @@
         "display": "flex"
       }
     },
-    "css": [".flex { display: flex; }"]
+    "css": [".flex { display: flex; }"],
+    "appliesRulesDirectly": {
+      "flex": true
+    }
   },
   {
     "tag": "a",
@@ -784,7 +982,12 @@
     "css": [
       ".flex { display: flex; }",
       ".items-center { align-items: center; }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "group": false,
+      "flex": true,
+      "items-center": true
+    }
   },
   {
     "tag": "svg",
@@ -800,7 +1003,13 @@
       ".h-8 { height: 2rem; }",
       ".w-8 { width: 2rem; }",
       ".fill-slate-400 { fill: rgb(148, 163, 184); }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "h-8": true,
+      "w-8": true,
+      "fill-slate-400": true,
+      "group-hover:fill-slate-600": false
+    }
   },
   {
     "tag": "span",
@@ -818,7 +1027,12 @@
       ".hidden { display: none; }",
       "@media (min-width: 640px) { .sm\\:ml-3 { margin-left: 0.75rem; } }",
       "@media (min-width: 640px) { .sm\\:block { display: block; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "hidden": true,
+      "sm:ml-3": true,
+      "sm:block": true
+    }
   },
   {
     "tag": "main",
@@ -857,7 +1071,16 @@
       "@media (min-width: 1024px) { .lg\\:ml-112 { margin-left: 28rem; } }",
       "@media (min-width: 1024px) { .lg\\:border-t-0 { border-top-width: 0px; } }",
       "@media (min-width: 1280px) { .xl\\:ml-120 { margin-left: 30rem; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "border-t": true,
+      "border-slate-200": true,
+      "lg:relative": true,
+      "lg:mb-28": true,
+      "lg:ml-112": true,
+      "lg:border-t-0": true,
+      "xl:ml-120": true
+    }
   },
   {
     "tag": "svg",
@@ -877,7 +1100,14 @@
       ".top-0 { top: 0px; }",
       ".h-20 { height: 5rem; }",
       ".w-full { width: 100%; }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "absolute": true,
+      "left-0": true,
+      "top-0": true,
+      "h-20": true,
+      "w-full": true
+    }
   },
   {
     "tag": "div",
@@ -887,7 +1117,10 @@
         "position": "relative"
       }
     },
-    "css": [".relative { position: relative; }"]
+    "css": [".relative { position: relative; }"],
+    "appliesRulesDirectly": {
+      "relative": true
+    }
   },
   {
     "tag": "div",
@@ -909,7 +1142,13 @@
       ".pb-12 { padding-bottom: 3rem; }",
       "@media (min-width: 640px) { .sm\\:pb-4 { padding-bottom: 1rem; } }",
       "@media (min-width: 1024px) { .lg\\:pt-12 { padding-top: 3rem; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "pt-16": true,
+      "pb-12": true,
+      "sm:pb-4": true,
+      "lg:pt-12": true
+    }
   },
   {
     "tag": "div",
@@ -922,7 +1161,10 @@
     },
     "css": [
       "@media (min-width: 1024px) { .lg\\:px-8 { padding-left: 2rem; padding-right: 2rem; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "lg:px-8": true
+    }
   },
   {
     "tag": "div",
@@ -934,7 +1176,10 @@
     },
     "css": [
       "@media (min-width: 1024px) { .lg\\:max-w-4xl { max-width: 56rem; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "lg:max-w-4xl": true
+    }
   },
   {
     "tag": "div",
@@ -974,7 +1219,15 @@
       "@media (min-width: 768px) { .md\\:max-w-2xl { max-width: 42rem; } }",
       "@media (min-width: 768px) { .md\\:px-4 { padding-left: 1rem; padding-right: 1rem; } }",
       "@media (min-width: 1024px) { .lg\\:px-0 { padding-left: 0px; padding-right: 0px; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "mx-auto": true,
+      "px-4": true,
+      "sm:px-6": true,
+      "md:max-w-2xl": true,
+      "md:px-4": true,
+      "lg:px-0": true
+    }
   },
   {
     "tag": "h1",
@@ -992,7 +1245,13 @@
       ".font-bold { font-weight: 700; }",
       ".leading-7 { line-height: 1.75rem; }",
       ".text-slate-900 { --tw-text-opacity:1; color: rgb(15 23 42/var(--tw-text-opacity)); }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "text-2xl": true,
+      "font-bold": true,
+      "leading-7": true,
+      "text-slate-900": true
+    }
   },
   {
     "tag": "div",
@@ -1022,7 +1281,15 @@
       "@media (min-width: 1024px) { .lg\\:mt-8 { margin-top: 2rem; } }",
       "@media (min-width: 1024px) { .lg\\:border-t { border-top-width: 1px; } }",
       "@media (min-width: 1024px) { .lg\\:border-slate-100 { --tw-border-opacity:1; border-color: rgb(241 245 249/var(--tw-border-opacity)); } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "divide-y": false,
+      "divide-slate-100": false,
+      "sm:mt-4": true,
+      "lg:mt-8": true,
+      "lg:border-t": true,
+      "lg:border-slate-100": true
+    }
   },
   {
     "tag": "article",
@@ -1040,7 +1307,11 @@
     "css": [
       ".py-10 { padding-top: 2.5rem; padding-bottom: 2.5rem; }",
       "@media (min-width: 640px) { .sm\\:py-12 { padding-top: 3rem; padding-bottom: 3rem; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "py-10": true,
+      "sm:py-12": true
+    }
   },
   {
     "tag": "div",
@@ -1056,7 +1327,12 @@
       ".flex { display: flex; }",
       ".flex-col { flex-direction: column; }",
       ".items-start { align-items: flex-start; }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "flex": true,
+      "flex-col": true,
+      "items-start": true
+    }
   },
   {
     "tag": "h2",
@@ -1076,7 +1352,13 @@
       ".text-lg { font-size: 1.125rem; }",
       ".font-bold { font-weight: 700; }",
       ".text-slate-900 { --tw-text-opacity:1; color: rgb(15 23 42/var(--tw-text-opacity)); }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "mt-2": true,
+      "text-lg": true,
+      "font-bold": true,
+      "text-slate-900": true
+    }
   },
   {
     "tag": "time",
@@ -1102,7 +1384,14 @@
       ".text-sm { font-size: 0.875rem; line-height: 1.25rem; }",
       ".leading-7 { line-height: 1.75rem; }",
       ".text-slate-500 { --tw-text-opacity:1; color: rgb(100 116 139/var(--tw-text-opacity)); }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "order-first": true,
+      "font-mono": true,
+      "text-sm": true,
+      "leading-7": true,
+      "text-slate-500": true
+    }
   },
   {
     "tag": "p",
@@ -1120,7 +1409,13 @@
       ".text-base { font-size: 1rem; line-height: 1.5rem; }",
       ".leading-7 { line-height: 1.75rem; }",
       ".text-slate-700 { --tw-text-opacity:1; color: rgb(51 65 85/var(--tw-text-opacity)); }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "mt-1": true,
+      "text-base": true,
+      "leading-7": true,
+      "text-slate-700": true
+    }
   },
   {
     "tag": "div",
@@ -1139,7 +1434,13 @@
       ".flex { display: flex; }",
       ".items-center { align-items: center; }",
       ".gap-4 { gap: 1rem; }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "mt-4": true,
+      "flex": true,
+      "items-center": true,
+      "gap-4": true
+    }
   },
   {
     "tag": "button",
@@ -1170,7 +1471,17 @@
       ".font-bold { font-weight: 700; }",
       ".leading-6 { line-height: 1.5rem; }",
       ".text-pink-500 { --tw-text-opacity:1; color: rgb(236 72 153/var(--tw-text-opacity)); }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "flex": true,
+      "items-center": true,
+      "text-sm": true,
+      "font-bold": true,
+      "leading-6": true,
+      "text-pink-500": true,
+      "hover:text-pink-700": false,
+      "active:text-pink-900": false
+    }
   },
   {
     "tag": "svg",
@@ -1186,7 +1497,12 @@
       ".h-2\\.5 { height: 0.625rem; }",
       ".w-2\\.5 { width: 0.625rem; }",
       ".fill-current { fill: currentcolor; }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "h-2.5": true,
+      "w-2.5": true,
+      "fill-current": true
+    }
   },
   {
     "tag": "span",
@@ -1196,7 +1512,10 @@
         "margin-left": "0.75rem"
       }
     },
-    "css": [".ml-3 { margin-left: 0.75rem; }"]
+    "css": [".ml-3 { margin-left: 0.75rem; }"],
+    "appliesRulesDirectly": {
+      "ml-3": true
+    }
   },
   {
     "tag": "span",
@@ -1213,7 +1532,12 @@
       ".text-sm { font-size: 0.875rem; line-height: 1.25rem; }",
       ".font-bold { font-weight: 700; }",
       ".text-slate-400 { --tw-text-opacity:1; color: rgb(148 163 184/var(--tw-text-opacity)); }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "text-sm": true,
+      "font-bold": true,
+      "text-slate-400": true
+    }
   },
   {
     "tag": "footer",
@@ -1255,7 +1579,17 @@
       "@media (min-width: 640px) { .sm\\:py-16 { padding-top: 4rem; padding-bottom: 4rem; } }",
       "@media (min-width: 640px) { .sm\\:pb-32 { padding-bottom: 8rem; } }",
       "@media (min-width: 1024px) { .lg\\:hidden { display: none; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "border-t": true,
+      "border-slate-200": true,
+      "bg-slate-50": true,
+      "py-10": true,
+      "pb-40": true,
+      "sm:py-16": true,
+      "sm:pb-32": true,
+      "lg:hidden": true
+    }
   },
   {
     "tag": "div",
@@ -1283,7 +1617,14 @@
       "@media (min-width: 640px) { .sm\\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; } }",
       "@media (min-width: 768px) { .md\\:max-w-2xl { max-width: 42rem; } }",
       "@media (min-width: 768px) { .md\\:px-4 { padding-left: 1rem; padding-right: 1rem; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "mx-auto": true,
+      "px-4": true,
+      "sm:px-6": true,
+      "md:max-w-2xl": true,
+      "md:px-4": true
+    }
   },
   {
     "tag": "h2",
@@ -1318,7 +1659,17 @@
       ".font-medium { font-weight: 500; }",
       ".leading-7 { line-height: 1.75rem; }",
       ".text-slate-900 { --tw-text-opacity:1; color: rgb(15 23 42/var(--tw-text-opacity)); }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "mt-8": true,
+      "flex": true,
+      "items-center": true,
+      "font-mono": true,
+      "text-sm": true,
+      "font-medium": true,
+      "leading-7": true,
+      "text-slate-900": true
+    }
   },
   {
     "tag": "svg",
@@ -1334,7 +1685,12 @@
       ".h-3 { height: 0.75rem; }",
       ".w-auto { width: auto; }",
       ".fill-slate-300 { fill: rgb(203, 213, 225); }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "h-3": true,
+      "w-auto": true,
+      "fill-slate-300": true
+    }
   },
   {
     "tag": "div",
@@ -1367,7 +1723,16 @@
       ".font-bold { font-weight: 700; }",
       ".leading-7 { line-height: 1.75rem; }",
       ".text-slate-900 { --tw-text-opacity:1; color: rgb(15 23 42/var(--tw-text-opacity)); }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "mt-2": true,
+      "flex": true,
+      "gap-6": true,
+      "text-sm": true,
+      "font-bold": true,
+      "leading-7": true,
+      "text-slate-900": true
+    }
   },
   {
     "tag": "div",
@@ -1401,6 +1766,14 @@
       ".z-10 { z-index: 10; }",
       "@media (min-width: 1024px) { .lg\\:left-112 { left: 28rem; } }",
       "@media (min-width: 1280px) { .xl\\:left-120 { left: 30rem; } }"
-    ]
+    ],
+    "appliesRulesDirectly": {
+      "fixed": true,
+      "inset-x-0": true,
+      "bottom-0": true,
+      "z-10": true,
+      "lg:left-112": true,
+      "xl:left-120": true
+    }
   }
 ]

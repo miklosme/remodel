@@ -58,9 +58,14 @@ function getParsedValues() {
   function getStyle(el) {
     const style = {};
     const css = [];
+    const appliesRulesDirectly = {};
 
     Array.from(el.classList).forEach((className) => {
+      appliesRulesDirectly[className] = false;
+
       findRule(className, (rule, mediaText) => {
+        appliesRulesDirectly[className] = true;
+
         if (mediaText) {
           css.push(`@media ${mediaText} { ${rule.cssText} }`);
 
@@ -79,7 +84,7 @@ function getParsedValues() {
       });
     });
 
-    return { style, css };
+    return { style, css, appliesRulesDirectly };
   }
 
   const list = Array.from(
