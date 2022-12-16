@@ -1,0 +1,161 @@
+mt-2
+mt-4
+flex
+ml-4
+mt-8
+ml-2
+mt-10
+w-full
+lg:mt-8
+relative
+lg:pl-16
+sm:hidden
+lg:hidden
+flex py-2
+flex gap-1
+h-6 ml-2 w-6
+fill-blue-500
+fill-blue-600
+fill-blue-300
+mt-8 space-y-3
+flex gap-4 mt-8
+mt-8 order-last
+hidden lg:inline
+absolute inset-0
+sticky top-0 z-50
+font-mono text-sm
+text-slate-900/10
+hidden lg:list-item
+block text-blue-600
+fill-current h-5 w-5
+h-12 object-cover w-12
+flex flex-col relative
+lg:py-16 py-8 sm:py-10
+flex items-center mt-6
+fill-current h-10 w-10
+h-6 stroke-slate-700 w-6
+font-mono text-slate-400
+flex justify-between py-3
+flex justify-center mt-10
+[counter-increment:video]
+font-medium text-slate-900
+mt-2 text-slate-500 text-sm
+mt-1 text-slate-600 text-sm
+mt-2 text-slate-600 text-sm
+lg:relative overflow-hidden
+mt-4 text-3xl text-slate-600
+fill-white flex-none h-8 w-8
+absolute h-full inset-0 w-full
+bg-blue-600/20 h-3.5 ml-3 w-px
+mt-16 sm:space-y-16 space-y-10
+fill-blue-500 flex-none h-8 w-8
+font-mono text-blue-600 text-sm
+relative sm:flex-auto sm:static
+lg:px-6 max-w-5xl mt-16 mx-auto
+[counter-increment:section] flex
+fill-slate-600 flex-none h-8 w-8
+bg-slate-50 pt-px sm:rounded-6xl
+fill-current h-4 stroke-current w-4
+bg-slate-100 py-16 relative sm:py-32
+flex sm:justify-center text-slate-900
+pb-20 pt-5 relative sm:pb-32 sm:pt-14
+lg:py-32 md:pt-36 pb-16 pt-20 sm:pb-20
+flex overflow-hidden rounded shadow-sm
+mt-2 text-lg text-white tracking-tight
+flex font-bold font-display order-first
+bg-blue-600 scroll-mt-14 sm:scroll-mt-32
+bg-slate-50 overflow-hidden rounded-full
+max-w-5xl mx-auto pt-16 relative sm:px-6
+font-medium ml-4 text-base text-slate-900
+font-medium ml-3 text-base tracking-tight
+flex items-center mt-10 sm:justify-center
+bg-slate-200 overflow-hidden rounded-full
+mt-4 text-blue-200 text-lg tracking-tight
+mt-4 text-lg text-slate-700 tracking-tight
+mt-2 text-lg text-slate-600 tracking-tight
+leading-tight text-[1.75rem] text-blue-200
+mt-4 text-lg text-slate-600 tracking-tight
+absolute h-full inset-0 object-cover w-full
+leading-tight text-[1.75rem] text-slate-500
+relative text-center text-slate-600 text-sm
+ml-1 mt-1 text-7xl text-white tracking-tight
+font-display font-medium text-slate-900 text-xl
+font-medium text-base text-white tracking-tight
+absolute bg-white bottom-full h-4 inset-x-0 z-10
+ml-1 mt-1 text-7xl text-slate-900 tracking-tight
+before:content-['—_'] font-semibold text-blue-600
+lg:px-0 md:max-w-2xl md:px-4 mx-auto px-4 sm:px-6
+absolute flex inset-0 items-center justify-center
+p-8 ring-1 ring-slate-900/5 rounded-4xl shadow-md
+flex justify-center lg:justify-start text-blue-600
+antialiased bg-white js-focus-visible scroll-smooth
+flex items-end lg:col-span-5 lg:row-span-2 relative
+font-medium text-base text-slate-900 tracking-tight
+max-w-xl mt-4 text-lg text-slate-600 tracking-tight
+lg:py-32 py-16 scroll-mt-14 sm:py-20 sm:scroll-mt-32
+font-semibold mt-7 text-lg text-white tracking-tight
+bg-slate-100 lg:bg-transparent lg:px-5 overflow-hidden
+-mr-1 flex h-8 items-center justify-center ml-auto w-8
+font-medium hover:text-blue-800 text-base text-blue-600
+lg:px-20 lg:py-32 md:py-20 px-4 py-10 sm:px-10 sm:py-16
+font-semibold mt-7 text-lg text-slate-900 tracking-tight
+lg:mx-0 lg:text-left max-w-md mx-auto relative text-center
+lg:px-2 md:max-w-2xl md:px-4 mx-auto px-4 relative sm:px-6
+mt-4 sm:flex sm:items-center sm:pr-2.5 sm:py-0.5 sm:relative
+font-bold font-display text-4xl text-slate-900 tracking-tight
+font-bold font-display text-3xl text-slate-900 tracking-tight
+font-medium leading-6 text-base text-slate-900 tracking-tight
+lg:px-12 md:py-12 px-4 py-16 relative sm:px-10 sm:rounded-5xl
+absolute bg-[#6366F1] flex inset-0 items-center justify-center
+font-display font-extrabold sm:text-6xl text-5xl text-slate-900
+lg:max-w-4xl lg:px-12 md:max-w-2xl md:px-4 mx-auto px-4 sm:px-6
+font-bold font-display mt-8 text-4xl text-slate-900 tracking-tight
+-my-2 divide-white/10 divide-y text-base text-white tracking-tight
+h-48 lg:h-40 overflow-hidden relative rounded-2xl shadow-lg sm:h-60
+lg:max-w-7xl lg:px-8 md:max-w-2xl md:px-4 mt-16 mx-auto px-4 sm:px-6
+lg:col-span-7 lg:pb-14 lg:pl-16 lg:pr-0 px-4 relative sm:px-6 xl:pl-20
+-my-2 divide-slate-200 divide-y text-base text-slate-900 tracking-tight
+bg-white lg:bg-transparent lg:col-span-7 lg:pl-16 lg:pt-0 pt-16 xl:pl-20
+flex h-44 items-center justify-center px-6 relative rounded-2xl shadow-lg
+lg:pt-16 pb-3 pt-8 relative scroll-mt-14 sm:pb-16 sm:pt-10 sm:scroll-mt-32
+lg:pb-16 lg:pt-32 pb-8 pt-16 scroll-mt-14 sm:pb-10 sm:pt-20 sm:scroll-mt-32
+lg:max-w-4xl lg:px-12 md:max-w-2xl md:px-4 mx-auto px-4 sm:px-6 text-center
+font-medium inline-flex items-center text-base text-blue-600 tracking-tight
+[mask-image:linear-gradient(white,transparent)] absolute inset-0 text-white/10
+after:content-['”'] before:content-['“'] text-lg text-slate-900 tracking-tight
+bg-slate-600 flex lg:w-auto md:w-80 mx-auto relative rounded-xl shadow-xl w-64 z-10
+font-display font-extrabold mt-8 sm:text-6xl text-5xl text-slate-900 tracking-tight
+font-display font-medium mt-10 sm:text-center text-4xl text-slate-900 tracking-tight
+[counter-reset:video] gap-x-8 gap-y-10 grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-2
+bg-blue-600 lg:px-12 md:py-12 px-4 py-16 relative sm:px-10 sm:rounded-5xl sm:shadow-lg
+gap-8 grid grid-cols-1 lg:grid-cols-3 lg:max-w-7xl lg:px-8 max-w-2xl mt-16 mx-auto px-4
+absolute bg-[radial-gradient(#2C313D_35%,#000)] flex inset-0 items-center justify-center
+bg-slate-50 grid lg:p-20 md:grid-cols-2 md:pt-16 md:px-8 md:rounded-6xl sm:pb-16 sm:px-6
+flex font-medium hover:text-slate-700 items-center text-base text-slate-900 tracking-tight
+inline-flex items-center px-4 py-1 ring-1 ring-blue-600 ring-inset rounded-full text-blue-600
+[mask-image:linear-gradient(white,transparent)] absolute h-32 inset-x-0 text-slate-900/10 top-0
+hidden lg:-top-32 lg:absolute lg:bg-slate-100 lg:block lg:bottom-0 lg:left-[-100vw] lg:right-[-100vw]
+lg:max-w-4xl lg:px-12 md:max-w-2xl md:px-4 mx-auto px-4 sm:px-6 text-lg text-slate-700 tracking-tight
+[mask-image:linear-gradient(transparent,white)] absolute bottom-0 inset-x-0 text-slate-900/10 top-1/2
+font-display font-extrabold lg:w-auto md:w-2/3 sm:text-6xl sm:w-3/4 text-5xl text-white tracking-tight
+auto-rows-min gap-8 grid grid-cols-1 items-center lg:grid-cols-1 px-3 sm:gap-y-10 sm:grid-cols-2 xl:px-12
+-mx-3 gap-y-10 grid grid-cols-1 lg:grid-cols-3 lg:text-center xl:-mx-12 xl:divide-slate-400/20 xl:divide-x
+bg-slate-50 divide-slate-300/30 divide-y mt-8 px-6 py-3 rounded-2xl sm:px-8 sm:py-7 text-base tracking-tight
+[counter-reset:section] auto-cols-[minmax(0,15rem)] font-medium grid grid-flow-col mb-[-2px] text-base text-slate-900
+-top-32 absolute left-0 lg:left-auto lg:ml-0 lg:right-2 md:left-2/3 sm:-top-5 sm:left-3/4 sm:ml-8 sm:w-auto w-full xl:left-2/3 xl:right-auto
+appearance-none bg-transparent focus:outline-none peer placeholder:text-white/70 px-4 py-2 relative sm:py-3 text-base text-white w-full z-10
+gap-y-16 grid grid-cols-1 grid-rows-[auto_1fr] lg:gap-y-20 lg:grid-cols-12 lg:pb-36 lg:pt-20 lg:px-3 max-w-6xl md:pt-20 mx-auto pt-16 xl:py-32
+gap-y-12 grid grid-cols-1 items-end lg:grid-cols-2 lg:max-w-5xl lg:px-8 lg:py-28 lg:static md:max-w-2xl md:px-4 mx-auto px-4 py-20 relative sm:px-6 xl:py-32
+absolute border border-white/20 inset-0 peer-focus:bg-blue-500 peer-focus:border-blue-300 peer-focus:ring-1 peer-focus:ring-blue-300 rounded-md sm:rounded-xl
+-bottom-12 -top-20 absolute bg-blue-600 left-0 lg:-inset-y-32 lg:-mr-40 lg:left-[-100vw] lg:right-full md:bottom-8 right-1/2 rounded-br-6xl text-white/10 z-10
+[@supports(backdrop-filter:blur(0))]:backdrop-blur [@supports(backdrop-filter:blur(0))]:bg-white/80 bg-white/95 flex items-center px-4 py-3 relative shadow-sm
+-mt-16 bg-slate-200 h-44 lg:h-72 lg:mr-20 lg:w-72 md:[shape-outside:circle(40%)] md:float-right md:h-64 md:w-64 mx-auto overflow-hidden relative rounded-full w-44
+before:block before:content-[counter(video,decimal-leading-zero)] before:font-mono before:mb-2 before:text-slate-500 before:text-sm font-medium mt-8 text-base text-slate-900 tracking-tight
+hidden sm:[@supports(backdrop-filter:blur(0))]:backdrop-blur sm:[@supports(backdrop-filter:blur(0))]:bg-white/80 sm:bg-white/95 sm:border-b sm:border-slate-200 sm:flex sm:h-32 sm:justify-center
+[@supports(backdrop-filter:blur(0))]:backdrop-blur [@supports(backdrop-filter:blur(0))]:bg-white/10 absolute bg-black/30 bottom-2 flex items-center left-2 px-1.5 py-0.5 rounded-lg text-sm text-white
+before:content-[counter(section,decimal-leading-zero)] before:font-mono before:mb-2 before:text-slate-500 before:text-sm border-b-2 border-transparent flex flex-col hover:before:text-slate-900 hover:bg-blue-50/40 items-center justify-center w-full
+active:bg-blue-700 active:text-white/80 bg-blue-600 disabled:hover:bg-blue-600 disabled:opacity-30 focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-2 focus:outline-none font-semibold hover:bg-blue-500 inline-flex justify-center px-4 py-1 rounded-md shadow-sm text-base text-white tracking-tight
+active:bg-slate-700 active:text-white/80 bg-slate-900 disabled:hover:bg-slate-900 disabled:opacity-30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900 focus:outline-none font-semibold hover:bg-slate-700 inline-flex justify-center mt-8 px-4 py-1 rounded-md shadow-sm text-base text-white tracking-tight
+active:bg-blue-50 active:text-blue-900/80 bg-white disabled:hover:text-blue-600 disabled:opacity-40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white focus-visible:text-blue-900 focus:outline-none font-semibold hover:text-blue-700 inline-flex justify-center mt-8 px-4 py-1 rounded-md shadow-sm text-base text-blue-600 tracking-tight
+active:bg-blue-50 active:text-blue-900/80 bg-white disabled:hover:text-blue-600 disabled:opacity-40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white focus-visible:text-blue-900 focus:outline-none font-semibold hover:text-blue-700 inline-flex justify-center mt-4 px-4 py-1 rounded-md shadow-sm sm:flex-none sm:mt-0 sm:relative sm:w-auto sm:z-10 text-base text-blue-600 tracking-tight w-full
+active:text-blue-600/70 border border-blue-300 disabled:hover:bg-transparent disabled:hover:border-blue-300 disabled:opacity-40 focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-2 focus:outline-none font-semibold hover:bg-blue-50 hover:border-blue-400 inline-flex justify-center px-[calc(theme(spacing.4)-1px)] py-[calc(theme(spacing.1)-1px)] rounded-md text-base text-blue-600 tracking-tight

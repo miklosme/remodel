@@ -1,0 +1,918 @@
+[
+  {
+    "utility": "-inset-3",
+    "css": ".-inset-3 {\n  top: -0.75rem;\n  right: -0.75rem;\n  bottom: -0.75rem;\n  left: -0.75rem;\n}\n"
+  },
+  {
+    "utility": "-inset-4",
+    "css": ".-inset-4 {\n  top: -1rem;\n  right: -1rem;\n  bottom: -1rem;\n  left: -1rem;\n}\n"
+  },
+  {
+    "utility": "-left-2",
+    "css": ".-left-2 {\n  left: -0.5rem;\n}\n"
+  },
+  {
+    "utility": "-right-2",
+    "css": ".-right-2 {\n  right: -0.5rem;\n}\n"
+  },
+  {
+    "utility": "-translate-x-1/2",
+    "css": ".-translate-x-1\\/2 {\n  --tw-translate-x: -50%;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n"
+  },
+  {
+    "utility": "[&>h2:nth-of-type(3n)]:before:bg-violet-200",
+    "css": ".\\[\\&\\>h2\\:nth-of-type\\(3n\\)\\]\\:before\\:bg-violet-200 > h2:nth-of-type(3n)::before {\n  content: var(--tw-content);\n  --tw-bg-opacity: 1;\n  background-color: rgb(221 214 254 / var(--tw-bg-opacity));\n}\n"
+  },
+  {
+    "utility": "[&>h2:nth-of-type(3n+2)]:before:bg-indigo-200",
+    "css": ".\\[\\&\\>h2\\:nth-of-type\\(3n\\+2\\)\\]\\:before\\:bg-indigo-200 > h2:nth-of-type(3n + 2)::before {\n  content: var(--tw-content);\n  --tw-bg-opacity: 1;\n  background-color: rgb(199 210 254 / var(--tw-bg-opacity));\n}\n"
+  },
+  {
+    "utility": "[&>h2]:before:bg-cyan-200",
+    "css": ".\\[\\&\\>h2\\]\\:before\\:bg-cyan-200 > h2::before {\n  content: var(--tw-content);\n  --tw-bg-opacity: 1;\n  background-color: rgb(165 243 252 / var(--tw-bg-opacity));\n}\n"
+  },
+  {
+    "utility": "[&>h2]:before:h-3",
+    "css": ".\\[\\&\\>h2\\]\\:before\\:h-3 > h2::before {\n  content: var(--tw-content);\n  height: 0.75rem;\n}\n"
+  },
+  {
+    "utility": "[&>h2]:before:mr-3",
+    "css": ".\\[\\&\\>h2\\]\\:before\\:mr-3 > h2::before {\n  content: var(--tw-content);\n  margin-right: 0.75rem;\n}\n"
+  },
+  {
+    "utility": "[&>h2]:before:rounded-r-full",
+    "css": ".\\[\\&\\>h2\\]\\:before\\:rounded-r-full > h2::before {\n  content: var(--tw-content);\n  border-top-right-radius: 9999px;\n  border-bottom-right-radius: 9999px;\n}\n"
+  },
+  {
+    "utility": "[&>h2]:before:w-1.5",
+    "css": ".\\[\\&\\>h2\\]\\:before\\:w-1\\.5 > h2::before {\n  content: var(--tw-content);\n  width: 0.375rem;\n}\n"
+  },
+  {
+    "utility": "[&>h2]:flex",
+    "css": ".\\[\\&\\>h2\\]\\:flex > h2 {\n  display: flex;\n}\n"
+  },
+  {
+    "utility": "[&>h2]:font-medium",
+    "css": ".\\[\\&\\>h2\\]\\:font-medium > h2 {\n  font-weight: 500;\n}\n"
+  },
+  {
+    "utility": "[&>h2]:font-mono",
+    "css": ".\\[\\&\\>h2\\]\\:font-mono > h2 {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\",\n    \"Courier New\", monospace;\n}\n"
+  },
+  {
+    "utility": "[&>h2]:items-center",
+    "css": ".\\[\\&\\>h2\\]\\:items-center > h2 {\n  align-items: center;\n}\n"
+  },
+  {
+    "utility": "[&>h2]:leading-7",
+    "css": ".\\[\\&\\>h2\\]\\:leading-7 > h2 {\n  line-height: 1.75rem;\n}\n"
+  },
+  {
+    "utility": "[&>h2]:mt-12",
+    "css": ".\\[\\&\\>h2\\]\\:mt-12 > h2 {\n  margin-top: 3rem;\n}\n"
+  },
+  {
+    "utility": "[&>h2]:text-slate-900",
+    "css": ".\\[\\&\\>h2\\]\\:text-slate-900 > h2 {\n  --tw-text-opacity: 1;\n  color: rgb(15 23 42 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "utility": "[&>h2]:text-sm",
+    "css": ".\\[\\&\\>h2\\]\\:text-sm > h2 {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n"
+  },
+  {
+    "utility": "[&>ul]:list-['\\2013\\20']",
+    "css": ".\\[\\&\\>ul\\]\\:list-\\[\\'\\\\2013\\\\20\\'\\] > ul {\n  list-style-type: \"\\2013\\20\";\n}\n"
+  },
+  {
+    "utility": "[&>ul]:mt-6",
+    "css": ".\\[\\&\\>ul\\]\\:mt-6 > ul {\n  margin-top: 1.5rem;\n}\n"
+  },
+  {
+    "utility": "[&>ul]:pl-5",
+    "css": ".\\[\\&\\>ul\\]\\:pl-5 > ul {\n  padding-left: 1.25rem;\n}\n"
+  },
+  {
+    "utility": "absolute",
+    "css": ".absolute {\n  position: absolute;\n}\n"
+  },
+  {
+    "utility": "active:text-pink-900",
+    "css": ".active\\:text-pink-900:active {\n  --tw-text-opacity: 1;\n  color: rgb(131 24 67 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "utility": "antialiased",
+    "css": ".antialiased {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n"
+  },
+  {
+    "utility": "backdrop-blur-sm",
+    "css": ".backdrop-blur-sm {\n  --tw-backdrop-blur: blur(4px);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n"
+  },
+  {
+    "utility": "bg-gradient-to-r",
+    "css": ".bg-gradient-to-r {\n  background-image: linear-gradient(to right, var(--tw-gradient-stops));\n}\n"
+  },
+  {
+    "utility": "bg-slate-100",
+    "css": ".bg-slate-100 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(241 245 249 / var(--tw-bg-opacity));\n}\n"
+  },
+  {
+    "utility": "bg-slate-200",
+    "css": ".bg-slate-200 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(226 232 240 / var(--tw-bg-opacity));\n}\n"
+  },
+  {
+    "utility": "bg-slate-50",
+    "css": ".bg-slate-50 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(248 250 252 / var(--tw-bg-opacity));\n}\n"
+  },
+  {
+    "utility": "bg-white",
+    "css": ".bg-white {\n  --tw-bg-opacity: 1;\n  background-color: rgb(255 255 255 / var(--tw-bg-opacity));\n}\n"
+  },
+  {
+    "utility": "bg-white/90",
+    "css": ".bg-white\\/90 {\n  background-color: rgb(255 255 255 / 0.9);\n}\n"
+  },
+  {
+    "utility": "block",
+    "css": ".block {\n  display: block;\n}\n"
+  },
+  {
+    "utility": "border-gray-200",
+    "css": ".border-gray-200 {\n  --tw-border-opacity: 1;\n  border-color: rgb(229 231 235 / var(--tw-border-opacity));\n}\n"
+  },
+  {
+    "utility": "border-slate-200",
+    "css": ".border-slate-200 {\n  --tw-border-opacity: 1;\n  border-color: rgb(226 232 240 / var(--tw-border-opacity));\n}\n"
+  },
+  {
+    "utility": "border-t",
+    "css": ".border-t {\n  border-top-width: 1px;\n}\n"
+  },
+  {
+    "utility": "bottom-0",
+    "css": ".bottom-0 {\n  bottom: 0px;\n}\n"
+  },
+  {
+    "utility": "bottom-full",
+    "css": ".bottom-full {\n  bottom: 100%;\n}\n"
+  },
+  {
+    "utility": "divide-slate-100",
+    "css": ".divide-slate-100 > :not([hidden]) ~ :not([hidden]) {\n  --tw-divide-opacity: 1;\n  border-color: rgb(241 245 249 / var(--tw-divide-opacity));\n}\n"
+  },
+  {
+    "utility": "divide-y",
+    "css": ".divide-y > :not([hidden]) ~ :not([hidden]) {\n  --tw-divide-y-reverse: 0;\n  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));\n  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));\n}\n"
+  },
+  {
+    "utility": "fill-current",
+    "css": ".fill-current {\n  fill: currentColor;\n}\n"
+  },
+  {
+    "utility": "fill-slate-300",
+    "css": ".fill-slate-300 {\n  fill: #cbd5e1;\n}\n"
+  },
+  {
+    "utility": "fill-slate-400",
+    "css": ".fill-slate-400 {\n  fill: #94a3b8;\n}\n"
+  },
+  {
+    "utility": "fill-slate-500",
+    "css": ".fill-slate-500 {\n  fill: #64748b;\n}\n"
+  },
+  {
+    "utility": "fixed",
+    "css": ".fixed {\n  position: fixed;\n}\n"
+  },
+  {
+    "utility": "flex",
+    "css": ".flex {\n  display: flex;\n}\n"
+  },
+  {
+    "utility": "flex-1",
+    "css": ".flex-1 {\n  flex: 1 1 0%;\n}\n"
+  },
+  {
+    "utility": "flex-auto",
+    "css": ".flex-auto {\n  flex: 1 1 auto;\n}\n"
+  },
+  {
+    "utility": "flex-col",
+    "css": ".flex-col {\n  flex-direction: column;\n}\n"
+  },
+  {
+    "utility": "flex-none",
+    "css": ".flex-none {\n  flex: none;\n}\n"
+  },
+  {
+    "utility": "focus:outline-none",
+    "css": ".focus\\:outline-none:focus {\n  outline: 2px solid transparent;\n  outline-offset: 2px;\n}\n"
+  },
+  {
+    "utility": "focus:ring-2",
+    "css": ".focus\\:ring-2:focus {\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width)\n    var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width))\n    var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n"
+  },
+  {
+    "utility": "focus:ring-offset-2",
+    "css": ".focus\\:ring-offset-2:focus {\n  --tw-ring-offset-width: 2px;\n}\n"
+  },
+  {
+    "utility": "focus:ring-slate-400",
+    "css": ".focus\\:ring-slate-400:focus {\n  --tw-ring-opacity: 1;\n  --tw-ring-color: rgb(148 163 184 / var(--tw-ring-opacity));\n}\n"
+  },
+  {
+    "utility": "font-bold",
+    "css": ".font-bold {\n  font-weight: 700;\n}\n"
+  },
+  {
+    "utility": "font-medium",
+    "css": ".font-medium {\n  font-weight: 500;\n}\n"
+  },
+  {
+    "utility": "font-mono",
+    "css": ".font-mono {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\",\n    \"Courier New\", monospace;\n}\n"
+  },
+  {
+    "utility": "from-slate-200/0",
+    "css": ".from-slate-200\\/0 {\n  --tw-gradient-from: rgb(226 232 240 / 0);\n  --tw-gradient-to: rgb(226 232 240 / 0);\n  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);\n}\n"
+  },
+  {
+    "utility": "gap-10",
+    "css": ".gap-10 {\n  gap: 2.5rem;\n}\n"
+  },
+  {
+    "utility": "gap-2",
+    "css": ".gap-2 {\n  gap: 0.5rem;\n}\n"
+  },
+  {
+    "utility": "gap-3",
+    "css": ".gap-3 {\n  gap: 0.75rem;\n}\n"
+  },
+  {
+    "utility": "gap-4",
+    "css": ".gap-4 {\n  gap: 1rem;\n}\n"
+  },
+  {
+    "utility": "gap-6",
+    "css": ".gap-6 {\n  gap: 1.5rem;\n}\n"
+  },
+  {
+    "utility": "group",
+    "css": ""
+  },
+  {
+    "utility": "group-hover:fill-slate-600",
+    "css": ".group:hover .group-hover\\:fill-slate-600 {\n  fill: #475569;\n}\n"
+  },
+  {
+    "utility": "group-hover:fill-slate-700",
+    "css": ".group:hover .group-hover\\:fill-slate-700 {\n  fill: #334155;\n}\n"
+  },
+  {
+    "utility": "group-hover:stroke-slate-700",
+    "css": ".group:hover .group-hover\\:stroke-slate-700 {\n  stroke: #334155;\n}\n"
+  },
+  {
+    "utility": "h-2.5",
+    "css": ".h-2\\.5 {\n  height: 0.625rem;\n}\n.h-2 {\n  height: 0.5rem;\n}\n"
+  },
+  {
+    "utility": "h-20",
+    "css": ".h-20 {\n  height: 5rem;\n}\n"
+  },
+  {
+    "utility": "h-3",
+    "css": ".h-3 {\n  height: 0.75rem;\n}\n"
+  },
+  {
+    "utility": "h-4",
+    "css": ".h-4 {\n  height: 1rem;\n}\n"
+  },
+  {
+    "utility": "h-6",
+    "css": ".h-6 {\n  height: 1.5rem;\n}\n"
+  },
+  {
+    "utility": "h-8",
+    "css": ".h-8 {\n  height: 2rem;\n}\n"
+  },
+  {
+    "utility": "h-px",
+    "css": ".h-px {\n  height: 1px;\n}\n"
+  },
+  {
+    "utility": "hidden",
+    "css": ".hidden {\n  display: none;\n}\n"
+  },
+  {
+    "utility": "hover:bg-slate-100",
+    "css": ".hover\\:bg-slate-100:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgb(241 245 249 / var(--tw-bg-opacity));\n}\n"
+  },
+  {
+    "utility": "hover:text-pink-700",
+    "css": ".hover\\:text-pink-700:hover {\n  --tw-text-opacity: 1;\n  color: rgb(190 24 93 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "utility": "hover:text-slate-700",
+    "css": ".hover\\:text-slate-700:hover {\n  --tw-text-opacity: 1;\n  color: rgb(51 65 85 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "utility": "inset-0",
+    "css": ".inset-0 {\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n"
+  },
+  {
+    "utility": "inset-x-0",
+    "css": ".inset-x-0 {\n  left: 0px;\n  right: 0px;\n}\n"
+  },
+  {
+    "utility": "items-center",
+    "css": ".items-center {\n  align-items: center;\n}\n"
+  },
+  {
+    "utility": "items-start",
+    "css": ".items-start {\n  align-items: flex-start;\n}\n"
+  },
+  {
+    "utility": "justify-between",
+    "css": ".justify-between {\n  justify-content: space-between;\n}\n"
+  },
+  {
+    "utility": "justify-center",
+    "css": ".justify-center {\n  justify-content: center;\n}\n"
+  },
+  {
+    "utility": "leading-6",
+    "css": ".leading-6 {\n  line-height: 1.5rem;\n}\n"
+  },
+  {
+    "utility": "leading-7",
+    "css": ".leading-7 {\n  line-height: 1.75rem;\n}\n"
+  },
+  {
+    "utility": "leading-8",
+    "css": ".leading-8 {\n  line-height: 2rem;\n}\n"
+  },
+  {
+    "utility": "left-0",
+    "css": ".left-0 {\n  left: 0px;\n}\n"
+  },
+  {
+    "utility": "lg:[writing-mode:vertical-rl]",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:\\[writing-mode\\:vertical-rl\\] {\n    writing-mode: vertical-rl;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:block",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:block {\n    display: block;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:border-slate-100",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:border-slate-100 {\n    --tw-border-opacity: 1;\n    border-color: rgb(241 245 249 / var(--tw-border-opacity));\n  }\n}\n"
+  },
+  {
+    "utility": "lg:border-slate-200",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:border-slate-200 {\n    --tw-border-opacity: 1;\n    border-color: rgb(226 232 240 / var(--tw-border-opacity));\n  }\n}\n"
+  },
+  {
+    "utility": "lg:border-t",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:border-t {\n    border-top-width: 1px;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:border-t-0",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:border-t-0 {\n    border-top-width: 0px;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:border-x",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:border-x {\n    border-left-width: 1px;\n    border-right-width: 1px;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:fixed",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:fixed {\n    position: fixed;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:flex",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:flex {\n    display: flex;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:flex-auto",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:flex-auto {\n    flex: 1 1 auto;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:flex-col",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:flex-col {\n    flex-direction: column;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:flex-none",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:flex-none {\n    flex: none;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:gap-4",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:gap-4 {\n    gap: 1rem;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:hidden",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:hidden {\n    display: none;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:inline-block",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:inline-block {\n    display: inline-block;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:inset-y-0",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:inset-y-0 {\n    top: 0px;\n    bottom: 0px;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:items-center",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:items-center {\n    align-items: center;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:items-start",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:items-start {\n    align-items: flex-start;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:leading-7",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:leading-7 {\n    line-height: 1.75rem;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:left-0",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:left-0 {\n    left: 0px;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:left-112",
+    "css": ""
+  },
+  {
+    "utility": "lg:max-w-4xl",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:max-w-4xl {\n    max-width: 56rem;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:mb-28",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:mb-28 {\n    margin-bottom: 7rem;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:min-h-full",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:min-h-full {\n    min-height: 100%;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:ml-112",
+    "css": ""
+  },
+  {
+    "utility": "lg:mt-12",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:mt-12 {\n    margin-top: 3rem;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:mt-8",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:mt-8 {\n    margin-top: 2rem;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:not-sr-only",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:not-sr-only {\n    position: static;\n    width: auto;\n    height: auto;\n    padding: 0;\n    margin: 0;\n    overflow: visible;\n    clip: auto;\n    white-space: normal;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:overflow-y-auto",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:overflow-y-auto {\n    overflow-y: auto;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:pt-12",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:pt-12 {\n    padding-top: 3rem;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:px-0",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:px-0 {\n    padding-left: 0px;\n    padding-right: 0px;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:px-8",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:px-8 {\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:py-12",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:py-12 {\n    padding-top: 3rem;\n    padding-bottom: 3rem;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:py-36",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:py-36 {\n    padding-top: 9rem;\n    padding-bottom: 9rem;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:relative",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:relative {\n    position: relative;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:rounded-2xl",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:rounded-2xl {\n    border-radius: 1rem;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:sticky",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:sticky {\n    position: sticky;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:text-left",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:text-left {\n    text-align: left;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:text-sm",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:text-sm {\n    font-size: 0.875rem;\n    line-height: 1.25rem;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:top-0",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:top-0 {\n    top: 0px;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:w-112",
+    "css": ""
+  },
+  {
+    "utility": "lg:w-16",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:w-16 {\n    width: 4rem;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:w-auto",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:w-auto {\n    width: auto;\n  }\n}\n"
+  },
+  {
+    "utility": "lg:whitespace-nowrap",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:whitespace-nowrap {\n    white-space: nowrap;\n  }\n}\n"
+  },
+  {
+    "utility": "mb-[env(safe-area-inset-bottom)]",
+    "css": ".mb-\\[env\\(safe-area-inset-bottom\\)\\] {\n  margin-bottom: env(safe-area-inset-bottom);\n}\n"
+  },
+  {
+    "utility": "md:block",
+    "css": "@media (min-width: 768px) {\n  .md\\:block {\n    display: block;\n  }\n}\n"
+  },
+  {
+    "utility": "md:flex",
+    "css": "@media (min-width: 768px) {\n  .md\\:flex {\n    display: flex;\n  }\n}\n"
+  },
+  {
+    "utility": "md:hidden",
+    "css": "@media (min-width: 768px) {\n  .md\\:hidden {\n    display: none;\n  }\n}\n"
+  },
+  {
+    "utility": "md:max-w-2xl",
+    "css": "@media (min-width: 768px) {\n  .md\\:max-w-2xl {\n    max-width: 42rem;\n  }\n}\n"
+  },
+  {
+    "utility": "md:order-none",
+    "css": "@media (min-width: 768px) {\n  .md\\:order-none {\n    order: 0;\n  }\n}\n"
+  },
+  {
+    "utility": "md:px-4",
+    "css": "@media (min-width: 768px) {\n  .md\\:px-4 {\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n}\n"
+  },
+  {
+    "utility": "md:px-6",
+    "css": "@media (min-width: 768px) {\n  .md\\:px-6 {\n    padding-left: 1.5rem;\n    padding-right: 1.5rem;\n  }\n}\n"
+  },
+  {
+    "utility": "md:relative",
+    "css": "@media (min-width: 768px) {\n  .md\\:relative {\n    position: relative;\n  }\n}\n"
+  },
+  {
+    "utility": "md:rounded-full",
+    "css": "@media (min-width: 768px) {\n  .md\\:rounded-full {\n    border-radius: 9999px;\n  }\n}\n"
+  },
+  {
+    "utility": "md:text-left",
+    "css": "@media (min-width: 768px) {\n  .md\\:text-left {\n    text-align: left;\n  }\n}\n"
+  },
+  {
+    "utility": "ml-2.5",
+    "css": ".ml-2\\.5 {\n  margin-left: 0.625rem;\n}\n.ml-2 {\n  margin-left: 0.5rem;\n}\n"
+  },
+  {
+    "utility": "ml-24",
+    "css": ".ml-24 {\n  margin-left: 6rem;\n}\n"
+  },
+  {
+    "utility": "ml-3",
+    "css": ".ml-3 {\n  margin-left: 0.75rem;\n}\n"
+  },
+  {
+    "utility": "mt-1",
+    "css": ".mt-1 {\n  margin-top: 0.25rem;\n}\n"
+  },
+  {
+    "utility": "mt-10",
+    "css": ".mt-10 {\n  margin-top: 2.5rem;\n}\n"
+  },
+  {
+    "utility": "mt-12",
+    "css": ".mt-12 {\n  margin-top: 3rem;\n}\n"
+  },
+  {
+    "utility": "mt-14",
+    "css": ".mt-14 {\n  margin-top: 3.5rem;\n}\n"
+  },
+  {
+    "utility": "mt-2",
+    "css": ".mt-2 {\n  margin-top: 0.5rem;\n}\n"
+  },
+  {
+    "utility": "mt-3",
+    "css": ".mt-3 {\n  margin-top: 0.75rem;\n}\n"
+  },
+  {
+    "utility": "mt-4",
+    "css": ".mt-4 {\n  margin-top: 1rem;\n}\n"
+  },
+  {
+    "utility": "mt-6",
+    "css": ".mt-6 {\n  margin-top: 1.5rem;\n}\n"
+  },
+  {
+    "utility": "mt-8",
+    "css": ".mt-8 {\n  margin-top: 2rem;\n}\n"
+  },
+  {
+    "utility": "mx-auto",
+    "css": ".mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n"
+  },
+  {
+    "utility": "my-12",
+    "css": ".my-12 {\n  margin-top: 3rem;\n  margin-bottom: 3rem;\n}\n"
+  },
+  {
+    "utility": "order-first",
+    "css": ".order-first {\n  order: -9999;\n}\n"
+  },
+  {
+    "utility": "overflow-hidden",
+    "css": ".overflow-hidden {\n  overflow: hidden;\n}\n"
+  },
+  {
+    "utility": "p-1",
+    "css": ".p-1 {\n  padding: 0.25rem;\n}\n"
+  },
+  {
+    "utility": "pb-12",
+    "css": ".pb-12 {\n  padding-bottom: 3rem;\n}\n"
+  },
+  {
+    "utility": "pb-4",
+    "css": ".pb-4 {\n  padding-bottom: 1rem;\n}\n"
+  },
+  {
+    "utility": "pb-40",
+    "css": ".pb-40 {\n  padding-bottom: 10rem;\n}\n"
+  },
+  {
+    "utility": "prose",
+    "css": ""
+  },
+  {
+    "utility": "prose-slate",
+    "css": ""
+  },
+  {
+    "utility": "pt-10",
+    "css": ".pt-10 {\n  padding-top: 2.5rem;\n}\n"
+  },
+  {
+    "utility": "pt-16",
+    "css": ".pt-16 {\n  padding-top: 4rem;\n}\n"
+  },
+  {
+    "utility": "px-4",
+    "css": ".px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n"
+  },
+  {
+    "utility": "py-10",
+    "css": ".py-10 {\n  padding-top: 2.5rem;\n  padding-bottom: 2.5rem;\n}\n"
+  },
+  {
+    "utility": "py-16",
+    "css": ".py-16 {\n  padding-top: 4rem;\n  padding-bottom: 4rem;\n}\n"
+  },
+  {
+    "utility": "py-4",
+    "css": ".py-4 {\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n"
+  },
+  {
+    "utility": "relative",
+    "css": ".relative {\n  position: relative;\n}\n"
+  },
+  {
+    "utility": "ring-1",
+    "css": ".ring-1 {\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width)\n    var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width))\n    var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n"
+  },
+  {
+    "utility": "ring-black/10",
+    "css": ".ring-black\\/10 {\n  --tw-ring-color: rgb(0 0 0 / 0.1);\n}\n"
+  },
+  {
+    "utility": "ring-inset",
+    "css": ".ring-inset {\n  --tw-ring-inset: inset;\n}\n"
+  },
+  {
+    "utility": "ring-slate-900/5",
+    "css": ".ring-slate-900\\/5 {\n  --tw-ring-color: rgb(15 23 42 / 0.05);\n}\n"
+  },
+  {
+    "utility": "rounded-full",
+    "css": ".rounded-full {\n  border-radius: 9999px;\n}\n"
+  },
+  {
+    "utility": "rounded-lg",
+    "css": ".rounded-lg {\n  border-radius: 0.5rem;\n}\n"
+  },
+  {
+    "utility": "rounded-md",
+    "css": ".rounded-md {\n  border-radius: 0.375rem;\n}\n"
+  },
+  {
+    "utility": "shadow",
+    "css": ".shadow {\n  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),\n    var(--tw-shadow);\n}\n"
+  },
+  {
+    "utility": "shadow-slate-200",
+    "css": ".shadow-slate-200 {\n  --tw-shadow-color: #e2e8f0;\n  --tw-shadow: var(--tw-shadow-colored);\n}\n"
+  },
+  {
+    "utility": "shadow-slate-200/80",
+    "css": ".shadow-slate-200\\/80 {\n  --tw-shadow-color: rgb(226 232 240 / 0.8);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n"
+  },
+  {
+    "utility": "shadow-xl",
+    "css": ".shadow-xl {\n  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),\n    0 8px 10px -6px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),\n    var(--tw-shadow);\n}\n"
+  },
+  {
+    "utility": "sm:block",
+    "css": "@media (min-width: 640px) {\n  .sm\\:block {\n    display: block;\n  }\n}\n"
+  },
+  {
+    "utility": "sm:gap-8",
+    "css": "@media (min-width: 640px) {\n  .sm\\:gap-8 {\n    gap: 2rem;\n  }\n}\n"
+  },
+  {
+    "utility": "sm:ml-3",
+    "css": "@media (min-width: 640px) {\n  .sm\\:ml-3 {\n    margin-left: 0.75rem;\n  }\n}\n"
+  },
+  {
+    "utility": "sm:mt-4",
+    "css": "@media (min-width: 640px) {\n  .sm\\:mt-4 {\n    margin-top: 1rem;\n  }\n}\n"
+  },
+  {
+    "utility": "sm:pb-32",
+    "css": "@media (min-width: 640px) {\n  .sm\\:pb-32 {\n    padding-bottom: 8rem;\n  }\n}\n"
+  },
+  {
+    "utility": "sm:pb-4",
+    "css": "@media (min-width: 640px) {\n  .sm\\:pb-4 {\n    padding-bottom: 1rem;\n  }\n}\n"
+  },
+  {
+    "utility": "sm:px-6",
+    "css": "@media (min-width: 640px) {\n  .sm\\:px-6 {\n    padding-left: 1.5rem;\n    padding-right: 1.5rem;\n  }\n}\n"
+  },
+  {
+    "utility": "sm:py-12",
+    "css": "@media (min-width: 640px) {\n  .sm\\:py-12 {\n    padding-top: 3rem;\n    padding-bottom: 3rem;\n  }\n}\n"
+  },
+  {
+    "utility": "sm:py-16",
+    "css": "@media (min-width: 640px) {\n  .sm\\:py-16 {\n    padding-top: 4rem;\n    padding-bottom: 4rem;\n  }\n}\n"
+  },
+  {
+    "utility": "sm:rounded-xl",
+    "css": "@media (min-width: 640px) {\n  .sm\\:rounded-xl {\n    border-radius: 0.75rem;\n  }\n}\n"
+  },
+  {
+    "utility": "sm:w-64",
+    "css": "@media (min-width: 640px) {\n  .sm\\:w-64 {\n    width: 16rem;\n  }\n}\n"
+  },
+  {
+    "utility": "sr-only",
+    "css": ".sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n}\n"
+  },
+  {
+    "utility": "stroke-slate-500",
+    "css": ".stroke-slate-500 {\n  stroke: #64748b;\n}\n"
+  },
+  {
+    "utility": "text-2xl",
+    "css": ".text-2xl {\n  font-size: 1.5rem;\n  line-height: 2rem;\n}\n"
+  },
+  {
+    "utility": "text-4xl",
+    "css": ".text-4xl {\n  font-size: 2.25rem;\n  line-height: 2.5rem;\n}\n"
+  },
+  {
+    "utility": "text-base",
+    "css": ".text-base {\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n"
+  },
+  {
+    "utility": "text-center",
+    "css": ".text-center {\n  text-align: center;\n}\n"
+  },
+  {
+    "utility": "text-lg",
+    "css": ".text-lg {\n  font-size: 1.125rem;\n  line-height: 1.75rem;\n}\n"
+  },
+  {
+    "utility": "text-pink-500",
+    "css": ".text-pink-500 {\n  --tw-text-opacity: 1;\n  color: rgb(236 72 153 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "utility": "text-slate-300",
+    "css": ".text-slate-300 {\n  --tw-text-opacity: 1;\n  color: rgb(203 213 225 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "utility": "text-slate-400",
+    "css": ".text-slate-400 {\n  --tw-text-opacity: 1;\n  color: rgb(148 163 184 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "utility": "text-slate-500",
+    "css": ".text-slate-500 {\n  --tw-text-opacity: 1;\n  color: rgb(100 116 139 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "utility": "text-slate-700",
+    "css": ".text-slate-700 {\n  --tw-text-opacity: 1;\n  color: rgb(51 65 85 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "utility": "text-slate-900",
+    "css": ".text-slate-900 {\n  --tw-text-opacity: 1;\n  color: rgb(15 23 42 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "utility": "text-sm",
+    "css": ".text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n"
+  },
+  {
+    "utility": "text-xl",
+    "css": ".text-xl {\n  font-size: 1.25rem;\n  line-height: 1.75rem;\n}\n"
+  },
+  {
+    "utility": "to-slate-200/0",
+    "css": ".to-slate-200\\/0 {\n  --tw-gradient-to: rgb(226 232 240 / 0);\n}\n"
+  },
+  {
+    "utility": "top-0",
+    "css": ".top-0 {\n  top: 0px;\n}\n"
+  },
+  {
+    "utility": "top-1/2",
+    "css": ".top-1\\/2 {\n  top: 50%;\n}\n"
+  },
+  {
+    "utility": "touch-none",
+    "css": ".touch-none {\n  touch-action: none;\n}\n"
+  },
+  {
+    "utility": "truncate",
+    "css": ".truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n"
+  },
+  {
+    "utility": "via-slate-200",
+    "css": ".via-slate-200 {\n  --tw-gradient-to: rgb(226 232 240 / 0);\n  --tw-gradient-stops: var(--tw-gradient-from), #e2e8f0, var(--tw-gradient-to);\n}\n"
+  },
+  {
+    "utility": "w-2.5",
+    "css": ".w-2\\.5 {\n  width: 0.625rem;\n}\n.w-2 {\n  width: 0.5rem;\n}\n"
+  },
+  {
+    "utility": "w-4",
+    "css": ".w-4 {\n  width: 1rem;\n}\n"
+  },
+  {
+    "utility": "w-48",
+    "css": ".w-48 {\n  width: 12rem;\n}\n"
+  },
+  {
+    "utility": "w-6",
+    "css": ".w-6 {\n  width: 1.5rem;\n}\n"
+  },
+  {
+    "utility": "w-8",
+    "css": ".w-8 {\n  width: 2rem;\n}\n"
+  },
+  {
+    "utility": "w-auto",
+    "css": ".w-auto {\n  width: auto;\n}\n"
+  },
+  {
+    "utility": "w-full",
+    "css": ".w-full {\n  width: 100%;\n}\n"
+  },
+  {
+    "utility": "xl:left-120",
+    "css": ""
+  },
+  {
+    "utility": "xl:ml-120",
+    "css": ""
+  },
+  {
+    "utility": "xl:px-12",
+    "css": "@media (min-width: 1280px) {\n  .xl\\:px-12 {\n    padding-left: 3rem;\n    padding-right: 3rem;\n  }\n}\n"
+  },
+  {
+    "utility": "xl:w-120",
+    "css": ""
+  },
+  {
+    "utility": "z-10",
+    "css": ".z-10 {\n  z-index: 10;\n}\n"
+  },
+  {
+    "utility": "",
+    "css": ""
+  }
+]

@@ -1,0 +1,342 @@
+[
+  {
+    "composition": "py-16",
+    "css": ".py-16 {\n  padding-top: 4rem;\n  padding-bottom: 4rem;\n}\n"
+  },
+  {
+    "composition": "sr-only",
+    "css": ".sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n}\n"
+  },
+  {
+    "composition": "h-6 w-6",
+    "css": ".h-6 {\n  height: 1.5rem;\n}\n.w-6 {\n  width: 1.5rem;\n}\n"
+  },
+  {
+    "composition": "relative",
+    "css": ".relative {\n  position: relative;\n}\n"
+  },
+  {
+    "composition": "sm:hidden",
+    "css": "@media (min-width: 640px) {\n  .sm\\:hidden {\n    display: none;\n  }\n}\n"
+  },
+  {
+    "composition": "lg:col-span-3",
+    "css": "@media (min-width: 1024px) {\n  .lg\\:col-span-3 {\n    grid-column: span 3 / span 3;\n  }\n}\n"
+  },
+  {
+    "composition": "py-20 sm:py-32",
+    "css": ".py-20 {\n  padding-top: 5rem;\n  padding-bottom: 5rem;\n}\n@media (min-width: 640px) {\n  .sm\\:py-32 {\n    padding-top: 8rem;\n    padding-bottom: 8rem;\n  }\n}\n"
+  },
+  {
+    "composition": "lg:pl-8 relative",
+    "css": ".relative {\n  position: relative;\n}\n@media (min-width: 1024px) {\n  .lg\\:pl-8 {\n    padding-left: 2rem;\n  }\n}\n"
+  },
+  {
+    "composition": "absolute inset-0",
+    "css": ".absolute {\n  position: absolute;\n}\n.inset-0 {\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n"
+  },
+  {
+    "composition": "sm:not-sr-only sr-only",
+    "css": ".sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n}\n@media (min-width: 640px) {\n  .sm\\:not-sr-only {\n    position: static;\n    width: auto;\n    height: auto;\n    padding: 0;\n    margin: 0;\n    overflow: visible;\n    clip: auto;\n    white-space: normal;\n  }\n}\n"
+  },
+  {
+    "composition": "mt-14 relative sm:mt-24",
+    "css": ".relative {\n  position: relative;\n}\n.mt-14 {\n  margin-top: 3.5rem;\n}\n@media (min-width: 640px) {\n  .sm\\:mt-24 {\n    margin-top: 6rem;\n  }\n}\n"
+  },
+  {
+    "composition": "lg:mx-0 max-w-2xl mx-auto",
+    "css": ".mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.max-w-2xl {\n  max-width: 42rem;\n}\n@media (min-width: 1024px) {\n  .lg\\:mx-0 {\n    margin-left: 0px;\n    margin-right: 0px;\n  }\n}\n"
+  },
+  {
+    "composition": "h-12 text-slate-900 w-auto",
+    "css": ".h-12 {\n  height: 3rem;\n}\n.w-auto {\n  width: auto;\n}\n.text-slate-900 {\n  --tw-text-opacity: 1;\n  color: rgb(15 23 42 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "lg:pt-11 pb-11 relative z-50",
+    "css": ".relative {\n  position: relative;\n}\n.z-50 {\n  z-index: 50;\n}\n.pb-11 {\n  padding-bottom: 2.75rem;\n}\n@media (min-width: 1024px) {\n  .lg\\:pt-11 {\n    padding-top: 2.75rem;\n  }\n}\n"
+  },
+  {
+    "composition": "pb-20 pt-10 relative sm:py-24",
+    "css": ".relative {\n  position: relative;\n}\n.pb-20 {\n  padding-bottom: 5rem;\n}\n.pt-10 {\n  padding-top: 2.5rem;\n}\n@media (min-width: 640px) {\n  .sm\\:py-24 {\n    padding-top: 6rem;\n    padding-bottom: 6rem;\n  }\n}\n"
+  },
+  {
+    "composition": "absolute bg-indigo-50 inset-0",
+    "css": ".absolute {\n  position: absolute;\n}\n.inset-0 {\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n.bg-indigo-50 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(238 242 255 / var(--tw-bg-opacity));\n}\n"
+  },
+  {
+    "composition": "font-mono text-blue-600 text-sm",
+    "css": ".font-mono {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\",\n    \"Courier New\", monospace;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.text-blue-600 {\n  --tw-text-opacity: 1;\n  color: rgb(37 99 235 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "lg:basis-0 lg:grow lg:mt-0 mt-10",
+    "css": ".mt-10 {\n  margin-top: 2.5rem;\n}\n@media (min-width: 1024px) {\n  .lg\\:mt-0 {\n    margin-top: 0px;\n  }\n  .lg\\:grow {\n    flex-grow: 1;\n  }\n  .lg\\:basis-0 {\n    flex-basis: 0px;\n  }\n}\n"
+  },
+  {
+    "composition": "font-mono text-slate-500 text-sm",
+    "css": ".font-mono {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\",\n    \"Courier New\", monospace;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.text-slate-500 {\n  --tw-text-opacity: 1;\n  color: rgb(100 116 139 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "flex items-center justify-center",
+    "css": ".flex {\n  display: flex;\n}\n.items-center {\n  align-items: center;\n}\n.justify-center {\n  justify-content: center;\n}\n"
+  },
+  {
+    "composition": "mt-1 text-blue-900 tracking-tight",
+    "css": ".mt-1 {\n  margin-top: 0.25rem;\n}\n.tracking-tight {\n  letter-spacing: -0.025em;\n}\n.text-blue-900 {\n  --tw-text-opacity: 1;\n  color: rgb(30 58 138 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "flex gap-4 items-center mx-auto px-4",
+    "css": ".mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.flex {\n  display: flex;\n}\n.items-center {\n  align-items: center;\n}\n.gap-4 {\n  gap: 1rem;\n}\n.px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n"
+  },
+  {
+    "composition": "antialiased bg-white js-focus-visible",
+    "css": ".bg-white {\n  --tw-bg-opacity: 1;\n  background-color: rgb(255 255 255 / var(--tw-bg-opacity));\n}\n.antialiased {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n"
+  },
+  {
+    "composition": "font-mono mt-1 text-slate-500 text-sm",
+    "css": ".mt-1 {\n  margin-top: 0.25rem;\n}\n.font-mono {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\",\n    \"Courier New\", monospace;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.text-slate-500 {\n  --tw-text-opacity: 1;\n  color: rgb(100 116 139 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "md:mt-0 mt-6 text-base text-slate-500",
+    "css": ".mt-6 {\n  margin-top: 1.5rem;\n}\n.text-base {\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n.text-slate-500 {\n  --tw-text-opacity: 1;\n  color: rgb(100 116 139 / var(--tw-text-opacity));\n}\n@media (min-width: 768px) {\n  .md\\:mt-0 {\n    margin-top: 0px;\n  }\n}\n"
+  },
+  {
+    "composition": "lg:px-8 max-w-7xl mx-auto px-4 sm:px-6",
+    "css": ".mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.max-w-7xl {\n  max-width: 80rem;\n}\n.px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n@media (min-width: 640px) {\n  .sm\\:px-6 {\n    padding-left: 1.5rem;\n    padding-right: 1.5rem;\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:px-8 {\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n"
+  },
+  {
+    "composition": "lg:max-w-4xl lg:px-12 max-w-2xl mx-auto",
+    "css": ".mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.max-w-2xl {\n  max-width: 42rem;\n}\n@media (min-width: 1024px) {\n  .lg\\:max-w-4xl {\n    max-width: 56rem;\n  }\n  .lg\\:px-12 {\n    padding-left: 3rem;\n    padding-right: 3rem;\n  }\n}\n"
+  },
+  {
+    "composition": "bg-indigo-500/10 h-px mb-8 mx-auto w-48",
+    "css": ".mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.mb-8 {\n  margin-bottom: 2rem;\n}\n.h-px {\n  height: 1px;\n}\n.w-48 {\n  width: 12rem;\n}\n.bg-indigo-500\\/10 {\n  background-color: rgb(99 102 241 / 0.1);\n}\n"
+  },
+  {
+    "composition": "hidden lg:gap-x-8 lg:grid lg:grid-cols-3",
+    "css": ".hidden {\n  display: none;\n}\n@media (min-width: 1024px) {\n  .lg\\:grid {\n    display: grid;\n  }\n  .lg\\:grid-cols-3 {\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n  .lg\\:gap-x-8 {\n    column-gap: 2rem;\n  }\n}\n"
+  },
+  {
+    "composition": "mt-4 text-blue-900 text-lg tracking-tight",
+    "css": ".mt-4 {\n  margin-top: 1rem;\n}\n.text-lg {\n  font-size: 1.125rem;\n  line-height: 1.75rem;\n}\n.tracking-tight {\n  letter-spacing: -0.025em;\n}\n.text-blue-900 {\n  --tw-text-opacity: 1;\n  color: rgb(30 58 138 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "[&:not(:focus-visible)]:focus:outline-none",
+    "css": ".\\[\\&\\:not\\(\\:focus-visible\\)\\]\\:focus\\:outline-none:focus:not(:focus-visible) {\n  outline: 2px solid transparent;\n  outline-offset: 2px;\n}\n"
+  },
+  {
+    "composition": "mt-1 text-base text-slate-500 tracking-tight",
+    "css": ".mt-1 {\n  margin-top: 0.25rem;\n}\n.text-base {\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n.tracking-tight {\n  letter-spacing: -0.025em;\n}\n.text-slate-500 {\n  --tw-text-opacity: 1;\n  color: rgb(100 116 139 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "mt-1.5 text-base text-blue-900 tracking-tight",
+    "css": ".mt-1\\.5 {\n  margin-top: 0.375rem;\n}\n.mt-1 {\n  margin-top: 0.25rem;\n}\n.text-base {\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n.tracking-tight {\n  letter-spacing: -0.025em;\n}\n.text-blue-900 {\n  --tw-text-opacity: 1;\n  color: rgb(30 58 138 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "lg:px-8 max-w-7xl mx-auto px-4 relative sm:px-6",
+    "css": ".relative {\n  position: relative;\n}\n.mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.max-w-7xl {\n  max-width: 80rem;\n}\n.px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n@media (min-width: 640px) {\n  .sm\\:px-6 {\n    padding-left: 1.5rem;\n    padding-right: 1.5rem;\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:px-8 {\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n"
+  },
+  {
+    "composition": "lg:max-w-4xl lg:mx-0 lg:pr-24 max-w-2xl mx-auto",
+    "css": ".mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.max-w-2xl {\n  max-width: 42rem;\n}\n@media (min-width: 1024px) {\n  .lg\\:mx-0 {\n    margin-left: 0px;\n    margin-right: 0px;\n  }\n  .lg\\:max-w-4xl {\n    max-width: 56rem;\n  }\n  .lg\\:pr-24 {\n    padding-right: 6rem;\n  }\n}\n"
+  },
+  {
+    "composition": "flex-none pr-4 relative sm:pr-0 sm:w-auto w-3/4",
+    "css": ".relative {\n  position: relative;\n}\n.w-3\\/4 {\n  width: 75%;\n}\n.flex-none {\n  flex: none;\n}\n.pr-4 {\n  padding-right: 1rem;\n}\n@media (min-width: 640px) {\n  .sm\\:w-auto {\n    width: auto;\n  }\n  .sm\\:pr-0 {\n    padding-right: 0px;\n  }\n}\n"
+  },
+  {
+    "composition": "font-semibold text-blue-900 text-lg tracking-tight",
+    "css": ".text-lg {\n  font-size: 1.125rem;\n  line-height: 1.75rem;\n}\n.font-semibold {\n  font-weight: 600;\n}\n.tracking-tight {\n  letter-spacing: -0.025em;\n}\n.text-blue-900 {\n  --tw-text-opacity: 1;\n  color: rgb(30 58 138 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "font-semibold text-2xl text-blue-900 tracking-tight",
+    "css": ".text-2xl {\n  font-size: 1.5rem;\n  line-height: 2rem;\n}\n.font-semibold {\n  font-weight: 600;\n}\n.tracking-tight {\n  letter-spacing: -0.025em;\n}\n.text-blue-900 {\n  --tw-text-opacity: 1;\n  color: rgb(30 58 138 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "lg:px-8 max-w-7xl mx-auto px-4 relative sm:px-6 z-10",
+    "css": ".relative {\n  position: relative;\n}\n.z-10 {\n  z-index: 10;\n}\n.mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.max-w-7xl {\n  max-width: 80rem;\n}\n.px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n@media (min-width: 640px) {\n  .sm\\:px-6 {\n    padding-left: 1.5rem;\n    padding-right: 1.5rem;\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:px-8 {\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n"
+  },
+  {
+    "composition": "font-display mt-4 text-2xl text-blue-900 tracking-tight",
+    "css": ".mt-4 {\n  margin-top: 1rem;\n}\n.text-2xl {\n  font-size: 1.5rem;\n  line-height: 2rem;\n}\n.tracking-tight {\n  letter-spacing: -0.025em;\n}\n.text-blue-900 {\n  --tw-text-opacity: 1;\n  color: rgb(30 58 138 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "fill-current h-1.5 overflow-visible stroke-current w-1.5",
+    "css": ".h-1\\.5 {\n  height: 0.375rem;\n}\n.h-1 {\n  height: 0.25rem;\n}\n.w-1\\.5 {\n  width: 0.375rem;\n}\n.w-1 {\n  width: 0.25rem;\n}\n.overflow-visible {\n  overflow: visible;\n}\n.fill-current {\n  fill: currentColor;\n}\n.stroke-current {\n  stroke: currentColor;\n}\n"
+  },
+  {
+    "composition": "absolute bg-gradient-to-b from-white h-40 inset-x-0 top-0",
+    "css": ".absolute {\n  position: absolute;\n}\n.inset-x-0 {\n  left: 0px;\n  right: 0px;\n}\n.top-0 {\n  top: 0px;\n}\n.h-40 {\n  height: 10rem;\n}\n.bg-gradient-to-b {\n  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));\n}\n.from-white {\n  --tw-gradient-from: #fff;\n  --tw-gradient-to: rgb(255 255 255 / 0);\n  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);\n}\n"
+  },
+  {
+    "composition": "font-semibold mt-0.5 text-2xl text-blue-900 tracking-tight",
+    "css": ".mt-0\\.5 {\n  margin-top: 0.125rem;\n}\n.mt-0 {\n  margin-top: 0px;\n}\n.text-2xl {\n  font-size: 1.5rem;\n  line-height: 2rem;\n}\n.font-semibold {\n  font-weight: 600;\n}\n.tracking-tight {\n  letter-spacing: -0.025em;\n}\n.text-blue-900 {\n  --tw-text-opacity: 1;\n  color: rgb(30 58 138 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "flex-none opacity-70 pr-4 relative sm:pr-0 sm:w-auto w-3/4",
+    "css": ".relative {\n  position: relative;\n}\n.w-3\\/4 {\n  width: 75%;\n}\n.flex-none {\n  flex: none;\n}\n.pr-4 {\n  padding-right: 1rem;\n}\n.opacity-70 {\n  opacity: 0.7;\n}\n@media (min-width: 640px) {\n  .sm\\:w-auto {\n    width: auto;\n  }\n  .sm\\:pr-0 {\n    padding-right: 0px;\n  }\n}\n"
+  },
+  {
+    "composition": "absolute bg-gradient-to-t bottom-0 from-white h-40 inset-x-0",
+    "css": ".absolute {\n  position: absolute;\n}\n.inset-x-0 {\n  left: 0px;\n  right: 0px;\n}\n.bottom-0 {\n  bottom: 0px;\n}\n.h-40 {\n  height: 10rem;\n}\n.bg-gradient-to-t {\n  background-image: linear-gradient(to top, var(--tw-gradient-stops));\n}\n.from-white {\n  --tw-gradient-from: #fff;\n  --tw-gradient-to: rgb(255 255 255 / 0);\n  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);\n}\n"
+  },
+  {
+    "composition": "block font-semibold mt-1.5 text-2xl text-blue-900 tracking-tight",
+    "css": ".mt-1\\.5 {\n  margin-top: 0.375rem;\n}\n.mt-1 {\n  margin-top: 0.25rem;\n}\n.block {\n  display: block;\n}\n.text-2xl {\n  font-size: 1.5rem;\n  line-height: 2rem;\n}\n.font-semibold {\n  font-weight: 600;\n}\n.tracking-tight {\n  letter-spacing: -0.025em;\n}\n.text-blue-900 {\n  --tw-text-opacity: 1;\n  color: rgb(30 58 138 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "group h-[17.5rem] overflow-hidden relative rounded-4xl transform",
+    "css": ".relative {\n  position: relative;\n}\n.h-\\[17\\.5rem\\] {\n  height: 17.5rem;\n}\n.transform {\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n.overflow-hidden {\n  overflow: hidden;\n}\n"
+  },
+  {
+    "composition": "hidden lg:basis-0 lg:grow lg:justify-end lg:mt-0 sm:flex sm:mt-10",
+    "css": ".hidden {\n  display: none;\n}\n@media (min-width: 640px) {\n  .sm\\:mt-10 {\n    margin-top: 2.5rem;\n  }\n  .sm\\:flex {\n    display: flex;\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:mt-0 {\n    margin-top: 0px;\n  }\n  .lg\\:grow {\n    flex-grow: 1;\n  }\n  .lg\\:basis-0 {\n    flex-basis: 0px;\n  }\n  .lg\\:justify-end {\n    justify-content: flex-end;\n  }\n}\n"
+  },
+  {
+    "composition": "font-display mt-6 space-y-6 text-2xl text-blue-900 tracking-tight",
+    "css": ".mt-6 {\n  margin-top: 1.5rem;\n}\n.space-y-6 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-y-reverse: 0;\n  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));\n}\n.text-2xl {\n  font-size: 1.5rem;\n  line-height: 2rem;\n}\n.tracking-tight {\n  letter-spacing: -0.025em;\n}\n.text-blue-900 {\n  --tw-text-opacity: 1;\n  color: rgb(30 58 138 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "font-bold font-display mt-8 text-slate-900 text-xl tracking-tight",
+    "css": ".mt-8 {\n  margin-top: 2rem;\n}\n.text-xl {\n  font-size: 1.25rem;\n  line-height: 1.75rem;\n}\n.font-bold {\n  font-weight: 700;\n}\n.tracking-tight {\n  letter-spacing: -0.025em;\n}\n.text-slate-900 {\n  --tw-text-opacity: 1;\n  color: rgb(15 23 42 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "-bottom-14 -top-48 absolute bg-indigo-50 inset-x-0 overflow-hidden",
+    "css": ".absolute {\n  position: absolute;\n}\n.inset-x-0 {\n  left: 0px;\n  right: 0px;\n}\n.-bottom-14 {\n  bottom: -3.5rem;\n}\n.-top-48 {\n  top: -12rem;\n}\n.overflow-hidden {\n  overflow: hidden;\n}\n.bg-indigo-50 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(238 242 255 / var(--tw-bg-opacity));\n}\n"
+  },
+  {
+    "composition": "absolute bg-slate-200 bottom-0 hidden left-0.5 lg:block top-2 w-px",
+    "css": ".absolute {\n  position: absolute;\n}\n.bottom-0 {\n  bottom: 0px;\n}\n.left-0\\.5 {\n  left: 0.125rem;\n}\n.top-2 {\n  top: 0.5rem;\n}\n.left-0 {\n  left: 0px;\n}\n.hidden {\n  display: none;\n}\n.w-px {\n  width: 1px;\n}\n.bg-slate-200 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(226 232 240 / var(--tw-bg-opacity));\n}\n@media (min-width: 1024px) {\n  .lg\\:block {\n    display: block;\n  }\n}\n"
+  },
+  {
+    "composition": "-bottom-32 -top-40 absolute bg-indigo-50 inset-x-0 overflow-hidden",
+    "css": ".absolute {\n  position: absolute;\n}\n.inset-x-0 {\n  left: 0px;\n  right: 0px;\n}\n.-bottom-32 {\n  bottom: -8rem;\n}\n.-top-40 {\n  top: -10rem;\n}\n.overflow-hidden {\n  overflow: hidden;\n}\n.bg-indigo-50 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(238 242 255 / var(--tw-bg-opacity));\n}\n"
+  },
+  {
+    "composition": "gap-y-6 grid grid-cols-1 lg:hidden max-w-2xl mx-auto sm:grid-cols-2",
+    "css": ".mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.grid {\n  display: grid;\n}\n.max-w-2xl {\n  max-width: 42rem;\n}\n.grid-cols-1 {\n  grid-template-columns: repeat(1, minmax(0, 1fr));\n}\n.gap-y-6 {\n  row-gap: 1.5rem;\n}\n@media (min-width: 640px) {\n  .sm\\:grid-cols-2 {\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:hidden {\n    display: none;\n  }\n}\n"
+  },
+  {
+    "composition": "font-bold font-display sm:text-7xl text-5xl text-blue-600 tracking-tighter",
+    "css": ".text-5xl {\n  font-size: 3rem;\n  line-height: 1;\n}\n.font-bold {\n  font-weight: 700;\n}\n.tracking-tighter {\n  letter-spacing: -0.05em;\n}\n.text-blue-600 {\n  --tw-text-opacity: 1;\n  color: rgb(37 99 235 / var(--tw-text-opacity));\n}\n@media (min-width: 640px) {\n  .sm\\:text-7xl {\n    font-size: 4.5rem;\n    line-height: 1;\n  }\n}\n"
+  },
+  {
+    "composition": "font-display font-medium sm:text-5xl text-4xl text-blue-600 tracking-tighter",
+    "css": ".text-4xl {\n  font-size: 2.25rem;\n  line-height: 2.5rem;\n}\n.font-medium {\n  font-weight: 500;\n}\n.tracking-tighter {\n  letter-spacing: -0.05em;\n}\n.text-blue-600 {\n  --tw-text-opacity: 1;\n  color: rgb(37 99 235 / var(--tw-text-opacity));\n}\n@media (min-width: 640px) {\n  .sm\\:text-5xl {\n    font-size: 3rem;\n    line-height: 1;\n  }\n}\n"
+  },
+  {
+    "composition": "font-display font-medium sm:text-5xl text-4xl text-blue-900 tracking-tighter",
+    "css": ".text-4xl {\n  font-size: 2.25rem;\n  line-height: 2.5rem;\n}\n.font-medium {\n  font-weight: 500;\n}\n.tracking-tighter {\n  letter-spacing: -0.05em;\n}\n.text-blue-900 {\n  --tw-text-opacity: 1;\n  color: rgb(30 58 138 / var(--tw-text-opacity));\n}\n@media (min-width: 640px) {\n  .sm\\:text-5xl {\n    font-size: 3rem;\n    line-height: 1;\n  }\n}\n"
+  },
+  {
+    "composition": "absolute left-1/2 lg:translate-x-[-32%] top-0 translate-x-[-10%] translate-y-[-45%]",
+    "css": ".absolute {\n  position: absolute;\n}\n.left-1\\/2 {\n  left: 50%;\n}\n.top-0 {\n  top: 0px;\n}\n.translate-x-\\[-10\\%\\] {\n  --tw-translate-x: -10%;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n.translate-y-\\[-45\\%\\] {\n  --tw-translate-y: -45%;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n@media (min-width: 1024px) {\n  .lg\\:translate-x-\\[-32\\%\\] {\n    --tw-translate-x: -32%;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n      skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n      scaleY(var(--tw-scale-y));\n  }\n}\n"
+  },
+  {
+    "composition": "-mx-4 flex overflow-x-auto pb-4 relative sm:block sm:mx-0 sm:overflow-visible sm:pb-0",
+    "css": ".relative {\n  position: relative;\n}\n.-mx-4 {\n  margin-left: -1rem;\n  margin-right: -1rem;\n}\n.flex {\n  display: flex;\n}\n.overflow-x-auto {\n  overflow-x: auto;\n}\n.pb-4 {\n  padding-bottom: 1rem;\n}\n@media (min-width: 640px) {\n  .sm\\:mx-0 {\n    margin-left: 0px;\n    margin-right: 0px;\n  }\n  .sm\\:block {\n    display: block;\n  }\n  .sm\\:overflow-visible {\n    overflow: visible;\n  }\n  .sm\\:pb-0 {\n    padding-bottom: 0px;\n  }\n}\n"
+  },
+  {
+    "composition": "backdrop-blur bg-white/60 px-10 py-14 shadow-blue-900/5 shadow-xl space-y-8 text-center",
+    "css": ".space-y-8 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-y-reverse: 0;\n  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(2rem * var(--tw-space-y-reverse));\n}\n.bg-white\\/60 {\n  background-color: rgb(255 255 255 / 0.6);\n}\n.px-10 {\n  padding-left: 2.5rem;\n  padding-right: 2.5rem;\n}\n.py-14 {\n  padding-top: 3.5rem;\n  padding-bottom: 3.5rem;\n}\n.text-center {\n  text-align: center;\n}\n.shadow-xl {\n  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),\n    0 8px 10px -6px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),\n    var(--tw-shadow);\n}\n.shadow-blue-900\\/5 {\n  --tw-shadow-color: rgb(30 58 138 / 0.05);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.backdrop-blur {\n  --tw-backdrop-blur: blur(8px);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n"
+  },
+  {
+    "composition": "absolute duration-300 group-hover:scale-110 h-full inset-0 object-cover transition w-full",
+    "css": ".absolute {\n  position: absolute;\n}\n.inset-0 {\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n.h-full {\n  height: 100%;\n}\n.w-full {\n  width: 100%;\n}\n.object-cover {\n  object-fit: cover;\n}\n.transition {\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,\n    opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.duration-300 {\n  transition-duration: 300ms;\n}\n.group:hover .group-hover\\:scale-110 {\n  --tw-scale-x: 1.1;\n  --tw-scale-y: 1.1;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n"
+  },
+  {
+    "composition": "gap-x-32 gap-y-14 grid grid-cols-1 max-w-2xl mx-auto relative xl:grid-cols-2 xl:max-w-none",
+    "css": ".relative {\n  position: relative;\n}\n.mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.grid {\n  display: grid;\n}\n.max-w-2xl {\n  max-width: 42rem;\n}\n.grid-cols-1 {\n  grid-template-columns: repeat(1, minmax(0, 1fr));\n}\n.gap-x-32 {\n  column-gap: 8rem;\n}\n.gap-y-14 {\n  row-gap: 3.5rem;\n}\n@media (min-width: 1280px) {\n  .xl\\:max-w-none {\n    max-width: none;\n  }\n  .xl\\:grid-cols-2 {\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n}\n"
+  },
+  {
+    "composition": "backdrop-blur bg-white/60 mt-10 px-10 py-14 shadow-blue-900/5 shadow-xl space-y-8 text-center",
+    "css": ".mt-10 {\n  margin-top: 2.5rem;\n}\n.space-y-8 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-y-reverse: 0;\n  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(2rem * var(--tw-space-y-reverse));\n}\n.bg-white\\/60 {\n  background-color: rgb(255 255 255 / 0.6);\n}\n.px-10 {\n  padding-left: 2.5rem;\n  padding-right: 2.5rem;\n}\n.py-14 {\n  padding-top: 3.5rem;\n  padding-bottom: 3.5rem;\n}\n.text-center {\n  text-align: center;\n}\n.shadow-xl {\n  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),\n    0 8px 10px -6px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),\n    var(--tw-shadow);\n}\n.shadow-blue-900\\/5 {\n  --tw-shadow-color: rgb(30 58 138 / 0.05);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.backdrop-blur {\n  --tw-backdrop-blur: blur(8px);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n"
+  },
+  {
+    "composition": "flex flex-col items-center justify-between lg:px-8 max-w-7xl md:flex-row mx-auto px-4 sm:px-6",
+    "css": ".mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.flex {\n  display: flex;\n}\n.max-w-7xl {\n  max-width: 80rem;\n}\n.flex-col {\n  flex-direction: column;\n}\n.items-center {\n  align-items: center;\n}\n.justify-between {\n  justify-content: space-between;\n}\n.px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n@media (min-width: 640px) {\n  .sm\\:px-6 {\n    padding-left: 1.5rem;\n    padding-right: 1.5rem;\n  }\n}\n@media (min-width: 768px) {\n  .md\\:flex-row {\n    flex-direction: row;\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:px-8 {\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n"
+  },
+  {
+    "composition": "gap-x-8 gap-y-8 grid grid-cols-1 items-start lg:grid-cols-4 lg:mt-24 mt-14 sm:gap-y-16 sm:mt-16",
+    "css": ".mt-14 {\n  margin-top: 3.5rem;\n}\n.grid {\n  display: grid;\n}\n.grid-cols-1 {\n  grid-template-columns: repeat(1, minmax(0, 1fr));\n}\n.items-start {\n  align-items: flex-start;\n}\n.gap-x-8 {\n  column-gap: 2rem;\n}\n.gap-y-8 {\n  row-gap: 2rem;\n}\n@media (min-width: 640px) {\n  .sm\\:mt-16 {\n    margin-top: 4rem;\n  }\n  .sm\\:gap-y-16 {\n    row-gap: 4rem;\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:mt-24 {\n    margin-top: 6rem;\n  }\n  .lg\\:grid-cols-4 {\n    grid-template-columns: repeat(4, minmax(0, 1fr));\n  }\n}\n"
+  },
+  {
+    "composition": "-mx-4 flex gap-x-4 gap-y-10 overflow-x-auto pb-4 pl-4 sm:flex-col sm:mx-0 sm:pb-0 sm:pl-0 sm:pr-8",
+    "css": ".-mx-4 {\n  margin-left: -1rem;\n  margin-right: -1rem;\n}\n.flex {\n  display: flex;\n}\n.gap-x-4 {\n  column-gap: 1rem;\n}\n.gap-y-10 {\n  row-gap: 2.5rem;\n}\n.overflow-x-auto {\n  overflow-x: auto;\n}\n.pb-4 {\n  padding-bottom: 1rem;\n}\n.pl-4 {\n  padding-left: 1rem;\n}\n@media (min-width: 640px) {\n  .sm\\:mx-0 {\n    margin-left: 0px;\n    margin-right: 0px;\n  }\n  .sm\\:flex-col {\n    flex-direction: column;\n  }\n  .sm\\:pb-0 {\n    padding-bottom: 0px;\n  }\n  .sm\\:pl-0 {\n    padding-left: 0px;\n  }\n  .sm\\:pr-8 {\n    padding-right: 2rem;\n  }\n}\n"
+  },
+  {
+    "composition": "font-display font-medium max-w-2xl mx-auto sm:text-5xl text-4xl text-blue-900 text-center tracking-tighter",
+    "css": ".mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.max-w-2xl {\n  max-width: 42rem;\n}\n.text-center {\n  text-align: center;\n}\n.text-4xl {\n  font-size: 2.25rem;\n  line-height: 2.5rem;\n}\n.font-medium {\n  font-weight: 500;\n}\n.tracking-tighter {\n  letter-spacing: -0.05em;\n}\n.text-blue-900 {\n  --tw-text-opacity: 1;\n  color: rgb(30 58 138 / var(--tw-text-opacity));\n}\n@media (min-width: 640px) {\n  .sm\\:text-5xl {\n    font-size: 3rem;\n    line-height: 1;\n  }\n}\n"
+  },
+  {
+    "composition": "absolute fill-blue-600 h-1.5 hidden left-[-0.5px] lg:block overflow-visible stroke-blue-600 top-[0.5625rem] w-1.5",
+    "css": ".absolute {\n  position: absolute;\n}\n.left-\\[-0\\.5px\\] {\n  left: -0.5px;\n}\n.top-\\[0\\.5625rem\\] {\n  top: 0.5625rem;\n}\n.hidden {\n  display: none;\n}\n.h-1\\.5 {\n  height: 0.375rem;\n}\n.h-1 {\n  height: 0.25rem;\n}\n.w-1\\.5 {\n  width: 0.375rem;\n}\n.w-1 {\n  width: 0.25rem;\n}\n.overflow-visible {\n  overflow: visible;\n}\n.fill-blue-600 {\n  fill: #2563eb;\n}\n.stroke-blue-600 {\n  stroke: #2563eb;\n}\n@media (min-width: 1024px) {\n  .lg\\:block {\n    display: block;\n  }\n}\n"
+  },
+  {
+    "composition": "flex flex-wrap items-center justify-center lg:flex-nowrap lg:px-8 max-w-7xl mx-auto px-4 sm:justify-between sm:px-6",
+    "css": ".mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.flex {\n  display: flex;\n}\n.max-w-7xl {\n  max-width: 80rem;\n}\n.flex-wrap {\n  flex-wrap: wrap;\n}\n.items-center {\n  align-items: center;\n}\n.justify-center {\n  justify-content: center;\n}\n.px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n@media (min-width: 640px) {\n  .sm\\:justify-between {\n    justify-content: space-between;\n  }\n  .sm\\:px-6 {\n    padding-left: 1.5rem;\n    padding-right: 1.5rem;\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:flex-nowrap {\n    flex-wrap: nowrap;\n  }\n  .lg\\:px-8 {\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n"
+  },
+  {
+    "composition": "-my-2.5 bg-transparent flex-auto focus:outline-none pl-6 placeholder:text-slate-400 pr-2.5 text-base text-slate-900",
+    "css": ".-my-2\\.5 {\n  margin-top: -0.625rem;\n  margin-bottom: -0.625rem;\n}\n.-my-2 {\n  margin-top: -0.5rem;\n  margin-bottom: -0.5rem;\n}\n.flex-auto {\n  flex: 1 1 auto;\n}\n.bg-transparent {\n  background-color: transparent;\n}\n.pl-6 {\n  padding-left: 1.5rem;\n}\n.pr-2\\.5 {\n  padding-right: 0.625rem;\n}\n.pr-2 {\n  padding-right: 0.5rem;\n}\n.text-base {\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n.text-slate-900 {\n  --tw-text-opacity: 1;\n  color: rgb(15 23 42 / var(--tw-text-opacity));\n}\n.placeholder\\:text-slate-400::placeholder {\n  --tw-text-opacity: 1;\n  color: rgb(148 163 184 / var(--tw-text-opacity));\n}\n.focus\\:outline-none:focus {\n  outline: 2px solid transparent;\n  outline-offset: 2px;\n}\n"
+  },
+  {
+    "composition": "absolute fill-transparent h-1.5 hidden left-[-0.5px] lg:block overflow-visible stroke-slate-400 top-[0.5625rem] w-1.5",
+    "css": ".absolute {\n  position: absolute;\n}\n.left-\\[-0\\.5px\\] {\n  left: -0.5px;\n}\n.top-\\[0\\.5625rem\\] {\n  top: 0.5625rem;\n}\n.hidden {\n  display: none;\n}\n.h-1\\.5 {\n  height: 0.375rem;\n}\n.h-1 {\n  height: 0.25rem;\n}\n.w-1\\.5 {\n  width: 0.375rem;\n}\n.w-1 {\n  width: 0.25rem;\n}\n.overflow-visible {\n  overflow: visible;\n}\n.fill-transparent {\n  fill: transparent;\n}\n.stroke-slate-400 {\n  stroke: #94a3b8;\n}\n@media (min-width: 1024px) {\n  .lg\\:block {\n    display: block;\n  }\n}\n"
+  },
+  {
+    "composition": "[&:not(:focus-visible)]:focus:outline-none gap-x-8 gap-y-10 grid grid-cols-1 md:grid-cols-3 sm:gap-y-16 sm:grid-cols-2",
+    "css": ".grid {\n  display: grid;\n}\n.grid-cols-1 {\n  grid-template-columns: repeat(1, minmax(0, 1fr));\n}\n.gap-x-8 {\n  column-gap: 2rem;\n}\n.gap-y-10 {\n  row-gap: 2.5rem;\n}\n@media (min-width: 640px) {\n  .sm\\:grid-cols-2 {\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n  .sm\\:gap-y-16 {\n    row-gap: 4rem;\n  }\n}\n@media (min-width: 768px) {\n  .md\\:grid-cols-3 {\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n}\n.\\[\\&\\:not\\(\\:focus-visible\\)\\]\\:focus\\:outline-none:focus:not(:focus-visible) {\n  outline: 2px solid transparent;\n  outline-offset: 2px;\n}\n"
+  },
+  {
+    "composition": "gap-x-32 gap-y-12 grid grid-cols-1 lg:gap-x-32 max-w-max md:gap-x-16 mt-20 mx-auto place-content-center sm:grid-cols-3",
+    "css": ".mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.mt-20 {\n  margin-top: 5rem;\n}\n.grid {\n  display: grid;\n}\n.max-w-max {\n  max-width: max-content;\n}\n.grid-cols-1 {\n  grid-template-columns: repeat(1, minmax(0, 1fr));\n}\n.place-content-center {\n  place-content: center;\n}\n.gap-x-32 {\n  column-gap: 8rem;\n}\n.gap-y-12 {\n  row-gap: 3rem;\n}\n@media (min-width: 640px) {\n  .sm\\:grid-cols-3 {\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n}\n@media (min-width: 768px) {\n  .md\\:gap-x-16 {\n    column-gap: 4rem;\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:gap-x-32 {\n    column-gap: 8rem;\n  }\n}\n"
+  },
+  {
+    "composition": "bg-white flex focus-within:ring-2 focus-within:ring-blue-900 mt-5 pr-2.5 py-2.5 rounded-3xl shadow-blue-900/5 shadow-xl",
+    "css": ".mt-5 {\n  margin-top: 1.25rem;\n}\n.flex {\n  display: flex;\n}\n.rounded-3xl {\n  border-radius: 1.5rem;\n}\n.bg-white {\n  --tw-bg-opacity: 1;\n  background-color: rgb(255 255 255 / var(--tw-bg-opacity));\n}\n.py-2\\.5 {\n  padding-top: 0.625rem;\n  padding-bottom: 0.625rem;\n}\n.py-2 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n.pr-2\\.5 {\n  padding-right: 0.625rem;\n}\n.pr-2 {\n  padding-right: 0.5rem;\n}\n.shadow-xl {\n  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),\n    0 8px 10px -6px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),\n    var(--tw-shadow);\n}\n.shadow-blue-900\\/5 {\n  --tw-shadow-color: rgb(30 58 138 / 0.05);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.focus-within\\:ring-2:focus-within {\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width)\n    var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width))\n    var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n.focus-within\\:ring-blue-900:focus-within {\n  --tw-ring-opacity: 1;\n  --tw-ring-color: rgb(30 58 138 / var(--tw-ring-opacity));\n}\n"
+  },
+  {
+    "composition": "-mx-4 bg-indigo-50 md:mx-0 md:px-16 md:rounded-5xl overflow-hidden px-4 py-20 relative sm:-mx-6 sm:px-6 xl:px-24 xl:py-36",
+    "css": ".relative {\n  position: relative;\n}\n.-mx-4 {\n  margin-left: -1rem;\n  margin-right: -1rem;\n}\n.overflow-hidden {\n  overflow: hidden;\n}\n.bg-indigo-50 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(238 242 255 / var(--tw-bg-opacity));\n}\n.px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n.py-20 {\n  padding-top: 5rem;\n  padding-bottom: 5rem;\n}\n@media (min-width: 640px) {\n  .sm\\:-mx-6 {\n    margin-left: -1.5rem;\n    margin-right: -1.5rem;\n  }\n  .sm\\:px-6 {\n    padding-left: 1.5rem;\n    padding-right: 1.5rem;\n  }\n}\n@media (min-width: 768px) {\n  .md\\:mx-0 {\n    margin-left: 0px;\n    margin-right: 0px;\n  }\n  .md\\:px-16 {\n    padding-left: 4rem;\n    padding-right: 4rem;\n  }\n}\n@media (min-width: 1280px) {\n  .xl\\:px-24 {\n    padding-left: 6rem;\n    padding-right: 6rem;\n  }\n  .xl\\:py-36 {\n    padding-top: 9rem;\n    padding-bottom: 9rem;\n  }\n}\n"
+  },
+  {
+    "composition": "absolute border border-sky-300 bottom-6 duration-300 group-hover:scale-95 left-0 right-4 rounded-4xl top-0 transition xl:right-6",
+    "css": ".absolute {\n  position: absolute;\n}\n.bottom-6 {\n  bottom: 1.5rem;\n}\n.left-0 {\n  left: 0px;\n}\n.right-4 {\n  right: 1rem;\n}\n.top-0 {\n  top: 0px;\n}\n.border {\n  border-width: 1px;\n}\n.border-sky-300 {\n  --tw-border-opacity: 1;\n  border-color: rgb(125 211 252 / var(--tw-border-opacity));\n}\n.transition {\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,\n    opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.duration-300 {\n  transition-duration: 300ms;\n}\n.group:hover .group-hover\\:scale-95 {\n  --tw-scale-x: 0.95;\n  --tw-scale-y: 0.95;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n@media (min-width: 1280px) {\n  .xl\\:right-6 {\n    right: 1.5rem;\n  }\n}\n"
+  },
+  {
+    "composition": "absolute border border-blue-300 bottom-6 duration-300 group-hover:scale-95 left-0 right-4 rounded-4xl top-0 transition xl:right-6",
+    "css": ".absolute {\n  position: absolute;\n}\n.bottom-6 {\n  bottom: 1.5rem;\n}\n.left-0 {\n  left: 0px;\n}\n.right-4 {\n  right: 1rem;\n}\n.top-0 {\n  top: 0px;\n}\n.border {\n  border-width: 1px;\n}\n.border-blue-300 {\n  --tw-border-opacity: 1;\n  border-color: rgb(147 197 253 / var(--tw-border-opacity));\n}\n.transition {\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,\n    opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.duration-300 {\n  transition-duration: 300ms;\n}\n.group:hover .group-hover\\:scale-95 {\n  --tw-scale-x: 0.95;\n  --tw-scale-y: 0.95;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n@media (min-width: 1280px) {\n  .xl\\:right-6 {\n    right: 1.5rem;\n  }\n}\n"
+  },
+  {
+    "composition": "absolute border border-indigo-300 bottom-6 duration-300 group-hover:scale-95 left-0 right-4 rounded-4xl top-0 transition xl:right-6",
+    "css": ".absolute {\n  position: absolute;\n}\n.bottom-6 {\n  bottom: 1.5rem;\n}\n.left-0 {\n  left: 0px;\n}\n.right-4 {\n  right: 1rem;\n}\n.top-0 {\n  top: 0px;\n}\n.border {\n  border-width: 1px;\n}\n.border-indigo-300 {\n  --tw-border-opacity: 1;\n  border-color: rgb(165 180 252 / var(--tw-border-opacity));\n}\n.transition {\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,\n    opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.duration-300 {\n  transition-duration: 300ms;\n}\n.group:hover .group-hover\\:scale-95 {\n  --tw-scale-x: 0.95;\n  --tw-scale-y: 0.95;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n@media (min-width: 1280px) {\n  .xl\\:right-6 {\n    right: 1.5rem;\n  }\n}\n"
+  },
+  {
+    "composition": "gap-x-10 gap-y-6 grid grid-cols-2 lg:auto-cols-auto lg:grid-cols-none lg:grid-flow-col lg:justify-start lg:text-left mt-10 sm:gap-x-16 sm:gap-y-10 sm:mt-16 sm:text-center",
+    "css": ".mt-10 {\n  margin-top: 2.5rem;\n}\n.grid {\n  display: grid;\n}\n.grid-cols-2 {\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n}\n.gap-x-10 {\n  column-gap: 2.5rem;\n}\n.gap-y-6 {\n  row-gap: 1.5rem;\n}\n@media (min-width: 640px) {\n  .sm\\:mt-16 {\n    margin-top: 4rem;\n  }\n  .sm\\:gap-x-16 {\n    column-gap: 4rem;\n  }\n  .sm\\:gap-y-10 {\n    row-gap: 2.5rem;\n  }\n  .sm\\:text-center {\n    text-align: center;\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:auto-cols-auto {\n    grid-auto-columns: auto;\n  }\n  .lg\\:grid-flow-col {\n    grid-auto-flow: column;\n  }\n  .lg\\:grid-cols-none {\n    grid-template-columns: none;\n  }\n  .lg\\:justify-start {\n    justify-content: flex-start;\n  }\n  .lg\\:text-left {\n    text-align: left;\n  }\n}\n"
+  },
+  {
+    "composition": "-scale-x-100 absolute left-0 lg:translate-x-[-106%] sm:left-1/2 sm:translate-x-[-98%] sm:translate-y-[-6%] top-0 translate-x-[-55%] translate-y-[-10%] xl:translate-x-[-122%]",
+    "css": ".absolute {\n  position: absolute;\n}\n.left-0 {\n  left: 0px;\n}\n.top-0 {\n  top: 0px;\n}\n.translate-x-\\[-55\\%\\] {\n  --tw-translate-x: -55%;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n.translate-y-\\[-10\\%\\] {\n  --tw-translate-y: -10%;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n.-scale-x-100 {\n  --tw-scale-x: -1;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n@media (min-width: 640px) {\n  .sm\\:left-1\\/2 {\n    left: 50%;\n  }\n  .sm\\:translate-x-\\[-98\\%\\] {\n    --tw-translate-x: -98%;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n      skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n      scaleY(var(--tw-scale-y));\n  }\n  .sm\\:translate-y-\\[-6\\%\\] {\n    --tw-translate-y: -6%;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n      skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n      scaleY(var(--tw-scale-y));\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:translate-x-\\[-106\\%\\] {\n    --tw-translate-x: -106%;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n      skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n      scaleY(var(--tw-scale-y));\n  }\n}\n@media (min-width: 1280px) {\n  .xl\\:translate-x-\\[-122\\%\\] {\n    --tw-translate-x: -122%;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n      skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n      scaleY(var(--tw-scale-y));\n  }\n}\n"
+  },
+  {
+    "composition": "auto-cols-auto gap-x-8 gap-y-10 grid grid-flow-col justify-start lg:grid-cols-1 lg:grid-flow-row lg:text-left px-4 sm:grid-cols-3 sm:max-w-2xl sm:mx-auto sm:px-0 sm:text-center whitespace-nowrap",
+    "css": ".grid {\n  display: grid;\n}\n.auto-cols-auto {\n  grid-auto-columns: auto;\n}\n.grid-flow-col {\n  grid-auto-flow: column;\n}\n.justify-start {\n  justify-content: flex-start;\n}\n.gap-x-8 {\n  column-gap: 2rem;\n}\n.gap-y-10 {\n  row-gap: 2.5rem;\n}\n.whitespace-nowrap {\n  white-space: nowrap;\n}\n.px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n@media (min-width: 640px) {\n  .sm\\:mx-auto {\n    margin-left: auto;\n    margin-right: auto;\n  }\n  .sm\\:max-w-2xl {\n    max-width: 42rem;\n  }\n  .sm\\:grid-cols-3 {\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n  .sm\\:px-0 {\n    padding-left: 0px;\n    padding-right: 0px;\n  }\n  .sm\\:text-center {\n    text-align: center;\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:grid-flow-row {\n    grid-auto-flow: row;\n  }\n  .lg\\:grid-cols-1 {\n    grid-template-columns: repeat(1, minmax(0, 1fr));\n  }\n  .lg\\:text-left {\n    text-align: left;\n  }\n}\n"
+  },
+  {
+    "composition": "-translate-x-1/2 absolute left-full lg:translate-x-[5%] lg:translate-y-[4%] md:translate-x-0 sm:left-1/2 sm:translate-x-[-20%] sm:translate-y-[-15%] top-0 xl:translate-x-[27%] xl:translate-y-[-8%]",
+    "css": ".absolute {\n  position: absolute;\n}\n.left-full {\n  left: 100%;\n}\n.top-0 {\n  top: 0px;\n}\n.-translate-x-1\\/2 {\n  --tw-translate-x: -50%;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n@media (min-width: 640px) {\n  .sm\\:left-1\\/2 {\n    left: 50%;\n  }\n  .sm\\:translate-x-\\[-20\\%\\] {\n    --tw-translate-x: -20%;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n      skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n      scaleY(var(--tw-scale-y));\n  }\n  .sm\\:translate-y-\\[-15\\%\\] {\n    --tw-translate-y: -15%;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n      skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n      scaleY(var(--tw-scale-y));\n  }\n}\n@media (min-width: 768px) {\n  .md\\:translate-x-0 {\n    --tw-translate-x: 0px;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n      skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n      scaleY(var(--tw-scale-y));\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:translate-x-\\[5\\%\\] {\n    --tw-translate-x: 5%;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n      skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n      scaleY(var(--tw-scale-y));\n  }\n  .lg\\:translate-y-\\[4\\%\\] {\n    --tw-translate-y: 4%;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n      skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n      scaleY(var(--tw-scale-y));\n  }\n}\n@media (min-width: 1280px) {\n  .xl\\:translate-x-\\[27\\%\\] {\n    --tw-translate-x: 27%;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n      skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n      scaleY(var(--tw-scale-y));\n  }\n  .xl\\:translate-y-\\[-8\\%\\] {\n    --tw-translate-y: -8%;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n      skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n      scaleY(var(--tw-scale-y));\n  }\n}\n"
+  },
+  {
+    "composition": "-mx-4 basis-full border-b border-blue-600/10 flex flex-auto font-mono lg:basis-auto lg:border-0 lg:mx-0 lg:order-none lg:py-0 order-first overflow-x-auto py-4 sm:-mx-6 text-blue-600 text-sm whitespace-nowrap",
+    "css": ".order-first {\n  order: -9999;\n}\n.-mx-4 {\n  margin-left: -1rem;\n  margin-right: -1rem;\n}\n.flex {\n  display: flex;\n}\n.flex-auto {\n  flex: 1 1 auto;\n}\n.basis-full {\n  flex-basis: 100%;\n}\n.overflow-x-auto {\n  overflow-x: auto;\n}\n.whitespace-nowrap {\n  white-space: nowrap;\n}\n.border-b {\n  border-bottom-width: 1px;\n}\n.border-blue-600\\/10 {\n  border-color: rgb(37 99 235 / 0.1);\n}\n.py-4 {\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n.font-mono {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\",\n    \"Courier New\", monospace;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.text-blue-600 {\n  --tw-text-opacity: 1;\n  color: rgb(37 99 235 / var(--tw-text-opacity));\n}\n@media (min-width: 640px) {\n  .sm\\:-mx-6 {\n    margin-left: -1.5rem;\n    margin-right: -1.5rem;\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:order-none {\n    order: 0;\n  }\n  .lg\\:mx-0 {\n    margin-left: 0px;\n    margin-right: 0px;\n  }\n  .lg\\:basis-auto {\n    flex-basis: auto;\n  }\n  .lg\\:border-0 {\n    border-width: 0px;\n  }\n  .lg\\:py-0 {\n    padding-top: 0px;\n    padding-bottom: 0px;\n  }\n}\n"
+  },
+  {
+    "composition": "active:text-white/70 bg-blue-600 focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 focus:outline-none font-semibold hover:bg-blue-500 inline-flex justify-center p-4 rounded-2xl text-base text-white",
+    "css": ".inline-flex {\n  display: inline-flex;\n}\n.justify-center {\n  justify-content: center;\n}\n.rounded-2xl {\n  border-radius: 1rem;\n}\n.bg-blue-600 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(37 99 235 / var(--tw-bg-opacity));\n}\n.p-4 {\n  padding: 1rem;\n}\n.text-base {\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n.font-semibold {\n  font-weight: 600;\n}\n.text-white {\n  --tw-text-opacity: 1;\n  color: rgb(255 255 255 / var(--tw-text-opacity));\n}\n.hover\\:bg-blue-500:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgb(59 130 246 / var(--tw-bg-opacity));\n}\n.focus\\:outline-none:focus {\n  outline: 2px solid transparent;\n  outline-offset: 2px;\n}\n.focus-visible\\:outline-2:focus-visible {\n  outline-width: 2px;\n}\n.focus-visible\\:outline-offset-2:focus-visible {\n  outline-offset: 2px;\n}\n.focus-visible\\:outline-blue-500:focus-visible {\n  outline-color: #3b82f6;\n}\n.active\\:text-white\\/70:active {\n  color: rgb(255 255 255 / 0.7);\n}\n"
+  },
+  {
+    "composition": "active:text-white/70 bg-blue-600 focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 focus:outline-none font-semibold hover:bg-blue-500 inline-flex justify-center mt-10 p-4 rounded-2xl sm:hidden text-base text-white w-full",
+    "css": ".mt-10 {\n  margin-top: 2.5rem;\n}\n.inline-flex {\n  display: inline-flex;\n}\n.w-full {\n  width: 100%;\n}\n.justify-center {\n  justify-content: center;\n}\n.rounded-2xl {\n  border-radius: 1rem;\n}\n.bg-blue-600 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(37 99 235 / var(--tw-bg-opacity));\n}\n.p-4 {\n  padding: 1rem;\n}\n.text-base {\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n.font-semibold {\n  font-weight: 600;\n}\n.text-white {\n  --tw-text-opacity: 1;\n  color: rgb(255 255 255 / var(--tw-text-opacity));\n}\n.hover\\:bg-blue-500:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgb(59 130 246 / var(--tw-bg-opacity));\n}\n.focus\\:outline-none:focus {\n  outline: 2px solid transparent;\n  outline-offset: 2px;\n}\n.focus-visible\\:outline-2:focus-visible {\n  outline-width: 2px;\n}\n.focus-visible\\:outline-offset-2:focus-visible {\n  outline-offset: 2px;\n}\n.focus-visible\\:outline-blue-500:focus-visible {\n  outline-color: #3b82f6;\n}\n.active\\:text-white\\/70:active {\n  color: rgb(255 255 255 / 0.7);\n}\n@media (min-width: 640px) {\n  .sm\\:hidden {\n    display: none;\n  }\n}\n"
+  }
+]

@@ -1,0 +1,87 @@
+ml-3
+mt-32
+h-7 w-7
+sr-only
+sm:px-8
+relative
+max-w-2xl
+flex mt-6
+flex gap-4
+flex flex-1
+mt-9 sm:px-8
+relative z-10
+-m-1 group p-1
+mt-16 sm:mt-20
+mt-6 space-y-4
+flex gap-6 mt-6
+flex-none h-6 w-6
+flex gap-4 relative
+pointer-events-auto
+h-16 pt-6 top-0 z-10
+flex flex-col gap-16
+md:mt-28 mt-24 sm:px-8
+lg:px-8 max-w-7xl mx-auto
+flex justify-end md:flex-1
+h-4 ml-1 stroke-current w-4
+lg:pl-16 space-y-10 xl:pl-24
+flex lg:px-8 max-w-7xl w-full
+md:hidden pointer-events-auto
+lg:px-12 px-4 relative sm:px-8
+lg:max-w-5xl max-w-2xl mx-auto
+flex flex-auto flex-wrap gap-x-2
+antialiased h-full js-focus-visible
+-mb-3 order-last pt-3 sm:px-8 top-0
+hidden md:block pointer-events-auto
+dark:stroke-zinc-500 stroke-zinc-400
+flex flex-col group items-start relative
+dark:text-zinc-400 text-xs text-zinc-500
+dark:text-zinc-500 text-sm text-zinc-400
+fixed flex inset-0 justify-center sm:px-8
+flex flex-1 justify-end md:justify-center
+absolute h-full inset-0 object-cover w-full
+absolute flex inset-y-0 items-center left-0
+bg-zinc-50 dark:bg-black flex flex-col h-full
+dark:text-zinc-400 mt-2 text-sm text-zinc-600
+flex flex-col pointer-events-none relative z-50
+top-[var(--avatar-top,theme(spacing.3))] w-full
+block h-16 origin-left pointer-events-auto w-16
+dark:text-zinc-400 mt-6 text-base text-zinc-600
+dark:text-zinc-500 ml-auto text-xs text-zinc-400
+bg-zinc-200 dark:bg-zinc-500 h-4 rounded-full w-0.5
+sm:px-8 top-[var(--header-top,theme(spacing.6))] w-full
+dark:hover:text-teal-400 hover:text-teal-500 transition
+mt-[calc(theme(spacing.16)-theme(spacing.3))] order-last
+dark:text-zinc-400 mt-2 relative text-sm text-zinc-600 z-10
+dark:text-zinc-100 flex font-semibold text-sm text-zinc-900
+border-t border-zinc-100 dark:border-zinc-700/40 pb-16 pt-10
+flex flex-col gap-6 items-center justify-between sm:flex-row
+-my-4 flex gap-5 justify-center overflow-hidden py-4 sm:gap-8
+border border-zinc-100 dark:border-zinc-700/40 p-6 rounded-2xl
+dark:text-zinc-200 flex font-medium gap-6 text-sm text-zinc-800
+bg-zinc-100 dark:bg-zinc-800 h-16 object-cover rounded-full w-16
+-inset-x-4 -inset-y-6 absolute sm:-inset-x-6 sm:rounded-2xl z-20
+dark:text-zinc-100 flex-none font-medium text-sm text-zinc-900 w-full
+flex font-medium items-center mt-4 relative text-sm text-teal-500 z-10
+gap-y-20 grid grid-cols-1 lg:grid-cols-2 lg:max-w-none max-w-xl mx-auto
+dark:text-zinc-100 font-semibold text-base text-zinc-800 tracking-tight
+dark:fill-zinc-100/10 dark:stroke-zinc-500 fill-zinc-100 stroke-zinc-400
+bg-white dark:bg-zinc-900 dark:ring-zinc-300/20 ring-1 ring-zinc-100 w-full
+dark:text-zinc-100 font-bold sm:text-5xl text-4xl text-zinc-800 tracking-tight
+block dark:hover:text-teal-400 hover:text-teal-500 px-3 py-2 relative transition
+dark:group-hover:stroke-zinc-400 group-hover:stroke-zinc-700 h-auto ml-3 stroke-zinc-500 w-2
+dark:text-zinc-500 flex items-center mb-3 order-first pl-3.5 relative text-sm text-zinc-400 z-10
+dark:fill-zinc-400 dark:group-hover:fill-zinc-300 fill-zinc-500 group-hover:fill-zinc-600 h-6 transition w-6
+aspect-[9/10] bg-zinc-100 dark:bg-zinc-800 flex-none overflow-hidden relative rotate-2 rounded-xl sm:rounded-2xl sm:w-72 w-44
+-rotate-2 aspect-[9/10] bg-zinc-100 dark:bg-zinc-800 flex-none overflow-hidden relative rounded-xl sm:rounded-2xl sm:w-72 w-44
+dark:group-active:stroke-zinc-50 dark:group-hover:stroke-zinc-50 group-active:stroke-zinc-600 h-4 stroke-zinc-400 transition w-4
+-inset-x-4 -inset-y-6 absolute bg-zinc-50 dark:bg-zinc-800/50 group-hover:opacity-100 group-hover:scale-100 opacity-0 scale-95 sm:-inset-x-6 sm:rounded-2xl transition z-0
+backdrop-blur bg-white/90 dark:bg-zinc-800/90 dark:hover:ring-white/20 dark:ring-white/10 group px-3 py-2 ring-1 ring-zinc-900/5 rounded-full shadow-lg shadow-zinc-800/5 transition
+backdrop-blur bg-white/90 dark:bg-zinc-800/90 dark:ring-white/10 dark:text-zinc-200 flex font-medium px-3 ring-1 ring-zinc-900/5 rounded-full shadow-lg shadow-zinc-800/5 text-sm text-zinc-800
+dark:bg-zinc-800 dark:border dark:border-zinc-700/50 dark:ring-0 flex flex-none h-10 items-center justify-center mt-1 relative ring-1 ring-zinc-900/5 rounded-full shadow-md shadow-zinc-800/5 w-10
+absolute backdrop-blur bg-white/90 dark:bg-zinc-800/90 dark:ring-white/10 h-10 left-0 origin-left p-0.5 ring-1 ring-zinc-900/5 rounded-full shadow-lg shadow-zinc-800/5 top-3 transition-opacity w-10
+backdrop-blur bg-white/90 dark:bg-zinc-800/90 dark:hover:ring-white/20 dark:ring-white/10 dark:text-zinc-200 flex font-medium group items-center px-4 py-2 ring-1 ring-zinc-900/5 rounded-full shadow-lg shadow-zinc-800/5 text-sm text-zinc-800
+[@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500 dark:block fill-zinc-700 h-6 hidden stroke-zinc-500 transition w-6
+active:bg-zinc-800 active:text-zinc-100/70 active:transition-none bg-zinc-800 dark:active:bg-zinc-700 dark:active:text-zinc-100/70 dark:bg-zinc-700 dark:hover:bg-zinc-600 flex-none font-semibold gap-2 hover:bg-zinc-700 inline-flex items-center justify-center ml-4 outline-offset-2 px-3 py-2 rounded-md text-sm text-zinc-100 transition
+[@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600 [@media(prefers-color-scheme:dark)]:stroke-teal-500 dark:hidden fill-zinc-100 group-hover:fill-zinc-200 group-hover:stroke-zinc-700 h-6 stroke-zinc-500 transition w-6
+active:bg-zinc-100 active:text-zinc-900/60 active:transition-none bg-zinc-50 dark:active:bg-zinc-800/50 dark:active:text-zinc-50/70 dark:bg-zinc-800/50 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:text-zinc-300 font-medium gap-2 group hover:bg-zinc-100 inline-flex items-center justify-center mt-6 outline-offset-2 px-3 py-2 rounded-md text-sm text-zinc-900 transition w-full
+appearance-none bg-white border border-zinc-900/10 dark:bg-zinc-700/[0.15] dark:border-zinc-700 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 dark:placeholder:text-zinc-500 dark:text-zinc-200 flex-auto focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 min-w-0 placeholder:text-zinc-400 px-3 py-[calc(theme(spacing.2)-1px)] rounded-md shadow-md shadow-zinc-800/5 sm:text-sm

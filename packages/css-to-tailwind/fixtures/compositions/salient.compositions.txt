@@ -1,0 +1,135 @@
+ml-3
+flex
+ml-4
+py-10
+py-16
+group
+w-full
+h-9 w-9
+relative
+-mx-5 flex
+h-10 w-auto
+bg-slate-50
+flex gap-x-6
+lg:col-span-7
+mt-10 text-sm
+lg:mt-44 mt-36
+md:text-center
+hidden md:block
+-mr-1 md:hidden
+hidden lg:inline
+absolute inset-0
+max-w-2xl mx-auto
+h-10 mx-auto w-auto
+flex flex-col h-full
+mt-10 pb-10 relative
+flex flex-col gap-y-8
+h-14 object-cover w-14
+origin-center transition
+hidden lg:block lg:mt-20
+gap-x-8 grid grid-cols-3
+hidden md:flex md:gap-x-6
+mt-2 text-base text-white
+lg:mx-0 max-w-2xl mx-auto
+lg:hidden relative sm:px-6
+bg-blue-600 rounded-lg w-9
+bg-slate-50 py-20 sm:py-32
+relative whitespace-nowrap
+mt-4 text-slate-600 text-sm
+bg-slate-500 rounded-lg w-9
+mt-1 text-slate-500 text-sm
+bg-slate-900 py-20 sm:py-32
+mt-4 text-lg text-slate-400
+mt-4 text-slate-700 text-sm
+max-w-lg mx-auto text-center
+flex items-center md:gap-x-12
+mt-2 text-base text-slate-400
+max-w-2xl md:text-center mx-auto
+flex flex-col gap-y-6 sm:gap-y-8
+flex gap-x-6 justify-center mt-10
+-my-1 flex gap-x-6 justify-center
+flex justify-between relative z-50
+mt-6 sm:mt-0 text-slate-500 text-sm
+flex gap-x-5 items-center md:gap-x-8
+absolute fill-slate-100 left-6 top-6
+font-display mt-5 text-lg text-white
+font-display text-base text-slate-900
+hover:opacity-100 opacity-75 relative
+text-lg text-slate-900 tracking-tight
+lg:px-8 max-w-7xl mx-auto px-4 sm:px-6
+lg:pb-32 pb-14 pt-20 sm:pb-20 sm:pt-32
+font-medium mt-6 text-blue-600 text-sm
+mt-4 text-lg text-white tracking-tight
+hidden lg:block mt-2 text-sm text-white
+font-medium mt-6 text-slate-600 text-sm
+relative text-blue-600 whitespace-nowrap
+font-display mt-2 text-slate-900 text-xl
+bg-slate-50 overflow-hidden rounded-full
+mt-6 text-blue-100 text-lg tracking-tight
+mt-4 text-lg text-slate-700 tracking-tight
+[&:not(:focus-visible)]:focus:outline-none
+bg-blue-600 overflow-hidden py-32 relative
+opacity-0 origin-center scale-90 transition
+h-3.5 overflow-visible stroke-slate-700 w-3.5
+font-display leading-7 text-lg text-slate-900
+flex flex-col lg:py-8 px-6 rounded-3xl sm:px-8
+lg:px-8 max-w-7xl mx-auto px-4 relative sm:px-6
+max-w-2xl md:mx-auto md:text-center xl:max-w-none
+fill-slate-500 group-hover:fill-slate-700 h-6 w-6
+bg-slate-50 overflow-hidden py-20 relative sm:py-32
+absolute fill-blue-400 h-[1em] left-0 top-1/2 w-full
+fill-current flex-none h-6 stroke-current text-white w-6
+fill-blue-600 flex-none group-active:fill-current h-3 w-3
+bg-blue-600 overflow-hidden pb-28 pt-20 relative sm:py-32
+flex flex-col gap-y-3 mt-10 order-last text-sm text-white
+absolute fill-blue-300/70 h-[0.58em] left-0 top-2/3 w-full
+font-display sm:text-4xl text-3xl text-white tracking-tight
+max-w-2xl mt-6 mx-auto text-lg text-slate-700 tracking-tight
+fill-current flex-none h-6 stroke-current text-slate-400 w-6
+-inset-x-4 absolute bg-slate-200 bottom-0 sm:-inset-x-6 top-8
+flex flex-col gap-y-3 mt-10 order-last text-slate-200 text-sm
+max-w-2xl mx-auto relative sm:text-center text-base text-white
+absolute inset-0 lg:rounded-l-xl lg:rounded-r-none rounded-full
+font-display sm:text-4xl text-3xl text-slate-900 tracking-tight
+bg-white p-6 relative rounded-2xl shadow-slate-900/10 shadow-xl
+group-hover:text-white hidden lg:block mt-2 text-blue-100 text-sm
+flex flex-col gap-y-8 items-center sm:flex-row sm:gap-x-12 sm:gap-y-0
+-translate-x-1/2 -translate-y-1/2 absolute left-1/2 max-w-none top-1/2
+font-display font-light order-first text-5xl text-white tracking-tight
+-translate-y-1/4 absolute left-1/2 max-w-none top-0 translate-x-[-30%]
+lg:pt-32 lg:px-8 max-w-7xl mx-auto pb-16 pt-20 px-4 sm:px-6 text-center
+font-display md:text-5xl sm:text-4xl text-3xl text-white tracking-tight
+absolute left-1/2 max-w-none top-1/2 translate-x-[-44%] translate-y-[-42%]
+gap-8 grid grid-cols-1 lg:grid-cols-3 lg:max-w-none max-w-2xl mt-16 mx-auto
+bg-slate-200 mt-20 overflow-hidden px-14 py-16 relative rounded-4xl xl:px-16
+border-slate-100 border-t flex items-center justify-between mt-6 pt-6 relative
+-mx-4 flex lg:col-span-5 overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0
+bg-blue-600 flex flex-col lg:order-none order-first px-6 py-8 rounded-3xl sm:px-8
+-mx-4 flex flex-col gap-y-10 lg:hidden mt-20 overflow-hidden px-4 sm:-mx-6 sm:px-6
+[&:not(:focus-visible)]:focus:outline-none duration-500 ease-in-out px-5 transition
+absolute inset-0 pointer-events-none ring-1 ring-inset ring-slate-900/10 rounded-4xl
+[font-feature-settings:'ss01'] antialiased bg-white h-full js-focus-visible scroll-smooth
+[&:not(:focus-visible)]:focus:outline-none font-display lg:text-white text-blue-600 text-lg
+font-display font-medium max-w-4xl mx-auto sm:text-7xl text-5xl text-slate-900 tracking-tight
+gap-y-2 grid grid-cols-1 items-center lg:grid-cols-12 lg:pt-0 md:mt-20 mt-16 pt-10 sm:gap-y-6
+gap-6 grid grid-cols-1 lg:grid-cols-3 lg:max-w-none lg:mt-20 max-w-2xl mt-16 mx-auto sm:gap-8
+[&:not(:focus-visible)]:focus:outline-none duration-500 ease-in-out opacity-60 px-5 transition
+hover:bg-slate-100 hover:text-slate-900 inline-block px-2 py-1 rounded-lg text-slate-700 text-sm
+[&:not(:focus-visible)]:focus:outline-none flex h-8 items-center justify-center relative w-8 z-10
+border-slate-400/10 border-t flex flex-col items-center py-10 sm:flex-row-reverse sm:justify-between
+bg-white overflow-hidden ring-1 ring-slate-500/10 rounded-xl shadow-lg shadow-slate-900/5 w-[52.75rem]
+[&:not(:focus-visible)]:focus:outline-none font-display hover:text-white lg:text-white text-blue-100 text-lg
+flex gap-x-8 items-center justify-center mt-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0
+-mx-4 gap-y-10 grid grid-cols-1 lg:-mx-8 lg:grid-cols-3 lg:max-w-none max-w-2xl mt-16 sm:mx-auto xl:gap-x-8 xl:mx-0
+group hover:bg-white/10 lg:hover:bg-white/5 lg:p-6 lg:rounded-l-xl lg:rounded-r-none px-4 py-1 relative rounded-full
+bg-slate-50 lg:mt-0 lg:w-[67.8125rem] mt-10 overflow-hidden rounded-xl shadow-blue-900/20 shadow-xl sm:w-auto w-[45rem]
+bg-white mx-auto overflow-hidden relative ring-1 ring-slate-500/10 rounded-xl shadow-lg shadow-slate-900/5 w-[52.75rem]
+-inset-x-4 absolute bg-white/10 bottom-[-4.25rem] ring-1 ring-inset ring-white/10 sm:inset-x-0 sm:rounded-t-xl top-[-6.5rem]
+flex gap-x-4 lg:block lg:gap-x-0 lg:gap-y-1 lg:mx-0 lg:whitespace-normal px-4 relative sm:mx-auto sm:px-0 whitespace-nowrap z-10
+bg-white group lg:bg-white/10 lg:p-6 lg:ring-1 lg:ring-inset lg:ring-white/10 lg:rounded-l-xl lg:rounded-r-none px-4 py-1 relative rounded-full
+active:ring-slate-700 active:text-slate-400 focus-visible:outline-white focus:outline-none group hover:ring-slate-500 inline-flex items-center justify-center mt-8 px-4 py-2 ring-1 ring-slate-700 rounded-full text-sm text-white
+active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300 focus:outline-none group hover:ring-slate-300 hover:text-slate-900 inline-flex items-center justify-center px-4 py-2 ring-1 ring-slate-200 rounded-full text-slate-700 text-sm
+active:bg-blue-200 active:text-slate-600 bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white focus:outline-none font-semibold group hover:bg-blue-50 inline-flex items-center justify-center mt-8 px-4 py-2 rounded-full text-slate-900 text-sm
+active:bg-blue-200 active:text-slate-600 bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white focus:outline-none font-semibold group hover:bg-blue-50 inline-flex items-center justify-center mt-10 px-4 py-2 rounded-full text-slate-900 text-sm
+active:bg-blue-800 active:text-blue-100 bg-blue-600 focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-2 focus:outline-none font-semibold group hover:bg-blue-500 hover:text-slate-100 inline-flex items-center justify-center px-4 py-2 rounded-full text-sm text-white
+active:bg-slate-800 active:text-slate-300 bg-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900 focus:outline-none font-semibold group hover:bg-slate-700 hover:text-slate-100 inline-flex items-center justify-center px-4 py-2 rounded-full text-sm text-white

@@ -1,0 +1,350 @@
+[
+  {
+    "composition": "ml-3",
+    "css": ".ml-3 {\n  margin-left: 0.75rem;\n}\n"
+  },
+  {
+    "composition": "mt-32",
+    "css": ".mt-32 {\n  margin-top: 8rem;\n}\n"
+  },
+  {
+    "composition": "h-7 w-7",
+    "css": ".h-7 {\n  height: 1.75rem;\n}\n.w-7 {\n  width: 1.75rem;\n}\n"
+  },
+  {
+    "composition": "sr-only",
+    "css": ".sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n}\n"
+  },
+  {
+    "composition": "sm:px-8",
+    "css": "@media (min-width: 640px) {\n  .sm\\:px-8 {\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n"
+  },
+  {
+    "composition": "relative",
+    "css": ".relative {\n  position: relative;\n}\n"
+  },
+  {
+    "composition": "max-w-2xl",
+    "css": ".max-w-2xl {\n  max-width: 42rem;\n}\n"
+  },
+  {
+    "composition": "flex mt-6",
+    "css": ".mt-6 {\n  margin-top: 1.5rem;\n}\n.flex {\n  display: flex;\n}\n"
+  },
+  {
+    "composition": "flex gap-4",
+    "css": ".flex {\n  display: flex;\n}\n.gap-4 {\n  gap: 1rem;\n}\n"
+  },
+  {
+    "composition": "flex flex-1",
+    "css": ".flex {\n  display: flex;\n}\n.flex-1 {\n  flex: 1 1 0%;\n}\n"
+  },
+  {
+    "composition": "mt-9 sm:px-8",
+    "css": ".mt-9 {\n  margin-top: 2.25rem;\n}\n@media (min-width: 640px) {\n  .sm\\:px-8 {\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n"
+  },
+  {
+    "composition": "relative z-10",
+    "css": ".relative {\n  position: relative;\n}\n.z-10 {\n  z-index: 10;\n}\n"
+  },
+  {
+    "composition": "-m-1 group p-1",
+    "css": ".-m-1 {\n  margin: -0.25rem;\n}\n.p-1 {\n  padding: 0.25rem;\n}\n"
+  },
+  {
+    "composition": "mt-16 sm:mt-20",
+    "css": ".mt-16 {\n  margin-top: 4rem;\n}\n@media (min-width: 640px) {\n  .sm\\:mt-20 {\n    margin-top: 5rem;\n  }\n}\n"
+  },
+  {
+    "composition": "mt-6 space-y-4",
+    "css": ".mt-6 {\n  margin-top: 1.5rem;\n}\n.space-y-4 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-y-reverse: 0;\n  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(1rem * var(--tw-space-y-reverse));\n}\n"
+  },
+  {
+    "composition": "flex gap-6 mt-6",
+    "css": ".mt-6 {\n  margin-top: 1.5rem;\n}\n.flex {\n  display: flex;\n}\n.gap-6 {\n  gap: 1.5rem;\n}\n"
+  },
+  {
+    "composition": "flex-none h-6 w-6",
+    "css": ".h-6 {\n  height: 1.5rem;\n}\n.w-6 {\n  width: 1.5rem;\n}\n.flex-none {\n  flex: none;\n}\n"
+  },
+  {
+    "composition": "flex gap-4 relative",
+    "css": ".relative {\n  position: relative;\n}\n.flex {\n  display: flex;\n}\n.gap-4 {\n  gap: 1rem;\n}\n"
+  },
+  {
+    "composition": "pointer-events-auto",
+    "css": ".pointer-events-auto {\n  pointer-events: auto;\n}\n"
+  },
+  {
+    "composition": "h-16 pt-6 top-0 z-10",
+    "css": ".top-0 {\n  top: 0px;\n}\n.z-10 {\n  z-index: 10;\n}\n.h-16 {\n  height: 4rem;\n}\n.pt-6 {\n  padding-top: 1.5rem;\n}\n"
+  },
+  {
+    "composition": "flex flex-col gap-16",
+    "css": ".flex {\n  display: flex;\n}\n.flex-col {\n  flex-direction: column;\n}\n.gap-16 {\n  gap: 4rem;\n}\n"
+  },
+  {
+    "composition": "md:mt-28 mt-24 sm:px-8",
+    "css": ".mt-24 {\n  margin-top: 6rem;\n}\n@media (min-width: 640px) {\n  .sm\\:px-8 {\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n@media (min-width: 768px) {\n  .md\\:mt-28 {\n    margin-top: 7rem;\n  }\n}\n"
+  },
+  {
+    "composition": "lg:px-8 max-w-7xl mx-auto",
+    "css": ".mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.max-w-7xl {\n  max-width: 80rem;\n}\n@media (min-width: 1024px) {\n  .lg\\:px-8 {\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n"
+  },
+  {
+    "composition": "flex justify-end md:flex-1",
+    "css": ".flex {\n  display: flex;\n}\n.justify-end {\n  justify-content: flex-end;\n}\n@media (min-width: 768px) {\n  .md\\:flex-1 {\n    flex: 1 1 0%;\n  }\n}\n"
+  },
+  {
+    "composition": "h-4 ml-1 stroke-current w-4",
+    "css": ".ml-1 {\n  margin-left: 0.25rem;\n}\n.h-4 {\n  height: 1rem;\n}\n.w-4 {\n  width: 1rem;\n}\n.stroke-current {\n  stroke: currentColor;\n}\n"
+  },
+  {
+    "composition": "lg:pl-16 space-y-10 xl:pl-24",
+    "css": ".space-y-10 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-y-reverse: 0;\n  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));\n}\n@media (min-width: 1024px) {\n  .lg\\:pl-16 {\n    padding-left: 4rem;\n  }\n}\n@media (min-width: 1280px) {\n  .xl\\:pl-24 {\n    padding-left: 6rem;\n  }\n}\n"
+  },
+  {
+    "composition": "flex lg:px-8 max-w-7xl w-full",
+    "css": ".flex {\n  display: flex;\n}\n.w-full {\n  width: 100%;\n}\n.max-w-7xl {\n  max-width: 80rem;\n}\n@media (min-width: 1024px) {\n  .lg\\:px-8 {\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n"
+  },
+  {
+    "composition": "md:hidden pointer-events-auto",
+    "css": ".pointer-events-auto {\n  pointer-events: auto;\n}\n@media (min-width: 768px) {\n  .md\\:hidden {\n    display: none;\n  }\n}\n"
+  },
+  {
+    "composition": "lg:px-12 px-4 relative sm:px-8",
+    "css": ".relative {\n  position: relative;\n}\n.px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n@media (min-width: 640px) {\n  .sm\\:px-8 {\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n@media (min-width: 1024px) {\n  .lg\\:px-12 {\n    padding-left: 3rem;\n    padding-right: 3rem;\n  }\n}\n"
+  },
+  {
+    "composition": "lg:max-w-5xl max-w-2xl mx-auto",
+    "css": ".mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.max-w-2xl {\n  max-width: 42rem;\n}\n@media (min-width: 1024px) {\n  .lg\\:max-w-5xl {\n    max-width: 64rem;\n  }\n}\n"
+  },
+  {
+    "composition": "flex flex-auto flex-wrap gap-x-2",
+    "css": ".flex {\n  display: flex;\n}\n.flex-auto {\n  flex: 1 1 auto;\n}\n.flex-wrap {\n  flex-wrap: wrap;\n}\n.gap-x-2 {\n  column-gap: 0.5rem;\n}\n"
+  },
+  {
+    "composition": "antialiased h-full js-focus-visible",
+    "css": ".h-full {\n  height: 100%;\n}\n.antialiased {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n"
+  },
+  {
+    "composition": "-mb-3 order-last pt-3 sm:px-8 top-0",
+    "css": ".top-0 {\n  top: 0px;\n}\n.order-last {\n  order: 9999;\n}\n.-mb-3 {\n  margin-bottom: -0.75rem;\n}\n.pt-3 {\n  padding-top: 0.75rem;\n}\n@media (min-width: 640px) {\n  .sm\\:px-8 {\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n"
+  },
+  {
+    "composition": "hidden md:block pointer-events-auto",
+    "css": ".pointer-events-auto {\n  pointer-events: auto;\n}\n.hidden {\n  display: none;\n}\n@media (min-width: 768px) {\n  .md\\:block {\n    display: block;\n  }\n}\n"
+  },
+  {
+    "composition": "dark:stroke-zinc-500 stroke-zinc-400",
+    "css": ".stroke-zinc-400 {\n  stroke: #a1a1aa;\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:stroke-zinc-500 {\n    stroke: #71717a;\n  }\n}\n"
+  },
+  {
+    "composition": "flex flex-col group items-start relative",
+    "css": ".relative {\n  position: relative;\n}\n.flex {\n  display: flex;\n}\n.flex-col {\n  flex-direction: column;\n}\n.items-start {\n  align-items: flex-start;\n}\n"
+  },
+  {
+    "composition": "dark:text-zinc-400 text-xs text-zinc-500",
+    "css": ".text-xs {\n  font-size: 0.75rem;\n  line-height: 1rem;\n}\n.text-zinc-500 {\n  --tw-text-opacity: 1;\n  color: rgb(113 113 122 / var(--tw-text-opacity));\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:text-zinc-400 {\n    --tw-text-opacity: 1;\n    color: rgb(161 161 170 / var(--tw-text-opacity));\n  }\n}\n"
+  },
+  {
+    "composition": "dark:text-zinc-500 text-sm text-zinc-400",
+    "css": ".text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.text-zinc-400 {\n  --tw-text-opacity: 1;\n  color: rgb(161 161 170 / var(--tw-text-opacity));\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:text-zinc-500 {\n    --tw-text-opacity: 1;\n    color: rgb(113 113 122 / var(--tw-text-opacity));\n  }\n}\n"
+  },
+  {
+    "composition": "fixed flex inset-0 justify-center sm:px-8",
+    "css": ".fixed {\n  position: fixed;\n}\n.inset-0 {\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n.flex {\n  display: flex;\n}\n.justify-center {\n  justify-content: center;\n}\n@media (min-width: 640px) {\n  .sm\\:px-8 {\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n"
+  },
+  {
+    "composition": "flex flex-1 justify-end md:justify-center",
+    "css": ".flex {\n  display: flex;\n}\n.flex-1 {\n  flex: 1 1 0%;\n}\n.justify-end {\n  justify-content: flex-end;\n}\n@media (min-width: 768px) {\n  .md\\:justify-center {\n    justify-content: center;\n  }\n}\n"
+  },
+  {
+    "composition": "absolute h-full inset-0 object-cover w-full",
+    "css": ".absolute {\n  position: absolute;\n}\n.inset-0 {\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n.h-full {\n  height: 100%;\n}\n.w-full {\n  width: 100%;\n}\n.object-cover {\n  object-fit: cover;\n}\n"
+  },
+  {
+    "composition": "absolute flex inset-y-0 items-center left-0",
+    "css": ".absolute {\n  position: absolute;\n}\n.inset-y-0 {\n  top: 0px;\n  bottom: 0px;\n}\n.left-0 {\n  left: 0px;\n}\n.flex {\n  display: flex;\n}\n.items-center {\n  align-items: center;\n}\n"
+  },
+  {
+    "composition": "bg-zinc-50 dark:bg-black flex flex-col h-full",
+    "css": ".flex {\n  display: flex;\n}\n.h-full {\n  height: 100%;\n}\n.flex-col {\n  flex-direction: column;\n}\n.bg-zinc-50 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(250 250 250 / var(--tw-bg-opacity));\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:bg-black {\n    --tw-bg-opacity: 1;\n    background-color: rgb(0 0 0 / var(--tw-bg-opacity));\n  }\n}\n"
+  },
+  {
+    "composition": "dark:text-zinc-400 mt-2 text-sm text-zinc-600",
+    "css": ".mt-2 {\n  margin-top: 0.5rem;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.text-zinc-600 {\n  --tw-text-opacity: 1;\n  color: rgb(82 82 91 / var(--tw-text-opacity));\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:text-zinc-400 {\n    --tw-text-opacity: 1;\n    color: rgb(161 161 170 / var(--tw-text-opacity));\n  }\n}\n"
+  },
+  {
+    "composition": "flex flex-col pointer-events-none relative z-50",
+    "css": ".pointer-events-none {\n  pointer-events: none;\n}\n.relative {\n  position: relative;\n}\n.z-50 {\n  z-index: 50;\n}\n.flex {\n  display: flex;\n}\n.flex-col {\n  flex-direction: column;\n}\n"
+  },
+  {
+    "composition": "top-[var(--avatar-top,theme(spacing.3))] w-full",
+    "css": ".top-\\[var\\(--avatar-top\\2c theme\\(spacing\\.3\\)\\)\\] {\n  top: var(--avatar-top, 0.75rem);\n}\n.w-full {\n  width: 100%;\n}\n"
+  },
+  {
+    "composition": "block h-16 origin-left pointer-events-auto w-16",
+    "css": ".pointer-events-auto {\n  pointer-events: auto;\n}\n.block {\n  display: block;\n}\n.h-16 {\n  height: 4rem;\n}\n.w-16 {\n  width: 4rem;\n}\n.origin-left {\n  transform-origin: left;\n}\n"
+  },
+  {
+    "composition": "dark:text-zinc-400 mt-6 text-base text-zinc-600",
+    "css": ".mt-6 {\n  margin-top: 1.5rem;\n}\n.text-base {\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n.text-zinc-600 {\n  --tw-text-opacity: 1;\n  color: rgb(82 82 91 / var(--tw-text-opacity));\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:text-zinc-400 {\n    --tw-text-opacity: 1;\n    color: rgb(161 161 170 / var(--tw-text-opacity));\n  }\n}\n"
+  },
+  {
+    "composition": "dark:text-zinc-500 ml-auto text-xs text-zinc-400",
+    "css": ".ml-auto {\n  margin-left: auto;\n}\n.text-xs {\n  font-size: 0.75rem;\n  line-height: 1rem;\n}\n.text-zinc-400 {\n  --tw-text-opacity: 1;\n  color: rgb(161 161 170 / var(--tw-text-opacity));\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:text-zinc-500 {\n    --tw-text-opacity: 1;\n    color: rgb(113 113 122 / var(--tw-text-opacity));\n  }\n}\n"
+  },
+  {
+    "composition": "bg-zinc-200 dark:bg-zinc-500 h-4 rounded-full w-0.5",
+    "css": ".h-4 {\n  height: 1rem;\n}\n.w-0\\.5 {\n  width: 0.125rem;\n}\n.w-0 {\n  width: 0px;\n}\n.rounded-full {\n  border-radius: 9999px;\n}\n.bg-zinc-200 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(228 228 231 / var(--tw-bg-opacity));\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:bg-zinc-500 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(113 113 122 / var(--tw-bg-opacity));\n  }\n}\n"
+  },
+  {
+    "composition": "sm:px-8 top-[var(--header-top,theme(spacing.6))] w-full",
+    "css": ".top-\\[var\\(--header-top\\2c theme\\(spacing\\.6\\)\\)\\] {\n  top: var(--header-top, 1.5rem);\n}\n.w-full {\n  width: 100%;\n}\n@media (min-width: 640px) {\n  .sm\\:px-8 {\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n"
+  },
+  {
+    "composition": "dark:hover:text-teal-400 hover:text-teal-500 transition",
+    "css": ".transition {\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,\n    opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.hover\\:text-teal-500:hover {\n  --tw-text-opacity: 1;\n  color: rgb(20 184 166 / var(--tw-text-opacity));\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:hover\\:text-teal-400:hover {\n    --tw-text-opacity: 1;\n    color: rgb(45 212 191 / var(--tw-text-opacity));\n  }\n}\n"
+  },
+  {
+    "composition": "mt-[calc(theme(spacing.16)-theme(spacing.3))] order-last",
+    "css": ".order-last {\n  order: 9999;\n}\n.mt-\\[calc\\(theme\\(spacing\\.16\\)-theme\\(spacing\\.3\\)\\)\\] {\n  margin-top: calc(4rem - 0.75rem);\n}\n"
+  },
+  {
+    "composition": "dark:text-zinc-400 mt-2 relative text-sm text-zinc-600 z-10",
+    "css": ".relative {\n  position: relative;\n}\n.z-10 {\n  z-index: 10;\n}\n.mt-2 {\n  margin-top: 0.5rem;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.text-zinc-600 {\n  --tw-text-opacity: 1;\n  color: rgb(82 82 91 / var(--tw-text-opacity));\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:text-zinc-400 {\n    --tw-text-opacity: 1;\n    color: rgb(161 161 170 / var(--tw-text-opacity));\n  }\n}\n"
+  },
+  {
+    "composition": "dark:text-zinc-100 flex font-semibold text-sm text-zinc-900",
+    "css": ".flex {\n  display: flex;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.font-semibold {\n  font-weight: 600;\n}\n.text-zinc-900 {\n  --tw-text-opacity: 1;\n  color: rgb(24 24 27 / var(--tw-text-opacity));\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:text-zinc-100 {\n    --tw-text-opacity: 1;\n    color: rgb(244 244 245 / var(--tw-text-opacity));\n  }\n}\n"
+  },
+  {
+    "composition": "border-t border-zinc-100 dark:border-zinc-700/40 pb-16 pt-10",
+    "css": ".border-t {\n  border-top-width: 1px;\n}\n.border-zinc-100 {\n  --tw-border-opacity: 1;\n  border-color: rgb(244 244 245 / var(--tw-border-opacity));\n}\n.pb-16 {\n  padding-bottom: 4rem;\n}\n.pt-10 {\n  padding-top: 2.5rem;\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:border-zinc-700\\/40 {\n    border-color: rgb(63 63 70 / 0.4);\n  }\n}\n"
+  },
+  {
+    "composition": "flex flex-col gap-6 items-center justify-between sm:flex-row",
+    "css": ".flex {\n  display: flex;\n}\n.flex-col {\n  flex-direction: column;\n}\n.items-center {\n  align-items: center;\n}\n.justify-between {\n  justify-content: space-between;\n}\n.gap-6 {\n  gap: 1.5rem;\n}\n@media (min-width: 640px) {\n  .sm\\:flex-row {\n    flex-direction: row;\n  }\n}\n"
+  },
+  {
+    "composition": "-my-4 flex gap-5 justify-center overflow-hidden py-4 sm:gap-8",
+    "css": ".-my-4 {\n  margin-top: -1rem;\n  margin-bottom: -1rem;\n}\n.flex {\n  display: flex;\n}\n.justify-center {\n  justify-content: center;\n}\n.gap-5 {\n  gap: 1.25rem;\n}\n.overflow-hidden {\n  overflow: hidden;\n}\n.py-4 {\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n@media (min-width: 640px) {\n  .sm\\:gap-8 {\n    gap: 2rem;\n  }\n}\n"
+  },
+  {
+    "composition": "border border-zinc-100 dark:border-zinc-700/40 p-6 rounded-2xl",
+    "css": ".rounded-2xl {\n  border-radius: 1rem;\n}\n.border {\n  border-width: 1px;\n}\n.border-zinc-100 {\n  --tw-border-opacity: 1;\n  border-color: rgb(244 244 245 / var(--tw-border-opacity));\n}\n.p-6 {\n  padding: 1.5rem;\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:border-zinc-700\\/40 {\n    border-color: rgb(63 63 70 / 0.4);\n  }\n}\n"
+  },
+  {
+    "composition": "dark:text-zinc-200 flex font-medium gap-6 text-sm text-zinc-800",
+    "css": ".flex {\n  display: flex;\n}\n.gap-6 {\n  gap: 1.5rem;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.font-medium {\n  font-weight: 500;\n}\n.text-zinc-800 {\n  --tw-text-opacity: 1;\n  color: rgb(39 39 42 / var(--tw-text-opacity));\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:text-zinc-200 {\n    --tw-text-opacity: 1;\n    color: rgb(228 228 231 / var(--tw-text-opacity));\n  }\n}\n"
+  },
+  {
+    "composition": "bg-zinc-100 dark:bg-zinc-800 h-16 object-cover rounded-full w-16",
+    "css": ".h-16 {\n  height: 4rem;\n}\n.w-16 {\n  width: 4rem;\n}\n.rounded-full {\n  border-radius: 9999px;\n}\n.bg-zinc-100 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(244 244 245 / var(--tw-bg-opacity));\n}\n.object-cover {\n  object-fit: cover;\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:bg-zinc-800 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(39 39 42 / var(--tw-bg-opacity));\n  }\n}\n"
+  },
+  {
+    "composition": "-inset-x-4 -inset-y-6 absolute sm:-inset-x-6 sm:rounded-2xl z-20",
+    "css": ".absolute {\n  position: absolute;\n}\n.-inset-x-4 {\n  left: -1rem;\n  right: -1rem;\n}\n.-inset-y-6 {\n  top: -1.5rem;\n  bottom: -1.5rem;\n}\n.z-20 {\n  z-index: 20;\n}\n@media (min-width: 640px) {\n  .sm\\:-inset-x-6 {\n    left: -1.5rem;\n    right: -1.5rem;\n  }\n  .sm\\:rounded-2xl {\n    border-radius: 1rem;\n  }\n}\n"
+  },
+  {
+    "composition": "dark:text-zinc-100 flex-none font-medium text-sm text-zinc-900 w-full",
+    "css": ".w-full {\n  width: 100%;\n}\n.flex-none {\n  flex: none;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.font-medium {\n  font-weight: 500;\n}\n.text-zinc-900 {\n  --tw-text-opacity: 1;\n  color: rgb(24 24 27 / var(--tw-text-opacity));\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:text-zinc-100 {\n    --tw-text-opacity: 1;\n    color: rgb(244 244 245 / var(--tw-text-opacity));\n  }\n}\n"
+  },
+  {
+    "composition": "flex font-medium items-center mt-4 relative text-sm text-teal-500 z-10",
+    "css": ".relative {\n  position: relative;\n}\n.z-10 {\n  z-index: 10;\n}\n.mt-4 {\n  margin-top: 1rem;\n}\n.flex {\n  display: flex;\n}\n.items-center {\n  align-items: center;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.font-medium {\n  font-weight: 500;\n}\n.text-teal-500 {\n  --tw-text-opacity: 1;\n  color: rgb(20 184 166 / var(--tw-text-opacity));\n}\n"
+  },
+  {
+    "composition": "gap-y-20 grid grid-cols-1 lg:grid-cols-2 lg:max-w-none max-w-xl mx-auto",
+    "css": ".mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.grid {\n  display: grid;\n}\n.max-w-xl {\n  max-width: 36rem;\n}\n.grid-cols-1 {\n  grid-template-columns: repeat(1, minmax(0, 1fr));\n}\n.gap-y-20 {\n  row-gap: 5rem;\n}\n@media (min-width: 1024px) {\n  .lg\\:max-w-none {\n    max-width: none;\n  }\n  .lg\\:grid-cols-2 {\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n}\n"
+  },
+  {
+    "composition": "dark:text-zinc-100 font-semibold text-base text-zinc-800 tracking-tight",
+    "css": ".text-base {\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n.font-semibold {\n  font-weight: 600;\n}\n.tracking-tight {\n  letter-spacing: -0.025em;\n}\n.text-zinc-800 {\n  --tw-text-opacity: 1;\n  color: rgb(39 39 42 / var(--tw-text-opacity));\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:text-zinc-100 {\n    --tw-text-opacity: 1;\n    color: rgb(244 244 245 / var(--tw-text-opacity));\n  }\n}\n"
+  },
+  {
+    "composition": "dark:fill-zinc-100/10 dark:stroke-zinc-500 fill-zinc-100 stroke-zinc-400",
+    "css": ".fill-zinc-100 {\n  fill: #f4f4f5;\n}\n.stroke-zinc-400 {\n  stroke: #a1a1aa;\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:fill-zinc-100\\/10 {\n    fill: rgb(244 244 245 / 0.1);\n  }\n  .dark\\:stroke-zinc-500 {\n    stroke: #71717a;\n  }\n}\n"
+  },
+  {
+    "composition": "bg-white dark:bg-zinc-900 dark:ring-zinc-300/20 ring-1 ring-zinc-100 w-full",
+    "css": ".w-full {\n  width: 100%;\n}\n.bg-white {\n  --tw-bg-opacity: 1;\n  background-color: rgb(255 255 255 / var(--tw-bg-opacity));\n}\n.ring-1 {\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width)\n    var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width))\n    var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n.ring-zinc-100 {\n  --tw-ring-opacity: 1;\n  --tw-ring-color: rgb(244 244 245 / var(--tw-ring-opacity));\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:bg-zinc-900 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(24 24 27 / var(--tw-bg-opacity));\n  }\n  .dark\\:ring-zinc-300\\/20 {\n    --tw-ring-color: rgb(212 212 216 / 0.2);\n  }\n}\n"
+  },
+  {
+    "composition": "dark:text-zinc-100 font-bold sm:text-5xl text-4xl text-zinc-800 tracking-tight",
+    "css": ".text-4xl {\n  font-size: 2.25rem;\n  line-height: 2.5rem;\n}\n.font-bold {\n  font-weight: 700;\n}\n.tracking-tight {\n  letter-spacing: -0.025em;\n}\n.text-zinc-800 {\n  --tw-text-opacity: 1;\n  color: rgb(39 39 42 / var(--tw-text-opacity));\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:text-zinc-100 {\n    --tw-text-opacity: 1;\n    color: rgb(244 244 245 / var(--tw-text-opacity));\n  }\n}\n@media (min-width: 640px) {\n  .sm\\:text-5xl {\n    font-size: 3rem;\n    line-height: 1;\n  }\n}\n"
+  },
+  {
+    "composition": "block dark:hover:text-teal-400 hover:text-teal-500 px-3 py-2 relative transition",
+    "css": ".relative {\n  position: relative;\n}\n.block {\n  display: block;\n}\n.px-3 {\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n}\n.py-2 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n.transition {\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,\n    opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.hover\\:text-teal-500:hover {\n  --tw-text-opacity: 1;\n  color: rgb(20 184 166 / var(--tw-text-opacity));\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:hover\\:text-teal-400:hover {\n    --tw-text-opacity: 1;\n    color: rgb(45 212 191 / var(--tw-text-opacity));\n  }\n}\n"
+  },
+  {
+    "composition": "dark:group-hover:stroke-zinc-400 group-hover:stroke-zinc-700 h-auto ml-3 stroke-zinc-500 w-2",
+    "css": ".ml-3 {\n  margin-left: 0.75rem;\n}\n.h-auto {\n  height: auto;\n}\n.w-2 {\n  width: 0.5rem;\n}\n.stroke-zinc-500 {\n  stroke: #71717a;\n}\n.group:hover .group-hover\\:stroke-zinc-700 {\n  stroke: #3f3f46;\n}\n@media (prefers-color-scheme: dark) {\n  .group:hover .dark\\:group-hover\\:stroke-zinc-400 {\n    stroke: #a1a1aa;\n  }\n}\n"
+  },
+  {
+    "composition": "dark:text-zinc-500 flex items-center mb-3 order-first pl-3.5 relative text-sm text-zinc-400 z-10",
+    "css": ".relative {\n  position: relative;\n}\n.z-10 {\n  z-index: 10;\n}\n.order-first {\n  order: -9999;\n}\n.mb-3 {\n  margin-bottom: 0.75rem;\n}\n.flex {\n  display: flex;\n}\n.items-center {\n  align-items: center;\n}\n.pl-3\\.5 {\n  padding-left: 0.875rem;\n}\n.pl-3 {\n  padding-left: 0.75rem;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.text-zinc-400 {\n  --tw-text-opacity: 1;\n  color: rgb(161 161 170 / var(--tw-text-opacity));\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:text-zinc-500 {\n    --tw-text-opacity: 1;\n    color: rgb(113 113 122 / var(--tw-text-opacity));\n  }\n}\n"
+  },
+  {
+    "composition": "dark:fill-zinc-400 dark:group-hover:fill-zinc-300 fill-zinc-500 group-hover:fill-zinc-600 h-6 transition w-6",
+    "css": ".h-6 {\n  height: 1.5rem;\n}\n.w-6 {\n  width: 1.5rem;\n}\n.fill-zinc-500 {\n  fill: #71717a;\n}\n.transition {\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,\n    opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.group:hover .group-hover\\:fill-zinc-600 {\n  fill: #52525b;\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:fill-zinc-400 {\n    fill: #a1a1aa;\n  }\n  .group:hover .dark\\:group-hover\\:fill-zinc-300 {\n    fill: #d4d4d8;\n  }\n}\n"
+  },
+  {
+    "composition": "aspect-[9/10] bg-zinc-100 dark:bg-zinc-800 flex-none overflow-hidden relative rotate-2 rounded-xl sm:rounded-2xl sm:w-72 w-44",
+    "css": ".relative {\n  position: relative;\n}\n.aspect-\\[9\\/10\\] {\n  aspect-ratio: 9/10;\n}\n.w-44 {\n  width: 11rem;\n}\n.flex-none {\n  flex: none;\n}\n.rotate-2 {\n  --tw-rotate: 2deg;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n.overflow-hidden {\n  overflow: hidden;\n}\n.rounded-xl {\n  border-radius: 0.75rem;\n}\n.bg-zinc-100 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(244 244 245 / var(--tw-bg-opacity));\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:bg-zinc-800 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(39 39 42 / var(--tw-bg-opacity));\n  }\n}\n@media (min-width: 640px) {\n  .sm\\:w-72 {\n    width: 18rem;\n  }\n  .sm\\:rounded-2xl {\n    border-radius: 1rem;\n  }\n}\n"
+  },
+  {
+    "composition": "-rotate-2 aspect-[9/10] bg-zinc-100 dark:bg-zinc-800 flex-none overflow-hidden relative rounded-xl sm:rounded-2xl sm:w-72 w-44",
+    "css": ".relative {\n  position: relative;\n}\n.aspect-\\[9\\/10\\] {\n  aspect-ratio: 9/10;\n}\n.w-44 {\n  width: 11rem;\n}\n.flex-none {\n  flex: none;\n}\n.-rotate-2 {\n  --tw-rotate: -2deg;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n.overflow-hidden {\n  overflow: hidden;\n}\n.rounded-xl {\n  border-radius: 0.75rem;\n}\n.bg-zinc-100 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(244 244 245 / var(--tw-bg-opacity));\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:bg-zinc-800 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(39 39 42 / var(--tw-bg-opacity));\n  }\n}\n@media (min-width: 640px) {\n  .sm\\:w-72 {\n    width: 18rem;\n  }\n  .sm\\:rounded-2xl {\n    border-radius: 1rem;\n  }\n}\n"
+  },
+  {
+    "composition": "dark:group-active:stroke-zinc-50 dark:group-hover:stroke-zinc-50 group-active:stroke-zinc-600 h-4 stroke-zinc-400 transition w-4",
+    "css": ".h-4 {\n  height: 1rem;\n}\n.w-4 {\n  width: 1rem;\n}\n.stroke-zinc-400 {\n  stroke: #a1a1aa;\n}\n.transition {\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,\n    opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.group:active .group-active\\:stroke-zinc-600 {\n  stroke: #52525b;\n}\n@media (prefers-color-scheme: dark) {\n  .group:hover .dark\\:group-hover\\:stroke-zinc-50 {\n    stroke: #fafafa;\n  }\n  .group:active .dark\\:group-active\\:stroke-zinc-50 {\n    stroke: #fafafa;\n  }\n}\n"
+  },
+  {
+    "composition": "-inset-x-4 -inset-y-6 absolute bg-zinc-50 dark:bg-zinc-800/50 group-hover:opacity-100 group-hover:scale-100 opacity-0 scale-95 sm:-inset-x-6 sm:rounded-2xl transition z-0",
+    "css": ".absolute {\n  position: absolute;\n}\n.-inset-x-4 {\n  left: -1rem;\n  right: -1rem;\n}\n.-inset-y-6 {\n  top: -1.5rem;\n  bottom: -1.5rem;\n}\n.z-0 {\n  z-index: 0;\n}\n.scale-95 {\n  --tw-scale-x: 0.95;\n  --tw-scale-y: 0.95;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n.bg-zinc-50 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(250 250 250 / var(--tw-bg-opacity));\n}\n.opacity-0 {\n  opacity: 0;\n}\n.transition {\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,\n    opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.group:hover .group-hover\\:scale-100 {\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n.group:hover .group-hover\\:opacity-100 {\n  opacity: 1;\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:bg-zinc-800\\/50 {\n    background-color: rgb(39 39 42 / 0.5);\n  }\n}\n@media (min-width: 640px) {\n  .sm\\:-inset-x-6 {\n    left: -1.5rem;\n    right: -1.5rem;\n  }\n  .sm\\:rounded-2xl {\n    border-radius: 1rem;\n  }\n}\n"
+  },
+  {
+    "composition": "backdrop-blur bg-white/90 dark:bg-zinc-800/90 dark:hover:ring-white/20 dark:ring-white/10 group px-3 py-2 ring-1 ring-zinc-900/5 rounded-full shadow-lg shadow-zinc-800/5 transition",
+    "css": ".rounded-full {\n  border-radius: 9999px;\n}\n.bg-white\\/90 {\n  background-color: rgb(255 255 255 / 0.9);\n}\n.px-3 {\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n}\n.py-2 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n.shadow-lg {\n  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),\n    0 4px 6px -4px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),\n    var(--tw-shadow);\n}\n.shadow-zinc-800\\/5 {\n  --tw-shadow-color: rgb(39 39 42 / 0.05);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.ring-1 {\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width)\n    var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width))\n    var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n.ring-zinc-900\\/5 {\n  --tw-ring-color: rgb(24 24 27 / 0.05);\n}\n.backdrop-blur {\n  --tw-backdrop-blur: blur(8px);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n.transition {\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,\n    opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:bg-zinc-800\\/90 {\n    background-color: rgb(39 39 42 / 0.9);\n  }\n  .dark\\:ring-white\\/10 {\n    --tw-ring-color: rgb(255 255 255 / 0.1);\n  }\n  .dark\\:hover\\:ring-white\\/20:hover {\n    --tw-ring-color: rgb(255 255 255 / 0.2);\n  }\n}\n"
+  },
+  {
+    "composition": "backdrop-blur bg-white/90 dark:bg-zinc-800/90 dark:ring-white/10 dark:text-zinc-200 flex font-medium px-3 ring-1 ring-zinc-900/5 rounded-full shadow-lg shadow-zinc-800/5 text-sm text-zinc-800",
+    "css": ".flex {\n  display: flex;\n}\n.rounded-full {\n  border-radius: 9999px;\n}\n.bg-white\\/90 {\n  background-color: rgb(255 255 255 / 0.9);\n}\n.px-3 {\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.font-medium {\n  font-weight: 500;\n}\n.text-zinc-800 {\n  --tw-text-opacity: 1;\n  color: rgb(39 39 42 / var(--tw-text-opacity));\n}\n.shadow-lg {\n  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),\n    0 4px 6px -4px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),\n    var(--tw-shadow);\n}\n.shadow-zinc-800\\/5 {\n  --tw-shadow-color: rgb(39 39 42 / 0.05);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.ring-1 {\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width)\n    var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width))\n    var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n.ring-zinc-900\\/5 {\n  --tw-ring-color: rgb(24 24 27 / 0.05);\n}\n.backdrop-blur {\n  --tw-backdrop-blur: blur(8px);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:bg-zinc-800\\/90 {\n    background-color: rgb(39 39 42 / 0.9);\n  }\n  .dark\\:text-zinc-200 {\n    --tw-text-opacity: 1;\n    color: rgb(228 228 231 / var(--tw-text-opacity));\n  }\n  .dark\\:ring-white\\/10 {\n    --tw-ring-color: rgb(255 255 255 / 0.1);\n  }\n}\n"
+  },
+  {
+    "composition": "dark:bg-zinc-800 dark:border dark:border-zinc-700/50 dark:ring-0 flex flex-none h-10 items-center justify-center mt-1 relative ring-1 ring-zinc-900/5 rounded-full shadow-md shadow-zinc-800/5 w-10",
+    "css": ".relative {\n  position: relative;\n}\n.mt-1 {\n  margin-top: 0.25rem;\n}\n.flex {\n  display: flex;\n}\n.h-10 {\n  height: 2.5rem;\n}\n.w-10 {\n  width: 2.5rem;\n}\n.flex-none {\n  flex: none;\n}\n.items-center {\n  align-items: center;\n}\n.justify-center {\n  justify-content: center;\n}\n.rounded-full {\n  border-radius: 9999px;\n}\n.shadow-md {\n  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),\n    var(--tw-shadow);\n}\n.shadow-zinc-800\\/5 {\n  --tw-shadow-color: rgb(39 39 42 / 0.05);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.ring-1 {\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width)\n    var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width))\n    var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n.ring-zinc-900\\/5 {\n  --tw-ring-color: rgb(24 24 27 / 0.05);\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:border {\n    border-width: 1px;\n  }\n  .dark\\:border-zinc-700\\/50 {\n    border-color: rgb(63 63 70 / 0.5);\n  }\n  .dark\\:bg-zinc-800 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(39 39 42 / var(--tw-bg-opacity));\n  }\n  .dark\\:ring-0 {\n    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width)\n      var(--tw-ring-offset-color);\n    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width))\n      var(--tw-ring-color);\n    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n  }\n}\n"
+  },
+  {
+    "composition": "absolute backdrop-blur bg-white/90 dark:bg-zinc-800/90 dark:ring-white/10 h-10 left-0 origin-left p-0.5 ring-1 ring-zinc-900/5 rounded-full shadow-lg shadow-zinc-800/5 top-3 transition-opacity w-10",
+    "css": ".absolute {\n  position: absolute;\n}\n.left-0 {\n  left: 0px;\n}\n.top-3 {\n  top: 0.75rem;\n}\n.h-10 {\n  height: 2.5rem;\n}\n.w-10 {\n  width: 2.5rem;\n}\n.origin-left {\n  transform-origin: left;\n}\n.rounded-full {\n  border-radius: 9999px;\n}\n.bg-white\\/90 {\n  background-color: rgb(255 255 255 / 0.9);\n}\n.p-0\\.5 {\n  padding: 0.125rem;\n}\n.p-0 {\n  padding: 0px;\n}\n.shadow-lg {\n  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),\n    0 4px 6px -4px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),\n    var(--tw-shadow);\n}\n.shadow-zinc-800\\/5 {\n  --tw-shadow-color: rgb(39 39 42 / 0.05);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.ring-1 {\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width)\n    var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width))\n    var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n.ring-zinc-900\\/5 {\n  --tw-ring-color: rgb(24 24 27 / 0.05);\n}\n.backdrop-blur {\n  --tw-backdrop-blur: blur(8px);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n.transition-opacity {\n  transition-property: opacity;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:bg-zinc-800\\/90 {\n    background-color: rgb(39 39 42 / 0.9);\n  }\n  .dark\\:ring-white\\/10 {\n    --tw-ring-color: rgb(255 255 255 / 0.1);\n  }\n}\n"
+  },
+  {
+    "composition": "backdrop-blur bg-white/90 dark:bg-zinc-800/90 dark:hover:ring-white/20 dark:ring-white/10 dark:text-zinc-200 flex font-medium group items-center px-4 py-2 ring-1 ring-zinc-900/5 rounded-full shadow-lg shadow-zinc-800/5 text-sm text-zinc-800",
+    "css": ".flex {\n  display: flex;\n}\n.items-center {\n  align-items: center;\n}\n.rounded-full {\n  border-radius: 9999px;\n}\n.bg-white\\/90 {\n  background-color: rgb(255 255 255 / 0.9);\n}\n.px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n.py-2 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.font-medium {\n  font-weight: 500;\n}\n.text-zinc-800 {\n  --tw-text-opacity: 1;\n  color: rgb(39 39 42 / var(--tw-text-opacity));\n}\n.shadow-lg {\n  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),\n    0 4px 6px -4px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),\n    var(--tw-shadow);\n}\n.shadow-zinc-800\\/5 {\n  --tw-shadow-color: rgb(39 39 42 / 0.05);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.ring-1 {\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width)\n    var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width))\n    var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n.ring-zinc-900\\/5 {\n  --tw-ring-color: rgb(24 24 27 / 0.05);\n}\n.backdrop-blur {\n  --tw-backdrop-blur: blur(8px);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:bg-zinc-800\\/90 {\n    background-color: rgb(39 39 42 / 0.9);\n  }\n  .dark\\:text-zinc-200 {\n    --tw-text-opacity: 1;\n    color: rgb(228 228 231 / var(--tw-text-opacity));\n  }\n  .dark\\:ring-white\\/10 {\n    --tw-ring-color: rgb(255 255 255 / 0.1);\n  }\n  .dark\\:hover\\:ring-white\\/20:hover {\n    --tw-ring-color: rgb(255 255 255 / 0.2);\n  }\n}\n"
+  },
+  {
+    "composition": "[@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500 dark:block fill-zinc-700 h-6 hidden stroke-zinc-500 transition w-6",
+    "css": ".hidden {\n  display: none;\n}\n.h-6 {\n  height: 1.5rem;\n}\n.w-6 {\n  width: 1.5rem;\n}\n.fill-zinc-700 {\n  fill: #3f3f46;\n}\n.stroke-zinc-500 {\n  stroke: #71717a;\n}\n.transition {\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,\n    opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:block {\n    display: block;\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .group:hover .\\[\\@media\\(prefers-color-scheme\\:dark\\)\\]\\:group-hover\\:stroke-zinc-400 {\n    stroke: #a1a1aa;\n  }\n}\n@media not (prefers-color-scheme: dark) {\n  .\\[\\@media_not_\\(prefers-color-scheme\\:dark\\)\\]\\:fill-teal-400\\/10 {\n    fill: rgb(45 212 191 / 0.1);\n  }\n  .\\[\\@media_not_\\(prefers-color-scheme\\:dark\\)\\]\\:stroke-teal-500 {\n    stroke: #14b8a6;\n  }\n}\n"
+  },
+  {
+    "composition": "active:bg-zinc-800 active:text-zinc-100/70 active:transition-none bg-zinc-800 dark:active:bg-zinc-700 dark:active:text-zinc-100/70 dark:bg-zinc-700 dark:hover:bg-zinc-600 flex-none font-semibold gap-2 hover:bg-zinc-700 inline-flex items-center justify-center ml-4 outline-offset-2 px-3 py-2 rounded-md text-sm text-zinc-100 transition",
+    "css": ".ml-4 {\n  margin-left: 1rem;\n}\n.inline-flex {\n  display: inline-flex;\n}\n.flex-none {\n  flex: none;\n}\n.items-center {\n  align-items: center;\n}\n.justify-center {\n  justify-content: center;\n}\n.gap-2 {\n  gap: 0.5rem;\n}\n.rounded-md {\n  border-radius: 0.375rem;\n}\n.bg-zinc-800 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(39 39 42 / var(--tw-bg-opacity));\n}\n.px-3 {\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n}\n.py-2 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.font-semibold {\n  font-weight: 600;\n}\n.text-zinc-100 {\n  --tw-text-opacity: 1;\n  color: rgb(244 244 245 / var(--tw-text-opacity));\n}\n.outline-offset-2 {\n  outline-offset: 2px;\n}\n.transition {\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,\n    opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.hover\\:bg-zinc-700:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgb(63 63 70 / var(--tw-bg-opacity));\n}\n.active\\:bg-zinc-800:active {\n  --tw-bg-opacity: 1;\n  background-color: rgb(39 39 42 / var(--tw-bg-opacity));\n}\n.active\\:text-zinc-100\\/70:active {\n  color: rgb(244 244 245 / 0.7);\n}\n.active\\:transition-none:active {\n  transition-property: none;\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:bg-zinc-700 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(63 63 70 / var(--tw-bg-opacity));\n  }\n  .dark\\:hover\\:bg-zinc-600:hover {\n    --tw-bg-opacity: 1;\n    background-color: rgb(82 82 91 / var(--tw-bg-opacity));\n  }\n  .dark\\:active\\:bg-zinc-700:active {\n    --tw-bg-opacity: 1;\n    background-color: rgb(63 63 70 / var(--tw-bg-opacity));\n  }\n  .dark\\:active\\:text-zinc-100\\/70:active {\n    color: rgb(244 244 245 / 0.7);\n  }\n}\n"
+  },
+  {
+    "composition": "[@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600 [@media(prefers-color-scheme:dark)]:stroke-teal-500 dark:hidden fill-zinc-100 group-hover:fill-zinc-200 group-hover:stroke-zinc-700 h-6 stroke-zinc-500 transition w-6",
+    "css": ".h-6 {\n  height: 1.5rem;\n}\n.w-6 {\n  width: 1.5rem;\n}\n.fill-zinc-100 {\n  fill: #f4f4f5;\n}\n.stroke-zinc-500 {\n  stroke: #71717a;\n}\n.transition {\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,\n    opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.group:hover .group-hover\\:fill-zinc-200 {\n  fill: #e4e4e7;\n}\n.group:hover .group-hover\\:stroke-zinc-700 {\n  stroke: #3f3f46;\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:hidden {\n    display: none;\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .\\[\\@media\\(prefers-color-scheme\\:dark\\)\\]\\:fill-teal-50 {\n    fill: #f0fdfa;\n  }\n  .\\[\\@media\\(prefers-color-scheme\\:dark\\)\\]\\:stroke-teal-500 {\n    stroke: #14b8a6;\n  }\n  .group:hover .\\[\\@media\\(prefers-color-scheme\\:dark\\)\\]\\:group-hover\\:fill-teal-50 {\n    fill: #f0fdfa;\n  }\n  .group:hover .\\[\\@media\\(prefers-color-scheme\\:dark\\)\\]\\:group-hover\\:stroke-teal-600 {\n    stroke: #0d9488;\n  }\n}\n"
+  },
+  {
+    "composition": "active:bg-zinc-100 active:text-zinc-900/60 active:transition-none bg-zinc-50 dark:active:bg-zinc-800/50 dark:active:text-zinc-50/70 dark:bg-zinc-800/50 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:text-zinc-300 font-medium gap-2 group hover:bg-zinc-100 inline-flex items-center justify-center mt-6 outline-offset-2 px-3 py-2 rounded-md text-sm text-zinc-900 transition w-full",
+    "css": ".mt-6 {\n  margin-top: 1.5rem;\n}\n.inline-flex {\n  display: inline-flex;\n}\n.w-full {\n  width: 100%;\n}\n.items-center {\n  align-items: center;\n}\n.justify-center {\n  justify-content: center;\n}\n.gap-2 {\n  gap: 0.5rem;\n}\n.rounded-md {\n  border-radius: 0.375rem;\n}\n.bg-zinc-50 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(250 250 250 / var(--tw-bg-opacity));\n}\n.px-3 {\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n}\n.py-2 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.font-medium {\n  font-weight: 500;\n}\n.text-zinc-900 {\n  --tw-text-opacity: 1;\n  color: rgb(24 24 27 / var(--tw-text-opacity));\n}\n.outline-offset-2 {\n  outline-offset: 2px;\n}\n.transition {\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,\n    opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.hover\\:bg-zinc-100:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgb(244 244 245 / var(--tw-bg-opacity));\n}\n.active\\:bg-zinc-100:active {\n  --tw-bg-opacity: 1;\n  background-color: rgb(244 244 245 / var(--tw-bg-opacity));\n}\n.active\\:text-zinc-900\\/60:active {\n  color: rgb(24 24 27 / 0.6);\n}\n.active\\:transition-none:active {\n  transition-property: none;\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:bg-zinc-800\\/50 {\n    background-color: rgb(39 39 42 / 0.5);\n  }\n  .dark\\:text-zinc-300 {\n    --tw-text-opacity: 1;\n    color: rgb(212 212 216 / var(--tw-text-opacity));\n  }\n  .dark\\:hover\\:bg-zinc-800:hover {\n    --tw-bg-opacity: 1;\n    background-color: rgb(39 39 42 / var(--tw-bg-opacity));\n  }\n  .dark\\:hover\\:text-zinc-50:hover {\n    --tw-text-opacity: 1;\n    color: rgb(250 250 250 / var(--tw-text-opacity));\n  }\n  .dark\\:active\\:bg-zinc-800\\/50:active {\n    background-color: rgb(39 39 42 / 0.5);\n  }\n  .dark\\:active\\:text-zinc-50\\/70:active {\n    color: rgb(250 250 250 / 0.7);\n  }\n}\n"
+  },
+  {
+    "composition": "appearance-none bg-white border border-zinc-900/10 dark:bg-zinc-700/[0.15] dark:border-zinc-700 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 dark:placeholder:text-zinc-500 dark:text-zinc-200 flex-auto focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 min-w-0 placeholder:text-zinc-400 px-3 py-[calc(theme(spacing.2)-1px)] rounded-md shadow-md shadow-zinc-800/5 sm:text-sm",
+    "css": ".min-w-0 {\n  min-width: 0px;\n}\n.flex-auto {\n  flex: 1 1 auto;\n}\n.appearance-none {\n  appearance: none;\n}\n.rounded-md {\n  border-radius: 0.375rem;\n}\n.border {\n  border-width: 1px;\n}\n.border-zinc-900\\/10 {\n  border-color: rgb(24 24 27 / 0.1);\n}\n.bg-white {\n  --tw-bg-opacity: 1;\n  background-color: rgb(255 255 255 / var(--tw-bg-opacity));\n}\n.px-3 {\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n}\n.py-\\[calc\\(theme\\(spacing\\.2\\)-1px\\)\\] {\n  padding-top: calc(0.5rem - 1px);\n  padding-bottom: calc(0.5rem - 1px);\n}\n.shadow-md {\n  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),\n    var(--tw-shadow);\n}\n.shadow-zinc-800\\/5 {\n  --tw-shadow-color: rgb(39 39 42 / 0.05);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.placeholder\\:text-zinc-400::placeholder {\n  --tw-text-opacity: 1;\n  color: rgb(161 161 170 / var(--tw-text-opacity));\n}\n.focus\\:border-teal-500:focus {\n  --tw-border-opacity: 1;\n  border-color: rgb(20 184 166 / var(--tw-border-opacity));\n}\n.focus\\:outline-none:focus {\n  outline: 2px solid transparent;\n  outline-offset: 2px;\n}\n.focus\\:ring-4:focus {\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width)\n    var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width))\n    var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n.focus\\:ring-teal-500\\/10:focus {\n  --tw-ring-color: rgb(20 184 166 / 0.1);\n}\n@media (prefers-color-scheme: dark) {\n  .dark\\:border-zinc-700 {\n    --tw-border-opacity: 1;\n    border-color: rgb(63 63 70 / var(--tw-border-opacity));\n  }\n  .dark\\:bg-zinc-700\\/\\[0\\.15\\] {\n    background-color: rgb(63 63 70 / 0.15);\n  }\n  .dark\\:text-zinc-200 {\n    --tw-text-opacity: 1;\n    color: rgb(228 228 231 / var(--tw-text-opacity));\n  }\n  .dark\\:placeholder\\:text-zinc-500::placeholder {\n    --tw-text-opacity: 1;\n    color: rgb(113 113 122 / var(--tw-text-opacity));\n  }\n  .dark\\:focus\\:border-teal-400:focus {\n    --tw-border-opacity: 1;\n    border-color: rgb(45 212 191 / var(--tw-border-opacity));\n  }\n  .dark\\:focus\\:ring-teal-400\\/10:focus {\n    --tw-ring-color: rgb(45 212 191 / 0.1);\n  }\n}\n@media (min-width: 640px) {\n  .sm\\:text-sm {\n    font-size: 0.875rem;\n    line-height: 1.25rem;\n  }\n}\n"
+  }
+]
