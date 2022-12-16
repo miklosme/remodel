@@ -1,0 +1,22 @@
+{
+  "tag": "div",
+  "classList": ["flex", "gap-2", "items-baseline"],
+  "style": {
+    "": {
+      "display": "flex",
+      "align-items": "baseline",
+      "row-gap": "0.5rem",
+      "column-gap": "0.5rem"
+    }
+  },
+  "css": [
+    ".flex { display: flex; }",
+    ".items-baseline { align-items: baseline; }",
+    ".gap-2 { gap: 0.5rem; }"
+  ],
+  "appliesRulesDirectly": {
+    "flex": true,
+    "items-baseline": true,
+    "gap-2": true
+  }
+}
