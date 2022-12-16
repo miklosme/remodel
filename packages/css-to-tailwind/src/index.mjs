@@ -2,6 +2,6 @@
 
 export default function cssToTailwind(css) {
   return {
-    classes: ['foo', 'bar', 'baz'],
+    classes: ['p-4'],
   };
 }
