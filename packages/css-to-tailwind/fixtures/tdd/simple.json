@@ -1,0 +1,131 @@
+[
+  {
+    "id": "0a3f64",
+    "tag": "div",
+    "classList": ["p-4"],
+    "style": {
+      "": {
+        "padding-top": "1rem",
+        "padding-right": "1rem",
+        "padding-bottom": "1rem",
+        "padding-left": "1rem"
+      }
+    },
+    "css": [".p-4 { padding: 1rem; }"],
+    "appliesRulesDirectly": {
+      "p-4": true
+    }
+  },
+  {
+    "id": "7291c9",
+    "tag": "span",
+    "classList": ["ml-4"],
+    "style": {
+      "": {
+        "margin-left": "1rem"
+      }
+    },
+    "css": [".ml-4 { margin-left: 1rem; }"],
+    "appliesRulesDirectly": {
+      "ml-4": true
+    }
+  },
+  {
+    "id": "7291c9",
+    "tag": "span",
+    "classList": ["ml-4"],
+    "style": {
+      "": {
+        "margin-left": "1rem"
+      }
+    },
+    "css": [".ml-4 { margin-left: 1rem; }"],
+    "appliesRulesDirectly": {
+      "ml-4": true
+    }
+  },
+  {
+    "id": "57decf",
+    "tag": "span",
+    "classList": ["ml-3"],
+    "style": {
+      "": {
+        "margin-left": "0.75rem"
+      }
+    },
+    "css": [".ml-3 { margin-left: 0.75rem; }"],
+    "appliesRulesDirectly": {
+      "ml-3": true
+    }
+  },
+  {
+    "id": "7291c9",
+    "tag": "span",
+    "classList": ["ml-4"],
+    "style": {
+      "": {
+        "margin-left": "1rem"
+      }
+    },
+    "css": [".ml-4 { margin-left: 1rem; }"],
+    "appliesRulesDirectly": {
+      "ml-4": true
+    }
+  },
+  {
+    "id": "57decf",
+    "tag": "span",
+    "classList": ["ml-3"],
+    "style": {
+      "": {
+        "margin-left": "0.75rem"
+      }
+    },
+    "css": [".ml-3 { margin-left: 0.75rem; }"],
+    "appliesRulesDirectly": {
+      "ml-3": true
+    }
+  },
+  {
+    "id": "1476ae",
+    "tag": "footer",
+    "classList": ["mt-32"],
+    "style": {
+      "": {
+        "margin-top": "8rem"
+      }
+    },
+    "css": [".mt-32 { margin-top: 8rem; }"],
+    "appliesRulesDirectly": {
+      "mt-32": true
+    }
+  },
+  {
+    "id": "4a8f75",
+    "tag": "path",
+    "classList": ["fill-indigo-300"],
+    "style": {
+      "": {
+        "fill": "rgb(165, 180, 252)"
+      }
+    },
+    "css": [".fill-indigo-300 { fill: rgb(165, 180, 252); }"],
+    "appliesRulesDirectly": {
+      "fill-indigo-300": true
+    }
+  },
+  {
+    "id": "57decf",
+    "tag": "span",
+    "classList": ["ml-3"],
+    "style": {
+      "": {
+        "margin-left": "0.75rem"
+      }
+    },
+    "css": [".ml-3 { margin-left: 0.75rem; }"],
+    "appliesRulesDirectly": {
+      "ml-3": true
+    }
+  }
+]

@@ -56,15 +56,23 @@ const findComplex = (c) => {
   return true;
 };
 
-// const FIND_FN = findBasic;
+const FIND_FN = findBasic;
 // const FIND_FN = findAdvanced;
-const FIND_FN = findComplex;
+// const FIND_FN = findComplex;
 
 const filtered = content.filter(findDirectOnly).filter(FIND_FN);
 
-Array(5)
+// console.log(FIND_FN.name, filtered.length);
+
+const found = Array(5)
   .fill()
-  .forEach((_, index) => {
-    const c = choose(filtered);
-    console.log(index + 1, c.classList.join(' '));
-  });
+  .map(() => choose(filtered));
+
+// found.forEach((c, index) => {
+//   console.log(c.id, index + 1, c.classList.join(' '));
+// });
+
+// console.log();
+// console.log('IDS');
+
+console.log(found.map((c) => c.id).join(','));
