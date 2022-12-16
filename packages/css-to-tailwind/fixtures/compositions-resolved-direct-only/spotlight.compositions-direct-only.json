@@ -1,5 +1,6 @@
 [
   {
+    "id": "b63c1c",
     "tag": "html",
     "classList": ["antialiased", "h-full", "js-focus-visible"],
     "style": {},
@@ -11,6 +12,7 @@
     }
   },
   {
+    "id": "fdf68d",
     "tag": "body",
     "classList": ["bg-zinc-50", "dark:bg-black", "flex", "flex-col", "h-full"],
     "style": {
@@ -34,6 +36,7 @@
     }
   },
   {
+    "id": "993f47",
     "tag": "div",
     "classList": ["fixed", "flex", "inset-0", "justify-center", "sm:px-8"],
     "style": {
@@ -67,6 +70,7 @@
     }
   },
   {
+    "id": "abea54",
     "tag": "div",
     "classList": ["flex", "lg:px-8", "max-w-7xl", "w-full"],
     "style": {
@@ -94,6 +98,7 @@
     }
   },
   {
+    "id": "aac21c",
     "tag": "div",
     "classList": [
       "bg-white",
@@ -126,6 +131,7 @@
     }
   },
   {
+    "id": "ff8d95",
     "tag": "div",
     "classList": ["relative"],
     "style": {
@@ -139,6 +145,7 @@
     }
   },
   {
+    "id": "1ede2f",
     "tag": "header",
     "classList": [
       "flex",
@@ -172,6 +179,7 @@
     }
   },
   {
+    "id": "8f303d",
     "tag": "div",
     "classList": [
       "mt-[calc(theme(spacing.16)-theme(spacing.3))]",
@@ -193,6 +201,7 @@
     }
   },
   {
+    "id": "93d112",
     "tag": "div",
     "classList": ["-mb-3", "order-last", "pt-3", "sm:px-8", "top-0"],
     "style": {
@@ -223,6 +232,7 @@
     }
   },
   {
+    "id": "0d7792",
     "tag": "div",
     "classList": ["lg:px-8", "max-w-7xl", "mx-auto"],
     "style": {
@@ -248,6 +258,7 @@
     }
   },
   {
+    "id": "ae07db",
     "tag": "div",
     "classList": ["lg:px-12", "px-4", "relative", "sm:px-8"],
     "style": {
@@ -279,6 +290,7 @@
     }
   },
   {
+    "id": "be0b23",
     "tag": "div",
     "classList": ["lg:max-w-5xl", "max-w-2xl", "mx-auto"],
     "style": {
@@ -303,6 +315,7 @@
     }
   },
   {
+    "id": "3b7237",
     "tag": "div",
     "classList": ["top-[var(--avatar-top,theme(spacing.3))]", "w-full"],
     "style": {
@@ -321,6 +334,7 @@
     }
   },
   {
+    "id": "04093c",
     "tag": "div",
     "classList": [
       "absolute",
@@ -406,6 +420,7 @@
     }
   },
   {
+    "id": "35ac3f",
     "tag": "a",
     "classList": [
       "block",
@@ -439,6 +454,7 @@
     }
   },
   {
+    "id": "c4ac1b",
     "tag": "img",
     "classList": [
       "bg-zinc-100",
@@ -477,6 +493,7 @@
     }
   },
   {
+    "id": "6f8364",
     "tag": "div",
     "classList": ["h-16", "pt-6", "top-0", "z-10"],
     "style": {
@@ -501,6 +518,7 @@
     }
   },
   {
+    "id": "7a2529",
     "tag": "div",
     "classList": [
       "sm:px-8",
@@ -529,6 +547,7 @@
     }
   },
   {
+    "id": "6c3637",
     "tag": "div",
     "classList": ["flex", "gap-4", "relative"],
     "style": {
@@ -551,6 +570,7 @@
     }
   },
   {
+    "id": "070eb1",
     "tag": "div",
     "classList": ["flex", "flex-1"],
     "style": {
@@ -568,6 +588,7 @@
     }
   },
   {
+    "id": "1dff0c",
     "tag": "div",
     "classList": ["flex", "flex-1", "justify-end", "md:justify-center"],
     "style": {
@@ -596,6 +617,7 @@
     }
   },
   {
+    "id": "0e8d53",
     "tag": "div",
     "classList": ["md:hidden", "pointer-events-auto"],
     "style": {
@@ -616,6 +638,7 @@
     }
   },
   {
+    "id": "41fd24",
     "tag": "button",
     "classList": [
       "backdrop-blur",
@@ -701,6 +724,7 @@
     }
   },
   {
+    "id": "745d0b",
     "tag": "svg",
     "classList": [
       "dark:group-hover:stroke-zinc-400",
@@ -734,6 +758,7 @@
     }
   },
   {
+    "id": "d3edda",
     "tag": "nav",
     "classList": ["hidden", "md:block", "pointer-events-auto"],
     "style": {
@@ -757,6 +782,7 @@
     }
   },
   {
+    "id": "cbdf5d",
     "tag": "ul",
     "classList": [
       "backdrop-blur",
@@ -829,6 +855,7 @@
     }
   },
   {
+    "id": "c8111c",
     "tag": "a",
     "classList": [
       "block",
@@ -870,6 +897,7 @@
     }
   },
   {
+    "id": "e78f4d",
     "tag": "div",
     "classList": ["flex", "justify-end", "md:flex-1"],
     "style": {
@@ -895,6 +923,7 @@
     }
   },
   {
+    "id": "463708",
     "tag": "div",
     "classList": ["pointer-events-auto"],
     "style": {
@@ -908,6 +937,7 @@
     }
   },
   {
+    "id": "464c8b",
     "tag": "button",
     "classList": [
       "backdrop-blur",
@@ -975,6 +1005,7 @@
     }
   },
   {
+    "id": "f9ffd9",
     "tag": "svg",
     "classList": [
       "[@media(prefers-color-scheme:dark)]:fill-teal-50",
@@ -1030,6 +1061,7 @@
     }
   },
   {
+    "id": "830c15",
     "tag": "svg",
     "classList": [
       "[@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400",
@@ -1083,6 +1115,7 @@
     }
   },
   {
+    "id": "6d9d0a",
     "tag": "div",
     "classList": ["mt-9", "sm:px-8"],
     "style": {
@@ -1104,6 +1137,7 @@
     }
   },
   {
+    "id": "641f26",
     "tag": "div",
     "classList": ["max-w-2xl"],
     "style": {
@@ -1117,6 +1151,7 @@
     }
   },
   {
+    "id": "711a29",
     "tag": "h1",
     "classList": [
       "dark:text-zinc-100",
@@ -1156,6 +1191,7 @@
     }
   },
   {
+    "id": "b39b58",
     "tag": "p",
     "classList": ["dark:text-zinc-400", "mt-6", "text-base", "text-zinc-600"],
     "style": {
@@ -1179,6 +1215,7 @@
     }
   },
   {
+    "id": "627cd2",
     "tag": "div",
     "classList": ["flex", "gap-6", "mt-6"],
     "style": {
@@ -1201,6 +1238,7 @@
     }
   },
   {
+    "id": "7fb990",
     "tag": "a",
     "classList": ["-m-1", "group", "p-1"],
     "style": {
@@ -1223,6 +1261,7 @@
     }
   },
   {
+    "id": "1eb157",
     "tag": "svg",
     "classList": [
       "dark:fill-zinc-400",
@@ -1260,6 +1299,7 @@
     }
   },
   {
+    "id": "096b2a",
     "tag": "div",
     "classList": ["mt-16", "sm:mt-20"],
     "style": {
@@ -1280,6 +1320,7 @@
     }
   },
   {
+    "id": "5cea1e",
     "tag": "div",
     "classList": [
       "-my-4",
@@ -1328,6 +1369,7 @@
     }
   },
   {
+    "id": "184d91",
     "tag": "div",
     "classList": [
       "aspect-[9/10]",
@@ -1395,6 +1437,7 @@
     }
   },
   {
+    "id": "5c3937",
     "tag": "img",
     "classList": ["absolute", "h-full", "inset-0", "object-cover", "w-full"],
     "style": {
@@ -1423,6 +1466,7 @@
     }
   },
   {
+    "id": "4a8953",
     "tag": "div",
     "classList": [
       "-rotate-2",
@@ -1490,6 +1534,7 @@
     }
   },
   {
+    "id": "f78e63",
     "tag": "div",
     "classList": ["md:mt-28", "mt-24", "sm:px-8"],
     "style": {
@@ -1516,6 +1561,7 @@
     }
   },
   {
+    "id": "1aad76",
     "tag": "div",
     "classList": [
       "gap-y-20",
@@ -1560,6 +1606,7 @@
     }
   },
   {
+    "id": "942009",
     "tag": "div",
     "classList": ["flex", "flex-col", "gap-16"],
     "style": {
@@ -1582,6 +1629,7 @@
     }
   },
   {
+    "id": "6c0c69",
     "tag": "article",
     "classList": ["flex", "flex-col", "group", "items-start", "relative"],
     "style": {
@@ -1607,6 +1655,7 @@
     }
   },
   {
+    "id": "d0540e",
     "tag": "h2",
     "classList": [
       "dark:text-zinc-100",
@@ -1639,6 +1688,7 @@
     }
   },
   {
+    "id": "9c60cd",
     "tag": "div",
     "classList": [
       "-inset-x-4",
@@ -1709,6 +1759,7 @@
     }
   },
   {
+    "id": "75f78d",
     "tag": "span",
     "classList": [
       "-inset-x-4",
@@ -1754,6 +1805,7 @@
     }
   },
   {
+    "id": "7eca98",
     "tag": "span",
     "classList": ["relative", "z-10"],
     "style": {
@@ -1769,6 +1821,7 @@
     }
   },
   {
+    "id": "fbc951",
     "tag": "time",
     "classList": [
       "dark:text-zinc-500",
@@ -1822,6 +1875,7 @@
     }
   },
   {
+    "id": "61de91",
     "tag": "span",
     "classList": ["absolute", "flex", "inset-y-0", "items-center", "left-0"],
     "style": {
@@ -1850,6 +1904,7 @@
     }
   },
   {
+    "id": "0a2f9e",
     "tag": "span",
     "classList": [
       "bg-zinc-200",
@@ -1884,6 +1939,7 @@
     }
   },
   {
+    "id": "c5697a",
     "tag": "p",
     "classList": [
       "dark:text-zinc-400",
@@ -1921,6 +1977,7 @@
     }
   },
   {
+    "id": "00c84f",
     "tag": "div",
     "classList": [
       "flex",
@@ -1968,6 +2025,7 @@
     }
   },
   {
+    "id": "ea069e",
     "tag": "svg",
     "classList": ["h-4", "ml-1", "stroke-current", "w-4"],
     "style": {
@@ -1992,6 +2050,7 @@
     }
   },
   {
+    "id": "352289",
     "tag": "div",
     "classList": ["lg:pl-16", "space-y-10", "xl:pl-24"],
     "style": {
@@ -2013,6 +2072,7 @@
     }
   },
   {
+    "id": "aa02a6",
     "tag": "form",
     "classList": [
       "border",
@@ -2056,6 +2116,7 @@
     }
   },
   {
+    "id": "761f1d",
     "tag": "h2",
     "classList": [
       "dark:text-zinc-100",
@@ -2089,6 +2150,7 @@
     }
   },
   {
+    "id": "3cf896",
     "tag": "svg",
     "classList": ["flex-none", "h-6", "w-6"],
     "style": {
@@ -2112,6 +2174,7 @@
     }
   },
   {
+    "id": "717a0f",
     "tag": "path",
     "classList": [
       "dark:fill-zinc-100/10",
@@ -2137,6 +2200,7 @@
     }
   },
   {
+    "id": "086502",
     "tag": "path",
     "classList": ["dark:stroke-zinc-500", "stroke-zinc-400"],
     "style": {
@@ -2151,6 +2215,7 @@
     }
   },
   {
+    "id": "57decf",
     "tag": "span",
     "classList": ["ml-3"],
     "style": {
@@ -2164,6 +2229,7 @@
     }
   },
   {
+    "id": "b922d3",
     "tag": "p",
     "classList": ["dark:text-zinc-400", "mt-2", "text-sm", "text-zinc-600"],
     "style": {
@@ -2188,6 +2254,7 @@
     }
   },
   {
+    "id": "9fb817",
     "tag": "div",
     "classList": ["flex", "mt-6"],
     "style": {
@@ -2203,6 +2270,7 @@
     }
   },
   {
+    "id": "f0f8ce",
     "tag": "input",
     "classList": [
       "appearance-none",
@@ -2302,6 +2370,7 @@
     }
   },
   {
+    "id": "5f63c4",
     "tag": "button",
     "classList": [
       "active:bg-zinc-800",
@@ -2403,6 +2472,7 @@
     }
   },
   {
+    "id": "1d1043",
     "tag": "ol",
     "classList": ["mt-6", "space-y-4"],
     "style": {
@@ -2417,6 +2487,7 @@
     }
   },
   {
+    "id": "93271f",
     "tag": "li",
     "classList": ["flex", "gap-4"],
     "style": {
@@ -2433,6 +2504,7 @@
     }
   },
   {
+    "id": "7d52d3",
     "tag": "div",
     "classList": [
       "dark:bg-zinc-800",
@@ -2509,6 +2581,7 @@
     }
   },
   {
+    "id": "b8b753",
     "tag": "img",
     "classList": ["h-7", "w-7"],
     "style": {
@@ -2524,6 +2597,7 @@
     }
   },
   {
+    "id": "40a969",
     "tag": "dl",
     "classList": ["flex", "flex-auto", "flex-wrap", "gap-x-2"],
     "style": {
@@ -2550,6 +2624,7 @@
     }
   },
   {
+    "id": "cde6b6",
     "tag": "dt",
     "classList": ["sr-only"],
     "style": {
@@ -2583,6 +2658,7 @@
     }
   },
   {
+    "id": "b97473",
     "tag": "dd",
     "classList": [
       "dark:text-zinc-100",
@@ -2622,6 +2698,7 @@
     }
   },
   {
+    "id": "19b31f",
     "tag": "dd",
     "classList": ["dark:text-zinc-400", "text-xs", "text-zinc-500"],
     "style": {
@@ -2643,6 +2720,7 @@
     }
   },
   {
+    "id": "64489d",
     "tag": "dd",
     "classList": ["dark:text-zinc-500", "ml-auto", "text-xs", "text-zinc-400"],
     "style": {
@@ -2667,6 +2745,7 @@
     }
   },
   {
+    "id": "84ad33",
     "tag": "a",
     "classList": [
       "active:bg-zinc-100",
@@ -2772,6 +2851,7 @@
     }
   },
   {
+    "id": "eaab1b",
     "tag": "svg",
     "classList": [
       "dark:group-active:stroke-zinc-50",
@@ -2809,6 +2889,7 @@
     }
   },
   {
+    "id": "1476ae",
     "tag": "footer",
     "classList": ["mt-32"],
     "style": {
@@ -2822,6 +2903,7 @@
     }
   },
   {
+    "id": "09d971",
     "tag": "div",
     "classList": ["sm:px-8"],
     "style": {
@@ -2838,6 +2920,7 @@
     }
   },
   {
+    "id": "f15117",
     "tag": "div",
     "classList": [
       "border-t",
@@ -2872,6 +2955,7 @@
     }
   },
   {
+    "id": "a950cc",
     "tag": "div",
     "classList": [
       "flex",
@@ -2912,6 +2996,7 @@
     }
   },
   {
+    "id": "4dbdc6",
     "tag": "div",
     "classList": [
       "dark:text-zinc-200",
@@ -2950,6 +3035,7 @@
     }
   },
   {
+    "id": "5392fd",
     "tag": "a",
     "classList": [
       "dark:hover:text-teal-400",
@@ -2973,6 +3059,7 @@
     }
   },
   {
+    "id": "61fa36",
     "tag": "p",
     "classList": ["dark:text-zinc-500", "text-sm", "text-zinc-400"],
     "style": {

@@ -1,5 +1,6 @@
 [
   {
+    "id": "b1a82d",
     "tag": "html",
     "classList": [
       "[font-feature-settings:'ss01']",
@@ -21,6 +22,7 @@
     }
   },
   {
+    "id": "0ff6d9",
     "tag": "body",
     "classList": ["flex", "flex-col", "h-full"],
     "style": {
@@ -40,6 +42,7 @@
     }
   },
   {
+    "id": "49e3c8",
     "tag": "header",
     "classList": ["py-10"],
     "style": {
@@ -54,6 +57,7 @@
     }
   },
   {
+    "id": "c67dbe",
     "tag": "div",
     "classList": ["lg:px-8", "max-w-7xl", "mx-auto", "px-4", "sm:px-6"],
     "style": {
@@ -89,6 +93,7 @@
     }
   },
   {
+    "id": "1ad683",
     "tag": "nav",
     "classList": ["flex", "justify-between", "relative", "z-50"],
     "style": {
@@ -113,6 +118,7 @@
     }
   },
   {
+    "id": "568701",
     "tag": "div",
     "classList": ["flex", "items-center", "md:gap-x-12"],
     "style": {
@@ -136,6 +142,7 @@
     }
   },
   {
+    "id": "b7bc15",
     "tag": "svg",
     "classList": ["h-10", "w-auto"],
     "style": {
@@ -151,6 +158,7 @@
     }
   },
   {
+    "id": "f84187",
     "tag": "div",
     "classList": ["hidden", "md:flex", "md:gap-x-6"],
     "style": {
@@ -174,6 +182,7 @@
     }
   },
   {
+    "id": "2858cd",
     "tag": "a",
     "classList": [
       "hover:bg-slate-100",
@@ -221,6 +230,7 @@
     }
   },
   {
+    "id": "fdd464",
     "tag": "div",
     "classList": ["flex", "gap-x-5", "items-center", "md:gap-x-8"],
     "style": {
@@ -247,6 +257,7 @@
     }
   },
   {
+    "id": "d7a07b",
     "tag": "div",
     "classList": ["hidden", "md:block"],
     "style": {
@@ -267,6 +278,7 @@
     }
   },
   {
+    "id": "5b9866",
     "tag": "a",
     "classList": [
       "active:bg-blue-800",
@@ -344,6 +356,7 @@
     }
   },
   {
+    "id": "ddfef6",
     "tag": "span",
     "classList": ["hidden", "lg:inline"],
     "style": {
@@ -364,6 +377,7 @@
     }
   },
   {
+    "id": "9e754b",
     "tag": "div",
     "classList": ["-mr-1", "md:hidden"],
     "style": {
@@ -384,6 +398,7 @@
     }
   },
   {
+    "id": "7047f0",
     "tag": "button",
     "classList": [
       "[&:not(:focus-visible)]:focus:outline-none",
@@ -427,6 +442,7 @@
     }
   },
   {
+    "id": "2b34b2",
     "tag": "svg",
     "classList": ["h-3.5", "overflow-visible", "stroke-slate-700", "w-3.5"],
     "style": {
@@ -452,6 +468,7 @@
     }
   },
   {
+    "id": "5b882f",
     "tag": "path",
     "classList": ["origin-center", "transition"],
     "style": {
@@ -473,6 +490,7 @@
     }
   },
   {
+    "id": "e1e1ef",
     "tag": "path",
     "classList": ["opacity-0", "origin-center", "scale-90", "transition"],
     "style": {
@@ -501,6 +519,7 @@
     }
   },
   {
+    "id": "bf6e97",
     "tag": "div",
     "classList": [
       "lg:pt-32",
@@ -558,6 +577,7 @@
     }
   },
   {
+    "id": "fd8ac6",
     "tag": "h1",
     "classList": [
       "font-display",
@@ -608,6 +628,7 @@
     }
   },
   {
+    "id": "35f976",
     "tag": "span",
     "classList": ["relative", "text-blue-600", "whitespace-nowrap"],
     "style": {
@@ -629,6 +650,7 @@
     }
   },
   {
+    "id": "77a139",
     "tag": "svg",
     "classList": [
       "absolute",
@@ -666,6 +688,7 @@
     }
   },
   {
+    "id": "71e6b2",
     "tag": "span",
     "classList": ["relative"],
     "style": {
@@ -679,6 +702,7 @@
     }
   },
   {
+    "id": "164a43",
     "tag": "p",
     "classList": [
       "max-w-2xl",
@@ -718,6 +742,7 @@
     }
   },
   {
+    "id": "0790e2",
     "tag": "div",
     "classList": ["flex", "gap-x-6", "justify-center", "mt-10"],
     "style": {
@@ -742,6 +767,7 @@
     }
   },
   {
+    "id": "8339ff",
     "tag": "a",
     "classList": [
       "active:bg-slate-800",
@@ -819,6 +845,7 @@
     }
   },
   {
+    "id": "27c389",
     "tag": "a",
     "classList": [
       "active:bg-slate-100",
@@ -893,6 +920,7 @@
     }
   },
   {
+    "id": "f12340",
     "tag": "svg",
     "classList": [
       "fill-blue-600",
@@ -926,6 +954,7 @@
     }
   },
   {
+    "id": "57decf",
     "tag": "span",
     "classList": ["ml-3"],
     "style": {
@@ -939,6 +968,7 @@
     }
   },
   {
+    "id": "00cb88",
     "tag": "div",
     "classList": ["lg:mt-44", "mt-36"],
     "style": {
@@ -959,6 +989,7 @@
     }
   },
   {
+    "id": "4bb0d0",
     "tag": "p",
     "classList": ["font-display", "text-base", "text-slate-900"],
     "style": {
@@ -981,6 +1012,7 @@
     }
   },
   {
+    "id": "b3b9c3",
     "tag": "ul",
     "classList": [
       "flex",
@@ -1042,6 +1074,7 @@
     }
   },
   {
+    "id": "0c9329",
     "tag": "ul",
     "classList": [
       "flex",
@@ -1085,6 +1118,7 @@
     }
   },
   {
+    "id": "39eb4a",
     "tag": "li",
     "classList": ["flex"],
     "style": {
@@ -1098,6 +1132,7 @@
     }
   },
   {
+    "id": "fd5f52",
     "tag": "section",
     "classList": [
       "bg-blue-600",
@@ -1139,6 +1174,7 @@
     }
   },
   {
+    "id": "e78938",
     "tag": "img",
     "classList": [
       "absolute",
@@ -1177,6 +1213,7 @@
     }
   },
   {
+    "id": "358bb5",
     "tag": "div",
     "classList": [
       "lg:px-8",
@@ -1222,6 +1259,7 @@
     }
   },
   {
+    "id": "f92442",
     "tag": "div",
     "classList": ["max-w-2xl", "md:mx-auto", "md:text-center", "xl:max-w-none"],
     "style": {
@@ -1251,6 +1289,7 @@
     }
   },
   {
+    "id": "11b224",
     "tag": "h2",
     "classList": [
       "font-display",
@@ -1295,6 +1334,7 @@
     }
   },
   {
+    "id": "91dd0d",
     "tag": "p",
     "classList": ["mt-6", "text-blue-100", "text-lg", "tracking-tight"],
     "style": {
@@ -1320,6 +1360,7 @@
     }
   },
   {
+    "id": "100638",
     "tag": "div",
     "classList": [
       "gap-y-2",
@@ -1379,6 +1420,7 @@
     }
   },
   {
+    "id": "6f7839",
     "tag": "div",
     "classList": [
       "-mx-4",
@@ -1432,6 +1474,7 @@
     }
   },
   {
+    "id": "18f402",
     "tag": "div",
     "classList": [
       "flex",
@@ -1505,6 +1548,7 @@
     }
   },
   {
+    "id": "deab5e",
     "tag": "div",
     "classList": [
       "bg-white",
@@ -1576,6 +1620,7 @@
     }
   },
   {
+    "id": "8fd8be",
     "tag": "button",
     "classList": [
       "[&:not(:focus-visible)]:focus:outline-none",
@@ -1610,6 +1655,7 @@
     }
   },
   {
+    "id": "331f67",
     "tag": "span",
     "classList": [
       "absolute",
@@ -1654,6 +1700,7 @@
     }
   },
   {
+    "id": "3d343b",
     "tag": "p",
     "classList": ["hidden", "lg:block", "mt-2", "text-sm", "text-white"],
     "style": {
@@ -1684,6 +1731,7 @@
     }
   },
   {
+    "id": "198310",
     "tag": "div",
     "classList": [
       "group",
@@ -1743,6 +1791,7 @@
     }
   },
   {
+    "id": "0e108b",
     "tag": "button",
     "classList": [
       "[&:not(:focus-visible)]:focus:outline-none",
@@ -1779,6 +1828,7 @@
     }
   },
   {
+    "id": "2afdb7",
     "tag": "p",
     "classList": [
       "group-hover:text-white",
@@ -1817,6 +1867,7 @@
     }
   },
   {
+    "id": "6c1e84",
     "tag": "div",
     "classList": ["lg:col-span-7"],
     "style": {
@@ -1833,6 +1884,7 @@
     }
   },
   {
+    "id": "7ebfd9",
     "tag": "div",
     "classList": ["lg:hidden", "relative", "sm:px-6"],
     "style": {
@@ -1859,6 +1911,7 @@
     }
   },
   {
+    "id": "dd3596",
     "tag": "div",
     "classList": [
       "-inset-x-4",
@@ -1915,6 +1968,7 @@
     }
   },
   {
+    "id": "f46409",
     "tag": "p",
     "classList": [
       "max-w-2xl",
@@ -1956,6 +2010,7 @@
     }
   },
   {
+    "id": "8c1069",
     "tag": "div",
     "classList": [
       "bg-slate-50",
@@ -2017,6 +2072,7 @@
     }
   },
   {
+    "id": "74da00",
     "tag": "img",
     "classList": ["w-full"],
     "style": {
@@ -2030,6 +2086,7 @@
     }
   },
   {
+    "id": "b87d9d",
     "tag": "section",
     "classList": ["lg:pb-32", "pb-14", "pt-20", "sm:pb-20", "sm:pt-32"],
     "style": {
@@ -2061,6 +2118,7 @@
     }
   },
   {
+    "id": "435760",
     "tag": "div",
     "classList": ["max-w-2xl", "md:text-center", "mx-auto"],
     "style": {
@@ -2085,6 +2143,7 @@
     }
   },
   {
+    "id": "c5f5aa",
     "tag": "h2",
     "classList": [
       "font-display",
@@ -2122,6 +2181,7 @@
     }
   },
   {
+    "id": "e0d343",
     "tag": "p",
     "classList": ["mt-4", "text-lg", "text-slate-700", "tracking-tight"],
     "style": {
@@ -2147,6 +2207,7 @@
     }
   },
   {
+    "id": "f8b7e0",
     "tag": "div",
     "classList": [
       "-mx-4",
@@ -2209,6 +2270,7 @@
     }
   },
   {
+    "id": "2712a0",
     "tag": "div",
     "classList": ["max-w-2xl", "mx-auto"],
     "style": {
@@ -2228,6 +2290,7 @@
     }
   },
   {
+    "id": "55a771",
     "tag": "div",
     "classList": ["bg-blue-600", "rounded-lg", "w-9"],
     "style": {
@@ -2252,6 +2315,7 @@
     }
   },
   {
+    "id": "ab9b4f",
     "tag": "svg",
     "classList": ["h-9", "w-9"],
     "style": {
@@ -2267,6 +2331,7 @@
     }
   },
   {
+    "id": "25acf8",
     "tag": "h3",
     "classList": ["font-medium", "mt-6", "text-blue-600", "text-sm"],
     "style": {
@@ -2292,6 +2357,7 @@
     }
   },
   {
+    "id": "27fd1c",
     "tag": "p",
     "classList": ["font-display", "mt-2", "text-slate-900", "text-xl"],
     "style": {
@@ -2317,6 +2383,7 @@
     }
   },
   {
+    "id": "2cdb61",
     "tag": "p",
     "classList": ["mt-4", "text-slate-600", "text-sm"],
     "style": {
@@ -2339,6 +2406,7 @@
     }
   },
   {
+    "id": "5bc912",
     "tag": "div",
     "classList": ["mt-10", "pb-10", "relative"],
     "style": {
@@ -2360,6 +2428,7 @@
     }
   },
   {
+    "id": "da7973",
     "tag": "div",
     "classList": [
       "-inset-x-4",
@@ -2401,6 +2470,7 @@
     }
   },
   {
+    "id": "889019",
     "tag": "div",
     "classList": [
       "bg-white",
@@ -2454,6 +2524,7 @@
     }
   },
   {
+    "id": "30126e",
     "tag": "div",
     "classList": ["hidden", "lg:block", "lg:mt-20"],
     "style": {
@@ -2477,6 +2548,7 @@
     }
   },
   {
+    "id": "d4657b",
     "tag": "div",
     "classList": ["gap-x-8", "grid", "grid-cols-3"],
     "style": {
@@ -2498,6 +2570,7 @@
     }
   },
   {
+    "id": "515049",
     "tag": "button",
     "classList": ["[&:not(:focus-visible)]:focus:outline-none"],
     "style": {},
@@ -2507,6 +2580,7 @@
     }
   },
   {
+    "id": "d846d8",
     "tag": "span",
     "classList": ["absolute", "inset-0"],
     "style": {
@@ -2529,6 +2603,7 @@
     }
   },
   {
+    "id": "7463b9",
     "tag": "div",
     "classList": ["hover:opacity-100", "opacity-75", "relative"],
     "style": {
@@ -2548,6 +2623,7 @@
     }
   },
   {
+    "id": "c978a1",
     "tag": "div",
     "classList": ["bg-slate-500", "rounded-lg", "w-9"],
     "style": {
@@ -2572,6 +2648,7 @@
     }
   },
   {
+    "id": "9d581d",
     "tag": "h3",
     "classList": ["font-medium", "mt-6", "text-slate-600", "text-sm"],
     "style": {
@@ -2597,6 +2674,7 @@
     }
   },
   {
+    "id": "e0e217",
     "tag": "div",
     "classList": [
       "bg-slate-200",
@@ -2651,6 +2729,7 @@
     }
   },
   {
+    "id": "28da09",
     "tag": "div",
     "classList": ["-mx-5", "flex"],
     "style": {
@@ -2670,6 +2749,7 @@
     }
   },
   {
+    "id": "5e86c7",
     "tag": "div",
     "classList": [
       "[&:not(:focus-visible)]:focus:outline-none",
@@ -2703,6 +2783,7 @@
     }
   },
   {
+    "id": "59057e",
     "tag": "div",
     "classList": [
       "bg-white",
@@ -2747,6 +2828,7 @@
     }
   },
   {
+    "id": "758fb0",
     "tag": "div",
     "classList": [
       "[&:not(:focus-visible)]:focus:outline-none",
@@ -2784,6 +2866,7 @@
     }
   },
   {
+    "id": "3feb6e",
     "tag": "div",
     "classList": [
       "absolute",
@@ -2830,6 +2913,7 @@
     }
   },
   {
+    "id": "715c72",
     "tag": "section",
     "classList": ["bg-blue-600", "overflow-hidden", "py-32", "relative"],
     "style": {
@@ -2856,6 +2940,7 @@
     }
   },
   {
+    "id": "c3d3f4",
     "tag": "img",
     "classList": [
       "-translate-x-1/2",
@@ -2894,6 +2979,7 @@
     }
   },
   {
+    "id": "6a04cd",
     "tag": "div",
     "classList": ["max-w-lg", "mx-auto", "text-center"],
     "style": {
@@ -2916,6 +3002,7 @@
     }
   },
   {
+    "id": "2d175b",
     "tag": "h2",
     "classList": [
       "font-display",
@@ -2953,6 +3040,7 @@
     }
   },
   {
+    "id": "b034d8",
     "tag": "p",
     "classList": ["mt-4", "text-lg", "text-white", "tracking-tight"],
     "style": {
@@ -2978,6 +3066,7 @@
     }
   },
   {
+    "id": "336b8b",
     "tag": "a",
     "classList": [
       "active:bg-blue-200",
@@ -3055,6 +3144,7 @@
     }
   },
   {
+    "id": "dd33df",
     "tag": "section",
     "classList": ["bg-slate-50", "py-20", "sm:py-32"],
     "style": {
@@ -3080,6 +3170,7 @@
     }
   },
   {
+    "id": "74c6a6",
     "tag": "ul",
     "classList": [
       "gap-6",
@@ -3140,6 +3231,7 @@
     }
   },
   {
+    "id": "cc0f4f",
     "tag": "ul",
     "classList": ["flex", "flex-col", "gap-y-6", "sm:gap-y-8"],
     "style": {
@@ -3166,6 +3258,7 @@
     }
   },
   {
+    "id": "469711",
     "tag": "figure",
     "classList": [
       "bg-white",
@@ -3207,6 +3300,7 @@
     }
   },
   {
+    "id": "2f2571",
     "tag": "svg",
     "classList": ["absolute", "fill-slate-100", "left-6", "top-6"],
     "style": {
@@ -3231,6 +3325,7 @@
     }
   },
   {
+    "id": "5cb26a",
     "tag": "p",
     "classList": ["text-lg", "text-slate-900", "tracking-tight"],
     "style": {
@@ -3253,6 +3348,7 @@
     }
   },
   {
+    "id": "028a51",
     "tag": "figcaption",
     "classList": [
       "border-slate-100",
@@ -3301,6 +3397,7 @@
     }
   },
   {
+    "id": "4c0f76",
     "tag": "div",
     "classList": ["mt-1", "text-slate-500", "text-sm"],
     "style": {
@@ -3323,6 +3420,7 @@
     }
   },
   {
+    "id": "de3319",
     "tag": "div",
     "classList": ["bg-slate-50", "overflow-hidden", "rounded-full"],
     "style": {
@@ -3348,6 +3446,7 @@
     }
   },
   {
+    "id": "dfc913",
     "tag": "img",
     "classList": ["h-14", "object-cover", "w-14"],
     "style": {
@@ -3369,6 +3468,7 @@
     }
   },
   {
+    "id": "883417",
     "tag": "section",
     "classList": ["bg-slate-900", "py-20", "sm:py-32"],
     "style": {
@@ -3394,6 +3494,7 @@
     }
   },
   {
+    "id": "928371",
     "tag": "div",
     "classList": ["md:text-center"],
     "style": {
@@ -3409,6 +3510,7 @@
     }
   },
   {
+    "id": "b8b4ac",
     "tag": "span",
     "classList": ["relative", "whitespace-nowrap"],
     "style": {
@@ -3427,6 +3529,7 @@
     }
   },
   {
+    "id": "6536c5",
     "tag": "svg",
     "classList": [
       "absolute",
@@ -3464,6 +3567,7 @@
     }
   },
   {
+    "id": "e08e73",
     "tag": "p",
     "classList": ["mt-4", "text-lg", "text-slate-400"],
     "style": {
@@ -3486,6 +3590,7 @@
     }
   },
   {
+    "id": "c7117e",
     "tag": "div",
     "classList": [
       "-mx-4",
@@ -3557,6 +3662,7 @@
     }
   },
   {
+    "id": "74ad93",
     "tag": "section",
     "classList": [
       "flex",
@@ -3604,6 +3710,7 @@
     }
   },
   {
+    "id": "e04347",
     "tag": "h3",
     "classList": ["font-display", "mt-5", "text-lg", "text-white"],
     "style": {
@@ -3629,6 +3736,7 @@
     }
   },
   {
+    "id": "47745e",
     "tag": "p",
     "classList": ["mt-2", "text-base", "text-slate-400"],
     "style": {
@@ -3651,6 +3759,7 @@
     }
   },
   {
+    "id": "038a9f",
     "tag": "p",
     "classList": [
       "font-display",
@@ -3689,6 +3798,7 @@
     }
   },
   {
+    "id": "770767",
     "tag": "ul",
     "classList": [
       "flex",
@@ -3731,6 +3841,7 @@
     }
   },
   {
+    "id": "394739",
     "tag": "svg",
     "classList": [
       "fill-current",
@@ -3770,6 +3881,7 @@
     }
   },
   {
+    "id": "7291c9",
     "tag": "span",
     "classList": ["ml-4"],
     "style": {
@@ -3783,6 +3895,7 @@
     }
   },
   {
+    "id": "090bc3",
     "tag": "a",
     "classList": [
       "active:ring-slate-700",
@@ -3857,6 +3970,7 @@
     }
   },
   {
+    "id": "5c5236",
     "tag": "section",
     "classList": [
       "bg-blue-600",
@@ -3916,6 +4030,7 @@
     }
   },
   {
+    "id": "38812b",
     "tag": "p",
     "classList": ["mt-2", "text-base", "text-white"],
     "style": {
@@ -3938,6 +4053,7 @@
     }
   },
   {
+    "id": "c55ce6",
     "tag": "ul",
     "classList": [
       "flex",
@@ -3980,6 +4096,7 @@
     }
   },
   {
+    "id": "32615a",
     "tag": "svg",
     "classList": [
       "fill-current",
@@ -4019,6 +4136,7 @@
     }
   },
   {
+    "id": "7453c2",
     "tag": "a",
     "classList": [
       "active:bg-blue-200",
@@ -4096,6 +4214,7 @@
     }
   },
   {
+    "id": "ec493c",
     "tag": "section",
     "classList": [
       "bg-slate-50",
@@ -4134,6 +4253,7 @@
     }
   },
   {
+    "id": "a04fb7",
     "tag": "img",
     "classList": [
       "-translate-y-1/4",
@@ -4172,6 +4292,7 @@
     }
   },
   {
+    "id": "d86b3a",
     "tag": "div",
     "classList": ["lg:mx-0", "max-w-2xl", "mx-auto"],
     "style": {
@@ -4197,6 +4318,7 @@
     }
   },
   {
+    "id": "8ae2bd",
     "tag": "ul",
     "classList": [
       "gap-8",
@@ -4246,6 +4368,7 @@
     }
   },
   {
+    "id": "7ac161",
     "tag": "ul",
     "classList": ["flex", "flex-col", "gap-y-8"],
     "style": {
@@ -4267,6 +4390,7 @@
     }
   },
   {
+    "id": "efaae7",
     "tag": "h3",
     "classList": ["font-display", "leading-7", "text-lg", "text-slate-900"],
     "style": {
@@ -4291,6 +4415,7 @@
     }
   },
   {
+    "id": "c0eec9",
     "tag": "p",
     "classList": ["mt-4", "text-slate-700", "text-sm"],
     "style": {
@@ -4313,6 +4438,7 @@
     }
   },
   {
+    "id": "54ff77",
     "tag": "footer",
     "classList": ["bg-slate-50"],
     "style": {
@@ -4328,6 +4454,7 @@
     }
   },
   {
+    "id": "6846f9",
     "tag": "div",
     "classList": ["py-16"],
     "style": {
@@ -4342,6 +4469,7 @@
     }
   },
   {
+    "id": "1651f6",
     "tag": "svg",
     "classList": ["h-10", "mx-auto", "w-auto"],
     "style": {
@@ -4364,6 +4492,7 @@
     }
   },
   {
+    "id": "571b53",
     "tag": "nav",
     "classList": ["mt-10", "text-sm"],
     "style": {
@@ -4383,6 +4512,7 @@
     }
   },
   {
+    "id": "c127ad",
     "tag": "div",
     "classList": ["-my-1", "flex", "gap-x-6", "justify-center"],
     "style": {
@@ -4408,6 +4538,7 @@
     }
   },
   {
+    "id": "e4a1c6",
     "tag": "div",
     "classList": [
       "border-slate-400/10",
@@ -4459,6 +4590,7 @@
     }
   },
   {
+    "id": "91a4d5",
     "tag": "div",
     "classList": ["flex", "gap-x-6"],
     "style": {
@@ -4474,6 +4606,7 @@
     }
   },
   {
+    "id": "d69812",
     "tag": "a",
     "classList": ["group"],
     "style": {},
@@ -4483,6 +4616,7 @@
     }
   },
   {
+    "id": "acf3fb",
     "tag": "svg",
     "classList": ["fill-slate-500", "group-hover:fill-slate-700", "h-6", "w-6"],
     "style": {
@@ -4505,6 +4639,7 @@
     }
   },
   {
+    "id": "1a1931",
     "tag": "p",
     "classList": ["mt-6", "sm:mt-0", "text-slate-500", "text-sm"],
     "style": {

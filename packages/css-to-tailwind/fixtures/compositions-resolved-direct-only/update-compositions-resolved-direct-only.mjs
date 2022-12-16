@@ -2,6 +2,7 @@ import { chromium, devices } from 'playwright';
 import { promises as fs } from 'fs';
 import path from 'path';
 import { URL } from 'url';
+import crypto from 'crypto';
 
 const __dirname = new URL('.', import.meta.url).pathname;
 
@@ -114,7 +115,17 @@ const page = await context.newPage();
 const tasks = urls.map((url) => async () => {
   console.log('Processing:', url);
   await page.goto(url);
-  const result = await page.evaluate(getParsedValues);
+
+  let result = await page.evaluate(getParsedValues);
+
+  // add ids
+  result = result.map((item) => {
+    const id = crypto
+      .createHash('shake256', { outputLength: 3 })
+      .update(`${item.tag} ${item.classList.join(' ')}`)
+      .digest('hex');
+    return { id, ...item };
+  });
 
   console.log(result);
 
