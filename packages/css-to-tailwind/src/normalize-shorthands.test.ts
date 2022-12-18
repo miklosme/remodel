@@ -1,7 +1,10 @@
 import { test, expect } from 'vitest';
-import { normalizeShorthands } from './normalize-shorthands';
+import {
+  normalizeShorthands,
+  normalizeShorthandsInCSS,
+} from './normalize-shorthands';
 
-test.only('normalize-shorthands', () => {
+test('normalize-shorthands', () => {
   const touples = [
     ['margin', '1rem'],
     ['border', '1px solid red'],
@@ -45,4 +48,49 @@ test.only('normalize-shorthands', () => {
   expect(getPropertyValue('border', result)).toBeUndefined();
   expect(getPropertyValue('padding', result)).toBeUndefined();
   expect(getPropertyValue('background', result)).toBeUndefined();
+});
+
+test('normalizeShorthandsInCSS', async () => {
+  const css = `
+.foobar {
+  margin: 1rem;
+  border-left: 1px solid red;
+  padding: 1rem 2rem 3rem 4rem;
+  background: url("http://example.com/image.png");
+}
+
+@media (min-width: 640px) {
+  .foobar {
+    margin: 4rem;
+  }
+}
+`;
+
+  const result = await normalizeShorthandsInCSS(css);
+
+  expect(result).toBe(`
+.foobar {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: red;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 3rem;
+  padding-left: 4rem;
+  background-image: url(http://example.com/image.png);
+}
+
+@media (min-width: 640px) {
+  .foobar {
+    margin-top: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 4rem;
+  }
+}
+`);
 });
