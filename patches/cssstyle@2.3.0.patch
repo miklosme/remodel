@@ -1,0 +1,55 @@
+diff --git a/lib/CSSStyleDeclaration.js b/lib/CSSStyleDeclaration.js
+index bded9a440fe268489d8a00528e24c43046576629..0f1f0229702f9841a197050bb33f04bd3ff8fc89 100644
+--- a/lib/CSSStyleDeclaration.js
++++ b/lib/CSSStyleDeclaration.js
+@@ -7,7 +7,7 @@ var CSSOM = require('cssom');
+ var allProperties = require('./allProperties');
+ var allExtraProperties = require('./allExtraProperties');
+ var implementedProperties = require('./implementedProperties');
+-var { dashedToCamelCase } = require('./parsers');
++var { dashedToCamelCase, shorthandProperties } = require('./parsers');
+ var getBasicPropertyDescriptor = require('./utils/getBasicPropertyDescriptor');
+ 
+ /**
+@@ -41,6 +41,10 @@ CSSStyleDeclaration.prototype = {
+     return this._values[name].toString();
+   },
+ 
++  getNonShorthandValues: function() {
++    return Object.fromEntries(Object.entries(this._values).filter(([prop]) => !shorthandProperties.has(prop)));
++  },
++
+   /**
+    *
+    * @param {string} name
+diff --git a/lib/parsers.js b/lib/parsers.js
+index 8ecdf5e342c5e4cd5b4450499fbd036308859fec..f5c4abf48da9693186044488572725800675984e 100644
+--- a/lib/parsers.js
++++ b/lib/parsers.js
+@@ -7,6 +7,8 @@
+ const namedColors = require('./named_colors.json');
+ const { hslToRgb } = require('./utils/colorSpace');
+ 
++exports.shorthandProperties = new Set();
++
+ exports.TYPES = {
+   INTEGER: 1,
+   NUMBER: 2,
+@@ -557,6 +559,9 @@ exports.shorthandParser = function parse(v, shorthand_for) {
+ };
+ 
+ exports.shorthandSetter = function(property, shorthand_for) {
++  if (Object.keys(shorthand_for).length) {
++    exports.shorthandProperties.add(property);
++  }
+   return function(v) {
+     var obj = exports.shorthandParser(v, shorthand_for);
+     if (obj === undefined) {
+@@ -616,6 +621,7 @@ exports.shorthandGetter = function(property, shorthand_for) {
+ // if three, the first applies to the top, the second to left and right, the third bottom
+ // if four, top, right, bottom, left
+ exports.implicitSetter = function(property_before, property_after, isValid, parser) {
++  exports.shorthandProperties.add(property_before);
+   property_after = property_after || '';
+   if (property_after !== '') {
+     property_after = '-' + property_after;

@@ -25,5 +25,10 @@
   "engines": {
     "node": ">=14.0.0"
   },
-  "packageManager": "pnpm@7.16.1"
+  "packageManager": "pnpm@7.16.1",
+  "pnpm": {
+    "patchedDependencies": {
+      "cssstyle@2.3.0": "patches/cssstyle@2.3.0.patch"
+    }
+  }
 }
