@@ -35,20 +35,20 @@ function expect(received) {
   };
 }
 
-// test('css-to-tailwind: simple-001 (id: 0a3f64)', async () => {
-//   // ID: 0a3f64
+test('css-to-tailwind: simple-001 (id: 0a3f64)', async () => {
+  // ID: 0a3f64
 
-//   const tailwindResult = await cssToTailwind(`
-// .selector {
-//   padding-top: 1rem;
-//   padding-right: 1rem;
-//   padding-bottom: 1rem;
-//   padding-left: 1rem;
-// }
-// `);
+  const tailwindResult = await cssToTailwind(`
+.selector {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+`);
 
-//   expect(tailwindResult.classes).toMatchTailwindClasses('p-4');
-// });
+  expect(tailwindResult.classes).toMatchTailwindClasses('p-4');
+});
 
 test('css-to-tailwind: simple-002 (id: 7291c9)', async () => {
   // ID: 7291c9

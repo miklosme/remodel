@@ -59,7 +59,7 @@ function parseCompletion(completion) {
 
 function makeCSSToTailwindPrompt(css) {
   return `
-Convert the following CSS to Tailwind CSS classes.
+Convert the following CSS to Tailwind CSS classes. Use as few classes as possible.
 
 === CSS START ===
 .selector {
@@ -70,6 +70,18 @@ Convert the following CSS to Tailwind CSS classes.
 === CSS END ===
 === TAILWIND START ===
 h-6 ml-auto w-6
+=== TAILWIND END ===
+
+=== CSS START ===
+.selector {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+=== CSS END ===
+=== TAILWIND START ===
+p-4
 === TAILWIND END ===
 
 === CSS START ===
