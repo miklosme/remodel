@@ -1,5 +1,6 @@
-import { normalizeShorthandsInCSS } from './normalize-shorthands';
-import { Configuration, OpenAIApi } from 'openai';
+import { normalizeShorthandsInCSS } from './normalize-shorthands.mjs';
+// import { Configuration, OpenAIApi } from 'openai';
+import fetch from 'node-fetch';
 
 export default async function cssToTailwind(css) {
   if (!process.env.OPENAI_API_KEY) {
@@ -8,17 +9,38 @@ export default async function cssToTailwind(css) {
 
   const normalizedCSS = await normalizeShorthandsInCSS(css);
 
-  const configuration = new Configuration({
-    apiKey: process.env.OPENAI_API_KEY,
-  });
-  const openai = new OpenAIApi(configuration);
+  // const openai = new OpenAIApi(
+  //   new Configuration({
+  //     apiKey: process.env.OPENAI_API_KEY,
+  //   }),
+  // );
 
-  const completion = await openai.createCompletion({
-    model: 'text-davinci-002',
-    prompt: makeCSSToTailwindPrompt(normalizedCSS),
+  // const completion = await openai.createCompletion({
+  //   model: 'text-davinci-002',
+  //   prompt: makeCSSToTailwindPrompt(normalizedCSS),
+  // });
+
+  const resp = await fetch('https://api.openai.com/v1/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+    },
+    body: JSON.stringify({
+      model: 'text-davinci-003',
+      prompt: makeCSSToTailwindPrompt(normalizedCSS),
+      temperature: 0,
+      max_tokens: 256,
+      top_p: 1,
+      frequency_penalty: 0,
+      presence_penalty: 0,
+      stop: ['=== TAILWIND END ==='],
+    }),
   });
 
-  const [error, classes] = parseCompletion(completion.data.choices[0].text);
+  const completion = await resp.json();
+
+  const [error, classes] = parseCompletion(completion.choices[0].text);
 
   if (error) {
     throw error;

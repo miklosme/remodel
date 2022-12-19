@@ -27,7 +27,9 @@ function expect(received) {
       const pass = classesRecived === classesExpected;
 
       if (!pass) {
-        throw new Error('Does not pass');
+        throw new Error(
+          `Recived: ${classesRecived}\nExpected: ${classesExpected}`,
+        );
       }
     },
   };
@@ -58,7 +60,7 @@ test('css-to-tailwind: simple-002 (id: 7291c9)', async () => {
 }
 `);
 
-  expect(tailwindResult.classes).toMatchTailwindClasses('klklml-4 mt-8');
+  expect(tailwindResult.classes).toMatchTailwindClasses('ml-4 mt-8');
 });
 
 // test('css-to-tailwind: simple-003 (id: 7291c9)', async () => {
@@ -452,7 +454,8 @@ try {
     successCount++;
   }
 } catch (error) {
-  console.error(error);
+  console.error(error.message);
 }
 
+console.log();
 console.log(`Success in ${successCount}/${queue.length} tests`);
