@@ -47,9 +47,8 @@ export default async function cssToTailwind(css) {
 }
 
 function parseCompletion(completion) {
-  const END_MARKER = '=== TAILWIND END ===';
   try {
-    const result = completion.split(END_MARKER)[0].trim().split(' ');
+    const result = completion.trim().split(' ').filter(Boolean);
 
     return [null, result];
   } catch (e) {
