@@ -1,5 +1,4 @@
 import { normalizeShorthandsInCSS } from './normalize-shorthands.mjs';
-// import { Configuration, OpenAIApi } from 'openai';
 import fetch from 'node-fetch';
 
 export default async function cssToTailwind(css) {
@@ -9,17 +8,6 @@ export default async function cssToTailwind(css) {
 
   const normalizedCSS = await normalizeShorthandsInCSS(css);
 
-  // const openai = new OpenAIApi(
-  //   new Configuration({
-  //     apiKey: process.env.OPENAI_API_KEY,
-  //   }),
-  // );
-
-  // const completion = await openai.createCompletion({
-  //   model: 'text-davinci-002',
-  //   prompt: makeCSSToTailwindPrompt(normalizedCSS),
-  // });
-
   const resp = await fetch('https://api.openai.com/v1/completions', {
     method: 'POST',
     headers: {
@@ -27,7 +15,8 @@ export default async function cssToTailwind(css) {
       Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
     },
     body: JSON.stringify({
-      model: 'text-davinci-003',
+      // model: 'text-davinci-003',
+      model: 'code-davinci-002',
       prompt: makeCSSToTailwindPrompt(normalizedCSS),
       temperature: 0,
       max_tokens: 256,
@@ -39,6 +28,12 @@ export default async function cssToTailwind(css) {
   });
 
   const completion = await resp.json();
+
+  console.log('api response:', completion);
+
+  if (completion.error) {
+    throw new Error(`OpenAI API error: ${completion.error.message}`);
+  }
 
   const [error, classes] = parseCompletion(completion.choices[0].text);
 
@@ -52,8 +47,6 @@ export default async function cssToTailwind(css) {
 }
 
 function parseCompletion(completion) {
-  console.log('received completion:', completion);
-
   const END_MARKER = '=== TAILWIND END ===';
   try {
     const result = completion.split(END_MARKER)[0].trim().split(' ');
