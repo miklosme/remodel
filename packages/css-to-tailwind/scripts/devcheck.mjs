@@ -1,18 +1,17 @@
 import cssToTailwind from '../src/index.mjs';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const queue = [];
 
 function test(name, fn) {
-  queue.push(async () => {
-    try {
-      await fn();
-      console.log('✅', name);
-    } catch (error) {
-      console.log('❌', name);
-      throw error;
-    }
-  });
+  queue.push({ name, fn });
 }
+
+test.only = (name, fn) => {
+  queue.push({ name, fn, only: true });
+};
 
 function expect(received) {
   return {
@@ -34,6 +33,15 @@ function expect(received) {
     },
   };
 }
+
+const leftPad = (str, len = 2) => {
+  const padded = str
+    .split('\n')
+    .map((line) => ' '.repeat(len) + line)
+    .join('\n');
+
+  return `\n${padded}\n`;
+};
 
 test('css-to-tailwind: simple-001 (id: 0a3f64)', async () => {
   // ID: 0a3f64
@@ -447,14 +455,25 @@ test('css-to-tailwind: complex-005 (id: d109b9)', async () => {
 });
 
 let successCount = 0;
+let hasOnly = queue.some(({ only }) => only);
 
-try {
-  for (const task of queue) {
-    await task();
-    successCount++;
+for (const { name, fn, only } of queue) {
+  if (hasOnly && !only) {
+    console.log('⏭ ', name);
+    continue;
   }
-} catch (error) {
-  console.error(error.message);
+
+  try {
+    await fn();
+    successCount++;
+    console.log('✅', name);
+  } catch (error) {
+    console.log('❌', name);
+    console.error(leftPad(error.message));
+    if (error.completion) {
+      console.log('[OpenAI]', error.completion);
+    }
+  }
 }
 
 console.log();

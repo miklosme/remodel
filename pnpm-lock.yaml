@@ -145,6 +145,7 @@ importers:
     specifiers:
       cssstyle: ^2.3.0
       dlv: ^1.1.3
+      dotenv: ^16.0.3
       jest-diff: ^29.3.1
       node-fetch: ^3.3.0
       playwright: ^1.28.1
@@ -156,6 +157,7 @@ importers:
     devDependencies:
       cssstyle: 2.3.0_m6x4j2hplvusfpcp5jskkznkqa
       dlv: 1.1.3
+      dotenv: 16.0.3
       jest-diff: 29.3.1
       node-fetch: 3.3.0
       playwright: 1.28.1
@@ -2155,6 +2157,14 @@ packages:
     engines: { node: '>=6.0.0' }
     dependencies:
       esutils: 2.0.3
+
+  /dotenv/16.0.3:
+    resolution:
+      {
+        integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==,
+      }
+    engines: { node: '>=12' }
+    dev: true
 
   /electron-to-chromium/1.4.284:
     resolution:

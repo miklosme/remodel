@@ -1,4 +1,5 @@
 import { normalizeShorthandsInCSS } from './normalize-shorthands.mjs';
+import { hashCSS } from './hash.mjs';
 import fetch from 'node-fetch';
 
 export default async function cssToTailwind(css) {
@@ -7,6 +8,7 @@ export default async function cssToTailwind(css) {
   }
 
   const normalizedCSS = await normalizeShorthandsInCSS(css);
+  const hash = hashCSS(normalizedCSS);
 
   const resp = await fetch('https://api.openai.com/v1/completions', {
     method: 'POST',
@@ -29,8 +31,6 @@ export default async function cssToTailwind(css) {
 
   const completion = await resp.json();
 
-  console.log('api response:', completion);
-
   if (completion.error) {
     throw new Error(`OpenAI API error: ${completion.error.message}`);
   }
@@ -43,6 +43,7 @@ export default async function cssToTailwind(css) {
 
   return {
     classes,
+    hash,
   };
 }
 
