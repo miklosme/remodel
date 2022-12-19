@@ -470,9 +470,6 @@ for (const { name, fn, only } of queue) {
   } catch (error) {
     console.log('❌', name);
     console.error(leftPad(error.message));
-    if (error.completion) {
-      console.log('[OpenAI]', error.completion);
-    }
   }
 }
 
