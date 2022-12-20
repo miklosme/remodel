@@ -26,25 +26,30 @@ const data = content
     };
   });
 
-const result = Array.from({ length: Math.floor(data.length / 3) }, (_, i) => {
-  const index = i * 3;
-  return {
-    input: data[index + 2].processedCSS,
-    answer: data[index + 2].tailwind,
-    examples: [
-      [data[index].processedCSS, data[index].tailwind],
-      [data[index + 1].processedCSS, data[index + 1].tailwind],
-    ],
-  };
-}).map(({ input, answer, examples }) => {
+const BATCH_SIZE_PER_FILE = 20;
+
+const result = Array.from(
+  { length: Math.floor(data.length / BATCH_SIZE_PER_FILE) },
+  (_, i) => {
+    const index = i * 3;
+    return {
+      input: data[index].processedCSS,
+      answer: data[index].tailwind,
+      examples: Array.from({ length: BATCH_SIZE_PER_FILE - 1 }, (_, j) => {
+        const exampleIndex = (index + j + 1) % data.length;
+        return [data[exampleIndex].processedCSS, data[exampleIndex].tailwind];
+      }),
+    };
+  },
+).map(({ input, answer, examples }) => {
   return {
     prompt: makeCSSToTailwindPrompt(input, examples),
     completion: ` ${answer};`,
   };
 });
 
-// console.log(data.length);
-console.log(JSON.stringify(result, null, 2));
+console.log(result.length);
+// console.log(JSON.stringify(result, null, 2));
 
 // result.slice(0, 10).forEach(({ prompt, completion }) => {
 //   console.log(prompt);
