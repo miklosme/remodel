@@ -36,11 +36,11 @@ function styleDeclarationToCSS(style) {
 ${Object.entries(entries)
   .map(([property, value]) => `  ${property}: ${value};`)
   .join('\n')}
-        }`;
+  }`;
       }
 
       return `@media ${media} {
-  .${noise}} {
+  .${noise} {
 ${Object.entries(entries)
   .map(([property, value]) => `    ${property}: ${value};`)
   .join('\n')}
@@ -50,33 +50,32 @@ ${Object.entries(entries)
     .join('\n\n');
 }
 
-const filtered = data
-  .flat()
-  .map((item) => {
-    const filterClasslist = item.classList.filter(
-      (cl) => item.appliesRulesDirectly[cl],
-    );
+const onlyDirectRules = (item) => {
+  const filterClasslist = item.classList.filter(
+    (cl) => item.appliesRulesDirectly[cl],
+  );
 
-    if (filterClasslist.length === 0) {
-      return null;
-    }
+  if (filterClasslist.length === 0) {
+    return null;
+  }
 
-    return {
-      ...item,
-      classList: filterClasslist,
-    };
-  })
-  .filter(Boolean);
+  return {
+    ...item,
+    classList: filterClasslist,
+  };
+};
+
+const filtered = data.flat().map(onlyDirectRules).filter(Boolean);
 
 const processed = [];
 
 for (const item of filtered) {
-  const { classList, style, appliesRulesDirectly } = item;
-  const completion = classList.join(' ');
+  const { classList, style, css } = item;
 
   processed.push({
-    prompt: styleDeclarationToCSS(style) + '\nTW:',
-    completion: ` ${completion};`,
+    css: css.join('\n'),
+    processedCSS: styleDeclarationToCSS(style),
+    tailwind: classList.join(' '),
   });
 }
 

@@ -82,8 +82,8 @@ for (const item of filtered) {
   const { utility, css } = item;
   processed.push({
     css,
-    prompt: (await noiseSelectors(css)) + '\nTW:',
-    completion: ` ${utility};`,
+    processedCSS: await noiseSelectors(css),
+    tailwind: utility,
   });
 }
 

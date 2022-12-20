@@ -19,7 +19,8 @@ export default async function cssToTailwind(css) {
     body: JSON.stringify({
       // model: 'text-davinci-003',
       // model: 'code-davinci-002',
-      model: 'ada:ft-personal-2022-12-20-01-20-32',
+      // model: 'ada:ft-personal-2022-12-20-01-20-32',
+      model: 'text-ada-001',
       prompt: makeCSSToTailwindPrompt(normalizedCSS),
       temperature: 0,
       max_tokens: 256,
@@ -58,62 +59,14 @@ function parseCompletion(completion) {
   }
 }
 
-function makeCSSToTailwindPrompt(css) {
+export function makeCSSToTailwindPrompt(css, examples = []) {
   return `
 Convert the following CSS to Tailwind CSS classes. Use as few classes as possible.
 
-CSS:
-.selector {
-  margin-left: auto;
-  height: 1.5rem;
-  width: 1.5rem;
-}
-TW: h-6 ml-auto w-6;
-CSS:
-.selector {
-  padding-top: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-}
-TW: p-4;
+${examples.map(([css, tw]) => `CSS:\n${css}\nTW:\n${tw};`).join('\n\n')}
+
 CSS:
 ${css}
 TW:
   `.trim();
 }
-
-// function makeCSSToTailwindPrompt(css) {
-//   return `
-// Convert the following CSS to Tailwind CSS classes. Use as few classes as possible.
-
-// === CSS START ===
-// .selector {
-//   margin-left: auto;
-//   height: 1.5rem;
-//   width: 1.5rem;
-// }
-// === CSS END ===
-// === TAILWIND START ===
-// h-6 ml-auto w-6
-// === TAILWIND END ===
-
-// === CSS START ===
-// .selector {
-//   padding-top: 1rem;
-//   padding-right: 1rem;
-//   padding-bottom: 1rem;
-//   padding-left: 1rem;
-// }
-// === CSS END ===
-// === TAILWIND START ===
-// p-4
-// === TAILWIND END ===
-
-// === CSS START ===
-// ${css}
-// === CSS END ===
-// === TAILWIND START ===
-
-// `.trim();
-// }
