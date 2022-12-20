@@ -13,6 +13,20 @@ let data = await Promise.all(
   }),
 );
 
+const noise = () => {
+  const letters = 'abcdefghijklmnopqrstuvwxyz';
+  const chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
+  const length = Math.floor(Math.random() * 10) + 10;
+
+  return Array.from({ length }, (_, index) => {
+    if (index === 0) {
+      return letters[Math.floor(Math.random() * letters.length)];
+    }
+
+    return chars[Math.floor(Math.random() * chars.length)];
+  }).join('');
+};
+
 const noises = new Map();
 
 async function noiseSelectors(css) {
@@ -20,30 +34,16 @@ async function noiseSelectors(css) {
     postcssPlugin: 'noise-selectors',
     Once(root) {
       root.walkRules((rule) => {
-        const noise = () =>
-          (
-            Math.random().toString(36).substring(2, 10) +
-            Math.random().toString(36).substring(2, 10)
-          ).substring(0, ((Math.random() * 10) | 0) + 8);
-
-        parseSelector((selectors) => {
+        rule.selector = parseSelector((selectors) => {
           selectors.walkClasses((selector) => {
             const { value } = selector;
             if (!noises.has(value)) {
               noises.set(value, noise());
             }
+
+            selector.value = noises.get(value);
           });
         }).processSync(rule);
-
-        rule.selector = rule.selector.replace(/(\.[-\w]+)/g, (match) => {
-          const noise = noises.get(match.substring(1));
-
-          if (noise) {
-            return `.${noise}`;
-          }
-
-          return match;
-        });
       });
     },
   };
