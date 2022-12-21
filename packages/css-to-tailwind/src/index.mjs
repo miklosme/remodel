@@ -19,8 +19,8 @@ export default async function cssToTailwind(css) {
     body: JSON.stringify({
       // model: 'text-davinci-003',
       // model: 'code-davinci-002',
-      // model: 'ada:ft-personal-2022-12-20-01-20-32',
-      model: 'text-ada-001',
+      model: 'ada:ft-personal-2022-12-21-01-03-46',
+      // model: 'text-ada-001',
       prompt: makeCSSToTailwindPrompt(normalizedCSS),
       temperature: 0,
       max_tokens: 256,
@@ -59,12 +59,8 @@ function parseCompletion(completion) {
   }
 }
 
-export function makeCSSToTailwindPrompt(css, examples = []) {
+function makeCSSToTailwindPrompt(css, examples = []) {
   return `
-Convert the following CSS to Tailwind CSS classes. Use as few classes as possible.
-
-${examples.map(([css, tw]) => `CSS:\n${css}\nTW:\n${tw};`).join('\n\n')}
-
 CSS:
 ${css}
 TW:
