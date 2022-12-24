@@ -1,6 +1,6 @@
-.PHONY: all utilities
+.PHONY: all utilities compositions
 
-all: utilities modifiers
+all: utilities compositions
 
 utilities:
 	@echo "Generating utilities data"
