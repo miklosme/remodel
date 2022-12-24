@@ -33,7 +33,7 @@ const data = Object.keys(corePlugins).reduce((acc, pluginName) => {
 }, {});
 
 await fs.writeFile(
-  path.resolve(__dirname, '../base/base.json'),
+  path.resolve(__dirname, '../utilities/utilities.json'),
   JSON.stringify(data, null, 2),
 );
 

@@ -1,13 +1,13 @@
-.PHONY: all base
+.PHONY: all utilities
 
-all: base modifiers
+all: utilities modifiers
 
-base:
-	@echo "Generating base data"
-	@bun scripts/update-base.mjs
-	@echo "Success: base data generated"
+utilities:
+	@echo "Generating utilities data"
+	@bun scripts/update-utilities.mjs
+	@echo "Success: utilities data generated"
 
-modifiers:
-	@echo "Generating modifiers data"
-	@bun scripts/update-modifiers.mjs
-	@echo "Success: modifiers data generated"
+compositions:
+	@echo "Generating compositions data"
+	@bun scripts/update-compositions.mjs
+	@echo "Success: compositions data generated"
