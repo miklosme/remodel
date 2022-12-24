@@ -38,6 +38,7 @@ class Bag {
 const bags = new Set(
   Object.entries(data).reduce((acc, [pluginName, value]) => {
     if (value.length === 0) return acc;
+    if (pluginName.match(/color/i)) return acc;
     return [...acc, new Bag(pluginName, value)];
   }, []),
 );
@@ -60,8 +61,8 @@ while (true) {
     }
   }
 
-  // drop the less useful ones
-  if (Object.keys(composition).length >= 4) {
+  // drop the useless ones
+  if (Object.keys(composition).length) {
     result.push(composition);
   }
 
