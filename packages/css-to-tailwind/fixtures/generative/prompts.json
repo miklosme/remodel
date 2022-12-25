@@ -1,0 +1,82 @@
+[
+  {
+    "prompt": "CSS:\n.single {\n  margin-right: 3rem;\n  appearance: none;\n  --tw-saturate: saturate(0);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n\nTW:",
+    "completion": " mr-12 backdrop-filter saturate-0 appearance-none;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  width: max-content;\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto,\n    \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\",\n    \"Segoe UI Symbol\", \"Noto Color Emoji\";\n  letter-spacing: -0.025em;\n  text-decoration-thickness: 2px;\n}\n\nTW:",
+    "completion": " w-max decoration-2 font-sans tracking-tight;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  cursor: nwse-resize;\n  list-style-type: disc;\n  place-items: center;\n  text-transform: uppercase;\n  letter-spacing: 0.025em;\n  text-underline-offset: 1px;\n  --tw-backdrop-hue-rotate: hue-rotate(30deg);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n\nTW:",
+    "completion": " underline-offset-1 tracking-wide uppercase cursor-nwse-resize backdrop-hue-rotate-30 place-items-center list-disc;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  grid-column: span 11 / span 11;\n  margin-left: 0px;\n  margin-right: 0px;\n  min-height: 100vh;\n  --tw-skew-x: 1deg;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n  scroll-snap-stop: normal;\n  --tw-border-opacity: 0;\n  --tw-sepia: sepia(0);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n  --tw-backdrop-blur: blur(40px);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n\nTW:",
+    "completion": " skew-x-1 snap-normal min-h-screen col-span-11 backdrop-blur-2xl mx-0\\.5 sepia-0 border-opacity-0;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  max-width: 48rem;\n  flex: 0 1 auto;\n  --tw-rotate: 1deg;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n  justify-content: space-between;\n  stroke: #57534e;\n  --tw-content: none;\n  content: var(--tw-content);\n}\n\nTW:",
+    "completion": " justify-between stroke-stone-600 max-w-3xl rotate-1 content-none flex-initial;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  grid-row: span 3 / span 3;\n  flex: 1 1 auto;\n  align-self: center;\n  --tw-grayscale: grayscale(100%);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n  --tw-hue-rotate: hue-rotate(15deg);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n  backdrop-filter: none;\n  transition-property: box-shadow;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n\nTW:",
+    "completion": " flex-auto grayscale self-center hue-rotate-15 row-span-3 backdrop-filter-none transition-shadow;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n  display: table-column;\n  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;\n  grid-auto-columns: max-content;\n  place-items: baseline;\n  --tw-saturate: saturate(2);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n\n@keyframes ping {\n  .single {\n    transform: scale(2);\n    opacity: 0;\n  }\n}\n\nTW:",
+    "completion": " animate-ping sr-only table-column place-items-baseline saturate-200 auto-cols-max;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  position: absolute;\n  cursor: n-resize;\n  grid-template-rows: repeat(1, minmax(0, 1fr));\n  --tw-bg-opacity: 0.95;\n  object-fit: cover;\n}\n\nTW:",
+    "completion": " bg-opacity-95 grid-rows-1 absolute cursor-n-resize object-cover;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  position: static;\n  width: auto;\n  height: auto;\n  padding: 0;\n  margin: 0;\n  overflow: visible;\n  clip: auto;\n  white-space: normal;\n  float: left;\n  place-content: space-between;\n  background-attachment: local;\n  --tw-ordinal: ordinal;\n  font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure)\n    var(--tw-numeric-spacing) var(--tw-numeric-fraction);\n  outline-style: dotted;\n}\n\nTW:",
+    "completion": " bg-local not-sr-only ordinal float-left place-content-between outline-dotted;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  order: 6;\n  margin-bottom: 9rem;\n  height: 15rem;\n  break-before: column;\n  place-content: center;\n}\n\nTW:",
+    "completion": " place-content-center h-60 mb-36 order-6 break-before-column;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  order: 9999;\n  margin-top: 0.75rem;\n  margin-bottom: 0.75rem;\n  --tw-translate-y: 2.25rem;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n  cursor: progress;\n  border-style: dashed;\n  border-style: hidden;\n  stroke: #15803d;\n}\n\nTW:",
+    "completion": " translate-y-9 divide-dashed border-hidden my-3\\.5 cursor-progress stroke-green-700 order-last;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  height: fit-content;\n  justify-content: flex-start;\n  border-style: dotted;\n  -webkit-font-smoothing: auto;\n  -moz-osx-font-smoothing: auto;\n  --tw-backdrop-grayscale: grayscale(100%);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n\nTW:",
+    "completion": " backdrop-grayscale justify-start subpixel-antialiased h-fit border-dotted;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  clear: none;\n  flex: none;\n  place-self: center;\n  text-overflow: ellipsis;\n  --tw-ring-inset: inset;\n  --tw-saturate: saturate(1);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n\nTW:",
+    "completion": " text-ellipsis saturate-100 ring-inset flex-none place-self-center clear-none;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  list-style-position: outside;\n  columns: 28rem;\n  overflow-wrap: normal;\n  word-break: normal;\n  object-position: left top;\n  will-change: auto;\n}\n\nTW:",
+    "completion": " list-outside object-left-top columns-md will-change-auto break-normal;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  --tw-border-spacing-x: 5rem;\n  --tw-border-spacing-y: 5rem;\n  border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);\n  cursor: no-drop;\n  justify-items: center;\n  scroll-behavior: smooth;\n  border-style: dashed;\n  --tw-numeric-spacing: tabular-nums;\n  font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure)\n    var(--tw-numeric-spacing) var(--tw-numeric-fraction);\n}\n\nTW:",
+    "completion": " scroll-smooth justify-items-center border-spacing-20 cursor-no-drop tabular-nums border-dashed;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  flex-basis: 0.25rem;\n  grid-auto-flow: column;\n  flex-direction: row-reverse;\n  font-style: italic;\n  outline-style: double;\n  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);\n}\n\nTW:",
+    "completion": " italic grid-flow-col outline-double flex-row-reverse basis-1\\/2 ease-in;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-snap-stop: always;\n  justify-items: stretch;\n  scroll-behavior: auto;\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width)\n    var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width))\n    var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n\nTW:",
+    "completion": " ring-2 justify-items-stretch scroll-auto snap-always;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  place-items: start;\n  border-style: solid;\n  border-top-width: 2px;\n  transition-property: none;\n}\n\nTW:",
+    "completion": " place-items-start transition-none divide-solid border-t-2;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  right: 0.75rem;\n  grid-template-columns: repeat(3, minmax(0, 1fr));\n  grid-template-rows: repeat(4, minmax(0, 1fr));\n  --tw-space-y-reverse: 0;\n  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(2rem * var(--tw-space-y-reverse));\n  background-clip: border-box;\n  stroke-width: 1;\n  text-transform: capitalize;\n  --tw-invert: invert(0);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n\nTW:",
+    "completion": " capitalize space-y-8 grid-cols-3 grid-rows-4 invert-0 right-3\\/4 bg-clip-border stroke-1;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  grid-row: span 2 / span 2;\n  grid-row-end: 4;\n  --tw-ring-opacity: 0.75;\n  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);\n}\n\nTW:",
+    "completion": " ease-out row-end-4 ring-opacity-75 row-span-2;"
+  }
+]

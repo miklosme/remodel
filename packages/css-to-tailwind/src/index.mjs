@@ -59,7 +59,7 @@ function parseCompletion(completion) {
   }
 }
 
-function makeCSSToTailwindPrompt(css, examples = []) {
+export function makeCSSToTailwindPrompt(css, examples = []) {
   return `
 CSS:
 ${css}

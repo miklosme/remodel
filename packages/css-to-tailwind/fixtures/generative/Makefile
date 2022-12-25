@@ -1,6 +1,6 @@
 .POHNY: all clean
 
-all: clean compositions-resolved.json
+all: clean prompts.json
 
 clean:
 	@echo "Cleaning up"
@@ -23,3 +23,8 @@ compositions-resolved.json: compositions.json
 	@echo "Generating resolved compositions data"
 	@node scripts/compositions-resolved.mjs
 	@echo "Success: resolved compositions data generated"
+
+prompts.json: compositions-resolved.json
+	@echo "Generating prompts data"
+	@node scripts/prompts.mjs
+	@echo "Success: prompts data generated"
