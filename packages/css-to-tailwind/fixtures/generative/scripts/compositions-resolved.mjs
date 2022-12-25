@@ -127,11 +127,21 @@ const data = JSON.parse(
 const result = await Promise.all(
   data.slice(0, 20).map(async (composition) => {
     const classList = Object.values(composition);
+    const resolved = await Object.entries(composition).reduce(
+      async (prev, [key, value]) => {
+        const acc = await prev;
+        return {
+          ...acc,
+          [key]: await resolveTailwindUtilities(value),
+        };
+      },
+      Promise.resolve({}),
+    );
     const resolvedCSS = await resolveTailwindUtilities(classList.join(' '));
     const css = await mergeCSSRules(resolvedCSS);
     return {
       classList,
-      resolvedCSS,
+      resolved,
       css,
     };
   }),

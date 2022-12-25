@@ -10,21 +10,21 @@ clean:
 	@echo "Success: cleaned up"
 
 utilities.json:
-	@echo "Generating utilities data"
 	@bun scripts/utilities.mjs
-	@echo "Success: utilities data generated"
+	@echo "Success: utilities.json"
 
 compositions.json: utilities.json
-	@echo "Generating compositions data"
 	@bun scripts/compositions.mjs
-	@echo "Success: compositions data generated"
+	@echo "Success: compositions.json"
 
 compositions-resolved.json: compositions.json
-	@echo "Generating resolved compositions data"
 	@node scripts/compositions-resolved.mjs
-	@echo "Success: resolved compositions data generated"
+	@echo "Success: compositions-resolved.json"
+
+compositions-filtered.json: compositions-resolved.json
+	@node scripts/compositions-filtered.mjs
+	@echo "Success: compositions-filtered.json"
 
 prompts.json: compositions-resolved.json
-	@echo "Generating prompts data"
 	@node scripts/prompts.mjs
-	@echo "Success: prompts data generated"
+	@echo "Success: prompts.json"
