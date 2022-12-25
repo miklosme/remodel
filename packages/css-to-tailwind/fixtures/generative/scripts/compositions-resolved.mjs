@@ -1,8 +1,6 @@
 import path from 'path';
 import { promises as fs } from 'fs';
-import postcss from 'postcss';
 import postcssParse from 'postcss-safe-parser';
-import tailwindcss from 'tailwindcss';
 import prettier from 'prettier';
 import { URL } from 'url';
 
@@ -13,24 +11,6 @@ function formatCSS(css) {
     parser: 'css',
     printWidth: 100,
   });
-}
-
-async function resolveTailwindUtilities(utilities) {
-  const config = {
-    content: [{ raw: `<div class="${utilities}"></div>` }],
-    theme: {},
-    corePlugins: { preflight: false },
-  };
-
-  const input = `
-    @tailwind utilities;
-  `;
-
-  const { css } = await postcss(tailwindcss(config)).process(input, {
-    from: 'tailwind.css',
-  });
-
-  return formatCSS(css);
 }
 
 function mergeCSSRules(css) {
@@ -120,32 +100,33 @@ function mergeCSSRules(css) {
   return formatCSS(result);
 }
 
-const data = JSON.parse(
+const compositions = JSON.parse(
   await fs.readFile(path.resolve(__dirname, '../compositions.json'), 'utf8'),
 );
 
-const result = await Promise.all(
-  data.slice(0, 20).map(async (composition) => {
-    const classList = Object.values(composition);
-    const resolved = await Object.entries(composition).reduce(
-      async (prev, [key, value]) => {
-        const acc = await prev;
-        return {
-          ...acc,
-          [key]: await resolveTailwindUtilities(value),
-        };
-      },
-      Promise.resolve({}),
-    );
-    const resolvedCSS = await resolveTailwindUtilities(classList.join(' '));
-    const css = await mergeCSSRules(resolvedCSS);
-    return {
-      classList,
-      resolved,
-      css,
-    };
-  }),
+const resolvedUtilities = JSON.parse(
+  await fs.readFile(
+    path.resolve(__dirname, '../utilities-resolved.json'),
+    'utf8',
+  ),
 );
+
+const result = compositions.map((composition) => {
+  const classList = Object.values(composition);
+  const resolved = Object.entries(composition).reduce((acc, [key, value]) => {
+    return {
+      ...acc,
+      [key]: resolvedUtilities[value],
+    };
+  }, {});
+  const resolvedCSS = Object.values(resolved).join('\n');
+  const css = mergeCSSRules(resolvedCSS);
+  return {
+    classList,
+    resolved,
+    css,
+  };
+});
 
 await fs.writeFile(
   path.resolve(__dirname, '../compositions-resolved.json'),

@@ -5,7 +5,10 @@ import { URL } from 'url';
 const __dirname = new URL('.', import.meta.url).pathname;
 
 const data = JSON.parse(
-  await fs.readFile(path.resolve(__dirname, '../utilities.json'), 'utf8'),
+  await fs.readFile(
+    path.resolve(__dirname, '../utilities-filtered.json'),
+    'utf8',
+  ),
 );
 
 function choose(arr) {
