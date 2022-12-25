@@ -11,15 +11,15 @@ clean:
 
 utilities.json:
 	@echo "Generating utilities data"
-	@bun scripts/update-utilities.mjs
+	@bun scripts/utilities.mjs
 	@echo "Success: utilities data generated"
 
 compositions.json: utilities.json
 	@echo "Generating compositions data"
-	@bun scripts/update-compositions.mjs
+	@bun scripts/compositions.mjs
 	@echo "Success: compositions data generated"
 
 compositions-resolved.json: compositions.json
 	@echo "Generating resolved compositions data"
-	@node scripts/update-compositions-resolved.mjs
+	@node scripts/compositions-resolved.mjs
 	@echo "Success: resolved compositions data generated"
