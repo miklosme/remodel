@@ -121,10 +121,7 @@ function mergeCSSRules(css) {
 }
 
 const data = JSON.parse(
-  await fs.readFile(
-    path.resolve(__dirname, '../compositions/compositions.json'),
-    'utf8',
-  ),
+  await fs.readFile(path.resolve(__dirname, '../compositions.json'), 'utf8'),
 );
 
 const result = await Promise.all(
@@ -141,6 +138,6 @@ const result = await Promise.all(
 );
 
 await fs.writeFile(
-  path.resolve(__dirname, '../compositions/compositions-resolved.json'),
+  path.resolve(__dirname, '../compositions-resolved.json'),
   JSON.stringify(result, null, 2),
 );
