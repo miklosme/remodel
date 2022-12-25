@@ -1,204 +1,219 @@
 [
   {
     "classList": [
-      "line-through",
-      "backdrop-blur-md",
-      "justify-items-start",
-      "rotate-90",
-      "inset-x-px"
+      "row-start-3",
+      "self-stretch",
+      "break-after-page",
+      "ring-opacity-25",
+      "scale-x-150"
     ],
-    "css": ".inset-x-px {\n  left: 1px;\n  right: 1px;\n}\n.rotate-90 {\n  --tw-rotate: 90deg;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n.justify-items-start {\n  justify-items: start;\n}\n.line-through {\n  text-decoration-line: line-through;\n}\n.backdrop-blur-md {\n  --tw-backdrop-blur: blur(12px);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n"
+    "resolvedCSS": ".row-start-3 {\n  grid-row-start: 3;\n}\n.scale-x-150 {\n  --tw-scale-x: 1.5;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n.break-after-page {\n  break-after: page;\n}\n.self-stretch {\n  align-self: stretch;\n}\n.ring-opacity-25 {\n  --tw-ring-opacity: 0.25;\n}\n",
+    "css": ".single {\n  grid-row-start: 3;\n  --tw-scale-x: 1.5;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n  break-after: page;\n  align-self: stretch;\n  --tw-ring-opacity: 0.25;\n}\n"
   },
   {
     "classList": [
-      "overflow-auto",
-      "snap-start",
-      "list-none",
-      "outline-none",
-      "scale-x-95",
-      "resize-x",
-      "outline-offset-2",
-      "brightness-50"
-    ],
-    "css": ".scale-x-95 {\n  --tw-scale-x: 0.95;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n.resize-x {\n  resize: horizontal;\n}\n.snap-start {\n  scroll-snap-align: start;\n}\n.list-none {\n  list-style-type: none;\n}\n.overflow-auto {\n  overflow: auto;\n}\n.outline-none {\n  outline: 2px solid transparent;\n  outline-offset: 2px;\n}\n.outline-offset-2 {\n  outline-offset: 2px;\n}\n.brightness-50 {\n  --tw-brightness: brightness(0.5);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n"
-  },
-  {
-    "classList": ["grow", "divide-opacity-30", "outline-2", "auto-cols-max"],
-    "css": ".grow {\n  flex-grow: 1;\n}\n.auto-cols-max {\n  grid-auto-columns: max-content;\n}\n.divide-opacity-30 > :not([hidden]) ~ :not([hidden]) {\n  --tw-divide-opacity: 0.3;\n}\n.outline-2 {\n  outline-width: 2px;\n}\n"
-  },
-  {
-    "classList": [
-      "opacity-80",
-      "place-self-auto",
-      "bg-scroll",
-      "uppercase",
-      "appearance-none",
-      "backdrop-saturate-150"
-    ],
-    "css": ".appearance-none {\n  appearance: none;\n}\n.place-self-auto {\n  place-self: auto;\n}\n.bg-scroll {\n  background-attachment: scroll;\n}\n.uppercase {\n  text-transform: uppercase;\n}\n.opacity-80 {\n  opacity: 0.8;\n}\n.backdrop-saturate-150 {\n  --tw-backdrop-saturate: saturate(1.5);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n"
-  },
-  {
-    "classList": [
-      "ring-opacity-10",
-      "auto-rows-auto",
-      "col-span-2",
-      "z-30",
-      "contrast-200"
-    ],
-    "css": ".z-30 {\n  z-index: 30;\n}\n.col-span-2 {\n  grid-column: span 2 / span 2;\n}\n.auto-rows-auto {\n  grid-auto-rows: auto;\n}\n.ring-opacity-10 {\n  --tw-ring-opacity: 0.1;\n}\n.contrast-200 {\n  --tw-contrast: contrast(2);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n"
-  },
-  {
-    "classList": [
-      "snap-align-none",
-      "break-after-left",
-      "col-span-11",
-      "content-none",
-      "flow-root",
-      "divide-x-2"
-    ],
-    "css": ".col-span-11 {\n  grid-column: span 11 / span 11;\n}\n.flow-root {\n  display: flow-root;\n}\n.snap-align-none {\n  scroll-snap-align: none;\n}\n.break-after-left {\n  break-after: left;\n}\n.divide-x-2 > :not([hidden]) ~ :not([hidden]) {\n  --tw-divide-x-reverse: 0;\n  border-right-width: calc(2px * var(--tw-divide-x-reverse));\n  border-left-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));\n}\n.content-none {\n  --tw-content: none;\n  content: var(--tw-content);\n}\n"
-  },
-  {
-    "classList": ["clear-left", "tracking-widest", "invert", "touch-none"],
-    "css": ".clear-left {\n  clear: left;\n}\n.touch-none {\n  touch-action: none;\n}\n.tracking-widest {\n  letter-spacing: 0.1em;\n}\n.invert {\n  --tw-invert: invert(100%);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n"
-  },
-  {
-    "classList": [
-      "float-right",
-      "min-w-fit",
-      "scroll-px-72",
-      "text-9xl",
-      "skew-x-0",
-      "divide-solid",
-      "opacity-25"
-    ],
-    "css": ".float-right {\n  float: right;\n}\n.min-w-fit {\n  min-width: fit-content;\n}\n.skew-x-0 {\n  --tw-skew-x: 0deg;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n.scroll-px-72 {\n  scroll-padding-left: 18rem;\n  scroll-padding-right: 18rem;\n}\n.divide-solid > :not([hidden]) ~ :not([hidden]) {\n  border-style: solid;\n}\n.text-9xl {\n  font-size: 8rem;\n  line-height: 1;\n}\n.opacity-25 {\n  opacity: 0.25;\n}\n"
-  },
-  {
-    "classList": [
-      "mix-blend-screen",
-      "underline-offset-2",
-      "will-change-contents",
-      "rotate-6",
-      "border-separate",
-      "justify-around"
-    ],
-    "css": ".border-separate {\n  border-collapse: separate;\n}\n.rotate-6 {\n  --tw-rotate: 6deg;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n.justify-around {\n  justify-content: space-around;\n}\n.underline-offset-2 {\n  text-underline-offset: 2px;\n}\n.mix-blend-screen {\n  mix-blend-mode: screen;\n}\n.will-change-contents {\n  will-change: contents;\n}\n"
-  },
-  {
-    "classList": [
-      "table-fixed",
-      "underline-offset-0",
-      "brightness-0",
-      "list-decimal",
-      "grayscale-0",
-      "grid-cols-7",
-      "break-inside-avoid-column",
-      "h-2\\.5"
-    ],
-    "css": ".h-2 {\n  height: 0.5rem;\n}\n.table-fixed {\n  table-layout: fixed;\n}\n.list-decimal {\n  list-style-type: decimal;\n}\n.break-inside-avoid-column {\n  break-inside: avoid-column;\n}\n.grid-cols-7 {\n  grid-template-columns: repeat(7, minmax(0, 1fr));\n}\n.underline-offset-0 {\n  text-underline-offset: 0px;\n}\n.brightness-0 {\n  --tw-brightness: brightness(0);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n.grayscale-0 {\n  --tw-grayscale: grayscale(0);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n"
-  },
-  {
-    "classList": [
-      "rounded-b-xl",
+      "grid-flow-row-dense",
+      "not-italic",
+      "break-before-avoid",
+      "indent-64",
+      "backdrop-opacity-10",
+      "justify-end",
       "antialiased",
-      "whitespace-pre-line",
-      "backdrop-hue-rotate-15",
-      "blur-md",
-      "align-super"
+      "break-keep"
     ],
-    "css": ".whitespace-pre-line {\n  white-space: pre-line;\n}\n.rounded-b-xl {\n  border-bottom-right-radius: 0.75rem;\n  border-bottom-left-radius: 0.75rem;\n}\n.align-super {\n  vertical-align: super;\n}\n.antialiased {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.blur-md {\n  --tw-blur: blur(12px);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n.backdrop-hue-rotate-15 {\n  --tw-backdrop-hue-rotate: hue-rotate(15deg);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n"
+    "resolvedCSS": ".break-before-avoid {\n  break-before: avoid;\n}\n.grid-flow-row-dense {\n  grid-auto-flow: row dense;\n}\n.justify-end {\n  justify-content: flex-end;\n}\n.break-keep {\n  word-break: keep-all;\n}\n.indent-64 {\n  text-indent: 16rem;\n}\n.not-italic {\n  font-style: normal;\n}\n.antialiased {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.backdrop-opacity-10 {\n  --tw-backdrop-opacity: opacity(0.1);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n",
+    "css": ".single {\n  break-before: avoid;\n  grid-auto-flow: row dense;\n  justify-content: flex-end;\n  word-break: keep-all;\n  text-indent: 16rem;\n  font-style: normal;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  --tw-backdrop-opacity: opacity(0.1);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n"
   },
   {
     "classList": [
-      "skew-x-3",
-      "overscroll-x-none",
-      "auto-rows-max",
-      "hue-rotate-15",
-      "grid-rows-5",
-      "stroke-violet-500",
-      "border-opacity-90"
+      "justify-evenly",
+      "align-bottom",
+      "slashed-zero",
+      "grayscale-0",
+      "resize",
+      "space-y-reverse"
     ],
-    "css": ".skew-x-3 {\n  --tw-skew-x: 3deg;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n.auto-rows-max {\n  grid-auto-rows: max-content;\n}\n.grid-rows-5 {\n  grid-template-rows: repeat(5, minmax(0, 1fr));\n}\n.overscroll-x-none {\n  overscroll-behavior-x: none;\n}\n.border-opacity-90 {\n  --tw-border-opacity: 0.9;\n}\n.stroke-violet-500 {\n  stroke: #8b5cf6;\n}\n.hue-rotate-15 {\n  --tw-hue-rotate: hue-rotate(15deg);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n"
+    "resolvedCSS": ".resize {\n  resize: both;\n}\n.justify-evenly {\n  justify-content: space-evenly;\n}\n.space-y-reverse > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-y-reverse: 1;\n}\n.align-bottom {\n  vertical-align: bottom;\n}\n.slashed-zero {\n  --tw-slashed-zero: slashed-zero;\n  font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure)\n    var(--tw-numeric-spacing) var(--tw-numeric-fraction);\n}\n.grayscale-0 {\n  --tw-grayscale: grayscale(0);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n",
+    "css": ".single {\n  resize: both;\n  justify-content: space-evenly;\n  --tw-space-y-reverse: 1;\n  vertical-align: bottom;\n  --tw-slashed-zero: slashed-zero;\n  font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure)\n    var(--tw-numeric-spacing) var(--tw-numeric-fraction);\n  --tw-grayscale: grayscale(0);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n"
+  },
+  {
+    "classList": ["grid-cols-3", "animate-ping", "duration-100", "ring-inset"],
+    "resolvedCSS": "@keyframes ping {\n  75%,\n  100% {\n    transform: scale(2);\n    opacity: 0;\n  }\n}\n.animate-ping {\n  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;\n}\n.grid-cols-3 {\n  grid-template-columns: repeat(3, minmax(0, 1fr));\n}\n.ring-inset {\n  --tw-ring-inset: inset;\n}\n.duration-100 {\n  transition-duration: 100ms;\n}\n",
+    "css": "@keyframes ping {\n  .single {\n    transform: scale(2);\n    opacity: 0;\n  }\n}\n\n.single {\n  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;\n  grid-template-columns: repeat(3, minmax(0, 1fr));\n  --tw-ring-inset: inset;\n  transition-duration: 100ms;\n}\n"
   },
   {
     "classList": [
-      "stroke-red-600",
-      "text-ellipsis",
-      "transform-cpu",
-      "bg-blend-soft-light",
-      "row-end-1"
+      "decoration-solid",
+      "border-collapse",
+      "object-contain",
+      "backdrop-saturate-100",
+      "isolate",
+      "row-start-auto",
+      "backdrop-contrast-200"
     ],
-    "css": ".row-end-1 {\n  grid-row-end: 1;\n}\n.transform-cpu {\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n.text-ellipsis {\n  text-overflow: ellipsis;\n}\n.stroke-red-600 {\n  stroke: #dc2626;\n}\n.bg-blend-soft-light {\n  background-blend-mode: soft-light;\n}\n"
+    "resolvedCSS": ".isolate {\n  isolation: isolate;\n}\n.row-start-auto {\n  grid-row-start: auto;\n}\n.border-collapse {\n  border-collapse: collapse;\n}\n.object-contain {\n  object-fit: contain;\n}\n.decoration-solid {\n  text-decoration-style: solid;\n}\n.backdrop-contrast-200 {\n  --tw-backdrop-contrast: contrast(2);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n.backdrop-saturate-100 {\n  --tw-backdrop-saturate: saturate(1);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n",
+    "css": ".single {\n  isolation: isolate;\n  grid-row-start: auto;\n  border-collapse: collapse;\n  object-fit: contain;\n  text-decoration-style: solid;\n  --tw-backdrop-contrast: contrast(2);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n  --tw-backdrop-saturate: saturate(1);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n"
   },
   {
     "classList": [
-      "brightness-95",
-      "list-outside",
-      "backdrop-opacity-75",
-      "outline-8",
-      "sticky",
-      "break-inside-avoid",
-      "col-end-12"
+      "max-h-96",
+      "backdrop-brightness-75",
+      "auto-cols-auto",
+      "flex-1",
+      "break-before-all",
+      "content-end",
+      "bg-blend-exclusion"
     ],
-    "css": ".sticky {\n  position: sticky;\n}\n.col-end-12 {\n  grid-column-end: 12;\n}\n.list-outside {\n  list-style-position: outside;\n}\n.break-inside-avoid {\n  break-inside: avoid;\n}\n.outline-8 {\n  outline-width: 8px;\n}\n.brightness-95 {\n  --tw-brightness: brightness(0.95);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n.backdrop-opacity-75 {\n  --tw-backdrop-opacity: opacity(0.75);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n"
-  },
-  {
-    "classList": ["invert-0", "border-l-4", "auto-rows-fr", "clear-both"],
-    "css": ".clear-both {\n  clear: both;\n}\n.auto-rows-fr {\n  grid-auto-rows: minmax(0, 1fr);\n}\n.border-l-4 {\n  border-left-width: 4px;\n}\n.invert-0 {\n  --tw-invert: invert(0);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n"
+    "resolvedCSS": ".max-h-96 {\n  max-height: 24rem;\n}\n.flex-1 {\n  flex: 1 1 0%;\n}\n.break-before-all {\n  break-before: all;\n}\n.auto-cols-auto {\n  grid-auto-columns: auto;\n}\n.content-end {\n  align-content: flex-end;\n}\n.bg-blend-exclusion {\n  background-blend-mode: exclusion;\n}\n.backdrop-brightness-75 {\n  --tw-backdrop-brightness: brightness(0.75);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n",
+    "css": ".single {\n  max-height: 24rem;\n  flex: 1 1 0%;\n  break-before: all;\n  grid-auto-columns: auto;\n  align-content: flex-end;\n  background-blend-mode: exclusion;\n  --tw-backdrop-brightness: brightness(0.75);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n"
   },
   {
     "classList": [
-      "justify-self-auto",
-      "grayscale",
-      "items-stretch",
-      "clear-none",
-      "col-span-5",
-      "outline-1",
-      "bg-right-top",
-      "auto-cols-min"
+      "columns-7xl",
+      "bg-contain",
+      "drop-shadow-xl",
+      "align-text-bottom",
+      "justify-self-start",
+      "mix-blend-difference",
+      "backdrop-brightness-105"
     ],
-    "css": ".col-span-5 {\n  grid-column: span 5 / span 5;\n}\n.clear-none {\n  clear: none;\n}\n.auto-cols-min {\n  grid-auto-columns: min-content;\n}\n.items-stretch {\n  align-items: stretch;\n}\n.justify-self-auto {\n  justify-self: auto;\n}\n.bg-right-top {\n  background-position: right top;\n}\n.outline-1 {\n  outline-width: 1px;\n}\n.grayscale {\n  --tw-grayscale: grayscale(100%);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n"
+    "resolvedCSS": ".columns-7xl {\n  columns: 80rem;\n}\n.justify-self-start {\n  justify-self: start;\n}\n.bg-contain {\n  background-size: contain;\n}\n.align-text-bottom {\n  vertical-align: text-bottom;\n}\n.mix-blend-difference {\n  mix-blend-mode: difference;\n}\n.drop-shadow-xl {\n  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))\n    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n.backdrop-brightness-105 {\n  --tw-backdrop-brightness: brightness(1.05);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n",
+    "css": ".single {\n  columns: 80rem;\n  justify-self: start;\n  background-size: contain;\n  vertical-align: text-bottom;\n  mix-blend-mode: difference;\n  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))\n    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n  --tw-backdrop-brightness: brightness(1.05);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n"
   },
   {
     "classList": [
-      "ring-offset-1",
-      "invisible",
-      "place-items-end",
-      "normal-case",
-      "cursor-no-drop"
+      "indent-56",
+      "h-72",
+      "uppercase",
+      "animate-spin",
+      "ring-offset-0",
+      "gap-x-40",
+      "flex-grow",
+      "bg-origin-content"
     ],
-    "css": ".invisible {\n  visibility: hidden;\n}\n.cursor-no-drop {\n  cursor: no-drop;\n}\n.place-items-end {\n  place-items: end;\n}\n.normal-case {\n  text-transform: none;\n}\n.ring-offset-1 {\n  --tw-ring-offset-width: 1px;\n}\n"
+    "resolvedCSS": ".h-72 {\n  height: 18rem;\n}\n.flex-grow {\n  flex-grow: 1;\n}\n@keyframes spin {\n  to {\n    transform: rotate(360deg);\n  }\n}\n.animate-spin {\n  animation: spin 1s linear infinite;\n}\n.gap-x-40 {\n  column-gap: 10rem;\n}\n.bg-origin-content {\n  background-origin: content-box;\n}\n.indent-56 {\n  text-indent: 14rem;\n}\n.uppercase {\n  text-transform: uppercase;\n}\n.ring-offset-0 {\n  --tw-ring-offset-width: 0px;\n}\n",
+    "css": ".single {\n  height: 18rem;\n  flex-grow: 1;\n  animation: spin 1s linear infinite;\n  column-gap: 10rem;\n  background-origin: content-box;\n  text-indent: 14rem;\n  text-transform: uppercase;\n  --tw-ring-offset-width: 0px;\n}\n\n@keyframes spin {\n  .single {\n    transform: rotate(360deg);\n  }\n}\n"
   },
   {
     "classList": [
-      "not-sr-only",
-      "fixed",
+      "appearance-none",
+      "isolation-auto",
+      "snap-y",
+      "ring-offset-4"
+    ],
+    "resolvedCSS": ".isolation-auto {\n  isolation: auto;\n}\n.snap-y {\n  scroll-snap-type: y var(--tw-scroll-snap-strictness);\n}\n.appearance-none {\n  appearance: none;\n}\n.ring-offset-4 {\n  --tw-ring-offset-width: 4px;\n}\n",
+    "css": ".single {\n  isolation: auto;\n  scroll-snap-type: y var(--tw-scroll-snap-strictness);\n  appearance: none;\n  --tw-ring-offset-width: 4px;\n}\n"
+  },
+  {
+    "classList": [
+      "transition-transform",
+      "will-change-transform",
+      "snap-both",
+      "subpixel-antialiased",
+      "object-cover",
+      "break-inside-avoid-column",
+      "backdrop-contrast-75",
+      "object-right"
+    ],
+    "resolvedCSS": ".snap-both {\n  scroll-snap-type: both var(--tw-scroll-snap-strictness);\n}\n.break-inside-avoid-column {\n  break-inside: avoid-column;\n}\n.object-cover {\n  object-fit: cover;\n}\n.object-right {\n  object-position: right;\n}\n.subpixel-antialiased {\n  -webkit-font-smoothing: auto;\n  -moz-osx-font-smoothing: auto;\n}\n.backdrop-contrast-75 {\n  --tw-backdrop-contrast: contrast(0.75);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n.transition-transform {\n  transition-property: transform;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.will-change-transform {\n  will-change: transform;\n}\n",
+    "css": ".single {\n  scroll-snap-type: both var(--tw-scroll-snap-strictness);\n  break-inside: avoid-column;\n  object-fit: cover;\n  object-position: right;\n  -webkit-font-smoothing: auto;\n  -moz-osx-font-smoothing: auto;\n  --tw-backdrop-contrast: contrast(0.75);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n  transition-property: transform;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n  will-change: transform;\n}\n"
+  },
+  {
+    "classList": [
+      "delay-75",
+      "text-opacity-30",
+      "invert",
+      "opacity-25",
+      "select-text"
+    ],
+    "resolvedCSS": ".select-text {\n  user-select: text;\n}\n.text-opacity-30 {\n  --tw-text-opacity: 0.3;\n}\n.opacity-25 {\n  opacity: 0.25;\n}\n.invert {\n  --tw-invert: invert(100%);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n.delay-75 {\n  transition-delay: 75ms;\n}\n",
+    "css": ".single {\n  user-select: text;\n  --tw-text-opacity: 0.3;\n  opacity: 0.25;\n  --tw-invert: invert(100%);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n  transition-delay: 75ms;\n}\n"
+  },
+  {
+    "classList": [
+      "justify-around",
+      "shrink",
+      "backdrop-saturate-50",
+      "bg-opacity-80"
+    ],
+    "resolvedCSS": ".shrink {\n  flex-shrink: 1;\n}\n.justify-around {\n  justify-content: space-around;\n}\n.bg-opacity-80 {\n  --tw-bg-opacity: 0.8;\n}\n.backdrop-saturate-50 {\n  --tw-backdrop-saturate: saturate(0.5);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n",
+    "css": ".single {\n  flex-shrink: 1;\n  justify-content: space-around;\n  --tw-bg-opacity: 0.8;\n  --tw-backdrop-saturate: saturate(0.5);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n"
+  },
+  {
+    "classList": ["outline", "backdrop-filter", "delay-500", "indent-1\\.5"],
+    "resolvedCSS": ".indent-1 {\n  text-indent: 0.25rem;\n}\n.outline {\n  outline-style: solid;\n}\n.backdrop-filter {\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n.delay-500 {\n  transition-delay: 500ms;\n}\n",
+    "css": ".single {\n  text-indent: 0.25rem;\n  outline-style: solid;\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n  transition-delay: 500ms;\n}\n"
+  },
+  {
+    "classList": [
+      "backdrop-contrast-125",
+      "text-opacity-50",
+      "row-end-3",
+      "grid-rows-2",
+      "box-content"
+    ],
+    "resolvedCSS": ".row-end-3 {\n  grid-row-end: 3;\n}\n.box-content {\n  box-sizing: content-box;\n}\n.grid-rows-2 {\n  grid-template-rows: repeat(2, minmax(0, 1fr));\n}\n.text-opacity-50 {\n  --tw-text-opacity: 0.5;\n}\n.backdrop-contrast-125 {\n  --tw-backdrop-contrast: contrast(1.25);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n",
+    "css": ".single {\n  grid-row-end: 3;\n  box-sizing: content-box;\n  grid-template-rows: repeat(2, minmax(0, 1fr));\n  --tw-text-opacity: 0.5;\n  --tw-backdrop-contrast: contrast(1.25);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n"
+  },
+  {
+    "classList": [
+      "bg-opacity-10",
+      "break-before-auto",
+      "flex-col",
+      "justify-start",
+      "basis-32",
+      "place-items-center"
+    ],
+    "resolvedCSS": ".basis-32 {\n  flex-basis: 8rem;\n}\n.break-before-auto {\n  break-before: auto;\n}\n.flex-col {\n  flex-direction: column;\n}\n.place-items-center {\n  place-items: center;\n}\n.justify-start {\n  justify-content: flex-start;\n}\n.bg-opacity-10 {\n  --tw-bg-opacity: 0.1;\n}\n",
+    "css": ".single {\n  flex-basis: 8rem;\n  break-before: auto;\n  flex-direction: column;\n  place-items: center;\n  justify-content: flex-start;\n  --tw-bg-opacity: 0.1;\n}\n"
+  },
+  {
+    "classList": [
+      "outline-dotted",
+      "bg-gradient-to-tr",
+      "box-border",
+      "snap-none",
+      "col-auto",
+      "outline-1"
+    ],
+    "resolvedCSS": ".col-auto {\n  grid-column: auto;\n}\n.box-border {\n  box-sizing: border-box;\n}\n.snap-none {\n  scroll-snap-type: none;\n}\n.bg-gradient-to-tr {\n  background-image: linear-gradient(to top right, var(--tw-gradient-stops));\n}\n.outline-dotted {\n  outline-style: dotted;\n}\n.outline-1 {\n  outline-width: 1px;\n}\n",
+    "css": ".single {\n  grid-column: auto;\n  box-sizing: border-box;\n  scroll-snap-type: none;\n  background-image: linear-gradient(to top right, var(--tw-gradient-stops));\n  outline-style: dotted;\n  outline-width: 1px;\n}\n"
+  },
+  {
+    "classList": [
+      "snap-proximity",
+      "text-start",
       "scroll-smooth",
-      "stroke-2",
-      "content-around",
-      "h-1\\/6",
-      "columns-3xl"
+      "bg-gradient-to-t",
+      "origin-top",
+      "row-start-1",
+      "list-decimal"
     ],
-    "css": ".not-sr-only {\n  position: static;\n  width: auto;\n  height: auto;\n  padding: 0;\n  margin: 0;\n  overflow: visible;\n  clip: auto;\n  white-space: normal;\n}\n.fixed {\n  position: fixed;\n}\n.h-1 {\n  height: 0.25rem;\n}\n.columns-3xl {\n  columns: 48rem;\n}\n.content-around {\n  align-content: space-around;\n}\n.scroll-smooth {\n  scroll-behavior: smooth;\n}\n.stroke-2 {\n  stroke-width: 2;\n}\n"
+    "resolvedCSS": ".row-start-1 {\n  grid-row-start: 1;\n}\n.origin-top {\n  transform-origin: top;\n}\n.snap-proximity {\n  --tw-scroll-snap-strictness: proximity;\n}\n.list-decimal {\n  list-style-type: decimal;\n}\n.scroll-smooth {\n  scroll-behavior: smooth;\n}\n.bg-gradient-to-t {\n  background-image: linear-gradient(to top, var(--tw-gradient-stops));\n}\n.text-start {\n  text-align: start;\n}\n",
+    "css": ".single {\n  grid-row-start: 1;\n  transform-origin: top;\n  --tw-scroll-snap-strictness: proximity;\n  list-style-type: decimal;\n  scroll-behavior: smooth;\n  background-image: linear-gradient(to top, var(--tw-gradient-stops));\n  text-align: start;\n}\n"
+  },
+  {
+    "classList": ["grayscale", "transform-cpu", "flex-wrap", "auto-rows-max"],
+    "resolvedCSS": ".transform-cpu {\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n}\n.auto-rows-max {\n  grid-auto-rows: max-content;\n}\n.flex-wrap {\n  flex-wrap: wrap;\n}\n.grayscale {\n  --tw-grayscale: grayscale(100%);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n",
+    "css": ".single {\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))\n    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))\n    scaleY(var(--tw-scale-y));\n  grid-auto-rows: max-content;\n  flex-wrap: wrap;\n  --tw-grayscale: grayscale(100%);\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)\n    var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n"
   },
   {
     "classList": [
-      "pointer-events-none",
-      "inset-x-20",
-      "bg-none",
-      "list-inside"
+      "place-self-end",
+      "visible",
+      "break-after-avoid-page",
+      "ease-out",
+      "resize-y",
+      "outline-dashed",
+      "ring-opacity-70",
+      "auto-rows-auto"
     ],
-    "css": ".pointer-events-none {\n  pointer-events: none;\n}\n.inset-x-20 {\n  left: 5rem;\n  right: 5rem;\n}\n.list-inside {\n  list-style-position: inside;\n}\n.bg-none {\n  background-image: none;\n}\n"
+    "resolvedCSS": ".visible {\n  visibility: visible;\n}\n.resize-y {\n  resize: vertical;\n}\n.break-after-avoid-page {\n  break-after: avoid-page;\n}\n.auto-rows-auto {\n  grid-auto-rows: auto;\n}\n.place-self-end {\n  place-self: end;\n}\n.outline-dashed {\n  outline-style: dashed;\n}\n.ring-opacity-70 {\n  --tw-ring-opacity: 0.7;\n}\n.ease-out {\n  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);\n}\n",
+    "css": ".single {\n  visibility: visible;\n  resize: vertical;\n  break-after: avoid-page;\n  grid-auto-rows: auto;\n  place-self: end;\n  outline-style: dashed;\n  --tw-ring-opacity: 0.7;\n  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);\n}\n"
   },
   {
-    "classList": [
-      "sr-only",
-      "select-text",
-      "backdrop-invert",
-      "font-sans",
-      "right-6"
-    ],
-    "css": ".sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n}\n.right-6 {\n  right: 1.5rem;\n}\n.select-text {\n  user-select: text;\n}\n.font-sans {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto,\n    \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\",\n    \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n.backdrop-invert {\n  --tw-backdrop-invert: invert(100%);\n  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)\n    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)\n    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\n"
+    "classList": ["table-auto", "bg-repeat-y", "transform-none", "columns-5xl"],
+    "resolvedCSS": ".table-auto {\n  table-layout: auto;\n}\n.transform-none {\n  transform: none;\n}\n.columns-5xl {\n  columns: 64rem;\n}\n.bg-repeat-y {\n  background-repeat: repeat-y;\n}\n",
+    "css": ".single {\n  table-layout: auto;\n  transform: none;\n  columns: 64rem;\n  background-repeat: repeat-y;\n}\n"
   }
 ]
