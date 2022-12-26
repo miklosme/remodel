@@ -153,8 +153,48 @@ function makeExample(resolved) {
 
 function makePrompt() {
   const example = makeExample(choose(compositionresolved).resolved);
+  const cssData = example.map(([declaration, utility], index) => [
+    index + 1,
+    declaration,
+  ]);
+  console.log('Sent data:');
+  console.log(cssData);
   return `
 Rewrite the following CSS declarations to Tailwind CSS classes.
+
+CSS:
+1. position: relative;
+2. padding: 1.6rem 4.6rem;
+3. margin-bottom: 1.6rem;
+4. border: 1px solid #c53030;
+5. color: #fff;
+6. border-radius: 0.2rem;
+7. width: 100%;
+TW:
+1. relative;
+2. py-6 px-20;
+3. mb-6;
+4. border-red-700 border-solid border;
+5. text-white;
+6. rounded;
+7. w-full;
+
+CSS:
+1. width: 100%;
+2. display: flex;
+3. justify-content: space-between;
+4. align-items: center;
+5. flex-direction: row-reverse;
+6. padding: 2.4rem 3rem;
+7. border-top: 1px solid #fff5f5;
+TW:
+1. w-full;
+2. flex;
+3. justify-between;
+4. items-center;
+5. flex-row-reverse;
+6. pt-12 px-20;
+7. border-t border-solid border-red-700;
 
 CSS:
 ${example
@@ -173,25 +213,26 @@ function parseCompletion(completion) {
       .split(';')
       .map((str) => str.trim())
       .filter(Boolean)
-      .map((str) => str.trim().split('. ').filter(Boolean));
+      .map((str) => str.trim().split('. ').filter(Boolean))
+      .map(([index, value]) => [Number(index), value]);
 
-    const result = Object.fromEntries(declarations);
-
-    return [null, result];
+    return [null, declarations];
   } catch (e) {
     return [e, null];
   }
 }
 
-let [prompt, completion] = makePrompt().split('TW:');
-prompt += 'TW:';
+const splittedPrompt = makePrompt().split('TW:');
+const completion = splittedPrompt.pop();
+const prompt = splittedPrompt.join('TW:') + 'TW:';
 
 // console.log({ prompt, completion });
 
 const [err, result] = parseCompletion(completion);
 
-console.log(prompt);
+// console.log(prompt);
 
+console.log('Recived: (fake)');
 console.log(result);
 
 async function validateCompletion(completion) {
@@ -200,11 +241,19 @@ async function validateCompletion(completion) {
     throw err;
   }
 
-  const css = await resolveTailwindUtilities(Object.values(result).join(' '));
+  const resolved = await Promise.all(
+    result.map(async ([index, value]) => {
+      const css = await resolveTailwindUtilities(value);
+      return [index, css];
+    }),
+  );
 
-  const mergedCSS = mergeCSSRules(css);
+  console.log('Resolved:');
+  console.log(resolved);
 
-  console.log(mergedCSS);
+  // const mergedCSS = mergeCSSRules(css);
+
+  // console.log(mergedCSS);
 }
 
 await validateCompletion(completion);
