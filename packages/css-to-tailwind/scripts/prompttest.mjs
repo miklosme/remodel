@@ -137,28 +137,31 @@ const compositionresolved = JSON.parse(
   ),
 );
 
-function makeExample(resolved) {
-  return Object.entries(resolved).flatMap(([utility, css]) => {
-    const results = [];
-    const ast = parseCSS(css);
-    ast.walkDecls((decl) => {
-      results.push([`${decl.prop}: ${decl.value}`, utility]);
-    });
-    if (results.length === 0) {
-      throw new Error('No declarations in utility');
-    }
-    return results;
+function entriesFromCSS(css) {
+  const ast = parseCSS(css);
+  const results = [];
+  ast.walkDecls((decl) => {
+    results.push([decl.prop, decl.value]);
   });
+  return results;
+}
+
+function makeExample(resolved) {
+  const css = Object.entries(resolved).map(([utility, css], index) => {
+    return [index + 1, entriesFromCSS(css)];
+  });
+
+  const tw = Object.entries(resolved).map(([utility, css], index) => {
+    return [index + 1, utility];
+  });
+
+  return { css, tw };
 }
 
 function makePrompt() {
-  const example = makeExample(choose(compositionresolved).resolved);
-  const cssData = example.map(([declaration, utility], index) => [
-    index + 1,
-    declaration,
-  ]);
+  const { css, tw } = makeExample(choose(compositionresolved).resolved);
   console.log('Sent data:');
-  console.log(cssData);
+  console.log(JSON.stringify(css, null, 2));
   return `
 Rewrite the following CSS declarations to Tailwind CSS classes.
 
@@ -197,13 +200,15 @@ TW:
 7. border-t border-solid border-red-700;
 
 CSS:
-${example
-  .map(([declaration, utility], index) => `${index + 1}. ${declaration};`)
+${css
+  .map(([indexKey, declarations]) => {
+    return `${indexKey}. ${declarations
+      .map(([prop, val]) => `${prop}: ${val}`)
+      .join('; ')};`;
+  })
   .join('\n')}
 TW:
-${example
-  .map(([declaration, utility], index) => `${index + 1}. ${utility};`)
-  .join('\n')}
+${tw.map(([indexKey, utility]) => `${indexKey}. ${utility};`).join('\n')}
 `;
 }
 
@@ -214,7 +219,7 @@ function parseCompletion(completion) {
       .map((str) => str.trim())
       .filter(Boolean)
       .map((str) => str.trim().split('. ').filter(Boolean))
-      .map(([index, value]) => [Number(index), value]);
+      .map(([index, value]) => [Number(index), value.split(' ')]);
 
     return [null, declarations];
   } catch (e) {
@@ -243,13 +248,13 @@ async function validateCompletion(completion) {
 
   const resolved = await Promise.all(
     result.map(async ([index, value]) => {
-      const css = await resolveTailwindUtilities(value);
-      return [index, css];
+      const css = await resolveTailwindUtilities(value.join(' '));
+      return [index, entriesFromCSS(css)];
     }),
   );
 
   console.log('Resolved:');
-  console.log(resolved);
+  console.log(JSON.stringify(resolved, null, 2));
 
   // const mergedCSS = mergeCSSRules(css);
 
