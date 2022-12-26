@@ -6,6 +6,7 @@ import postcss from 'postcss';
 import postcssParse from 'postcss-safe-parser';
 import tailwindcss from 'tailwindcss';
 import prettier from 'prettier';
+import util from 'util';
 import { URL } from 'url';
 
 const __dirname = new URL('.', import.meta.url).pathname;
@@ -161,7 +162,7 @@ function makeExample(resolved) {
 function makePrompt() {
   const { css, tw } = makeExample(choose(compositionresolved).resolved);
   console.log('Sent data:');
-  console.log(JSON.stringify(css, null, 2));
+  console.log(util.inspect(css, { depth: null, colors: true }));
   return `
 Rewrite the following CSS declarations to Tailwind CSS classes.
 
@@ -254,7 +255,7 @@ async function validateCompletion(completion) {
   );
 
   console.log('Resolved:');
-  console.log(JSON.stringify(resolved, null, 2));
+  console.log(util.inspect(resolved, { depth: null, colors: true }));
 
   // const mergedCSS = mergeCSSRules(css);
 
