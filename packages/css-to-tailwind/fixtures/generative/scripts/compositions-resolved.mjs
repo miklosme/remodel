@@ -113,10 +113,10 @@ const resolvedUtilities = JSON.parse(
 
 const result = compositions.map((composition) => {
   const classList = Object.values(composition);
-  const resolved = Object.entries(composition).reduce((acc, [key, value]) => {
+  const resolved = classList.reduce((acc, utility) => {
     return {
       ...acc,
-      [key]: resolvedUtilities[value],
+      [utility]: resolvedUtilities[utility],
     };
   }, {});
   const resolvedCSS = Object.values(resolved).join('\n');
