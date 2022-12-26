@@ -42,7 +42,7 @@ Rewrite the following CSS declarations to Tailwind CSS classes.
 
 CSS:
 ${example
-  .map(([declaration], index) => `${index + 1}. ${declaration};`)
+  .map(([declaration, utility], index) => `${index + 1}. ${declaration};`)
   .join('\n')}
 TW:
 ${example
@@ -51,4 +51,25 @@ ${example
 `;
 }
 
-console.log(makePrompt());
+function parseCompletion(completion) {
+  try {
+    const declarations = completion
+      .split(';')
+      .map((str) => str.trim())
+      .filter(Boolean)
+      .map((str) => str.trim().split('. ').filter(Boolean));
+
+    const result = Object.fromEntries(declarations);
+
+    return [null, result];
+  } catch (e) {
+    return [e, null];
+  }
+}
+
+let [prompt, completion] = makePrompt().split('TW:');
+prompt += 'TW:';
+
+console.log({ prompt, completion });
+
+console.log(parseCompletion(completion));
