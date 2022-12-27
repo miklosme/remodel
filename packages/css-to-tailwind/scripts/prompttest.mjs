@@ -7,6 +7,7 @@ import postcssParse from 'postcss-safe-parser';
 import tailwindcss from 'tailwindcss';
 import prettier from 'prettier';
 import util from 'util';
+import deepEqual from 'deep-equal';
 import { URL } from 'url';
 
 const __dirname = new URL('.', import.meta.url).pathname;
@@ -161,9 +162,7 @@ function makeExample(resolved) {
 
 function makePrompt() {
   const { css, tw } = makeExample(choose(compositionresolved).resolved);
-  console.log('Sent data:');
-  console.log(util.inspect(css, { depth: null, colors: true }));
-  return `
+  const prompt = `
 Rewrite the following CSS declarations to Tailwind CSS classes.
 
 CSS:
@@ -211,6 +210,8 @@ ${css
 TW:
 ${tw.map(([indexKey, utility]) => `${indexKey}. ${utility};`).join('\n')}
 `;
+
+  return { prompt, css, tw };
 }
 
 function parseCompletion(completion) {
@@ -228,18 +229,18 @@ function parseCompletion(completion) {
   }
 }
 
-const splittedPrompt = makePrompt().split('TW:');
+const promptHolder = makePrompt();
+const splittedPrompt = promptHolder.prompt.split('TW:');
 const completion = splittedPrompt.pop();
 const prompt = splittedPrompt.join('TW:') + 'TW:';
+
+// console.log(prompt);
 
 // console.log({ prompt, completion });
 
 const [err, result] = parseCompletion(completion);
 
 // console.log(prompt);
-
-console.log('Recived: (fake)');
-console.log(result);
 
 async function validateCompletion(completion) {
   const [err, result] = parseCompletion(completion);
@@ -254,8 +255,23 @@ async function validateCompletion(completion) {
     }),
   );
 
-  console.log('Resolved:');
-  console.log(util.inspect(resolved, { depth: null, colors: true }));
+  const isEqual = deepEqual(resolved, promptHolder.css);
+
+  if (!isEqual) {
+    console.log('Sent data:');
+    console.log(util.inspect(promptHolder.css, { depth: null, colors: true }));
+
+    console.log('Recived: (fake)');
+    console.log(result);
+
+    console.log('Resolved:');
+    console.log(util.inspect(resolved, { depth: null, colors: true }));
+
+    throw new Error('Sent and recived are not equal');
+  }
+
+  console.log('Recived: (fake)');
+  console.log(result.flatMap(([_, utilities]) => utilities));
 
   // const mergedCSS = mergeCSSRules(css);
 
