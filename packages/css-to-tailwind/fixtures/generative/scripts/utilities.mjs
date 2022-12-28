@@ -1,4 +1,6 @@
 import dlv from 'dlv';
+import path from 'path';
+import { promises as fs } from 'fs';
 import pkg from 'tailwindcss/lib/corePlugins.js';
 const { corePlugins } = pkg;
 
@@ -9,15 +11,31 @@ const defaultConfig = require('tailwindcss/resolveConfig')(
 // NOTE
 // this script only runs with Bun
 
-Object.keys(corePlugins).forEach((pluginName) => {
+const data = Object.keys(corePlugins).reduce((acc, pluginName) => {
   let plugin = corePlugins[pluginName];
 
-  let utilities = getUtilities(plugin);
+  const utilities = Object.keys(getUtilities(plugin))
+    .map((key) => {
+      if (key[0] !== '.') {
+        throw new Error(`Key "${key}" is not a class`);
+      }
 
-  console.log(`// ${pluginName}`);
-  console.log(Object.keys(utilities));
-  console.log();
-});
+      return key.slice(1);
+    })
+    .map((key) => key.split(' ')[0]) // nested selectors seems like leaking in here
+    .map((key) => key.split('::')[0]) // same with pseudo-classes
+    .sort();
+
+  return {
+    ...acc,
+    [pluginName]: utilities,
+  };
+}, {});
+
+await fs.writeFile(
+  path.resolve(__dirname, '../utilities.json'),
+  JSON.stringify(data, null, 2),
+);
 
 //////
 //////

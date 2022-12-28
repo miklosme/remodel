@@ -1,22 +1,47 @@
-import { assert, expect, test } from 'vitest';
-import cssToTailwind from './';
+import cssToTailwind from '../src/index.mjs';
+import dotenv from 'dotenv';
 
-expect.extend({
-  toMatchTailwindClasses(received, argument) {
-    let classesRecived = Array.from(new Set(received)).sort().join(' ');
-    let classesExpected = Array.from(
-      new Set(argument.split(' ').filter(Boolean)),
-    )
-      .sort()
-      .join(' ');
+dotenv.config();
 
-    const pass = classesRecived === classesExpected;
+const queue = [];
 
-    const message = pass ? () => 'It passes' : () => 'Does not pass';
+function test(name, fn) {
+  queue.push({ name, fn });
+}
 
-    return { expected: argument, actual: classesRecived, message, pass };
-  },
-});
+test.only = (name, fn) => {
+  queue.push({ name, fn, only: true });
+};
+
+function expect(received) {
+  return {
+    toMatchTailwindClasses(argument) {
+      let classesRecived = Array.from(new Set(received)).sort().join(' ');
+      let classesExpected = Array.from(
+        new Set(argument.split(' ').filter(Boolean)),
+      )
+        .sort()
+        .join(' ');
+
+      const pass = classesRecived === classesExpected;
+
+      if (!pass) {
+        throw new Error(
+          `Recived: ${classesRecived}\nExpected: ${classesExpected}`,
+        );
+      }
+    },
+  };
+}
+
+const leftPad = (str, len = 2) => {
+  const padded = str
+    .split('\n')
+    .map((line) => ' '.repeat(len) + line)
+    .join('\n');
+
+  return `\n${padded}\n`;
+};
 
 test('css-to-tailwind: simple-001 (id: 0a3f64)', async () => {
   // ID: 0a3f64
@@ -39,10 +64,11 @@ test('css-to-tailwind: simple-002 (id: 7291c9)', async () => {
   const tailwindResult = await cssToTailwind(`
 .selector {
   margin-left: 1rem;
+  margin-top: 2rem;
 }
 `);
 
-  expect(tailwindResult.classes).toMatchTailwindClasses('ml-4');
+  expect(tailwindResult.classes).toMatchTailwindClasses('ml-4 mt-8');
 });
 
 test('css-to-tailwind: simple-003 (id: 7291c9)', async () => {
@@ -427,3 +453,25 @@ test('css-to-tailwind: complex-005 (id: d109b9)', async () => {
     'flex-auto lg:max-w-none lg:pl-8 lg:pr-0 max-w-2xl min-w-0 px-4 py-16 xl:px-16',
   );
 });
+
+let successCount = 0;
+let hasOnly = queue.some(({ only }) => only);
+
+for (const { name, fn, only } of queue) {
+  if (hasOnly && !only) {
+    console.log('⏭ ', name);
+    continue;
+  }
+
+  try {
+    await fn();
+    successCount++;
+    console.log('✅', name);
+  } catch (error) {
+    console.log('❌', name);
+    console.error(leftPad(error.message));
+  }
+}
+
+console.log();
+console.log(`Success in ${successCount}/${queue.length} tests`);

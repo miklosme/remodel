@@ -1,0 +1,1998 @@
+[
+  {
+    "prompt": "CSS:\n.single {\n  max-width: 24rem;\n  white-space: nowrap;\n  outline-offset: 8px;\n  flex-direction: row;\n}\n\nTW:",
+    "completion": " max-w-sm whitespace-nowrap outline-offset-8 flex-row;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-left: 13rem;\n  mix-blend-mode: color;\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n  border-radius: 9999px;\n  clear: right;\n  scroll-snap-stop: always;\n}\n\nTW:",
+    "completion": " pl-52 mix-blend-color sr-only rounded-full clear-right snap-always;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  white-space: pre-wrap;\n  grid-column-start: auto;\n  transform: none;\n  font-style: normal;\n}\n\nTW:",
+    "completion": " whitespace-pre-wrap col-start-auto transform-none not-italic;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  align-content: space-between;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  row-gap: 5rem;\n  isolation: isolate;\n  appearance: none;\n}\n\nTW:",
+    "completion": " content-between ease-in-out gap-y-20 isolate appearance-none;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  font-family: ui-serif, Georgia, Cambria, \"Times New Roman\", Times, serif;\n  flex: none;\n  visibility: visible;\n  grid-column: span 2 / span 2;\n  object-fit: contain;\n}\n\nTW:",
+    "completion": " font-serif flex-none visible col-span-2 object-contain;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  column-gap: 6rem;\n  min-width: 0px;\n  place-content: space-evenly;\n  transition-duration: 300ms;\n  align-content: flex-end;\n}\n\nTW:",
+    "completion": " gap-x-24 min-w-0 place-content-evenly duration-300 content-end;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  text-overflow: ellipsis;\n  text-align: end;\n  justify-items: center;\n  pointer-events: none;\n  background-image: none;\n  margin-bottom: 5rem;\n}\n\nTW:",
+    "completion": " overflow-ellipsis text-end justify-items-center pointer-events-none bg-none mb-20;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-left: 2rem;\n  scroll-padding-right: 2rem;\n  grid-column-end: 10;\n  place-self: start;\n  vertical-align: bottom;\n  list-style-type: disc;\n}\n\nTW:",
+    "completion": " scroll-px-8 col-end-10 place-self-start align-bottom list-disc;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  width: 0.25rem;\n  align-self: center;\n  grid-column-end: 13;\n  transition-property: box-shadow;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n\nTW:",
+    "completion": " w-1\\.5 self-center col-end-13 transition-shadow;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  white-space: normal;\n  flex-direction: column;\n  background-blend-mode: difference;\n  opacity: 0.95;\n  columns: auto;\n  z-index: 30;\n}\n\nTW:",
+    "completion": " whitespace-normal flex-col bg-blend-difference opacity-95 columns-auto z-30;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  text-decoration-style: dotted;\n  outline-style: solid;\n  scroll-margin-top: 10rem;\n  transition-duration: 100ms;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  -webkit-font-smoothing: auto;\n  -moz-osx-font-smoothing: auto;\n}\n\nTW:",
+    "completion": " decoration-dotted outline scroll-mt-40 duration-100 truncate subpixel-antialiased;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  justify-items: end;\n  scroll-behavior: smooth;\n  grid-column-start: 11;\n  align-self: flex-start;\n  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);\n}\n\nTW:",
+    "completion": " justify-items-end scroll-smooth col-start-11 self-start ease-out;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  max-width: 768px;\n  object-position: center;\n  scroll-snap-type: none;\n  flex-direction: column-reverse;\n  height: min-content;\n  grid-column: span 6 / span 6;\n}\n\nTW:",
+    "completion": " max-w-screen-md object-center snap-none flex-col-reverse h-min col-span-6;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  clear: left;\n  border-style: hidden;\n  text-align: center;\n  flex-direction: row-reverse;\n  scroll-margin-top: 0.75rem;\n  text-decoration-thickness: 0px;\n  break-before: left;\n  position: static;\n}\n\nTW:",
+    "completion": " clear-left border-hidden text-center flex-row-reverse scroll-mt-3 decoration-0 break-before-left static;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  grid-template-rows: none;\n  justify-self: center;\n  font-style: italic;\n  border-style: dashed;\n}\n\nTW:",
+    "completion": " grid-rows-none justify-self-center italic border-dashed;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  flex: 0 1 auto;\n  max-width: 48rem;\n  white-space: pre-line;\n  aspect-ratio: 1 / 1;\n  box-sizing: content-box;\n  transform-origin: bottom;\n  align-content: space-around;\n}\n\nTW:",
+    "completion": " flex-initial max-w-3xl whitespace-pre-line aspect-square box-content origin-bottom content-around;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  grid-row-start: 4;\n  scroll-margin-left: 2.75rem;\n  scroll-margin-right: 2.75rem;\n  border-style: dotted;\n}\n\nTW:",
+    "completion": " antialiased row-start-4 scroll-mx-11 border-dotted;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  order: 0;\n  resize: none;\n  will-change: scroll-position;\n  aspect-ratio: 16 / 9;\n  break-before: page;\n  pointer-events: auto;\n  grid-auto-rows: minmax(0, 1fr);\n}\n\nTW:",
+    "completion": " order-none resize-none will-change-scroll aspect-video break-before-page pointer-events-auto auto-rows-fr;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  touch-action: auto;\n  text-transform: capitalize;\n  background-repeat: repeat-y;\n  flex-grow: 1;\n  justify-self: end;\n  flex-basis: 0px;\n  background-origin: border-box;\n}\n\nTW:",
+    "completion": " touch-auto capitalize bg-repeat-y flex-grow justify-self-end basis-0\\.5 bg-origin-border;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  table-layout: fixed;\n  transition-delay: 700ms;\n  text-underline-offset: 4px;\n  stroke-width: 0;\n  scroll-behavior: auto;\n  max-height: 5rem;\n}\n\nTW:",
+    "completion": " table-fixed delay-700 underline-offset-4 stroke-0 scroll-auto max-h-20;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  overflow: hidden;\n  align-items: stretch;\n  stroke-width: 1;\n  touch-action: manipulation;\n  outline-style: double;\n  grid-template-columns: none;\n  clear: both;\n  grid-row: span 3 / span 3;\n}\n\nTW:",
+    "completion": " overflow-hidden items-stretch stroke-1 touch-manipulation outline-double grid-cols-none clear-both row-span-3;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  border-bottom-left-radius: 1rem;\n  grid-column: span 11 / span 11;\n  min-width: fit-content;\n  text-decoration-thickness: from-font;\n  transition-delay: 500ms;\n  flex: 1 1 0%;\n  list-style-type: decimal;\n}\n\nTW:",
+    "completion": " rounded-bl-2xl col-span-11 min-w-fit decoration-from-font delay-500 flex-1 list-decimal;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  backdrop-filter: none;\n  box-decoration-break: slice;\n  justify-content: flex-start;\n  cursor: help;\n  columns: 28rem;\n}\n\nTW:",
+    "completion": " backdrop-filter-none decoration-slice justify-start cursor-help columns-md;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  outline-width: 8px;\n  clear: none;\n  max-width: 32rem;\n  flex: 1 1 auto;\n  text-decoration-thickness: 1px;\n  flex-grow: 1;\n}\n\nTW:",
+    "completion": " outline-8 clear-none max-w-lg flex-auto decoration-1 grow;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  grid-auto-rows: min-content;\n  background-attachment: scroll;\n  align-items: flex-start;\n  float: left;\n  background-origin: content-box;\n  stroke: #fb7185;\n  table-layout: auto;\n  grid-column-end: 2;\n}\n\nTW:",
+    "completion": " auto-rows-min bg-scroll items-start float-left bg-origin-content stroke-rose-400 table-auto col-end-2;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  list-style-position: outside;\n  align-content: baseline;\n  resize: horizontal;\n  transition-delay: 75ms;\n}\n\nTW:",
+    "completion": " list-outside content-baseline resize-x delay-75;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  place-content: end;\n  columns: 4;\n  background-origin: padding-box;\n  fill: #ca8a04;\n  align-content: space-evenly;\n}\n\nTW:",
+    "completion": " place-content-end columns-4 bg-origin-padding fill-yellow-600 content-evenly;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  object-fit: fill;\n  border-style: none;\n  place-self: stretch;\n  columns: 80rem;\n  order: -9999;\n  break-before: avoid-page;\n  line-height: 1.25rem;\n  background-clip: content-box;\n}\n\nTW:",
+    "completion": " object-fill divide-none place-self-stretch columns-7xl order-first break-before-avoid-page leading-5 bg-clip-content;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  line-height: 1.5rem;\n  opacity: 0.7;\n  touch-action: none;\n  background-clip: text;\n  grid-row-end: auto;\n  justify-content: space-between;\n  user-select: auto;\n  font-weight: 900;\n}\n\nTW:",
+    "completion": " leading-6 opacity-70 touch-none bg-clip-text row-end-auto justify-between select-auto font-black;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  max-height: 1rem;\n  outline-style: dashed;\n  font-size: 4.5rem;\n  line-height: 1;\n  display: inline-table;\n}\n\nTW:",
+    "completion": " max-h-4 outline-dashed text-7xl inline-table;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  box-decoration-break: clone;\n  line-height: 0.75rem;\n  border-bottom-right-radius: 1rem;\n  outline: 2px solid transparent;\n  outline-offset: 2px;\n  filter: none;\n}\n\nTW:",
+    "completion": " decoration-clone leading-3 rounded-br-2xl outline-none filter-none;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  background-position: right top;\n  align-content: flex-start;\n  flex-basis: 0.75rem;\n  box-sizing: border-box;\n  transition-property: opacity;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n  background-size: auto;\n  text-indent: 0px;\n  scroll-padding: 1px;\n}\n\nTW:",
+    "completion": " bg-right-top content-start basis-3\\/5 box-border transition-opacity bg-auto indent-0\\.5 scroll-p-px;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  left: 0.25rem;\n  right: 0.25rem;\n  flex-grow: 0;\n  letter-spacing: 0em;\n  text-overflow: ellipsis;\n  align-items: flex-end;\n  text-underline-offset: 0px;\n  mix-blend-mode: saturation;\n  user-select: all;\n}\n\nTW:",
+    "completion": " inset-x-1\\/2 flex-grow-0 tracking-normal text-ellipsis items-end underline-offset-0 mix-blend-saturation select-all;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  max-width: none;\n  mix-blend-mode: normal;\n  align-content: center;\n  transition-duration: 150ms;\n  grid-column: auto;\n}\n\nTW:",
+    "completion": " max-w-none mix-blend-normal content-center duration-150 col-auto;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  display: inline;\n  outline-offset: 2px;\n}\n\nTW:",
+    "completion": " inline outline-offset-2;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  aspect-ratio: auto;\n  border-style: dotted;\n  vertical-align: super;\n  grid-row-start: 7;\n  grid-row: 1 / -1;\n}\n\nTW:",
+    "completion": " aspect-auto divide-dotted align-super row-start-7 row-span-full;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  columns: 18rem;\n  align-self: flex-end;\n  text-transform: lowercase;\n  overflow-wrap: break-word;\n}\n\nTW:",
+    "completion": " columns-2xs self-end lowercase break-words;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-top: 0.75rem;\n  scroll-margin-bottom: 0.75rem;\n  fill: #fecaca;\n  left: 0.5rem;\n  transition-duration: 75ms;\n}\n\nTW:",
+    "completion": " scroll-my-3\\.5 fill-red-200 left-2\\/4 duration-75;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  columns: 20rem;\n  outline-offset: 4px;\n  list-style-position: inside;\n  background-attachment: local;\n  z-index: 50;\n  min-width: max-content;\n  transition-delay: 200ms;\n  scroll-padding-right: 8rem;\n}\n\nTW:",
+    "completion": " columns-xs outline-offset-4 list-inside bg-local z-50 min-w-max delay-200 scroll-pr-32;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  user-select: text;\n  text-underline-offset: auto;\n  overflow-x: visible;\n  border-collapse: separate;\n  stroke: #d1d5db;\n}\n\nTW:",
+    "completion": " select-text underline-offset-auto overflow-x-visible border-separate stroke-gray-300;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  overflow: scroll;\n  background-clip: border-box;\n  break-before: column;\n  text-align: start;\n  animation: spin 1s linear infinite;\n}\n\n@keyframes spin {\n  .single {\n    transform: rotate(360deg);\n  }\n}\n\nTW:",
+    "completion": " overflow-scroll bg-clip-border break-before-column text-start animate-spin;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin: 10rem;\n  flex-shrink: 1;\n  overflow-wrap: normal;\n  word-break: normal;\n  text-decoration-style: solid;\n  max-height: 0.25rem;\n  overflow-y: visible;\n  height: 8rem;\n}\n\nTW:",
+    "completion": " m-40 flex-shrink break-normal decoration-solid max-h-1 overflow-y-visible h-32;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  width: 1px;\n  break-after: page;\n  justify-self: stretch;\n  list-style-type: none;\n  outline-style: dotted;\n  grid-row: auto;\n}\n\nTW:",
+    "completion": " w-px break-after-page justify-self-stretch list-none outline-dotted row-auto;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  bottom: 0.5rem;\n  grid-row-start: 1;\n  letter-spacing: 0.1em;\n  max-height: 0.5rem;\n}\n\nTW:",
+    "completion": " bottom-2\\/3 row-start-1 tracking-widest max-h-2\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding: 0.75rem;\n  border-style: solid;\n  text-underline-offset: 2px;\n  text-align: justify;\n  border-style: double;\n  isolation: auto;\n}\n\nTW:",
+    "completion": " scroll-p-3 divide-solid underline-offset-2 text-justify border-double isolation-auto;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  place-content: stretch;\n  box-decoration-break: clone;\n  white-space: pre;\n  text-align: left;\n  grid-auto-flow: column;\n}\n\nTW:",
+    "completion": " place-content-stretch box-decoration-clone whitespace-pre text-left grid-flow-col;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  columns: 32rem;\n  transition-timing-function: linear;\n  border-collapse: collapse;\n  scroll-padding-left: 16rem;\n  scroll-padding-right: 16rem;\n  max-height: 16rem;\n  border-style: none;\n  break-before: all;\n}\n\nTW:",
+    "completion": " columns-lg ease-linear border-collapse scroll-px-64 max-h-64 border-none break-before-all;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  z-index: 40;\n  grid-column-end: 9;\n  text-transform: none;\n  stroke-width: 2;\n  display: flex;\n  background-blend-mode: luminosity;\n  break-before: auto;\n  break-after: all;\n}\n\nTW:",
+    "completion": " z-40 col-end-9 normal-case stroke-2 flex bg-blend-luminosity break-before-auto break-after-all;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-snap-stop: normal;\n  user-select: none;\n  z-index: 10;\n  justify-items: stretch;\n  align-self: stretch;\n}\n\nTW:",
+    "completion": " snap-normal select-none z-10 justify-items-stretch self-stretch;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  break-before: avoid;\n  transition-duration: 1000ms;\n  object-position: top;\n  min-width: min-content;\n  grid-column: span 1 / span 1;\n}\n\nTW:",
+    "completion": " break-before-avoid duration-1000 object-top min-w-min col-span-1;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  justify-self: auto;\n  border-top-right-radius: 9999px;\n  border-bottom-right-radius: 9999px;\n  break-after: auto;\n  transition-delay: 100ms;\n  letter-spacing: 0.025em;\n  background-blend-mode: overlay;\n}\n\nTW:",
+    "completion": " justify-self-auto rounded-r-full break-after-auto delay-100 tracking-wide bg-blend-overlay;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  justify-items: start;\n  visibility: collapse;\n  order: 11;\n  will-change: contents;\n  scroll-snap-align: start;\n  line-height: 2rem;\n  border-right-width: 2px;\n}\n\nTW:",
+    "completion": " justify-items-start collapse order-11 will-change-contents snap-start leading-8 border-r-2;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  grid-column-start: 9;\n  line-height: 2.25rem;\n  background-attachment: fixed;\n  mix-blend-mode: luminosity;\n  grid-template-rows: repeat(3, minmax(0, 1fr));\n  text-indent: 1.5rem;\n  will-change: auto;\n}\n\nTW:",
+    "completion": " col-start-9 leading-9 bg-fixed mix-blend-luminosity grid-rows-3 indent-6 will-change-auto;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  align-items: baseline;\n  mix-blend-mode: screen;\n  border-top-width: 2px;\n  grid-column: span 7 / span 7;\n  font-size: 1.125rem;\n  line-height: 1.75rem;\n  break-inside: avoid-column;\n}\n\nTW:",
+    "completion": " items-baseline mix-blend-screen border-t-2 col-span-7 text-lg break-inside-avoid-column;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  grid-template-rows: repeat(2, minmax(0, 1fr));\n  grid-column: span 9 / span 9;\n  float: none;\n  vertical-align: text-bottom;\n}\n\nTW:",
+    "completion": " grid-rows-2 col-span-9 float-none align-text-bottom;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  will-change: transform;\n  vertical-align: middle;\n  overflow-x: auto;\n  flex-grow: 0;\n  letter-spacing: -0.025em;\n}\n\nTW:",
+    "completion": " will-change-transform align-middle overflow-x-auto grow-0 tracking-tight;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  position: static;\n  width: auto;\n  height: auto;\n  padding: 0;\n  margin: 0;\n  overflow: visible;\n  clip: auto;\n  white-space: normal;\n  flex-shrink: 1;\n  grid-template-columns: repeat(4, minmax(0, 1fr));\n  grid-auto-rows: max-content;\n  transform-origin: top;\n  vertical-align: text-top;\n  line-height: 1.25;\n  min-height: min-content;\n}\n\nTW:",
+    "completion": " not-sr-only shrink grid-cols-4 auto-rows-max origin-top align-text-top leading-tight min-h-min;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  float: right;\n  object-position: left bottom;\n  grid-row-start: 5;\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\",\n    \"Courier New\", monospace;\n}\n\nTW:",
+    "completion": " float-right object-left-bottom row-start-5 font-mono;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  column-gap: 3rem;\n  flex-shrink: 0;\n  place-content: space-around;\n  text-align: right;\n  background-blend-mode: hard-light;\n  flex-basis: 15rem;\n}\n\nTW:",
+    "completion": " gap-x-12 shrink-0 place-content-around text-right bg-blend-hard-light basis-60;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);\n  grid-template-rows: repeat(5, minmax(0, 1fr));\n  place-content: space-between;\n  transition-delay: 300ms;\n  padding: 0.5rem;\n  scroll-margin: 3.5rem;\n  font-variant-numeric: normal;\n}\n\nTW:",
+    "completion": " ease-in grid-rows-5 place-content-between delay-300 p-2 scroll-m-14 normal-nums;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  background-position: top;\n  place-content: baseline;\n  text-decoration-thickness: auto;\n  position: relative;\n  grid-auto-flow: dense;\n  place-self: auto;\n  columns: 3;\n}\n\nTW:",
+    "completion": " bg-top place-content-baseline decoration-auto relative grid-flow-dense place-self-auto columns-3;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  height: 0.75rem;\n  grid-column-end: 7;\n  background-blend-mode: normal;\n  object-position: right top;\n  min-width: 100%;\n  object-fit: cover;\n}\n\nTW:",
+    "completion": " h-3\\.5 col-end-7 bg-blend-normal object-right-top min-w-full object-cover;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  grid-template-rows: repeat(6, minmax(0, 1fr));\n  flex-basis: 2.25rem;\n  stroke: #faf5ff;\n  cursor: no-drop;\n  min-height: 100vh;\n  grid-column-end: 3;\n}\n\nTW:",
+    "completion": " grid-rows-6 basis-9\\/12 stroke-purple-50 cursor-no-drop min-h-screen col-end-3;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  text-decoration-line: line-through;\n  transform-origin: bottom right;\n  text-underline-offset: 1px;\n  text-decoration-style: wavy;\n  max-height: 12rem;\n  left: 2rem;\n  outline-offset: 1px;\n}\n\nTW:",
+    "completion": " line-through origin-bottom-right underline-offset-1 decoration-wavy max-h-48 left-8 outline-offset-1;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto,\n    \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\",\n    \"Segoe UI Symbol\", \"Noto Color Emoji\";\n  align-self: auto;\n  transition-duration: 700ms;\n  fill: #3730a3;\n  scroll-snap-align: end;\n}\n\nTW:",
+    "completion": " font-sans self-auto duration-700 fill-indigo-800 snap-end;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  cursor: default;\n  mix-blend-mode: exclusion;\n  background-position: bottom;\n  max-height: 9rem;\n}\n\nTW:",
+    "completion": " cursor-default mix-blend-exclusion bg-bottom max-h-36;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  display: flow-root;\n  scroll-padding: 2.75rem;\n  text-underline-offset: 8px;\n  grid-row-end: 5;\n  place-content: start;\n}\n\nTW:",
+    "completion": " flow-root scroll-p-11 underline-offset-8 row-end-5 place-content-start;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  box-decoration-break: slice;\n  transition-delay: 1000ms;\n  break-inside: avoid;\n  background-blend-mode: color;\n}\n\nTW:",
+    "completion": " box-decoration-slice delay-1000 break-inside-avoid bg-blend-color;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  background-repeat: repeat;\n  margin-right: 4rem;\n  grid-auto-columns: minmax(0, 1fr);\n  visibility: hidden;\n  grid-row-start: 3;\n}\n\nTW:",
+    "completion": " bg-repeat mr-16 auto-cols-fr invisible row-start-3;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  grid-auto-rows: auto;\n  place-content: center;\n  justify-content: space-around;\n  position: fixed;\n  text-indent: 13rem;\n  word-break: keep-all;\n}\n\nTW:",
+    "completion": " auto-rows-auto place-content-center justify-around fixed indent-52 break-keep;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  justify-content: flex-end;\n  grid-auto-columns: max-content;\n  object-position: left top;\n  grid-column-end: 12;\n  border-bottom-width: 1px;\n  max-width: 1280px;\n}\n\nTW:",
+    "completion": " justify-end auto-cols-max object-left-top col-end-12 border-b max-w-screen-xl;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  border-style: solid;\n  margin-top: 0.25rem;\n  margin-bottom: 0.25rem;\n  z-index: 20;\n  vertical-align: top;\n  display: table-row-group;\n  border-style: double;\n  object-fit: scale-down;\n  width: 0.5rem;\n}\n\nTW:",
+    "completion": " border-solid my-1 z-20 align-top table-row-group divide-double object-scale-down w-2\\/5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  max-width: 65ch;\n  text-transform: uppercase;\n  scroll-margin-right: 2.5rem;\n  grid-auto-flow: column dense;\n  text-overflow: clip;\n  margin-top: 1.75rem;\n  background-blend-mode: saturation;\n}\n\nTW:",
+    "completion": " max-w-prose uppercase scroll-mr-10 grid-flow-col-dense text-clip mt-7 bg-blend-saturation;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  grid-column: span 12 / span 12;\n  transition-delay: 150ms;\n  font-size: 3rem;\n  line-height: 1;\n  background-position: right;\n  text-indent: 1rem;\n}\n\nTW:",
+    "completion": " col-span-12 delay-150 text-5xl bg-right indent-4;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-bottom: 0px;\n  overscroll-behavior-y: auto;\n  text-decoration-style: dashed;\n  grid-column-start: 6;\n}\n\nTW:",
+    "completion": " scroll-pb-0 overscroll-y-auto decoration-dashed col-start-6;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  columns: 6;\n  grid-auto-columns: auto;\n  grid-column: 1 / -1;\n  max-width: min-content;\n}\n\nTW:",
+    "completion": " columns-6 auto-cols-auto col-span-full max-w-min;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  grid-row-end: 2;\n  outline-width: 1px;\n  object-position: left;\n  padding-bottom: 6rem;\n  object-fit: none;\n}\n\nTW:",
+    "completion": " row-end-2 outline-1 object-left pb-24 object-none;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  columns: 48rem;\n  transition-property: none;\n  z-index: auto;\n  background-size: contain;\n  min-height: 0px;\n  flex-basis: 0.5rem;\n}\n\nTW:",
+    "completion": " columns-3xl transition-none z-auto bg-contain min-h-0 basis-2\\/3;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  grid-auto-flow: row dense;\n  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;\n  grid-row-end: 1;\n  font-size: 1.5rem;\n  line-height: 2rem;\n  scroll-snap-align: none;\n  letter-spacing: -0.05em;\n  cursor: alias;\n}\n\n@keyframes pulse {\n  .single {\n    opacity: 0.5;\n  }\n}\n\nTW:",
+    "completion": " grid-flow-row-dense animate-pulse row-end-1 text-2xl snap-align-none tracking-tighter cursor-alias;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  font-weight: 400;\n  vertical-align: baseline;\n  text-indent: 0.75rem;\n  border-top-left-radius: 1rem;\n  border-top-right-radius: 1rem;\n  place-self: center;\n}\n\nTW:",
+    "completion": " font-normal align-baseline indent-3\\.5 rounded-t-2xl place-self-center;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  width: 1.25rem;\n  object-position: right bottom;\n  transform-origin: right;\n  max-height: max-content;\n}\n\nTW:",
+    "completion": " w-5\\/6 object-right-bottom origin-right max-h-max;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  column-gap: 12rem;\n  width: 0.25rem;\n  max-height: min-content;\n  grid-template-rows: repeat(1, minmax(0, 1fr));\n  text-decoration-line: underline;\n  order: 9999;\n}\n\nTW:",
+    "completion": " gap-x-48 w-1\\/4 max-h-min grid-rows-1 underline order-last;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  mix-blend-mode: color-burn;\n  break-after: avoid-page;\n  fill: #2563eb;\n  flex-basis: 1rem;\n}\n\nTW:",
+    "completion": " mix-blend-color-burn break-after-avoid-page fill-blue-600 basis-4\\/6;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  opacity: 0.6;\n  padding-right: 0.25rem;\n  font-weight: 800;\n  fill: #e0f2fe;\n  top: 2.5rem;\n  bottom: 2.5rem;\n  text-decoration-line: none;\n  z-index: 0;\n}\n\nTW:",
+    "completion": " opacity-60 pr-1 font-extrabold fill-sky-100 inset-y-10 no-underline z-0;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  grid-auto-flow: row;\n  grid-row-end: 7;\n  grid-row-start: auto;\n  text-decoration-thickness: 8px;\n}\n\nTW:",
+    "completion": " grid-flow-row row-end-7 row-start-auto decoration-8;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  break-after: avoid;\n  justify-content: space-evenly;\n  grid-column-end: 11;\n  place-items: stretch;\n}\n\nTW:",
+    "completion": " break-after-avoid justify-evenly col-end-11 place-items-stretch;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  column-gap: 8rem;\n  text-decoration-style: double;\n  flex-basis: 0.75rem;\n  left: 8rem;\n  right: 8rem;\n  height: 0.75rem;\n  position: absolute;\n  display: list-item;\n  line-height: 1.375;\n}\n\nTW:",
+    "completion": " gap-x-32 decoration-double basis-3\\.5 inset-x-32 h-3\\/4 absolute list-item leading-snug;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  min-height: 100%;\n  text-indent: 0.75rem;\n  height: 9rem;\n  font-weight: 200;\n  mix-blend-mode: hue;\n  font-size: 1rem;\n  line-height: 1.5rem;\n  grid-row-start: 2;\n  place-items: center;\n}\n\nTW:",
+    "completion": " min-h-full indent-3 h-36 font-extralight mix-blend-hue text-base row-start-2 place-items-center;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  justify-content: center;\n  grid-row-end: 3;\n  grid-column-start: 10;\n  border-style: dashed;\n  flex-basis: 0.5rem;\n  break-after: left;\n  align-self: baseline;\n  font-size: 8rem;\n  line-height: 1;\n}\n\nTW:",
+    "completion": " justify-center row-end-3 col-start-10 divide-dashed basis-2\\/6 break-after-left self-baseline text-9xl;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  width: 2.25rem;\n  display: table-header-group;\n  max-height: 100%;\n  scroll-margin-top: 9rem;\n  text-indent: 10rem;\n}\n\nTW:",
+    "completion": " w-9 table-header-group max-h-full scroll-mt-36 indent-40;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  grid-row-start: 6;\n  object-position: right;\n  justify-self: start;\n  columns: 8;\n}\n\nTW:",
+    "completion": " row-start-6 object-right justify-self-start columns-8;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding: 3rem;\n  grid-auto-columns: min-content;\n  align-items: center;\n  transition-duration: 200ms;\n  place-self: end;\n}\n\nTW:",
+    "completion": " p-12 auto-cols-min items-center duration-200 place-self-end;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  grid-column-end: 5;\n  padding: 5rem;\n  top: 1px;\n  right: 1px;\n  bottom: 1px;\n  left: 1px;\n  height: 0.5rem;\n  outline-width: 4px;\n}\n\nTW:",
+    "completion": " col-end-5 p-20 inset-px h-2\\/3 outline-4;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  outline-width: 0px;\n  transition-duration: 500ms;\n  font-size: 1.875rem;\n  line-height: 2.25rem;\n  overscroll-behavior-x: contain;\n}\n\nTW:",
+    "completion": " outline-0 duration-500 text-3xl overscroll-x-contain;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  background-blend-mode: color-dodge;\n  width: max-content;\n  scroll-margin-top: 18rem;\n  scroll-margin-bottom: 18rem;\n  object-position: bottom;\n  left: 0.75rem;\n  right: 0.75rem;\n  grid-column-start: 2;\n  grid-template-columns: repeat(9, minmax(0, 1fr));\n  position: sticky;\n}\n\nTW:",
+    "completion": " bg-blend-color-dodge w-max scroll-my-72 object-bottom inset-x-3\\.5 col-start-2 grid-cols-9 sticky;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  break-inside: avoid-page;\n  grid-column-end: 8;\n  flex-wrap: wrap;\n  padding-left: 10rem;\n  padding-right: 10rem;\n  display: table-cell;\n  grid-template-columns: repeat(12, minmax(0, 1fr));\n  background-size: cover;\n  font-weight: 300;\n}\n\nTW:",
+    "completion": " break-inside-avoid-page col-end-8 flex-wrap px-40 table-cell grid-cols-12 bg-cover font-light;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  resize: vertical;\n  vertical-align: sub;\n  line-height: 1.75rem;\n  outline-width: 2px;\n  grid-row: span 4 / span 4;\n  grid-row-end: 6;\n}\n\nTW:",
+    "completion": " resize-y align-sub leading-7 outline-2 row-span-4 row-end-6;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  max-height: fit-content;\n  gap: 4rem;\n  place-items: start;\n  text-indent: 4rem;\n}\n\nTW:",
+    "completion": " max-h-fit gap-16 place-items-start indent-16;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  text-decoration-line: overline;\n  fill: #b91c1c;\n  letter-spacing: 0.05em;\n  place-items: baseline;\n  border-right-width: 4px;\n  grid-column-end: 6;\n}\n\nTW:",
+    "completion": " overline fill-red-700 tracking-wider place-items-baseline border-r-4 col-end-6;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  min-height: max-content;\n  width: 3.5rem;\n  mix-blend-mode: difference;\n  text-decoration-thickness: 4px;\n}\n\nTW:",
+    "completion": " min-h-max w-14 mix-blend-difference decoration-4;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  max-width: 1024px;\n  grid-template-columns: repeat(8, minmax(0, 1fr));\n  height: 0.75rem;\n  background-repeat: no-repeat;\n  cursor: zoom-in;\n}\n\nTW:",
+    "completion": " max-w-screen-lg grid-cols-8 h-3\\/6 bg-no-repeat cursor-zoom-in;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #854d0e;\n  height: 11rem;\n  fill: #a8a29e;\n  grid-row: span 6 / span 6;\n}\n\nTW:",
+    "completion": " stroke-yellow-800 h-44 fill-stone-400 row-span-6;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  grid-row: span 2 / span 2;\n  scroll-snap-align: center;\n  scroll-margin-right: 2.25rem;\n  padding-left: 1.75rem;\n  padding-right: 1.75rem;\n  overflow-x: scroll;\n  font-weight: 100;\n  cursor: cell;\n}\n\nTW:",
+    "completion": " row-span-2 snap-center scroll-mr-9 px-7 overflow-x-scroll font-thin cursor-cell;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  border-top-width: 8px;\n  flex-basis: 0.5rem;\n  mix-blend-mode: lighten;\n  font-size: 1.25rem;\n  line-height: 1.75rem;\n  place-items: end;\n  word-break: break-all;\n  flex-wrap: nowrap;\n  grid-column-start: 1;\n}\n\nTW:",
+    "completion": " border-t-8 basis-2\\/12 mix-blend-lighten text-xl place-items-end break-all flex-nowrap col-start-1;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  cursor: text;\n  overscroll-behavior: auto;\n  animation: none;\n  grid-column-end: 1;\n  grid-column-start: 3;\n  columns: 56rem;\n  fill: #a855f7;\n}\n\nTW:",
+    "completion": " cursor-text overscroll-auto animate-none col-end-1 col-start-3 columns-4xl fill-purple-500;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-top: 2.5rem;\n  height: 1.25rem;\n  border-bottom-width: 8px;\n  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;\n  padding-left: 1px;\n  padding-right: 1px;\n}\n\n@keyframes ping {\n  .single {\n    transform: scale(2);\n    opacity: 0;\n  }\n}\n\nTW:",
+    "completion": " scroll-pt-10 h-5 border-b-8 animate-ping px-px;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  line-height: 2.5rem;\n  stroke: #365314;\n  opacity: 0.25;\n  break-after: column;\n}\n\nTW:",
+    "completion": " leading-10 stroke-lime-900 opacity-25 break-after-column;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  row-gap: 13rem;\n  display: table-column;\n  grid-column-end: auto;\n  max-height: 0.5rem;\n}\n\nTW:",
+    "completion": " gap-y-52 table-column col-end-auto max-h-2;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  background-position: right bottom;\n  width: 3rem;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n  grid-row: span 5 / span 5;\n  break-after: right;\n  text-decoration-thickness: 2px;\n  display: table-column-group;\n}\n\nTW:",
+    "completion": " bg-right-bottom w-12 text-sm row-span-5 break-after-right decoration-2 table-column-group;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  background-blend-mode: screen;\n  flex-basis: 12rem;\n  overscroll-behavior-y: none;\n  width: 100%;\n  padding-bottom: 18rem;\n  flex-wrap: wrap-reverse;\n}\n\nTW:",
+    "completion": " bg-blend-screen basis-48 overscroll-y-none w-full pb-72 flex-wrap-reverse;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  background-repeat: repeat-x;\n  font-size: 3.75rem;\n  line-height: 1;\n  grid-column-end: 4;\n  max-height: 4rem;\n  grid-row: span 1 / span 1;\n  fill: #fbbf24;\n}\n\nTW:",
+    "completion": " bg-repeat-x text-6xl col-end-4 max-h-16 row-span-1 fill-amber-400;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  break-inside: auto;\n  cursor: row-resize;\n  animation: bounce 1s infinite;\n  columns: 16rem;\n  grid-column: span 5 / span 5;\n  max-height: 1.25rem;\n}\n\n@keyframes bounce {\n  .single {\n    transform: translateY(-25%);\n    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);\n    transform: none;\n    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  }\n}\n\nTW:",
+    "completion": " break-inside-auto cursor-row-resize animate-bounce columns-3xs col-span-5 max-h-5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  resize: both;\n  scroll-padding-bottom: 1.75rem;\n  row-gap: 0.5rem;\n  columns: 7;\n  background-position: left bottom;\n}\n\nTW:",
+    "completion": " resize scroll-pb-7 gap-y-2 columns-7 bg-left-bottom;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  column-gap: 0.75rem;\n  top: 14rem;\n  right: 14rem;\n  bottom: 14rem;\n  left: 14rem;\n  background-position: center;\n  background-blend-mode: hue;\n  grid-row-end: 4;\n}\n\nTW:",
+    "completion": " gap-x-3 inset-56 bg-center bg-blend-hue row-end-4;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  transform-origin: bottom left;\n  background-position: left top;\n  flex-basis: 0.25rem;\n  overscroll-behavior-y: contain;\n}\n\nTW:",
+    "completion": " origin-bottom-left bg-left-top basis-1 overscroll-y-contain;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  opacity: 1;\n  columns: 42rem;\n  height: 1rem;\n  fill: #a1a1aa;\n  overscroll-behavior-x: auto;\n  background-position: left;\n  grid-column: span 3 / span 3;\n}\n\nTW:",
+    "completion": " opacity-100 columns-2xl h-4\\/5 fill-zinc-400 overscroll-x-auto bg-left col-span-3;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  flex-basis: 2.5rem;\n  opacity: 0.3;\n  border-bottom-right-radius: 0px;\n  border-bottom-left-radius: 0px;\n  text-indent: 0.25rem;\n  height: 14rem;\n  fill: #52525b;\n}\n\nTW:",
+    "completion": " basis-10 opacity-30 rounded-b-none indent-1 h-56 fill-zinc-600;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  background-repeat: round;\n  border-width: 0px;\n  margin-left: 1.25rem;\n  margin-right: 1.25rem;\n  order: 2;\n  text-indent: 5rem;\n  padding: 1px;\n}\n\nTW:",
+    "completion": " bg-repeat-round border-0 mx-5 order-2 indent-20 p-px;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #d4d4d8;\n  mix-blend-mode: color-dodge;\n  grid-column-start: 5;\n  grid-column: span 8 / span 8;\n  max-width: 80rem;\n}\n\nTW:",
+    "completion": " fill-zinc-300 mix-blend-color-dodge col-start-5 col-span-8 max-w-7xl;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n  order: 3;\n  border-left-width: 1px;\n  border-right-width: 1px;\n}\n\nTW:",
+    "completion": " grid-cols-2 order-3 border-x;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #171717;\n  height: 0.25rem;\n  top: 4rem;\n  bottom: 4rem;\n  row-gap: 0.25rem;\n}\n\nTW:",
+    "completion": " stroke-neutral-900 h-1\\.5 inset-y-16 gap-y-1;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  order: 10;\n  flex-basis: 0.75rem;\n  display: table-caption;\n}\n\nTW:",
+    "completion": " order-10 basis-3\\/6 table-caption;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  display: table-footer-group;\n  scroll-margin-top: 16rem;\n  scroll-margin-bottom: 16rem;\n  columns: 72rem;\n  mix-blend-mode: soft-light;\n  text-indent: 6rem;\n  overscroll-behavior: none;\n}\n\nTW:",
+    "completion": " table-footer-group scroll-my-64 columns-6xl mix-blend-soft-light indent-24 overscroll-none;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  transform-origin: top left;\n  border-top-left-radius: 0.75rem;\n  border-bottom-left-radius: 0.75rem;\n  grid-template-columns: repeat(11, minmax(0, 1fr));\n  scroll-margin: 5rem;\n}\n\nTW:",
+    "completion": " origin-top-left rounded-l-xl grid-cols-11 scroll-m-20;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  transform-origin: left;\n  flex-basis: 20rem;\n  width: 1rem;\n  stroke: #db2777;\n  line-height: 2;\n  max-height: 6rem;\n  scroll-margin-right: 9rem;\n}\n\nTW:",
+    "completion": " origin-left basis-80 w-4\\/5 stroke-pink-600 leading-loose max-h-24 scroll-mr-36;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  overscroll-behavior-x: none;\n  grid-column: span 10 / span 10;\n  column-gap: 2.75rem;\n  scroll-margin-top: 2rem;\n  border-left-width: 8px;\n  height: 0.25rem;\n  transform-origin: top right;\n  display: table-row;\n}\n\nTW:",
+    "completion": " overscroll-x-none col-span-10 gap-x-11 scroll-mt-8 border-l-8 h-1 origin-top-right table-row;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  width: 9rem;\n  grid-template-columns: repeat(5, minmax(0, 1fr));\n  max-width: fit-content;\n  order: 9;\n  stroke: #0d9488;\n  opacity: 0.8;\n  border-top-right-radius: 0.25rem;\n}\n\nTW:",
+    "completion": " w-36 grid-cols-5 max-w-fit order-9 stroke-teal-600 opacity-80 rounded-tr;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #06b6d4;\n  scroll-margin-bottom: 2.75rem;\n  max-width: 56rem;\n  margin-top: 2.75rem;\n  margin-bottom: 2.75rem;\n  height: auto;\n}\n\nTW:",
+    "completion": " fill-cyan-500 scroll-mb-11 max-w-4xl my-11 h-auto;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  font-weight: 600;\n  height: 0.25rem;\n  order: 6;\n  overflow: auto;\n  margin-left: 6rem;\n  margin-right: 6rem;\n}\n\nTW:",
+    "completion": " font-semibold h-1\\/2 order-6 overflow-auto mx-24;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  font-size: 0.75rem;\n  line-height: 1rem;\n  columns: 9;\n  border-bottom-left-radius: 0.75rem;\n  max-height: 14rem;\n}\n\nTW:",
+    "completion": " text-xs columns-9 rounded-bl-xl max-h-56;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  border-right-width: 0px;\n  padding-left: 4rem;\n  grid-column-start: 13;\n  top: 7rem;\n  right: 7rem;\n  bottom: 7rem;\n  left: 7rem;\n  max-width: 1536px;\n  font-size: 6rem;\n  line-height: 1;\n}\n\nTW:",
+    "completion": " border-r-0 pl-16 col-start-13 inset-28 max-w-screen-2xl text-8xl;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  height: 0.5rem;\n  width: 1rem;\n  max-height: 2.75rem;\n  flex-basis: 0.75rem;\n}\n\nTW:",
+    "completion": " h-2\\/6 w-4 max-h-11 basis-3;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  transition-property: all;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n  background-blend-mode: color-burn;\n  flex-basis: 18rem;\n  text-indent: 2rem;\n}\n\nTW:",
+    "completion": " transition-all bg-blend-color-burn basis-72 indent-8;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  display: inline-grid;\n  border-top-right-radius: 0px;\n  border-bottom-right-radius: 0px;\n  border-top-width: 4px;\n  mix-blend-mode: hard-light;\n}\n\nTW:",
+    "completion": " inline-grid rounded-r-none border-t-4 mix-blend-hard-light;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  transform-origin: center;\n  bottom: 5rem;\n  line-height: 1.625;\n  column-gap: 2.5rem;\n}\n\nTW:",
+    "completion": " origin-center bottom-20 leading-relaxed gap-x-10;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  row-gap: 2.5rem;\n  font-size: 2.25rem;\n  line-height: 2.5rem;\n  display: inline-block;\n  grid-column-start: 12;\n  text-indent: 8rem;\n}\n\nTW:",
+    "completion": " gap-y-10 text-4xl inline-block col-start-12 indent-32;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  overscroll-behavior: contain;\n  fill: #7f1d1d;\n  border-radius: 0.75rem;\n  grid-template-columns: repeat(10, minmax(0, 1fr));\n  font-weight: 500;\n  width: 4rem;\n  grid-column-start: 7;\n  margin-top: 1.5rem;\n  margin-bottom: 1.5rem;\n}\n\nTW:",
+    "completion": " overscroll-contain fill-red-900 rounded-xl grid-cols-10 font-medium w-16 col-start-7 my-6;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  mix-blend-mode: plus-lighter;\n  font-weight: 700;\n  border-left-width: 8px;\n  border-right-width: 8px;\n  height: 0.5rem;\n}\n\nTW:",
+    "completion": " mix-blend-plus-lighter font-bold border-x-8 h-2\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-left: 0px;\n  scroll-padding-right: 0px;\n  cursor: se-resize;\n  opacity: 0;\n  left: 0.25rem;\n  right: 0.25rem;\n}\n\nTW:",
+    "completion": " scroll-px-0\\.5 cursor-se-resize opacity-0 inset-x-1\\/4;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  width: 100vw;\n  border-bottom-width: 2px;\n  left: 15rem;\n  right: 15rem;\n  mix-blend-mode: overlay;\n}\n\nTW:",
+    "completion": " w-screen border-b-2 inset-x-60 mix-blend-overlay;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  top: 2.25rem;\n  border-width: 2px;\n  background-repeat: space;\n  background-blend-mode: darken;\n  line-height: 1.5;\n  overflow-x: clip;\n  height: 12rem;\n}\n\nTW:",
+    "completion": " top-9 border-2 bg-repeat-space bg-blend-darken leading-normal overflow-x-clip h-48;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  background-blend-mode: lighten;\n  display: inline-flex;\n  text-indent: 0.25rem;\n  order: 4;\n}\n\nTW:",
+    "completion": " bg-blend-lighten inline-flex indent-1\\.5 order-4;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  line-height: 1rem;\n  max-height: 24rem;\n  display: none;\n  height: 20rem;\n  cursor: grab;\n  padding-left: 12rem;\n}\n\nTW:",
+    "completion": " leading-4 max-h-96 hidden h-80 cursor-grab pl-48;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  border-top-left-radius: 0.25rem;\n  border-bottom-left-radius: 0.25rem;\n  grid-column-start: 8;\n  border-right-width: 1px;\n  opacity: 0.4;\n  left: 2.75rem;\n  right: 2.75rem;\n}\n\nTW:",
+    "completion": " rounded-l col-start-8 border-r opacity-40 inset-x-11;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  flex-basis: 10rem;\n  padding-left: 3.5rem;\n  padding-right: 3.5rem;\n  top: 3.5rem;\n  right: 3.5rem;\n  bottom: 3.5rem;\n  left: 3.5rem;\n  line-height: 1;\n}\n\nTW:",
+    "completion": " basis-40 px-14 inset-14 leading-none;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  mix-blend-mode: darken;\n  border-bottom-width: 0px;\n  margin-top: 1.75rem;\n  margin-bottom: 1.75rem;\n  width: 0.75rem;\n  max-height: 7rem;\n  max-width: 20rem;\n  cursor: nwse-resize;\n}\n\nTW:",
+    "completion": " mix-blend-darken border-b-0 my-7 w-3\\.5 max-h-28 max-w-xs cursor-nwse-resize;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #fdf2f8;\n  transition-property: transform;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n  cursor: vertical-text;\n  padding-top: 6rem;\n}\n\nTW:",
+    "completion": " fill-pink-50 transition-transform cursor-vertical-text pt-24;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-top: 2rem;\n  scroll-padding-bottom: 2rem;\n  fill: #1c1917;\n  row-gap: 4rem;\n  flex-basis: 0.5rem;\n  order: 1;\n  border-top-width: 0px;\n  border-bottom-width: 0px;\n  stroke: #3730a3;\n}\n\nTW:",
+    "completion": " scroll-py-8 fill-stone-900 gap-y-16 basis-2\\.5 order-1 border-y-0 stroke-indigo-800;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  left: 0px;\n  right: 0px;\n  border-bottom-right-radius: 0.75rem;\n  max-height: 8rem;\n  flex-basis: 0.25rem;\n}\n\nTW:",
+    "completion": " inset-x-0\\.5 rounded-br-xl max-h-32 basis-1\\/4;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  overflow-y: scroll;\n  stroke: #e4e4e7;\n  columns: 12;\n  flex-basis: 5rem;\n  border-left-width: 4px;\n  border-right-width: 4px;\n}\n\nTW:",
+    "completion": " overflow-y-scroll stroke-zinc-200 columns-12 basis-20 border-x-4;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-left: 0.75rem;\n  padding-left: 0.25rem;\n  padding-right: 0.25rem;\n  height: fit-content;\n  width: 0.75rem;\n  flex-basis: 0.25rem;\n  grid-template-columns: repeat(3, minmax(0, 1fr));\n  opacity: 0.1;\n}\n\nTW:",
+    "completion": " scroll-ml-3 px-1\\.5 h-fit w-3\\/5 basis-1\\/6 grid-cols-3 opacity-10;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  gap: 0.25rem;\n  padding-bottom: 2.25rem;\n  border-bottom-width: 4px;\n  scroll-padding-top: 20rem;\n  scroll-padding-bottom: 20rem;\n  margin-bottom: 10rem;\n}\n\nTW:",
+    "completion": " gap-1\\.5 pb-9 border-b-4 scroll-py-80 mb-40;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #a16207;\n  top: 18rem;\n  opacity: 0.75;\n  cursor: zoom-out;\n  grid-template-columns: repeat(1, minmax(0, 1fr));\n}\n\nTW:",
+    "completion": " stroke-yellow-700 top-72 opacity-75 cursor-zoom-out grid-cols-1;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  background-blend-mode: soft-light;\n  scroll-margin-left: 4rem;\n  scroll-margin-right: 4rem;\n  width: 2.75rem;\n  gap: 5rem;\n  text-indent: 0.5rem;\n  border-top-right-radius: 1.5rem;\n}\n\nTW:",
+    "completion": " bg-blend-soft-light scroll-mx-16 w-11 gap-20 indent-2\\.5 rounded-tr-3xl;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  order: 8;\n  gap: 0.5rem;\n  margin: 20rem;\n  width: 15rem;\n  border-top-right-radius: 0.5rem;\n  border-bottom-right-radius: 0.5rem;\n}\n\nTW:",
+    "completion": " order-8 gap-2\\.5 m-80 w-60 rounded-r-lg;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  height: 7rem;\n  fill: #713f12;\n  border-top-left-radius: 0.125rem;\n  border-bottom-left-radius: 0.125rem;\n  border-top-width: 1px;\n  border-bottom-width: 1px;\n}\n\nTW:",
+    "completion": " h-28 fill-yellow-900 rounded-l-sm border-y;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-left: 1px;\n  margin-right: 3rem;\n  left: 6rem;\n  right: 6rem;\n  background-blend-mode: exclusion;\n}\n\nTW:",
+    "completion": " scroll-ml-px mr-12 inset-x-24 bg-blend-exclusion;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  border-top-width: 2px;\n  border-bottom-width: 2px;\n  max-height: 1.75rem;\n  stroke: #4c1d95;\n  max-width: max-content;\n}\n\nTW:",
+    "completion": " border-y-2 max-h-7 stroke-violet-900 max-w-max;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #374151;\n  height: 0.25rem;\n  flex-basis: 1.5rem;\n  max-height: 2.25rem;\n  padding-left: 0.75rem;\n  scroll-padding: 1rem;\n}\n\nTW:",
+    "completion": " fill-gray-700 h-1\\/5 basis-6 max-h-9 pl-3\\.5 scroll-p-4;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  flex-basis: 1.75rem;\n  scroll-padding-bottom: 3.5rem;\n  max-width: 100%;\n}\n\nTW:",
+    "completion": " basis-7\\/12 scroll-pb-14 max-w-full;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #831843;\n  scroll-padding-top: 1.25rem;\n  scroll-padding-bottom: 1.25rem;\n  background-blend-mode: multiply;\n  fill: #d8b4fe;\n  overflow-x: hidden;\n  columns: 24rem;\n  display: block;\n  cursor: progress;\n}\n\nTW:",
+    "completion": " stroke-pink-900 scroll-py-5 bg-blend-multiply fill-purple-300 overflow-x-hidden columns-sm block cursor-progress;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-top: 0.25rem;\n  text-indent: 16rem;\n  border-width: 4px;\n}\n\nTW:",
+    "completion": " pt-1\\.5 indent-64 border-4;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-top: 4rem;\n  text-indent: 20rem;\n  border-left-width: 2px;\n  border-right-width: 2px;\n  row-gap: 1rem;\n  cursor: col-resize;\n  opacity: 0.5;\n}\n\nTW:",
+    "completion": " pt-16 indent-80 border-x-2 gap-y-4 cursor-col-resize opacity-50;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  columns: 1;\n  height: 1.75rem;\n  top: 0.25rem;\n  scroll-margin-top: 0px;\n  flex-basis: 0.25rem;\n  order: 5;\n  margin-left: 5rem;\n  padding-left: 2.25rem;\n}\n\nTW:",
+    "completion": " columns-1 h-7 top-1 scroll-mt-0\\.5 basis-1\\/5 order-5 ml-20 pl-9;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  text-indent: 2.5rem;\n  opacity: 0.2;\n  stroke: #bae6fd;\n  border-bottom-right-radius: 0.25rem;\n  border-bottom-left-radius: 0.25rem;\n}\n\nTW:",
+    "completion": " indent-10 opacity-20 stroke-sky-200 rounded-b;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin: 5rem;\n  column-gap: 1px;\n  overflow: clip;\n  flex-basis: 1px;\n  scroll-margin-top: 15rem;\n}\n\nTW:",
+    "completion": " m-20 gap-x-px overflow-clip basis-px scroll-mt-60;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  border-bottom-right-radius: 0.25rem;\n  order: 7;\n  bottom: 0px;\n  columns: 11;\n  padding-left: 1.5rem;\n  row-gap: 12rem;\n  cursor: nesw-resize;\n}\n\nTW:",
+    "completion": " rounded-br order-7 bottom-0 columns-11 pl-6 gap-y-48 cursor-nesw-resize;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-bottom: 2.25rem;\n  order: 12;\n  max-height: 0px;\n  display: grid;\n  fill: #fef3c7;\n  opacity: 0.9;\n}\n\nTW:",
+    "completion": " scroll-mb-9 order-12 max-h-0 grid fill-amber-100 opacity-90;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  cursor: none;\n  max-width: 36rem;\n  gap: 2.75rem;\n  max-height: 13rem;\n  margin-top: 5rem;\n  margin-bottom: 5rem;\n  fill: #0891b2;\n  scroll-margin-left: 1.25rem;\n}\n\nTW:",
+    "completion": " cursor-none max-w-xl gap-11 max-h-52 my-20 fill-cyan-600 scroll-ml-5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  overflow: visible;\n  max-height: 1px;\n  top: 12rem;\n  bottom: 12rem;\n  stroke: #fffbeb;\n  scroll-margin-left: 1px;\n  scroll-margin-right: 1px;\n}\n\nTW:",
+    "completion": " overflow-visible max-h-px inset-y-48 stroke-amber-50 scroll-mx-px;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  border-top-left-radius: 0.5rem;\n  scroll-padding-top: 5rem;\n  scroll-padding-bottom: 5rem;\n  max-height: 0.75rem;\n  stroke: #fbcfe8;\n}\n\nTW:",
+    "completion": " rounded-tl-lg scroll-py-20 max-h-3\\.5 stroke-pink-200;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-right: 2rem;\n  gap: 13rem;\n  left: 9rem;\n  right: 9rem;\n  cursor: ne-resize;\n  columns: 36rem;\n  fill: #f5f5f4;\n  scroll-margin-left: 15rem;\n  scroll-margin-right: 15rem;\n}\n\nTW:",
+    "completion": " pr-8 gap-52 inset-x-36 cursor-ne-resize columns-xl fill-stone-100 scroll-mx-60;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-top: 5rem;\n  overflow-y: clip;\n  row-gap: 3rem;\n  border-top-right-radius: 1.5rem;\n  border-bottom-right-radius: 1.5rem;\n  cursor: crosshair;\n  top: 2.75rem;\n  margin: 2rem;\n}\n\nTW:",
+    "completion": " scroll-mt-20 overflow-y-clip gap-y-12 rounded-r-3xl cursor-crosshair top-11 m-8;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #2563eb;\n  max-height: 15rem;\n  cursor: pointer;\n}\n\nTW:",
+    "completion": " stroke-blue-600 max-h-60 cursor-pointer;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  flex-basis: 1rem;\n  cursor: ns-resize;\n  border-top-left-radius: 0.5rem;\n  border-bottom-left-radius: 0.5rem;\n  column-gap: 24rem;\n  height: 100%;\n}\n\nTW:",
+    "completion": " basis-4 cursor-ns-resize rounded-l-lg gap-x-96 h-full;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-top: 5rem;\n  cursor: e-resize;\n  scroll-margin-left: 14rem;\n  scroll-margin-right: 14rem;\n  top: 11rem;\n  flex-basis: 2.75rem;\n  width: 0.5rem;\n}\n\nTW:",
+    "completion": " scroll-pt-20 cursor-e-resize scroll-mx-56 top-44 basis-11 w-2\\/6;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #fef9c3;\n  height: 0.25rem;\n  border-top-width: 0px;\n  cursor: context-menu;\n}\n\nTW:",
+    "completion": " fill-yellow-100 h-1\\/4 border-t-0 cursor-context-menu;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-right: 0.5rem;\n  padding-bottom: 2.5rem;\n  max-width: 72rem;\n  flex-basis: 1.25rem;\n}\n\nTW:",
+    "completion": " scroll-pr-2\\.5 pb-10 max-w-6xl basis-5\\/6;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding: 5rem;\n  max-width: 0rem;\n  columns: 64rem;\n  height: 15rem;\n}\n\nTW:",
+    "completion": " scroll-p-20 max-w-0 columns-5xl h-60;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  max-width: 64rem;\n  border-top-width: 8px;\n  border-bottom-width: 8px;\n  flex-basis: 0.5rem;\n  width: 16rem;\n  margin-top: 5rem;\n}\n\nTW:",
+    "completion": " max-w-5xl border-y-8 basis-2\\/5 w-64 mt-20;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  width: 11rem;\n  text-indent: 1.75rem;\n  columns: 2;\n  cursor: ew-resize;\n  border-top-left-radius: 0px;\n  border-top-right-radius: 0px;\n}\n\nTW:",
+    "completion": " w-44 indent-7 columns-2 cursor-ew-resize rounded-t-none;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  border-radius: 0.25rem;\n  max-width: 640px;\n  height: 0.5rem;\n  width: auto;\n}\n\nTW:",
+    "completion": " rounded max-w-screen-sm h-2 w-auto;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  text-indent: 0px;\n  scroll-margin-top: 4rem;\n  scroll-margin-bottom: 4rem;\n  stroke: #4f46e5;\n  width: 0.5rem;\n  cursor: n-resize;\n}\n\nTW:",
+    "completion": " indent-0 scroll-my-16 stroke-indigo-600 w-2\\/3 cursor-n-resize;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  width: 5rem;\n  scroll-margin-left: 0.25rem;\n  stroke: #e0f2fe;\n  max-width: 28rem;\n  top: 0.75rem;\n  bottom: 0.75rem;\n  fill: #ede9fe;\n  height: 1.5rem;\n}\n\nTW:",
+    "completion": " w-20 scroll-ml-1 stroke-sky-100 max-w-md inset-y-3 fill-violet-100 h-6;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-bottom: 13rem;\n  padding-top: 20rem;\n  padding-bottom: 20rem;\n  height: 24rem;\n  gap: 0px;\n  margin: 9rem;\n  max-height: 11rem;\n}\n\nTW:",
+    "completion": " scroll-mb-52 py-80 h-96 gap-0 m-36 max-h-44;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  left: 0.25rem;\n  width: 18rem;\n  scroll-margin-top: 0.25rem;\n  scroll-margin-bottom: 0.25rem;\n  gap: 0.75rem;\n  flex-basis: 2.5rem;\n}\n\nTW:",
+    "completion": " left-1\\/3 w-72 scroll-my-1 gap-3\\.5 basis-10\\/12;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-bottom: 1.75rem;\n  border-top-left-radius: 9999px;\n  border-bottom-left-radius: 9999px;\n  width: 0.25rem;\n  padding-left: 14rem;\n  padding-right: 14rem;\n  height: 2.25rem;\n}\n\nTW:",
+    "completion": " mb-7 rounded-l-full w-1\\/3 px-56 h-9;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  flex-basis: 1.75rem;\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n  gap: 2.25rem;\n}\n\nTW:",
+    "completion": " basis-7 mx-2\\.5 gap-9;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-top: 0.75rem;\n  flex-basis: 7rem;\n  border-bottom-left-radius: 0.5rem;\n  text-indent: 2.25rem;\n  max-height: 10rem;\n  scroll-margin-top: 0.5rem;\n  scroll-margin-bottom: 0.5rem;\n}\n\nTW:",
+    "completion": " mt-3\\.5 basis-28 rounded-bl-lg indent-9 max-h-40 scroll-my-2\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-left: 2.25rem;\n  scroll-margin-right: 2.25rem;\n  max-height: 0.25rem;\n  stroke: #c026d3;\n  text-indent: 24rem;\n}\n\nTW:",
+    "completion": " scroll-mx-9 max-h-1\\.5 stroke-fuchsia-600 indent-96;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #e5e7eb;\n  padding: 0px;\n  border-right-width: 8px;\n  height: 1rem;\n  max-height: 0.75rem;\n  flex-basis: 0.75rem;\n}\n\nTW:",
+    "completion": " stroke-gray-200 p-0\\.5 border-r-8 h-4 max-h-3 basis-3\\/12;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  left: 10rem;\n  right: 10rem;\n  scroll-margin-left: 11rem;\n  flex-basis: 2rem;\n  text-indent: 15rem;\n  padding-bottom: 0.5rem;\n  border-top-right-radius: 9999px;\n}\n\nTW:",
+    "completion": " inset-x-40 scroll-ml-44 basis-8\\/12 indent-60 pb-2\\.5 rounded-tr-full;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  flex-basis: 14rem;\n  padding-left: 0px;\n  padding-right: 0px;\n  cursor: w-resize;\n  height: 1rem;\n  width: 2.5rem;\n  scroll-margin-left: 1.75rem;\n  border-top-left-radius: 1rem;\n}\n\nTW:",
+    "completion": " basis-56 px-0 cursor-w-resize h-4\\/6 w-10\\/12 scroll-ml-7 rounded-tl-2xl;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  max-height: 100vh;\n  width: fit-content;\n  stroke: #312e81;\n  height: 0px;\n}\n\nTW:",
+    "completion": " max-h-screen w-fit stroke-indigo-900 h-0;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-right: 9rem;\n  padding-right: 10rem;\n  height: 0.5rem;\n}\n\nTW:",
+    "completion": " mr-36 pr-40 h-2\\/5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  border-top-left-radius: 0.75rem;\n  stroke: #0f766e;\n  scroll-padding-bottom: 0px;\n  width: 1.75rem;\n}\n\nTW:",
+    "completion": " rounded-tl-xl stroke-teal-700 scroll-pb-0\\.5 w-7\\/12;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  height: 1px;\n  padding-right: 12rem;\n  left: 12rem;\n  right: 12rem;\n  scroll-margin: 9rem;\n  cursor: wait;\n}\n\nTW:",
+    "completion": " h-px pr-48 inset-x-48 scroll-m-36 cursor-wait;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  cursor: all-scroll;\n  scroll-margin: 0.25rem;\n  height: 6rem;\n}\n\nTW:",
+    "completion": " cursor-all-scroll scroll-m-1\\.5 h-24;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-bottom: 15rem;\n  scroll-padding-top: 3rem;\n  cursor: sw-resize;\n  stroke: #f0fdf4;\n  border-bottom-left-radius: 0px;\n  width: 10rem;\n}\n\nTW:",
+    "completion": " scroll-mb-60 scroll-pt-12 cursor-sw-resize stroke-green-50 rounded-bl-none w-40;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  cursor: grabbing;\n  max-height: 3rem;\n  fill: #16a34a;\n  stroke: #ca8a04;\n  margin-top: 8rem;\n  scroll-margin: 13rem;\n  height: 13rem;\n}\n\nTW:",
+    "completion": " cursor-grabbing max-h-12 fill-green-600 stroke-yellow-600 mt-32 scroll-m-52 h-52;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #ef4444;\n  margin-top: 0.5rem;\n  margin-bottom: 0.5rem;\n  scroll-margin-bottom: 0.75rem;\n  fill: #525252;\n  height: 16rem;\n  column-gap: 4rem;\n}\n\nTW:",
+    "completion": " stroke-red-500 my-2\\.5 scroll-mb-3 fill-neutral-600 h-64 gap-x-16;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  gap: 0.25rem;\n  margin-left: 1.5rem;\n  max-height: 18rem;\n  scroll-padding-left: 9rem;\n}\n\nTW:",
+    "completion": " gap-1 ml-6 max-h-72 scroll-pl-36;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  flex-basis: 1.25rem;\n  max-height: 3.5rem;\n  stroke: #f472b6;\n  top: 0.25rem;\n  border-top-left-radius: 0.125rem;\n  border-top-right-radius: 0.125rem;\n  fill: #2dd4bf;\n  text-indent: 3rem;\n}\n\nTW:",
+    "completion": " basis-5\\/12 max-h-14 stroke-pink-400 top-1\\/3 rounded-t-sm fill-teal-400 indent-12;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  border-top-width: 1px;\n  height: 10rem;\n  scroll-margin-right: 4rem;\n  margin-top: 15rem;\n  margin-bottom: 15rem;\n  border-top-left-radius: 0.5rem;\n  border-top-right-radius: 0.5rem;\n}\n\nTW:",
+    "completion": " border-t h-40 scroll-mr-16 my-60 rounded-t-lg;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  max-height: 1.5rem;\n  stroke: #facc15;\n  scroll-margin-right: 20rem;\n  height: 18rem;\n}\n\nTW:",
+    "completion": " max-h-6 stroke-yellow-400 scroll-mr-80 h-72;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  flex-basis: 2rem;\n  border-left-width: 4px;\n  height: 0.75rem;\n}\n\nTW:",
+    "completion": " basis-8 border-l-4 h-3\\/5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  top: 6rem;\n  bottom: 6rem;\n  text-indent: 18rem;\n  stroke: #525252;\n  gap: 24rem;\n  fill: #fef2f2;\n  scroll-margin-left: 18rem;\n  scroll-margin-right: 18rem;\n}\n\nTW:",
+    "completion": " inset-y-24 indent-72 stroke-neutral-600 gap-96 fill-red-50 scroll-mx-72;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  border-width: 8px;\n  text-indent: 1px;\n  border-top-left-radius: 0px;\n  scroll-padding-bottom: 1px;\n  height: 4rem;\n  padding-top: 2rem;\n  padding-bottom: 2rem;\n}\n\nTW:",
+    "completion": " border-8 indent-px rounded-tl-none scroll-pb-px h-16 py-8;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-left: 3rem;\n  scroll-padding-right: 3rem;\n  border-top-width: 4px;\n  border-bottom-width: 4px;\n  height: 0.25rem;\n  margin-top: 1.25rem;\n  margin-bottom: 1.25rem;\n  top: 0.75rem;\n  right: 0.75rem;\n  bottom: 0.75rem;\n  left: 0.75rem;\n}\n\nTW:",
+    "completion": " scroll-px-12 border-y-4 h-1\\/6 my-5 inset-3\\/4;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  gap: 2rem;\n  flex-basis: 0.5rem;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n\nTW:",
+    "completion": " gap-8 basis-2 inset-0\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  height: 3.5rem;\n  fill: #f3f4f6;\n  stroke: #7e22ce;\n  text-indent: 14rem;\n}\n\nTW:",
+    "completion": " h-14 fill-gray-100 stroke-purple-700 indent-56;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  width: 0.5rem;\n  row-gap: 6rem;\n  scroll-padding-right: 6rem;\n  border-top-left-radius: 0.375rem;\n  border-bottom-left-radius: 0.375rem;\n  scroll-margin: 8rem;\n}\n\nTW:",
+    "completion": " w-2 gap-y-24 scroll-pr-24 rounded-l-md scroll-m-32;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-top: 0px;\n  gap: 18rem;\n  margin: 0.25rem;\n  scroll-margin: 16rem;\n  height: 0.5rem;\n}\n\nTW:",
+    "completion": " scroll-pt-0 gap-72 m-1\\.5 scroll-m-64 h-2\\/4;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-right: 2.25rem;\n  fill: #5eead4;\n  height: 1.25rem;\n  scroll-margin-right: 3.5rem;\n  scroll-padding-top: 0.5rem;\n  scroll-padding-bottom: 0.5rem;\n  stroke: #fecdd3;\n  width: 2.5rem;\n}\n\nTW:",
+    "completion": " pr-9 fill-teal-300 h-5\\/6 scroll-mr-14 scroll-py-2\\.5 stroke-rose-200 w-10;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-top: 0.75rem;\n  padding-bottom: 0.75rem;\n  fill: #44403c;\n  margin: 2.75rem;\n  text-indent: 1.25rem;\n  flex-basis: 0.75rem;\n}\n\nTW:",
+    "completion": " py-3 fill-stone-700 m-11 indent-5 basis-3\\/4;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #eef2ff;\n  column-gap: 20rem;\n  flex-basis: 0.25rem;\n}\n\nTW:",
+    "completion": " stroke-indigo-50 gap-x-80 basis-1\\/12;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  width: 0px;\n  right: 2.25rem;\n  scroll-margin-right: 14rem;\n  margin: 14rem;\n}\n\nTW:",
+    "completion": " w-0\\.5 right-9 scroll-mr-56 m-56;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  border-top-left-radius: 1.5rem;\n  border-bottom-left-radius: 1.5rem;\n  border-left-width: 0px;\n  border-right-width: 0px;\n  scroll-padding-top: 16rem;\n  gap: 20rem;\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n\nTW:",
+    "completion": " rounded-l-3xl border-x-0 scroll-pt-64 gap-80 py-2\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  border-left-width: 2px;\n  text-indent: 3.5rem;\n  width: 0.25rem;\n  border-top-right-radius: 0.5rem;\n}\n\nTW:",
+    "completion": " border-l-2 indent-14 w-1\\/5 rounded-tr-lg;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #111827;\n  stroke: #f43f5e;\n  right: 0.5rem;\n  width: 0.5rem;\n  scroll-margin-left: 2.25rem;\n  border-left-width: 1px;\n}\n\nTW:",
+    "completion": " fill-gray-900 stroke-rose-500 right-2\\/4 w-2\\/12 scroll-ml-9 border-l;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  gap: 6rem;\n  padding-left: 2.75rem;\n  padding-right: 2.75rem;\n  margin-bottom: 4rem;\n}\n\nTW:",
+    "completion": " gap-24 px-11 mb-16;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  width: 0.25rem;\n  margin-left: 2.75rem;\n  padding-top: 0.75rem;\n  stroke: #9a3412;\n}\n\nTW:",
+    "completion": " w-1\\/2 ml-11 pt-3\\.5 stroke-orange-800;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  row-gap: 2.75rem;\n  scroll-margin-left: 8rem;\n  scroll-margin-right: 8rem;\n  flex-basis: 0.25rem;\n  margin-left: 3.5rem;\n}\n\nTW:",
+    "completion": " gap-y-11 scroll-mx-32 basis-1\\/2 ml-14;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  width: 14rem;\n  fill: #4c1d95;\n  border-radius: 0.5rem;\n  gap: 3.5rem;\n  stroke: #0891b2;\n}\n\nTW:",
+    "completion": " w-56 fill-violet-900 rounded-lg gap-14 stroke-cyan-600;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  flex-basis: 2.25rem;\n  text-indent: 7rem;\n  column-gap: 2.25rem;\n  width: 0.25rem;\n  fill: #be185d;\n}\n\nTW:",
+    "completion": " basis-9 indent-28 gap-x-9 w-1\\/12 fill-pink-700;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  height: 0.75rem;\n  border-top-left-radius: 0.25rem;\n  margin: auto;\n  scroll-margin-left: 24rem;\n  scroll-margin-right: 24rem;\n}\n\nTW:",
+    "completion": " h-3 rounded-tl m-auto scroll-mx-96;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  border-radius: 1.5rem;\n  width: 0.25rem;\n  right: 18rem;\n  flex-basis: 1.25rem;\n}\n\nTW:",
+    "completion": " rounded-3xl w-1\\/6 right-72 basis-5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-top: 1rem;\n  scroll-margin-bottom: 1rem;\n  text-indent: 12rem;\n  width: 1.5rem;\n  fill: #6b21a8;\n  height: 2.75rem;\n  padding-right: 0.5rem;\n}\n\nTW:",
+    "completion": " scroll-my-4 indent-48 w-6\\/12 fill-purple-800 h-11 pr-2\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  flex-basis: 2.75rem;\n  top: 3.5rem;\n  bottom: 3.5rem;\n  scroll-margin-top: 1.75rem;\n  scroll-margin-bottom: 1.75rem;\n  margin-left: 1.75rem;\n  stroke: #22c55e;\n  height: 5rem;\n  row-gap: 7rem;\n}\n\nTW:",
+    "completion": " basis-11\\/12 inset-y-14 scroll-my-7 ml-7 stroke-green-500 h-20 gap-y-28;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-bottom: 11rem;\n  width: 6rem;\n  border-bottom-right-radius: 9999px;\n}\n\nTW:",
+    "completion": " scroll-pb-44 w-24 rounded-br-full;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #fde047;\n  flex-basis: 0.25rem;\n  scroll-padding-top: 4rem;\n  left: 100%;\n  right: 100%;\n}\n\nTW:",
+    "completion": " fill-yellow-300 basis-1\\.5 scroll-pt-16 inset-x-full;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #a78bfa;\n  scroll-padding-bottom: 2rem;\n  margin-bottom: 2.25rem;\n  flex-basis: 3.5rem;\n  top: 11rem;\n  bottom: 11rem;\n}\n\nTW:",
+    "completion": " fill-violet-400 scroll-pb-8 mb-9 basis-14 inset-y-44;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  height: 0.25rem;\n  border-top-right-radius: 1rem;\n  scroll-margin-top: 2.75rem;\n  scroll-margin-bottom: 2.75rem;\n  stroke: #3b82f6;\n}\n\nTW:",
+    "completion": " h-1\\/3 rounded-tr-2xl scroll-my-11 stroke-blue-500;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  height: 3rem;\n  margin-right: 0.25rem;\n  column-gap: 0.5rem;\n  top: 2rem;\n}\n\nTW:",
+    "completion": " h-12 mr-1 gap-x-2 top-8;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-right: 10rem;\n  width: 0.25rem;\n  padding-left: 2.75rem;\n  border-bottom-left-radius: 0.125rem;\n}\n\nTW:",
+    "completion": " mr-40 w-1 pl-11 rounded-bl-sm;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  flex-basis: 4rem;\n  fill: #7dd3fc;\n  scroll-margin-top: 3.5rem;\n  stroke: #92400e;\n  border-top-right-radius: 0px;\n  gap: 9rem;\n}\n\nTW:",
+    "completion": " basis-16 fill-sky-300 scroll-mt-14 stroke-amber-800 rounded-tr-none gap-36;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-left: 9rem;\n  margin-right: 9rem;\n  border-bottom-left-radius: 0.375rem;\n  width: 2rem;\n  scroll-margin: 14rem;\n  gap: 8rem;\n  flex-basis: 1rem;\n  fill: #0d9488;\n}\n\nTW:",
+    "completion": " mx-36 rounded-bl-md w-8\\/12 scroll-m-56 gap-32 basis-4\\/12 fill-teal-600;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  left: 1.5rem;\n  scroll-margin: 2.75rem;\n  flex-basis: 13rem;\n  fill: #0284c7;\n  width: 1.25rem;\n}\n\nTW:",
+    "completion": " left-6 scroll-m-11 basis-52 fill-sky-600 w-5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-top: 0.25rem;\n  margin-bottom: 0.25rem;\n  scroll-margin-left: 8rem;\n  padding-top: 0px;\n  padding-bottom: 0px;\n  fill: #fdba74;\n}\n\nTW:",
+    "completion": " my-1\\.5 scroll-ml-32 py-0 fill-orange-300;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  top: 7rem;\n  border-bottom-right-radius: 0.75rem;\n  border-bottom-left-radius: 0.75rem;\n  width: 0.5rem;\n  scroll-padding-left: 1.75rem;\n  scroll-padding-right: 1.75rem;\n  stroke: #f5f5f5;\n}\n\nTW:",
+    "completion": " top-28 rounded-b-xl w-2\\/4 scroll-px-7 stroke-neutral-100;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  column-gap: 0.25rem;\n  padding-left: 13rem;\n  padding-right: 13rem;\n  stroke: #f87171;\n  left: 0px;\n  right: 0px;\n}\n\nTW:",
+    "completion": " gap-x-1\\.5 px-52 stroke-red-400 inset-x-0;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  left: 0.25rem;\n  right: 0.25rem;\n  flex-basis: 11rem;\n  column-gap: 1.75rem;\n  margin: 1.5rem;\n}\n\nTW:",
+    "completion": " inset-x-1 basis-44 gap-x-7 m-6;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-right: 11rem;\n  width: 1.25rem;\n  scroll-padding: 0.5rem;\n  flex-basis: 6rem;\n  top: 0.5rem;\n  right: 0.5rem;\n  bottom: 0.5rem;\n  left: 0.5rem;\n  border-radius: 0.375rem;\n}\n\nTW:",
+    "completion": " mr-44 w-5\\/12 scroll-p-2\\.5 basis-24 inset-2\\/3 rounded-md;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #cffafe;\n  width: 0.75rem;\n  scroll-margin: 3rem;\n  margin-bottom: 8rem;\n}\n\nTW:",
+    "completion": " fill-cyan-100 w-3 scroll-m-12 mb-32;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  row-gap: 24rem;\n  stroke: #fafafa;\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n  scroll-margin-left: 0.75rem;\n  scroll-margin-right: 0.75rem;\n}\n\nTW:",
+    "completion": " gap-y-96 stroke-zinc-50 mx-2 scroll-mx-3;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-top: 14rem;\n  scroll-padding-bottom: 14rem;\n  flex-basis: 100%;\n  margin-left: auto;\n  padding-top: 0.5rem;\n}\n\nTW:",
+    "completion": " scroll-py-56 basis-full ml-auto pt-2\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-left: 10rem;\n  row-gap: 0.5rem;\n  top: auto;\n  right: auto;\n  bottom: auto;\n  left: auto;\n  scroll-padding-top: 11rem;\n  flex-basis: 3rem;\n  stroke: #be185d;\n  width: 7rem;\n}\n\nTW:",
+    "completion": " ml-40 gap-y-2\\.5 inset-auto scroll-pt-44 basis-12 stroke-pink-700 w-28;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-top: 1px;\n  padding-bottom: 1px;\n  border-top-left-radius: 0.75rem;\n  border-top-right-radius: 0.75rem;\n  top: 18rem;\n  right: 18rem;\n  bottom: 18rem;\n  left: 18rem;\n  stroke: #6b21a8;\n  scroll-margin-left: 0.5rem;\n  scroll-margin-right: 0.5rem;\n}\n\nTW:",
+    "completion": " py-px rounded-t-xl inset-72 stroke-purple-800 scroll-mx-2\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-left: 8rem;\n  scroll-padding-right: 8rem;\n  padding-right: 1.75rem;\n  stroke: #059669;\n  fill: #22c55e;\n  border-top-left-radius: 1rem;\n  border-bottom-left-radius: 1rem;\n}\n\nTW:",
+    "completion": " scroll-px-32 pr-7 stroke-emerald-600 fill-green-500 rounded-l-2xl;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #ffe4e6;\n  scroll-margin-top: 0px;\n  scroll-margin-bottom: 0px;\n  border-bottom-right-radius: 1.5rem;\n  scroll-padding-right: 0px;\n  row-gap: 2rem;\n}\n\nTW:",
+    "completion": " stroke-rose-100 scroll-my-0 rounded-br-3xl scroll-pr-0\\.5 gap-y-8;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-left: 3.5rem;\n  top: 1.75rem;\n  bottom: 1.75rem;\n  row-gap: 20rem;\n  fill: #065f46;\n}\n\nTW:",
+    "completion": " scroll-ml-14 inset-y-7 gap-y-80 fill-emerald-800;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  width: 13rem;\n  left: 0.75rem;\n  padding-left: 2.25rem;\n  padding-right: 2.25rem;\n  border-bottom-right-radius: 0.125rem;\n  scroll-padding-left: 0.75rem;\n  scroll-padding-right: 0.75rem;\n  row-gap: 3.5rem;\n}\n\nTW:",
+    "completion": " w-52 left-3 px-9 rounded-br-sm scroll-px-3 gap-y-14;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  width: 0.75rem;\n  scroll-padding-top: 7rem;\n}\n\nTW:",
+    "completion": " w-3\\/12 scroll-pt-28;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-top: 0.25rem;\n  scroll-margin-bottom: 0.25rem;\n  fill: #115e59;\n  row-gap: 0.25rem;\n  border-bottom-left-radius: 9999px;\n}\n\nTW:",
+    "completion": " scroll-my-1\\.5 fill-teal-800 gap-y-1\\.5 rounded-bl-full;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  border-top-right-radius: 1rem;\n  border-bottom-right-radius: 1rem;\n  row-gap: 0px;\n  scroll-padding-top: 0.5rem;\n  stroke: #064e3b;\n  margin-bottom: 16rem;\n}\n\nTW:",
+    "completion": " rounded-r-2xl gap-y-0\\.5 scroll-pt-2\\.5 stroke-emerald-900 mb-64;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-left: 9rem;\n  border-bottom-right-radius: 0.5rem;\n  stroke: #38bdf8;\n  gap: 15rem;\n  width: 24rem;\n  scroll-padding-right: 2.5rem;\n}\n\nTW:",
+    "completion": " scroll-ml-36 rounded-br-lg stroke-sky-400 gap-60 w-96 scroll-pr-10;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #9ca3af;\n  border-top-right-radius: 0.125rem;\n  border-bottom-right-radius: 0.125rem;\n  gap: 1.5rem;\n  bottom: 0.5rem;\n}\n\nTW:",
+    "completion": " fill-gray-400 rounded-r-sm gap-6 bottom-2\\/4;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  gap: 16rem;\n  stroke: #404040;\n  fill: #cbd5e1;\n  scroll-margin-right: 0.25rem;\n  margin-left: 1px;\n  margin-right: 1px;\n  width: min-content;\n}\n\nTW:",
+    "completion": " gap-64 stroke-neutral-700 fill-slate-300 scroll-mr-1 mx-px w-min;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-bottom: 1.25rem;\n  row-gap: 14rem;\n  left: 0.25rem;\n  right: 0.25rem;\n}\n\nTW:",
+    "completion": " scroll-mb-5 gap-y-56 inset-x-1\\/3;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-left: 0.25rem;\n  margin-left: 2rem;\n  margin-right: 2rem;\n  fill: #a5f3fc;\n  stroke: #0e7490;\n  border-top-left-radius: 0.25rem;\n  border-top-right-radius: 0.25rem;\n}\n\nTW:",
+    "completion": " scroll-ml-1\\.5 mx-8 fill-cyan-200 stroke-cyan-700 rounded-t;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  width: 0.75rem;\n  stroke: #44403c;\n  fill: #f7fee7;\n  scroll-padding-left: 4rem;\n  scroll-padding-right: 4rem;\n}\n\nTW:",
+    "completion": " w-3\\/6 stroke-stone-700 fill-lime-50 scroll-px-16;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-bottom: 5rem;\n  margin-left: 11rem;\n  margin-right: 11rem;\n  fill: #312e81;\n}\n\nTW:",
+    "completion": " pb-20 mx-44 fill-indigo-900;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  right: 1rem;\n  scroll-margin: 6rem;\n  column-gap: 2rem;\n  margin-right: 2rem;\n  width: 2.25rem;\n  fill: #f97316;\n  scroll-padding-left: 13rem;\n}\n\nTW:",
+    "completion": " right-4 scroll-m-24 gap-x-8 mr-8 w-9\\/12 fill-orange-500 scroll-pl-52;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  width: 8rem;\n  stroke: #262626;\n  margin-left: 24rem;\n  scroll-padding-right: 14rem;\n  padding-left: 0.25rem;\n  padding-right: 0.25rem;\n}\n\nTW:",
+    "completion": " w-32 stroke-neutral-800 ml-96 scroll-pr-56 px-1;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-top: 3.5rem;\n  scroll-padding-bottom: 3.5rem;\n  scroll-margin-bottom: 18rem;\n  row-gap: 16rem;\n  border-top-left-radius: 9999px;\n}\n\nTW:",
+    "completion": " scroll-py-14 scroll-mb-72 gap-y-64 rounded-tl-full;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-top: 2.5rem;\n  scroll-margin-bottom: 2.5rem;\n  row-gap: 1.5rem;\n  padding-top: 13rem;\n  padding-bottom: 13rem;\n  fill: #f0f9ff;\n  border-top-right-radius: 0.375rem;\n}\n\nTW:",
+    "completion": " scroll-my-10 gap-y-6 py-52 fill-sky-50 rounded-tr-md;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  gap: 12rem;\n  border-top-left-radius: 9999px;\n  border-top-right-radius: 9999px;\n  fill: #c084fc;\n  scroll-padding-bottom: 12rem;\n  stroke: #e5e5e5;\n  margin-right: 0px;\n}\n\nTW:",
+    "completion": " gap-48 rounded-t-full fill-purple-400 scroll-pb-48 stroke-neutral-200 mr-0;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding: 2.5rem;\n  row-gap: 0px;\n  margin-bottom: 0.25rem;\n  scroll-margin-bottom: 3rem;\n}\n\nTW:",
+    "completion": " p-10 gap-y-0 mb-1 scroll-mb-12;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #4b5563;\n  right: 1.5rem;\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n  row-gap: 15rem;\n  scroll-padding-top: 1.5rem;\n}\n\nTW:",
+    "completion": " fill-gray-600 right-6 px-3\\.5 gap-y-60 scroll-pt-6;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  column-gap: 9rem;\n  scroll-padding-right: 2.75rem;\n  stroke: #fdf4ff;\n  fill: #f59e0b;\n  width: 0px;\n}\n\nTW:",
+    "completion": " gap-x-36 scroll-pr-11 stroke-fuchsia-50 fill-amber-500 w-0;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-left: 9rem;\n  fill: #1d4ed8;\n  stroke: #1d4ed8;\n  border-bottom-right-radius: 9999px;\n  border-bottom-left-radius: 9999px;\n  scroll-margin-top: 14rem;\n  gap: 3rem;\n}\n\nTW:",
+    "completion": " ml-36 fill-blue-700 stroke-blue-700 rounded-b-full scroll-mt-56 gap-12;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding: 1.5rem;\n  border-top-right-radius: 0.75rem;\n  fill: #a7f3d0;\n  stroke: #e9d5ff;\n  column-gap: 16rem;\n}\n\nTW:",
+    "completion": " p-6 rounded-tr-xl fill-emerald-200 stroke-purple-200 gap-x-64;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  left: 0.25rem;\n  padding-left: 11rem;\n  padding-right: 11rem;\n  scroll-margin-right: 0px;\n  stroke: #1e40af;\n  scroll-padding-bottom: 15rem;\n}\n\nTW:",
+    "completion": " left-1\\/4 px-44 scroll-mr-0\\.5 stroke-blue-800 scroll-pb-60;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-left: 12rem;\n  scroll-padding-right: 12rem;\n  padding-left: 1.5rem;\n  padding-right: 1.5rem;\n  stroke: #e7e5e4;\n}\n\nTW:",
+    "completion": " scroll-px-48 px-6 stroke-stone-200;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-left: 1.5rem;\n  top: 0.5rem;\n  right: 0.5rem;\n  bottom: 0.5rem;\n  left: 0.5rem;\n  margin-left: 7rem;\n  padding: 8rem;\n  gap: 0px;\n  stroke: #d9f99d;\n}\n\nTW:",
+    "completion": " scroll-pl-6 inset-2\\/4 ml-28 p-32 gap-0\\.5 stroke-lime-200;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  top: 24rem;\n  bottom: 24rem;\n  padding-top: 10rem;\n  padding-bottom: 10rem;\n  gap: 7rem;\n  width: 0.75rem;\n}\n\nTW:",
+    "completion": " inset-y-96 py-40 gap-28 w-3\\/4;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  column-gap: 3.5rem;\n  width: 1rem;\n  fill: #f0abfc;\n  stroke: #000;\n}\n\nTW:",
+    "completion": " gap-x-14 w-4\\/6 fill-fuchsia-300 stroke-black;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-left: 8rem;\n  padding-bottom: 0.75rem;\n  gap: 1px;\n  border-bottom-right-radius: 1rem;\n  border-bottom-left-radius: 1rem;\n  margin: 3rem;\n}\n\nTW:",
+    "completion": " scroll-pl-32 pb-3\\.5 gap-px rounded-b-2xl m-12;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #c4b5fd;\n  padding-right: 24rem;\n  column-gap: 5rem;\n  border-top-left-radius: 0.375rem;\n  margin-left: 7rem;\n  margin-right: 7rem;\n}\n\nTW:",
+    "completion": " stroke-violet-300 pr-96 gap-x-20 rounded-tl-md mx-28;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-left: 9rem;\n  scroll-padding-right: 9rem;\n  margin-top: 7rem;\n  fill: #60a5fa;\n  scroll-margin-right: 15rem;\n  padding-left: 24rem;\n  row-gap: 10rem;\n}\n\nTW:",
+    "completion": " scroll-px-36 mt-28 fill-blue-400 scroll-mr-60 pl-96 gap-y-40;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding: 7rem;\n  margin-left: 6rem;\n  scroll-padding-top: 24rem;\n  scroll-padding-bottom: 24rem;\n  fill: #e4e4e7;\n  left: 9rem;\n  border-bottom-right-radius: 0px;\n}\n\nTW:",
+    "completion": " p-28 ml-24 scroll-py-96 fill-zinc-200 left-36 rounded-br-none;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-bottom: 0.75rem;\n  padding-left: 0.25rem;\n  top: 16rem;\n  bottom: 16rem;\n  scroll-margin-bottom: 4rem;\n  margin-top: 0px;\n}\n\nTW:",
+    "completion": " scroll-pb-3\\.5 pl-1 inset-y-64 scroll-mb-16 mt-0;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  top: 16rem;\n  border-top-left-radius: 0.125rem;\n  gap: 2.5rem;\n  scroll-padding-right: 3rem;\n  stroke: #166534;\n}\n\nTW:",
+    "completion": " top-64 rounded-tl-sm gap-10 scroll-pr-12 stroke-green-800;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-bottom: 0.25rem;\n  border-bottom-right-radius: 0.375rem;\n  fill: #292524;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n  padding: 2rem;\n  margin: 1.25rem;\n}\n\nTW:",
+    "completion": " scroll-pb-1 rounded-br-md fill-stone-800 inset-0 p-8 m-5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  border-bottom-left-radius: 0.25rem;\n  padding-right: 2.5rem;\n  column-gap: 14rem;\n}\n\nTW:",
+    "completion": " rounded-bl pr-10 gap-x-56;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-left: 0.25rem;\n  border-radius: 1rem;\n  stroke: #fde047;\n  left: 3rem;\n  right: 3rem;\n  row-gap: 9rem;\n}\n\nTW:",
+    "completion": " scroll-pl-1 rounded-2xl stroke-yellow-300 inset-x-12 gap-y-36;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-right: 7rem;\n  right: 3.5rem;\n  stroke: #881337;\n  column-gap: 15rem;\n}\n\nTW:",
+    "completion": " scroll-mr-28 right-14 stroke-rose-900 gap-x-60;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  border-radius: 0px;\n  padding-bottom: 13rem;\n  row-gap: 8rem;\n  scroll-margin-bottom: 10rem;\n  bottom: 1.75rem;\n}\n\nTW:",
+    "completion": " rounded-none pb-52 gap-y-32 scroll-mb-40 bottom-7;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #115e59;\n  row-gap: 0.75rem;\n  border-top-left-radius: 1.5rem;\n  border-top-right-radius: 1.5rem;\n  margin-bottom: 2.5rem;\n  scroll-margin-top: 6rem;\n  scroll-margin-bottom: 6rem;\n  fill: #bef264;\n}\n\nTW:",
+    "completion": " stroke-teal-800 gap-y-3\\.5 rounded-t-3xl mb-10 scroll-my-24 fill-lime-300;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-left: 3.5rem;\n  scroll-margin-top: 5rem;\n  scroll-margin-bottom: 5rem;\n  stroke: #a3e635;\n  column-gap: 18rem;\n  padding-bottom: 20rem;\n  margin-top: 10rem;\n}\n\nTW:",
+    "completion": " scroll-pl-14 scroll-my-20 stroke-lime-400 gap-x-72 pb-80 mt-40;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  right: 0.75rem;\n  margin-left: 0.25rem;\n  margin-right: 0.25rem;\n  padding-right: 1rem;\n}\n\nTW:",
+    "completion": " right-3\\/4 mx-1\\.5 pr-4;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #065f46;\n  padding-top: 10rem;\n  column-gap: 1.25rem;\n  margin-left: 13rem;\n  margin-right: 13rem;\n  scroll-padding-bottom: 3rem;\n}\n\nTW:",
+    "completion": " stroke-emerald-800 pt-40 gap-x-5 mx-52 scroll-pb-12;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #16a34a;\n  gap: 14rem;\n  scroll-margin-bottom: 0.5rem;\n}\n\nTW:",
+    "completion": " stroke-green-600 gap-56 scroll-mb-2;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  row-gap: 0.75rem;\n  left: auto;\n  scroll-margin-top: 1.25rem;\n  scroll-margin-bottom: 1.25rem;\n  fill: #075985;\n}\n\nTW:",
+    "completion": " gap-y-3 left-auto scroll-my-5 fill-sky-800;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-left: 14rem;\n  scroll-padding-left: 10rem;\n  stroke: #ffedd5;\n}\n\nTW:",
+    "completion": " scroll-ml-56 scroll-pl-40 stroke-orange-100;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #f3e8ff;\n  padding-top: 16rem;\n  padding-bottom: 16rem;\n  margin-left: 0px;\n  column-gap: 13rem;\n  scroll-margin-right: 0.5rem;\n  left: 2rem;\n  right: 2rem;\n}\n\nTW:",
+    "completion": " fill-purple-100 py-64 ml-0\\.5 gap-x-52 scroll-mr-2\\.5 inset-x-8;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-top: 9rem;\n  scroll-margin-left: 0px;\n  scroll-margin-right: 0px;\n  scroll-padding: 1.25rem;\n  fill: #facc15;\n  top: 0.75rem;\n  bottom: 0.75rem;\n}\n\nTW:",
+    "completion": " pt-36 scroll-mx-0\\.5 scroll-p-5 fill-yellow-400 inset-y-3\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  column-gap: 1.5rem;\n  scroll-margin-bottom: 1.5rem;\n  margin-top: 10rem;\n  margin-bottom: 10rem;\n  stroke: #d8b4fe;\n  fill: #c7d2fe;\n}\n\nTW:",
+    "completion": " gap-x-6 scroll-mb-6 my-40 stroke-purple-300 fill-indigo-200;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #f87171;\n  padding-right: 1.5rem;\n  row-gap: 18rem;\n  margin-left: 0.25rem;\n  top: 2.75rem;\n  right: 2.75rem;\n  bottom: 2.75rem;\n  left: 2.75rem;\n}\n\nTW:",
+    "completion": " fill-red-400 pr-6 gap-y-72 ml-1\\.5 inset-11;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  row-gap: 1.75rem;\n  scroll-padding-top: 2rem;\n  fill: #fca5a5;\n}\n\nTW:",
+    "completion": " gap-y-7 scroll-pt-8 fill-red-300;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #86198f;\n  top: 14rem;\n  bottom: 14rem;\n  scroll-margin-top: 6rem;\n  scroll-padding-left: 1rem;\n}\n\nTW:",
+    "completion": " fill-fuchsia-800 inset-y-56 scroll-mt-24 scroll-pl-4;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-top: 18rem;\n  padding-bottom: 18rem;\n  bottom: 0.25rem;\n  stroke: #a21caf;\n  fill: #faf5ff;\n  margin: 0px;\n}\n\nTW:",
+    "completion": " py-72 bottom-1 stroke-fuchsia-700 fill-purple-50 m-0\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-left: 3rem;\n  scroll-padding-right: 1.75rem;\n  bottom: 0.25rem;\n  margin-bottom: 3.5rem;\n  padding-left: 1.75rem;\n}\n\nTW:",
+    "completion": " scroll-ml-12 scroll-pr-7 bottom-1\\/2 mb-14 pl-7;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-top: 6rem;\n  right: 0px;\n  fill: #71717a;\n  padding-left: 16rem;\n  padding-right: 16rem;\n}\n\nTW:",
+    "completion": " mt-24 right-0\\.5 fill-zinc-500 px-64;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-left: 15rem;\n  margin-right: 15rem;\n  stroke: #fff;\n  scroll-margin-top: 0px;\n  fill: #ccfbf1;\n  left: 11rem;\n  right: 11rem;\n}\n\nTW:",
+    "completion": " mx-60 stroke-white scroll-mt-0 fill-teal-100 inset-x-44;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #fecaca;\n  scroll-padding-bottom: 5rem;\n}\n\nTW:",
+    "completion": " stroke-red-200 scroll-pb-20;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-top: 0.25rem;\n  margin-bottom: 0.75rem;\n  right: 9rem;\n  padding-left: 5rem;\n}\n\nTW:",
+    "completion": " scroll-pt-1 mb-3 right-36 pl-20;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #86efac;\n  margin-top: 0px;\n  padding: 0px;\n}\n\nTW:",
+    "completion": " stroke-green-300 mt-0\\.5 p-0;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  top: 0.25rem;\n  bottom: 0.25rem;\n  scroll-margin-left: 24rem;\n  padding-bottom: 1.5rem;\n}\n\nTW:",
+    "completion": " inset-y-1\\/3 scroll-ml-96 pb-6;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #fefce8;\n  padding: 0.25rem;\n  scroll-padding-top: 14rem;\n  top: 2rem;\n  bottom: 2rem;\n}\n\nTW:",
+    "completion": " stroke-yellow-50 p-1 scroll-pt-56 inset-y-8;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #9ca3af;\n  padding-left: 0px;\n  scroll-margin-left: 7rem;\n  top: 10rem;\n  right: 10rem;\n  bottom: 10rem;\n  left: 10rem;\n}\n\nTW:",
+    "completion": " stroke-gray-400 pl-0 scroll-ml-28 inset-40;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #4b5563;\n  top: 0.5rem;\n  bottom: 0.5rem;\n  scroll-padding: 0.5rem;\n  scroll-margin-left: 1.25rem;\n  scroll-margin-right: 1.25rem;\n  margin-left: 13rem;\n}\n\nTW:",
+    "completion": " stroke-gray-600 inset-y-2\\/3 scroll-p-2 scroll-mx-5 ml-52;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-left: 1.5rem;\n  scroll-margin-right: 1.5rem;\n  padding-bottom: 12rem;\n  top: 3rem;\n  scroll-padding-bottom: 4rem;\n}\n\nTW:",
+    "completion": " scroll-mx-6 pb-48 top-12 scroll-pb-16;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #f3f4f6;\n  padding-left: 16rem;\n  right: 7rem;\n}\n\nTW:",
+    "completion": " stroke-gray-100 pl-64 right-28;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding: 2.25rem;\n  scroll-margin-left: 0px;\n  fill: #4f46e5;\n}\n\nTW:",
+    "completion": " scroll-p-9 scroll-ml-0 fill-indigo-600;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #22d3ee;\n  fill: #d9f99d;\n  scroll-padding-top: 8rem;\n  scroll-margin-top: 13rem;\n  padding-bottom: 0.25rem;\n}\n\nTW:",
+    "completion": " stroke-cyan-400 fill-lime-200 scroll-pt-32 scroll-mt-52 pb-1\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #8b5cf6;\n  scroll-margin-left: 1rem;\n  bottom: 0.5rem;\n  padding-top: 15rem;\n  padding-bottom: 15rem;\n}\n\nTW:",
+    "completion": " stroke-violet-500 scroll-ml-4 bottom-2 py-60;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #db2777;\n  scroll-padding-top: 16rem;\n  scroll-padding-bottom: 16rem;\n  stroke: #fca5a5;\n  margin-bottom: 0.75rem;\n}\n\nTW:",
+    "completion": " fill-pink-600 scroll-py-64 stroke-red-300 mb-3\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  top: 100%;\n  right: 100%;\n  bottom: 100%;\n  left: 100%;\n  margin-left: 3.5rem;\n  margin-right: 3.5rem;\n  padding-top: 1rem;\n  scroll-padding-top: 15rem;\n  scroll-padding-bottom: 15rem;\n  fill: #dc2626;\n}\n\nTW:",
+    "completion": " inset-full mx-14 pt-4 scroll-py-60 fill-red-600;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-bottom: 0.5rem;\n  stroke: #475569;\n  scroll-padding-right: 1.25rem;\n  scroll-margin-top: 2rem;\n  scroll-margin-bottom: 2rem;\n}\n\nTW:",
+    "completion": " mb-2 stroke-slate-600 scroll-pr-5 scroll-my-8;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-bottom: 10rem;\n  right: 0px;\n  stroke: #ea580c;\n  padding-left: 0.75rem;\n}\n\nTW:",
+    "completion": " scroll-pb-40 right-0 stroke-orange-600 pl-3;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-top: 0.75rem;\n  scroll-padding: 3rem;\n  stroke: #1e3a8a;\n  margin-left: 18rem;\n  scroll-margin-top: 2.5rem;\n}\n\nTW:",
+    "completion": " pt-3 scroll-p-12 stroke-blue-900 ml-72 scroll-mt-10;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #0369a1;\n  padding-left: 8rem;\n  padding-right: 8rem;\n  right: 100%;\n}\n\nTW:",
+    "completion": " stroke-sky-700 px-32 right-full;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-bottom: 9rem;\n  top: 1.5rem;\n  right: 1.5rem;\n  bottom: 1.5rem;\n  left: 1.5rem;\n  fill: #ffedd5;\n  stroke: #a5f3fc;\n}\n\nTW:",
+    "completion": " scroll-mb-36 inset-6 fill-orange-100 stroke-cyan-200;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-top: 0px;\n  scroll-padding-bottom: 0px;\n  stroke: #f0abfc;\n  scroll-margin-right: 11rem;\n  padding-left: 14rem;\n  fill: #fef08a;\n}\n\nTW:",
+    "completion": " scroll-py-0\\.5 stroke-fuchsia-300 scroll-mr-44 pl-56 fill-yellow-200;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-top: 1px;\n  fill: #831843;\n  margin: 11rem;\n  stroke: #374151;\n}\n\nTW:",
+    "completion": " scroll-pt-px fill-pink-900 m-44 stroke-gray-700;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-left: 1.5rem;\n  scroll-padding-right: 1.5rem;\n  padding-top: 4rem;\n  padding-bottom: 4rem;\n  fill: #f43f5e;\n  stroke: #fef2f2;\n  scroll-margin-top: 3rem;\n}\n\nTW:",
+    "completion": " scroll-px-6 py-16 fill-rose-500 stroke-red-50 scroll-mt-12;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #3f6212;\n  top: 100%;\n  padding-top: 1.75rem;\n  scroll-margin-top: 11rem;\n  scroll-margin-bottom: 11rem;\n}\n\nTW:",
+    "completion": " stroke-lime-800 top-full pt-7 scroll-my-44;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #1e40af;\n  margin-top: 1rem;\n  margin-bottom: 1rem;\n  scroll-margin-left: 4rem;\n  top: 100%;\n  bottom: 100%;\n  scroll-padding-top: 0px;\n  scroll-padding-bottom: 0px;\n  padding: 0.75rem;\n}\n\nTW:",
+    "completion": " fill-blue-800 my-4 scroll-ml-16 inset-y-full scroll-py-0 p-3\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  bottom: 10rem;\n  scroll-padding-top: 2.75rem;\n  fill: #a5b4fc;\n  margin-left: 3rem;\n  stroke: #b45309;\n}\n\nTW:",
+    "completion": " bottom-40 scroll-pt-11 fill-indigo-300 ml-12 stroke-amber-700;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding: 12rem;\n  top: 13rem;\n  scroll-padding-top: 9rem;\n  scroll-padding-bottom: 9rem;\n}\n\nTW:",
+    "completion": " p-48 top-52 scroll-py-36;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-left: 1.5rem;\n  scroll-padding: 24rem;\n  padding-top: 8rem;\n  padding-bottom: 8rem;\n}\n\nTW:",
+    "completion": " scroll-ml-6 scroll-p-96 py-32;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #f5f5f5;\n  top: 6rem;\n  stroke: #a5b4fc;\n  padding-left: 3rem;\n  margin-left: 8rem;\n  margin-right: 8rem;\n}\n\nTW:",
+    "completion": " fill-neutral-100 top-24 stroke-indigo-300 pl-12 mx-32;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #c7d2fe;\n  top: 0.75rem;\n  right: 0.75rem;\n  bottom: 0.75rem;\n  left: 0.75rem;\n  padding-left: 4rem;\n  padding-right: 4rem;\n  scroll-padding-right: 13rem;\n}\n\nTW:",
+    "completion": " stroke-indigo-200 inset-3\\.5 px-16 scroll-pr-52;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #fdba74;\n  top: 1rem;\n  bottom: 1rem;\n  scroll-padding-bottom: 1rem;\n  padding-right: 2.75rem;\n}\n\nTW:",
+    "completion": " stroke-orange-300 inset-y-4 scroll-pb-4 pr-11;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-bottom: 14rem;\n  scroll-margin-left: 11rem;\n  scroll-margin-right: 11rem;\n  stroke: #e11d48;\n  padding: 2.75rem;\n  margin-top: 1px;\n  margin-bottom: 1px;\n}\n\nTW:",
+    "completion": " scroll-pb-56 scroll-mx-44 stroke-rose-600 p-11 my-px;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #f1f5f9;\n  left: 0.5rem;\n  right: 0.5rem;\n  margin-left: 0.25rem;\n  margin-right: 0.25rem;\n  fill: #ddd6fe;\n  padding-top: 7rem;\n  padding-bottom: 7rem;\n  scroll-margin-bottom: 24rem;\n}\n\nTW:",
+    "completion": " stroke-slate-100 inset-x-2\\/3 mx-1 fill-violet-200 py-28 scroll-mb-96;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #991b1b;\n  scroll-margin-right: 8rem;\n  margin-bottom: 6rem;\n  padding: 13rem;\n  scroll-padding-right: 0.75rem;\n}\n\nTW:",
+    "completion": " fill-red-800 scroll-mr-32 mb-24 p-52 scroll-pr-3;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin: 0.5rem;\n  stroke: #b91c1c;\n  scroll-margin-left: 12rem;\n  scroll-margin-right: 12rem;\n}\n\nTW:",
+    "completion": " m-2\\.5 stroke-red-700 scroll-mx-48;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  right: 5rem;\n  stroke: #65a30d;\n  scroll-margin: 24rem;\n  margin-left: 2.25rem;\n  margin-right: 2.25rem;\n}\n\nTW:",
+    "completion": " right-20 stroke-lime-600 scroll-m-96 mx-9;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-top: 0.75rem;\n  scroll-padding-bottom: 0.75rem;\n  padding-right: 6rem;\n  stroke: #fb923c;\n  margin-top: 0.25rem;\n}\n\nTW:",
+    "completion": " scroll-py-3 pr-24 stroke-orange-400 mt-1\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-bottom: 14rem;\n  left: 1.25rem;\n  right: 1.25rem;\n  margin-left: 15rem;\n  scroll-margin-top: 1px;\n  scroll-margin-bottom: 1px;\n  stroke: #f7fee7;\n}\n\nTW:",
+    "completion": " pb-56 inset-x-5 ml-60 scroll-my-px stroke-lime-50;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #60a5fa;\n  scroll-padding-top: 18rem;\n  padding-left: 0.25rem;\n  margin-top: 1rem;\n}\n\nTW:",
+    "completion": " stroke-blue-400 scroll-pt-72 pl-1\\.5 mt-4;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-right: 1.25rem;\n  scroll-margin-right: 16rem;\n  top: 10rem;\n  fill: #fde68a;\n}\n\nTW:",
+    "completion": " mr-5 scroll-mr-64 top-40 fill-amber-200;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #0369a1;\n  padding-top: 14rem;\n  scroll-padding-left: 24rem;\n  right: 0.5rem;\n}\n\nTW:",
+    "completion": " fill-sky-700 pt-56 scroll-pl-96 right-2;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-top: 4rem;\n  scroll-padding-right: 15rem;\n  fill: #e879f9;\n  margin-right: 0.5rem;\n}\n\nTW:",
+    "completion": " scroll-mt-16 scroll-pr-60 fill-fuchsia-400 mr-2\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-top: 5rem;\n  padding-bottom: 5rem;\n  scroll-margin-top: 15rem;\n  scroll-margin-bottom: 15rem;\n  margin: 0.75rem;\n}\n\nTW:",
+    "completion": " py-20 scroll-my-60 m-3\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #eff6ff;\n  fill: #fff;\n  top: 0.25rem;\n  bottom: 0.25rem;\n  scroll-padding-top: 0.75rem;\n  scroll-padding-bottom: 0.75rem;\n  margin-bottom: 1px;\n  scroll-margin-right: 18rem;\n}\n\nTW:",
+    "completion": " stroke-blue-50 fill-white inset-y-1\\/2 scroll-py-3\\.5 mb-px scroll-mr-72;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-bottom: 0.25rem;\n  scroll-padding-right: 1px;\n  stroke: #111827;\n  top: 0.75rem;\n  right: 0.75rem;\n  bottom: 0.75rem;\n  left: 0.75rem;\n  padding-top: 0.75rem;\n  padding-bottom: 0.75rem;\n}\n\nTW:",
+    "completion": " scroll-mb-1\\.5 scroll-pr-px stroke-gray-900 inset-3 py-3\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin: 0.25rem;\n  scroll-margin-top: 1.25rem;\n  scroll-padding-left: 14rem;\n}\n\nTW:",
+    "completion": " m-1 scroll-mt-5 scroll-pl-56;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #f9fafb;\n  padding-left: 9rem;\n  fill: #c026d3;\n}\n\nTW:",
+    "completion": " stroke-gray-50 pl-36 fill-fuchsia-600;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-left: 2.75rem;\n  margin-right: 2.75rem;\n  scroll-margin-bottom: 2.5rem;\n  fill: #a16207;\n  right: 13rem;\n  stroke: #f0f9ff;\n  padding-top: 1.5rem;\n}\n\nTW:",
+    "completion": " mx-11 scroll-mb-10 fill-yellow-700 right-52 stroke-sky-50 pt-6;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #155e75;\n  padding-left: 24rem;\n  padding-right: 24rem;\n  left: 0.5rem;\n  right: 0.5rem;\n  stroke: #0c4a6e;\n  scroll-margin-left: 12rem;\n}\n\nTW:",
+    "completion": " fill-cyan-800 px-96 inset-x-2\\/4 stroke-sky-900 scroll-ml-48;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  top: 12rem;\n  right: 12rem;\n  bottom: 12rem;\n  left: 12rem;\n  scroll-margin: 0.5rem;\n  margin-top: 13rem;\n  scroll-padding-top: 0.5rem;\n  scroll-padding-bottom: 0.5rem;\n}\n\nTW:",
+    "completion": " inset-48 scroll-m-2\\.5 mt-52 scroll-py-2;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-top: 1px;\n  scroll-padding-top: 20rem;\n  top: 13rem;\n  right: 13rem;\n  bottom: 13rem;\n  left: 13rem;\n}\n\nTW:",
+    "completion": " pt-px scroll-pt-80 inset-52;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-bottom: 0.75rem;\n  stroke: #fef9c3;\n  padding: 24rem;\n  scroll-padding-left: 24rem;\n  scroll-padding-right: 24rem;\n}\n\nTW:",
+    "completion": " scroll-mb-3\\.5 stroke-yellow-100 p-96 scroll-px-96;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  left: 1.25rem;\n  margin-top: 1.25rem;\n  scroll-margin-right: 1rem;\n  padding-bottom: 2.75rem;\n  stroke: #ecfccb;\n}\n\nTW:",
+    "completion": " left-5 mt-5 scroll-mr-4 pb-11 stroke-lime-100;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #c2410c;\n  fill: #4d7c0f;\n  padding-right: 1px;\n  scroll-margin-top: 1.75rem;\n}\n\nTW:",
+    "completion": " stroke-orange-700 fill-lime-700 pr-px scroll-mt-7;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-right: 0.5rem;\n  left: 0.75rem;\n  right: 0.75rem;\n  fill: #0e7490;\n  stroke: #c084fc;\n  scroll-padding-bottom: 0.5rem;\n}\n\nTW:",
+    "completion": " pr-2 inset-x-3\\/4 fill-cyan-700 stroke-purple-400 scroll-pb-2\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-bottom: 1.5rem;\n  scroll-padding-top: 24rem;\n  scroll-margin-right: 12rem;\n  fill: #e9d5ff;\n}\n\nTW:",
+    "completion": " mb-6 scroll-pt-96 scroll-mr-48 fill-purple-200;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  left: 24rem;\n  right: 24rem;\n  fill: #fafafa;\n  margin: 1rem;\n  scroll-padding-bottom: 1.25rem;\n}\n\nTW:",
+    "completion": " inset-x-96 fill-neutral-50 m-4 scroll-pb-5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-right: 4rem;\n  fill: #78350f;\n  scroll-padding-top: 10rem;\n  margin-right: 24rem;\n  scroll-margin: 0.25rem;\n}\n\nTW:",
+    "completion": " pr-16 fill-amber-900 scroll-pt-40 mr-96 scroll-m-1;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #f4f4f5;\n  scroll-margin-top: 2.25rem;\n  scroll-padding-top: 12rem;\n  scroll-padding-bottom: 12rem;\n  stroke: #1e293b;\n}\n\nTW:",
+    "completion": " fill-zinc-100 scroll-mt-9 scroll-py-48 stroke-slate-800;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: none;\n  scroll-margin-top: 16rem;\n  top: 20rem;\n  right: 20rem;\n  bottom: 20rem;\n  left: 20rem;\n  scroll-padding: 2.5rem;\n}\n\nTW:",
+    "completion": " stroke-none scroll-mt-64 inset-80 scroll-p-10;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: inherit;\n  scroll-margin-left: 2rem;\n  scroll-margin-right: 2rem;\n  fill: #64748b;\n  bottom: 1px;\n}\n\nTW:",
+    "completion": " stroke-inherit scroll-mx-8 fill-slate-500 bottom-px;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-top: 13rem;\n  bottom: auto;\n  stroke: #a1a1aa;\n  fill: #0f766e;\n}\n\nTW:",
+    "completion": " scroll-pt-52 bottom-auto stroke-zinc-400 fill-teal-700;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  top: 0.5rem;\n  bottom: 0.5rem;\n  scroll-margin-top: 14rem;\n  scroll-margin-bottom: 14rem;\n  padding-bottom: 16rem;\n  margin-right: 8rem;\n  fill: #fae8ff;\n  stroke: #fef08a;\n  scroll-padding-left: 0.75rem;\n}\n\nTW:",
+    "completion": " inset-y-2 scroll-my-56 pb-64 mr-32 fill-fuchsia-100 stroke-yellow-200 scroll-pl-3;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding: 4rem;\n  bottom: 16rem;\n  margin-right: 13rem;\n}\n\nTW:",
+    "completion": " scroll-p-16 bottom-64 mr-52;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  left: 10rem;\n  scroll-padding-left: 1.25rem;\n  scroll-padding-right: 1.25rem;\n  scroll-margin: 0px;\n  fill: #34d399;\n  padding-bottom: 9rem;\n}\n\nTW:",
+    "completion": " left-40 scroll-px-5 scroll-m-0\\.5 fill-emerald-400 pb-36;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #7c2d12;\n  margin-top: 24rem;\n  right: 24rem;\n}\n\nTW:",
+    "completion": " stroke-orange-900 mt-96 right-96;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-left: 0.75rem;\n  margin-right: 0.75rem;\n  top: 1.25rem;\n  right: 1.25rem;\n  bottom: 1.25rem;\n  left: 1.25rem;\n  fill: #38bdf8;\n}\n\nTW:",
+    "completion": " mx-3\\.5 inset-5 fill-sky-400;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  left: 2.25rem;\n  padding-right: 20rem;\n  scroll-padding-left: 15rem;\n  scroll-padding-right: 15rem;\n  scroll-margin-left: 13rem;\n  scroll-margin-right: 13rem;\n  margin-top: 2rem;\n}\n\nTW:",
+    "completion": " left-9 pr-80 scroll-px-60 scroll-mx-52 mt-8;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-right: 3.5rem;\n  stroke: #78716c;\n  top: 8rem;\n  right: 8rem;\n  bottom: 8rem;\n  left: 8rem;\n  scroll-margin-top: 1.5rem;\n  scroll-margin-bottom: 1.5rem;\n}\n\nTW:",
+    "completion": " mr-14 stroke-stone-500 inset-32 scroll-my-6;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  left: 14rem;\n  scroll-padding-bottom: 2.75rem;\n  margin-left: 0.25rem;\n  padding-left: 5rem;\n  padding-right: 5rem;\n  scroll-margin-right: 1.5rem;\n}\n\nTW:",
+    "completion": " left-56 scroll-pb-11 ml-1 px-20 scroll-mr-6;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-top: 13rem;\n  top: 0.75rem;\n  stroke: #3f3f46;\n}\n\nTW:",
+    "completion": " pt-52 top-3\\.5 stroke-zinc-700;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #27272a;\n  scroll-margin-top: 0.5rem;\n  margin-left: 0px;\n  fill: #ecfccb;\n}\n\nTW:",
+    "completion": " stroke-zinc-800 scroll-mt-2 ml-0 fill-lime-100;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-left: 0px;\n  scroll-margin-right: 0px;\n  bottom: 2rem;\n  stroke: #6d28d9;\n  margin: 1.75rem;\n  scroll-padding-bottom: 0.5rem;\n}\n\nTW:",
+    "completion": " scroll-mx-0 bottom-8 stroke-violet-700 m-7 scroll-pb-2;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-left: 2.5rem;\n  scroll-padding-right: 2.5rem;\n  right: 0.5rem;\n  fill: #dbeafe;\n  scroll-margin: 18rem;\n}\n\nTW:",
+    "completion": " scroll-px-10 right-2\\.5 fill-blue-100 scroll-m-72;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-left: 1rem;\n  stroke: #7c3aed;\n  bottom: 0.25rem;\n}\n\nTW:",
+    "completion": " pl-4 stroke-violet-600 bottom-1\\/3;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-left: 7rem;\n  padding-right: 7rem;\n  stroke: #0284c7;\n  fill: #fffbeb;\n}\n\nTW:",
+    "completion": " px-28 stroke-sky-600 fill-amber-50;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-left: 16rem;\n  margin-right: 16rem;\n  scroll-margin-bottom: 1rem;\n  top: 0.5rem;\n}\n\nTW:",
+    "completion": " mx-64 scroll-mb-4 top-2;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-right: 16rem;\n  scroll-padding-bottom: 0.25rem;\n}\n\nTW:",
+    "completion": " mr-64 scroll-pb-1\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-right: 0.75rem;\n  padding-left: 18rem;\n  padding-right: 18rem;\n  fill: #334155;\n}\n\nTW:",
+    "completion": " scroll-mr-3 px-72 fill-slate-700;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-left: 12rem;\n  padding-right: 12rem;\n  top: 2rem;\n  right: 2rem;\n  bottom: 2rem;\n  left: 2rem;\n  stroke: #fbbf24;\n}\n\nTW:",
+    "completion": " px-48 inset-8 stroke-amber-400;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  right: 15rem;\n  stroke: #2dd4bf;\n  scroll-margin-top: 24rem;\n  scroll-margin-bottom: 24rem;\n  fill: #ecfdf5;\n}\n\nTW:",
+    "completion": " right-60 stroke-teal-400 scroll-my-96 fill-emerald-50;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-left: 0px;\n  margin-right: 0px;\n  bottom: 0.75rem;\n  scroll-margin-top: 10rem;\n  scroll-margin-bottom: 10rem;\n  scroll-padding: 10rem;\n}\n\nTW:",
+    "completion": " mx-0 bottom-3\\.5 scroll-my-40 scroll-p-40;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-top: 0.25rem;\n  padding-bottom: 0.25rem;\n  margin-bottom: 15rem;\n  fill: #737373;\n}\n\nTW:",
+    "completion": " py-1 mb-60 fill-neutral-500;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-left: 2rem;\n  padding-left: 8rem;\n  top: 20rem;\n}\n\nTW:",
+    "completion": " ml-8 pl-32 top-80;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #a3a3a3;\n  margin-left: 2.5rem;\n  margin-right: 2.5rem;\n  scroll-margin-top: 7rem;\n  scroll-margin-bottom: 7rem;\n}\n\nTW:",
+    "completion": " stroke-neutral-400 mx-10 scroll-my-28;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  top: 0.5rem;\n  scroll-padding-left: 6rem;\n  scroll-padding-right: 6rem;\n  padding-top: 20rem;\n  stroke: #1c1917;\n  margin-right: 1.5rem;\n}\n\nTW:",
+    "completion": " top-2\\.5 scroll-px-24 pt-80 stroke-stone-900 mr-6;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #fff1f2;\n  margin-bottom: 0.5rem;\n  scroll-margin-right: 1.75rem;\n  stroke: #fff1f2;\n  scroll-padding-left: 4rem;\n}\n\nTW:",
+    "completion": " fill-rose-50 mb-2\\.5 scroll-mr-7 stroke-rose-50 scroll-pl-16;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #404040;\n  margin-top: 2.5rem;\n  margin-bottom: 2.5rem;\n}\n\nTW:",
+    "completion": " fill-neutral-700 my-10;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-top: 0.5rem;\n  margin-bottom: 0.5rem;\n  top: 5rem;\n  stroke: #d946ef;\n  fill: #86efac;\n}\n\nTW:",
+    "completion": " my-2 top-20 stroke-fuchsia-500 fill-green-300;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-left: 14rem;\n  margin-right: 14rem;\n  top: 5rem;\n  right: 5rem;\n  bottom: 5rem;\n  left: 5rem;\n  scroll-margin-bottom: 2rem;\n}\n\nTW:",
+    "completion": " mx-56 inset-20 scroll-mb-8;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #fafaf9;\n  scroll-margin-right: 0.75rem;\n  padding-top: 12rem;\n  scroll-padding-top: 1rem;\n}\n\nTW:",
+    "completion": " fill-stone-50 scroll-mr-3\\.5 pt-48 scroll-pt-4;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  left: 15rem;\n  stroke: #fafaf9;\n  padding-top: 0px;\n  padding-bottom: 0px;\n  scroll-padding: 0.75rem;\n}\n\nTW:",
+    "completion": " left-60 stroke-stone-50 py-0\\.5 scroll-p-3\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #78350f;\n  right: 2.75rem;\n  scroll-padding-left: 11rem;\n  fill: #9d174d;\n}\n\nTW:",
+    "completion": " stroke-amber-900 right-11 scroll-pl-44 fill-pink-800;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  top: 3.5rem;\n  fill: #f8fafc;\n  scroll-margin-left: 20rem;\n  scroll-margin-right: 20rem;\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n  scroll-padding-left: 12rem;\n}\n\nTW:",
+    "completion": " top-14 fill-slate-50 scroll-mx-80 py-4 scroll-pl-48;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  right: 0.25rem;\n  scroll-padding-bottom: 1.5rem;\n}\n\nTW:",
+    "completion": " right-1\\/3 scroll-pb-6;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-left: 0.5rem;\n  scroll-padding-right: 0.5rem;\n  margin-top: 11rem;\n  scroll-margin-left: 13rem;\n  top: 10rem;\n  bottom: 10rem;\n}\n\nTW:",
+    "completion": " scroll-px-2\\.5 mt-44 scroll-ml-52 inset-y-40;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-right: auto;\n  padding-top: 24rem;\n  padding-bottom: 24rem;\n  scroll-margin-bottom: 1.75rem;\n  fill: #6d28d9;\n}\n\nTW:",
+    "completion": " mr-auto py-96 scroll-mb-7 fill-violet-700;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-top: 7rem;\n  scroll-padding-bottom: 7rem;\n  padding-bottom: 0.75rem;\n  fill: #6ee7b7;\n  stroke: #5eead4;\n}\n\nTW:",
+    "completion": " scroll-py-28 pb-3 fill-emerald-300 stroke-teal-300;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-right: 18rem;\n  scroll-padding: 12rem;\n  bottom: 2.5rem;\n  fill: #000;\n  stroke: #ecfdf5;\n  scroll-margin: 0px;\n}\n\nTW:",
+    "completion": " mr-72 scroll-p-48 bottom-10 fill-black stroke-emerald-50 scroll-m-0;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n  left: 0.5rem;\n  right: 0.5rem;\n  stroke: #84cc16;\n  scroll-margin-right: 5rem;\n  margin-right: 0.5rem;\n}\n\nTW:",
+    "completion": " px-2 inset-x-2 stroke-lime-500 scroll-mr-20 mr-2;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #a7f3d0;\n  padding-top: 2.25rem;\n  padding-bottom: 2.25rem;\n  scroll-margin: 1.5rem;\n  fill: #0c4a6e;\n}\n\nTW:",
+    "completion": " stroke-emerald-200 py-9 scroll-m-6 fill-sky-900;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-left: 6rem;\n  scroll-margin-right: 6rem;\n  top: 1.5rem;\n  bottom: 1.5rem;\n  stroke: #cbd5e1;\n}\n\nTW:",
+    "completion": " scroll-mx-24 inset-y-6 stroke-slate-300;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-left: 16rem;\n  stroke: #9333ea;\n  margin-bottom: 1.25rem;\n}\n\nTW:",
+    "completion": " scroll-pl-64 stroke-purple-600 mb-5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-right: 3rem;\n  margin-left: 1rem;\n  stroke: #fde68a;\n  left: 0.75rem;\n}\n\nTW:",
+    "completion": " scroll-mr-12 ml-4 stroke-amber-200 left-3\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-left: 0.5rem;\n  stroke: #4ade80;\n  margin-right: 14rem;\n  fill: inherit;\n  bottom: 1.5rem;\n  scroll-padding-top: 1.25rem;\n}\n\nTW:",
+    "completion": " scroll-ml-2 stroke-green-400 mr-56 fill-inherit bottom-6 scroll-pt-5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding: 10rem;\n  fill: transparent;\n  scroll-padding-top: 0.25rem;\n  scroll-padding-bottom: 0.25rem;\n  scroll-margin-left: 16rem;\n}\n\nTW:",
+    "completion": " p-40 fill-transparent scroll-py-1 scroll-ml-64;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-top: 12rem;\n  scroll-margin-bottom: 12rem;\n  margin-top: 0.75rem;\n  margin-bottom: 0.75rem;\n  fill: #701a75;\n  scroll-padding-left: 14rem;\n  scroll-padding-right: 14rem;\n  stroke: #f59e0b;\n}\n\nTW:",
+    "completion": " scroll-my-48 my-3 fill-fuchsia-900 scroll-px-56 stroke-amber-500;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #d97706;\n  scroll-margin-left: 0.5rem;\n  scroll-margin-right: 0.5rem;\n  padding-right: 0px;\n  stroke: #fda4af;\n  scroll-padding-bottom: 0.75rem;\n  right: auto;\n}\n\nTW:",
+    "completion": " fill-amber-600 scroll-mx-2 pr-0 stroke-rose-300 scroll-pb-3 right-auto;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-left: 0.75rem;\n  stroke: #fafafa;\n  fill: #fecdd3;\n  scroll-margin-bottom: 20rem;\n}\n\nTW:",
+    "completion": " ml-3\\.5 stroke-neutral-50 fill-rose-200 scroll-mb-80;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #5b21b6;\n  fill: #65a30d;\n  scroll-padding-left: 0.5rem;\n}\n\nTW:",
+    "completion": " stroke-violet-800 fill-lime-600 scroll-pl-2\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-top: 12rem;\n  margin-bottom: 12rem;\n  fill: #92400e;\n  scroll-padding-top: 0px;\n  padding-bottom: 1.25rem;\n  bottom: 2.75rem;\n}\n\nTW:",
+    "completion": " my-48 fill-amber-800 scroll-pt-0\\.5 pb-5 bottom-11;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #a3a3a3;\n  padding: 3.5rem;\n  stroke: #bbf7d0;\n  bottom: 0px;\n  margin-right: 1px;\n  scroll-margin-bottom: 12rem;\n}\n\nTW:",
+    "completion": " fill-neutral-400 p-14 stroke-green-200 bottom-0\\.5 mr-px scroll-mb-48;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #fafafa;\n  right: 10rem;\n  padding-top: 0.25rem;\n  scroll-margin: 2rem;\n  margin-right: 12rem;\n}\n\nTW:",
+    "completion": " fill-zinc-50 right-40 pt-1 scroll-m-8 mr-48;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #1e3a8a;\n  scroll-padding-top: 1.75rem;\n  scroll-padding-bottom: 1.75rem;\n  scroll-margin-right: 2rem;\n  margin-bottom: 0px;\n}\n\nTW:",
+    "completion": " fill-blue-900 scroll-py-7 scroll-mr-8 mb-0;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #164e63;\n  margin-bottom: 20rem;\n  scroll-padding-left: 20rem;\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  top: 1px;\n}\n\nTW:",
+    "completion": " stroke-cyan-900 mb-80 scroll-pl-80 py-2 top-px;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #b45309;\n  padding-top: 3.5rem;\n  padding-bottom: 3.5rem;\n  scroll-padding-bottom: 9rem;\n  stroke: #d1fae5;\n}\n\nTW:",
+    "completion": " fill-amber-700 py-14 scroll-pb-36 stroke-emerald-100;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-right: 0.25rem;\n  padding-top: 2.25rem;\n  fill: #0ea5e9;\n}\n\nTW:",
+    "completion": " scroll-mr-1\\.5 pt-9 fill-sky-500;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-top: 2.75rem;\n  fill: #e2e8f0;\n  scroll-padding: 1.5rem;\n  margin-left: auto;\n  margin-right: auto;\n  bottom: 24rem;\n}\n\nTW:",
+    "completion": " scroll-mt-11 fill-slate-200 scroll-p-6 mx-auto bottom-96;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #701a75;\n  padding-bottom: 3rem;\n  margin-left: 0.5rem;\n}\n\nTW:",
+    "completion": " stroke-fuchsia-900 pb-12 ml-2;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #ef4444;\n  scroll-padding-right: 5rem;\n  scroll-margin-left: 18rem;\n}\n\nTW:",
+    "completion": " fill-red-500 scroll-pr-20 scroll-ml-72;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-top: 20rem;\n  margin-top: 2rem;\n  margin-bottom: 2rem;\n  fill: #1e293b;\n  padding-top: 2.75rem;\n  stroke: #075985;\n}\n\nTW:",
+    "completion": " scroll-mt-80 my-8 fill-slate-800 pt-11 stroke-sky-800;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #14532d;\n  stroke: #cffafe;\n  scroll-padding-bottom: 13rem;\n  scroll-margin-bottom: 0.25rem;\n}\n\nTW:",
+    "completion": " fill-green-900 stroke-cyan-100 scroll-pb-52 scroll-mb-1;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-right: 2.75rem;\n  bottom: 0.75rem;\n  fill: #262626;\n  margin-right: 15rem;\n}\n\nTW:",
+    "completion": " scroll-mr-11 bottom-3\\/4 fill-neutral-800 mr-60;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-left: 5rem;\n  margin-right: 5rem;\n  scroll-padding-top: 10rem;\n  scroll-padding-bottom: 10rem;\n  scroll-margin-top: 0.25rem;\n  fill: #1f2937;\n}\n\nTW:",
+    "completion": " mx-20 scroll-py-40 scroll-mt-1 fill-gray-800;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #e879f9;\n  scroll-padding-left: 0px;\n  scroll-margin-left: 6rem;\n}\n\nTW:",
+    "completion": " stroke-fuchsia-400 scroll-pl-0\\.5 scroll-ml-24;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #93c5fd;\n  scroll-padding-top: 8rem;\n  scroll-padding-bottom: 8rem;\n  padding-bottom: 0.5rem;\n  margin-left: 0.75rem;\n  margin-right: 0.75rem;\n}\n\nTW:",
+    "completion": " fill-blue-300 scroll-py-32 pb-2 mx-3;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin: 0.5rem;\n  right: 1.25rem;\n  scroll-padding-right: 1rem;\n  fill: #d1fae5;\n  scroll-margin-left: 3.5rem;\n  scroll-margin-right: 3.5rem;\n}\n\nTW:",
+    "completion": " m-2 right-5 scroll-pr-4 fill-emerald-100 scroll-mx-14;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #713f12;\n  scroll-margin-top: 8rem;\n  scroll-margin-bottom: 8rem;\n  top: 15rem;\n  right: 15rem;\n  bottom: 15rem;\n  left: 15rem;\n  fill: #6b7280;\n  margin-top: 12rem;\n}\n\nTW:",
+    "completion": " stroke-yellow-900 scroll-my-32 inset-60 fill-gray-500 mt-48;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #15803d;\n  left: 0.25rem;\n  right: 0.25rem;\n  scroll-padding-top: 0.25rem;\n  scroll-padding-bottom: 0.25rem;\n  margin: 3.5rem;\n}\n\nTW:",
+    "completion": " stroke-green-700 inset-x-1\\.5 scroll-py-1\\.5 m-14;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-bottom: 8rem;\n  margin: 1px;\n  left: 1rem;\n  right: 1rem;\n  scroll-margin-top: 0.5rem;\n}\n\nTW:",
+    "completion": " pb-32 m-px inset-x-4 scroll-mt-2\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #a78bfa;\n  fill: #f1f5f9;\n  top: 1.75rem;\n  right: 1.75rem;\n  bottom: 1.75rem;\n  left: 1.75rem;\n  scroll-margin-top: 7rem;\n  margin-top: auto;\n  margin-bottom: auto;\n}\n\nTW:",
+    "completion": " stroke-violet-400 fill-slate-100 inset-7 scroll-mt-28 my-auto;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding: 7rem;\n  padding-top: 2.75rem;\n  padding-bottom: 2.75rem;\n  stroke: #9d174d;\n  margin-bottom: 2.75rem;\n  fill: #c4b5fd;\n}\n\nTW:",
+    "completion": " scroll-p-28 py-11 stroke-pink-800 mb-11 fill-violet-300;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-left: 0.25rem;\n  scroll-margin-right: 0.25rem;\n  padding: 2.25rem;\n  left: 14rem;\n  right: 14rem;\n  stroke: #f9a8d4;\n  fill: #881337;\n}\n\nTW:",
+    "completion": " scroll-mx-1\\.5 p-9 inset-x-56 stroke-pink-300 fill-rose-900;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  left: 2.5rem;\n  stroke: #e2e8f0;\n  scroll-padding-right: 4rem;\n}\n\nTW:",
+    "completion": " left-10 stroke-slate-200 scroll-pr-16;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-bottom: 5rem;\n  stroke: #f8fafc;\n  padding-left: 1.25rem;\n  padding-right: 1.25rem;\n  top: 12rem;\n  scroll-padding-bottom: 2.5rem;\n}\n\nTW:",
+    "completion": " scroll-mb-20 stroke-slate-50 px-5 top-48 scroll-pb-10;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #27272a;\n  stroke: #dc2626;\n  top: 4rem;\n  right: 4rem;\n  bottom: 4rem;\n  left: 4rem;\n  scroll-margin: 2.25rem;\n}\n\nTW:",
+    "completion": " fill-zinc-800 stroke-red-600 inset-16 scroll-m-9;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-left: 0px;\n  scroll-padding-right: 0px;\n  padding-top: 5rem;\n  scroll-margin: 12rem;\n  top: 0.5rem;\n  right: 0.5rem;\n  bottom: 0.5rem;\n  left: 0.5rem;\n}\n\nTW:",
+    "completion": " scroll-px-0 pt-20 scroll-m-48 inset-2\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding: 18rem;\n  stroke: #dbeafe;\n  fill: #d1d5db;\n  margin-top: 2.75rem;\n  scroll-padding-left: 7rem;\n  scroll-margin-top: 8rem;\n}\n\nTW:",
+    "completion": " p-72 stroke-blue-100 fill-gray-300 mt-11 scroll-pl-28 scroll-mt-32;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #18181b;\n  top: 9rem;\n  fill: #e11d48;\n  padding-bottom: 0px;\n  scroll-margin-right: 10rem;\n  margin-top: 1.5rem;\n}\n\nTW:",
+    "completion": " stroke-zinc-900 top-36 fill-rose-600 pb-0\\.5 scroll-mr-40 mt-6;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #7e22ce;\n  scroll-padding-right: 18rem;\n  scroll-margin-left: 1.75rem;\n  scroll-margin-right: 1.75rem;\n}\n\nTW:",
+    "completion": " fill-purple-700 scroll-pr-72 scroll-mx-7;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-left: 1px;\n  scroll-padding-right: 1px;\n  scroll-margin-top: 0.25rem;\n  padding-top: 2.5rem;\n}\n\nTW:",
+    "completion": " scroll-px-px scroll-mt-1\\.5 pt-10;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-top: 1.5rem;\n  scroll-padding-bottom: 1.5rem;\n  fill: #e7e5e4;\n  stroke: #dcfce7;\n  margin-top: 0.25rem;\n}\n\nTW:",
+    "completion": " scroll-py-6 fill-stone-200 stroke-green-100 mt-1;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #be123c;\n  scroll-margin-right: 24rem;\n  top: 0.25rem;\n  right: 0.25rem;\n  bottom: 0.25rem;\n  left: 0.25rem;\n  padding-left: 6rem;\n  margin-top: 16rem;\n  margin-bottom: 16rem;\n  stroke: #06b6d4;\n}\n\nTW:",
+    "completion": " fill-rose-700 scroll-mr-96 inset-1\\/4 pl-24 my-64 stroke-cyan-500;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-left: 0.25rem;\n  scroll-margin-right: 0.25rem;\n  left: 0px;\n  stroke: #bef264;\n  fill: #f0fdfa;\n  padding-left: 0px;\n  padding-right: 0px;\n}\n\nTW:",
+    "completion": " scroll-mx-1 left-0\\.5 stroke-lime-300 fill-teal-50 px-0\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-left: 11rem;\n  fill: #fda4af;\n  stroke: #737373;\n}\n\nTW:",
+    "completion": " pl-44 fill-rose-300 stroke-neutral-500;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-bottom: 7rem;\n  left: 1rem;\n  margin-bottom: 14rem;\n  fill: #fdf4ff;\n  stroke: #6366f1;\n}\n\nTW:",
+    "completion": " scroll-mb-28 left-4 mb-56 fill-fuchsia-50 stroke-indigo-500;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-left: 0.5rem;\n  stroke: #ccfbf1;\n  fill: #0f172a;\n}\n\nTW:",
+    "completion": " scroll-ml-2\\.5 stroke-teal-100 fill-slate-900;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  left: 3rem;\n  scroll-margin-left: 3rem;\n  scroll-margin-right: 3rem;\n  scroll-padding-right: 10rem;\n  padding-right: 8rem;\n  stroke: #fff7ed;\n  margin-top: 2.25rem;\n  margin-bottom: 2.25rem;\n}\n\nTW:",
+    "completion": " left-12 scroll-mx-12 scroll-pr-40 pr-32 stroke-orange-50 my-9;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #f0fdfa;\n  fill: #eff6ff;\n  margin-left: 8rem;\n}\n\nTW:",
+    "completion": " stroke-teal-50 fill-blue-50 ml-32;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-left: 9rem;\n  scroll-margin-right: 9rem;\n  padding-left: 20rem;\n}\n\nTW:",
+    "completion": " scroll-mx-36 pl-80;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-right: 3.5rem;\n  scroll-padding-bottom: 16rem;\n  stroke: #155e75;\n  margin-top: 3.5rem;\n  margin-bottom: 3.5rem;\n  scroll-margin: 7rem;\n}\n\nTW:",
+    "completion": " pr-14 scroll-pb-64 stroke-cyan-800 my-14 scroll-m-28;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-bottom: 20rem;\n  padding-left: 0.5rem;\n  margin-left: 0px;\n  margin-right: 0px;\n  left: 13rem;\n}\n\nTW:",
+    "completion": " scroll-pb-80 pl-2\\.5 mx-0\\.5 left-52;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-left: 24rem;\n  margin-right: 24rem;\n  bottom: 14rem;\n}\n\nTW:",
+    "completion": " mx-96 bottom-56;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #047857;\n  scroll-margin: 1px;\n  left: 3.5rem;\n}\n\nTW:",
+    "completion": " fill-emerald-700 scroll-m-px left-14;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-left: 20rem;\n  margin-right: 20rem;\n  stroke: #94a3b8;\n  scroll-padding-left: 0.25rem;\n  scroll-padding-right: 0.25rem;\n  fill: none;\n  right: 20rem;\n}\n\nTW:",
+    "completion": " mx-80 stroke-slate-400 scroll-px-1\\.5 fill-none right-80;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  left: 100%;\n  scroll-margin-left: 1rem;\n  scroll-margin-right: 1rem;\n  scroll-padding-right: 2.25rem;\n  padding-left: 2.5rem;\n  fill: #9f1239;\n}\n\nTW:",
+    "completion": " left-full scroll-mx-4 scroll-pr-9 pl-10 fill-rose-800;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-margin-top: 0.75rem;\n  scroll-padding: 0.25rem;\n  padding-top: 1.25rem;\n  right: 1px;\n}\n\nTW:",
+    "completion": " scroll-mt-3\\.5 scroll-p-1 pt-5 right-px;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  top: 0.5rem;\n  right: 0.5rem;\n  bottom: 0.5rem;\n  left: 0.5rem;\n  margin: 12rem;\n  fill: #78716c;\n}\n\nTW:",
+    "completion": " inset-2 m-48 fill-stone-500;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #fed7aa;\n  bottom: 0.25rem;\n  fill: #9333ea;\n  padding-left: 15rem;\n  padding-right: 15rem;\n}\n\nTW:",
+    "completion": " stroke-orange-200 bottom-1\\/4 fill-purple-600 px-60;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  stroke: #1f2937;\n  scroll-padding-right: 0.5rem;\n  margin-left: 20rem;\n  fill: #67e8f9;\n  scroll-margin-right: 1px;\n}\n\nTW:",
+    "completion": " stroke-gray-800 scroll-pr-2 ml-80 fill-cyan-300 scroll-mr-px;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #854d0e;\n  stroke: #99f6e4;\n  scroll-margin-bottom: 1px;\n  scroll-padding-top: 2.25rem;\n  scroll-padding-bottom: 2.25rem;\n  margin-bottom: 3rem;\n  bottom: 12rem;\n}\n\nTW:",
+    "completion": " fill-yellow-800 stroke-teal-200 scroll-mb-px scroll-py-9 mb-12 bottom-48;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-left: 2.5rem;\n  padding-right: 2.5rem;\n  top: 0px;\n  bottom: 0px;\n  stroke: #7f1d1d;\n  fill: #f0fdf4;\n  scroll-margin-right: 6rem;\n}\n\nTW:",
+    "completion": " px-10 inset-y-0\\.5 stroke-red-900 fill-green-50 scroll-mr-24;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-left: 0.5rem;\n  right: 8rem;\n  scroll-padding: 11rem;\n}\n\nTW:",
+    "completion": " ml-2\\.5 right-32 scroll-p-44;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-left: 3rem;\n  margin-right: 3rem;\n  scroll-padding-top: 18rem;\n  scroll-padding-bottom: 18rem;\n  fill: #d946ef;\n  stroke: #f5d0fe;\n}\n\nTW:",
+    "completion": " mx-12 scroll-py-72 fill-fuchsia-500 stroke-fuchsia-200;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #10b981;\n  scroll-padding: 15rem;\n  padding-right: 1.25rem;\n  right: 2rem;\n}\n\nTW:",
+    "completion": " fill-emerald-500 scroll-p-60 pr-5 right-8;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #171717;\n  margin-top: 0.5rem;\n  top: 15rem;\n  padding-bottom: 1rem;\n}\n\nTW:",
+    "completion": " fill-neutral-900 mt-2 top-60 pb-4;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding: 16rem;\n  scroll-margin-top: 3rem;\n  scroll-margin-bottom: 3rem;\n  fill: #fce7f3;\n  padding-top: 1.25rem;\n  padding-bottom: 1.25rem;\n  margin-top: 2.5rem;\n  right: 2.5rem;\n}\n\nTW:",
+    "completion": " scroll-p-64 scroll-my-12 fill-pink-100 py-5 mt-10 right-10;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  top: 0.25rem;\n  bottom: 0.25rem;\n  scroll-padding: 2rem;\n  margin: 24rem;\n}\n\nTW:",
+    "completion": " inset-y-1\\/4 scroll-p-8 m-96;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-top: 2.5rem;\n  padding-bottom: 2.5rem;\n  scroll-padding: 18rem;\n  left: 16rem;\n}\n\nTW:",
+    "completion": " py-10 scroll-p-72 left-64;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-right: 16rem;\n  margin-right: 0.25rem;\n  padding-top: 8rem;\n}\n\nTW:",
+    "completion": " scroll-pr-64 mr-1\\.5 pt-32;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #134e4a;\n  left: 2.5rem;\n  right: 2.5rem;\n  margin-top: 18rem;\n  margin-bottom: 18rem;\n  padding-top: 0px;\n}\n\nTW:",
+    "completion": " fill-teal-900 inset-x-10 my-72 pt-0;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #ffe4e6;\n  right: 11rem;\n  margin-left: 1px;\n  scroll-padding-top: 1px;\n  scroll-padding-bottom: 1px;\n}\n\nTW:",
+    "completion": " fill-rose-100 right-44 ml-px scroll-py-px;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #164e63;\n  margin-top: 6rem;\n  margin-bottom: 6rem;\n  scroll-padding: 9rem;\n  padding: 6rem;\n}\n\nTW:",
+    "completion": " fill-cyan-900 my-24 scroll-p-36 p-24;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-top: 2.25rem;\n  top: 4rem;\n  fill: #064e3b;\n  padding: 20rem;\n  margin-right: 20rem;\n}\n\nTW:",
+    "completion": " scroll-pt-9 top-16 fill-emerald-900 p-80 mr-80;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #fff7ed;\n  margin-bottom: 1rem;\n  left: 2.25rem;\n  right: 2.25rem;\n  padding: 1.25rem;\n}\n\nTW:",
+    "completion": " fill-orange-50 mb-4 inset-x-9 p-5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-bottom: 2rem;\n  left: auto;\n  right: auto;\n  fill: #f9a8d4;\n}\n\nTW:",
+    "completion": " pb-8 inset-x-auto fill-pink-300;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin: 0px;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  bottom: 2.25rem;\n  fill: #f5d0fe;\n  scroll-padding-top: 2.75rem;\n  scroll-padding-bottom: 2.75rem;\n}\n\nTW:",
+    "completion": " m-0 px-4 bottom-9 fill-fuchsia-200 scroll-py-11;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-top: 3rem;\n  margin-bottom: 12rem;\n  left: 6rem;\n  scroll-padding: 20rem;\n}\n\nTW:",
+    "completion": " pt-12 mb-48 left-24 scroll-p-80;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  bottom: 15rem;\n  fill: #fb7185;\n  scroll-padding-top: 0.25rem;\n}\n\nTW:",
+    "completion": " bottom-60 fill-rose-400 scroll-pt-1\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  top: 16rem;\n  right: 16rem;\n  bottom: 16rem;\n  left: 16rem;\n  margin-top: 14rem;\n  margin-bottom: 14rem;\n  padding-right: 18rem;\n}\n\nTW:",
+    "completion": " inset-64 my-56 pr-72;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin: 7rem;\n  scroll-padding-left: 0.75rem;\n  scroll-padding-right: 0.75rem;\n  top: 3rem;\n  right: 3rem;\n  bottom: 3rem;\n  left: 3rem;\n}\n\nTW:",
+    "completion": " m-28 scroll-px-3\\.5 inset-12;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  fill: #c2410c;\n  padding-left: 3rem;\n  padding-right: 3rem;\n  top: 0.75rem;\n  margin: 2.25rem;\n}\n\nTW:",
+    "completion": " fill-orange-700 px-12 top-3\\/4 m-9;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-right: 20rem;\n  left: 20rem;\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n}\n\nTW:",
+    "completion": " scroll-pr-80 left-80 px-3;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-left: 2.25rem;\n  margin-top: 0.75rem;\n  right: 0.25rem;\n  padding-right: 0.25rem;\n}\n\nTW:",
+    "completion": " scroll-pl-9 mt-3 right-1\\/4 pr-1\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-left: 1.75rem;\n  margin-right: 1.75rem;\n  right: 16rem;\n  scroll-padding: 8rem;\n  padding: 0.5rem;\n}\n\nTW:",
+    "completion": " mx-7 right-64 scroll-p-32 p-2\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-left: 1.25rem;\n  scroll-padding-right: 9rem;\n  bottom: 3.5rem;\n  margin-left: 12rem;\n}\n\nTW:",
+    "completion": " pl-5 scroll-pr-36 bottom-14 ml-48;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  padding-bottom: 11rem;\n  bottom: 0.25rem;\n  margin-left: 2.5rem;\n}\n\nTW:",
+    "completion": " pb-44 bottom-1\\.5 ml-10;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-left: 1rem;\n  scroll-padding-right: 1rem;\n  padding: 9rem;\n  margin-top: 9rem;\n  margin-bottom: 9rem;\n}\n\nTW:",
+    "completion": " scroll-px-4 p-36 my-36;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  top: 9rem;\n  right: 9rem;\n  bottom: 9rem;\n  left: 9rem;\n  margin-top: 11rem;\n  margin-bottom: 11rem;\n  scroll-padding-bottom: 2.25rem;\n}\n\nTW:",
+    "completion": " inset-36 my-44 scroll-pb-9;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-left: 1px;\n  top: 8rem;\n  margin-right: 7rem;\n  padding: 4rem;\n}\n\nTW:",
+    "completion": " scroll-pl-px top-32 mr-28 p-16;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  margin-left: 18rem;\n  margin-right: 18rem;\n  padding-top: 3rem;\n  padding-bottom: 3rem;\n  left: 0.75rem;\n  right: 0.75rem;\n  scroll-padding-top: 0.75rem;\n}\n\nTW:",
+    "completion": " mx-72 py-12 inset-x-3 scroll-pt-3\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding-top: 13rem;\n  scroll-padding-bottom: 13rem;\n  margin-bottom: 0.25rem;\n  top: 0.25rem;\n  bottom: 0.25rem;\n}\n\nTW:",
+    "completion": " scroll-py-52 mb-1\\.5 inset-y-1;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  scroll-padding: 0px;\n  margin: 16rem;\n  bottom: 3rem;\n}\n\nTW:",
+    "completion": " scroll-p-0 m-64 bottom-12;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  left: 0.5rem;\n}\n\nTW:",
+    "completion": " left-2\\.5;"
+  },
+  {
+    "prompt": "CSS:\n.single {\n  top: 0px;\n}\n\nTW:",
+    "completion": " top-0;"
+  }
+]
