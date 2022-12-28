@@ -12,9 +12,31 @@ import { URL } from 'url';
 
 const __dirname = new URL('.', import.meta.url).pathname;
 
-function choose(choices) {
-  const index = Math.floor(Math.random() * choices.length);
-  return choices[index];
+const compositionresolved = JSON.parse(
+  await fs.readFile(
+    path.resolve(
+      __dirname,
+      '../fixtures/generative/compositions-resolved.json',
+    ),
+    'utf8',
+  ),
+);
+
+let CHOOSEN_COMPOSITION;
+
+if (!process.env.CHOOSE) {
+  const index = Math.floor(Math.random() * compositionresolved.length);
+  CHOOSEN_COMPOSITION = compositionresolved[index];
+  console.log(
+    'Composition ID is randomly choosen:',
+    util.inspect(index, { colors: true }),
+  );
+} else {
+  CHOOSEN_COMPOSITION = compositionresolved[process.env.CHOOSE];
+  console.log(
+    'Composition ID is choosen from env:',
+    util.inspect(process.env.CHOOSE, { colors: true }),
+  );
 }
 
 function formatCSS(css) {
@@ -129,16 +151,6 @@ function mergeCSSRules(css) {
   return formatCSS(result);
 }
 
-const compositionresolved = JSON.parse(
-  await fs.readFile(
-    path.resolve(
-      __dirname,
-      '../fixtures/generative/compositions-resolved.json',
-    ),
-    'utf8',
-  ),
-);
-
 function entriesFromCSS(css) {
   const ast = parseCSS(css);
   const results = [];
@@ -161,7 +173,7 @@ function makeExample(resolved) {
 }
 
 function makePrompt() {
-  const { css, tw } = makeExample(choose(compositionresolved).resolved);
+  const { css, tw } = makeExample(CHOOSEN_COMPOSITION.resolved);
   const prompt = `
 Rewrite the following CSS declarations to Tailwind CSS classes.
 
