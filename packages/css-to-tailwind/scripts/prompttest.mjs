@@ -1,4 +1,3 @@
-import { makeCSSToTailwindPrompt } from '../src/index.mjs';
 import parseCSS from 'postcss-safe-parser';
 import { promises as fs } from 'fs';
 import path from 'path';
@@ -9,6 +8,19 @@ import prettier from 'prettier';
 import util from 'util';
 import deepEqual from 'deep-equal';
 import { URL } from 'url';
+import fetch from 'node-fetch';
+
+console.log = (...args) => {
+  args.forEach((arg) => {
+    if (typeof arg === 'string') {
+      process.stdout.write(arg);
+    } else {
+      process.stdout.write(util.inspect(arg, { colors: true, depth: 6 }));
+    }
+    process.stdout.write(' ');
+  });
+  process.stdout.write('\n');
+};
 
 const __dirname = new URL('.', import.meta.url).pathname;
 
@@ -27,16 +39,23 @@ let CHOOSEN_COMPOSITION;
 if (!process.env.CHOOSE) {
   const index = Math.floor(Math.random() * compositionresolved.length);
   CHOOSEN_COMPOSITION = compositionresolved[index];
-  console.log(
-    'Composition ID is randomly choosen:',
-    util.inspect(index, { colors: true }),
-  );
+  console.log('Composition ID is randomly choosen:', index);
 } else {
   CHOOSEN_COMPOSITION = compositionresolved[process.env.CHOOSE];
-  console.log(
-    'Composition ID is choosen from env:',
-    util.inspect(process.env.CHOOSE, { colors: true }),
-  );
+  console.log('Composition ID is choosen from env:', process.env.CHOOSE);
+}
+
+let MODEL;
+
+if (!process.env.MODEL) {
+  // MODEL = 'text-davinci-003';
+  // MODEL = 'ada:ft-personal-2022-12-21-01-03-46';
+  // MODEL = 'text-ada-001';
+  MODEL = 'code-davinci-002';
+  console.log('Model used:', MODEL);
+} else {
+  MODEL = process.env.MODEL;
+  console.log('Model is set from env:', MODEL);
 }
 
 function formatCSS(css) {
@@ -174,7 +193,7 @@ function makeExample(resolved) {
 
 function makePrompt() {
   const { css, tw } = makeExample(CHOOSEN_COMPOSITION.resolved);
-  const prompt = `
+  const fullPrompt = `
 Rewrite the following CSS declarations to Tailwind CSS classes.
 
 CSS:
@@ -221,9 +240,39 @@ ${css
   .join('\n')}
 TW:
 ${tw.map(([indexKey, utility]) => `${indexKey}. ${utility};`).join('\n')}
-`;
+`.trim();
 
-  return { prompt, css, tw };
+  const splittedPrompt = fullPrompt.split('TW:');
+  const fakeCompletion = splittedPrompt.pop();
+  const prompt = splittedPrompt.join('TW:') + 'TW:';
+
+  return { prompt, fullPrompt, fakeCompletion, css, tw };
+}
+
+async function sendPrompt(prompt) {
+  if (!process.env.OPENAI_API_KEY) {
+    throw new Error('Missing OPENAI_API_KEY');
+  }
+
+  const resp = await fetch('https://api.openai.com/v1/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+    },
+    body: JSON.stringify({
+      model: MODEL,
+      prompt,
+      temperature: 0,
+      top_p: 1,
+      max_tokens: 256,
+      frequency_penalty: 0,
+      presence_penalty: 0,
+      stop: ['CSS:'],
+    }),
+  });
+
+  return await resp.json();
 }
 
 function parseCompletion(completion) {
@@ -237,22 +286,10 @@ function parseCompletion(completion) {
 
     return [null, declarations];
   } catch (e) {
+    console.log('Error parsing completion: ', completion);
     return [e, null];
   }
 }
-
-const promptHolder = makePrompt();
-const splittedPrompt = promptHolder.prompt.split('TW:');
-const completion = splittedPrompt.pop();
-const prompt = splittedPrompt.join('TW:') + 'TW:';
-
-// console.log(prompt);
-
-// console.log({ prompt, completion });
-
-const [err, result] = parseCompletion(completion);
-
-// console.log(prompt);
 
 async function validateCompletion(completion) {
   const [err, result] = parseCompletion(completion);
@@ -271,13 +308,13 @@ async function validateCompletion(completion) {
 
   if (!isEqual) {
     console.log('Sent data:');
-    console.log(util.inspect(promptHolder.css, { depth: null, colors: true }));
+    console.log(promptHolder.css);
 
     console.log('Recived: (fake)');
     console.log(result);
 
     console.log('Resolved:');
-    console.log(util.inspect(resolved, { depth: null, colors: true }));
+    console.log(resolved);
 
     throw new Error('Sent and recived are not equal');
   }
@@ -290,5 +327,18 @@ async function validateCompletion(completion) {
   // console.log(mergedCSS);
 }
 
-await validateCompletion(completion);
-console.log('OK');
+const promptHolder = makePrompt();
+
+const realCompletion = await sendPrompt(promptHolder.prompt);
+
+const realParse = parseCompletion(realCompletion.choices[0].text);
+const fakeParse = parseCompletion(promptHolder.fakeCompletion);
+
+console.log('Real:');
+console.log(realParse);
+
+console.log('Fake:');
+console.log(fakeParse);
+
+// await validateCompletion(completion);
+// console.log('OK');
