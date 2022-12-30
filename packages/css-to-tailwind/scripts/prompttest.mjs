@@ -179,7 +179,22 @@ function entriesFromCSS(css) {
   return results;
 }
 
+function renameSelectorInCSS(css, selector) {
+  const ast = parseCSS(css);
+  let oldSelector;
+  ast.walkRules((rule) => {
+    if (oldSelector) {
+      throw new Error('More than one selector found');
+    }
+    oldSelector = rule.selector;
+    rule.selector = selector;
+  });
+  return ast.toString();
+}
+
 function makePrompt() {
+  console.log(renameSelectorInCSS(CHOOSEN_COMPOSITION.css, '.foobar'));
+  process.exit(0);
   const css = Object.entries(CHOOSEN_COMPOSITION.resolved).map(
     ([utility, css], index) => {
       return [index + 1, entriesFromCSS(css)];
