@@ -179,20 +179,19 @@ function entriesFromCSS(css) {
   return results;
 }
 
-function makeExample(resolved) {
-  const css = Object.entries(resolved).map(([utility, css], index) => {
-    return [index + 1, entriesFromCSS(css)];
-  });
-
-  const tw = Object.entries(resolved).map(([utility, css], index) => {
-    return [index + 1, utility];
-  });
-
-  return { css, tw };
-}
-
 function makePrompt() {
-  const { css, tw } = makeExample(CHOOSEN_COMPOSITION.resolved);
+  const css = Object.entries(CHOOSEN_COMPOSITION.resolved).map(
+    ([utility, css], index) => {
+      return [index + 1, entriesFromCSS(css)];
+    },
+  );
+
+  const tw = Object.entries(CHOOSEN_COMPOSITION.resolved).map(
+    ([utility, css], index) => {
+      return [index + 1, utility];
+    },
+  );
+
   const fullPrompt = `
 Rewrite the following CSS declarations to Tailwind CSS classes.
 
