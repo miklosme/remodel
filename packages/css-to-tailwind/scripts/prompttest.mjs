@@ -192,8 +192,52 @@ function renameSelectorInCSS(css, selector) {
   return ast.toString();
 }
 
+function choose(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
+
+function range(start, step, end) {
+  if (typeof end === 'undefined') {
+    end = step;
+    step = 1;
+  }
+
+  const result = [];
+  for (let i = start; i <= end; i += step) {
+    result.push(i);
+  }
+  return result;
+}
+
+function addNoiseToCSS(css) {
+  const ast = parseCSS(css);
+  ast.walkDecls((decl) => {
+    decl.value = decl.value.replace(
+      /(\d+\.?\d*(rem|px))/g,
+      (match, float, measure) => {
+        const number = parseFloat(float);
+
+        if (typeof number !== 'number') {
+          return float;
+        }
+
+        const noise =
+          measure === 'px'
+            ? choose(range(-5, 0.5, 5))
+            : choose(range(-0.5, 0.05, 0.5));
+        const newNumber = number + noise;
+        return `${newNumber}${measure} /* ${float} */`;
+      },
+    );
+  });
+  return ast.toString();
+}
+
 function makePrompt() {
-  console.log(renameSelectorInCSS(CHOOSEN_COMPOSITION.css, '.foobar'));
+  console.log(CHOOSEN_COMPOSITION.css);
+  console.log(
+    renameSelectorInCSS(addNoiseToCSS(CHOOSEN_COMPOSITION.css), '.noised'),
+  );
   process.exit(0);
   const css = Object.entries(CHOOSEN_COMPOSITION.resolved).map(
     ([utility, css], index) => {
