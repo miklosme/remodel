@@ -3,6 +3,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import postcss from 'postcss';
 import postcssParse from 'postcss-safe-parser';
+import postcssValueParser from 'postcss-value-parser';
 import tailwindcss from 'tailwindcss';
 import resolveConfig from 'tailwindcss/resolveConfig.js';
 import parseUnit from 'parse-unit';
@@ -288,32 +289,167 @@ function parseSize(val) {
 
 function getBreakPoints(data) {
   return Object.values(data)
-    .map((val) => parseSize(val))
+    .map((val) => {
+      // values with extra data are arrays
+      // for example: [ '0.875rem', { lineHeight: '1.25rem' } ],
+      if (Array.isArray(val)) {
+        val = val[0];
+      }
+
+      try {
+        return parseSize(val);
+      } catch (e) {
+        return null;
+      }
+    })
+    .filter(Boolean)
     .sort((a, z) => a.px - z.px);
 }
 
 function snapToBreakpoint(value, breakPoints) {
-  const { px } = parseSize(value);
-  const closestBreakPoint = breakPoints.reduce((acc, curr) => {
-    if (Math.abs(curr.px - px) < Math.abs(acc.px - px)) {
-      return curr;
-    } else {
-      return acc;
-    }
-  });
+  try {
+    const { px } = parseSize(value);
+    const closestBreakPoint = breakPoints.reduce((acc, curr) => {
+      if (Math.abs(curr.px - px) < Math.abs(acc.px - px)) {
+        return curr;
+      } else {
+        return acc;
+      }
+    });
 
-  return closestBreakPoint.original;
+    return closestBreakPoint.original;
+  } catch (e) {
+    return value;
+  }
 }
 
 function normalizeCSS(css) {
-  const padding = getResolvedTaiwindConfig().theme.padding;
-  const breakPoints = getBreakPoints(padding);
+  const { theme } = getResolvedTaiwindConfig();
+
+  const propsToSnap = [
+    {
+      props: [
+        'padding',
+        'padding-right',
+        'padding-bottom',
+        'padding-left',
+        'padding-top',
+      ],
+      breakPoints: getBreakPoints(theme.padding),
+    },
+    {
+      props: [
+        'margin',
+        'margin-right',
+        'margin-bottom',
+        'margin-left',
+        'margin-top',
+      ],
+      breakPoints: getBreakPoints(theme.margin),
+    },
+    {
+      props: ['width', 'min-width', 'max-width'],
+      breakPoints: getBreakPoints(theme.width),
+    },
+    {
+      props: ['height', 'min-height', 'max-height'],
+      breakPoints: getBreakPoints(theme.height),
+    },
+    {
+      props: ['font-size'],
+      breakPoints: getBreakPoints(theme.fontSize),
+    },
+    {
+      props: [
+        'border-width',
+        'border-top-width',
+        'border-right-width',
+        'border-bottom-width',
+        'border-left-width',
+      ],
+      breakPoints: getBreakPoints(theme.borderWidth),
+    },
+    // {
+    // TODO: handle full rounding 9999px
+    //   props: ['border-radius'],
+    //   breakPoints: getBreakPoints(theme.borderRadius),
+    // },
+    {
+      props: ['line-height'],
+      breakPoints: getBreakPoints(theme.lineHeight),
+    },
+    {
+      props: ['letter-spacing'],
+      breakPoints: getBreakPoints(theme.letterSpacing),
+    },
+    {
+      props: ['gap', 'row-gap', 'column-gap'],
+      breakPoints: getBreakPoints(theme.gap),
+    },
+    {
+      props: [
+        'scroll-padding',
+        'scroll-padding-right',
+        'scroll-padding-bottom',
+        'scroll-padding-left',
+        'scroll-padding-top',
+      ],
+      breakPoints: getBreakPoints(theme.scrollPadding),
+    },
+    {
+      props: [
+        'scroll-margin',
+        'scroll-margin-right',
+        'scroll-margin-bottom',
+        'scroll-margin-left',
+        'scroll-margin-top',
+      ],
+      breakPoints: getBreakPoints(theme.scrollMargin),
+    },
+    {
+      props: ['flex-basis'],
+      breakPoints: getBreakPoints(theme.flexBasis),
+    },
+    {
+      props: ['top', 'right', 'bottom', 'left'],
+      breakPoints: getBreakPoints(theme.inset),
+    },
+    {
+      props: ['text-decoration-thickness'],
+      breakPoints: getBreakPoints(theme.textDecorationThickness),
+    },
+    {
+      props: ['outline-width'],
+      breakPoints: getBreakPoints(theme.outlineWidth),
+    },
+    {
+      props: ['outline-offset'],
+      breakPoints: getBreakPoints(theme.outlineOffset),
+    },
+  ];
+
+  const noBreakpoints = propsToSnap.find(
+    (item) => item.breakPoints.length === 0,
+  );
+  if (noBreakpoints) {
+    console.log(noBreakpoints);
+    throw new Error('No breakpoints found');
+  }
 
   const ast = parseCSS(css);
   ast.walkDecls((decl) => {
-    if (decl.prop === 'padding-top') {
-      const newVal = snapToBreakpoint(decl.value, breakPoints);
-      decl.value = `${newVal} /* ${decl.value} */`;
+    const breakPoints = propsToSnap.find((item) => {
+      return item.props.includes(decl.prop);
+    })?.breakPoints;
+
+    if (breakPoints) {
+      const valueAst = postcssValueParser(decl.value);
+      valueAst.walk((node) => {
+        if (node.type === 'word') {
+          node.value = snapToBreakpoint(node.value, breakPoints);
+        }
+      });
+      decl.value = valueAst.toString().trim();
     }
   });
 
