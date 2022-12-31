@@ -18,6 +18,7 @@
     "dotenv": "^16.0.3",
     "jest-diff": "^29.3.1",
     "node-fetch": "^3.3.0",
+    "parse-unit": "^1.0.1",
     "playwright": "^1.28.1",
     "postcss": "^8.4.14",
     "postcss-safe-parser": "^6.0.0",

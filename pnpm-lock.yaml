@@ -149,6 +149,7 @@ importers:
       dotenv: ^16.0.3
       jest-diff: ^29.3.1
       node-fetch: ^3.3.0
+      parse-unit: ^1.0.1
       playwright: ^1.28.1
       postcss: ^8.4.14
       postcss-safe-parser: ^6.0.0
@@ -163,6 +164,7 @@ importers:
       dotenv: 16.0.3
       jest-diff: 29.3.1
       node-fetch: 3.3.0
+      parse-unit: 1.0.1
       playwright: 1.28.1
       postcss: 8.4.19
       postcss-safe-parser: 6.0.0_postcss@8.4.19
@@ -4566,7 +4568,6 @@ packages:
       {
         integrity: sha512-hrqldJHokR3Qj88EIlV/kAyAi/G5R2+R56TBANxNMy0uPlYcttx0jnMW6Yx5KsKPSbC3KddM/7qQm3+0wEXKxg==,
       }
-    dev: false
 
   /path-exists/4.0.0:
     resolution:

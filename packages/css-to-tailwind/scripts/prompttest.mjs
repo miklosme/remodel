@@ -4,6 +4,8 @@ import path from 'path';
 import postcss from 'postcss';
 import postcssParse from 'postcss-safe-parser';
 import tailwindcss from 'tailwindcss';
+import resolveConfig from 'tailwindcss/resolveConfig.js';
+import parseUnit from 'parse-unit';
 import prettier from 'prettier';
 import util from 'util';
 import deepEqual from 'deep-equal';
@@ -233,12 +235,109 @@ function addNoiseToCSS(css) {
   return ast.toString();
 }
 
+function getResolvedTaiwindConfig() {
+  return resolveConfig({
+    content: ['./src/**/*.{js,ts,jsx,tsx}'],
+    theme: {
+      extend: {},
+    },
+    plugins: [],
+  });
+}
+
+const defaultOptions = {
+  COLOR_DELTA: 2,
+  FULL_ROUND: 9999,
+  REM: 16,
+  EM: 16,
+  PREPROCESSOR_INPUT:
+    '@tailwind base;\n\n@tailwind components;\n\n@tailwind utilities;',
+  TAILWIND_CONFIG: null,
+};
+
+function parseSize(val) {
+  if (val === '0') {
+    val = '0px';
+  }
+
+  let [value, unit] = parseUnit(val);
+
+  unit = unit.trim();
+
+  switch (unit) {
+    case 'px':
+      return { value, unit, px: value, original: val };
+    case 'rem':
+      return {
+        value,
+        unit,
+        px: value * defaultOptions.REM,
+        original: val,
+      };
+    case 'em':
+      return {
+        value,
+        unit,
+        px: value * defaultOptions.EM,
+        original: val,
+      };
+    default:
+      throw new Error(`Unknown unit: "${unit}"`);
+  }
+}
+
+function getBreakPoints(data) {
+  return Object.values(data)
+    .map((val) => parseSize(val))
+    .sort((a, z) => a.px - z.px);
+}
+
+function snapToBreakpoint(value, breakPoints) {
+  const { px } = parseSize(value);
+  const closestBreakPoint = breakPoints.reduce((acc, curr) => {
+    if (Math.abs(curr.px - px) < Math.abs(acc.px - px)) {
+      return curr;
+    } else {
+      return acc;
+    }
+  });
+
+  return closestBreakPoint.original;
+}
+
+function normalizeCSS(css) {
+  const padding = getResolvedTaiwindConfig().theme.padding;
+  const breakPoints = getBreakPoints(padding);
+
+  const ast = parseCSS(css);
+  ast.walkDecls((decl) => {
+    if (decl.prop === 'padding-top') {
+      const newVal = snapToBreakpoint(decl.value, breakPoints);
+      decl.value = `${newVal} /* ${decl.value} */`;
+    }
+  });
+
+  return ast.toString();
+}
+
 function makePrompt() {
+  // console.log(CHOOSEN_COMPOSITION.css);
+  // console.log(
+  //   renameSelectorInCSS(addNoiseToCSS(CHOOSEN_COMPOSITION.css), '.noised'),
+  // );
+
+  const afterNoise = addNoiseToCSS(CHOOSEN_COMPOSITION.css);
+  const afterNormalize = normalizeCSS(afterNoise);
+
+  console.log('Original CSS:');
   console.log(CHOOSEN_COMPOSITION.css);
-  console.log(
-    renameSelectorInCSS(addNoiseToCSS(CHOOSEN_COMPOSITION.css), '.noised'),
-  );
+  console.log('After noise:');
+  console.log(afterNoise);
+  console.log('After normalize:');
+  console.log(afterNormalize);
+
   process.exit(0);
+
   const css = Object.entries(CHOOSEN_COMPOSITION.resolved).map(
     ([utility, css], index) => {
       return [index + 1, entriesFromCSS(css)];
