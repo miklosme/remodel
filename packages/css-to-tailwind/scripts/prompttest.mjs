@@ -225,10 +225,10 @@ function addNoiseToCSS(css) {
           return float;
         }
 
-        const noise =
-          measure === 'px'
-            ? choose(range(-5, 0.5, 5))
-            : choose(range(-0.5, 0.05, 0.5));
+        // ideally after normalization it will return to the original value
+        // because we want to validate the transformation later
+        // so let's use tiny values
+        const noise = choose(range(-0.05, 0.01, 0.05));
         const newNumber = number + noise;
         return `${newNumber}${measure} /* ${float} */`;
       },
@@ -255,9 +255,18 @@ function addNoiseToCSS(css) {
         const g = (number >> 8) & 255;
         const b = number & 255;
 
-        const newR = Math.max(0, Math.min(255, r + choose(range(-2, 2))));
-        const newG = Math.max(0, Math.min(255, g + choose(range(-2, 2))));
-        const newB = Math.max(0, Math.min(255, b + choose(range(-2, 2))));
+        // ideally after normalization it should return to the original value
+        // because we want to validate the transformation later
+        // so let's use tiny values
+        const newR = Math.floor(
+          Math.max(0, Math.min(255, r + choose(range(-1, 0.1, 1)))),
+        );
+        const newG = Math.floor(
+          Math.max(0, Math.min(255, g + choose(range(-1, 0.1, 1)))),
+        );
+        const newB = Math.floor(
+          Math.max(0, Math.min(255, b + choose(range(-1, 0.1, 1)))),
+        );
 
         const stringR = newR.toString(16).padStart(2, '0');
         const stringG = newG.toString(16).padStart(2, '0');
@@ -576,6 +585,10 @@ function normalizeCSS(css) {
       props: ['outline-offset'],
       breakPoints: getSizeBreakPoints(theme.outlineOffset),
     },
+    {
+      props: ['text-indent'],
+      breakPoints: getSizeBreakPoints(theme.textIndent),
+    },
   ];
 
   const noSizeBreakpoints = sizePropsToSnap.find(
@@ -614,36 +627,48 @@ function normalizeCSS(css) {
 }
 
 function makePrompt() {
-  // console.log(CHOOSEN_COMPOSITION.css);
-  // console.log(
-  //   renameSelectorInCSS(addNoiseToCSS(CHOOSEN_COMPOSITION.css), '.noised'),
-  // );
-  const mycss = `
-.foo {
-  color: #3d5afe;
-  border: 10px solid #44403c;
-}  
-`;
+  //   console.log(CHOOSEN_COMPOSITION.css);
+  //   console.log(
+  //     renameSelectorInCSS(addNoiseToCSS(CHOOSEN_COMPOSITION.css), '.noised'),
+  //   );
+  //   const mycss = `
+  // .foo {
+  //   color: #3d5afe;
+  //   border: 10px solid #44403c;
+  // }
+  // `;
 
-  const afterNoise = addNoiseToCSS(mycss);
-  const afterNormalize = normalizeCSS(afterNoise);
+  // const afterNoise = addNoiseToCSS(CHOOSEN_COMPOSITION.css);
+  // const afterNormalize = normalizeCSS(afterNoise);
 
-  console.log('Original CSS:');
-  console.log(mycss);
-  console.log('After noise:');
-  console.log(afterNoise);
-  console.log('After normalize:');
-  console.log(afterNormalize);
+  // console.log('Original CSS:');
+  // console.log(mycss);
+  // console.log('After noise:');
+  // console.log(afterNoise);
+  // console.log('After normalize:');
+  // console.log(afterNormalize);
 
-  process.exit(0);
+  // process.exit(0);
 
-  const css = Object.entries(CHOOSEN_COMPOSITION.resolved).map(
+  const noisedThenNormalizedComposition = Object.fromEntries(
+    Object.entries(CHOOSEN_COMPOSITION.resolved).map(([utility, css]) => {
+      return [utility, normalizeCSS(addNoiseToCSS(css))];
+    }),
+  );
+
+  // console.log('CHOOSEN_COMPOSITION.resolved');
+  // console.log(CHOOSEN_COMPOSITION.resolved);
+
+  console.log('noisedThenNormalizedComposition');
+  console.log(noisedThenNormalizedComposition);
+
+  const css = Object.entries(noisedThenNormalizedComposition).map(
     ([utility, css], index) => {
       return [index + 1, entriesFromCSS(css)];
     },
   );
 
-  const tw = Object.entries(CHOOSEN_COMPOSITION.resolved).map(
+  const tw = Object.entries(noisedThenNormalizedComposition).map(
     ([utility, css], index) => {
       return [index + 1, utility];
     },
@@ -784,14 +809,16 @@ async function validateCompletion(completion) {
 }
 
 const promptHolder = makePrompt();
+// console.log(promptHolder);
+// process.exit(0);
 
-const realCompletion = await sendPrompt(promptHolder.prompt);
+// const realCompletion = await sendPrompt(promptHolder.prompt);
 
-const realParse = parseCompletion(realCompletion.choices[0].text);
+// const realParse = parseCompletion(realCompletion.choices[0].text);
 const fakeParse = parseCompletion(promptHolder.fakeCompletion);
 
-console.log('Real:');
-console.log(realParse);
+// console.log('Real:');
+// console.log(realParse);
 
 console.log('Fake:');
 console.log(fakeParse);
