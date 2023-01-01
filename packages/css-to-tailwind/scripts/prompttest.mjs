@@ -238,6 +238,13 @@ function addNoiseToCSS(css) {
     decl.value = decl.value.replace(
       /#([0-9a-f]{6}|[0-9a-f]{3})/gi,
       (match, hex) => {
+        if (hex.length === 3) {
+          hex = hex
+            .split('')
+            .map((char) => char + char)
+            .join('');
+        }
+
         const number = parseInt(hex, 16);
 
         if (typeof number !== 'number') {
@@ -251,13 +258,18 @@ function addNoiseToCSS(css) {
         const newR = Math.max(0, Math.min(255, r + choose(range(-5, 5))));
         const newG = Math.max(0, Math.min(255, g + choose(range(-5, 5))));
         const newB = Math.max(0, Math.min(255, b + choose(range(-5, 5))));
-        const newNumber = (newR << 16) + (newG << 8) + newB;
+
+        const stringR = newR.toString(16).padStart(2, '0');
+        const stringG = newG.toString(16).padStart(2, '0');
+        const stringB = newB.toString(16).padStart(2, '0');
+
+        const newHex = `#${stringR}${stringG}${stringB}`;
 
         const distance = Math.sqrt(
           Math.pow(r - newR, 2) + Math.pow(g - newG, 2) + Math.pow(b - newB, 2),
         ).toFixed(2);
 
-        return `#${newNumber.toString(16)} /* distance: ${distance} */`;
+        return `${newHex} /* distance: ${distance} */`;
       },
     );
   });
@@ -389,6 +401,7 @@ function normalizeCSS(css) {
     },
     {
       props: [
+        'border',
         'border-width',
         'border-top-width',
         'border-right-width',
@@ -492,6 +505,7 @@ function makePrompt() {
   const mycss = `
 .foo {
   color: #3d5afe;
+  border: 10px solid #444;
 }  
 `;
 
