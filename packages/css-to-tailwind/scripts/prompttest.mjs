@@ -215,6 +215,7 @@ function range(start, step, end) {
 function addNoiseToCSS(css) {
   const ast = parseCSS(css);
   ast.walkDecls((decl) => {
+    // add noise to size values
     decl.value = decl.value.replace(
       /(\d+\.?\d*(rem|px))/g,
       (match, float, measure) => {
@@ -230,6 +231,33 @@ function addNoiseToCSS(css) {
             : choose(range(-0.5, 0.05, 0.5));
         const newNumber = number + noise;
         return `${newNumber}${measure} /* ${float} */`;
+      },
+    );
+
+    // add noise to color values
+    decl.value = decl.value.replace(
+      /#([0-9a-f]{6}|[0-9a-f]{3})/gi,
+      (match, hex) => {
+        const number = parseInt(hex, 16);
+
+        if (typeof number !== 'number') {
+          return hex;
+        }
+
+        const r = (number >> 16) & 255;
+        const g = (number >> 8) & 255;
+        const b = number & 255;
+
+        const newR = Math.max(0, Math.min(255, r + choose(range(-5, 5))));
+        const newG = Math.max(0, Math.min(255, g + choose(range(-5, 5))));
+        const newB = Math.max(0, Math.min(255, b + choose(range(-5, 5))));
+        const newNumber = (newR << 16) + (newG << 8) + newB;
+
+        const distance = Math.sqrt(
+          Math.pow(r - newR, 2) + Math.pow(g - newG, 2) + Math.pow(b - newB, 2),
+        ).toFixed(2);
+
+        return `#${newNumber.toString(16)} /* distance: ${distance} */`;
       },
     );
   });
@@ -461,12 +489,17 @@ function makePrompt() {
   // console.log(
   //   renameSelectorInCSS(addNoiseToCSS(CHOOSEN_COMPOSITION.css), '.noised'),
   // );
+  const mycss = `
+.foo {
+  color: #3d5afe;
+}  
+`;
 
-  const afterNoise = addNoiseToCSS(CHOOSEN_COMPOSITION.css);
+  const afterNoise = addNoiseToCSS(mycss);
   const afterNormalize = normalizeCSS(afterNoise);
 
   console.log('Original CSS:');
-  console.log(CHOOSEN_COMPOSITION.css);
+  console.log(mycss);
   console.log('After noise:');
   console.log(afterNoise);
   console.log('After normalize:');
