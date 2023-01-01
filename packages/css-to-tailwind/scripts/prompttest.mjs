@@ -51,9 +51,10 @@ if (!process.env.CHOOSE) {
 let MODEL;
 
 if (!process.env.MODEL) {
-  // MODEL = 'text-davinci-003';
-  // MODEL = 'ada:ft-personal-2022-12-21-01-03-46';
-  // MODEL = 'text-ada-001';
+  MODEL = 'text-davinci-003';
+  MODEL = 'ada:ft-personal-2022-12-21-01-03-46';
+  MODEL = 'text-ada-001';
+  MODEL = 'text-davinci-003';
   MODEL = 'code-davinci-002';
   console.log('Model used:', MODEL);
 } else {
@@ -733,6 +734,10 @@ ${tw.map(([indexKey, utility]) => `${indexKey}. ${utility};`).join('\n')}
 async function sendPrompt(prompt) {
   if (!process.env.OPENAI_API_KEY) {
     throw new Error('Missing OPENAI_API_KEY');
+  }
+
+  if (!MODEL) {
+    throw new Error('Missing MODEL');
   }
 
   const resp = await fetch('https://api.openai.com/v1/completions', {
