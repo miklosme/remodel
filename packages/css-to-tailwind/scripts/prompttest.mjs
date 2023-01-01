@@ -809,16 +809,14 @@ async function validateCompletion(completion) {
 }
 
 const promptHolder = makePrompt();
-// console.log(promptHolder);
-// process.exit(0);
 
-// const realCompletion = await sendPrompt(promptHolder.prompt);
+const realCompletion = await sendPrompt(promptHolder.prompt);
 
-// const realParse = parseCompletion(realCompletion.choices[0].text);
+const realParse = parseCompletion(realCompletion.choices[0].text);
 const fakeParse = parseCompletion(promptHolder.fakeCompletion);
 
-// console.log('Real:');
-// console.log(realParse);
+console.log('Real:');
+console.log(realParse);
 
 console.log('Fake:');
 console.log(fakeParse);
