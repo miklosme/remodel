@@ -255,9 +255,9 @@ function addNoiseToCSS(css) {
         const g = (number >> 8) & 255;
         const b = number & 255;
 
-        const newR = Math.max(0, Math.min(255, r + choose(range(-5, 5))));
-        const newG = Math.max(0, Math.min(255, g + choose(range(-5, 5))));
-        const newB = Math.max(0, Math.min(255, b + choose(range(-5, 5))));
+        const newR = Math.max(0, Math.min(255, r + choose(range(-2, 2))));
+        const newG = Math.max(0, Math.min(255, g + choose(range(-2, 2))));
+        const newB = Math.max(0, Math.min(255, b + choose(range(-2, 2))));
 
         const stringR = newR.toString(16).padStart(2, '0');
         const stringG = newG.toString(16).padStart(2, '0');
@@ -327,7 +327,31 @@ function parseSize(val) {
   }
 }
 
-function getBreakPoints(data) {
+function parseColor(hex) {
+  if (!hex.startsWith('#')) {
+    throw new Error(`parseColor only accepts hex values, got: "${hex}"`);
+  }
+
+  let color = hex.replace('#', '');
+  if (color.length === 3) {
+    color = color
+      .split('')
+      .map((char) => char + char)
+      .join('');
+  }
+
+  const r = (color >> 16) & 255;
+  const g = (color >> 8) & 255;
+  const b = color & 255;
+
+  return {
+    int: parseInt(color, 16),
+    rgb: [r, g, b],
+    original: hex,
+  };
+}
+
+function getSizeBreakPoints(data) {
   return Object.values(data)
     .map((val) => {
       // values with extra data are arrays
@@ -346,7 +370,27 @@ function getBreakPoints(data) {
     .sort((a, z) => a.px - z.px);
 }
 
-function snapToBreakpoint(value, breakPoints) {
+function getColorBreakPoints(data) {
+  let colors = [];
+
+  Object.values(data).forEach((val) => {
+    if (typeof val === 'string' && val.startsWith('#')) {
+      colors.push(val);
+    } else if (typeof val === 'object' && val !== null) {
+      Object.values(val).forEach((val) => {
+        if (typeof val === 'string' && val.startsWith('#')) {
+          colors.push(val);
+        }
+      });
+    }
+  });
+
+  colors = colors.map(parseColor).sort((a, z) => a.int - z.int);
+
+  return colors;
+}
+
+function snapSizeToBreakpoint(value, breakPoints) {
   try {
     const { px } = parseSize(value);
     const closestBreakPoint = breakPoints.reduce((acc, curr) => {
@@ -363,10 +407,75 @@ function snapToBreakpoint(value, breakPoints) {
   }
 }
 
+function snapColorToBreakpoint(value, breakPoints) {
+  try {
+    const { int, rgb } = parseColor(value);
+    const closestBreakPoint = breakPoints.reduce((acc, curr) => {
+      if (Math.abs(curr.int - int) < Math.abs(acc.int - int)) {
+        return curr;
+      } else {
+        return acc;
+      }
+    });
+
+    // const { rgb: rgbClosest } = closestBreakPoint;
+    // const distance = Math.sqrt(
+    //   Math.pow(rgb[0] - rgbClosest[0], 2) +
+    //     Math.pow(rgb[1] - rgbClosest[1], 2) +
+    //     Math.pow(rgb[2] - rgbClosest[2], 2),
+    // ).toFixed(2);
+
+    return closestBreakPoint.original;
+    // return `${closestBreakPoint.original} /* distance: ${distance} */`;
+  } catch (e) {
+    return value;
+  }
+}
+
 function normalizeCSS(css) {
   const { theme } = getResolvedTaiwindConfig();
+  // console.log(Object.keys(theme));
+  // console.log(theme.textColor);
 
-  const propsToSnap = [
+  const colorPropsToSnap = [
+    {
+      props: ['color'],
+      breakPoints: getColorBreakPoints(theme.textColor),
+    },
+    {
+      props: ['fill'],
+      breakPoints: getColorBreakPoints(theme.fill),
+    },
+    {
+      props: ['stroke'],
+      breakPoints: getColorBreakPoints(theme.stroke),
+    },
+    {
+      props: ['background', 'background-color'],
+      breakPoints: getColorBreakPoints(theme.backgroundColor),
+    },
+    {
+      props: [
+        'border',
+        'border-color',
+        'border-top-color',
+        'border-right-color',
+        'border-bottom-color',
+        'border-left-color',
+      ],
+      breakPoints: getColorBreakPoints(theme.borderColor),
+    },
+  ];
+
+  const noColorBreakpoints = colorPropsToSnap.some(
+    (prop) => prop.breakPoints.length === 0,
+  );
+  if (noColorBreakpoints) {
+    console.log(noColorBreakpoints);
+    throw new Error('No colors found in tailwind config');
+  }
+
+  const sizePropsToSnap = [
     {
       props: [
         'padding',
@@ -375,7 +484,7 @@ function normalizeCSS(css) {
         'padding-left',
         'padding-top',
       ],
-      breakPoints: getBreakPoints(theme.padding),
+      breakPoints: getSizeBreakPoints(theme.padding),
     },
     {
       props: [
@@ -385,19 +494,19 @@ function normalizeCSS(css) {
         'margin-left',
         'margin-top',
       ],
-      breakPoints: getBreakPoints(theme.margin),
+      breakPoints: getSizeBreakPoints(theme.margin),
     },
     {
       props: ['width', 'min-width', 'max-width'],
-      breakPoints: getBreakPoints(theme.width),
+      breakPoints: getSizeBreakPoints(theme.width),
     },
     {
       props: ['height', 'min-height', 'max-height'],
-      breakPoints: getBreakPoints(theme.height),
+      breakPoints: getSizeBreakPoints(theme.height),
     },
     {
       props: ['font-size'],
-      breakPoints: getBreakPoints(theme.fontSize),
+      breakPoints: getSizeBreakPoints(theme.fontSize),
     },
     {
       props: [
@@ -408,24 +517,24 @@ function normalizeCSS(css) {
         'border-bottom-width',
         'border-left-width',
       ],
-      breakPoints: getBreakPoints(theme.borderWidth),
+      breakPoints: getSizeBreakPoints(theme.borderWidth),
     },
     // {
     // TODO: handle full rounding 9999px
     //   props: ['border-radius'],
-    //   breakPoints: getBreakPoints(theme.borderRadius),
+    //   breakPoints: getSizeBreakPoints(theme.borderRadius),
     // },
     {
       props: ['line-height'],
-      breakPoints: getBreakPoints(theme.lineHeight),
+      breakPoints: getSizeBreakPoints(theme.lineHeight),
     },
     {
       props: ['letter-spacing'],
-      breakPoints: getBreakPoints(theme.letterSpacing),
+      breakPoints: getSizeBreakPoints(theme.letterSpacing),
     },
     {
       props: ['gap', 'row-gap', 'column-gap'],
-      breakPoints: getBreakPoints(theme.gap),
+      breakPoints: getSizeBreakPoints(theme.gap),
     },
     {
       props: [
@@ -435,7 +544,7 @@ function normalizeCSS(css) {
         'scroll-padding-left',
         'scroll-padding-top',
       ],
-      breakPoints: getBreakPoints(theme.scrollPadding),
+      breakPoints: getSizeBreakPoints(theme.scrollPadding),
     },
     {
       props: [
@@ -445,49 +554,56 @@ function normalizeCSS(css) {
         'scroll-margin-left',
         'scroll-margin-top',
       ],
-      breakPoints: getBreakPoints(theme.scrollMargin),
+      breakPoints: getSizeBreakPoints(theme.scrollMargin),
     },
     {
       props: ['flex-basis'],
-      breakPoints: getBreakPoints(theme.flexBasis),
+      breakPoints: getSizeBreakPoints(theme.flexBasis),
     },
     {
       props: ['top', 'right', 'bottom', 'left'],
-      breakPoints: getBreakPoints(theme.inset),
+      breakPoints: getSizeBreakPoints(theme.inset),
     },
     {
       props: ['text-decoration-thickness'],
-      breakPoints: getBreakPoints(theme.textDecorationThickness),
+      breakPoints: getSizeBreakPoints(theme.textDecorationThickness),
     },
     {
       props: ['outline-width'],
-      breakPoints: getBreakPoints(theme.outlineWidth),
+      breakPoints: getSizeBreakPoints(theme.outlineWidth),
     },
     {
       props: ['outline-offset'],
-      breakPoints: getBreakPoints(theme.outlineOffset),
+      breakPoints: getSizeBreakPoints(theme.outlineOffset),
     },
   ];
 
-  const noBreakpoints = propsToSnap.find(
+  const noSizeBreakpoints = sizePropsToSnap.find(
     (item) => item.breakPoints.length === 0,
   );
-  if (noBreakpoints) {
-    console.log(noBreakpoints);
-    throw new Error('No breakpoints found');
+  if (noSizeBreakpoints) {
+    console.log(noSizeBreakpoints);
+    throw new Error('No size breakpoints found');
   }
 
   const ast = parseCSS(css);
+
   ast.walkDecls((decl) => {
-    const breakPoints = propsToSnap.find((item) => {
+    const sizeBreakPoints = sizePropsToSnap.find((item) => {
+      return item.props.includes(decl.prop);
+    })?.breakPoints;
+    const colorBreakPoints = colorPropsToSnap.find((item) => {
       return item.props.includes(decl.prop);
     })?.breakPoints;
 
-    if (breakPoints) {
+    if (sizeBreakPoints || colorBreakPoints) {
       const valueAst = postcssValueParser(decl.value);
       valueAst.walk((node) => {
-        if (node.type === 'word') {
-          node.value = snapToBreakpoint(node.value, breakPoints);
+        if (sizeBreakPoints) {
+          if (node.type === 'word') {
+            node.value = snapSizeToBreakpoint(node.value, sizeBreakPoints);
+            node.value = snapColorToBreakpoint(node.value, colorBreakPoints);
+          }
         }
       });
       decl.value = valueAst.toString().trim();
@@ -505,7 +621,7 @@ function makePrompt() {
   const mycss = `
 .foo {
   color: #3d5afe;
-  border: 10px solid #444;
+  border: 10px solid #44403c;
 }  
 `;
 
