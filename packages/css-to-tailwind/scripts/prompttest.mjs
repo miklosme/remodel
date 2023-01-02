@@ -7,6 +7,7 @@ import postcssValueParser from 'postcss-value-parser';
 import tailwindcss from 'tailwindcss';
 import resolveConfig from 'tailwindcss/resolveConfig.js';
 import parseUnit from 'parse-unit';
+import { levenshteinDistance } from '../src/levenshtein-distance.mjs';
 import prettier from 'prettier';
 import util from 'util';
 import deepEqual from 'deep-equal';
@@ -37,6 +38,17 @@ const compositionresolved = JSON.parse(
   ),
 );
 
+const utilitiesFiltered = JSON.parse(
+  await fs.readFile(
+    path.resolve(__dirname, '../fixtures/generative/utilities-filtered.json'),
+    'utf8',
+  ),
+);
+
+const EVERY_UTILITIES = new Set(Object.values(utilitiesFiltered).flat());
+
+console.log('utilities size', EVERY_UTILITIES.size);
+
 let CHOOSEN_COMPOSITION;
 
 if (!process.env.CHOOSE) {
@@ -53,9 +65,9 @@ let MODEL;
 if (!process.env.MODEL) {
   MODEL = 'text-davinci-003';
   MODEL = 'ada:ft-personal-2022-12-21-01-03-46';
+  MODEL = 'code-davinci-002';
   MODEL = 'text-ada-001';
   MODEL = 'text-davinci-003';
-  MODEL = 'code-davinci-002';
   console.log('Model used:', MODEL);
 } else {
   MODEL = process.env.MODEL;
@@ -727,8 +739,9 @@ ${tw.map(([indexKey, utility]) => `${indexKey}. ${utility};`).join('\n')}
   const splittedPrompt = fullPrompt.split('TW:');
   const fakeCompletion = splittedPrompt.pop();
   const prompt = splittedPrompt.join('TW:') + 'TW:';
+  const expectedRowCount = css.length;
 
-  return { prompt, fullPrompt, fakeCompletion, css, tw };
+  return { prompt, fullPrompt, expectedRowCount, fakeCompletion, css, tw };
 }
 
 async function sendPrompt(prompt) {
@@ -758,17 +771,98 @@ async function sendPrompt(prompt) {
     }),
   });
 
-  return await resp.json();
+  const json = await resp.json();
+
+  return {
+    completion: json.choices[0].text,
+  };
 }
 
-function parseCompletion(completion) {
+function tokenizeUtility(str) {
+  return str.split('-').map((token) => {
+    // if the token is a number, replace it with a $ sign
+    // number tokens can contain a double escaped dot
+    if (token.match(/^[0-9\.\\]+$/)) {
+      return '$';
+    }
+
+    return token;
+  });
+}
+
+function findClosestMatch(halucination, utilities) {
+  const tokenDistances = {};
+  let closestTokenDistance = null;
+  for (const utility of utilities) {
+    const distance = levenshteinDistance(
+      tokenizeUtility(halucination),
+      tokenizeUtility(utility),
+    );
+    if (distance <= 4) {
+      tokenDistances[utility] = distance;
+      if (closestTokenDistance === null || distance < closestTokenDistance) {
+        closestTokenDistance = distance;
+      }
+    }
+  }
+
+  if (closestTokenDistance === null) {
+    return {
+      closestTokenDistance: null,
+      guesses: [],
+      topGuess: null,
+      halucination,
+    };
+  }
+
+  const guesses = Object.entries(tokenDistances)
+    .filter(([, distance]) => distance === closestTokenDistance)
+    .map(([utility]) => utility);
+  const charDistances = {};
+  let closestCharDistance = null;
+  let topGuess = null;
+  for (const candidate of guesses) {
+    const distance = levenshteinDistance(halucination, candidate);
+    charDistances[candidate] = distance;
+    if (closestCharDistance === null || distance < closestCharDistance) {
+      closestCharDistance = distance;
+      topGuess = candidate;
+    }
+  }
+
+  return {
+    closestTokenDistance,
+    guesses,
+    topGuess,
+    halucination,
+  };
+}
+
+function parseCompletion(completion, { expectedRowCount }) {
   try {
-    const declarations = completion
-      .split(';')
-      .map((str) => str.trim())
-      .filter(Boolean)
-      .map((str) => str.trim().split('. ').filter(Boolean))
-      .map(([index, value]) => [Number(index), value.split(' ')]);
+    const declarations = [];
+
+    for (let i = 0; i < expectedRowCount; i++) {
+      const index = i + 1;
+      const regex = new RegExp(`${index}\\. (.*);`);
+      const match = completion.match(regex);
+      if (!match) {
+        throw new Error(`Could not find index ${index}`);
+      }
+      const parsedUtilities = match[1].split(' ').filter(Boolean);
+
+      const utilities = parsedUtilities.map((utility) => {
+        if (!EVERY_UTILITIES.has(utility)) {
+          const result = findClosestMatch(utility, EVERY_UTILITIES);
+          if (result.topGuess) {
+            return result.topGuess;
+          }
+        }
+        return utility;
+      });
+
+      declarations.push([index, utilities]);
+    }
 
     return [null, declarations];
   } catch (e) {
@@ -777,8 +871,10 @@ function parseCompletion(completion) {
   }
 }
 
-async function validateCompletion(completion) {
-  const [err, result] = parseCompletion(completion);
+async function validateCompletion(completion, { expectedRowCount }) {
+  const [err, result] = parseCompletion(completion, {
+    expectedRowCount,
+  });
   if (err) {
     throw err;
   }
@@ -815,10 +911,14 @@ async function validateCompletion(completion) {
 
 const promptHolder = makePrompt();
 
-const realCompletion = await sendPrompt(promptHolder.prompt);
+const { completion: realCompletion } = await sendPrompt(promptHolder.prompt);
 
-const realParse = parseCompletion(realCompletion.choices[0].text);
-const fakeParse = parseCompletion(promptHolder.fakeCompletion);
+const realParse = parseCompletion(realCompletion, {
+  expectedRowCount: promptHolder.expectedRowCount,
+});
+const fakeParse = parseCompletion(promptHolder.fakeCompletion, {
+  expectedRowCount: promptHolder.expectedRowCount,
+});
 
 console.log('Real:');
 console.log(realParse);
@@ -826,5 +926,7 @@ console.log(realParse);
 console.log('Fake:');
 console.log(fakeParse);
 
-// await validateCompletion(completion);
+// await validateCompletion(completion, {
+//   expectedRowCount: promptHolder.expectedRowCount,
+// });
 // console.log('OK');
