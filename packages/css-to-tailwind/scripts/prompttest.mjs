@@ -8,6 +8,7 @@ import tailwindcss from 'tailwindcss';
 import resolveConfig from 'tailwindcss/resolveConfig.js';
 import parseUnit from 'parse-unit';
 import { levenshteinDistance } from '../src/levenshtein-distance.mjs';
+import { tokenizeUtility } from '../src/utils.mjs';
 import prettier from 'prettier';
 import util from 'util';
 import deepEqual from 'deep-equal';
@@ -785,18 +786,6 @@ async function sendPrompt(prompt) {
   return {
     completion: json.choices[0].text,
   };
-}
-
-function tokenizeUtility(str) {
-  return str.split('-').map((token) => {
-    // if the token is a number, replace it with a $ sign
-    // number tokens can contain a double escaped dot
-    if (token.match(/^[0-9\.\\]+$/)) {
-      return '$';
-    }
-
-    return token;
-  });
 }
 
 function findClosestMatch(halucination, utilities) {

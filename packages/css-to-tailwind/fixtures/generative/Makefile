@@ -19,6 +19,10 @@ utilities-filtered.json: utilities.json utilities-resolved.json
 	@bun scripts/utilities-filtered.mjs
 	@echo "Success: utilities-filtered.json"
 
+utility-types.json: utilities-resolved.json
+	@node scripts/utility-types.mjs
+	@echo "Success: utility-types.json"
+
 compositions.json: utilities-filtered.json
 	@node scripts/compositions.mjs
 	@echo "Success: compositions.json"
@@ -30,3 +34,7 @@ compositions-resolved.json: compositions.json utilities-resolved.json
 prompts.json: compositions-resolved.json
 	@node scripts/prompts.mjs
 	@echo "Success: prompts.json"
+
+.PHONY: prompttest
+prompttest: utility-types.json utilities-filtered.json compositions-resolved.json
+	@node scripts/prompttest.mjs
