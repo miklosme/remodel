@@ -8,33 +8,33 @@ clean:
 	@echo "Success: cleaned up"
 
 utilities.json:
-	@bun scripts/utilities.mjs
+	@bun utilities.mjs
 	@echo "Success: utilities.json"
 
 utilities-resolved.json: utilities.json
-	@node scripts/utilities-resolved.mjs
+	@node utilities-resolved.mjs
 	@echo "Success: utilities-resolved.json"
 
 utilities-filtered.json: utilities.json utilities-resolved.json
-	@bun scripts/utilities-filtered.mjs
+	@bun utilities-filtered.mjs
 	@echo "Success: utilities-filtered.json"
 
 utility-types.json: utilities-resolved.json
-	@node scripts/utility-types.mjs
+	@node utility-types.mjs
 	@echo "Success: utility-types.json"
 
 compositions.json: utilities-filtered.json
-	@node scripts/compositions.mjs
+	@node compositions.mjs
 	@echo "Success: compositions.json"
 
 compositions-resolved.json: compositions.json utilities-resolved.json
-	@node scripts/compositions-resolved.mjs
+	@node compositions-resolved.mjs
 	@echo "Success: compositions-resolved.json"
 
 prompts.json: compositions-resolved.json
-	@node scripts/prompts.mjs
+	@node prompts.mjs
 	@echo "Success: prompts.json"
 
-.PHONY: prompttest
-prompttest: utility-types.json utilities-filtered.json compositions-resolved.json
-	@node scripts/prompttest.mjs
+# .PHONY: prompttest
+# prompttest: utility-types.json utilities-filtered.json compositions-resolved.json
+# 	@node prompttest.mjs
