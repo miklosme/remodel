@@ -64,10 +64,10 @@ let MODEL;
 
 if (!process.env.MODEL) {
   MODEL = 'text-davinci-003';
-  MODEL = 'ada:ft-personal-2022-12-21-01-03-46';
-  MODEL = 'code-davinci-002';
-  MODEL = 'text-ada-001';
   MODEL = 'text-davinci-003';
+  MODEL = 'ada:ft-personal-2022-12-21-01-03-46';
+  MODEL = 'text-ada-001';
+  MODEL = 'code-davinci-002';
   console.log('Model used:', MODEL);
 } else {
   MODEL = process.env.MODEL;
@@ -92,11 +92,20 @@ async function resolveTailwindUtilities(utilities) {
     @tailwind utilities;
   `;
 
-  const { css } = await postcss(tailwindcss(config)).process(input, {
-    from: 'tailwind.css',
-  });
+  const originalWarn = console.warn;
+  let postCSSResult;
+  try {
+    // mute warnings coming from tailwindcss
+    console.warn = () => {};
 
-  return formatCSS(css);
+    postCSSResult = await postcss(tailwindcss(config)).process(input, {
+      from: 'tailwind.css',
+    });
+  } finally {
+    console.warn = originalWarn;
+  }
+
+  return formatCSS(postCSSResult.css);
 }
 
 function mergeCSSRules(css) {
@@ -849,17 +858,7 @@ function parseCompletion(completion, { expectedRowCount }) {
       if (!match) {
         throw new Error(`Could not find index ${index}`);
       }
-      const parsedUtilities = match[1].split(' ').filter(Boolean);
-
-      const utilities = parsedUtilities.map((utility) => {
-        if (!EVERY_UTILITIES.has(utility)) {
-          const result = findClosestMatch(utility, EVERY_UTILITIES);
-          if (result.topGuess) {
-            return result.topGuess;
-          }
-        }
-        return utility;
-      });
+      const utilities = match[1].split(' ').filter(Boolean);
 
       declarations.push([index, utilities]);
     }
@@ -871,13 +870,21 @@ function parseCompletion(completion, { expectedRowCount }) {
   }
 }
 
-async function validateCompletion(completion, { expectedRowCount }) {
-  const [err, result] = parseCompletion(completion, {
-    expectedRowCount,
-  });
+async function validateCompletion(completion, promptHolder) {
+  const [err, result] = parseCompletion(completion, promptHolder);
   if (err) {
     throw err;
   }
+
+  // const utilities = parsedUtilities.map((utility) => {
+  //   if (!EVERY_UTILITIES.has(utility)) {
+  //     const result = findClosestMatch(utility, EVERY_UTILITIES);
+  //     if (result.topGuess) {
+  //       return result.topGuess;
+  //     }
+  //   }
+  //   return utility;
+  // });
 
   const resolved = await Promise.all(
     result.map(async ([index, value]) => {
@@ -885,6 +892,11 @@ async function validateCompletion(completion, { expectedRowCount }) {
       return [index, entriesFromCSS(css)];
     }),
   );
+
+  console.log('Validation Resolved:');
+  console.log(resolved);
+
+  return;
 
   const isEqual = deepEqual(resolved, promptHolder.css);
 
@@ -920,13 +932,14 @@ const fakeParse = parseCompletion(promptHolder.fakeCompletion, {
   expectedRowCount: promptHolder.expectedRowCount,
 });
 
+await validateCompletion(realCompletion, promptHolder);
+
 console.log('Real:');
 console.log(realParse);
 
-console.log('Fake:');
-console.log(fakeParse);
-
-// await validateCompletion(completion, {
-//   expectedRowCount: promptHolder.expectedRowCount,
-// });
-// console.log('OK');
+// console.log('Fake:');
+// console.log(fakeParse);
+console.log(
+  'tw from fake:',
+  fakeParse[1].flatMap(([_, utilities]) => utilities),
+);
