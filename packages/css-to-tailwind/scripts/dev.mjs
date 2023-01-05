@@ -31,17 +31,14 @@ const __dirname = new URL('.', import.meta.url).pathname;
 
 const compositionresolved = JSON.parse(
   await fs.readFile(
-    path.resolve(
-      __dirname,
-      '../fixtures/generative/compositions-resolved.json',
-    ),
+    path.resolve(__dirname, '../data/compositions-resolved.json'),
     'utf8',
   ),
 );
 
 const utilitiesFiltered = JSON.parse(
   await fs.readFile(
-    path.resolve(__dirname, '../fixtures/generative/utilities-filtered.json'),
+    path.resolve(__dirname, '../data/utilities-filtered.json'),
     'utf8',
   ),
 );
