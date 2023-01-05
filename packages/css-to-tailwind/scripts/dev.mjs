@@ -36,16 +36,23 @@ const compositionresolved = JSON.parse(
   ),
 );
 
-const utilitiesFiltered = JSON.parse(
+// const utilitiesFiltered = JSON.parse(
+//   await fs.readFile(
+//     path.resolve(__dirname, '../data/utilities-filtered.json'),
+//     'utf8',
+//   ),
+// );
+
+// const EVERY_UTILITIES = new Set(Object.values(utilitiesFiltered).flat());
+
+// console.log('utilities size', EVERY_UTILITIES.size);
+
+const utilityTypes = JSON.parse(
   await fs.readFile(
-    path.resolve(__dirname, '../data/utilities-filtered.json'),
+    path.resolve(__dirname, '../data/utility-types.json'),
     'utf8',
   ),
 );
-
-const EVERY_UTILITIES = new Set(Object.values(utilitiesFiltered).flat());
-
-console.log('utilities size', EVERY_UTILITIES.size);
 
 let CHOOSEN_COMPOSITION;
 
@@ -872,15 +879,20 @@ async function validateCompletion(completion, promptHolder) {
   //   return utility;
   // });
 
-  const resolved = await Promise.all(
-    result.map(async ([index, value]) => {
-      const css = await resolveTailwindUtilities(value.join(' '));
-      return [index, entriesFromCSS(css)];
+  const debug = await Promise.all(
+    result.map(async ([index, utilities]) => {
+      const css = await resolveTailwindUtilities(utilities.join(' '));
+      return {
+        index,
+        received: utilities,
+        expected: promptHolder.tw[index - 1][1],
+        receivedCSS: entriesFromCSS(css),
+        expectedCSS: promptHolder.css[index - 1][1],
+      };
     }),
   );
 
-  console.log('Validation Resolved:');
-  console.log(resolved);
+  console.log('debug:', debug);
 
   return;
 
@@ -920,8 +932,8 @@ const fakeParse = parseCompletion(promptHolder.fakeCompletion, {
 
 await validateCompletion(realCompletion, promptHolder);
 
-console.log('Real:');
-console.log(realParse);
+// console.log('Real:');
+// console.log(realParse);
 
 // console.log('Fake:');
 // console.log(fakeParse);

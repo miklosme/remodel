@@ -11,25 +11,22 @@ const resolvedUtilities = JSON.parse(
 );
 
 const results = Object.entries(resolvedUtilities)
-  .map(([key, css]) => {
+  .flatMap(([key, css]) => {
+    const utilityTokenized = tokenizeUtility(key).join('-');
     const ast = parseCSS(css);
-    const properties = [];
+    const results = [];
     ast.walkDecls((decl) => {
       if (!decl.prop.startsWith('--tw-')) {
-        properties.push(decl.prop);
+        results.push([decl.prop, utilityTokenized]);
       }
     });
-    return [tokenizeUtility(key).join('-'), properties];
+    return results;
   })
-  .reduce((acc, [key, properties]) => {
-    if (acc[key]) {
-      properties.forEach((prop) => {
-        if (!acc[key].includes(prop)) {
-          acc[key].push(prop);
-        }
-      });
+  .reduce((acc, [property, utility]) => {
+    if (acc[property] && !acc[property].includes(utility)) {
+      acc[property].push(utility);
     } else {
-      acc[key] = properties;
+      acc[property] = [utility];
     }
 
     return acc;
