@@ -12,7 +12,7 @@ export function normalizeShorthands(touples) {
   return Object.entries(declaration.getNonShorthandValues());
 }
 
-export async function normalizeShorthandsInCSS(css) {
+export async function normalizeCSSShorthands(css) {
   const normalize = {
     postcssPlugin: 'normalize-shorthands',
     Once(root) {
@@ -32,4 +32,16 @@ export async function normalizeShorthandsInCSS(css) {
   });
 
   return normalizedCSS;
+}
+
+export function normalizeCSSShorthandsSync(css) {
+  const ast = parseCSS(css);
+  ast.walkDecls((decl) => {
+    const normalized = normalizeShorthands([[decl.prop, decl.value]]);
+    normalized.forEach(([prop, value]) => {
+      decl.cloneBefore({ prop, value });
+    });
+    decl.remove();
+  });
+  return ast.toString();
 }

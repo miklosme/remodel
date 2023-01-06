@@ -9,6 +9,7 @@ import resolveConfig from 'tailwindcss/resolveConfig.js';
 import parseUnit from 'parse-unit';
 import { levenshteinDistance } from '../src/levenshtein-distance.mjs';
 import { tokenizeUtility } from '../src/utils.mjs';
+import { normalizeCSSShorthandsSync } from '../src/normalize-shorthands.mjs';
 import prettier from 'prettier';
 import util from 'util';
 import deepEqual from 'deep-equal';
@@ -36,14 +37,14 @@ const compositionresolved = JSON.parse(
   ),
 );
 
-// const utilitiesFiltered = JSON.parse(
-//   await fs.readFile(
-//     path.resolve(__dirname, '../data/utilities-filtered.json'),
-//     'utf8',
-//   ),
-// );
+const utilitiesFiltered = JSON.parse(
+  await fs.readFile(
+    path.resolve(__dirname, '../data/utilities-filtered.json'),
+    'utf8',
+  ),
+);
 
-// const EVERY_UTILITIES = new Set(Object.values(utilitiesFiltered).flat());
+const EVERY_UTILITIES = new Set(Object.values(utilitiesFiltered).flat());
 
 // console.log('utilities size', EVERY_UTILITIES.size);
 
@@ -468,7 +469,7 @@ function snapColorToBreakpoint(value, breakPoints) {
   }
 }
 
-function normalizeCSS(css) {
+function normalizeCSSValues(css) {
   const { theme } = getResolvedTaiwindConfig();
   // console.log(Object.keys(theme));
   // console.log(theme.textColor);
@@ -666,7 +667,7 @@ function makePrompt() {
   // `;
 
   // const afterNoise = addNoiseToCSS(CHOOSEN_COMPOSITION.css);
-  // const afterNormalize = normalizeCSS(afterNoise);
+  // const afterNormalize = normalizeCSSValues(afterNoise);
 
   // console.log('Original CSS:');
   // console.log(mycss);
@@ -679,7 +680,10 @@ function makePrompt() {
 
   const noisedThenNormalizedComposition = Object.fromEntries(
     Object.entries(CHOOSEN_COMPOSITION.resolved).map(([utility, css]) => {
-      return [utility, normalizeCSS(addNoiseToCSS(css))];
+      return [
+        utility,
+        normalizeCSSValues(addNoiseToCSS(normalizeCSSShorthandsSync(css))),
+      ];
     }),
   );
 
@@ -886,6 +890,12 @@ async function validateCompletion(completion, promptHolder) {
         index,
         received: utilities,
         expected: promptHolder.tw[index - 1][1],
+        doesExists: utilities.reduce((acc, utility) => {
+          return {
+            ...acc,
+            [utility]: EVERY_UTILITIES.has(utility),
+          };
+        }, {}),
         receivedCSS: entriesFromCSS(css),
         expectedCSS: promptHolder.css[index - 1][1],
       };
