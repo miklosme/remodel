@@ -455,15 +455,7 @@ function snapColorToBreakpoint(value, breakPoints) {
       }
     });
 
-    // const { rgb: rgbClosest } = closestBreakPoint;
-    // const distance = Math.sqrt(
-    //   Math.pow(rgb[0] - rgbClosest[0], 2) +
-    //     Math.pow(rgb[1] - rgbClosest[1], 2) +
-    //     Math.pow(rgb[2] - rgbClosest[2], 2),
-    // ).toFixed(2);
-
     return closestBreakPoint.original;
-    // return `${closestBreakPoint.original} /* distance: ${distance} */`;
   } catch (e) {
     return value;
   }
@@ -471,8 +463,6 @@ function snapColorToBreakpoint(value, breakPoints) {
 
 function normalizeCSSValues(css) {
   const { theme } = getResolvedTaiwindConfig();
-  // console.log(Object.keys(theme));
-  // console.log(theme.textColor);
 
   const colorPropsToSnap = [
     {
@@ -655,111 +645,61 @@ function normalizeCSSValues(css) {
 }
 
 function makePrompt() {
-  //   console.log(CHOOSEN_COMPOSITION.css);
-  //   console.log(
-  //     renameSelectorInCSS(addNoiseToCSS(CHOOSEN_COMPOSITION.css), '.noised'),
-  //   );
-  //   const mycss = `
-  // .foo {
-  //   color: #3d5afe;
-  //   border: 10px solid #44403c;
-  // }
-  // `;
+  const { classList, css } = CHOOSEN_COMPOSITION;
 
-  // const afterNoise = addNoiseToCSS(CHOOSEN_COMPOSITION.css);
-  // const afterNormalize = normalizeCSSValues(afterNoise);
-
-  // console.log('Original CSS:');
-  // console.log(mycss);
-  // console.log('After noise:');
-  // console.log(afterNoise);
-  // console.log('After normalize:');
-  // console.log(afterNormalize);
-
-  // process.exit(0);
-
-  const noisedThenNormalizedComposition = Object.fromEntries(
-    Object.entries(CHOOSEN_COMPOSITION.resolved).map(([utility, css]) => {
-      return [
-        utility,
-        normalizeCSSValues(addNoiseToCSS(normalizeCSSShorthandsSync(css))),
-      ];
-    }),
+  const processedCSS = normalizeCSSValues(
+    addNoiseToCSS(normalizeCSSShorthandsSync(css)),
   );
+  const cssEntries = entriesFromCSS(processedCSS);
 
-  // console.log('CHOOSEN_COMPOSITION.resolved');
-  // console.log(CHOOSEN_COMPOSITION.resolved);
+  const prompt = `
 
-  console.log('noisedThenNormalizedComposition');
-  console.log(noisedThenNormalizedComposition);
-
-  const css = Object.entries(noisedThenNormalizedComposition).map(
-    ([utility, css], index) => {
-      return [index + 1, entriesFromCSS(css)];
-    },
-  );
-
-  const tw = Object.entries(noisedThenNormalizedComposition).map(
-    ([utility, css], index) => {
-      return [index + 1, utility];
-    },
-  );
-
-  const fullPrompt = `
 Rewrite the following CSS declarations to Tailwind CSS classes.
 
 CSS:
-1. position: relative;
-2. padding: 1.6rem 4.6rem;
-3. margin-bottom: 1.6rem;
-4. border: 1px solid #c53030;
-5. color: #fff;
-6. border-radius: 0.2rem;
-7. width: 100%;
+1. background-blend-mode: luminosity;
+2. mix-blend-mode: normal;
+3. grid-column-end: 3;
+4. fill: #871337;
+5. line-height: 1.25;
+
 TW:
-1. relative;
-2. py-6 px-20;
-3. mb-6;
-4. border-red-700 border-solid border;
-5. text-white;
-6. rounded;
-7. w-full;
+1. bg-blend-luminosity;
+2. mix-blend-normal;
+3. col-end-3;
+4. fill-rose-900;
+5. leading-tight;
 
 CSS:
-1. width: 100%;
-2. display: flex;
-3. justify-content: space-between;
-4. align-items: center;
-5. flex-direction: row-reverse;
-6. padding: 2.4rem 3rem;
-7. border-top: 1px solid #fff5f5;
-TW:
-1. w-full;
-2. flex;
-3. justify-between;
-4. items-center;
-5. flex-row-reverse;
-6. pt-12 px-20;
-7. border-t border-solid border-red-700;
+1. appearance: none;
+2. grid-row: span 1 / span 1;
+3. scroll-snap-stop: always;
+4. grid-auto-rows: max-content;
+5. flex-wrap: wrap-reverse;
+6. float: right;
+7. table-layout: auto;
+
+TW: 
+1. appearance-none;
+2. row-span-1;
+3. snap-always;
+4. auto-rows-max;
+5. flex-wrap-reverse;
+6. float-right;
+7. table-auto;
 
 CSS:
-${css
-  .map(([indexKey, declarations]) => {
-    return `${indexKey}. ${declarations
-      .map(([prop, val]) => `${prop}: ${val}`)
-      .join('; ')};`;
-  })
+${cssEntries
+  .map(([prop, val], index) => `${index + 1}. ${prop}: ${val};`)
   .join('\n')}
+
 TW:
-${tw.map(([indexKey, utility]) => `${indexKey}. ${utility};`).join('\n')}
+
 `.trim();
 
-  const splittedPrompt = fullPrompt.split('TW:');
-  const fakeCompletion = splittedPrompt.pop();
-  const prompt = splittedPrompt.join('TW:') + 'TW:';
-  const expectedRowCount = css.length;
+  const expectedRowCount = cssEntries.length;
 
-  return { prompt, fullPrompt, expectedRowCount, fakeCompletion, css, tw };
+  return { prompt, expectedRowCount, classList, processedCSS };
 }
 
 async function sendPrompt(prompt) {
@@ -867,12 +807,7 @@ function parseCompletion(completion, { expectedRowCount }) {
   }
 }
 
-async function validateCompletion(completion, promptHolder) {
-  const [err, result] = parseCompletion(completion, promptHolder);
-  if (err) {
-    throw err;
-  }
-
+async function validateCompletion(parsed, promptHolder) {
   // const utilities = parsedUtilities.map((utility) => {
   //   if (!EVERY_UTILITIES.has(utility)) {
   //     const result = findClosestMatch(utility, EVERY_UTILITIES);
@@ -883,71 +818,44 @@ async function validateCompletion(completion, promptHolder) {
   //   return utility;
   // });
 
-  const debug = await Promise.all(
-    result.map(async ([index, utilities]) => {
-      const css = await resolveTailwindUtilities(utilities.join(' '));
-      return {
-        index,
-        received: utilities,
-        expected: promptHolder.tw[index - 1][1],
-        doesExists: utilities.reduce((acc, utility) => {
-          return {
-            ...acc,
-            [utility]: EVERY_UTILITIES.has(utility),
-          };
-        }, {}),
-        receivedCSS: entriesFromCSS(css),
-        expectedCSS: promptHolder.css[index - 1][1],
-      };
-    }),
-  );
+  // const debug = await Promise.all(
+  //   parsed.map(async ([index, utilities]) => {
+  //     const css = await resolveTailwindUtilities(utilities.join(' '));
+  //     return {
+  //       index,
+  //       received: utilities,
+  //       expected: promptHolder.classList,
+  //       doesExists: utilities.reduce((acc, utility) => {
+  //         return {
+  //           ...acc,
+  //           [utility]: EVERY_UTILITIES.has(utility),
+  //         };
+  //       }, {}),
+  //       receivedCSS: entriesFromCSS(css),
+  //       // expectedCSS: promptHolder.css[index - 1][1],
+  //     };
+  //   }),
+  // );
 
-  console.log('debug:', debug);
+  // console.log('debug:', debug);
 
-  return;
+  console.log('Recived:');
+  console.log(parsed.flatMap(([index, utilities]) => utilities));
 
-  const isEqual = deepEqual(resolved, promptHolder.css);
-
-  if (!isEqual) {
-    console.log('Sent data:');
-    console.log(promptHolder.css);
-
-    console.log('Recived: (fake)');
-    console.log(result);
-
-    console.log('Resolved:');
-    console.log(resolved);
-
-    throw new Error('Sent and recived are not equal');
-  }
-
-  console.log('Recived: (fake)');
-  console.log(result.flatMap(([_, utilities]) => utilities));
-
-  // const mergedCSS = mergeCSSRules(css);
-
-  // console.log(mergedCSS);
+  console.log('Expected:');
+  console.log(promptHolder.classList);
 }
 
 const promptHolder = makePrompt();
 
-const { completion: realCompletion } = await sendPrompt(promptHolder.prompt);
+const { completion } = await sendPrompt(promptHolder.prompt);
 
-const realParse = parseCompletion(realCompletion, {
-  expectedRowCount: promptHolder.expectedRowCount,
-});
-const fakeParse = parseCompletion(promptHolder.fakeCompletion, {
+const [err, parsed] = parseCompletion(completion, {
   expectedRowCount: promptHolder.expectedRowCount,
 });
 
-await validateCompletion(realCompletion, promptHolder);
+if (err) {
+  throw err;
+}
 
-// console.log('Real:');
-// console.log(realParse);
-
-// console.log('Fake:');
-// console.log(fakeParse);
-console.log(
-  'tw from fake:',
-  fakeParse[1].flatMap(([_, utilities]) => utilities),
-);
+await validateCompletion(parsed, promptHolder);
