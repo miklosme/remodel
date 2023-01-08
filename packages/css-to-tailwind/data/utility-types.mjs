@@ -11,10 +11,10 @@ const resolvedUtilities = JSON.parse(
 );
 
 const results = Object.entries(resolvedUtilities)
-  .flatMap(([key, css]) => {
-    const utilityTokenized = tokenizeUtility(key).join('-');
-    const ast = parseCSS(css);
+  .flatMap(([utility, css]) => {
+    const utilityTokenized = tokenizeUtility(utility).join('-');
     const results = [];
+    const ast = parseCSS(css);
     ast.walkDecls((decl) => {
       if (!decl.prop.startsWith('--tw-')) {
         results.push([decl.prop, utilityTokenized]);
@@ -23,8 +23,10 @@ const results = Object.entries(resolvedUtilities)
     return results;
   })
   .reduce((acc, [property, utility]) => {
-    if (acc[property] && !acc[property].includes(utility)) {
-      acc[property].push(utility);
+    if (acc[property]) {
+      if (!acc[property].includes(utility)) {
+        acc[property].push(utility);
+      }
     } else {
       acc[property] = [utility];
     }

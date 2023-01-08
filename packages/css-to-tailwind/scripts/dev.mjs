@@ -44,16 +44,14 @@ const utilitiesFiltered = JSON.parse(
   ),
 );
 
-const EVERY_UTILITIES = new Set(Object.values(utilitiesFiltered).flat());
-
-// console.log('utilities size', EVERY_UTILITIES.size);
-
 const utilityTypes = JSON.parse(
   await fs.readFile(
     path.resolve(__dirname, '../data/utility-types.json'),
     'utf8',
   ),
 );
+
+const EVERY_UTILITIES_TYPES = new Set(Object.values(utilityTypes).flat());
 
 let CHOOSEN_COMPOSITION;
 
@@ -809,8 +807,8 @@ function parseCompletion(completion, { expectedRowCount }) {
 
 async function validateCompletion(parsed, promptHolder) {
   // const utilities = parsedUtilities.map((utility) => {
-  //   if (!EVERY_UTILITIES.has(utility)) {
-  //     const result = findClosestMatch(utility, EVERY_UTILITIES);
+  //   if (!EVERY_UTILITIES_TYPES.has(utility)) {
+  //     const result = findClosestMatch(utility, EVERY_UTILITIES_TYPES);
   //     if (result.topGuess) {
   //       return result.topGuess;
   //     }
@@ -828,7 +826,7 @@ async function validateCompletion(parsed, promptHolder) {
   //       doesExists: utilities.reduce((acc, utility) => {
   //         return {
   //           ...acc,
-  //           [utility]: EVERY_UTILITIES.has(utility),
+  //           [utility]: EVERY_UTILITIES_TYPES.has(utility),
   //         };
   //       }, {}),
   //       receivedCSS: entriesFromCSS(css),
@@ -839,15 +837,42 @@ async function validateCompletion(parsed, promptHolder) {
 
   // console.log('debug:', debug);
 
+  const cssProps = new Set(
+    entriesFromCSS(promptHolder.css).map(([prop]) => prop),
+  );
+
+  const pool = Object.entries(utilityTypes).reduce((acc, [prop, utilities]) => {
+    if (cssProps.has(prop)) {
+      return [...acc, ...utilities];
+    }
+    return acc;
+  }, []);
+
+  const result = parsed
+    .flatMap(([index, utilities]) => utilities)
+    .map((utility) => tokenizeUtility(utility).join('-'))
+    .map((token) => {
+      if (EVERY_UTILITIES_TYPES.has(token)) {
+        return [token, null];
+      }
+
+      const result = findClosestMatch(token, pool);
+
+      if (result.guesses.length) {
+        return [token, result.guesses];
+      }
+
+      return [token, null];
+    });
+
   console.log('CSS:');
   console.log(promptHolder.css);
 
+  console.log('cssProps:', cssProps);
+  console.log('Pool:', pool);
+
   console.log('Recived:');
-  console.log(
-    parsed
-      .flatMap(([index, utilities]) => utilities)
-      .map((c) => tokenizeUtility(c).join('-')),
-  );
+  console.log(result);
 
   console.log('Expected:');
   console.log(promptHolder.classList.map((c) => tokenizeUtility(c).join('-')));

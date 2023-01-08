@@ -23,6 +23,10 @@ export function tokenizeUtility(str) {
       return token;
     }
 
+    if (token === '$') {
+      return '$';
+    }
+
     if (knownValues.has(token)) {
       return '$';
     }
