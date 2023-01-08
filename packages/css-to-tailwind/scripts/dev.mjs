@@ -862,8 +862,10 @@ async function validateCompletion(parsed, promptHolder) {
         return [token, result.guesses];
       }
 
-      return [token, null];
-    });
+      // LLM halucinated and we could not find a match
+      return null;
+    })
+    .filter(Boolean);
 
   console.log('CSS:');
   console.log(promptHolder.css);
