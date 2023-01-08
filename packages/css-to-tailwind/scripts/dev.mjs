@@ -699,7 +699,7 @@ TW:
 
   const expectedRowCount = cssEntries.length;
 
-  return { prompt, expectedRowCount, classList, processedCSS };
+  return { prompt, expectedRowCount, classList, css: processedCSS };
 }
 
 async function sendPrompt(prompt) {
@@ -839,11 +839,18 @@ async function validateCompletion(parsed, promptHolder) {
 
   // console.log('debug:', debug);
 
+  console.log('CSS:');
+  console.log(promptHolder.css);
+
   console.log('Recived:');
-  console.log(parsed.flatMap(([index, utilities]) => utilities));
+  console.log(
+    parsed
+      .flatMap(([index, utilities]) => utilities)
+      .map((c) => tokenizeUtility(c).join('-')),
+  );
 
   console.log('Expected:');
-  console.log(promptHolder.classList);
+  console.log(promptHolder.classList.map((c) => tokenizeUtility(c).join('-')));
 }
 
 const promptHolder = makePrompt();
