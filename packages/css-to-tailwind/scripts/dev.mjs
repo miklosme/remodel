@@ -697,7 +697,7 @@ TW:
 
   const expectedRowCount = cssEntries.length;
 
-  return { prompt, expectedRowCount, classList, css: processedCSS };
+  return { prompt, expectedRowCount, classList, css: processedCSS, cssEntries };
 }
 
 async function sendPrompt(prompt) {
@@ -868,10 +868,7 @@ async function validateCompletion(parsed, promptHolder) {
     .filter(Boolean);
 
   console.log('CSS:');
-  console.log(promptHolder.css);
-
-  console.log('cssProps:', cssProps);
-  console.log('Pool:', pool);
+  console.log(promptHolder.cssEntries);
 
   console.log('Recived:');
   console.log(result);
