@@ -1,4 +1,4 @@
-import { normalizeShorthandsInCSS } from './normalize-shorthands.mjs';
+import { normalizeCSSShorthands } from './normalize-shorthands.mjs';
 import { hashCSS } from './hash.mjs';
 import fetch from 'node-fetch';
 
@@ -7,7 +7,7 @@ export default async function cssToTailwind(css) {
     throw new Error('Missing env.OPENAI_API_KEY');
   }
 
-  const normalizedCSS = await normalizeShorthandsInCSS(css);
+  const normalizedCSS = await normalizeCSSShorthands(css);
   const hash = hashCSS(normalizedCSS);
 
   const resp = await fetch('https://api.openai.com/v1/completions', {

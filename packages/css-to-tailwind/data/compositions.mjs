@@ -5,10 +5,7 @@ import { URL } from 'url';
 const __dirname = new URL('.', import.meta.url).pathname;
 
 const data = JSON.parse(
-  await fs.readFile(
-    path.resolve(__dirname, '../utilities-filtered.json'),
-    'utf8',
-  ),
+  await fs.readFile(path.resolve(__dirname, 'utilities-filtered.json'), 'utf8'),
 );
 
 function choose(arr) {
@@ -70,6 +67,6 @@ while (true) {
 }
 
 await fs.writeFile(
-  path.resolve(__dirname, `../compositions.json`),
+  path.resolve(__dirname, 'compositions.json'),
   JSON.stringify(result, null, 2),
 );

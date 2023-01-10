@@ -1,7 +1,8 @@
 import { test, expect } from 'vitest';
 import {
   normalizeShorthands,
-  normalizeShorthandsInCSS,
+  normalizeCSSShorthands,
+  normalizeCSSShorthandsSync,
 } from './normalize-shorthands';
 
 test('normalize-shorthands', () => {
@@ -50,7 +51,7 @@ test('normalize-shorthands', () => {
   expect(getPropertyValue('background', result)).toBeUndefined();
 });
 
-test('normalizeShorthandsInCSS', async () => {
+test('normalizeCSSShorthands', async () => {
   const css = `
 .foobar {
   margin: 1rem;
@@ -66,7 +67,52 @@ test('normalizeShorthandsInCSS', async () => {
 }
 `;
 
-  const result = await normalizeShorthandsInCSS(css);
+  const result = await normalizeCSSShorthands(css);
+
+  expect(result).toBe(`
+.foobar {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: red;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 3rem;
+  padding-left: 4rem;
+  background-image: url(http://example.com/image.png);
+}
+
+@media (min-width: 640px) {
+  .foobar {
+    margin-top: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 4rem;
+  }
+}
+`);
+});
+
+test('normalizeCSSShorthandsSync', () => {
+  const css = `
+.foobar {
+  margin: 1rem;
+  border-left: 1px solid red;
+  padding: 1rem 2rem 3rem 4rem;
+  background: url("http://example.com/image.png");
+}
+
+@media (min-width: 640px) {
+  .foobar {
+    margin: 4rem;
+  }
+}
+`;
+
+  const result = normalizeCSSShorthandsSync(css);
 
   expect(result).toBe(`
 .foobar {

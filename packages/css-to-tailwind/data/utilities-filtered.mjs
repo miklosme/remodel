@@ -5,14 +5,11 @@ import path from 'path';
 const __dirname = new URL('.', import.meta.url).pathname;
 
 const resolvedUtilities = JSON.parse(
-  await fs.readFile(
-    path.resolve(__dirname, '../utilities-resolved.json'),
-    'utf8',
-  ),
+  await fs.readFile(path.resolve(__dirname, 'utilities-resolved.json'), 'utf8'),
 );
 
 const utilitiesJSON = JSON.parse(
-  await fs.readFile(path.resolve(__dirname, '../utilities.json'), 'utf8'),
+  await fs.readFile(path.resolve(__dirname, 'utilities.json'), 'utf8'),
 );
 
 // implement any filtering you want here
@@ -26,6 +23,6 @@ const result = Object.entries(utilitiesJSON).map(([key, utilities]) => {
 });
 
 await fs.writeFile(
-  path.resolve(__dirname, '../utilities-filtered.json'),
+  path.resolve(__dirname, 'utilities-filtered.json'),
   JSON.stringify(Object.fromEntries(result), null, 2),
 );

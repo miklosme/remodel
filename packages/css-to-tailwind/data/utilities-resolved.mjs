@@ -33,7 +33,7 @@ async function resolveTailwindUtilities(utilities) {
 }
 
 const data = JSON.parse(
-  await fs.readFile(path.resolve(__dirname, '../utilities.json'), 'utf8'),
+  await fs.readFile(path.resolve(__dirname, 'utilities.json'), 'utf8'),
 );
 
 const utilities = Object.values(data).flat();
@@ -48,6 +48,6 @@ const results = Object.fromEntries(
 );
 
 await fs.writeFile(
-  path.resolve(__dirname, '../utilities-resolved.json'),
+  path.resolve(__dirname, 'utilities-resolved.json'),
   JSON.stringify(results, null, 2),
 );
