@@ -8,3 +8,7 @@ data:
 .PHONY: dev
 dev:
 	@node scripts/dev.mjs
+
+.PHONY: setup-cache
+setup-cache:
+	@node scripts/setup-cache.mjs

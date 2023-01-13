@@ -15,6 +15,34 @@ import util from 'util';
 import deepEqual from 'deep-equal';
 import { URL } from 'url';
 import fetch from 'node-fetch';
+import pg from 'pg';
+
+const client = new pg.Client();
+
+async function fromCache([property, value]) {
+  try {
+    await client.connect();
+    // read from cache
+    const { rows } = await client.query(
+      `SELECT * FROM tailwindcss WHERE property = $1 AND value = $2`,
+      [property, value],
+    );
+
+    if (rows.length === 0) {
+      console.log('No cache found');
+      return;
+    }
+
+    const { utilities } = rows[0];
+
+    return utilities;
+  } finally {
+    await client.end();
+  }
+}
+
+console.log(await fromCache(['margin-left', '2.5rem']));
+process.exit(0);
 
 console.log = (...args) => {
   args.forEach((arg) => {
