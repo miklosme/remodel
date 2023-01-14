@@ -1,6 +1,6 @@
 // TODO:
-// - [ ] Normalize shorthands
-// - [ ] Round values
+// - [x] Normalize shorthands
+// - [x] Round values
 // - [ ] Cache
 // - [ ] Merge utilities
 
