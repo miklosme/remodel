@@ -5,7 +5,7 @@ export function entriesFromCSS(css) {
   const results = [];
   ast.walkDecls((decl) => {
     results.push({
-      prop: decl.prop,
+      property: decl.prop,
       value: decl.value,
     });
   });
