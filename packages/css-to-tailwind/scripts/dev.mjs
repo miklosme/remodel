@@ -9,7 +9,7 @@ import resolveConfig from 'tailwindcss/resolveConfig.js';
 import parseUnit from 'parse-unit';
 import { levenshteinDistance } from '../src/levenshtein-distance.mjs';
 import { tokenizeUtility } from '../src/utils.mjs';
-import { normalizeCSSShorthandsSync } from '../src/normalize-shorthands.mjs';
+import { normalizeCSSShorthands } from '../src/normalize-shorthands.mjs';
 import prettier from 'prettier';
 import util from 'util';
 import deepEqual from 'deep-equal';
@@ -674,7 +674,7 @@ function makePrompt() {
   const { classList, css } = CHOOSEN_COMPOSITION;
 
   const processedCSS = normalizeCSSValues(
-    addNoiseToCSS(normalizeCSSShorthandsSync(css)),
+    addNoiseToCSS(normalizeCSSShorthands(css)),
   );
   const cssEntries = entriesFromCSS(processedCSS);
 

@@ -143,6 +143,7 @@ importers:
 
   packages/css-to-tailwind:
     specifiers:
+      chalk: ^5.2.0
       cssstyle: ^2.3.0
       deep-equal: ^2.1.0
       dlv: ^1.1.3
@@ -160,6 +161,7 @@ importers:
       tailwindcss: ^3.2.4
       vitest: ^0.25.3
     devDependencies:
+      chalk: 5.2.0
       cssstyle: 2.3.0_m6x4j2hplvusfpcp5jskkznkqa
       deep-equal: 2.1.0
       dlv: 1.1.3
@@ -1793,6 +1795,14 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
+
+  /chalk/5.2.0:
+    resolution:
+      {
+        integrity: sha512-ree3Gqw/nazQAPuJJEy+avdl7QfZMcUvmHIKgEZkGL+xOBzRvup5Hxo6LHuMceSxOabuJLJm5Yp/92R9eMmMvA==,
+      }
+    engines: { node: ^12.17.0 || ^14.13 || >=16.0.0 }
+    dev: true
 
   /check-error/1.0.2:
     resolution:

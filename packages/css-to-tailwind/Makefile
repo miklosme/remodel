@@ -12,3 +12,7 @@ dev:
 .PHONY: setup-cache
 setup-cache:
 	@node scripts/setup-cache.mjs
+
+.PHONY: dev-cache
+dev-cache:
+	@node scripts/dev-cache.mjs

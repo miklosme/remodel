@@ -7,7 +7,7 @@ export default async function cssToTailwind(css) {
     throw new Error('Missing env.OPENAI_API_KEY');
   }
 
-  const normalizedCSS = await normalizeCSSShorthands(css);
+  const normalizedCSS = normalizeCSSShorthands(css);
   const hash = hashCSS(normalizedCSS);
 
   const resp = await fetch('https://api.openai.com/v1/completions', {

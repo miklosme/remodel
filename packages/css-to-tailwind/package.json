@@ -12,6 +12,7 @@
   "author": "",
   "license": "UNLICENSED",
   "devDependencies": {
+    "chalk": "^5.2.0",
     "cssstyle": "^2.3.0",
     "deep-equal": "^2.1.0",
     "dlv": "^1.1.3",
