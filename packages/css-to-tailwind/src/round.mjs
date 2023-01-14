@@ -121,6 +121,25 @@ function getSizeBreakPoints(data) {
     .sort((a, z) => a.normalized - z.normalized);
 }
 
+function getTimeBreakPoints(data) {
+  return Object.values(data)
+    .map((val) => {
+      // values with extra data are arrays
+      // for example: [ '0.875rem', { lineHeight: '1.25rem' } ],
+      if (Array.isArray(val)) {
+        val = val[0];
+      }
+
+      try {
+        return parseTime(val);
+      } catch (e) {
+        return null;
+      }
+    })
+    .filter(Boolean)
+    .sort((a, z) => a.normalized - z.normalized);
+}
+
 function getColorBreakPoints(data) {
   let colors = [];
 
@@ -144,6 +163,26 @@ function getColorBreakPoints(data) {
 function snapSizeToBreakpoint(value, breakPoints) {
   try {
     const { normalized } = parseSize(value);
+    const closestBreakPoint = breakPoints.reduce((acc, curr) => {
+      if (
+        Math.abs(curr.normalized - normalized) <
+        Math.abs(acc.normalized - normalized)
+      ) {
+        return curr;
+      } else {
+        return acc;
+      }
+    });
+
+    return closestBreakPoint.original;
+  } catch (e) {
+    return value;
+  }
+}
+
+function snapTimeToBreakpoint(value, breakPoints) {
+  try {
+    const { normalized } = parseTime(value);
     const closestBreakPoint = breakPoints.reduce((acc, curr) => {
       if (
         Math.abs(curr.normalized - normalized) <
@@ -324,10 +363,6 @@ export function normalizeCSSValues(css) {
       props: ['text-indent'],
       breakPoints: getSizeBreakPoints(theme.textIndent),
     },
-    // {
-    //   props: ['transition-duration'],
-    //   breakPoints: getSizeBreakPoints(theme.transitionDuration),
-    // },
   ];
 
   const noSizeBreakpoints = sizePropsToSnap.find(
@@ -336,6 +371,25 @@ export function normalizeCSSValues(css) {
   if (noSizeBreakpoints) {
     console.log(noSizeBreakpoints);
     throw new Error('No size breakpoints found');
+  }
+
+  const timePropsToSnap = [
+    {
+      props: ['transition-duration'],
+      breakPoints: getTimeBreakPoints(theme.transitionDuration),
+    },
+    {
+      props: ['transition-delay'],
+      breakPoints: getTimeBreakPoints(theme.transitionDelay),
+    },
+  ];
+
+  const noTimeBreakpoints = timePropsToSnap.find(
+    (item) => item.breakPoints.length === 0,
+  );
+  if (noTimeBreakpoints) {
+    console.log(noTimeBreakpoints);
+    throw new Error('No time breakpoints found');
   }
 
   const ast = parseCSS(css);
@@ -347,15 +401,17 @@ export function normalizeCSSValues(css) {
     const colorBreakPoints = colorPropsToSnap.find((item) => {
       return item.props.includes(decl.prop);
     })?.breakPoints;
+    const timeBreakPoints = timePropsToSnap.find((item) => {
+      return item.props.includes(decl.prop);
+    })?.breakPoints;
 
-    if (sizeBreakPoints || colorBreakPoints) {
+    if (sizeBreakPoints || colorBreakPoints || timeBreakPoints) {
       const valueAst = postcssValueParser(decl.value);
       valueAst.walk((node) => {
-        if (sizeBreakPoints) {
-          if (node.type === 'word') {
-            node.value = snapSizeToBreakpoint(node.value, sizeBreakPoints);
-            node.value = snapColorToBreakpoint(node.value, colorBreakPoints);
-          }
+        if (node.type === 'word') {
+          node.value = snapSizeToBreakpoint(node.value, sizeBreakPoints);
+          node.value = snapColorToBreakpoint(node.value, colorBreakPoints);
+          node.value = snapTimeToBreakpoint(node.value, timeBreakPoints);
         }
       });
       decl.value = valueAst.toString().trim();
