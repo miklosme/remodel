@@ -6,25 +6,25 @@
 
 import chalk from 'chalk';
 import { normalizeCSSShorthands } from '../src/normalize-shorthands.mjs';
-import { normalizeCSSValues } from '../src/round.mjs';
+import { roundCSSValues } from '../src/round.mjs';
 
-// const css = `
-//   .selector {
-//     margin: 2rem 17px;
-//     color: #4f2b52;
-//     background: url('/image.png');
-//     transition-duration: 501ms;
-//   }
-// `;
 const css = `
   .selector {
+    margin: 2rem 17px;
+    color: #4f2b52;
+    background: url('/image.png');
     transition-duration: 501ms;
   }
 `;
+// const css = `
+//   .selector {
+//     transition-duration: 501ms;
+//   }
+// `;
 
 const normalized = normalizeCSSShorthands(css);
 
-const normalizedValues = normalizeCSSValues(normalized);
+const normalizedValues = roundCSSValues(normalized);
 
 console.log(chalk.blue(css));
 

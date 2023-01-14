@@ -217,7 +217,7 @@ function snapColorToBreakpoint(value, breakPoints) {
   }
 }
 
-export function normalizeCSSValues(css) {
+export function roundCSSValues(css) {
   const { theme } = getResolvedTaiwindConfig();
 
   const colorPropsToSnap = [
