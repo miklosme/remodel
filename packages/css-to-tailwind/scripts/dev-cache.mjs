@@ -7,6 +7,7 @@
 import chalk from 'chalk';
 import { normalizeCSSShorthands } from '../src/normalize-shorthands.mjs';
 import { roundCSSValues } from '../src/round.mjs';
+import { entriesFromCSS } from '../src/entries.mjs';
 
 const css = `
   .selector {
@@ -16,18 +17,17 @@ const css = `
     transition-duration: 501ms;
   }
 `;
-// const css = `
-//   .selector {
-//     transition-duration: 501ms;
-//   }
-// `;
 
 const normalized = normalizeCSSShorthands(css);
 
 const normalizedValues = roundCSSValues(normalized);
 
-console.log(chalk.blue(css));
+const entries = entriesFromCSS(normalizedValues);
 
-console.log(chalk.yellow(normalized));
+console.log(css);
 
-console.log(chalk.green(normalizedValues));
+console.log(chalk.blue(normalized));
+
+console.log(chalk.yellow(normalizedValues));
+
+console.log(chalk.green(JSON.stringify(entries, null, 2)));
