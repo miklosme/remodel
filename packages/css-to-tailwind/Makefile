@@ -16,3 +16,7 @@ setup-cache:
 .PHONY: dev-cache
 dev-cache:
 	@node scripts/dev-cache.mjs
+
+.PHONY: test-cache
+test-cache:
+	@node scripts/test-cache.mjs
