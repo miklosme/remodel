@@ -1,6 +1,6 @@
-.POHNY: all clean
+.POHNY: clean all
 
-all: utility-types.json prompts.json
+all: utility-types.json prompts.json cache.json
 
 clean:
 	@echo "Cleaning up"
@@ -12,7 +12,12 @@ utilities.json:
 	@echo "Success: utilities.json"
 
 utilities-resolved.json: utilities.json
-	@node utilities-resolved.mjs
+	if [ -f utilities-resolved.CACHE.txt ]; then \
+		cp utilities-resolved.CACHE.txt utilities-resolved.json; \
+	else \
+		node utilities-resolved.mjs; \
+		cp utilities-resolved.json utilities-resolved.CACHE.txt; \
+	fi
 	@echo "Success: utilities-resolved.json"
 
 utilities-filtered.json: utilities.json utilities-resolved.json
@@ -34,3 +39,7 @@ compositions-resolved.json: compositions.json utilities-resolved.json
 prompts.json: compositions-resolved.json
 	@node prompts.mjs
 	@echo "Success: prompts.json"
+
+cache.json: compositions-resolved.json
+	@node cache.mjs
+	@echo "Success: cache.json"
