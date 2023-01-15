@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs';
 import { URL } from 'url';
 import path from 'path';
-import { entriesFromCSS } from '../src/entries.mjs';
+import { normalize } from '../src/normalize.mjs';
 
 const __dirname = new URL('.', import.meta.url).pathname;
 
@@ -12,7 +12,7 @@ const resolvedUtilities = JSON.parse(
 const results = [];
 
 for (const [utility, css] of Object.entries(resolvedUtilities)) {
-  const entries = entriesFromCSS(css);
+  const entries = normalize(css);
 
   for (const { property, value } of entries) {
     // ['margin-left', '2.5rem', 'ml-10']

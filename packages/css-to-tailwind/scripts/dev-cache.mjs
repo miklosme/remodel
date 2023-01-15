@@ -4,10 +4,8 @@
 // - [ ] Cache
 // - [ ] Merge utilities
 
+import { normalize } from '../src/normalize.mjs';
 import chalk from 'chalk';
-import { normalizeCSSShorthands } from '../src/normalize-shorthands.mjs';
-import { roundCSSValues } from '../src/round.mjs';
-import { entriesFromCSS } from '../src/entries.mjs';
 import pg from 'pg';
 
 const client = new pg.Client();
@@ -29,26 +27,24 @@ async function utilitiesFromCache({ property, value }) {
   return utilities;
 }
 
+// const css = `
+//   .selector {
+//     margin: 2rem 17px;
+//     color: #4f2b52;
+//     background: url('/image.png');
+//     transition-duration: 501ms;
+//   }
+// `;
 const css = `
   .selector {
-    margin: 2rem 17px;
-    color: #4f2b52;
-    background: url('/image.png');
-    transition-duration: 501ms;
+    color: rgba(0, 40, 80, 0.5);
   }
 `;
 
-const normalized = normalizeCSSShorthands(css);
-const normalizedValues = roundCSSValues(normalized);
-const entries = entriesFromCSS(normalizedValues);
-
-console.log(css);
-console.log(chalk.blue(normalized));
-console.log(chalk.yellow(normalizedValues));
-console.log(chalk.green(JSON.stringify(entries, null, 2)));
+const normalized = normalize(css);
 
 const entriesWithCache = await Promise.all(
-  entries.map(async (entry) => {
+  normalized.map(async (entry) => {
     const cache = await utilitiesFromCache(entry);
 
     return {
@@ -60,4 +56,4 @@ const entriesWithCache = await Promise.all(
 
 await client.end();
 
-console.log(chalk.blue(JSON.stringify(entriesWithCache, null, 2)));
+console.log(chalk.green(JSON.stringify(entriesWithCache, null, 2)));

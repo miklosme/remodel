@@ -8,8 +8,8 @@ export function normalizeShorthands(prop, value) {
 
   const result = Object.entries(declaration.getNonShorthandValues());
 
+  // this is likely a bug in the CSSStyleDeclaration implementation
   if (result.length === 0) {
-    // this is likely a bug in the CSSStyleDeclaration implementation
     return [[prop, value]];
   }
 
@@ -35,5 +35,6 @@ export function normalizeCSSShorthands(css) {
     });
     decl.remove();
   });
+
   return ast.toString();
 }
