@@ -18,26 +18,15 @@ async function utilitiesFromCache({ property, value }) {
     [property, value],
   );
 
-  if (rows.length === 0) {
-    return null;
-  }
-
-  const { utilities } = rows[0];
-
-  return utilities;
+  return rows;
 }
 
-// const css = `
-//   .selector {
-//     margin: 2rem 17px;
-//     color: #4f2b52;
-//     background: url('/image.png');
-//     transition-duration: 501ms;
-//   }
-// `;
 const css = `
   .selector {
-    color: rgba(0, 40, 80, 0.5);
+    margin: 2rem 17px;
+    color: #4f2b52;
+    background: url('/image.png');
+    transition-duration: 501ms;
   }
 `;
 
