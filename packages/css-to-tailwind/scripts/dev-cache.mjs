@@ -1,8 +1,7 @@
 // TODO:
 // - [x] Normalize shorthands
 // - [x] Round values
-// - [ ] Cache
-// - [ ] Merge utilities
+// - [x] Cache
 
 import { normalize } from '../src/normalize.mjs';
 import chalk from 'chalk';
