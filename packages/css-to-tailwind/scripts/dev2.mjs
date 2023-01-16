@@ -150,7 +150,20 @@ async function utilitiesFromAI({ property, value }) {
         };
       }
 
-      const result = findClosestMatch(token, pool);
+      throw new Error('Not implemented');
+
+      // const cssProps = new Set(
+      //   entriesFromCSS(promptHolder.css).map(([prop]) => prop),
+      // );
+
+      // const pool = Object.entries(utilityTypes).reduce((acc, [prop, utilities]) => {
+      //   if (cssProps.has(prop)) {
+      //     return [...acc, ...utilities];
+      //   }
+      //   return acc;
+      // }, []);
+
+      // const result = findClosestMatch(token, pool);
 
       return {
         answer: utility,
@@ -159,6 +172,10 @@ async function utilitiesFromAI({ property, value }) {
       };
     })
     .filter(Boolean);
+}
+
+function validate(css, utilities) {
+  throw new Error('Not implemented');
 }
 
 //////////////
