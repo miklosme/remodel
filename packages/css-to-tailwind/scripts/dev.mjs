@@ -40,13 +40,6 @@ const compositionresolved = JSON.parse(
   ),
 );
 
-const utilitiesFiltered = JSON.parse(
-  await fs.readFile(
-    path.resolve(__dirname, '../data/utilities-filtered.json'),
-    'utf8',
-  ),
-);
-
 const utilityTypes = JSON.parse(
   await fs.readFile(
     path.resolve(__dirname, '../data/utility-types.json'),

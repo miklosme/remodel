@@ -4,6 +4,8 @@ import { promises as fs } from 'fs';
 import { URL } from 'url';
 import path from 'path';
 
+const __dirname = new URL('.', import.meta.url).pathname;
+
 const client = new pg.Client();
 
 await client.connect();
@@ -19,8 +21,6 @@ await client.query(
     utility TEXT NOT NULL
   )`,
 );
-
-const __dirname = new URL('.', import.meta.url).pathname;
 
 const cache = JSON.parse(
   await fs.readFile(path.resolve(__dirname, '../data/cache.json'), 'utf8'),
