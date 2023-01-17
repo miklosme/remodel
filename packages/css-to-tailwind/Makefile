@@ -24,3 +24,7 @@ dev-cache:
 .PHONY: test-cache
 test-cache:
 	@node scripts/test-cache.mjs
+
+.PHONY: validate
+validate:
+	@node scripts/validate.mjs
