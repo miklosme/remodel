@@ -1,6 +1,7 @@
 import { utilitiesFromCache } from '../src/cache.mjs';
 import { normalize } from '../src/normalize.mjs';
 import { tokenizeUtility } from '../src/utils.mjs';
+import { sendPrompt } from '../src/api.mjs';
 import chalk from 'chalk';
 import pg from 'pg';
 import { promises as fs } from 'fs';
@@ -79,42 +80,18 @@ TW:
 
 `.trim();
 
-  return { prompt };
-}
-
-async function sendPrompt(prompt) {
-  if (!process.env.OPENAI_API_KEY) {
-    throw new Error('Missing OPENAI_API_KEY');
-  }
-
-  if (!MODEL) {
-    throw new Error('Missing MODEL');
-  }
-
-  const resp = await fetch('https://api.openai.com/v1/completions', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
-    },
-    body: JSON.stringify({
-      model: MODEL,
-      prompt,
-      temperature: 0,
-      top_p: 1,
-      max_tokens: 256,
-      frequency_penalty: 0,
-      presence_penalty: 0,
-      stop: ['CSS:'],
-    }),
-  });
-
-  const json = await resp.json();
-
-  return {
-    completion: json.choices[0].text,
-    result: json,
+  const params = {
+    prompt,
+    model: MODEL,
+    temperature: 0,
+    top_p: 1,
+    max_tokens: 256,
+    frequency_penalty: 0,
+    presence_penalty: 0,
+    stop: ['CSS:'],
   };
+
+  return { prompt, params };
 }
 
 function parseCompletion(completion, holder) {
@@ -130,7 +107,7 @@ function parseCompletion(completion, holder) {
 
 async function utilitiesFromAI({ property, value }) {
   const promptHolder = makePrompt({ property, value });
-  const { completion } = await sendPrompt(promptHolder.prompt);
+  const { completion } = await sendPrompt(promptHolder);
   const [error, declarations] = parseCompletion(completion, promptHolder);
 
   if (error) {
@@ -150,7 +127,7 @@ async function utilitiesFromAI({ property, value }) {
         };
       }
 
-      throw new Error('Not implemented');
+      // throw new Error('Not implemented');
 
       // const cssProps = new Set(
       //   entriesFromCSS(promptHolder.css).map(([prop]) => prop),
@@ -168,7 +145,8 @@ async function utilitiesFromAI({ property, value }) {
       return {
         answer: utility,
         token: null,
-        guesses: result.guesses,
+        // guesses: result.guesses,
+        guesses: null,
       };
     })
     .filter(Boolean);
@@ -186,6 +164,7 @@ await client.connect();
 
 const css = addNoiseToCSS(CHOOSEN_COMPOSITION.css);
 const entries = normalize(css).slice(0, 2);
+// const entries = normalize(css);
 
 const normalized = await Promise.all(
   entries.map(async (entry) => {
@@ -194,13 +173,13 @@ const normalized = await Promise.all(
 
     return {
       ...entry,
-      cache,
-      smart,
+      cache: cache.map((item) => item.utility),
+      smart: smart.map((item) => item.token),
     };
   }),
 );
 
-console.log(entries);
 console.log(chalk.green(JSON.stringify(normalized, null, 2)));
+console.log('Expected:', chalk.green(CHOOSEN_COMPOSITION.classList.join(' ')));
 
 await client.end();
