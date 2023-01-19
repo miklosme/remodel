@@ -34,6 +34,21 @@ async function utilitiesToCSS(utilities) {
   return postCSSResult.css;
 }
 
+const getScreenshotFilename = (suffix) => {
+  const date = new Date()
+    .toISOString()
+    .replace(/:/g, '-')
+    .replace(/T/g, '-')
+    .slice(0, 19);
+
+  const randomHash = Math.random().toString(36).slice(2);
+
+  return path.resolve(
+    __dirname,
+    `../screenshots/${date}_${randomHash}_${suffix}`,
+  );
+};
+
 export async function validate(css, utilities) {
   const cssFromUtilities = await utilitiesToCSS(utilities);
 
@@ -79,24 +94,8 @@ export async function validate(css, utilities) {
   await browser.close();
 
   if (!bufferA.equals(bufferB)) {
-    const date = new Date()
-      .toISOString()
-      .replace(/:/g, '-')
-      .replace(/T/g, '-')
-      .slice(0, 19);
-
-    const randomHash = Math.random().toString(36).slice(2);
-
-    const getFilename = (suffix) => {
-      return path.resolve(
-        __dirname,
-        `../screenshots/${date}_${randomHash}_${suffix}`,
-      );
-    };
-
-    // write image to disk
-    await fs.writeFile(getFilename('from_css.png'), bufferA);
-    await fs.writeFile(getFilename('from_utilities.png'), bufferB);
+    await fs.writeFile(getScreenshotFilename('from_css.png'), bufferA);
+    await fs.writeFile(getScreenshotFilename('from_utilities.png'), bufferB);
 
     throw new Error('CSS and utilities do not match');
   }
