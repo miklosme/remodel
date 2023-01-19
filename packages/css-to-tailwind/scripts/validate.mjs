@@ -2,7 +2,7 @@ import { validate } from '../src/validate.mjs';
 import chalk from 'chalk';
 
 const css = `
-  .foo {
+  .foobarbaz {
     margin: 0.75rem;
     border: 1px solid #fb923c;
     padding: 0.5rem;

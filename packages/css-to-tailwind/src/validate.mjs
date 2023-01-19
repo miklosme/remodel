@@ -1,4 +1,5 @@
 import postcss from 'postcss';
+import parseCSS from 'postcss-safe-parser';
 import tailwindcss from 'tailwindcss';
 import { chromium } from 'playwright';
 import { promises as fs } from 'fs';
@@ -34,7 +35,7 @@ async function utilitiesToCSS(utilities) {
   return postCSSResult.css;
 }
 
-const getScreenshotFilename = (suffix) => {
+function getScreenshotFilename(suffix) {
   const date = new Date()
     .toISOString()
     .replace(/:/g, '-')
@@ -47,9 +48,24 @@ const getScreenshotFilename = (suffix) => {
     __dirname,
     `../screenshots/${date}_${randomHash}_${suffix}`,
   );
-};
+}
+
+function getSelector(css) {
+  const ast = parseCSS(css);
+  let result;
+  ast.walkRules((rule) => {
+    if (result) {
+      throw new Error('CSS used for validation can only contain one rule');
+    }
+    result = rule.selector;
+  });
+  return result;
+}
+
+const LOREM_IPSUM = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec feugiat arcu. Pellentesque sed nunc vehicula, egestas erat sodales, iaculis elit. In placerat laoreet mauris non volutpat.`;
 
 export async function validate(css, utilities) {
+  const cssSelector = getSelector(css);
   const cssFromUtilities = await utilitiesToCSS(utilities);
 
   const contextConfig = {
@@ -63,33 +79,33 @@ export async function validate(css, utilities) {
 
   await page.setContent(`
     <style>
-      #main {
-        padding: 10px;
+      #container {
+        padding: 5px;
       }
       
       ${css}
     </style>
-    <div id="main">
-      <div class="foo">foo bar</div>
+    <div id="container">
+      <div class="${cssSelector.replace(/^\./, '')}">${LOREM_IPSUM}</div>
     </div>
   `);
 
-  const bufferA = await page.locator('#main').screenshot();
+  const bufferA = await page.locator('#container').screenshot();
 
   await page.setContent(`
     <style>
-      #main {
-        padding: 10px;
+      #container {
+        padding: 5px;
       }
 
       ${cssFromUtilities}
     </style>
-    <div id="main">
-      <div class="${utilities}">foo bar</div>
+    <div id="container">
+      <div class="${utilities}">${LOREM_IPSUM}</div>
     </div>
   `);
 
-  const bufferB = await page.locator('#main').screenshot();
+  const bufferB = await page.locator('#container').screenshot();
 
   await browser.close();
 
