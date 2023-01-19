@@ -2,6 +2,10 @@ import postcss from 'postcss';
 import tailwindcss from 'tailwindcss';
 import { chromium } from 'playwright';
 import { promises as fs } from 'fs';
+import path from 'path';
+import { URL } from 'url';
+
+const __dirname = new URL('.', import.meta.url).pathname;
 
 async function utilitiesToCSS(utilities) {
   const config = {
@@ -74,11 +78,26 @@ export async function validate(css, utilities) {
 
   await browser.close();
 
-  // write image to disk
-  await fs.writeFile('from_css.png', bufferA);
-  await fs.writeFile('from_utilities.png', bufferB);
-
   if (!bufferA.equals(bufferB)) {
+    const date = new Date()
+      .toISOString()
+      .replace(/:/g, '-')
+      .replace(/T/g, '-')
+      .slice(0, 19);
+
+    const randomHash = Math.random().toString(36).slice(2);
+
+    const getFilename = (suffix) => {
+      return path.resolve(
+        __dirname,
+        `../screenshots/${date}_${randomHash}_${suffix}`,
+      );
+    };
+
+    // write image to disk
+    await fs.writeFile(getFilename('from_css.png'), bufferA);
+    await fs.writeFile(getFilename('from_utilities.png'), bufferB);
+
     throw new Error('CSS and utilities do not match');
   }
 }
