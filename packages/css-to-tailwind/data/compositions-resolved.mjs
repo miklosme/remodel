@@ -108,7 +108,7 @@ const resolvedUtilities = JSON.parse(
   await fs.readFile(path.resolve(__dirname, 'utilities-resolved.json'), 'utf8'),
 );
 
-const result = compositions.map((composition) => {
+const result = compositions.map((composition, index) => {
   const classList = Object.values(composition);
   const resolved = classList.reduce((acc, utility) => {
     return {
@@ -119,6 +119,7 @@ const result = compositions.map((composition) => {
   const resolvedCSS = Object.values(resolved).join('\n');
   const css = mergeCSSRules(resolvedCSS);
   return {
+    index,
     classList,
     resolved,
     css,
