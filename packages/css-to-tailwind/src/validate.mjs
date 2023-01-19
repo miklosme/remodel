@@ -35,7 +35,7 @@ async function utilitiesToCSS(utilities) {
   return postCSSResult.css;
 }
 
-function getScreenshotFilename(suffix) {
+async function writeFiles(files) {
   const date = new Date()
     .toISOString()
     .replace(/:/g, '-')
@@ -43,10 +43,15 @@ function getScreenshotFilename(suffix) {
     .slice(0, 19);
 
   const randomHash = Math.random().toString(36).slice(2);
+  const location = path.resolve(__dirname, `../screenshots`);
 
-  return path.resolve(
-    __dirname,
-    `../screenshots/${date}_${randomHash}_${suffix}`,
+  await Promise.all(
+    files.map(({ suffix, buffer }) => {
+      return fs.writeFile(
+        `${location}/${date}_${randomHash}_${suffix}`,
+        buffer,
+      );
+    }),
   );
 }
 
@@ -110,8 +115,13 @@ export async function validate(css, utilities) {
   await browser.close();
 
   if (!bufferA.equals(bufferB)) {
-    await fs.writeFile(getScreenshotFilename('from_css.png'), bufferA);
-    await fs.writeFile(getScreenshotFilename('from_utilities.png'), bufferB);
+    await writeFiles([
+      { suffix: 'from_css.png', buffer: bufferA },
+      { suffix: 'from_utilities.png', buffer: bufferB },
+    ]);
+
+    // TODO add diff image
+    // $ magick compare -verbose -metric mae a.png b.png diff.png
 
     throw new Error('CSS and utilities do not match');
   }
