@@ -3,6 +3,7 @@ import parseCSS from 'postcss-safe-parser';
 import tailwindcss from 'tailwindcss';
 import { chromium } from 'playwright';
 import { promises as fs } from 'fs';
+import childProcess from 'child_process';
 import path from 'path';
 import { URL } from 'url';
 
@@ -35,7 +36,7 @@ async function utilitiesToCSS(utilities) {
   return postCSSResult.css;
 }
 
-async function writeFiles(files) {
+function getFilePrefix() {
   const date = new Date()
     .toISOString()
     .replace(/:/g, '-')
@@ -43,16 +44,8 @@ async function writeFiles(files) {
     .slice(0, 19);
 
   const randomHash = Math.random().toString(36).slice(2);
-  const location = path.resolve(__dirname, `../screenshots`);
 
-  await Promise.all(
-    files.map(({ suffix, buffer }) => {
-      return fs.writeFile(
-        `${location}/${date}_${randomHash}_${suffix}`,
-        buffer,
-      );
-    }),
-  );
+  return `${date}_${randomHash}`;
 }
 
 function getSelector(css) {
@@ -115,13 +108,38 @@ export async function validate(css, utilities) {
   await browser.close();
 
   if (!bufferA.equals(bufferB)) {
-    await writeFiles([
-      { suffix: 'from_css.png', buffer: bufferA },
-      { suffix: 'from_utilities.png', buffer: bufferB },
-    ]);
+    const location = path.resolve(__dirname, `../screenshots`);
+    const filePrefix = getFilePrefix();
 
-    // TODO add diff image
-    // $ magick compare -verbose -metric mae a.png b.png diff.png
+    await fs.writeFile(`${location}/${filePrefix}_from_css.png`, bufferA);
+    await fs.writeFile(`${location}/${filePrefix}_from_utilities.png`, bufferB);
+
+    try {
+      // check if "magick" is available
+      childProcess.execSync('magick --version', { stdio: 'ignore' });
+    } catch (err) {
+      console.warn(
+        'ImageMagick is not available, skipping diff image generation',
+      );
+    }
+
+    try {
+      const command = [
+        'magick compare',
+        '-verbose',
+        '-metric mae',
+        `${location}/${filePrefix}_from_css.png`,
+        `${location}/${filePrefix}_from_utilities.png`,
+        `${location}/${filePrefix}_diff.png`,
+      ];
+
+      childProcess.execSync(command.join(' '), {
+        // do not throw error if command fails
+        stdio: 'ignore',
+      });
+
+      console.log(`Diff image generated at ${location}/${filePrefix}_diff.png`);
+    } catch (err) {}
 
     throw new Error('CSS and utilities do not match');
   }
