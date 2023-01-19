@@ -23,7 +23,7 @@ try {
   console.log(tw);
   console.log();
 
-  await validate(css, tw);
+  await validate({ css, utilities: tw, keepFiles: true });
   console.log('✅ Valid');
 } catch (err) {
   console.log('❌ Invalid');
