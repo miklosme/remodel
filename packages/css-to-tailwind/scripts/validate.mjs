@@ -23,7 +23,7 @@ try {
   console.log(tw);
   console.log();
 
-  validate(css, tw);
+  await validate(css, tw);
   console.log('✅ Valid');
 } catch (err) {
   console.log('❌ Invalid');

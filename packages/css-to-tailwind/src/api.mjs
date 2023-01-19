@@ -31,6 +31,8 @@ export async function sendPrompt({ params }) {
     console.log('Error reading "json.choices[0].text" from response:');
     console.log(json);
 
+    debugger;
+
     throw e;
   }
 }
