@@ -10,6 +10,10 @@ import { URL } from 'url';
 const __dirname = new URL('.', import.meta.url).pathname;
 
 async function utilitiesToCSS(utilities) {
+  if (Array.isArray(utilities)) {
+    utilities = utilities.join(' ');
+  }
+
   const config = {
     content: [{ raw: `<div class="${utilities}"></div>` }],
     theme: {},
@@ -60,7 +64,20 @@ function getSelector(css) {
   return result;
 }
 
-const LOREM_IPSUM = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec feugiat arcu. Pellentesque sed nunc vehicula, egestas erat sodales, iaculis elit. In placerat laoreet mauris non volutpat.`;
+function getContent({ css, className, text = 'Lorem ipsum dolor sit amet.' }) {
+  return `
+  <style>
+    #container {
+      padding: 5px;
+    }
+    
+    ${css}
+  </style>
+  <div id="container">
+    <div class="${className}">${text}</div>
+  </div>
+`;
+}
 
 export async function validate({ css, utilities, keepFiles = false }) {
   const cssSelector = getSelector(css);
@@ -75,34 +92,12 @@ export async function validate({ css, utilities, keepFiles = false }) {
   const context = await browser.newContext(contextConfig);
   const page = await context.newPage();
 
-  await page.setContent(`
-    <style>
-      #container {
-        padding: 5px;
-      }
-      
-      ${css}
-    </style>
-    <div id="container">
-      <div class="${cssSelector.replace(/^\./, '')}">${LOREM_IPSUM}</div>
-    </div>
-  `);
-
+  await page.setContent(getContent({ css, className: cssSelector }));
   const bufferA = await page.locator('#container').screenshot();
 
-  await page.setContent(`
-    <style>
-      #container {
-        padding: 5px;
-      }
-
-      ${cssFromUtilities}
-    </style>
-    <div id="container">
-      <div class="${utilities}">${LOREM_IPSUM}</div>
-    </div>
-  `);
-
+  await page.setContent(
+    getContent({ css: cssFromUtilities, className: utilities.join(' ') }),
+  );
   const bufferB = await page.locator('#container').screenshot();
 
   await browser.close();

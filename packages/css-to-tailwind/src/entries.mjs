@@ -1,4 +1,5 @@
 import parseCSS from 'postcss-safe-parser';
+import prettier from 'prettier';
 
 export function entriesFromCSS(css) {
   const ast = parseCSS(css);
@@ -10,4 +11,13 @@ export function entriesFromCSS(css) {
     });
   });
   return results;
+}
+
+export function entriesToCSS(selector, entries) {
+  const declarations = entries.map(
+    ({ property, value }) => `${property}: ${value};`,
+  );
+  const css = `${selector} { ${declarations.join(' ')} }`;
+
+  return prettier.format(css, { parser: 'css' });
 }

@@ -28,3 +28,7 @@ test-cache:
 .PHONY: validate
 validate:
 	@node scripts/validate.mjs
+
+.PHONY: clean-screenshots
+clean-screenshots:
+	@rm -r screenshots/*.png || true

@@ -1,6 +1,8 @@
 import { utilitiesFromCache } from '../src/cache.mjs';
 import { normalize } from '../src/normalize.mjs';
 import { tokenizeUtility } from '../src/utils.mjs';
+import { validate } from '../src/validate.mjs';
+import { entriesToCSS } from '../src/entries.mjs';
 import { sendPrompt } from '../src/api.mjs';
 import chalk from 'chalk';
 import pg from 'pg';
@@ -52,6 +54,10 @@ if (!process.env.MODEL) {
 } else {
   MODEL = process.env.MODEL;
   console.log('Model is set from env:', MODEL);
+}
+
+function choose(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
 }
 
 function makePrompt({ property, value }) {
@@ -152,10 +158,6 @@ async function utilitiesFromAI({ property, value }) {
     .filter(Boolean);
 }
 
-function validate(css, utilities) {
-  throw new Error('Not implemented');
-}
-
 //////////////
 //////////////
 //////////////
@@ -163,23 +165,47 @@ function validate(css, utilities) {
 await client.connect();
 
 const css = addNoiseToCSS(CHOOSEN_COMPOSITION.css);
-const entries = normalize(css).slice(0, 2);
-// const entries = normalize(css);
+// const entries = normalize(css).slice(0, 2);
+const entries = normalize(css);
+const normalizedCSS = entriesToCSS('.selector', entries);
 
-const normalized = await Promise.all(
+const data = await Promise.all(
   entries.map(async (entry) => {
     const cache = await utilitiesFromCache(client, entry);
-    const smart = await utilitiesFromAI(entry);
+    // const smart = await utilitiesFromAI(entry);
 
     return {
       ...entry,
       cache: cache.map((item) => item.utility),
-      smart: smart.map((item) => item.token),
+      // smart: smart.map((item) => item.token),
     };
   }),
 );
 
-console.log(chalk.green(JSON.stringify(normalized, null, 2)));
-console.log('Expected:', chalk.green(CHOOSEN_COMPOSITION.classList.join(' ')));
+console.log(chalk.green(JSON.stringify(data, null, 2)));
+console.log(chalk.blue(normalizedCSS));
+
+const result = data.flatMap((item) => {
+  if (item.cache) {
+    return [choose(item.cache)];
+  }
+
+  return [];
+});
+
+console.log('Recived:', chalk.green(result.join(' ')));
+console.log('Expected:', chalk.blue(CHOOSEN_COMPOSITION.classList.join(' ')));
+
+try {
+  await validate({
+    css: normalizedCSS,
+    utilities: result,
+    keepFiles: true,
+  });
+  console.log('✅ Valid');
+} catch (e) {
+  console.log('❌ Invalid');
+  console.log(e);
+}
 
 await client.end();
