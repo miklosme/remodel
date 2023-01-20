@@ -11,7 +11,6 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { URL } from 'url';
 import { addNoiseToCSS } from './noise.mjs';
-import fetch from 'node-fetch';
 
 const __dirname = new URL('.', import.meta.url).pathname;
 const client = new pg.Client();
@@ -166,19 +165,19 @@ async function utilitiesFromAI({ property, value }) {
 await client.connect();
 
 const css = addNoiseToCSS(CHOOSEN_COMPOSITION.css);
-const entries = normalize(css).slice(0, 2);
-// const entries = normalize(css);
+// const entries = normalize(css).slice(0, 2);
+const entries = normalize(css);
 const normalizedCSS = entriesToCSS('.selector', entries);
 
 const data = await Promise.all(
   entries.map(async (entry) => {
     const cache = await utilitiesFromCache(client, entry);
-    const smart = await utilitiesFromAI(entry);
+    // const smart = await utilitiesFromAI(entry);
 
     return {
       ...entry,
       cache: cache.map((item) => item.utility),
-      smart: smart.map((item) => item.token),
+      // smart: smart.map((item) => item.token),
     };
   }),
 );
