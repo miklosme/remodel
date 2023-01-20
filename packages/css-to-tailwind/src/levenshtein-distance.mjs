@@ -1,3 +1,5 @@
+import { tokenizeUtility } from './utils.mjs';
+
 export function levenshteinDistance(a, b) {
   // Create empty edit distance matrix for all possible modifications of
   // substrings of a to substrings of b.
@@ -31,4 +33,52 @@ export function levenshteinDistance(a, b) {
   }
 
   return distanceMatrix[b.length][a.length];
+}
+
+export function findClosestMatch(halucination, utilities) {
+  const tokenDistances = {};
+  let closestTokenDistance = null;
+  for (const utility of utilities) {
+    const distance = levenshteinDistance(
+      tokenizeUtility(halucination),
+      tokenizeUtility(utility),
+    );
+    if (distance <= 4) {
+      tokenDistances[utility] = distance;
+      if (closestTokenDistance === null || distance < closestTokenDistance) {
+        closestTokenDistance = distance;
+      }
+    }
+  }
+
+  if (closestTokenDistance === null) {
+    return {
+      closestTokenDistance: null,
+      guesses: [],
+      topGuess: null,
+      halucination,
+    };
+  }
+
+  const guesses = Object.entries(tokenDistances)
+    .filter(([, distance]) => distance === closestTokenDistance)
+    .map(([utility]) => utility);
+  const charDistances = {};
+  let closestCharDistance = null;
+  let topGuess = null;
+  for (const candidate of guesses) {
+    const distance = levenshteinDistance(halucination, candidate);
+    charDistances[candidate] = distance;
+    if (closestCharDistance === null || distance < closestCharDistance) {
+      closestCharDistance = distance;
+      topGuess = candidate;
+    }
+  }
+
+  return {
+    closestTokenDistance,
+    guesses,
+    topGuess,
+    halucination,
+  };
 }

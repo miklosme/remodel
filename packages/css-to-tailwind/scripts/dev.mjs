@@ -7,7 +7,7 @@ import postcssValueParser from 'postcss-value-parser';
 import tailwindcss from 'tailwindcss';
 import resolveConfig from 'tailwindcss/resolveConfig.js';
 import parseUnit from 'parse-unit';
-import { levenshteinDistance } from '../src/levenshtein-distance.mjs';
+import { findClosestMatch } from '../src/levenshtein-distance.mjs';
 import { tokenizeUtility } from '../src/utils.mjs';
 import { normalizeCSSShorthands } from '../src/normalize-shorthands.mjs';
 import prettier from 'prettier';
@@ -727,54 +727,6 @@ async function sendPrompt(prompt) {
 
   return {
     completion: json.choices[0].text,
-  };
-}
-
-function findClosestMatch(halucination, utilities) {
-  const tokenDistances = {};
-  let closestTokenDistance = null;
-  for (const utility of utilities) {
-    const distance = levenshteinDistance(
-      tokenizeUtility(halucination),
-      tokenizeUtility(utility),
-    );
-    if (distance <= 4) {
-      tokenDistances[utility] = distance;
-      if (closestTokenDistance === null || distance < closestTokenDistance) {
-        closestTokenDistance = distance;
-      }
-    }
-  }
-
-  if (closestTokenDistance === null) {
-    return {
-      closestTokenDistance: null,
-      guesses: [],
-      topGuess: null,
-      halucination,
-    };
-  }
-
-  const guesses = Object.entries(tokenDistances)
-    .filter(([, distance]) => distance === closestTokenDistance)
-    .map(([utility]) => utility);
-  const charDistances = {};
-  let closestCharDistance = null;
-  let topGuess = null;
-  for (const candidate of guesses) {
-    const distance = levenshteinDistance(halucination, candidate);
-    charDistances[candidate] = distance;
-    if (closestCharDistance === null || distance < closestCharDistance) {
-      closestCharDistance = distance;
-      topGuess = candidate;
-    }
-  }
-
-  return {
-    closestTokenDistance,
-    guesses,
-    topGuess,
-    halucination,
   };
 }
 

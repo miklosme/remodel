@@ -2,7 +2,8 @@ import { utilitiesFromCache } from '../src/cache.mjs';
 import { normalize } from '../src/normalize.mjs';
 import { tokenizeUtility, getCompactCSS } from '../src/utils.mjs';
 import { validate } from '../src/validate.mjs';
-import { entriesToCSS } from '../src/entries.mjs';
+import { entriesToCSS, entriesFromCSS } from '../src/entries.mjs';
+import { findClosestMatch } from '../src/levenshtein-distance.mjs';
 import { sendPrompt } from '../src/api.mjs';
 import chalk from 'chalk';
 import pg from 'pg';
@@ -55,6 +56,20 @@ if (!process.env.MODEL) {
   MODEL = process.env.MODEL;
   console.log('Model is set from env:', MODEL);
 }
+
+const CSS_PROPS = new Set(
+  entriesFromCSS(CHOOSEN_COMPOSITION.css).map(({ property }) => property),
+);
+
+const PROP_POOL = Object.entries(utilityTypes).reduce(
+  (acc, [prop, utilities]) => {
+    if (CSS_PROPS.has(prop)) {
+      utilities.forEach((item) => acc.add(item));
+    }
+    return acc;
+  },
+  new Set(),
+);
 
 function choose(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
@@ -133,26 +148,12 @@ async function utilitiesFromAI({ property, value }) {
         };
       }
 
-      // throw new Error('Not implemented');
-
-      // const cssProps = new Set(
-      //   entriesFromCSS(promptHolder.css).map(([prop]) => prop),
-      // );
-
-      // const pool = Object.entries(utilityTypes).reduce((acc, [prop, utilities]) => {
-      //   if (cssProps.has(prop)) {
-      //     return [...acc, ...utilities];
-      //   }
-      //   return acc;
-      // }, []);
-
-      // const result = findClosestMatch(token, pool);
+      const result = findClosestMatch(token, PROP_POOL);
 
       return {
         answer: utility,
         token: null,
-        // guesses: result.guesses,
-        guesses: null,
+        guesses: result.guesses,
       };
     })
     .filter(Boolean);
@@ -165,25 +166,26 @@ async function utilitiesFromAI({ property, value }) {
 await client.connect();
 
 const css = addNoiseToCSS(CHOOSEN_COMPOSITION.css);
-// const entries = normalize(css).slice(0, 2);
-const entries = normalize(css);
+const entries = normalize(css).slice(0, 2);
+// const entries = normalize(css);
 const normalizedCSS = entriesToCSS('.selector', entries);
 
 const data = await Promise.all(
   entries.map(async (entry) => {
     const cache = await utilitiesFromCache(client, entry);
-    // const smart = await utilitiesFromAI(entry);
+    const smart = await utilitiesFromAI(entry);
 
     return {
       ...entry,
       cache: cache.map((item) => item.utility),
-      // smart: smart.map((item) => item.token),
+      smart: smart.map((item) => item.token),
     };
   }),
 );
 
 console.log(chalk.blue(getCompactCSS(normalizedCSS)));
 console.log(chalk.green(JSON.stringify(data, null, 2)));
+console.log();
 
 const result = data.flatMap((item) => {
   if (item.cache) {
@@ -193,11 +195,12 @@ const result = data.flatMap((item) => {
   return [];
 });
 
-// dev
 console.log(
-  'Expected from data:',
+  'CLASS_LIST',
   chalk.bgGreen(CHOOSEN_COMPOSITION.classList.join(' ')),
 );
+console.log('PROP_POOL', chalk.bgBlue(Array.from(PROP_POOL)));
+console.log();
 
 try {
   await validate({

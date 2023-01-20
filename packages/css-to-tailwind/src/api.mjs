@@ -1,6 +1,7 @@
 import fetch from 'node-fetch';
 
 // TODO rate limit protection
+// resp.status === 429
 
 export async function sendPrompt({ params }) {
   if (!process.env.OPENAI_API_KEY) {
