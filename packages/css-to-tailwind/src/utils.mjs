@@ -1,3 +1,15 @@
+import prettier from 'prettier';
+
+export function getCompactCSS(css) {
+  return (
+    '\n' +
+    prettier
+      .format(css, { parser: 'css' })
+      .replace(/([;{])\n/gm, '$1 ')
+      .replace(/[ ]+/g, ' ')
+  );
+}
+
 const knownValues = new Set([
   'auto',
   'fit',

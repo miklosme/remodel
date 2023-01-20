@@ -1,6 +1,6 @@
 import { utilitiesFromCache } from '../src/cache.mjs';
 import { normalize } from '../src/normalize.mjs';
-import { tokenizeUtility } from '../src/utils.mjs';
+import { tokenizeUtility, getCompactCSS } from '../src/utils.mjs';
 import { validate } from '../src/validate.mjs';
 import { entriesToCSS } from '../src/entries.mjs';
 import { sendPrompt } from '../src/api.mjs';
@@ -182,8 +182,8 @@ const data = await Promise.all(
   }),
 );
 
+console.log(chalk.blue(getCompactCSS(normalizedCSS)));
 console.log(chalk.green(JSON.stringify(data, null, 2)));
-console.log(chalk.blue(normalizedCSS));
 
 const result = data.flatMap((item) => {
   if (item.cache) {
@@ -193,15 +193,20 @@ const result = data.flatMap((item) => {
   return [];
 });
 
-console.log('Recived:', chalk.green(result.join(' ')));
-console.log('Expected:', chalk.blue(CHOOSEN_COMPOSITION.classList.join(' ')));
+// dev
+console.log(
+  'Expected from data:',
+  chalk.bgGreen(CHOOSEN_COMPOSITION.classList.join(' ')),
+);
 
 try {
   await validate({
     css: normalizedCSS,
     utilities: result,
-    keepFiles: true,
+    saveScreenshotFiles: true,
+    log: true,
   });
+
   console.log('✅ Valid');
 } catch (e) {
   console.log('❌ Invalid');
