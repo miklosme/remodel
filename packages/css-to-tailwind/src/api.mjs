@@ -5,8 +5,11 @@ async function handleRateLimit(next) {
 
   do {
     if (resp) {
-      console.log('Rate limited, waiting 1 second...');
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      const retryAfter = Number(resp.headers.get('Retry-After')) || 1000;
+
+      console.log(`Rate limited, waiting ${retryAfter / 1000} second...`);
+
+      await new Promise((resolve) => setTimeout(resolve, retryAfter));
     }
 
     resp = await next();
