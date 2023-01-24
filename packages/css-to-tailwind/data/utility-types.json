@@ -83,16 +83,7 @@
   "max-height": ["max-h-$"],
   "min-height": ["min-h-$"],
   "min-width": ["min-w-$"],
-  "max-width": [
-    "max-w-$",
-    "max-w-4xl",
-    "max-w-5xl",
-    "max-w-6xl",
-    "max-w-7xl",
-    "max-w-prose",
-    "max-w-$-$",
-    "max-w-xs"
-  ],
+  "max-width": ["max-w-$", "$-w-prose", "max-w-screen-$"],
   "flex": ["flex-$", "flex-initial"],
   "flex-shrink": ["flex-shrink", "flex-shrink-$", "shrink", "shrink-$"],
   "flex-grow": ["flex-grow", "flex-grow-$", "grow", "grow-$"],
@@ -206,22 +197,13 @@
   "scroll-margin-top": ["scroll-mt-$", "scroll-my-$"],
   "scroll-padding": ["scroll-p-$"],
   "scroll-padding-bottom": ["scroll-pb-$", "scroll-py-$"],
-  "scroll-padding-left": ["scroll-pl-$", "scroll-$-$"],
-  "scroll-padding-right": ["scroll-pr-$", "scroll-$-$"],
+  "scroll-padding-left": ["scroll-pl-$", "scroll-px-$"],
+  "scroll-padding-right": ["scroll-pr-$", "scroll-px-$"],
   "scroll-padding-top": ["scroll-pt-$", "scroll-py-$"],
   "list-style-position": ["list-inside", "list-outside"],
   "list-style-type": ["list-decimal", "list-disc", "list-$"],
   "appearance": ["appearance-$"],
-  "columns": [
-    "columns-$",
-    "columns-2xs",
-    "columns-3xs",
-    "columns-4xl",
-    "columns-5xl",
-    "columns-6xl",
-    "columns-7xl",
-    "columns-xs"
-  ],
+  "columns": ["columns-$", "columns-2xs", "columns-3xs"],
   "break-before": [
     "break-before-all",
     "break-before-$",
@@ -248,7 +230,7 @@
     "break-after-page",
     "break-after-right"
   ],
-  "grid-auto-columns": ["auto-cols-$", "auto-cols-fr"],
+  "grid-auto-columns": ["auto-cols-$", "$-cols-fr"],
   "grid-auto-flow": [
     "grid-flow-col",
     "grid-flow-col-dense",
@@ -256,7 +238,7 @@
     "grid-flow-row",
     "grid-flow-row-dense"
   ],
-  "grid-auto-rows": ["auto-rows-$", "auto-rows-fr"],
+  "grid-auto-rows": ["auto-rows-$", "$-rows-fr"],
   "grid-template-columns": ["grid-cols-$"],
   "grid-template-rows": ["grid-rows-$"],
   "flex-direction": [
@@ -903,27 +885,12 @@
     "align-top"
   ],
   "font-family": ["font-mono", "font-sans", "font-serif"],
-  "font-size": [
-    "text-$",
-    "text-4xl",
-    "text-5xl",
-    "text-6xl",
-    "text-7xl",
-    "text-8xl",
-    "text-9xl",
-    "text-base",
-    "text-xs"
-  ],
+  "font-size": ["text-$", "text-8xl", "text-9xl", "text-base"],
   "line-height": [
     "text-$",
-    "text-4xl",
-    "text-5xl",
-    "text-6xl",
-    "text-7xl",
     "text-8xl",
     "text-9xl",
     "text-base",
-    "text-xs",
     "leading-$",
     "leading-loose",
     "leading-normal",

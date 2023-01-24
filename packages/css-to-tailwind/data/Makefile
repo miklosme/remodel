@@ -12,11 +12,11 @@ utilities.json:
 	@echo "Success: utilities.json"
 
 utilities-resolved.json: utilities.json
-	if [ -f utilities-resolved.CACHE.txt ]; then \
-		cp utilities-resolved.CACHE.txt utilities-resolved.json; \
+	if [ -f utilities-resolved.CACHE.json ]; then \
+		cp utilities-resolved.CACHE.json utilities-resolved.json; \
 	else \
 		node utilities-resolved.mjs; \
-		cp utilities-resolved.json utilities-resolved.CACHE.txt; \
+		cp utilities-resolved.json utilities-resolved.CACHE.json; \
 	fi
 	@echo "Success: utilities-resolved.json"
 
