@@ -28,6 +28,10 @@ utility-types.json: utilities-resolved.json
 	@node utility-types.mjs
 	@echo "Success: utility-types.json"
 
+utilities-tokenized.json: utilities-resolved.json
+	@node utilities-tokenized.mjs
+	@echo "Success: utilities-tokenized.json"
+
 compositions.json: utilities-filtered.json
 	@node compositions.mjs
 	@echo "Success: compositions.json"
