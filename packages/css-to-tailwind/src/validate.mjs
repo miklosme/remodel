@@ -147,15 +147,23 @@ export async function validate(arg) {
         `${location}/${filePrefix}_from_css.png`,
         `${location}/${filePrefix}_from_utilities.png`,
         `${location}/${filePrefix}_diff.png`,
-      ];
+        '2>&1', // redirect stderr to stdout
+      ].join(' ');
 
-      childProcess.execSync(command.join(' '), {
-        // do not throw error if command fails
-        stdio: 'ignore',
-      });
-    } catch (err) {}
-
-    console.log(`Diff image generated at ${location}/${filePrefix}_diff.png`);
+      childProcess.execSync(command);
+    } catch (error) {
+      // ImageMagick compare exit codes:
+      //   0 = no diff
+      //   1 = diff
+      //   2 = error
+      if (error.status === 2) {
+        console.warn('Diff image generation failed:', err.message);
+      } else if (error.status === 1) {
+        console.log(`Diff image generated: ${location}/${filePrefix}_diff.png`);
+      } else {
+        throw error;
+      }
+    }
   }
 
   if (!bufferA.equals(bufferB)) {
