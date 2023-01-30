@@ -13,6 +13,10 @@ dev:
 dev2:
 	@node scripts/dev2.mjs
 
+.PHONY: dev-jsx
+dev-jsx:
+	@bun scripts/dev.jsx
+
 .PHONY: setup-cache
 setup-cache:
 	@node scripts/setup-cache.mjs

@@ -158,6 +158,8 @@ importers:
       postcss-selector-parser: ^6.0.11
       postcss-value-parser: ^4.2.0
       prettier: ^2.8.0
+      react: ^18.2.0
+      react-reconciler: ^0.29.0
       tailwindcss: ^3.2.4
       vitest: ^0.25.3
     devDependencies:
@@ -176,6 +178,8 @@ importers:
       postcss-selector-parser: 6.0.11
       postcss-value-parser: 4.2.0
       prettier: 2.8.0
+      react: 18.2.0
+      react-reconciler: 0.29.0_react@18.2.0
       tailwindcss: 3.2.4_postcss@8.4.19
       vitest: 0.25.3
 
@@ -5301,6 +5305,20 @@ packages:
       }
     dev: true
 
+  /react-reconciler/0.29.0_react@18.2.0:
+    resolution:
+      {
+        integrity: sha512-wa0fGj7Zht1EYMRhKWwoo1H9GApxYLBuhoAuXN0TlltESAjDssB+Apf0T/DngVqaMyPypDmabL37vw/2aRM98Q==,
+      }
+    engines: { node: '>=0.10.0' }
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      loose-envify: 1.4.0
+      react: 18.2.0
+      scheduler: 0.23.0
+    dev: true
+
   /react-ssr-prepass/1.5.0_react@18.2.0:
     resolution:
       {
@@ -5517,7 +5535,6 @@ packages:
       }
     dependencies:
       loose-envify: 1.4.0
-    dev: false
 
   /secure-json-parse/2.5.0:
     resolution:
