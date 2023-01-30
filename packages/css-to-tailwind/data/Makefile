@@ -1,6 +1,6 @@
-.POHNY: all clean
+.POHNY: clean all
 
-all: utility-types.json prompts.json
+all: utility-types.json prompts.json cache.json
 
 clean:
 	@echo "Cleaning up"
@@ -12,7 +12,12 @@ utilities.json:
 	@echo "Success: utilities.json"
 
 utilities-resolved.json: utilities.json
-	@node utilities-resolved.mjs
+	if [ -f utilities-resolved.CACHE.json ]; then \
+		cp utilities-resolved.CACHE.json utilities-resolved.json; \
+	else \
+		node utilities-resolved.mjs; \
+		cp utilities-resolved.json utilities-resolved.CACHE.json; \
+	fi
 	@echo "Success: utilities-resolved.json"
 
 utilities-filtered.json: utilities.json utilities-resolved.json
@@ -22,6 +27,10 @@ utilities-filtered.json: utilities.json utilities-resolved.json
 utility-types.json: utilities-resolved.json
 	@node utility-types.mjs
 	@echo "Success: utility-types.json"
+
+utilities-tokenized.json: utilities-resolved.json
+	@node utilities-tokenized.mjs
+	@echo "Success: utilities-tokenized.json"
 
 compositions.json: utilities-filtered.json
 	@node compositions.mjs
@@ -34,3 +43,7 @@ compositions-resolved.json: compositions.json utilities-resolved.json
 prompts.json: compositions-resolved.json
 	@node prompts.mjs
 	@echo "Success: prompts.json"
+
+cache.json: compositions-resolved.json
+	@node cache.mjs
+	@echo "Success: cache.json"

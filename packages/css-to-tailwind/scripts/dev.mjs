@@ -7,14 +7,17 @@ import postcssValueParser from 'postcss-value-parser';
 import tailwindcss from 'tailwindcss';
 import resolveConfig from 'tailwindcss/resolveConfig.js';
 import parseUnit from 'parse-unit';
-import { levenshteinDistance } from '../src/levenshtein-distance.mjs';
+import { findClosestMatch } from '../src/levenshtein-distance.mjs';
 import { tokenizeUtility } from '../src/utils.mjs';
-import { normalizeCSSShorthandsSync } from '../src/normalize-shorthands.mjs';
+import { normalizeCSSShorthands } from '../src/normalize-shorthands.mjs';
 import prettier from 'prettier';
 import util from 'util';
 import deepEqual from 'deep-equal';
 import { URL } from 'url';
 import fetch from 'node-fetch';
+import pg from 'pg';
+
+const client = new pg.Client();
 
 console.log = (...args) => {
   args.forEach((arg) => {
@@ -33,13 +36,6 @@ const __dirname = new URL('.', import.meta.url).pathname;
 const compositionresolved = JSON.parse(
   await fs.readFile(
     path.resolve(__dirname, '../data/compositions-resolved.json'),
-    'utf8',
-  ),
-);
-
-const utilitiesFiltered = JSON.parse(
-  await fs.readFile(
-    path.resolve(__dirname, '../data/utilities-filtered.json'),
     'utf8',
   ),
 );
@@ -646,7 +642,7 @@ function makePrompt() {
   const { classList, css } = CHOOSEN_COMPOSITION;
 
   const processedCSS = normalizeCSSValues(
-    addNoiseToCSS(normalizeCSSShorthandsSync(css)),
+    addNoiseToCSS(normalizeCSSShorthands(css)),
   );
   const cssEntries = entriesFromCSS(processedCSS);
 
@@ -731,54 +727,6 @@ async function sendPrompt(prompt) {
 
   return {
     completion: json.choices[0].text,
-  };
-}
-
-function findClosestMatch(halucination, utilities) {
-  const tokenDistances = {};
-  let closestTokenDistance = null;
-  for (const utility of utilities) {
-    const distance = levenshteinDistance(
-      tokenizeUtility(halucination),
-      tokenizeUtility(utility),
-    );
-    if (distance <= 4) {
-      tokenDistances[utility] = distance;
-      if (closestTokenDistance === null || distance < closestTokenDistance) {
-        closestTokenDistance = distance;
-      }
-    }
-  }
-
-  if (closestTokenDistance === null) {
-    return {
-      closestTokenDistance: null,
-      guesses: [],
-      topGuess: null,
-      halucination,
-    };
-  }
-
-  const guesses = Object.entries(tokenDistances)
-    .filter(([, distance]) => distance === closestTokenDistance)
-    .map(([utility]) => utility);
-  const charDistances = {};
-  let closestCharDistance = null;
-  let topGuess = null;
-  for (const candidate of guesses) {
-    const distance = levenshteinDistance(halucination, candidate);
-    charDistances[candidate] = distance;
-    if (closestCharDistance === null || distance < closestCharDistance) {
-      closestCharDistance = distance;
-      topGuess = candidate;
-    }
-  }
-
-  return {
-    closestTokenDistance,
-    guesses,
-    topGuess,
-    halucination,
   };
 }
 
