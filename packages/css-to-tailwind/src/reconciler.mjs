@@ -1,4 +1,4 @@
-import { unstable_act as act } from 'react';
+import act from './act.mjs';
 import { EventEmitter } from 'node:events';
 import ReactReconciler from 'react-reconciler';
 import {
@@ -134,41 +134,63 @@ const reconciler = ReactReconciler({
   scheduleTimeout: setTimeout,
   cancelTimeout: clearTimeout,
   noTimeout: -1,
-  createInstance: (type, props) => ({
-    type,
-    props: getInstanceProps(props),
-    children: [],
-  }),
+
+  createInstance: (type, props) => {
+    return {
+      type,
+      props: getInstanceProps(props),
+      children: [],
+    };
+  },
   hideInstance() {},
   unhideInstance() {},
-  createTextInstance: (value) => ({
-    type: 'text',
-    props: { value },
-    children: [],
-  }),
+  createTextInstance: (value) => {
+    return {
+      type: 'text',
+      props: { value },
+      children: [],
+    };
+  },
   hideTextInstance() {},
   unhideTextInstance() {},
-  appendInitialChild: (parent, child) => parent.children.push(child),
-  appendChild: (parent, child) => parent.children.push(child),
-  appendChildToContainer: (container, child) => (container.head = child),
-  insertBefore: (parent, child, beforeChild) =>
-    parent.children.splice(parent.children.indexOf(beforeChild), 0, child),
-  removeChild: (parent, child) =>
-    parent.children.splice(parent.children.indexOf(child), 1),
-  removeChildFromContainer: (container) => (container.head = null),
+  appendInitialChild: (parent, child) => {
+    parent.children.push(child);
+  },
+  appendChild: (parent, child) => {
+    parent.children.push(child);
+  },
+  appendChildToContainer: (container, child) => {
+    container.head = child;
+  },
+  insertBefore: (parent, child, beforeChild) => {
+    parent.children.splice(parent.children.indexOf(beforeChild), 0, child);
+  },
+  removeChild: (parent, child) => {
+    parent.children.splice(parent.children.indexOf(child), 1);
+  },
+  removeChildFromContainer: (container) => {
+    container.head = null;
+  },
   getPublicInstance: () => null,
   getRootHostContext: () => null,
   getChildHostContext: () => null,
   shouldSetTextContent: () => false,
   finalizeInitialChildren: () => false,
-  prepareUpdate: () => ({}),
-  commitUpdate: (instance, _, __, ___, props) =>
-    (instance.props = getInstanceProps(props)),
-  commitTextUpdate: (instance, _, value) => (instance.props.value = value),
+  prepareUpdate: () => {
+    return {};
+  },
+  commitUpdate: (instance, _, __, ___, props) => {
+    instance.props = getInstanceProps(props);
+  },
+  commitTextUpdate: (instance, _, value) => {
+    instance.props.value = value;
+  },
   prepareForCommit: () => null,
   resetAfterCommit() {},
   preparePortalMount() {},
-  clearContainer: (container) => (container.head = null),
+  clearContainer: (container) => {
+    container.head = null;
+  },
   getCurrentEventPriority: () => DefaultEventPriority,
   beforeActiveInstanceBlur: () => {},
   afterActiveInstanceBlur: () => {},
