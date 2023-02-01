@@ -1,3 +1,4 @@
+import React from 'react';
 import act from './act.mjs';
 import { EventEmitter } from 'node:events';
 import ReactReconciler from 'react-reconciler';
@@ -6,10 +7,29 @@ import {
   ConcurrentRoot,
 } from 'react-reconciler/constants.js';
 
-class Queue extends EventEmitter {
-  constructor() {
+async function handleRateLimit(next) {
+  let resp;
+
+  do {
+    if (resp) {
+      const retryAfter = Number(resp.headers.get('Retry-After')) || 1000;
+      console.log(`Rate limited, waiting ${retryAfter / 1000} second...`);
+
+      await new Promise((resolve) => setTimeout(resolve, retryAfter));
+    }
+
+    resp = await next();
+  } while (resp.status === 429);
+
+  return resp;
+}
+
+class PromptQueue extends EventEmitter {
+  constructor(options) {
     super();
     this.queue = [];
+    this.head = null;
+    this.options = options;
   }
 
   push(task) {
@@ -28,8 +48,26 @@ class Queue extends EventEmitter {
     });
   }
 
-  isEmpty() {
+  isQueueEmpty() {
     return this.queue.length === 0;
+  }
+
+  async sendPrompt({ query, params }) {
+    if (!process.env.OPENAI_API_KEY) {
+      throw new Error('Missing OPENAI_API_KEY');
+    }
+
+    if (!params.model) {
+      throw new Error('Missing MODEL');
+    }
+
+    const resp = await handleRateLimit(query);
+    const json = await resp.json();
+
+    return {
+      completion: json.choices[0].text,
+      result: json,
+    };
   }
 }
 
@@ -198,25 +236,35 @@ const reconciler = ReactReconciler({
 });
 
 const ReactPrompt = {
-  config: (options) => ({
-    async run(element) {
-      const container = { head: null, queue: new Queue() };
-      const root = reconciler.createContainer(
-        container,
-        ConcurrentRoot,
-        null,
-        false,
-        null,
-        '',
-        console.error,
-        null,
-      );
+  config: (options) => {
+    const container = new PromptQueue(options);
 
-      act(() => reconciler.updateContainer(element, root, null, undefined));
+    const root = reconciler.createContainer(
+      container,
+      ConcurrentRoot,
+      null,
+      false,
+      null,
+      '',
+      console.error,
+      null,
+    );
 
-      return container;
-    },
-  }),
+    return {
+      async run(element) {
+        act(() => {
+          const strictElement = React.createElement(
+            React.StrictMode,
+            null,
+            element,
+          );
+          reconciler.updateContainer(strictElement, root, null, undefined);
+        });
+
+        return container;
+      },
+    };
+  },
 };
 
 export default ReactPrompt;

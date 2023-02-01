@@ -1,4 +1,5 @@
 import React from 'react';
+import fetch from 'node-fetch';
 import ReactPrompt from '../src/reconciler.mjs';
 
 function App() {
@@ -12,31 +13,25 @@ function App() {
   );
 }
 
-const OpenAI = {
-  name: 'OpenAI',
-  query({ params }) {
-    return fetch('https://api.openai.com/v1/completions', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
-      },
-      body: JSON.stringify(params),
-    });
-  },
-};
-
 const prompt = ReactPrompt.config({
-  smart: {
-    provider: OpenAI,
-    model: 'text-davinci-003',
-  },
+  models: [
+    {
+      alias: 'smart',
+      model: 'text-davinci-003',
+      query({ params }) {
+        return fetch('https://api.openai.com/v1/completions', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+          },
+          body: JSON.stringify(params),
+        });
+      },
+    },
+  ],
 });
 
-const result = await prompt.run(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-);
+const result = await prompt.run(<App />);
 
 console.log('Result:', result);
