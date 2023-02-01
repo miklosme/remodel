@@ -3,7 +3,7 @@ import ReactPrompt from '../src/reconciler.mjs';
 
 function App() {
   return (
-    <model name="smart">
+    <model name="smart" temperature={0}>
       <instruction>
         What year was Barack Obama elected first times as POTUS?
       </instruction>
@@ -39,4 +39,4 @@ const result = await prompt.run(
   </React.StrictMode>,
 );
 
-console.log('Result to the question is:', result['obama_potus']);
+console.log('Result:', result);
