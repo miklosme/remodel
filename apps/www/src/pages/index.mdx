@@ -1,16 +1,6 @@
 import { SparkleIcon } from '@/components/SparkleIcon'
-import { generateRssFeed } from '@/lib/generateRssFeed'
-
-export async function getStaticProps() {
-  if (process.env.NODE_ENV === 'production') {
-    await generateRssFeed()
-  }
-  return { props: {} }
-}
 
 ---
-
-![](@/images/commit-suggestions.png)
 
 ## Commit message suggestions {{ date: '2023-04-06T00:00Z' }}
 
@@ -27,8 +17,6 @@ It's also been a pretty helpful way to remind myself what the hell I was working
 
 ---
 
-![](@/images/configuration-files.png)
-
 ## Project configuration files {{ date: '2023-03-17T00:00Z' }}
 
 I've added support for creating per-project `.commitrc` files that override your global settings for that particular project. Went with YAML for these because personally I'm sick of quoting keys in JSON all the time, or accidentally leaving in a trailing comma.
@@ -40,8 +28,6 @@ I've added support for creating per-project `.commitrc` files that override your
 - Fixed a bug that could cause Commit to crash when autocommitting after deleting a recently active branch
 
 ---
-
-![](@/images/dark-mode.png)
 
 ## Dark mode support {{ date: '2023-03-06T00:00Z' }}
 
@@ -55,8 +41,6 @@ I released this thing last week hoping a couple of people would say "awesome job
 - Deleted my Twitter account
 
 ---
-
-![](@/images/first-release.png)
 
 ## Commit v0.1.0 {{  date: '2023-03-03T00:00Z' }}
 

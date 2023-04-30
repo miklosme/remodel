@@ -49,17 +49,26 @@ export function Intro() {
         </Link>
       </div>
       <h1 className="mt-14 font-display text-4xl/tight font-light text-white">
-        Open-source Git client{' '}
-        <span className="text-sky-300">for macOS minimalists</span>
+        Revitalize Your Old Apps:{' '}
+        <span className="text-sky-300">AI-Powered Refactoring</span>
       </h1>
       <p className="mt-4 text-sm/6 text-gray-300">
-        Commit is a lightweight Git client you can open from anywhere any time
-        you’re ready to commit your work with a single keyboard shortcut. It’s
-        fast, beautiful, and completely unnecessary.
+        Remodel is an AI-driven developer tool designed to help software
+        engineers effortlessly refactor their old web applications to a new
+        architecture while preserving the original functionality.
+      </p>
+      <p className="mt-4 text-sm/6 text-gray-300">
+        With support for JavaScript/TypeScript and React as the output, Remodel
+        can refactor web apps from any language and framework.
       </p>
       <SignUpForm />
-      <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
-        <IconLink href="#" icon={BookIcon} className="flex-none">
+      {/* <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
+        <IconLink
+          href="https://docs.remodel.sh"
+          target="_blank"
+          icon={BookIcon}
+          className="flex-none"
+        >
           Documentation
         </IconLink>
         <IconLink href="#" icon={GitHubIcon} className="flex-none">
@@ -68,7 +77,7 @@ export function Intro() {
         <IconLink href="/rss/feed.xml" icon={FeedIcon} className="flex-none">
           RSS
         </IconLink>
-      </div>
+      </div> */}
     </>
   )
 }
@@ -77,8 +86,14 @@ export function IntroFooter() {
   return (
     <p className="flex items-baseline gap-x-2 text-[0.8125rem]/6 text-gray-500">
       Brought to you by{' '}
-      <IconLink href="#" icon={TwitterIcon} compact large>
-        Joe Davola
+      <IconLink
+        href="https://twitter.com/miklosme"
+        target="_blank"
+        icon={TwitterIcon}
+        compact
+        large
+      >
+        Miklos Me
       </IconLink>
     </p>
   )
