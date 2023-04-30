@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Remodel - AI-powered refactoring</title>
+        <title>Remodel — AI-powered refactoring</title>
         <meta
           name="description"
           content="Remodel is an AI-driven developer tool designed to help software

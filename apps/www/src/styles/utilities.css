@@ -1,1 +1,12 @@
 @tailwind utilities;
+
+@layer utilities {
+  .shader-background {
+    position: absolute;
+    z-index: -10;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+  }
+}
