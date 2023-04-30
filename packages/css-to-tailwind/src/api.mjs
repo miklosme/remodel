@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 
-async function handleRateLimit(next) {
+export async function handleRateLimit(next) {
   let resp;
 
   do {
