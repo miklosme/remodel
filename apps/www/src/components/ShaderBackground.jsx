@@ -212,10 +212,10 @@ export default function GradientBackground({ tl, tr, bl, br, height = 800 }) {
 }
 
 GradientBackground.defaultProps = {
-  tl: ['#CA3CFF', '#FF809D'],
-  tr: ['#FBACBE', '#C32EFA'],
-  bl: ['#EC7D10', '#9DCDA7'],
-  br: ['#ACE2B7', '#D97512'],
+  tl: ['#030712', '#4bb9e5'],
+  tr: ['#030712', '#4b74e5'],
+  bl: ['#030712', '#030712'],
+  br: ['#030712', '#e5654b'],
 }
 
 //
