@@ -49,8 +49,10 @@ export function Intro() {
         </Link>
       </div>
       <h1 className="mt-14 font-display text-4xl/tight font-light text-white">
-        Revitalize Your Old Apps:{' '}
-        <span className="text-sky-300">AI-Powered Refactoring</span>
+        Revitalize your old codebase with{' '}
+        <span className="whitespace-nowrap text-sky-300">
+          AI-Powered Refactoring
+        </span>
       </h1>
       <p className="mt-4 text-sm/6 text-gray-300">
         Remodel is an AI-driven developer tool designed to help software
