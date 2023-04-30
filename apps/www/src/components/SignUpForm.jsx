@@ -1,12 +1,45 @@
 import { useId } from 'react'
-
+import { useRouter } from 'next/router'
 import { Button } from '@/components/Button'
+import { CheckCircleIcon } from '@heroicons/react/20/solid'
 
 export function SignUpForm() {
   let id = useId()
+  let router = useRouter()
+
+  if (router.query.subscribed) {
+    return (
+      <div className="mt-4 rounded-md bg-white/10 p-4">
+        <div className="flex">
+          <div className="flex-shrink-0">
+            <CheckCircleIcon
+              className="h-5 w-5 text-white"
+              aria-hidden="true"
+            />
+          </div>
+          <div className="ml-3">
+            <h3 className="text-sm font-medium text-white">
+              Thank you for subscribing!
+            </h3>
+            <div className="mt-2 text-sm text-white">
+              <p>Please check your inbox for a confirmation email.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   return (
-    <form className="relative isolate mt-8 flex items-center pr-1">
+    <form
+      action="https://buttondown.email/api/emails/embed-subscribe/miklosme"
+      method="post"
+      target="popupwindow"
+      onSubmit={() => {
+        window.open('https://buttondown.email/miklosme', 'popupwindow')
+      }}
+      className="relative isolate mt-8 flex items-center pr-1"
+    >
       <label htmlFor={id} className="sr-only">
         Email address
       </label>
