@@ -1,13 +1,38 @@
-import { useId } from 'react'
-import { useRouter } from 'next/router'
+import { useId, useState } from 'react'
 import { Button } from '@/components/Button'
-import { CheckCircleIcon } from '@heroicons/react/20/solid'
+import { CheckCircleIcon, ClockIcon } from '@heroicons/react/20/solid'
+import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 
 export function SignUpForm() {
-  let id = useId()
-  let router = useRouter()
+  const id = useId()
+  const [subsciptionState, setSubscriptionState] = useState('idle')
 
-  if (router.query.subscribed) {
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+
+    setSubscriptionState('pending')
+
+    const response = await fetch(
+      'https://buttondown.email/api/emails/embed-subscribe/miklosme',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: event.target.email.value,
+        }),
+      }
+    )
+
+    if (response.status === 200) {
+      setSubscriptionState('success')
+    } else {
+      setSubscriptionState('error')
+    }
+  }
+
+  if (subsciptionState === 'success') {
     return (
       <div className="mt-4 rounded-md bg-white/10 p-4">
         <div className="flex">
@@ -30,15 +55,51 @@ export function SignUpForm() {
     )
   }
 
+  if (subsciptionState === 'error') {
+    return (
+      <div className="mt-4 rounded-md bg-white/10 p-4">
+        <div className="flex">
+          <div className="flex-shrink-0">
+            <ExclamationTriangleIcon
+              className="mt-[1px] h-5 w-5 text-white"
+              aria-hidden="true"
+            />
+          </div>
+          <div className="ml-3">
+            <h3 className="text-sm font-medium text-white">
+              Something went wrong!
+            </h3>
+            <button
+              onClick={() => setSubscriptionState('idle')}
+              className="mt-2 text-sm text-white underline"
+            >
+              Try again
+            </button>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  if (subsciptionState === 'pending') {
+    return (
+      <div className="mt-4 rounded-md bg-white/10 p-4">
+        <div className="flex">
+          <div className="flex-shrink-0">
+            <ClockIcon className="h-5 w-5 text-white" aria-hidden="true" />
+          </div>
+          <div className="ml-3">
+            <h3 className="text-sm font-medium text-white">Subscribing...</h3>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <form
-      action="https://buttondown.email/api/emails/embed-subscribe/miklosme"
-      method="post"
-      target="popupwindow"
-      onSubmit={() => {
-        window.open('https://buttondown.email/miklosme', 'popupwindow')
-      }}
       className="relative isolate mt-8 flex items-center pr-1"
+      onSubmit={handleSubmit}
     >
       <label htmlFor={id} className="sr-only">
         Email address
@@ -50,13 +111,13 @@ export function SignUpForm() {
         name="email"
         id={id}
         placeholder="Email address"
-        className="peer w-0 flex-auto bg-transparent px-4 py-2.5 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-[0.8125rem]/6"
+        className="peer w-0 flex-auto bg-transparent px-4 py-2.5 text-base text-white placeholder:text-gray-400 focus:outline-none sm:text-[0.8125rem]/6"
       />
       <Button type="submit" arrow>
         Get updates
       </Button>
       <div className="absolute inset-0 -z-10 rounded-lg transition peer-focus:ring-4 peer-focus:ring-sky-300/15" />
-      <div className="absolute inset-0 -z-10 rounded-lg bg-white/2.5 ring-1 ring-white/15 transition peer-focus:ring-sky-300" />
+      <div className="absolute inset-0 -z-10 rounded-lg bg-white/2.5 ring-1 ring-white/15 transition peer-focus:ring-white/20" />
     </form>
   )
 }
