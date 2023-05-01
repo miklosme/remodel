@@ -46,7 +46,7 @@ export function Intro() {
       <div>
         <Link href="/">
           <Logo className="inline-block h-20 w-auto" />
-          <span className="ml-3 align-middle text-4xl font-semibold tracking-tight">
+          <span className="ml-3 align-middle text-4xl font-semibold tracking-tight text-white">
             Remodel
           </span>
         </Link>
