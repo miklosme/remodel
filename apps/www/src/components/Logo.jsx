@@ -16,8 +16,8 @@ export function Logo(props) {
         <stop offset="100%" stopColor="#f56565" />
       </linearGradient>
       <linearGradient id="INNER_GRADIENT" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stopColor="#162635" stopOpacity={0.5} />
-        <stop offset="100%" stopColor="#2b103a" stopOpacity={0.5} />
+        <stop offset="0%" stopColor="#162635" stopOpacity={0.1} />
+        <stop offset="100%" stopColor="#2b103a" stopOpacity={0.1} />
       </linearGradient>
       <circle
         cx={411.27786}
