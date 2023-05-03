@@ -38,13 +38,22 @@ export function Logo(props) {
       {...props}
     >
       <linearGradient id="MAIN_GRADIENT" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stopColor="#b794f4" />
+        {/* <stop offset="0%" stopColor="#b794f4" />
         <stop offset="50%" stopColor="#ed64a6" />
-        <stop offset="100%" stopColor="#f56565" />
+        <stop offset="100%" stopColor="#f56565" /> */}
+        <stop offset="0%" stopColor="white" />
+        <stop offset="100%" stopColor="white" />
       </linearGradient>
       <linearGradient id="INNER_GRADIENT" x1="0%" y1="0%" x2="100%" y2="0%">
         <stop offset="0%" stopColor="#162635" stopOpacity={0.1} />
         <stop offset="100%" stopColor="#2b103a" stopOpacity={0.1} />
+      </linearGradient>
+      <linearGradient id="INNER_CIRCLE" x1="0%" y1="0%" x2="100%" y2="0%">
+        {/* <stop offset="0%" stopColor="#b794f4" />
+        <stop offset="50%" stopColor="#ed64a6" />
+        <stop offset="100%" stopColor="#f56565" /> */}
+        <stop offset="0%" stopColor="rgb(125 211 252)" stopOpacity={1} />
+        <stop offset="100%" stopColor="rgb(125 211 252)" stopOpacity={1} />
       </linearGradient>
 
       {/* middle background */}
@@ -56,7 +65,7 @@ export function Logo(props) {
       /> */}
 
       {/* <MiddleElement /> */}
-      <circle cx={411.27786} cy={411.27786} r={90} fill="url(#MAIN_GRADIENT)" />
+      <circle cx={411.27786} cy={411.27786} r={90} fill="url(#INNER_CIRCLE)" />
 
       {/* cog and effects */}
       <g>

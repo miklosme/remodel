@@ -56,7 +56,7 @@ export function Intro() {
       </div> */}
       <div>
         <Link href="/">
-          <Logo className="inline-block h-20 w-auto" />
+          <Logo className="-ml-[10px] inline-block h-20 w-auto" />
           <span className="ml-3 align-middle text-4xl font-semibold tracking-tight text-white">
             Remodel
           </span>
