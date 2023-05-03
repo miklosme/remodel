@@ -43,6 +43,17 @@ function TwitterIcon(props) {
 export function Intro() {
   return (
     <>
+      {/* <div>
+        <Link href="/">
+          <div className="shadermagic-container">
+            <Logo className="shadermagic-under inline-block h-20 w-auto" />
+            <Logo className="shadermagic-over inline-block h-20 w-auto" />
+          </div>
+          <span className="ml-3 align-middle text-4xl font-semibold tracking-tight text-white">
+            Magick
+          </span>
+        </Link>
+      </div> */}
       <div>
         <Link href="/">
           <Logo className="inline-block h-20 w-auto" />

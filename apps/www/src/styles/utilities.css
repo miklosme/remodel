@@ -9,4 +9,28 @@
 
     left: 0;
   }
+
+  .shadermagic-container {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    vertical-align: middle;
+  }
+
+  .shadermagic-under,
+  .shadermagic-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .shadermagic-under path,
+  .shadermagic-under circle {
+    mix-blend-mode: color-burn;
+  }
+
+  .shadermagic-over path,
+  .shadermagic-over circle {
+    opacity: 0.9;
+  }
 }
