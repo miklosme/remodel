@@ -10,7 +10,7 @@ import Content from '@/pages/index.mdx'
 export async function generateRssFeed() {
   let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
   let author = {
-    name: 'Miklos Me',
+    name: '@miklosme',
     email: 'hello@miklos.dev',
   }
 
