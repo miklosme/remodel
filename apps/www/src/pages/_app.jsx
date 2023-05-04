@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }) {
         <meta
           name="description"
           content="Remodel is an AI-driven developer tool designed to help software
-          engineers effortlessly migrate their old web applications to a new
+          engineers migrate their old web applications to a new
           tech stack while preserving the original functionality. With support
           for JavaScript/TypeScript and React as the output, Remodel can refactor
           web apps from any language and framework."
