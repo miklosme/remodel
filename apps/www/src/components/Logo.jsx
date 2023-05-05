@@ -41,19 +41,21 @@ export function Logo(props) {
         {/* <stop offset="0%" stopColor="#b794f4" />
         <stop offset="50%" stopColor="#ed64a6" />
         <stop offset="100%" stopColor="#f56565" /> */}
-        <stop offset="0%" stopColor="white" />
-        <stop offset="100%" stopColor="white" />
+        <stop offset="0%" stopColor="currentColor" />
+        <stop offset="100%" stopColor="currentColor" />
       </linearGradient>
       <linearGradient id="INNER_GRADIENT" x1="0%" y1="0%" x2="100%" y2="0%">
         <stop offset="0%" stopColor="#162635" stopOpacity={0.1} />
         <stop offset="100%" stopColor="#2b103a" stopOpacity={0.1} />
       </linearGradient>
-      <linearGradient id="INNER_CIRCLE" x1="0%" y1="0%" x2="100%" y2="0%">
+      <linearGradient id="INNER_CIRCLE" x1="0%" y1="100%" x2="100%" y2="0%">
         {/* <stop offset="0%" stopColor="#b794f4" />
         <stop offset="50%" stopColor="#ed64a6" />
         <stop offset="100%" stopColor="#f56565" /> */}
-        <stop offset="0%" stopColor="rgb(125 211 252)" stopOpacity={1} />
-        <stop offset="100%" stopColor="rgb(125 211 252)" stopOpacity={1} />
+        {/* <stop offset="0%" stopColor="rgb(125 211 252)" stopOpacity={0.5} />
+        <stop offset="100%" stopColor="rgb(125 211 252)" stopOpacity={0.5} /> */}
+        <stop offset="0%" stopColor="currentColor" stopOpacity={0.7} />
+        <stop offset="100%" stopColor="currentColor" stopOpacity={0.9} />
       </linearGradient>
 
       {/* middle background */}
