@@ -140,7 +140,14 @@ function choose(...args) {
   return args[index]
 }
 
-export default function GradientBackground({ tl, tr, bl, br, height = 800 }) {
+export default function GradientBackground({
+  className,
+  tl,
+  tr,
+  bl,
+  br,
+  height = 800,
+}) {
   const [gradient] = useState(() => new Gradient(height, MulticolorMaterial))
   const ref = useRef(null)
 
@@ -208,7 +215,7 @@ export default function GradientBackground({ tl, tr, bl, br, height = 800 }) {
     )
   }, [])
 
-  return <canvas ref={ref} className="shader-background" />
+  return <canvas ref={ref} className={className} />
 }
 
 GradientBackground.defaultProps = {
