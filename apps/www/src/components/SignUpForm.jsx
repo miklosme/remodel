@@ -13,20 +13,15 @@ export function SignUpForm() {
 
     setSubscriptionState('pending')
 
-    const body = new FormData(form.current)
-
     const response = await fetch(
       'https://buttondown.email/api/emails/embed-subscribe/miklosme',
       {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body,
+        body: new FormData(form.current),
       }
     )
 
-    if (response.status === 200) {
+    if (response.status < 400) {
       setSubscriptionState('success')
     } else {
       setSubscriptionState('error')
