@@ -202,7 +202,7 @@ export default function GradientBackground({
     const keys = ['tl', 'tr', 'bl', 'br']
     return gradientColors.reduce(
       (fn, color, index) => {
-        const cancel = color.onChange((latest) => {
+        const cancel = color.on('change', (latest) => {
           gradient.materialManager.setArguments(keys[index], latest)
         })
 
@@ -222,7 +222,7 @@ GradientBackground.defaultProps = {
   tl: ['#030712', '#4bb9e5'],
   tr: ['#030712', '#4b74e5'],
   bl: ['#030712', '#030712'],
-  br: ['#030712', '#e5654b'],
+  br: ['#e5654b', '#030712'],
 }
 
 //
