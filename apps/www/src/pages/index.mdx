@@ -2,7 +2,7 @@ import { SparkleIcon } from '@/components/SparkleIcon'
 
 ---
 
-## Moore's Law for Developer Productivity {{ date: '2023-04-06T00:00Z' }}
+## Moore's Law for Developer Productivity {{ date: '2023-05-06T00:00Z' }}
 
 As most things in tech, software developer productivity is also in a constantly improving state. In web development, it's a common source of comedy to joke about the strugle of keeping up with all the new advancements. In fact, it is estimated that
 
@@ -10,36 +10,48 @@ As most things in tech, software developer productivity is also in a constantly 
   every three years, it becomes 50% easier to write the same software,
 </blockquote>
 
-allowing developers to create more complex and feature-rich applications in a shorter amount of time.
+allowing developers to create more complex and feature-rich user experiences exponentionally cheaper.
 
-However, this incredible growth in productivity primarily benefits newly started projects. Older software often gets left behind, as rewriting code is very labour intensive.
+However, this incredible growth in productivity primarily benefits newly started projects. Older software often gets stuck under a big pile of technical debt, as rewriting code is very labour intensive.
 
-### <SparkleIcon className="animate-pulse-color from-yellow-500 to-blue-400" /> Answers I'm looking for
+### <SparkleIcon className="animate-pulse-color from-yellow-500 to-blue-400" /> Channeling these freely available value to already established projects would be huge
+
+- Revitalizing old software is great way to unlock value
+- Mature projects has proven product-market fit, investing is them is low-risk high-return
+- Shaping up older projects could be seen as starting a new one but from a solid stepping stone
+
+---
+
+## AI-assisted code refactor will change everything {{ date: '2023-05-02T00:00Z' }}
+
+Traditional code refactoring, a labor-intensive aspect of software development, has been challenging for developers with tight deadlines and budget constraints. However, AI-assisted code refactor will enable more sweeping code changes while minimizing errors, introduce faster adoption of new technologies, and improve software quality.
+
+By automating the refactoring process and handling technical debt more efficiently, AI tools could empower developers to focus on high-impact tasks, maintain clean and efficient code, and contribute to a more agile software ecosystem. This fundamental shift to AI-assisted code refactoring promises substantial impact on the industry, addressing long-standing limitations that could never been fixed before.
+
+---
+
+## Better software testing is key {{ date: '2023-04-28T00:00Z' }}
+
+As we look towards the future of AI-generated code, we need to understand the limitations of purely depending on a Large Language Model. A zero shot approach would probably not produce an output, that satisfies all criterias. Features could be lost, functionalities could mutate in the process, as the language model creates imperfect results.
+
+We propose an a Domain Specific Language (DSL) that would define the requirements of the original software, and would act as a spcification that the AI solution could consult. This SDL would be similar as an automated software testing language, but it would only focus on the program requirements (as opposite to testing languages, that also focus on implementation details). This approach lets us to build a companion solution, that would enable human engineers to quickly map out all the functionality that a gives software have.
+
+### <SparkleIcon className="animate-pulse-color from-yellow-500 to-blue-400" /> This DSL could be...
+
+- ...produced by session recording. This is a technique where a manual tester performs the expected tasks, and the underlaying software behaviour gets recorded as this DSL.
+- ...an intermediary solution between multiple developer tools, acting as a protocol to compose many AI tools together.
+- ...human readable, helping technical teams to review, and reason about existing functionalities, and communicate expected behaviour after the refactor.
+
+---
+
+## Why did I start Remodel? {{ date: '2023-04-27T00:00Z' }}
+
+Throughout my career, I have seen first-hand the immense value that exists in legacy software, as well as the challenges that come with upgrading components in older applications. SOmetimes I call myself as a Software Archeologist, as I've always been the person in my various teams, who undertake digging up old libraries, and figuring out the optimal way to upgrade. I'm biased toward improving software and fixing long standing issues.
+
+This is why I'm super energised by the idea of using AI to fix software. All software. This is a historical moment for the software industry, where a lot of problems waiting to be solved, develoepr tools with gigantic impact will rise, and at the end, consumers will wine huge by far superiour user experiences, what we have today.
+
+### <SparkleIcon className="animate-pulse-color from-yellow-500 to-blue-400" /> Answers I'm most interested in
 
 - How can we use LLMs to rapidly convert existing systems to use a new technology?
 - How does an AI-native developer tool look like?
 - What kind of consumer software will we have, when productivity will 100x?
-
----
-
-## AI-assisted code refactor will change everything {{ date: '2023-04-06T00:00Z' }}
-
-Traditional code refactoring, a labor-intensive aspect of software development, has been challenging for developers with tight deadlines and budget constraints. However, AI-assisted code refactor will enable more sweeping code changes while minimizing errors, introduce faster adoption of new technologies, and improve software quality.
-
-By automating the refactoring process and handling technical debt more efficiently, AI tools will empower developers to focus on critical tasks, maintain clean and efficient code, and contribute to a more agile software ecosystem. This fundamental shift to AI-assisted code refactoring promises substantial impact on the industry, streamlining software development and addressing long-standing limitations.
-
----
-
-## Better software testing is key {{ date: '2023-04-06T00:00Z' }}
-
-As we look towards the future of AI-generated code, we need to ensure that the software our AI creates is not only functional but also of high quality. To achieve this, we must guide the AI by providing it with automated tests that it can use to validate its generated code.
-
-Developing a solution that quickly creates automated tests for old projects is a challenge, as it is often tedious and time-consuming to improve test code coverage. However, by providing these tests, we can let the AI iterate on its code based on the test results, while also offering valuable data that will help the AI generate better code in the future.
-
----
-
-## Why did I start Remodel? {{ date: '2023-04-06T00:00Z' }}
-
-Throughout my career, I have seen first-hand the immense value that exists in legacy software, as well as the challenges that come with upgrading components in older applications. This experience has led me to envision a world where transitioning to new foundational technologies is fast, affordable, and safe.
-
-By creating Remodel, I hope to unlock the hidden potential in these legacy applications and enable companies to fully leverage the advances in AI code generation, creating a brighter and more efficient future for software development.

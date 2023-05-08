@@ -1,16 +1,19 @@
-import { useId, useState } from 'react'
+import { useId, useRef, useState } from 'react'
 import { Button } from '@/components/Button'
 import { CheckCircleIcon, ClockIcon } from '@heroicons/react/20/solid'
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 
 export function SignUpForm() {
   const id = useId()
+  const form = useRef()
   const [subsciptionState, setSubscriptionState] = useState('idle')
 
   const handleSubmit = async (event) => {
     event.preventDefault()
 
     setSubscriptionState('pending')
+
+    const body = new FormData(form.current)
 
     const response = await fetch(
       'https://buttondown.email/api/emails/embed-subscribe/miklosme',
@@ -19,9 +22,7 @@ export function SignUpForm() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          email: event.target.email.value,
-        }),
+        body,
       }
     )
 
@@ -98,6 +99,7 @@ export function SignUpForm() {
 
   return (
     <form
+      ref={form}
       className="relative isolate mt-8 flex items-center pr-1"
       onSubmit={handleSubmit}
     >
