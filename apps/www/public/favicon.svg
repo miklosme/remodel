@@ -1,75 +1,24 @@
-import * as React from 'react'
-
-function MiddleElement() {
-  return (
-    <g>
-      {/* laser outline */}
-      <path
-        fill="#7b4010"
-        d="M379.191 383.76l15.014-14.745V165.152h34.142v203.863l15.015 14.745c7.22 7.091 6.11 19.025-2.294 24.663l-29.792 19.984-29.79-19.985c-8.405-5.637-9.515-17.57-2.295-24.662z"
-      />
-      {/* laser */}
-      <path
-        fill="#fff"
-        d="M419.558 372.702V173.94H402.995V372.7l-15.837 15.555c-4.18 4.106-3.538 11.015 1.328 14.28l22.79 15.287 22.79-15.288c4.867-3.264 5.51-10.173 1.33-14.28l-15.838-15.553z"
-      />
-      {/* flower outline */}
-      <path
-        fill="#16111f"
-        d="M417.418 531.97c-14.323-1.433-19.169-16.518-21.772-24.622-.352-1.097-.677-2.116-.996-3-1.032-2.856-4.3-7.202-6.757-9.973-21.353-12.332-56.405-37.664-62.268-73.525-8.427-51.612 12.81-77.468 13.717-78.543l7.08-8.385 11.393 12.008a16.225 16.225 0 012.849 18.204l-1.055 2.19c-4.446 9.248-1.919 20.147 6.146 26.501l45.523 35.845 45.525-35.846c8.06-6.356 10.588-17.257 6.142-26.505l-1.052-2.185a16.225 16.225 0 012.849-18.204l11.391-12.008 7.08 8.385c.91 1.075 22.146 26.932 13.707 78.543-5.287 32.342-33.805 56.06-56.797 70.263-8.943 5.523-13.92 15.736-12.68 26.018.186 1.535.425 2.455.428 2.464l3.956 13.905-14.41-1.53z"
-      />
-      {/* flower */}
-      <path
-        fill="#fff"
-        d="M417.689 518.307c.294 2.438.707 3.887.707 3.887-9.28-.929-12.09-14.493-14.505-21.183-2.416-6.689-9.793-14.405-9.793-14.405-20.74-11.77-53.508-35.116-58.777-67.341-7.795-47.738 11.528-70.62 11.528-70.62l6.877 7.25-2.97 6.167c-6.407 13.33-2.707 29.322 8.92 38.481l45.734 36.011a9.485 9.485 0 0011.736 0l45.735-36.01c11.615-9.16 15.326-25.153 8.918-38.482l-2.969-6.168 6.878-7.248s19.322 22.88 11.517 70.619c-4.745 29.02-31.788 50.84-52.265 63.489-12.146 7.503-18.98 21.378-17.271 35.553z"
-      />
-    </g>
-  )
-}
-
-export function Logo(props) {
-  return (
-    <svg
+<?xml version="1.0" encoding="utf-8"?>
+<svg
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
       viewBox="0 0 822.55573 822.55573"
       xmlSpace="preserve"
-      {...props}
     >
       <linearGradient id="MAIN_GRADIENT" x1="0%" y1="0%" x2="100%" y2="0%">
-        {/* <stop offset="0%" stopColor="#b794f4" />
-        <stop offset="50%" stopColor="#ed64a6" />
-        <stop offset="100%" stopColor="#f56565" /> */}
-        <stop offset="0%" stopColor="currentColor" />
-        <stop offset="100%" stopColor="currentColor" />
-      </linearGradient>
-      <linearGradient id="INNER_GRADIENT" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stopColor="#162635" stopOpacity={0.1} />
-        <stop offset="100%" stopColor="#2b103a" stopOpacity={0.1} />
-      </linearGradient>
-      <linearGradient id="INNER_CIRCLE" x1="0%" y1="100%" x2="100%" y2="0%">
-        {/* <stop offset="0%" stopColor="#b794f4" />
-        <stop offset="50%" stopColor="#ed64a6" />
-        <stop offset="100%" stopColor="#f56565" /> */}
-        {/* <stop offset="0%" stopColor="rgb(125 211 252)" stopOpacity={0.5} />
-        <stop offset="100%" stopColor="rgb(125 211 252)" stopOpacity={0.5} /> */}
-        <stop offset="0%" stopColor="currentColor" stopOpacity={0.7} />
-        <stop offset="100%" stopColor="currentColor" stopOpacity={0.9} />
+        <stop offset="0%" stop-color="#b794f4" />
+        <stop offset="50%" stop-color="#ed64a6" />
+        <stop offset="100%" stop-color="#f56565" />
       </linearGradient>
 
-      {/* middle background */}
-      {/* <circle
-        cx={411.27786}
-        cy={411.27786}
-        r={177.83104}
-        fill="url(#INNER_GRADIENT)"
-      /> */}
+      <circle
+        cx="411.27786"
+        cy="411.27786"
+        r="90"
+        fill="url(#MAIN_GRADIENT)"
+      />
 
-      {/* <MiddleElement /> */}
-      <circle cx={411.27786} cy={411.27786} r={90} fill="url(#INNER_CIRCLE)" />
-
-      {/* cog and effects */}
       <g>
         <path
           d="M175.762 633.567c-42.611-45.131-71.202-101.052-82.68-161.716l1.964-.371c11.408 60.287 39.822 115.861 82.17 160.714l-1.454 1.373z"
@@ -137,5 +86,3 @@ export function Logo(props) {
         />
       </g>
     </svg>
-  )
-}

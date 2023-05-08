@@ -10,13 +10,13 @@ import Content from '@/pages/index.mdx'
 export async function generateRssFeed() {
   let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
   let author = {
-    name: 'Joe Davola',
-    email: 'crazy.joe@example.com',
+    name: '@miklosme',
+    email: 'hello@miklos.dev',
   }
 
   let feed = new Feed({
-    title: 'Commit',
-    description: 'Open-source Git client for macOS minimalists',
+    title: 'Remodel',
+    description: 'AI-powered refactoring',
     author,
     id: siteUrl,
     link: siteUrl,

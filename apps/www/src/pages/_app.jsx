@@ -12,10 +12,14 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Commit - Open-source Git client for macOS minimalists</title>
+        <title>Remodel — AI-powered refactoring</title>
         <meta
           name="description"
-          content="Commit is a lightweight Git client you can open from anywhere any time you’re ready to commit your work with a single keyboard shortcut. It’s fast, beautiful, and completely unnecessary."
+          content="Remodel is an AI-driven developer tool designed to help software
+          engineers migrate their old web applications to a new
+          tech stack while preserving the original functionality. With support
+          for JavaScript/TypeScript and React as the output, Remodel can refactor
+          web apps from any language and framework."
         />
       </Head>
       <ThemeProvider attribute="class" disableTransitionOnChange>

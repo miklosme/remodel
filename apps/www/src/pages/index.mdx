@@ -1,65 +1,57 @@
 import { SparkleIcon } from '@/components/SparkleIcon'
-import { generateRssFeed } from '@/lib/generateRssFeed'
-
-export async function getStaticProps() {
-  if (process.env.NODE_ENV === 'production') {
-    await generateRssFeed()
-  }
-  return { props: {} }
-}
 
 ---
 
-![](@/images/commit-suggestions.png)
+## Moore's Law for Developer Productivity {{ date: '2023-05-06T00:00Z' }}
 
-## Commit message suggestions {{ date: '2023-04-06T00:00Z' }}
+Like most things in tech, software developer productivity is also constantly improving. In web development, it's a common source of comedy to joke about the struggle of keeping up with all the new advancements. It is estimated that
 
-In the latest release, I've added support for commit message and description suggestions via an integration with OpenAI. Commit looks at all of your changes, and feeds that into the machine with a bit of prompt-tuning to get back a commit message that does a surprisingly good job at describing the intent of your changes.
+<blockquote>
+  every three years, writing the same software becomes 50% easier.
+</blockquote>
 
-It's also been a pretty helpful way to remind myself what the hell I was working on at the end of the day yesterday when I get back to my computer and realize I didn't commit any of my work.
+This enables developers to create more complex and feature-rich user experiences exponentially cheaper.
 
-### <SparkleIcon /> Improvements
+However, this remarkable productivity growth primarily benefits new projects. Older software often becomes buried under layers of technical debt, as rewriting code is time-consuming and laborious.
 
-- Added commit message and description suggestions powered by OpenAI
-- Fixed race condition that could sometimes leave you in a broken rebase state
-- Improved active project detection to try and ignore file changes triggered by the system instead of the user
-- Fixed bug that sometimes reported the wrong number of changed files
+### <SparkleIcon className="animate-pulse-color from-yellow-500 to-blue-400" /> Unlocking Value in Established Projects
 
----
-
-![](@/images/configuration-files.png)
-
-## Project configuration files {{ date: '2023-03-17T00:00Z' }}
-
-I've added support for creating per-project `.commitrc` files that override your global settings for that particular project. Went with YAML for these because personally I'm sick of quoting keys in JSON all the time, or accidentally leaving in a trailing comma.
-
-### <SparkleIcon /> Improvements
-
-- Added per-project `.commitrc` configuration files
-- Improved performance when working with projects with large binary files
-- Fixed a bug that could cause Commit to crash when autocommitting after deleting a recently active branch
+- Revitalizing older software is a powerful way to unlock hidden value
+- Mature projects have proven product-market fit, making investments in them low-risk and high-return
+- Refining older projects can be viewed as starting a new one but from a solid foundation
 
 ---
 
-![](@/images/dark-mode.png)
+## AI-Assisted Code Refactoring: A Game Changer {{ date: '2023-05-02T00:00Z' }}
 
-## Dark mode support {{ date: '2023-03-06T00:00Z' }}
+As we look toward the future of AI-generated code, we need to understand the limitations of relying solely on a Large Language Model (LLM). A zero-shot approach might not produce output that satisfies all criteria. Features could be lost, and functionalities could mutate as the language model generates imperfect results.
 
-I released this thing last week hoping a couple of people would say "awesome job" and make me feel good about what I'd built but instead I just got a ton of people shaming me on Twitter for being such a horrible person for only shipping a light UI.
-
-### <SparkleIcon /> Improvements
-
-- Added dark mode support
-- Improved input field responsiveness when writing a commit message in a project with a large number of changed files
-- Made keyboard shortcut for opening the Commit window customizable
-- Deleted my Twitter account
+We propose a Domain Specific Language (DSL) that would define the requirements of the original software, acting as a specification that the AI solution could consult. This DSL would be similar to an automated software testing language, but it would focus solely on program requirements (as opposed to testing languages that also address implementation details). This approach would enable us to build a companion solution that helps human engineers quickly map out all software functionalities.
 
 ---
 
-![](@/images/first-release.png)
+## The Importance of Better Software Testing {{ date: '2023-04-28T00:00Z' }}
 
-## Commit v0.1.0 {{  date: '2023-03-03T00:00Z' }}
+As we look toward the future of AI-generated code, we need to understand the limitations of purely depending on a Large Language Model. A zero-shot approach would probably not produce an output that satisfies all criteria. Features could be lost, and functionalities could mutate as the language model creates imperfect results.
 
-Commit is a command palette-style Git client you can pull up from anywhere with a keyboard shortcut that makes it really easy to commit your work. It uses the "last modified" timestamp of the files in all of your projects to automatically know which project you're in the middle of working on, so any time you pull up the UI it's already got the right project selected — you just have to type your commit message, hit <kbd>Cmd</kbd> + <kbd>Enter</kbd> and your changes are captured.
+With Remodel, I propose a Domain Specific Language (DSL) that would define the original software's requirements and act as a specification that the AI solution could consult. This SDL would be similar to an automated software testing language, but it would only focus on the program requirements (as opposed to testing languages that also focus on implementation details). This approach lets us build a companion solution that would enable human engineers to quickly map out all the functionality a given software has.
 
-I'd be lying if I really thought this was that useful but I was looking for an excuse to learn macOS development and here we are. It's open source at least so maybe you can find something interesting in the code even if the app itself is a total waste of hard drive space.
+### <SparkleIcon className="animate-pulse-color from-yellow-500 to-blue-400" /> This DSL could be...
+
+- ...generated through session recording. A manual tester performs the expected tasks, and the underlying software behavior is recorded as the DSL.
+- ...acting as an intermediary between multiple developer tools, functioning as a protocol to compose various AI tools.
+- ...being human-readable, which helps technical teams review and reason about existing functionalities and communicate expected behavior after the refactor.
+
+---
+
+## Why I Started Remodel {{ date: '2023-04-27T00:00Z' }}
+
+Throughout my career, I have seen first-hand the immense value that exists in legacy software, as well as the challenges that come with upgrading components in older applications. Sometimes, I refer to myself as a Software Archaeologist because I have always been that person in my various teams who undertakes to dig up old libraries and to figure out the optimal way to upgrade. I'm biased toward improving software and fixing long-standing issues.
+
+That's why I'm incredibly excited about using AI to fix software—all software. This is a historic moment for the software industry, with numerous problems waiting to be solved, developer tools with immense impact emerging, and end-users ultimately benefiting from vastly superior experiences compared to what we have today.
+
+### <SparkleIcon className="animate-pulse-color from-yellow-500 to-blue-400" /> Questions I'm Eager to Explore
+
+- How can we leverage LLMs to rapidly convert existing systems to adopt new technologies?
+- What does an AI-native developer tool look like?
+- What kind of consumer software will we have when productivity increases 100-fold?
