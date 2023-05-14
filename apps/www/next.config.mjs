@@ -1,3 +1,4 @@
+import { withPlausibleProxy as plausibleProxy } from 'next-plausible'
 import nextMDX from '@next/mdx'
 import { remarkPlugins } from './mdx/remark.mjs'
 import { rehypePlugins } from './mdx/rehype.mjs'
@@ -13,6 +14,8 @@ const withMDX = nextMDX({
   },
 })
 
+const withPlausibleProxy = plausibleProxy()
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -22,4 +25,4 @@ const nextConfig = {
   },
 }
 
-export default withMDX(nextConfig)
+export default withPlausibleProxy(withMDX(nextConfig))

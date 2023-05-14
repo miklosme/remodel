@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { ThemeProvider } from 'next-themes'
 import { MDXProvider } from '@mdx-js/react'
-
+import PlausibleProvider from 'next-plausible'
 import { Layout } from '@/components/Layout'
 import * as mdxComponents from '@/components/mdx'
 
@@ -24,9 +24,11 @@ export default function App({ Component, pageProps }) {
       </Head>
       <ThemeProvider attribute="class" disableTransitionOnChange>
         <MDXProvider components={mdxComponents}>
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
+          <PlausibleProvider domain="remodel.sh">
+            <Layout>
+              <Component {...pageProps} />
+            </Layout>
+          </PlausibleProvider>
         </MDXProvider>
       </ThemeProvider>
     </>
