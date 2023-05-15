@@ -71,7 +71,7 @@ export function Intro() {
       <p className="mt-4 text-sm/6 text-gray-300">
         Remodel is an AI-driven developer tool designed to help software
         engineers migrate their old web applications to a new tech stack while
-        preserving the original functionality.
+        preserving all original functionality.
       </p>
       <p className="mt-4 text-sm/6 text-gray-300">
         With support for JavaScript/TypeScript and React as the output, Remodel
