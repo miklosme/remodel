@@ -95,7 +95,7 @@ export function SignUpForm() {
   return (
     <form
       ref={form}
-      className="relative isolate mt-8 flex items-center pr-1"
+      className="relative isolate mt-12 flex items-center pr-1"
       onSubmit={handleSubmit}
     >
       <label htmlFor={id} className="sr-only">
